@@ -38,9 +38,9 @@ export class ApiProvider {
 
   }
 
-  public verifyOpt(code:any): Observable<any>{
+  public verifyOpt(code:string): Observable<any>{
     const url = `${this.url}/user/otp`;
-    return this.http.post(url,{user:code},httpOptions)
+    return this.http.post(url,{"otp":code},httpOptions)
     .pipe(catchError(this.handleError(<any>("verifyOpt"))))
   }
 
