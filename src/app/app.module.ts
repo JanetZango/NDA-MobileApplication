@@ -21,6 +21,7 @@ import { LocalstorageProvider } from '../providers/localstorage/localstorage';
 import { AsynPage } from '../pages/asyn/asyn';
 import { ConfigService } from '../providers/config/config.server';
 import { EntityProvider } from '../providers/entity/cso'
+import { ViewcsodetailsPage } from '../pages/viewcsodetails/viewcsodetails';
 
 
 @NgModule({
@@ -36,7 +37,8 @@ import { EntityProvider } from '../providers/entity/cso'
     AddAssessmentPage,
     AddCapacityPage,
     AddOtpPage,
-    AsynPage
+    AsynPage,
+    ViewcsodetailsPage
   ],
   imports: [
     BrowserModule,
@@ -56,7 +58,8 @@ import { EntityProvider } from '../providers/entity/cso'
     DisplayListOfAssessmentPage,
     DisplayListOfCapacityPage,
     AddAssessmentPage,
-    AsynPage
+    AsynPage,
+    ViewcsodetailsPage
   ],
   providers: [
     StatusBar,

@@ -4,6 +4,7 @@ import { RegistercsoPage } from '../registercso/registercso';
 import { LandingPage } from '../landing/landing';
 import { ApiProvider } from '../../providers/api/api';
 import { EntityProvider } from '../../providers/entity/cso'
+import { ViewcsodetailsPage } from '../viewcsodetails/viewcsodetails';
 /**
  * Generated class for the DisplayListOfCsoPage page.
  *
@@ -20,6 +21,7 @@ export class DisplayListOfCsoPage implements OnInit{
   
 //variables
   cso;
+  DisplayCso = new Array();
   constructor(
     public navCtrl: NavController, 
     public navParams: NavParams,
@@ -39,12 +41,25 @@ export class DisplayListOfCsoPage implements OnInit{
   }
   ngOnInit(){
     this.csoApi.getCso().subscribe(res => {
-      debugger
+      
       if(res){
         console.log(res.results);
+        this.DisplayCso = res.results
+        console.log(this.DisplayCso)
       }
 
     })
+
+
+  }
+  viewMore(name) {
+    for (var x = 0; x < this.DisplayCso.length; x++) {
+      if (name == this.DisplayCso[x].nda_registration) {
+        this.navCtrl.push(ViewcsodetailsPage, { orgObject: this.DisplayCso[x] });
+        break;
+      }
+
+    }
 
 
   }

@@ -27,12 +27,12 @@
   </ion-list>
   <h3 style="text-align: center;">*Manage Mobilisation-CSO <br>Registration</h3>
   <div class="mainInfor">
-    <ion-card *ngFor="let a of ViewMemberArr">
+    <ion-card *ngFor="let a of DisplayCso">
       <div class="card">
-        <p><b>CsoName:</b>{{a.name_of_cso}}</p>
+        <p><b>CsoName:</b>{{a.cso_name}}</p>
         <p><b>Physical Address:</b>{{a.physical_address}}</p>
         <div class="viewBtn">
-          <button ion-button (click)="viewMore(a.name_of_cso)">View more
+          <button ion-button (click)="viewMore(a.nda_registration)">View more
           </button>
         </div>
 
