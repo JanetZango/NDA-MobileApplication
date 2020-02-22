@@ -17,7 +17,7 @@ const httpOptions = {
 };
 
 @Injectable()
-export class ApiProvider {
+export class EntityProvider {
 
   constructor(
     public http: HttpClient,
@@ -31,16 +31,6 @@ export class ApiProvider {
   private url:string;
 
 
-  public verifyUser( email:string):Observable<any>{
-    const url = `${this.url}/user/verifyUser`;
-    return this.http.post(url,{user:email},httpOptions);
-
-  }
-
-  public verifyOpt(code:any): Observable<any>{
-    const url = `${this.url}/user/otp`;
-    return this.http.post(url,{user:code},httpOptions);
-  }
 
   getcso(){
     this.http.get('http://172.18.180.127:5000/cso').subscribe(data =>{
