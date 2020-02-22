@@ -9,16 +9,25 @@
         <div class="h1" text-center>Enter your email</div>
         <br>
         <div class="logininputdiv">
+          <form #user="ngForm" (ngSubmit)="verifyemail(user)">
+            <ion-list>
+              <ion-item no-lines class="inputs">
+                <ion-input 
+                type="email" 
+                placeholder="Email" 
+                 ngModel  name="email"
+                email
+                required
+                >
+                </ion-input>
+              </ion-item>
+            </ion-list>
+          
           <ion-list>
-            <ion-item no-lines class="inputs">
-              <ion-input type="email" placeholder="Email" [(ngModel)]="email">
-              </ion-input>
-            </ion-item>
           </ion-list>
-          <ion-list>
-          </ion-list>
-          <button block round ion-button block color="primary" (click)="verifyemail()">Next</button>
+          <button type="submit"block round ion-button block color="primary">Next</button>
           <br>
+        </form>
         </div>
       </div>
     </div>

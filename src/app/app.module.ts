@@ -1,6 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { ErrorHandler, NgModule } from '@angular/core';
 import { IonicApp, IonicErrorHandler, IonicModule } from 'ionic-angular';
+import { HttpClientModule } from "@angular/common/http";
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { StatusBar } from '@ionic-native/status-bar';
 
@@ -18,6 +19,7 @@ import { AddOtpPage } from '../pages/add-otp/add-otp';
 import { ApiProvider } from '../providers/api/api';
 import { LocalstorageProvider } from '../providers/localstorage/localstorage';
 import { AsynPage } from '../pages/asyn/asyn';
+import { ConfigService } from '../providers/config/config.server';
 
 @NgModule({
   declarations: [
@@ -36,6 +38,7 @@ import { AsynPage } from '../pages/asyn/asyn';
   ],
   imports: [
     BrowserModule,
+    HttpClientModule,
     IonicModule.forRoot(MyApp)
   ],
   bootstrap: [IonicApp],
@@ -58,9 +61,7 @@ import { AsynPage } from '../pages/asyn/asyn';
     SplashScreen,
     {provide: ErrorHandler, useClass: IonicErrorHandler},
     ApiProvider,
-    LocalstorageProvider,
-  
-  
+    ConfigService
   ]
 })
 export class AppModule {}

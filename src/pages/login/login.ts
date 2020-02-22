@@ -2,8 +2,9 @@ import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { LandingPage } from '../landing/landing';
 import { AddOtpPage } from '../add-otp/add-otp';
-import { NgModel } from '@angular/forms';
+import { NgModel, NgForm } from '@angular/forms';
 import { AlertController } from 'ionic-angular';
+import { ApiProvider } from '../../providers/api/api';
 
 /**
  * Generated class for the LoginPage page.
@@ -19,27 +20,36 @@ import { AlertController } from 'ionic-angular';
 })
 export class LoginPage {
   email;
-  constructor(public navCtrl: NavController, public navParams: NavParams,public alertCtrl: AlertController) {
+  constructor(
+    public navCtrl: NavController,
+    public navParams: NavParams,
+    public alertCtrl: AlertController,
+    public authUser: ApiProvider
+  ) {
   }
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad LoginPage');
   }
-  verifyemail(){
-    console.log(this.email)
-   if(this.email == null || this.email == undefined || this.email == ''){
-      const alert = this.alertCtrl.create({
-        title: 'Error!',
-        subTitle: 'Please enter your email address!',
-        buttons: ['OK']
-      });
-      alert.present()
+  verifyemail(form: NgForm) {
     
-    }
-    else{
-      this.navCtrl.push(AddOtpPage)
-    }
-   
+    this.authUser.verifyUser("").subscribe(res => {
+
+      if (this.email == null || this.email == undefined || this.email == '') {
+
+        const alert = this.alertCtrl.create({
+          title: 'Error!',
+          subTitle: 'Please enter your email address!',
+          buttons: ['OK']
+        });
+        alert.present()
+
+      }
+      else {
+        this.navCtrl.push(AddOtpPage)
+      }
+
+    });
   }
 
 }
