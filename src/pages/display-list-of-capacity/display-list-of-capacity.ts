@@ -1,8 +1,8 @@
-import { Component } from '@angular/core';
+import { Component,OnInit } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { AddCapacityPage } from '../add-capacity/add-capacity';
 import { LandingPage } from '../landing/landing';
-
+import { EntityProvider } from '../../providers/entity/cso'
 
 /**
  * Generated class for the DisplayListOfCapacityPage page.
@@ -16,9 +16,9 @@ import { LandingPage } from '../landing/landing';
   selector: 'page-display-list-of-capacity',
   templateUrl: 'display-list-of-capacity.html',
 })
-export class DisplayListOfCapacityPage {
-
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+export class DisplayListOfCapacityPage implements OnInit {
+  DisplayCapacity = new Array();
+  constructor(public navCtrl: NavController, public navParams: NavParams, public csoApi : EntityProvider) {
   }
 
   ionViewDidLoad() {
@@ -29,6 +29,19 @@ export class DisplayListOfCapacityPage {
   }
   gotoback(){
     this.navCtrl.push(LandingPage)
+  }
+  ngOnInit(){
+    this.csoApi.getCapacityBuilding().subscribe(res => {
+      
+      if(res){
+        console.log(res.results);
+        this.DisplayCapacity = res.results
+        console.log(this.DisplayCapacity)
+      }
+
+    })
+
+
   }
 
 }

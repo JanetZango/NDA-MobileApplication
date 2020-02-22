@@ -1,8 +1,8 @@
-import { Component } from '@angular/core';
+import { Component,OnInit } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { AddAssessmentPage } from '../add-assessment/add-assessment';
 import { LandingPage } from '../landing/landing';
-
+import { EntityProvider } from '../../providers/entity/cso'
 
 /**
  * Generated class for the DisplayListOfAssessmentPage page.
@@ -16,9 +16,9 @@ import { LandingPage } from '../landing/landing';
   selector: 'page-display-list-of-assessment',
   templateUrl: 'display-list-of-assessment.html',
 })
-export class DisplayListOfAssessmentPage {
-
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+export class DisplayListOfAssessmentPage implements OnInit {
+  DisplayAssessment = new Array();
+  constructor(public navCtrl: NavController, public navParams: NavParams,public csoApi:EntityProvider ) {
   }
 
   ionViewDidLoad() {
@@ -29,6 +29,20 @@ export class DisplayListOfAssessmentPage {
   }
   gotoback(){
     this.navCtrl.push(LandingPage)
+  }
+
+  ngOnInit(){
+    this.csoApi.getAssessment().subscribe(res => {
+      
+      if(res){
+        console.log(res.results);
+        this.DisplayAssessment = res.results
+        console.log(this.DisplayAssessment)
+      }
+
+    })
+
+
   }
 
 }
