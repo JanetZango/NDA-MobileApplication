@@ -3,6 +3,7 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { DisplayListOfCsoPage } from '../display-list-of-cso/display-list-of-cso';
 import { DisplayListOfAssessmentPage } from '../display-list-of-assessment/display-list-of-assessment';
 import { DisplayListOfCapacityPage } from '../display-list-of-capacity/display-list-of-capacity';
+import { AsynPage } from '../asyn/asyn';
 
 /**
  * Generated class for the LandingPage page.
@@ -33,6 +34,9 @@ export class LandingPage {
   DisplayListOfCapacity(){
       this.navCtrl.push(DisplayListOfCapacityPage)
 
+  }
+   gotoAsync(){
+       this.navCtrl.push(AsynPage)
   }
 
 }

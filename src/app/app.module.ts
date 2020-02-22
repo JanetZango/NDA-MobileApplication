@@ -15,6 +15,8 @@ import { DisplayListOfAssessmentPage } from '../pages/display-list-of-assessment
 import { AddAssessmentPage } from '../pages/add-assessment/add-assessment';
 import { AddCapacityPage } from '../pages/add-capacity/add-capacity';
 import { AddOtpPage } from '../pages/add-otp/add-otp';
+import { ApiProvider } from '../providers/api/api';
+import { LocalstorageProvider } from '../providers/localstorage/localstorage';
 
 @NgModule({
   declarations: [
@@ -52,6 +54,8 @@ import { AddOtpPage } from '../pages/add-otp/add-otp';
     StatusBar,
     SplashScreen,
     {provide: ErrorHandler, useClass: IonicErrorHandler},
+    ApiProvider,
+    LocalstorageProvider,
   
   
   ]
