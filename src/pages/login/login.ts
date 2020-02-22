@@ -36,7 +36,7 @@ export class LoginPage {
     if(form.value.email=== ''){
       return;
     }
-    debugger
+    
     this.authUser.verifyUser(form.value.email).subscribe(res => {
       if (res === undefined) {
         const alert = this.alertCtrl.create({

@@ -9,16 +9,18 @@
           <br>
           <div class="logininputdiv">
              <!-- <p>{{email}}</p>  -->
+             <form #otpf="ngForm" (ngSubmit)="login(otpf)">
             <ion-list>
               <ion-item no-lines class="inputs">
-                <ion-input type="number" placeholder="Otp" [(ngModel)]="otp"></ion-input>
+                <ion-input type="number" placeholder="Otp" ngModel name="otp"></ion-input>
               </ion-item>
             </ion-list>
             <ion-list>
             </ion-list>
-            <button block round ion-button block color="primary"
-            (click)="login()">Login</button>
+            <button type="submit" block round ion-button block color="primary"
+            >Login</button>
             <br>
+          </form>
           </div>
         </div>
       </div>

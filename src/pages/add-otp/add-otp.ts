@@ -2,6 +2,8 @@ import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { LandingPage } from '../landing/landing';
 import { AlertController } from 'ionic-angular';
+import { ApiProvider } from '../../providers/api/api';
+import { NgForm } from '@angular/forms';
 /**
  * Generated class for the AddOtpPage page.
  *
@@ -16,26 +18,36 @@ import { AlertController } from 'ionic-angular';
 })
 export class AddOtpPage {
   otp
-  constructor(public navCtrl: NavController, public navParams: NavParams,public alertCtrl: AlertController) {
+  constructor(
+    public navCtrl: NavController,
+    public navParams: NavParams,
+    public alertCtrl: AlertController,
+    public authUser: ApiProvider
+    ) {
   }
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad AddOtpPage');
   }
-  login(){
-    console.log(this.otp)
-    if(this.otp == null || this.otp == undefined || this.otp == ''){
-      const alert = this.alertCtrl.create({
-        title: 'Error!',
-        subTitle: 'Please enter your OTP code!',
-        buttons: ['OK']
-      });
-      alert.present()
+  login(otpf: NgForm){
+    
+    if(otpf.value.otp === ''){
+      return;
     }
-    else{
-      this.navCtrl.push(LandingPage)
-    }
-   
+
+    this.authUser.verifyOpt(otpf.value.otp).subscribe(res =>{
+      debugger
+      if(res === undefined){
+        const alert = this.alertCtrl.create({
+          title: 'Error!',
+          subTitle: 'Please enter your OTP code!',
+          buttons: ['OK']
+        });
+        alert.present()
+      }else{
+        this.navCtrl.push(LandingPage)
+      }
+    });
   }
 
 }
