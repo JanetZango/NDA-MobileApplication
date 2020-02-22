@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { DisplayListOfCsoPage } from '../display-list-of-cso/display-list-of-cso';
 
 /**
  * Generated class for the RegistercsoPage page.
@@ -20,6 +21,9 @@ export class RegistercsoPage {
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad RegistercsoPage');
+  }
+  gotoback(){
+    this.navCtrl.push(DisplayListOfCsoPage)
   }
 
 }

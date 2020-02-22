@@ -1,5 +1,10 @@
 <ion-content class="content">
   <div class="divImage">
+    <div class="btn">
+      <button ion-button (click)="gotoback()">
+          <ion-icon ios="ios-arrow-back" md="md-arrow-back"></ion-icon>
+      </button>
+  </div>
     <p>Add Capacity Building</p>
   </div>
   
@@ -95,7 +100,7 @@
           <input type="date" id="input-field" [(ngModel)]="start_date">
           <br>
           <ion-label>End date</ion-label>
-          <input type="date" id="input-field" (click)="disableData()" name="txtDate" [(ngModel)]="end_date">
+          <input type="date" id="input-field" (click)="disableDatesOnCalender()" name="txtDate" [(ngModel)]="end_date">
         </div>
     
         <div class="moveCont">
