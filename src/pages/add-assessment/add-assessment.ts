@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { DisplayListOfAssessmentPage } from '../display-list-of-assessment/display-list-of-assessment';
 
 /**
  * Generated class for the AddAssessmentPage page.
@@ -21,5 +22,7 @@ export class AddAssessmentPage {
   ionViewDidLoad() {
     console.log('ionViewDidLoad AddAssessmentPage');
   }
-
+  gotoback(){
+    this.navCtrl.push(DisplayListOfAssessmentPage)
+  }
 }

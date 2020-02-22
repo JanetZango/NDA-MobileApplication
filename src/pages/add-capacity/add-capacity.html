@@ -1,9 +1,14 @@
 <ion-content class="content">
   <div class="divImage">
+    <div class="btn">
+      <button ion-button (click)="gotoback()">
+          <ion-icon ios="ios-arrow-back" md="md-arrow-back"></ion-icon>
+      </button>
+  </div>
     <p>Add Capacity Building</p>
   </div>
   
-        <ion-input placeholder="Name_of_Cso" [(ngModel)]="name_of_cso" type="text" class="user-input" id="anim1"
+        <ion-input placeholder="Name_of_Cso" [(ngModel)]="nameOfCso" type="text" class="user-input" id="anim1"
           (input)="getItems($event)"></ion-input>
 
         <div id="results">
@@ -87,7 +92,7 @@
         <ion-input placeholder="Funding Source" type="text" class="user-input" [(ngModel)]="Funding_source_id"
           id="anim1"></ion-input>
 
-        <ion-input placeholder="Colllected by" type="text" class="user-input" [(ngModel)]="Collected" id="anim1">
+        <ion-input placeholder="Colllected by" type="text" class="user-input" [(ngModel)]="CollectedBy" id="anim1">
         </ion-input>
 
         <div class="Contacts">
@@ -95,7 +100,7 @@
           <input type="date" id="input-field" [(ngModel)]="start_date">
           <br>
           <ion-label>End date</ion-label>
-          <input type="date" id="input-field" (click)="disableData()" name="txtDate" [(ngModel)]="end_date">
+          <input type="date" id="input-field" (click)="disableDatesOnCalender()" name="txtDate" [(ngModel)]="end_date">
         </div>
     
         <div class="moveCont">

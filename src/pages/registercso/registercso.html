@@ -1,8 +1,13 @@
 <ion-content class="content">
   <div class="divImage">
+    <div class="btn">
+      <button ion-button (click)="gotoback()">
+          <ion-icon ios="ios-arrow-back" md="md-arrow-back"></ion-icon>
+      </button>
+  </div>
     <p>Add CSO</p>
   </div>
-        <ion-input placeholder="Name of Cso" [(ngModel)]="name_of_cso" type="text" class="user-input" id="anim1"
+        <ion-input placeholder="Name of Cso" [(ngModel)]="nameOfCso" type="text" class="user-input" id="anim1"
           (input)="getItems($event)"></ion-input>
 
         <div id="results">

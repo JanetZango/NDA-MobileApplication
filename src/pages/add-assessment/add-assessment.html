@@ -1,11 +1,16 @@
 <ion-content>
   <div class="divImage">
+    <div class="btn">
+      <button ion-button (click)="gotoback()">
+          <ion-icon ios="ios-arrow-back" md="md-arrow-back"></ion-icon>
+      </button>
+  </div>
     <p>Add Assessment</p>
   </div>
     <ion-slides pager="true" class="slide">
       <ion-slide>
         <ion-input placeholder="Type the name of CSO" type="search" id="site-search" class="user-input"
-          [(ngModel)]="item" (input)="getItems($event)" id="anim1"></ion-input>
+          [(ngModel)]="CsoName" (input)="getItems($event)" id="anim1"></ion-input>
 
         <div id="results">
           <ion-item no-lines *ngFor="let item of items; let i=index" for="site-search" (click)="openMarkerInfo(item)">
