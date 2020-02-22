@@ -20,14 +20,17 @@ page-display-list-of-assessment {
     }
    
     .btnCreate{
-        text-align: right;
-        // margin-top: -20px;
-        text-align: center;
+     
         button{
             background-color: #00919E;
             color: white;
+            text-align: left;
+            width:330px;
             border: 1px solid white;
         }
+    }
+    h3{
+        padding:5px;
     }
     .Bottom{
         height: 90%;

@@ -19,8 +19,7 @@ page-display-list-of-cso {
         padding-left:20px;
     }
     .back{
-    //    font-size: 1.5em;
-       margin-right:250px;
+       text-align: left;
        color:white;
     }
     .left{
@@ -37,10 +36,11 @@ page-display-list-of-cso {
 
     .top{
         width:100%;
-        height:28%;
+        height:22%;
         background-color: #00919E;
         padding:20px;
         text-align: right;
+        
 
         // button{
         //     background-color: #00919E;
@@ -52,7 +52,7 @@ page-display-list-of-cso {
         // }
     }
     .search{
-        margin-top:30px;
+        
     }
     .viewBtn{
         text-align: right;

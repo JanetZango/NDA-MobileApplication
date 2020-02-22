@@ -2,8 +2,7 @@
   <div class="divImage">
     <p>Add Capacity Building</p>
   </div>
-    <ion-slides pager="true" class="slide">
-      <ion-slide>
+  
         <ion-input placeholder="Name_of_Cso" [(ngModel)]="name_of_cso" type="text" class="user-input" id="anim1"
           (input)="getItems($event)"></ion-input>
 
@@ -53,8 +52,7 @@
             </ion-option>
           </ion-select>
         </ion-item>
-      </ion-slide>
-      <ion-slide>
+    
 
         <ion-item id="item">
           <ion-label> Select Municipality</ion-label>
@@ -81,9 +79,7 @@
 
         <ion-input placeholder="Venue" type="text" class="user-input" [(ngModel)]="venue" id="anim1"></ion-input>
 
-      </ion-slide>
-
-      <ion-slide>
+      
         <ion-input placeholder="Facilitor Name" type="text" class="user-input" [(ngModel)]="facilitator_name"
           id="anim1">
         </ion-input>
@@ -94,9 +90,6 @@
         <ion-input placeholder="Colllected by" type="text" class="user-input" [(ngModel)]="Collected" id="anim1">
         </ion-input>
 
-      </ion-slide>
-      <ion-slide>
-
         <div class="Contacts">
           <ion-label>Start date</ion-label>
           <input type="date" id="input-field" [(ngModel)]="start_date">
@@ -104,24 +97,10 @@
           <ion-label>End date</ion-label>
           <input type="date" id="input-field" (click)="disableData()" name="txtDate" [(ngModel)]="end_date">
         </div>
-
-        <input type="file" accept="image*/" id="cover-image" (change)="insertpic2($event)">
-
-
-        <button icon-only class="BTNs" ion-button (click)="takepic()">
-          <ion-icon name="camera"></ion-icon>
-        </button>
-
-
-
+    
         <div class="moveCont">
           <button ion-button round class="btnSign" id="anim2" (click)="addCapacity()">Rgister
             A Member</button>
         </div>
-
-      </ion-slide>
-    </ion-slides>
-  
-
 
 </ion-content>

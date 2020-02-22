@@ -4,6 +4,8 @@ import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 
 import { HomePage } from '../pages/home/home';
+import { LandingPage } from '../pages/landing/landing';
+import { DisplayListOfCsoPage } from '../pages/display-list-of-cso/display-list-of-cso';
 @Component({
   templateUrl: 'app.html'
 })

@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { LandingPage } from '../landing/landing';
-
+import { AlertController } from 'ionic-angular';
 /**
  * Generated class for the AddOtpPage page.
  *
@@ -15,15 +15,27 @@ import { LandingPage } from '../landing/landing';
   templateUrl: 'add-otp.html',
 })
 export class AddOtpPage {
-
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  otp
+  constructor(public navCtrl: NavController, public navParams: NavParams,public alertCtrl: AlertController) {
   }
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad AddOtpPage');
   }
   login(){
-    this.navCtrl.push(LandingPage)
+    console.log(this.otp)
+    if(this.otp == null || this.otp == undefined || this.otp == ''){
+      const alert = this.alertCtrl.create({
+        title: 'Error!',
+        subTitle: 'Please enter your OTP code!',
+        buttons: ['OK']
+      });
+      alert.present()
+    }
+    else{
+      this.navCtrl.push(LandingPage)
+    }
+   
   }
 
 }
