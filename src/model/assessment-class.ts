@@ -1,7 +1,7 @@
 export class Assessment {
-    CsoName:string;
+    cso_name:string;
     assessment_date:Date;
     assessment_type_id:number;
-    assessmentQ:string;
+    assessment_questions:string;
 
 }

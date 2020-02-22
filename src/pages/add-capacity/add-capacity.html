@@ -8,7 +8,7 @@
     <p>Add Capacity Building</p>
   </div>
   
-        <ion-input placeholder="Name_of_Cso" [(ngModel)]="nameOfCso" type="text" class="user-input" id="anim1"
+        <ion-input placeholder="Name_of_Cso" [(ngModel)]="cso_name" type="text" class="user-input" id="anim1"
           (input)="getItems($event)"></ion-input>
 
         <div id="results">
@@ -89,10 +89,10 @@
           id="anim1">
         </ion-input>
 
-        <ion-input placeholder="Funding Source" type="text" class="user-input" [(ngModel)]="Funding_source_id"
+        <ion-input placeholder="Funding Source" type="text" class="user-input" [(ngModel)]="funding_source_id"
           id="anim1"></ion-input>
 
-        <ion-input placeholder="Colllected by" type="text" class="user-input" [(ngModel)]="CollectedBy" id="anim1">
+        <ion-input placeholder="Colllected by" type="text" class="user-input" [(ngModel)]="collected_by" id="anim1">
         </ion-input>
 
         <div class="Contacts">

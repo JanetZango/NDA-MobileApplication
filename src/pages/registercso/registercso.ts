@@ -15,6 +15,24 @@ import { DisplayListOfCsoPage } from '../display-list-of-cso/display-list-of-cso
   templateUrl: 'registercso.html',
 })
 export class RegistercsoPage {
+  
+
+  //variables
+  cso_name;
+  cso_mobilisation_method_id;
+  created_date;
+  physical_address;
+  cso_type_id;
+  cso_sector_id;
+  province_id;
+  district_id;
+  municipality_id;
+  ward_number;
+  contact_person;
+  contact_number;
+  total_staff;
+  Collected_by
+
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
@@ -24,6 +42,21 @@ export class RegistercsoPage {
   }
   gotoback(){
     this.navCtrl.push(DisplayListOfCsoPage)
+  }
+  reset(){
+    this.cso_name="";
+    this.cso_mobilisation_method_id="";
+    this.created_date ="";
+    this.physical_address="";
+    this.cso_type_id="";
+    this.province_id ="";
+    this.cso_type_id="";
+    this.district_id="";
+    this.ward_number="";
+    this.contact_number="";
+    this.total_staff="";
+    this.Collected_by="";
+    this.contact_person="";
   }
 
 }

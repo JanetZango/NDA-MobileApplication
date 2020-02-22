@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { RegistercsoPage } from '../registercso/registercso';
 import { LandingPage } from '../landing/landing';
-
+import { ApiProvider } from '../../providers/api/api';
 /**
  * Generated class for the DisplayListOfCsoPage page.
  *
@@ -17,7 +17,8 @@ import { LandingPage } from '../landing/landing';
 })
 export class DisplayListOfCsoPage {
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  constructor(public navCtrl: NavController, public navParams: NavParams,public api:ApiProvider) {
+    
   }
 
   ionViewDidLoad() {

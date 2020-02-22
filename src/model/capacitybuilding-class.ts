@@ -1,5 +1,5 @@
 export class CapacityBuilding {
-    nameOfCso: string;
+    cso_name: string;
     capacity_building_type_id:number; 
     province_id:number;
     district_id:number;
@@ -7,8 +7,8 @@ export class CapacityBuilding {
     partner_id:number;
     venue:string;
     facilitator_name:string;
-    Funding_source_id:number;
-    CollectedBy:number;
+    funding_source_id:number;
+    collected_by:number;
     start_date:Date;
     end_date:Date;
 
