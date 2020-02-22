@@ -20,6 +20,8 @@ import { ApiProvider } from '../providers/api/api';
 import { LocalstorageProvider } from '../providers/localstorage/localstorage';
 import { AsynPage } from '../pages/asyn/asyn';
 import { ConfigService } from '../providers/config/config.server';
+import { EntityProvider } from '../providers/entity/cso'
+
 
 @NgModule({
   declarations: [
@@ -61,6 +63,7 @@ import { ConfigService } from '../providers/config/config.server';
     SplashScreen,
     {provide: ErrorHandler, useClass: IonicErrorHandler},
     ApiProvider,
+    EntityProvider,
     ConfigService
   ]
 })

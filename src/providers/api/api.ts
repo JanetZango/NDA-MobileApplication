@@ -69,4 +69,10 @@ export class ApiProvider {
       return of(result as T);
     };
   }
+
+  getcso(){
+    this.http.get('http://172.18.180.127:5000/cso').subscribe(data =>{
+      console.log(data)
+    })
+  }
 }

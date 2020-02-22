@@ -10,7 +10,7 @@
     <ion-slides pager="true" class="slide">
       <ion-slide>
         <ion-input placeholder="Type the name of CSO" type="search" id="site-search" class="user-input"
-          [(ngModel)]="CsoName" (input)="getItems($event)" id="anim1"></ion-input>
+          [(ngModel)]="cso_name" (input)="getItems($event)" id="anim1"></ion-input>
 
         <div id="results">
           <ion-item no-lines *ngFor="let item of items; let i=index" for="site-search" (click)="openMarkerInfo(item)">
@@ -62,7 +62,7 @@
             <h2>Section One</h2>
             <b>Institutional Arrangement</b>
             <p>1.The CSO/NPO has a contituion approved by members of the <br>organisation</p>
-            <ion-list [(ngModel)]="assessmentQ" radio-group>
+            <ion-list [(ngModel)]="assessment_questions" radio-group>
               <ion-item id="item2">
                 <ion-label id="label">No constitution</ion-label>
                 <ion-radio value="1"></ion-radio>

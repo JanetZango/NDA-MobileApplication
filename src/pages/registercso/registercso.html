@@ -7,7 +7,7 @@
   </div>
     <p>Add CSO</p>
   </div>
-        <ion-input placeholder="Name of Cso" [(ngModel)]="nameOfCso" type="text" class="user-input" id="anim1"
+        <ion-input placeholder="Name of Cso" [(ngModel)]="cso_name" type="text" class="user-input" id="anim1"
           (input)="getItems($event)"></ion-input>
 
         <div id="results">
@@ -127,17 +127,13 @@
           </ion-item>
         </div>
 
-        <div id="results">
-          <ion-item no-lines *ngFor="let item of items; let i=index" (click)="openMarkerInfo()">
-            <p>{{item}}</p>
-          </ion-item>
-        </div>
+
 
         <div class="moveCont">
           <button ion-button round class="btnSign" id="anim2" color="secAlert" id="myBtn"
             (click)="SignUp()">Save</button>
           <button ion-button round class="btnSign" id="anim2" color="secAlert" id="myBtn"
-            (click)="reset(Name_of_Cso.value,MobiMethod.value,created_date.value,physical_address.value,cso_type_id.value,cso_sector_id.value,province_id.value,district_id.value,municipality_id.value,ward_number.value,contact_person.value,contact_number.value,total_staff.value,collected_by.value)">Reset</button>
+            (click)="reset()">Reset</button>
         </div>
 
  

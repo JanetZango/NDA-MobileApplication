@@ -2,7 +2,8 @@ import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { RegistercsoPage } from '../registercso/registercso';
 import { LandingPage } from '../landing/landing';
-
+import { ApiProvider } from '../../providers/api/api';
+import { EntityProvider } from '../../providers/entity/cso'
 /**
  * Generated class for the DisplayListOfCsoPage page.
  *
@@ -16,8 +17,12 @@ import { LandingPage } from '../landing/landing';
   templateUrl: 'display-list-of-cso.html',
 })
 export class DisplayListOfCsoPage {
-
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  
+//variables
+  cso;
+  constructor(public navCtrl: NavController, public navParams: NavParams,public api:ApiProvider,public csoApi:EntityProvider) {
+    this.cso = this.csoApi.getcso()
+    console.log(this.cso)
   }
 
   ionViewDidLoad() {
