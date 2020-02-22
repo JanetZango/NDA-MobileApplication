@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { RegistercsoPage } from '../registercso/registercso';
+import { LandingPage } from '../landing/landing';
 
 /**
  * Generated class for the DisplayListOfCsoPage page.
@@ -24,6 +25,9 @@ export class DisplayListOfCsoPage {
   }
   registerCSO(){
     this.navCtrl.push(RegistercsoPage)
+  }
+  gotoLanding(){
+    this.navCtrl.push(LandingPage)
   }
 
 }

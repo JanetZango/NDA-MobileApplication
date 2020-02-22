@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { AddAssessmentPage } from '../add-assessment/add-assessment';
+import { LandingPage } from '../landing/landing';
 
 
 /**
@@ -25,6 +26,9 @@ export class DisplayListOfAssessmentPage {
   }
   addBuilding(){
     this.navCtrl.push(AddAssessmentPage);
+  }
+  gotoback(){
+    this.navCtrl.push(LandingPage)
   }
 
 }

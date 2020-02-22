@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { AddCapacityPage } from '../add-capacity/add-capacity';
+import { LandingPage } from '../landing/landing';
 
 
 /**
@@ -25,6 +26,9 @@ export class DisplayListOfCapacityPage {
   }
   addBuilding(){
     this.navCtrl.push(AddCapacityPage)
+  }
+  gotoback(){
+    this.navCtrl.push(LandingPage)
   }
 
 }

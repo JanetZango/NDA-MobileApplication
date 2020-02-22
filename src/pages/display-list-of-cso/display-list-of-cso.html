@@ -2,10 +2,17 @@
 
 <ion-content padding>
   <div class="top">
-    
-    <button ion-button (click)="registerCSO()">
-      <ion-icon ios="ios-add" md="md-add"></ion-icon>Register CSO
-    </button>
+    <div class="back">
+      <button ion-button  (click)="gotoLanding()">
+        <ion-icon ios="ios-arrow-back" md="md-arrow-back"></ion-icon>
+      </button>
+    </div>
+    <div class="left">
+      <button ion-button (click)="registerCSO()" >
+        <ion-icon ios="ios-add" md="md-add"></ion-icon>Register CSO
+      </button>
+    </div>
+   
     <div class="search"> 
         <ion-searchbar (input)="getItems($event)"></ion-searchbar>
     </div>

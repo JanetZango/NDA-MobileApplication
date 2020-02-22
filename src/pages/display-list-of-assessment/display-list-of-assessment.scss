@@ -1,7 +1,7 @@
 page-display-list-of-assessment {
     .top{
         width:100%;
-        height:10%;
+        height:20%;
         background-color: #00919E;
         padding:10px;
         position: relative;
@@ -9,10 +9,8 @@ page-display-list-of-assessment {
     }
 
     .btn{
-        text-align: left;
-        button{
-            font-size: 1.5em;
-        }
+        margin-right:100px;
+        color:white;
     }
     h3{
         font-family: 'ZCOOL XiaoWei', serif;
@@ -23,7 +21,8 @@ page-display-list-of-assessment {
    
     .btnCreate{
         text-align: right;
-        margin-top: -70px;
+        // margin-top: -20px;
+        text-align: center;
         button{
             background-color: #00919E;
             color: white;

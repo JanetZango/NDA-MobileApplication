@@ -17,6 +17,7 @@ import { AddCapacityPage } from '../pages/add-capacity/add-capacity';
 import { AddOtpPage } from '../pages/add-otp/add-otp';
 import { ApiProvider } from '../providers/api/api';
 import { LocalstorageProvider } from '../providers/localstorage/localstorage';
+import { AsynPage } from '../pages/asyn/asyn';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import { LocalstorageProvider } from '../providers/localstorage/localstorage';
     DisplayListOfCapacityPage,
     AddAssessmentPage,
     AddCapacityPage,
-    AddOtpPage
+    AddOtpPage,
+    AsynPage
   ],
   imports: [
     BrowserModule,
@@ -48,7 +50,8 @@ import { LocalstorageProvider } from '../providers/localstorage/localstorage';
     AddCapacityPage,
     DisplayListOfAssessmentPage,
     DisplayListOfCapacityPage,
-    AddAssessmentPage
+    AddAssessmentPage,
+    AsynPage
   ],
   providers: [
     StatusBar,
