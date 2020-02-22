@@ -34,18 +34,14 @@ export class ApiProvider {
   public verifyUser( email:string):Observable<any>{
     const url = `${this.url}/user/verifyUser`;
     return this.http.post(url,{"email":email},httpOptions)
-    .pipe(
-      catchError(this.handleError)
-    );
+    .pipe(catchError(this.handleError(<any>("verifyUser"))))
 
   }
 
   public verifyOpt(code:any): Observable<any>{
     const url = `${this.url}/user/otp`;
     return this.http.post(url,{user:code},httpOptions)
-    .pipe(
-      catchError(this.handleError)
-    );
+    .pipe(catchError(this.handleError(<any>("verifyOpt"))))
   }
 
 
@@ -70,9 +66,4 @@ export class ApiProvider {
     };
   }
 
-  getcso(){
-    this.http.get('http://172.18.180.127:5000/cso').subscribe(data =>{
-      console.log(data)
-    })
-  }
 }

@@ -22,19 +22,41 @@ export class EntityProvider {
   constructor(
     public http: HttpClient,
     public config: ConfigService
-    
-    ) {
+
+  ) {
 
     this.url = config.getApiUrl();
   }
 
-  private url:string;
+  private url: string;
 
 
 
-  getcso(){
-    this.http.get('http://172.18.180.127:5000/cso').subscribe(data =>{
-      console.log(data)
-    })
+  public getCso(): Observable <any> {
+    const url = `${this.url}/cso`;
+    return this.http.get(url)
+      .pipe(catchError(this.handleError(<any>("getCso"))))
   }
+
+  /**
+ * Handle Http operation that failed.
+ * Let the app continue.
+ * 
+ * @param operation - name of the operation that failed
+ * @param result - optional value to return as the observable result
+ */
+  handleError<T>(operation = 'operation', result?: T) {
+    return (error: any): Observable<T> => {
+
+      // TODO: send the error to remote logging infrastructure
+      console.log(error); // log to console instead
+
+      // TODO: better job of transforming error for user consumption
+      console.error(`Api: ${operation} failed: ${error.message}`);
+
+      // Let the app keep running by returning an empty result.
+      return of(result as T);
+    };
+  }
+
 }
