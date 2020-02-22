@@ -32,11 +32,13 @@ export class LoginPage {
     console.log('ionViewDidLoad LoginPage');
   }
   verifyemail(form: NgForm) {
-    
-    this.authUser.verifyUser("").subscribe(res => {
 
-      if (this.email == null || this.email == undefined || this.email == '') {
-
+    if(form.value.email=== ''){
+      return;
+    }
+    debugger
+    this.authUser.verifyUser(form.value.email).subscribe(res => {
+      if (res === undefined) {
         const alert = this.alertCtrl.create({
           title: 'Error!',
           subTitle: 'Please enter your email address!',

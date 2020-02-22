@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { HttpClient, HttpHeaders } from '@angular/common/http';
+import { HttpClient, HttpHeaders, HttpErrorResponse } from '@angular/common/http';
 import { Observable } from 'rxjs/Observable';
 import { of } from 'rxjs/observable/of';
 import { catchError, tap } from 'rxjs/operators';
@@ -33,18 +33,37 @@ export class ApiProvider {
 
   public verifyUser( email:string):Observable<any>{
     const url = `${this.url}/user/verifyUser`;
-    return this.http.post(url,{user:email},httpOptions);
+    return this.http.post(url,{"email":email},httpOptions)
+    .pipe(catchError(this.handleError(<any>("verifyUser"))))
 
   }
 
   public verifyOpt(code:any): Observable<any>{
     const url = `${this.url}/user/otp`;
-    return this.http.post(url,{user:code},httpOptions);
+    return this.http.post(url,{user:code},httpOptions)
+    .pipe(catchError(this.handleError(<any>("verifyOpt"))))
   }
 
-  getcso(){
-    this.http.get('http://172.18.180.127:5000/cso').subscribe(data =>{
-      console.log(data)
-    })
+
+  /**
+   * Handle Http operation that failed.
+   * Let the app continue.
+   * 
+   * @param operation - name of the operation that failed
+   * @param result - optional value to return as the observable result
+   */
+  handleError<T> (operation = 'operation', result?: T) {
+    return (error: any): Observable<T> => {
+
+      // TODO: send the error to remote logging infrastructure
+      console.log(error); // log to console instead
+
+      // TODO: better job of transforming error for user consumption
+      console.error(`Api: ${operation} failed: ${error.message}`);
+
+      // Let the app keep running by returning an empty result.
+      return of(result as T);
+    };
   }
+
 }
