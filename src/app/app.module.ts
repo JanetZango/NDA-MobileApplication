@@ -6,11 +6,29 @@ import { StatusBar } from '@ionic-native/status-bar';
 
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
+import { LoginPage } from '../pages/login/login';
+import { LandingPage } from '../pages/landing/landing';
+import { DisplayListOfCsoPage } from '../pages/display-list-of-cso/display-list-of-cso';
+import { RegistercsoPage } from '../pages/registercso/registercso';
+import { DisplayListOfCapacityPage } from '../pages/display-list-of-capacity/display-list-of-capacity';
+import { DisplayListOfAssessmentPage } from '../pages/display-list-of-assessment/display-list-of-assessment';
+import { AddAssessmentPage } from '../pages/add-assessment/add-assessment';
+import { AddCapacityPage } from '../pages/add-capacity/add-capacity';
+import { AddOtpPage } from '../pages/add-otp/add-otp';
 
 @NgModule({
   declarations: [
     MyApp,
-    HomePage
+    HomePage,
+    LoginPage,
+    LandingPage,
+    DisplayListOfCsoPage,
+    RegistercsoPage,
+    DisplayListOfAssessmentPage,
+    DisplayListOfCapacityPage,
+    AddAssessmentPage,
+    AddCapacityPage,
+    AddOtpPage
   ],
   imports: [
     BrowserModule,
@@ -19,12 +37,23 @@ import { HomePage } from '../pages/home/home';
   bootstrap: [IonicApp],
   entryComponents: [
     MyApp,
-    HomePage
+    HomePage,
+    LoginPage,
+    LandingPage,
+    DisplayListOfCsoPage,
+    RegistercsoPage,
+    AddOtpPage,
+    AddCapacityPage,
+    DisplayListOfAssessmentPage,
+    DisplayListOfCapacityPage,
+    AddAssessmentPage
   ],
   providers: [
     StatusBar,
     SplashScreen,
-    {provide: ErrorHandler, useClass: IonicErrorHandler}
+    {provide: ErrorHandler, useClass: IonicErrorHandler},
+  
+  
   ]
 })
 export class AppModule {}

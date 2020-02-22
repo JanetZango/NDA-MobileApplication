@@ -1,0 +1,27 @@
+
+
+<ion-content>
+  <div class="top">
+    <div class="btn">
+        <button ion-button clear (click)="gotoback()">
+            <ion-icon ios="ios-arrow-round-back" md="md-arrow-round-back"></ion-icon>
+        </button>
+    </div>
+    <div class="btnCreate">
+        <button ion-button (click)="addBuilding()">Create Capacity CSO Building Intervention</button>
+    </div>
+</div>
+<div class="Bottom">
+    <h3>*Manage CSO Capacity Building Interventions</h3>
+    <ion-card *ngFor="let x of displayCapacity">
+        <div class="card">
+            <p><b>Cso Name:</b>{{x.name_of_cso}}</p>
+            <p><b>Assessment completed:</b>{{x.assessment_completed}}</p>
+            <p><b>Calc Assessment Score:</b>{{x.calc_assessment_score}}</p>
+            <p><b>Calc Assessment Level:</b>{{x.calc_assessment_level}}</p>
+            <!-- <button ion-button (click)="viewMore(x.Fname)">View More</button> -->
+        </div>
+    </ion-card>
+</div>
+
+</ion-content>

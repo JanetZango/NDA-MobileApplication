@@ -1,0 +1,140 @@
+<ion-content class="content">
+  <div class="divImage">
+    <p>Add CSO</p>
+  </div>
+        <ion-input placeholder="Name of Cso" [(ngModel)]="name_of_cso" type="text" class="user-input" id="anim1"
+          (input)="getItems($event)"></ion-input>
+
+        <div id="results">
+          <ion-item no-lines *ngFor="let item of items; let i=index" (click)="openMarkerInfo(item)">
+            <p>{{item}}</p>
+          </ion-item>
+        </div>
+
+        <ion-item id="item">
+          <ion-label> Mobilisation Method</ion-label>
+          <ion-select [(ngModel)]="cso_mobilisation_method_id">
+            <ion-option value="1">SASSA ICROP</ion-option>
+            <ion-option value="2">DSD Outreach Program</ion-option>
+            <ion-option value="3">Government Outreach Program</ion-option>
+            <ion-option value="4">Community Dialogues</ion-option>
+            <ion-option value="5">Community Consultations</ion-option>
+            <ion-option value="6">Partnership</ion-option>
+            <ion-option value="7">Civil Society Networks</ion-option>
+            <ion-option value="8">Office Walk-ins</ion-option>
+          </ion-select>
+        </ion-item>
+        <div class="Contacts">
+          <ion-label>Date</ion-label>
+          <input type="date" placeholder="Mobilisation_date" id="input-field" [(ngModel)]="created_date">
+        </div>
+   
+        <ion-input placeholder="Physical_Address" type="text" class="user-input" [(ngModel)]="physical_address"
+          id="anim1">
+        </ion-input>
+
+
+        <ion-item id="item">
+          <ion-label> Select Cso_type</ion-label>
+          <ion-select [(ngModel)]="cso_type_id">
+            <ion-option value="1">Non Profit organization</ion-option>
+            <ion-option value="2">Community based organization</ion-option>
+            <ion-option value="3">Faith based organization</ion-option>
+            <ion-option value="4">Early Childhood development</ion-option>
+            <ion-option value="5">Cooperate</ion-option>
+            <ion-option value="6">Community structure</ion-option>
+            <ion-option value="7">CompanyCC</ion-option>
+            <ion-option value="8">Disability people organization</ion-option>
+            <ion-option value="9">SPort</ion-option>
+
+          </ion-select>
+        </ion-item>
+
+
+        <ion-item id="item">
+          <ion-label> Select Cso_sector</ion-label>
+          <ion-select [(ngModel)]="cso_sector_id">
+            <ion-option value="1">Education</ion-option>
+            <ion-option value="2">Health Care</ion-option>
+            <ion-option value="3">Older Person/Senior Citizens</ion-option>
+            <ion-option value="4">Youth</ion-option>
+            <ion-option value="5">Orphanage and Vulnerable Children</ion-option>
+            <ion-option value="6">Gender</ion-option>
+            <ion-option value="7">Human Rights</ion-option>
+            <ion-option value="8">Environment</ion-option>
+            <ion-option value="9">Trade</ion-option>
+            <ion-option value="10">Poverty Alleviation</ion-option>
+            <ion-option value="11">Community Safety</ion-option>
+            <ion-option value="12">Communal Property Association</ion-option>
+            <ion-option value="13">Agriculture</ion-option>
+          </ion-select>
+        </ion-item>
+     
+
+        <ion-item id="item">
+          <ion-label> Select Province</ion-label>
+          <ion-select (ionChange)="getDistrictFilter()" [(ngModel)]="province_id">
+            <ion-option *ngFor="let a of disDistrict" [value]="a.id">{{a.province_name}}
+            </ion-option>
+          </ion-select>
+        </ion-item>
+
+        <ion-item id="item">
+          <ion-label> Select District</ion-label>
+          <ion-select (ionChange)="getMunicipality()" [(ngModel)]="district_id">
+            <ion-option *ngFor="let district of disDistrict2" [value]="district.id">{{district.district_name}}
+            </ion-option>
+          </ion-select>
+        </ion-item>
+
+        <ion-item id="item">
+          <ion-label> Select Municipality</ion-label>
+          <ion-select [(ngModel)]="municipality_id">
+            <ion-option *ngFor="let district of disDistrict3" [value]="district.id">
+              {{district.municipality_name}}
+            </ion-option>
+          </ion-select>
+        </ion-item>
+
+      
+        <ion-input placeholder="Ward_number" type="number" class="user-input" [(ngModel)]="ward_number" id="anim1">
+        </ion-input>
+
+        <ion-input placeholder="Contact_Person" type="text" class="user-input" [(ngModel)]="contact_person" id="anim1">
+        </ion-input>
+
+        <ion-input placeholder="Contact_Number" type="number" class="user-input" [(ngModel)]="contact_number"
+          id="anim1">
+        </ion-input>
+     
+
+    
+
+        <ion-input placeholder="Total_Staff" type="number" class="user-input" [(ngModel)]="total_staff" id="anim1">
+        </ion-input>
+
+
+        <ion-input placeholder="Collected_by" [(ngModel)]="collected_by" type="text" class="user-input" id="anim1"
+          (input)="getItems($event)"></ion-input>
+
+        <div id="results">
+          <ion-item no-lines *ngFor="let item of items; let i=index" (click)="openMarkerInfo(item)">
+            <p>{{item}}</p>
+          </ion-item>
+        </div>
+
+        <div id="results">
+          <ion-item no-lines *ngFor="let item of items; let i=index" (click)="openMarkerInfo()">
+            <p>{{item}}</p>
+          </ion-item>
+        </div>
+
+        <div class="moveCont">
+          <button ion-button round class="btnSign" id="anim2" color="secAlert" id="myBtn"
+            (click)="SignUp()">Save</button>
+          <button ion-button round class="btnSign" id="anim2" color="secAlert" id="myBtn"
+            (click)="reset(Name_of_Cso.value,MobiMethod.value,created_date.value,physical_address.value,cso_type_id.value,cso_sector_id.value,province_id.value,district_id.value,municipality_id.value,ward_number.value,contact_person.value,contact_number.value,total_staff.value,collected_by.value)">Reset</button>
+        </div>
+
+ 
+</ion-content>
