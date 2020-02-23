@@ -23,6 +23,7 @@ import { ConfigService } from '../providers/config/config.server';
 import { EntityProvider } from '../providers/entity/cso'
 import { ViewcsodetailsPage } from '../pages/viewcsodetails/viewcsodetails';
 import { LookUpService } from '../providers/lookup/lookups.service';
+import { DataProvider } from '../providers/dataproviders/dataprovider';
 
 
 @NgModule({
@@ -69,7 +70,9 @@ import { LookUpService } from '../providers/lookup/lookups.service';
     ApiProvider,
     EntityProvider,
     ConfigService,
-    LookUpService
+    LookUpService,
+    DataProvider
+
   ]
 })
 export class AppModule {}
