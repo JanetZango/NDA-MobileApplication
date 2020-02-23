@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { NgModel, NgForm } from '@angular/forms';
 import { DisplayListOfCsoPage } from '../display-list-of-cso/display-list-of-cso';
 import { LookUpService } from '../../providers/lookup/lookups.service';
 /**
@@ -108,6 +109,11 @@ export class RegistercsoPage {
       console.log(this.csosectorArr)
     })
   }
+  addCapacity(capacity: NgForm){
 
+
+    console.log(JSON.stringify(capacity.value));
+    debugger
+  }
 
 }
