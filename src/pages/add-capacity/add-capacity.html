@@ -7,8 +7,8 @@
   </div>
     <p>Add Capacity Building</p>
   </div>
-  
-        <ion-input placeholder="Name_of_Cso" [(ngModel)]="cso_name" type="text" class="user-input" id="anim1"
+  <form #capacity="ngForm"  (ngSubmit)="addCapacity(capacity)"> 
+        <ion-input placeholder="Name_of_Cso" [(ngModel)]="cso_name" ngModel  name="cso_name"   type="text" class="user-input" id="anim1"
           (input)="getItems($event)"></ion-input>
 
         <div id="results">
@@ -20,7 +20,7 @@
 
         <ion-item id="item">
           <ion-label> Select Capacity Building Type</ion-label>
-          <ion-select [(ngModel)]="capacity_building_type_id">
+          <ion-select [(ngModel)]="capacity_building_type_id"  name="capacity_building_type_id" ngModel>
             <ion-option *ngFor="let a of capacityArr" [value]="a.id">{{a.capacity_building_type_name}}
             </ion-option>
           </ion-select>
@@ -28,7 +28,7 @@
 
         <ion-item id="item">
           <ion-label> Select Province</ion-label>
-          <ion-select  [(ngModel)]="province_id">
+          <ion-select  [(ngModel)]="province_id" ngModel name="province_id">
             <ion-option *ngFor="let a of provinceArr" [value]="a.id">{{a.province_name}}
             </ion-option>
           </ion-select>
@@ -36,7 +36,7 @@
 
         <ion-item id="item">
           <ion-label> Select District</ion-label>
-          <ion-select [(ngModel)]="district_id">
+          <ion-select [(ngModel)]="district_id" ngModel name="district_id">
             <ion-option *ngFor="let district of districtArr" [value]="district.id">{{district.district_name}}
             </ion-option>
           </ion-select>
@@ -45,7 +45,7 @@
 
         <ion-item id="item">
           <ion-label> Select Municipality</ion-label>
-          <ion-select [(ngModel)]="municipality_id">
+          <ion-select [(ngModel)]="municipality_id" ngModel name="municipality_id">
             <ion-option *ngFor="let district of municipalityArr" [value]="district.id">
               {{district.municipality_name}}
             </ion-option>
@@ -54,37 +54,38 @@
 
         <ion-item id="item">
           <ion-label> Select Partner</ion-label>
-          <ion-select [(ngModel)]="partner_id">
+          <ion-select [(ngModel)]="partner_id" ngModel name="partner_id">
             <ion-option *ngFor="let district of partnerArr" [value]="district.id">
               {{district.partner_type_name}}
             </ion-option>
           </ion-select>
         </ion-item>
 
-        <ion-input placeholder="Venue" type="text" class="user-input" [(ngModel)]="venue" id="anim1"></ion-input>
+        <ion-input placeholder="Venue" type="text" class="user-input" name="venue" [(ngModel)]="venue" id="anim1" ngModel ></ion-input>
 
       
-        <ion-input placeholder="Facilitor Name" type="text" class="user-input" [(ngModel)]="facilitator_name"
-          id="anim1">
+        <ion-input placeholder="Facilitor Name" type="text" class="user-input" name="facilitator_name" [(ngModel)]="facilitator_name"
+          id="anim1" ngModel>
         </ion-input>
 
-        <ion-input placeholder="Funding Source" type="text" class="user-input" [(ngModel)]="funding_source_id"
-          id="anim1"></ion-input>
+        <ion-input placeholder="Funding Source" type="text" class="user-input"  name="funding_source_id"  [(ngModel)]="funding_source_id"
+          id="anim1" ngModel></ion-input>
 
-        <ion-input placeholder="Colllected by" type="text" class="user-input" [(ngModel)]="collected_by" id="anim1">
+        <ion-input placeholder="Colllected by" type="text" class="user-input" name="collected_by" [(ngModel)]="collected_by" id="anim1" ngModel>
         </ion-input>
 
         <div class="Contacts">
           <ion-label>Start date</ion-label>
-          <input type="date" id="input-field" [(ngModel)]="start_date">
+          <input type="date" id="input-field" [(ngModel)]="start_date" name="start_date" ngModel>
           <br>
           <ion-label>End date</ion-label>
-          <input type="date" id="input-field"  name="txtDate" [(ngModel)]="end_date">
+          <input type="date" id="input-field"  name="end_date" [(ngModel)]="end_date" ngModel>
         </div>
     
         <div class="moveCont">
-          <button ion-button round class="btnSign" id="anim2" (click)="addCapacity()">Rgister
+          <button  type="submit"  ion-button round class="btnSign" id="anim2">Rgister
             A Member</button>
         </div>
+      </form>
 
 </ion-content>

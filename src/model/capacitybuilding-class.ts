@@ -11,5 +11,4 @@ export class CapacityBuilding {
     collected_by:number;
     start_date:Date;
     end_date:Date;
-
 }

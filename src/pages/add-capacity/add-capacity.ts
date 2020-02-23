@@ -1,8 +1,9 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
-import { NgModel } from '@angular/forms';
+import { NgModel, NgForm } from '@angular/forms';
 import { DisplayListOfCapacityPage } from '../display-list-of-capacity/display-list-of-capacity';
 import { LookUpService } from '../../providers/lookup/lookups.service';
+import { CapacityBuilding } from '../../model/capacitybuilding-class';
 
 
 /**
@@ -26,7 +27,11 @@ export class AddCapacityPage {
   provinceArr = new Array();
   municipalityArr = new Array();
   partnerArr = new Array();
-  constructor(public navCtrl: NavController, public navParams: NavParams,public lookupService: LookUpService) {
+  capacity: CapacityBuilding = new CapacityBuilding();
+  constructor(
+    public navCtrl: NavController, 
+    public navParams: NavParams,
+    public lookupService: LookUpService) {
   }
 
   ionViewDidLoad() {
@@ -82,7 +87,11 @@ export class AddCapacityPage {
   }
 
 
+  addCapacity(capacity: NgForm){
 
- 
+
+    console.log(JSON.stringify(capacity.value));
+    debugger
+  }
 
 }
