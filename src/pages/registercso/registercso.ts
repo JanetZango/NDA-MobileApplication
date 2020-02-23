@@ -1,7 +1,9 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { NgModel, NgForm } from '@angular/forms';
 import { DisplayListOfCsoPage } from '../display-list-of-cso/display-list-of-cso';
 import { LookUpService } from '../../providers/lookup/lookups.service';
+import { EntityProvider } from '../../providers/entity/cso';
 /**
  * Generated class for the RegistercsoPage page.
  *
@@ -35,14 +37,25 @@ export class RegistercsoPage {
 
   //arrays
   csotypeArr = new Array();
+  districtArr = new Array();
+  provinceArr = new Array();
+  municipalityArr = new Array();
+  csosectorArr = new Array();
 
 
-  constructor(public navCtrl: NavController, public navParams: NavParams,public lookupService: LookUpService) {
+  constructor(public navCtrl: NavController,
+     public navParams: NavParams,
+     public lookupService: LookUpService,
+     public entityProvider: EntityProvider) {
   }
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad RegistercsoPage');
- 
+    this.getProvince();
+    this.getMunicipality();
+    this.getDistrict();
+    this.getCsoType();
+    this.getCsoSector();
   }
 
  
@@ -64,6 +77,50 @@ export class RegistercsoPage {
     this.total_staff="";
     this.Collected_by="";
     this.contact_person="";
+  }
+
+  getCsoType(){
+    this.lookupService.getCsoType().subscribe(res =>{
+      this.csotypeArr = res
+      console.log(this.csotypeArr)
+    })
+  }
+
+  getDistrict(){
+    this.lookupService.getDistrict().subscribe(res =>{
+      this.districtArr = res 
+      console.log(this.districtArr)
+
+    })
+  }
+
+  getProvince(){
+    this.lookupService.getProvince().subscribe(res =>{
+      this.provinceArr = res
+      console.log(this.provinceArr)
+    })
+  }
+  getMunicipality(){
+    this.lookupService.getLocalMunicipality().subscribe(res =>{
+      this.municipalityArr = res
+      console.log(this.municipalityArr)
+    })
+  }
+
+  getCsoSector(){
+    this.lookupService.getCsoSector().subscribe(res =>{
+      this.csosectorArr = res
+      console.log(this.csosectorArr)
+    })
+  }
+  addCso(cso: NgForm){
+
+    this.entityProvider.saveCso(cso.value)
+      .subscribe(res =>{
+        if(res){
+          console.log("I have posted cso")
+        }
+      });
   }
 
 }

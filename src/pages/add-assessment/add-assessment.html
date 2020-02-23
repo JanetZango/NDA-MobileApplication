@@ -10,7 +10,7 @@
     <ion-slides pager="true" class="slide">
       <ion-slide>
         <ion-input placeholder="Type the name of CSO" type="search" id="site-search" class="user-input"
-          [(ngModel)]="cso_name" (input)="getItems($event)" id="anim1"></ion-input>
+          [(ngModel)]="cso_name" name="cso_name" id="anim1" ngModel></ion-input>
 
         <div id="results">
           <ion-item no-lines *ngFor="let item of items; let i=index" for="site-search" (click)="openMarkerInfo(item)">
@@ -21,7 +21,7 @@
     
         <div class="Contacts">
           <ion-label>Assessment date</ion-label>
-          <input type="date" id="input-field" [(ngModel)]="assessment_date">
+          <input type="date" id="input-field" [(ngModel)]="assessment_date" name="assessment_date" ngModel>
           <br>
         </div>
 

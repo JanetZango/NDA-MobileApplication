@@ -61,6 +61,12 @@ export class EntityProvider {
       .pipe(catchError(this.handleError(<any>("saveCapacityBuilding"))));
   }
 
+  public saveCso(cso): Observable<any> {
+    const url = `${this.url}/cso`;
+    return this.http.post(url,cso,httpOptions)
+      .pipe(catchError(this.handleError(<any>("saveCso"))));
+  }
+
   /**
  * Handle Http operation that failed.
  * Let the app continue.
