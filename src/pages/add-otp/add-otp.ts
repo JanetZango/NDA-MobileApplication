@@ -36,7 +36,7 @@ export class AddOtpPage {
     }
 
     this.authUser.verifyOpt(otpf.value.otp).subscribe(res =>{
-      debugger
+      
       if(res === undefined){
         const alert = this.alertCtrl.create({
           title: 'Error!',

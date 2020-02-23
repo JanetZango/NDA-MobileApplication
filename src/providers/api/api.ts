@@ -13,7 +13,7 @@ import { ConfigService } from '../config/config.server';
 */
 
 const httpOptions = {
-  headers: new HttpHeaders({ 'Content-Type': 'application/json' })
+ // headers: new HttpHeaders({ 'Content-Type': 'application/json' })
 };
 
 @Injectable()
@@ -59,7 +59,7 @@ export class ApiProvider {
       console.log(error); // log to console instead
 
       // TODO: better job of transforming error for user consumption
-      console.error(`Api: ${operation} failed: ${error.message}`);
+      //console.error(`Api: ${operation} failed: ${error.message}`);
 
       // Let the app keep running by returning an empty result.
       return of(result as T);

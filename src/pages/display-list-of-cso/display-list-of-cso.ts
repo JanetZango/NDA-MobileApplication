@@ -22,6 +22,7 @@ export class DisplayListOfCsoPage implements OnInit{
 //variables
   cso;
   DisplayCso = new Array();
+  items;
   constructor(
     public navCtrl: NavController, 
     public navParams: NavParams,
@@ -41,11 +42,10 @@ export class DisplayListOfCsoPage implements OnInit{
   }
   ngOnInit(){
     this.csoApi.getCso().subscribe(res => {
-      
       if(res){
         console.log(res.results);
         this.DisplayCso = res.results
-        console.log(this.DisplayCso)
+        // console.log(this.DisplayCso.cso_name)
       }
 
     })
@@ -58,10 +58,36 @@ export class DisplayListOfCsoPage implements OnInit{
         this.navCtrl.push(ViewcsodetailsPage, { orgObject: this.DisplayCso[x] });
         break;
       }
-
     }
+  }
 
-
+  getItems(ev: any) {
+    console.log(`hi serach`);
+    this.initializeItems();
+    // this.searchlist = true
+    // set val to the value of the searchbar
+    const val = ev.target.value;
+    // if the value is an empty string don't filter the items
+    if (val && val.trim() != '') {
+      this.items = this.items.filter((item) => {
+        return (item.toLowerCase().indexOf(val.toLowerCase()) > -1);
+      })
+      let searchlist = document.getElementsByClassName('searchitem') as HTMLCollectionOf<HTMLElement>;
+      //searchlist[0].style.display = 'block';
+    }
+    else {
+      this.items = []
+    }
+  }
+  initializeItems() {
+    this.items = []
+    this.items = this.namesArr
+    console.log(this.items)
+  }
+  namesArr = new Array()
+  storeNames() {
+    // this.namesArr = this.sqliteService.getName();
+    // console.log(this.namesArr)
   }
 
 }
