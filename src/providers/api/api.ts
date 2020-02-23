@@ -13,7 +13,8 @@ import { ConfigService } from '../config/config.server';
 */
 
 const httpOptions = {
- // headers: new HttpHeaders({ 'Content-Type': 'application/json' })
+  // headers: new HttpHeaders({ 'Content-Type': 'application/json' })
+  observe: 'response'
 };
 
 @Injectable()
@@ -22,26 +23,26 @@ export class ApiProvider {
   constructor(
     public http: HttpClient,
     public config: ConfigService
-    
-    ) {
+
+  ) {
 
     this.url = config.getApiUrl();
   }
 
-  private url:string;
+  private url: string;
 
 
-  public verifyUser( email:string):Observable<any>{
+  public verifyUser(email: string): Observable<any> {
     const url = `${this.url}/user/verifyUser`;
-    return this.http.post(url,{"email":email},httpOptions)
-    .pipe(catchError(this.handleError(<any>("verifyUser"))))
+    return this.http.post(url, { "email": email }, httpOptions)
+      .pipe(catchError(this.handleError(<any>("verifyUser"))));
 
   }
 
-  public verifyOpt(code:string): Observable<any>{
+  public verifyOpt(code: string): Observable<any> {
     const url = `${this.url}/user/otp`;
-    return this.http.post(url,{"otp":code},httpOptions)
-    .pipe(catchError(this.handleError(<any>("verifyOpt"))))
+    return this.http.post(url, { "otp": code }, httpOptions)
+      .pipe(catchError(this.handleError(<any>("verifyOpt"))));
   }
 
 
@@ -52,14 +53,14 @@ export class ApiProvider {
    * @param operation - name of the operation that failed
    * @param result - optional value to return as the observable result
    */
-  handleError<T> (operation = 'operation', result?: T) {
+  handleError<T>(operation = 'operation', result?: T) {
     return (error: any): Observable<T> => {
 
       // TODO: send the error to remote logging infrastructure
       console.log(error); // log to console instead
 
       // TODO: better job of transforming error for user consumption
-      //console.error(`Api: ${operation} failed: ${error.message}`);
+      console.error(`Api: ${operation} failed: ${error.message}`);
 
       // Let the app keep running by returning an empty result.
       return of(result as T);

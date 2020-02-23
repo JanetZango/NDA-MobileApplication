@@ -5,6 +5,7 @@ import { DisplayListOfCapacityPage } from '../display-list-of-capacity/display-l
 import { LookUpService } from '../../providers/lookup/lookups.service';
 import { CapacityBuilding } from '../../model/capacitybuilding-class';
 import { EntityProvider } from '../../providers/entity/cso';
+import { DataProvider } from '../../providers/dataproviders/dataprovider';
 
 
 /**
@@ -34,19 +35,18 @@ export class AddCapacityPage {
     public navParams: NavParams,
     public lookupService: LookUpService,
     public entityProvider: EntityProvider,
-    public alertCtrl: AlertController
+    public alertCtrl: AlertController,
+    public csoProvider: DataProvider
     ) {
   }
 
   ionViewDidLoad() {
-    console.log('ionViewDidLoad AddCapacityPage');
+    //console.log('ionViewDidLoad AddCapacityPage');
     this.getDistrict();
     this.getProvince();
     this.getPartnerType();
     this.getMunicipality();
     this.getCapacityBuilding();
-
-  
   }
 
   gotoback(){
@@ -55,48 +55,40 @@ export class AddCapacityPage {
 
   getCapacityBuilding(){
     this.lookupService.getCapacityBuildingType().subscribe(res =>{
-      console.log(res)
-      this.capacityArr = res 
-      console.log(this.capacityArr)
+      this.capacityArr = res;
     })
   }
 
   getDistrict(){
     this.lookupService.getDistrict().subscribe(res =>{
-      this.districtArr = res 
-      console.log(this.districtArr)
-
+      this.districtArr = res;
     })
   }
 
   getProvince(){
     this.lookupService.getProvince().subscribe(res =>{
-      this.provinceArr = res
-      console.log(this.provinceArr)
+      this.provinceArr = res;
     })
   }
 
   getPartnerType(){
     this.lookupService.getPartnerType().subscribe(res =>{
-      this.partnerArr = res
-      console.log(this.partnerArr)
+      this.partnerArr = res;
     })
   }
 
   getMunicipality(){
     this.lookupService.getLocalMunicipality().subscribe(res =>{
-      this.municipalityArr = res
-      console.log(this.municipalityArr)
+      this.municipalityArr = res;
     })
   }
 
-
   addCapacity(capacity: NgForm){
-
     this.entityProvider.saveCapacityBuilding(capacity.value)
       .subscribe(res =>{
-        debugger
-        if(res){
+        if(res.status === 201){
+          // TODO
+        }else{
           const alert = this.alertCtrl.create({
             title: 'Alert',
             subTitle: 'Capacity Building Saved',
@@ -106,5 +98,4 @@ export class AddCapacityPage {
         }
       });
   }
-
 }

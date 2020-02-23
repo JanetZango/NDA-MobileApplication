@@ -33,8 +33,6 @@ export class AddAssessmentPage {
     this.navCtrl.push(DisplayListOfAssessmentPage)
   }
 
-
-
   getAssessementAnswer(){
     
     this.lookupService.getAssessementAnswer().subscribe(res => {

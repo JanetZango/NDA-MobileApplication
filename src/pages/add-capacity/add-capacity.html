@@ -8,8 +8,8 @@
     <p>Add Capacity Building</p>
   </div>
   <form #capacity="ngForm"  (ngSubmit)="addCapacity(capacity)"> 
-        <ion-input placeholder="Name_of_Cso" [(ngModel)]="cso_name" ngModel  name="cso_name"   type="text" class="user-input" id="anim1"
-          (input)="getItems($event)"></ion-input>
+        <ion-input placeholder="Name Of Cso" [(ngModel)]="cso_name" ngModel  name="cso_name"   type="text" class="user-input" id="anim1"
+        ></ion-input>
 
         <div id="results">
           <ion-item no-lines *ngFor="let item of items; let i=index" (click)="openMarkerInfo(item)">

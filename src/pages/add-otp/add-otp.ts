@@ -27,7 +27,7 @@ export class AddOtpPage {
   }
 
   ionViewDidLoad() {
-    console.log('ionViewDidLoad AddOtpPage');
+    //console.log('ionViewDidLoad AddOtpPage');
   }
   login(otpf: NgForm){
     
@@ -37,7 +37,7 @@ export class AddOtpPage {
 
     this.authUser.verifyOpt(otpf.value.otp).subscribe(res =>{
       
-      if(res === undefined){
+      if(res.status !== 200){
         const alert = this.alertCtrl.create({
           title: 'Error!',
           subTitle: 'Please enter your OTP code!',

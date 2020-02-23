@@ -29,7 +29,7 @@ export class LoginPage {
   }
 
   ionViewDidLoad() {
-    console.log('ionViewDidLoad LoginPage');
+    //console.log('ionViewDidLoad LoginPage');
   }
   verifyemail(form: NgForm) {
 
@@ -38,14 +38,15 @@ export class LoginPage {
     }
     
     this.authUser.verifyUser(form.value.email).subscribe(res => {
-      if (res === undefined) {
+      
+      if (res.status !== 200) {
+        
         const alert = this.alertCtrl.create({
           title: 'Error!',
           subTitle: 'Please enter your email address!',
           buttons: ['OK']
         });
-        alert.present()
-
+        alert.present();
       }
       else {
         this.navCtrl.push(AddOtpPage)
