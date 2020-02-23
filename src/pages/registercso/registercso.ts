@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { DisplayListOfCsoPage } from '../display-list-of-cso/display-list-of-cso';
-
+import { LookUpService } from '../../providers/lookup/lookups.service';
 /**
  * Generated class for the RegistercsoPage page.
  *
@@ -33,13 +33,20 @@ export class RegistercsoPage {
   total_staff;
   Collected_by
 
+  //arrays
+  csotypeArr = new Array();
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+
+  constructor(public navCtrl: NavController, public navParams: NavParams,public lookupService: LookUpService) {
   }
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad RegistercsoPage');
+ 
   }
+
+ 
+
   gotoback(){
     this.navCtrl.push(DisplayListOfCsoPage)
   }
