@@ -16,7 +16,8 @@ import { LookUpService } from '../../providers/lookup/lookups.service';
   templateUrl: 'add-assessment.html',
 })
 export class AddAssessmentPage {
-
+  assessment_type_id;
+  showQuestions: boolean = false;
   constructor(
     public navCtrl: NavController, 
     public navParams: NavParams,
@@ -39,6 +40,16 @@ export class AddAssessmentPage {
     this.lookupService.getAssessementAnswer().subscribe(res => {
       console.log(res);
     });
+  }
+
+  AssessmentQuestions() {
+    if (this.assessment_type_id == "1") {
+      this.showQuestions = true;
+      console.log("show")
+    }
+    else {
+      this.showQuestions = false
+    }
   }
 
 }

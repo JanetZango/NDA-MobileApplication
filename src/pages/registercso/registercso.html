@@ -41,16 +41,8 @@
         <ion-item id="item">
           <ion-label> Select Cso_type</ion-label>
           <ion-select [(ngModel)]="cso_type_id">
-            <ion-option value="1">Non Profit organization</ion-option>
-            <ion-option value="2">Community based organization</ion-option>
-            <ion-option value="3">Faith based organization</ion-option>
-            <ion-option value="4">Early Childhood development</ion-option>
-            <ion-option value="5">Cooperate</ion-option>
-            <ion-option value="6">Community structure</ion-option>
-            <ion-option value="7">CompanyCC</ion-option>
-            <ion-option value="8">Disability people organization</ion-option>
-            <ion-option value="9">SPort</ion-option>
-
+            <ion-option *ngFor="let a of csotypeArr" [value]="a.id">{{a.cso_type_name}}
+            </ion-option>
           </ion-select>
         </ion-item>
 
@@ -58,35 +50,24 @@
         <ion-item id="item">
           <ion-label> Select Cso_sector</ion-label>
           <ion-select [(ngModel)]="cso_sector_id">
-            <ion-option value="1">Education</ion-option>
-            <ion-option value="2">Health Care</ion-option>
-            <ion-option value="3">Older Person/Senior Citizens</ion-option>
-            <ion-option value="4">Youth</ion-option>
-            <ion-option value="5">Orphanage and Vulnerable Children</ion-option>
-            <ion-option value="6">Gender</ion-option>
-            <ion-option value="7">Human Rights</ion-option>
-            <ion-option value="8">Environment</ion-option>
-            <ion-option value="9">Trade</ion-option>
-            <ion-option value="10">Poverty Alleviation</ion-option>
-            <ion-option value="11">Community Safety</ion-option>
-            <ion-option value="12">Communal Property Association</ion-option>
-            <ion-option value="13">Agriculture</ion-option>
+            <ion-option *ngFor="let a of csosectorArr" [value]="a.id">{{a.cso_sector_name}}
+            </ion-option>
           </ion-select>
         </ion-item>
      
 
         <ion-item id="item">
           <ion-label> Select Province</ion-label>
-          <ion-select (ionChange)="getDistrictFilter()" [(ngModel)]="province_id">
-            <ion-option *ngFor="let a of disDistrict" [value]="a.id">{{a.province_name}}
+          <ion-select  [(ngModel)]="province_id">
+            <ion-option *ngFor="let a of provinceArr" [value]="a.id">{{a.province_name}}
             </ion-option>
           </ion-select>
         </ion-item>
 
         <ion-item id="item">
           <ion-label> Select District</ion-label>
-          <ion-select (ionChange)="getMunicipality()" [(ngModel)]="district_id">
-            <ion-option *ngFor="let district of disDistrict2" [value]="district.id">{{district.district_name}}
+          <ion-select  [(ngModel)]="district_id">
+            <ion-option *ngFor="let district of districtArr" [value]="district.id">{{district.district_name}}
             </ion-option>
           </ion-select>
         </ion-item>
@@ -94,7 +75,7 @@
         <ion-item id="item">
           <ion-label> Select Municipality</ion-label>
           <ion-select [(ngModel)]="municipality_id">
-            <ion-option *ngFor="let district of disDistrict3" [value]="district.id">
+            <ion-option *ngFor="let district of municipalityArr" [value]="district.id">
               {{district.municipality_name}}
             </ion-option>
           </ion-select>
