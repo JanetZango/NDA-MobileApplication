@@ -22,6 +22,7 @@ import { AsynPage } from '../pages/asyn/asyn';
 import { ConfigService } from '../providers/config/config.server';
 import { EntityProvider } from '../providers/entity/cso'
 import { ViewcsodetailsPage } from '../pages/viewcsodetails/viewcsodetails';
+import { LookUpService } from '../providers/lookup/lookups.service';
 
 
 @NgModule({
@@ -67,7 +68,8 @@ import { ViewcsodetailsPage } from '../pages/viewcsodetails/viewcsodetails';
     {provide: ErrorHandler, useClass: IonicErrorHandler},
     ApiProvider,
     EntityProvider,
-    ConfigService
+    ConfigService,
+    LookUpService
   ]
 })
 export class AppModule {}
