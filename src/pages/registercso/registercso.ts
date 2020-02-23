@@ -110,8 +110,6 @@ export class RegistercsoPage {
     })
   }
   addCapacity(capacity: NgForm){
-
-
     console.log(JSON.stringify(capacity.value));
     debugger
   }
