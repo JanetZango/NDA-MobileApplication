@@ -44,8 +44,8 @@ export class DisplayListOfCsoPage implements OnInit{
     this.csoApi.getCso().subscribe(res => {
       if(res){
         console.log(res.results);
-        this.DisplayCso = res.results
-        // console.log(this.DisplayCso.cso_name)
+        this.DisplayCso = res.results.cso_name
+        console.log(this.DisplayCso)
       }
 
     })
