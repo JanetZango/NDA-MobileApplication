@@ -5,6 +5,7 @@ import { LandingPage } from '../landing/landing';
 import { ApiProvider } from '../../providers/api/api';
 import { EntityProvider } from '../../providers/entity/cso'
 import { ViewcsodetailsPage } from '../viewcsodetails/viewcsodetails';
+import { filter } from 'rxjs/operators';
 /**
  * Generated class for the DisplayListOfCsoPage page.
  *
@@ -23,6 +24,7 @@ export class DisplayListOfCsoPage implements OnInit{
   cso;
   DisplayCso = new Array();
   items;
+  filteedRe;
   constructor(
     public navCtrl: NavController, 
     public navParams: NavParams,
@@ -41,17 +43,22 @@ export class DisplayListOfCsoPage implements OnInit{
     this.navCtrl.push(LandingPage)
   }
   ngOnInit(){
+  this.displayCsoList();
+
+
+  }
+
+  displayCsoList(){
     this.csoApi.getCso().subscribe(res => {
       if(res){
         console.log(res.results);
-        this.DisplayCso = res.results.cso_name
+        this.DisplayCso = res.results
         console.log(this.DisplayCso)
       }
 
     })
-
-
   }
+
   viewMore(name) {
     for (var x = 0; x < this.DisplayCso.length; x++) {
       if (name == this.DisplayCso[x].nda_registration) {
@@ -61,33 +68,8 @@ export class DisplayListOfCsoPage implements OnInit{
     }
   }
 
-  getItems(ev: any) {
-    console.log(`hi serach`);
-    this.initializeItems();
-    // this.searchlist = true
-    // set val to the value of the searchbar
-    const val = ev.target.value;
-    // if the value is an empty string don't filter the items
-    if (val && val.trim() != '') {
-      this.items = this.items.filter((item) => {
-        return (item.toLowerCase().indexOf(val.toLowerCase()) > -1);
-      })
-      let searchlist = document.getElementsByClassName('searchitem') as HTMLCollectionOf<HTMLElement>;
-      //searchlist[0].style.display = 'block';
-    }
-    else {
-      this.items = []
-    }
-  }
-  initializeItems() {
-    this.items = []
-    this.items = this.namesArr
-    console.log(this.items)
-  }
-  namesArr = new Array()
-  storeNames() {
-    // this.namesArr = this.sqliteService.getName();
-    // console.log(this.namesArr)
-  }
+  
+
+
 
 }
