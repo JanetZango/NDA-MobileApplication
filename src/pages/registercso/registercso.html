@@ -101,7 +101,7 @@
 
 
   <ion-input placeholder="Collected_by" [(ngModel)]="collected_by" type="text" class="user-input" id="anim1"  name="collected_by" ngModel
-    (input)="getItems($event)"></ion-input>
+   ></ion-input>
 
   <div id="results">
     <ion-item no-lines *ngFor="let item of items; let i=index" (click)="openMarkerInfo(item)">

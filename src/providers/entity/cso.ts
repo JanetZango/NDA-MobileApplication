@@ -55,10 +55,14 @@ export class EntityProvider {
 
   public saveCapacityBuilding(capacity): Observable<any> {
     const url = `${this.url}/capacity_building`;
-    const data = JSON.stringify(capacity);
-    debugger
-    return this.http.post(url,data)
+    return this.http.post(url,capacity,httpOptions)
       .pipe(catchError(this.handleError(<any>("saveCapacityBuilding"))));
+  }
+
+  public saveCso(cso): Observable<any> {
+    const url = `${this.url}/cso`;
+    return this.http.post(url,cso,httpOptions)
+      .pipe(catchError(this.handleError(<any>("saveCso"))));
   }
 
   /**

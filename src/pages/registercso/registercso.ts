@@ -3,6 +3,7 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { NgModel, NgForm } from '@angular/forms';
 import { DisplayListOfCsoPage } from '../display-list-of-cso/display-list-of-cso';
 import { LookUpService } from '../../providers/lookup/lookups.service';
+import { EntityProvider } from '../../providers/entity/cso';
 /**
  * Generated class for the RegistercsoPage page.
  *
@@ -42,7 +43,10 @@ export class RegistercsoPage {
   csosectorArr = new Array();
 
 
-  constructor(public navCtrl: NavController, public navParams: NavParams,public lookupService: LookUpService) {
+  constructor(public navCtrl: NavController,
+     public navParams: NavParams,
+     public lookupService: LookUpService,
+     public entityProvider: EntityProvider) {
   }
 
   ionViewDidLoad() {
@@ -109,9 +113,14 @@ export class RegistercsoPage {
       console.log(this.csosectorArr)
     })
   }
-  addCapacity(capacity: NgForm){
-    console.log(JSON.stringify(capacity.value));
-    debugger
+  addCso(cso: NgForm){
+
+    this.entityProvider.saveCso(cso.value)
+      .subscribe(res =>{
+        if(res){
+          console.log("I have posted cso")
+        }
+      });
   }
 
 }
