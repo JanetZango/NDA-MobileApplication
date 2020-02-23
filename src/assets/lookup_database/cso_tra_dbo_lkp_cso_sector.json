@@ -1,0 +1,119 @@
+[
+  {
+    "id": 1,
+    "cso_sector_name": "Education",
+    "cso_sector_description": null,
+    "modified_by": null,
+    "modified_date": null,
+    "created_by": null,
+    "created_date": null
+  },
+  {
+    "id": 2,
+    "cso_sector_name": "Health Care",
+    "cso_sector_description": null,
+    "modified_by": null,
+    "modified_date": null,
+    "created_by": null,
+    "created_date": null
+  },
+  {
+    "id": 3,
+    "cso_sector_name": "Older Person/ Senior Citizens",
+    "cso_sector_description": null,
+    "modified_by": null,
+    "modified_date": null,
+    "created_by": null,
+    "created_date": null
+  },
+  {
+    "id": 4,
+    "cso_sector_name": "Youth",
+    "cso_sector_description": null,
+    "modified_by": null,
+    "modified_date": null,
+    "created_by": null,
+    "created_date": null
+  },
+  {
+    "id": 5,
+    "cso_sector_name": "Orphanage and Vulnerable Children (OVC)",
+    "cso_sector_description": null,
+    "modified_by": null,
+    "modified_date": null,
+    "created_by": null,
+    "created_date": null
+  },
+  {
+    "id": 6,
+    "cso_sector_name": "Gender",
+    "cso_sector_description": null,
+    "modified_by": null,
+    "modified_date": null,
+    "created_by": null,
+    "created_date": null
+  },
+  {
+    "id": 7,
+    "cso_sector_name": "Human Rights",
+    "cso_sector_description": null,
+    "modified_by": null,
+    "modified_date": null,
+    "created_by": null,
+    "created_date": null
+  },
+  {
+    "id": 8,
+    "cso_sector_name": "Environment",
+    "cso_sector_description": null,
+    "modified_by": null,
+    "modified_date": null,
+    "created_by": null,
+    "created_date": null
+  },
+  {
+    "id": 9,
+    "cso_sector_name": "Trade",
+    "cso_sector_description": null,
+    "modified_by": null,
+    "modified_date": null,
+    "created_by": null,
+    "created_date": null
+  },
+  {
+    "id": 10,
+    "cso_sector_name": "Poverty Alleviation",
+    "cso_sector_description": null,
+    "modified_by": null,
+    "modified_date": null,
+    "created_by": null,
+    "created_date": null
+  },
+  {
+    "id": 11,
+    "cso_sector_name": "Community Safety",
+    "cso_sector_description": null,
+    "modified_by": null,
+    "modified_date": null,
+    "created_by": null,
+    "created_date": null
+  },
+  {
+    "id": 12,
+    "cso_sector_name": "Communal Property Association (CPA)",
+    "cso_sector_description": "Communal Property Association (CPA)",
+    "modified_by": 2,
+    "modified_date": "2019-06-12 14:15:56.267",
+    "created_by": 2,
+    "created_date": "2019-06-12 14:15:56.267"
+  },
+  {
+    "id": 13,
+    "cso_sector_name": "Agriculture",
+    "cso_sector_description": "Animal Husbandry",
+    "modified_by": 52,
+    "modified_date": "2019-09-12 10:51:23.920",
+    "created_by": 52,
+    "created_date": "2019-09-12 10:51:23.920"
+  }
+]
