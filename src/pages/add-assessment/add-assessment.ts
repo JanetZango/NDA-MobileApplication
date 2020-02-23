@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { DisplayListOfAssessmentPage } from '../display-list-of-assessment/display-list-of-assessment';
+import { LookUpService } from '../../providers/lookup/lookups.service';
 
 /**
  * Generated class for the AddAssessmentPage page.
@@ -16,13 +17,28 @@ import { DisplayListOfAssessmentPage } from '../display-list-of-assessment/displ
 })
 export class AddAssessmentPage {
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  constructor(
+    public navCtrl: NavController, 
+    public navParams: NavParams,
+    public lookupService: LookUpService
+    ) {
   }
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad AddAssessmentPage');
+    this.getAssessementAnswer();
   }
   gotoback(){
     this.navCtrl.push(DisplayListOfAssessmentPage)
   }
+
+
+
+  getAssessementAnswer(){
+    
+    this.lookupService.getAssessementAnswer().subscribe(res => {
+      console.log(res);
+    });
+  }
+
 }
