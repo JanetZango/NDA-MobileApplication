@@ -4,6 +4,7 @@ import { NgModel, NgForm } from '@angular/forms';
 import { DisplayListOfCapacityPage } from '../display-list-of-capacity/display-list-of-capacity';
 import { LookUpService } from '../../providers/lookup/lookups.service';
 import { CapacityBuilding } from '../../model/capacitybuilding-class';
+import { EntityProvider } from '../../providers/entity/cso';
 
 
 /**
@@ -31,7 +32,9 @@ export class AddCapacityPage {
   constructor(
     public navCtrl: NavController, 
     public navParams: NavParams,
-    public lookupService: LookUpService) {
+    public lookupService: LookUpService,
+    public entityProvider: EntityProvider
+    ) {
   }
 
   ionViewDidLoad() {
@@ -89,9 +92,12 @@ export class AddCapacityPage {
 
   addCapacity(capacity: NgForm){
 
-
-    console.log(JSON.stringify(capacity.value));
-    debugger
+    this.entityProvider.saveCapacityBuilding(capacity.value)
+      .subscribe(res =>{
+        if(res){
+          console.log("I have posted CapacityBuilding")
+        }
+      });
   }
 
 }

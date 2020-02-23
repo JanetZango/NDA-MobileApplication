@@ -37,19 +37,28 @@ export class EntityProvider {
     console.log(url)
     return this.http.get(url)
    
-      .pipe(catchError(this.handleError(<any>("getCso"))))
+      .pipe(catchError(this.handleError(<any>("getCso"))));
   }
 
   public getCapacityBuilding(): Observable <any> {
     const url = `${this.url}/capacity_building`;
     return this.http.get(url)
-      .pipe(catchError(this.handleError(<any>("getCapacityBuilding"))))
+      .pipe(catchError(this.handleError(<any>("getCapacityBuilding"))));
   }
 
   public getAssessment(): Observable <any> {
     const url = `${this.url}/assessment`;
     return this.http.get(url)
-      .pipe(catchError(this.handleError(<any>("getAssessment"))))
+      .pipe(catchError(this.handleError(<any>("getAssessment"))));
+  }
+
+
+  public saveCapacityBuilding(capacity): Observable<any> {
+    const url = `${this.url}/capacity_building`;
+    const data = JSON.stringify(capacity);
+    debugger
+    return this.http.post(url,data)
+      .pipe(catchError(this.handleError(<any>("saveCapacityBuilding"))));
   }
 
   /**
