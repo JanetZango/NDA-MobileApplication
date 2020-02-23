@@ -1,0 +1,74 @@
+[
+  {
+    "id": 1,
+    "partner_type_name": "Funder",
+    "partner_type_description": null,
+    "modified_by": null,
+    "modified_date": null,
+    "created_by": null,
+    "created_date": null
+  },
+  {
+    "id": 2,
+    "partner_type_name": "Service Provider",
+    "partner_type_description": null,
+    "modified_by": null,
+    "modified_date": null,
+    "created_by": null,
+    "created_date": null
+  },
+  {
+    "id": 3,
+    "partner_type_name": "Referral Institution ",
+    "partner_type_description": null,
+    "modified_by": null,
+    "modified_date": null,
+    "created_by": null,
+    "created_date": null
+  },
+  {
+    "id": 4,
+    "partner_type_name": "Government",
+    "partner_type_description": null,
+    "modified_by": null,
+    "modified_date": null,
+    "created_by": null,
+    "created_date": null
+  },
+  {
+    "id": 5,
+    "partner_type_name": "Business",
+    "partner_type_description": null,
+    "modified_by": null,
+    "modified_date": null,
+    "created_by": null,
+    "created_date": null
+  },
+  {
+    "id": 6,
+    "partner_type_name": "Non-profit making",
+    "partner_type_description": null,
+    "modified_by": null,
+    "modified_date": null,
+    "created_by": null,
+    "created_date": null
+  },
+  {
+    "id": 7,
+    "partner_type_name": "Individuals",
+    "partner_type_description": null,
+    "modified_by": null,
+    "modified_date": null,
+    "created_by": null,
+    "created_date": null
+  },
+  {
+    "id": 8,
+    "partner_type_name": "International",
+    "partner_type_description": null,
+    "modified_by": null,
+    "modified_date": null,
+    "created_by": null,
+    "created_date": null
+  }
+]
