@@ -15,15 +15,15 @@ export class LookUpService {
     // look up data files.
     private AssessementAnswer = "../../assets/lookup_database/cso_tra_dbo_lkp_assessment_answer.json";
     private AssessementType = "../../assets/lookup_database/cso_tra_dbo_lkp_assessment_type.json";
-    private AssessementTypeSection = "../../assets/lookup_database/cso_tra_dbo_lkp_assessment_type_sector";
-    private CapacityBuildingType = "../../assets/lookup_database/cso_tra_dbo_lkp_capacity_building";
-    private CsoSector = "../../assets/lookup_database/cso_tra_dbo_lkp_cso_sector";
-    private CsoType = "../../assets/lookup_database/cso_tra_dbo_lkp_cso_type";
-    private District = "../../assets/lookup_database/cso_tra_dbo_lkp_district";
-    private LocalMunicipality = "../../assets/lookup_database/cso_tra_dbo_lkp_local_municipality";
-    private MemberPosition = "../../assets/lookup_database/cso_tra_dbo_lkp_local_member_position";
-    private PartnerType = "../../assets/lookup_database/cso_tra_dbo_lkp_local_partner_type";
-    private Province = "../../assets/lookup_database/cso_tra_dbo_lkp_local_province";
+    private AssessementTypeSection = "../../assets/lookup_database/cso_tra_dbo_lkp_assessment_type_sector.json";
+    private CapacityBuildingType = "../../assets/lookup_database/cso_tra_dbo_lkp_capacity_building_type.json";
+    private CsoSector = "../../assets/lookup_database/cso_tra_dbo_lkp_cso_sector.json";
+    private CsoType = "../../assets/lookup_database/cso_tra_dbo_lkp_cso_type.json";
+    private District = "../../assets/lookup_database/cso_tra_dbo_lkp_district.json";
+    private LocalMunicipality = "../../assets/lookup_database/cso_tra_dbo_lkp_local_municipality.json";
+    private MemberPosition = "../../assets/lookup_database/cso_tra_dbo_lkp_local_member_position.json";
+    private PartnerType = "../../assets/lookup_database/cso_tra_dbo_lkp_partner_type.json";
+    private Province = "../../assets/lookup_database/cso_tra_dbo_lkp_province.json";
 
     constructor(
         public http: HttpClient
