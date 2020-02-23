@@ -13,7 +13,8 @@ import { ConfigService } from '../config/config.server';
 */
 
 const httpOptions = {
-  headers: new HttpHeaders({ 'Content-Type': 'application/json' })
+  headers: new HttpHeaders({ 'Content-Type': 'application/json' }),
+  observe: 'response'
 };
 
 @Injectable()
@@ -55,9 +56,8 @@ export class EntityProvider {
 
   public saveCapacityBuilding(capacity): Observable<any> {
     const url = `${this.url}/capacity_building`;
-    const data = JSON.stringify(capacity);
     debugger
-    return this.http.post(url,data)
+    return this.http.post(url,capacity,httpOptions)
       .pipe(catchError(this.handleError(<any>("saveCapacityBuilding"))));
   }
 

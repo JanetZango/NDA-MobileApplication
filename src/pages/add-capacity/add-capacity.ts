@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { IonicPage, NavController, NavParams, AlertController } from 'ionic-angular';
 import { NgModel, NgForm } from '@angular/forms';
 import { DisplayListOfCapacityPage } from '../display-list-of-capacity/display-list-of-capacity';
 import { LookUpService } from '../../providers/lookup/lookups.service';
@@ -33,7 +33,8 @@ export class AddCapacityPage {
     public navCtrl: NavController, 
     public navParams: NavParams,
     public lookupService: LookUpService,
-    public entityProvider: EntityProvider
+    public entityProvider: EntityProvider,
+    public alertCtrl: AlertController
     ) {
   }
 
@@ -94,8 +95,14 @@ export class AddCapacityPage {
 
     this.entityProvider.saveCapacityBuilding(capacity.value)
       .subscribe(res =>{
+        debugger
         if(res){
-          console.log("I have posted CapacityBuilding")
+          const alert = this.alertCtrl.create({
+            title: 'Alert',
+            subTitle: 'Capacity Building Saved',
+            buttons: ['OK']
+          });
+          alert.present();
         }
       });
   }
