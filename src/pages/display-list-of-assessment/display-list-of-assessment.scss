@@ -11,6 +11,10 @@ page-display-list-of-assessment {
     .btn{
         margin-right:100px;
         color:white;
+        button{
+            color:white;
+            font-size: 1.5em;
+        }
     }
     h3{
         font-family: 'ZCOOL XiaoWei', serif;
@@ -44,6 +48,7 @@ page-display-list-of-assessment {
         padding-top:10px;
         height: 150px;
         font-family: 'ZCOOL XiaoWei', serif;
+        background-color: whitesmoke;
         button{
             margin-top:-60px;
             margin-left:250px;

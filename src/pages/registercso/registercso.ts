@@ -92,10 +92,11 @@ export class RegistercsoPage {
 
  
 
+  
   getProvince(){
     this.lookupService.getProvince().subscribe(res =>{
       this.provinceArr = res
-      // console.log(this.provinceArr)
+      console.log(this.provinceArr)
 
       for(var x = 0; x <this.provinceArr.length;x++){
         this.province_id = this.provinceArr[x].id
