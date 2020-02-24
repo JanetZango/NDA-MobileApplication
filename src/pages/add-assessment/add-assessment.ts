@@ -1,7 +1,9 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { IonicPage, NavController, NavParams,AlertController } from 'ionic-angular';
 import { DisplayListOfAssessmentPage } from '../display-list-of-assessment/display-list-of-assessment';
 import { LookUpService } from '../../providers/lookup/lookups.service';
+import { NgModel, NgForm } from '@angular/forms';
+import { EntityProvider } from '../../providers/entity/cso';
 
 /**
  * Generated class for the AddAssessmentPage page.
@@ -21,7 +23,9 @@ export class AddAssessmentPage {
   constructor(
     public navCtrl: NavController, 
     public navParams: NavParams,
-    public lookupService: LookUpService
+    public lookupService: LookUpService,
+    public entityProvider: EntityProvider,
+    public alertCtrl: AlertController
     ) {
   }
 
@@ -48,6 +52,22 @@ export class AddAssessmentPage {
     else {
       this.showQuestions = false
     }
+  }
+
+  addCapacity(assessment: NgForm){
+    this.entityProvider.saveAssessment(assessment.value)
+      .subscribe(res =>{
+        if(res.status === 201){
+          // TODO
+        }else{
+          const alert = this.alertCtrl.create({
+            title: 'Alert',
+            subTitle: 'assessment Building Saved',
+            buttons: ['OK']
+          });
+          alert.present();
+        }
+      });
   }
 
 }

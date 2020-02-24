@@ -59,7 +59,7 @@
 
   <ion-item id="item">
     <ion-label> Select Province</ion-label >
-    <ion-select  [(ngModel)]="province_id" name="province_id" ngModel>
+    <ion-select (ionChange)="getDistrictFilter()" [(ngModel)]="province_id" name="province_id" ngModel>
       <ion-option *ngFor="let a of provinceArr" [value]="a.id">{{a.province_name}}
       </ion-option>
     </ion-select>

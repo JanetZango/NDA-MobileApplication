@@ -12,7 +12,7 @@ import { DataProvider } from '../providers/dataproviders/dataprovider';
   templateUrl: 'app.html'
 })
 export class MyApp {
-  rootPage:any = HomePage;
+  rootPage:any = LandingPage;
 
   constructor(platform: Platform, 
     statusBar: StatusBar, 

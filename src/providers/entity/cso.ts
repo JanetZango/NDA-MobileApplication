@@ -14,7 +14,7 @@ import { ConfigService } from '../config/config.server';
 
 const httpOptions = {
   headers: new HttpHeaders({ 'Content-Type': 'application/json' }),
-  observe: 'response'
+ 
 };
 
 @Injectable()
@@ -66,6 +66,13 @@ export class EntityProvider {
     return this.http.post(url,cso,httpOptions)
       .pipe(catchError(this.handleError(<any>("saveCso"))));
   }
+  
+  public saveAssessment(assessment): Observable <any> {
+    const url = `${this.url}/assessment`;
+    return this.http.post(url,assessment,httpOptions)
+      .pipe(catchError(this.handleError(<any>("getAssessment"))));
+  }
+  
 
   /**
  * Handle Http operation that failed.

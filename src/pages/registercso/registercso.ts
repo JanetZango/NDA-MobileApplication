@@ -41,6 +41,7 @@ export class RegistercsoPage {
   provinceArr = new Array();
   municipalityArr = new Array();
   csosectorArr = new Array();
+  districtArrFilter = new Array();
 
 
   constructor(public navCtrl: NavController,
@@ -52,10 +53,10 @@ export class RegistercsoPage {
   ionViewDidLoad() {
     console.log('ionViewDidLoad RegistercsoPage');
     this.getProvince();
-    this.getMunicipality();
+    // this.getMunicipality();
     this.getDistrict();
-    this.getCsoType();
-    this.getCsoSector();
+    // this.getCsoType();
+    // this.getCsoSector();
   }
 
  
@@ -79,6 +80,9 @@ export class RegistercsoPage {
     this.contact_person="";
   }
 
+
+ 
+
   getCsoType(){
     this.lookupService.getCsoType().subscribe(res =>{
       this.csotypeArr = res
@@ -86,20 +90,41 @@ export class RegistercsoPage {
     })
   }
 
+ 
+
+  getProvince(){
+    this.lookupService.getProvince().subscribe(res =>{
+      this.provinceArr = res
+      // console.log(this.provinceArr)
+
+      for(var x = 0; x <this.provinceArr.length;x++){
+        this.province_id = this.provinceArr[x].id
+        console.log(this.province_id)
+      }
+    })
+  }
+
+  getDistrictFilter(){
+    if(this.province_id == this.district_id){
+      this.districtArrFilter = this.district_id
+      console.log(this.districtArrFilter)
+    }
+  }
+
   getDistrict(){
     this.lookupService.getDistrict().subscribe(res =>{
       this.districtArr = res 
       console.log(this.districtArr)
 
+
+      for(var x = 0; x <this.provinceArr.length;x++){
+        this.district_id = this.districtArr[x].province_id
+        console.log(this.district_id)
+      }
     })
   }
 
-  getProvince(){
-    this.lookupService.getProvince().subscribe(res =>{
-      this.provinceArr = res
-      console.log(this.provinceArr)
-    })
-  }
+
   getMunicipality(){
     this.lookupService.getLocalMunicipality().subscribe(res =>{
       this.municipalityArr = res
