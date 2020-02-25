@@ -31,7 +31,14 @@
     </ion-select>
   </ion-item>
   <div class="Contacts">
-    <input type="date" placeholder="Mobilisation_date" id="input-field" [(ngModel)]="created_date" name="created_date" ngModel>
+    <!-- <input type="date" placeholder="Mobilisation_date" id="input-field" [(ngModel)]="created_date" name="created_date" ngModel> -->
+
+    <ion-label>Start date</ion-label>
+    <!-- <input type="date" id="input-field" required [(ngModel)]="start_date" name="start_date" ngModel> -->
+    <ion-item>
+      <ion-label>MM DD YY</ion-label>
+      <ion-datetime displayFormat="MM DD YY" placeholder="Select Date" required [(ngModel)]="Mobilisation_date" name="start_date" ngModel></ion-datetime>
+    </ion-item>
   </div>
 
   <ion-input placeholder="Physical_Address" type="text" class="user-input" [(ngModel)]="physical_address"
@@ -59,29 +66,28 @@
 
   <ion-item id="item">
     <ion-label> Select Province</ion-label >
-    <ion-select (ionChange)="getDistrictFilter()" [(ngModel)]="province_id" name="province_id" ngModel>
-      <ion-option *ngFor="let a of provinceArr" [value]="a.id">{{a.province_name}}
-      </ion-option>
-    </ion-select>
+      <ion-select  [(ngModel)]="province_id" ngModel name="province_id" required  (ionChange)="populateDistrict(province_id)">
+        <ion-option *ngFor="let a of provinceArr" [value]="a.id">{{a.province_name}}
+        </ion-option>
+      </ion-select>
   </ion-item>
 
   <ion-item id="item">
     <ion-label> Select District</ion-label>
-    <ion-select  [(ngModel)]="district_id" name="district_id" ngModel>
+    <ion-select [(ngModel)]="district_id" ngModel name="district_id" required (ionChange)="populateMunicipality(district_id)">
       <ion-option *ngFor="let district of districtArr" [value]="district.id">{{district.district_name}}
       </ion-option>
     </ion-select>
   </ion-item>
 
-  <ion-item id="item">
-    <ion-label> Select Municipality</ion-label>
-    <ion-select [(ngModel)]="municipality_id" name="municipality_id" ngModel>
-      <ion-option *ngFor="let district of municipalityArr" [value]="district.id">
-        {{district.municipality_name}}
-      </ion-option>
-    </ion-select>
-  </ion-item>
-
+   <ion-item id="item">
+          <ion-label> Select Municipality</ion-label>
+          <ion-select [(ngModel)]="municipality_id" required ngModel name="municipality_id">
+            <ion-option *ngFor="let municipality of municipalityArr" [value]="municipality.id">
+              {{municipality.municipality_name}}
+            </ion-option>
+          </ion-select>
+        </ion-item>
 
   <ion-input placeholder="Ward_number" type="number" class="user-input" [(ngModel)]="ward_number" id="anim1" name="ward_number" ngModel>
   </ion-input>

@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { IonicPage, NavController, NavParams,AlertController } from 'ionic-angular';
 import { NgModel, NgForm } from '@angular/forms';
 import { DisplayListOfCsoPage } from '../display-list-of-cso/display-list-of-cso';
 import { LookUpService } from '../../providers/lookup/lookups.service';
@@ -43,20 +43,25 @@ export class RegistercsoPage {
   csosectorArr = new Array();
   districtArrFilter = new Array();
 
+  // arrays that store data
+  districtArrData = new Array();
+  municipalityArrData = new Array();
+
 
   constructor(public navCtrl: NavController,
      public navParams: NavParams,
      public lookupService: LookUpService,
-     public entityProvider: EntityProvider) {
+     public entityProvider: EntityProvider,
+     public alertCtrl: AlertController,) {
   }
 
   ionViewDidLoad() {
-    console.log('ionViewDidLoad RegistercsoPage');
+    // console.log('ionViewDidLoad RegistercsoPage');
     this.getProvince();
-    // this.getMunicipality();
+    this.getMunicipality();
     this.getDistrict();
-    // this.getCsoType();
-    // this.getCsoSector();
+    this.getCsoType();
+    this.getCsoSector();
   }
 
  
@@ -64,6 +69,10 @@ export class RegistercsoPage {
   gotoback(){
     this.navCtrl.push(DisplayListOfCsoPage)
   }
+
+
+  // **
+  // rest data from the form
   reset(){
     this.cso_name="";
     this.cso_mobilisation_method_id="";
@@ -80,9 +89,18 @@ export class RegistercsoPage {
     this.contact_person="";
   }
 
-
+ /**
+   * Get Cso Sector
+   */
+  getCsoSector(){
+    this.lookupService.getCsoSector().subscribe(res =>{
+      this.csosectorArr = res
+    })
+  }
  
-
+ /**
+   * Get Cso type
+   */
   getCsoType(){
     this.lookupService.getCsoType().subscribe(res =>{
       this.csotypeArr = res
@@ -90,61 +108,73 @@ export class RegistercsoPage {
     })
   }
 
- 
-
-  
+ /**
+   * Get province
+   */
   getProvince(){
     this.lookupService.getProvince().subscribe(res =>{
       this.provinceArr = res
-      console.log(this.provinceArr)
-
-      for(var x = 0; x <this.provinceArr.length;x++){
-        this.province_id = this.provinceArr[x].id
-        console.log(this.province_id)
-      }
     })
   }
 
-  getDistrictFilter(){
-    if(this.province_id == this.district_id){
-      this.districtArrFilter = this.district_id
-      console.log(this.districtArrFilter)
-    }
-  }
+  /**
+   * Get district
+   */
 
   getDistrict(){
     this.lookupService.getDistrict().subscribe(res =>{
       this.districtArr = res 
-      console.log(this.districtArr)
-
-
-      for(var x = 0; x <this.provinceArr.length;x++){
-        this.district_id = this.districtArr[x].province_id
-        console.log(this.district_id)
-      }
     })
   }
 
-
+ /**
+   * Get municipality
+   */
   getMunicipality(){
     this.lookupService.getLocalMunicipality().subscribe(res =>{
       this.municipalityArr = res
+    })
+  }
+
+  
+
+
+    /**
+   * to populate the district by select provice id 
+   * @param proviceId
+   */
+  populateDistrict(proviceId: NgModel){
+    this.districtArr =  this.districtArrData
+      .filter(x => x.province_id === proviceId);
+      console.log(this.districtArr);
+  }
+
+   /**
+   * to populate the Municipality by select district id
+   * @param districtId
+   */
+  populateMunicipality(districtId: NgModel){
+    debugger
+    this.municipalityArr = this.municipalityArrData
+      .filter(m => m.district_id === districtId);
       console.log(this.municipalityArr)
-    })
   }
 
-  getCsoSector(){
-    this.lookupService.getCsoSector().subscribe(res =>{
-      this.csosectorArr = res
-      console.log(this.csosectorArr)
-    })
-  }
+   /**
+   * Get registering cso
+   */
   addCso(cso: NgForm){
-
     this.entityProvider.saveCso(cso.value)
       .subscribe(res =>{
         if(res){
-          console.log("I have posted cso")
+          // cso.reset();
+        }else{
+          const alert = this.alertCtrl.create({
+            title: 'Alert',
+            subTitle: 'cso registered',
+            buttons: ['OK']
+          });
+          alert.present();
         }
       });
   }

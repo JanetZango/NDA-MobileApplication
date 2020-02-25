@@ -115,6 +115,7 @@ export class AddCapacityPage {
   populateDistrict(proviceId: NgModel){
     this.districtArr =  this.districtArrData
       .filter(x => x.province_id === proviceId);
+      console.log(this.districtArr)
   }
 
   /**
@@ -125,6 +126,7 @@ export class AddCapacityPage {
     debugger
     this.municipalityArr = this.municipalityArrData
       .filter(m => m.district_id === districtId);
+      console.log(this.municipalityArr)
   }
 
   /**
