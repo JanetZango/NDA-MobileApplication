@@ -4,7 +4,7 @@ page-display-cso-member-list {
         height:10%;
         background-color: #00919E;
         padding:10px;
-        position: relative;
+        // position: relative;
         
     }
 
@@ -15,7 +15,7 @@ page-display-cso-member-list {
    
     .btnCreate{
         text-align: right;
-        margin-top: -30px;
+        margin-top: -40px;
         button{
             background-color: #00919E;
             color: white;
@@ -24,6 +24,9 @@ page-display-cso-member-list {
     }
     .btn{
         text-align: right;
+        button{
+            color:white;
+        }
     }
     .Bottom{
         height: 90%;

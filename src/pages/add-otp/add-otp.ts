@@ -29,25 +29,35 @@ export class AddOtpPage {
   ionViewDidLoad() {
     //console.log('ionViewDidLoad AddOtpPage');
   }
+  
   login(otpf: NgForm){
-    
-    if(otpf.value.otp === ''){
-      return;
-    }
 
-    this.authUser.verifyOpt(otpf.value.otp).subscribe(res =>{
-      
-      if(res.status !== 200){
+    if (otpf.value.otp === '') {
+     return   
+     }
+
+     this.authUser.verifyOpt(otpf.value.otp).subscribe(res =>{
+      if (typeof (res) != 'undefined') {
+        this.navCtrl.push(LandingPage);
+      }
+      else {
         const alert = this.alertCtrl.create({
-          title: 'Error!',
-          subTitle: 'Please enter your OTP code!',
+          title: 'Oops!',
+          subTitle: 'Please enter your otp code!',
           buttons: ['OK']
         });
-        alert.present()
-      }else{
-        this.navCtrl.push(LandingPage)
+        alert.present();
       }
+    }, (err) => {
+      const alert = this.alertCtrl.create({
+        title: 'Error!',
+        subTitle: 'Something went wrong!',
+        buttons: ['OK']
+      });
+      alert.present();
+
     });
   }
+
 
 }

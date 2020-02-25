@@ -20,7 +20,7 @@ export class ViewcsodetailsPage {
 
   csoObj:any
   constructor(public navCtrl: NavController, public navParams: NavParams) {
-    debugger
+  
     // this will show data on the card view
     this.viewCSoArr.push(this.navParams.get('orgObject'));
     // this use to transfer cso data
@@ -35,7 +35,7 @@ export class ViewcsodetailsPage {
   }
    //**  */
    gotoback(){
-     this.navCtrl.push(DisplayListOfCsoPage);
+     this.navCtrl.pop();
    }
 
   // ** move data to the nect page

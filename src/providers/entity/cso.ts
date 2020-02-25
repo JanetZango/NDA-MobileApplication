@@ -13,7 +13,7 @@ import { ConfigService } from '../config/config.server';
 */
 const httpOptions = {
   headers: new HttpHeaders({ 'Content-Type': 'application/json' }),
- 
+  // observe: 'response'
 };
 
 @Injectable()
@@ -58,13 +58,15 @@ export class EntityProvider {
       .pipe(catchError(this.handleError(<any>("getAssessment"))));
   }
 
-  /**
-   * 
-   * Get Members By CsoId
-   */
-  public getMembersByCsoId(){
-
+  public getCsoMember(): Observable <any> {
+    const url = `${this.url}/members`;
+    return this.http.get(url)
+      .pipe(catchError(this.handleError(<any>("getMember"))));
   }
+
+
+  
+
 
   /**
    * 

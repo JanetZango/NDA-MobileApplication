@@ -34,17 +34,16 @@ export class LoginPage {
   verifyemail(form: NgForm) {
 
     if (form.value.email === '') {
-      return;
-    }
+     return   
+     }
 
     this.authUser.verifyUser(form.value.email).subscribe(res => {
-      debugger
       if (typeof (res) != 'undefined') {
         this.navCtrl.push(AddOtpPage);
       }
       else {
         const alert = this.alertCtrl.create({
-          title: 'Error!',
+          title: 'Oops!',
           subTitle: 'Please enter your email address!',
           buttons: ['OK']
         });

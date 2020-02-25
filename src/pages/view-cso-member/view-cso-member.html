@@ -1,15 +1,34 @@
-<!--
-  Generated template for the ViewCsoMemberPage page.
+<ion-content>
+  <div class="round"></div>
+  <div class="btn">
+    <button  ion-button  (click)="gotoback()">
+      <ion-icon ios="ios-arrow-round-back" md="md-arrow-round-back"></ion-icon>
+    </button>
+  </div>
+  <div class="btnCreate">
+    <button ion-button (click)="seeCsoMmbers(a)">
+      Manage Cso Members
+    </button>
+  </div>
+  <div class="card">
+    <ion-card *ngFor="let a of CsoDetailsArr">
+      <div class="infor">
+        <p><b>Start Date:</b>{{a.added_at}}</p>
+        <p><b>Created By:</b>{{a.added_by}}</p>
+        <p><b>Contact Number:</b>{{a.contact_number}}</p>
+        <p><b>Cso Name:</b>{{a.cso_name}}</p>
+        <p><b>Disability:</b>{{a.disability}}</p>
+        <p><b>First Name:</b>{{a.first_name}}</p>
+        <p><b>Gender:</b>{{a.gender}}</p>
+        <p><b>ID Number:</b>{{a.id_number}}</p>
+        <p><b>Last Name:</b>{{a.last_name}}</p>
+        <p><b>Nationality:</b>{{a.nationality}}</p>
+        <p><b>Total_Staff:</b>{{a.passport_number}}</p>
+        <p><b>Race:</b>{{a.race}}</p>
+        <p><b>Modeified Date:</b>{{a.updated_at}}</p>
 
-  See http://ionicframework.com/docs/components/#navigation for more info on
-  Ionic pages and navigation.
--->
-<ion-header>
-  <ion-navbar>
-    <ion-title>viewCsoMember</ion-title>
-  </ion-navbar>
-</ion-header>
-
-<ion-content padding>
-
+      </div>
+    </ion-card>
+  </div>
 </ion-content>
+

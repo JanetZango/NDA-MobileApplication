@@ -41,7 +41,6 @@ export class RegistercsoPage {
   provinceArr = new Array();
   municipalityArr = new Array();
   csosectorArr = new Array();
-  districtArrFilter = new Array();
 
   // arrays that store data
   districtArrData = new Array();
@@ -67,7 +66,7 @@ export class RegistercsoPage {
  
 
   gotoback(){
-    this.navCtrl.push(DisplayListOfCsoPage)
+    this.navCtrl.pop();
   }
 
 
@@ -123,7 +122,7 @@ export class RegistercsoPage {
 
   getDistrict(){
     this.lookupService.getDistrict().subscribe(res =>{
-      this.districtArr = res 
+      this.districtArrData = res 
     })
   }
 
@@ -132,7 +131,7 @@ export class RegistercsoPage {
    */
   getMunicipality(){
     this.lookupService.getLocalMunicipality().subscribe(res =>{
-      this.municipalityArr = res
+      this.municipalityArrData = res
     })
   }
 
@@ -146,7 +145,7 @@ export class RegistercsoPage {
   populateDistrict(proviceId: NgModel){
     this.districtArr =  this.districtArrData
       .filter(x => x.province_id === proviceId);
-      console.log(this.districtArr);
+      console.log(this.districtArrData);
   }
 
    /**
@@ -154,7 +153,7 @@ export class RegistercsoPage {
    * @param districtId
    */
   populateMunicipality(districtId: NgModel){
-    debugger
+    
     this.municipalityArr = this.municipalityArrData
       .filter(m => m.district_id === districtId);
       console.log(this.municipalityArr)
@@ -163,21 +162,37 @@ export class RegistercsoPage {
    /**
    * Get registering cso
    */
+
+
+
   addCso(cso: NgForm){
-    this.entityProvider.saveCso(cso.value)
-      .subscribe(res =>{
-        if(res){
-          // cso.reset();
-          const alert = this.alertCtrl.create({
-            title: 'Alert',
-            subTitle: 'cso registered',
-            buttons: ['OK']
-          });
-          alert.present();
-        }else{
-          // TODO 
-        }
+     this.entityProvider.saveCso(cso.value).subscribe(res =>{
+      if (typeof (res) != 'undefined') {
+        const alert = this.alertCtrl.create({
+          title: 'Alert',
+          subTitle: 'cso registered',
+          buttons: ['OK']
+        });
+        alert.present();
+        this.navCtrl.push(DisplayListOfCsoPage);
+      }
+      else {
+        const alert = this.alertCtrl.create({
+          title: 'Oops!',
+          subTitle: 'Please enter your otp code!',
+          buttons: ['OK']
+        });
+        alert.present();
+      }
+    }, (err) => {
+      const alert = this.alertCtrl.create({
+        title: 'Error!',
+        subTitle: 'Something went wrong!',
+        buttons: ['OK']
       });
+      alert.present();
+
+    });
   }
 
 }

@@ -54,22 +54,38 @@ export class AddAssessmentPage {
     }
   }
 
-  addCapacity(assessment: NgForm){
+  
 
-    debugger
-    this.entityProvider.saveAssessment(assessment.value)
-      .subscribe(res =>{
-        if(res){
-          const alert = this.alertCtrl.create({
-            title: 'Alert',
-            subTitle: 'assessment Building Saved',
-            buttons: ['OK']
-          });
-          alert.present();
-        }else{
-          // TODO
-        }
-      });
-  }
+
+
+  addCapacity(assessment: NgForm){
+     this.entityProvider.saveAssessment(assessment.value).subscribe(res => {
+     if (typeof (res) != 'undefined') {
+       const alert = this.alertCtrl.create({
+         title: 'Alert',
+         subTitle: 'Capacity Building Saved',
+         buttons: ['OK']
+       });
+       alert.present();
+       this.navCtrl.push(DisplayListOfAssessmentPage);
+     }
+     else {
+       const alert = this.alertCtrl.create({
+         title: 'Oops!',
+         subTitle: 'Please enter your email address!',
+         buttons: ['OK']
+       });
+       alert.present();
+     }
+   }, (err) => {
+     const alert = this.alertCtrl.create({
+       title: 'Error!',
+       subTitle: 'Something went wrong!',
+       buttons: ['OK']
+     });
+     alert.present();
+
+   });
+ }
 
 }

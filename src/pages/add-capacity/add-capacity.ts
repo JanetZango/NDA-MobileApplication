@@ -60,8 +60,10 @@ export class AddCapacityPage {
     this.getCapacityBuilding();
   }
 
-  gotoback(){
-    this.navCtrl.push(DisplayListOfCapacityPage)
+
+  // ** to back to capacity building list
+  goBackToCapacityBuildingList(){
+    this.navCtrl.pop();
   }
 
   /**
@@ -135,23 +137,33 @@ export class AddCapacityPage {
    * @param capacity 
    */
   addCapacity(capacity: NgForm){
-   
-      this.entityProvider.saveCapacityBuilding(capacity.value)
-      .subscribe(res =>{
-        debugger
-        if(res.status === 201){
-          debugger
-          capacity.reset();
-        }else{
-          debugger
-          capacity.reset();
-          const alert = this.alertCtrl.create({
-            title: 'Alert',
-            subTitle: 'Capacity Building Saved',
-            buttons: ['OK']
-          });
-          alert.present();
-        }
+     this.entityProvider.saveCapacityBuilding(capacity.value).subscribe(res => {
+      if (typeof (res) != 'undefined') {
+        const alert = this.alertCtrl.create({
+          title: 'Alert',
+          subTitle: 'Capacity Building Saved',
+          buttons: ['OK']
+        });
+        alert.present();
+        this.navCtrl.push(DisplayListOfCapacityPage);
+      }
+      else {
+        const alert = this.alertCtrl.create({
+          title: 'Oops!',
+          subTitle: 'Please enter your email address!',
+          buttons: ['OK']
+        });
+        alert.present();
+      }
+    }, (err) => {
+      const alert = this.alertCtrl.create({
+        title: 'Error!',
+        subTitle: 'Something went wrong!',
+        buttons: ['OK']
       });
+      alert.present();
+
+    });
   }
+
 }
