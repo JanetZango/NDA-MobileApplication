@@ -112,13 +112,12 @@ export class DisplayListOfCsoPage implements OnInit{
   }
 
 
-  viewMore(name) {
-    for (var x = 0; x < this.DisplayCso.length; x++) {
-      if (name == this.DisplayCso[x].nda_registration) {
-        this.navCtrl.push(ViewcsodetailsPage, { orgObject: this.DisplayCso[x] });
-        break;
-      }
-    }
+  /**
+   * 
+   * @param cso 
+   */
+  viewMore(cso) {
+    this.navCtrl.push(ViewcsodetailsPage, { orgObject: cso});
   }
 
   viewSearched(name) {

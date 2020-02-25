@@ -21,13 +21,16 @@ export class DisplayCsoMemberListPage {
 
  //retrieve data array
 
+ csoObj:any 
+
  CsoDetailsArr = new Array();
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
 
   ionViewDidLoad() {
-    // console.log('ionViewDidLoad DisplayCsoMemberListPage');
     this.CsoDetailsArr.push(this.navParams.get('orgObject'));
+    this.csoObj =this.navParams.get('orgObject');
+
     console.log(this.CsoDetailsArr)
     this.cso_uuid = this.CsoDetailsArr[0].cso_uuid
     console.log(this.cso_uuid)
@@ -35,7 +38,7 @@ export class DisplayCsoMemberListPage {
 
   addCsoMember(){
     for (var x = 0; x < this.CsoDetailsArr.length; x++) {
-      this.navCtrl.push(AddCsoMemberPage, { orgObject: this.CsoDetailsArr[x] });
+      this.navCtrl.push(AddCsoMemberPage, { orgObject: this.csoObj });
     } 
   }
 

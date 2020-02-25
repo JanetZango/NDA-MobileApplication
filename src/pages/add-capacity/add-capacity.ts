@@ -138,9 +138,13 @@ export class AddCapacityPage {
    
       this.entityProvider.saveCapacityBuilding(capacity.value)
       .subscribe(res =>{
+        debugger
         if(res.status === 201){
+          debugger
           capacity.reset();
         }else{
+          debugger
+          capacity.reset();
           const alert = this.alertCtrl.create({
             title: 'Alert',
             subTitle: 'Capacity Building Saved',
