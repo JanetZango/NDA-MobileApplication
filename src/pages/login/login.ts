@@ -33,14 +33,16 @@ export class LoginPage {
   }
   verifyemail(form: NgForm) {
 
-    if(form.value.email=== ''){
+    if (form.value.email === '') {
       return;
     }
-    
+
     this.authUser.verifyUser(form.value.email).subscribe(res => {
-      
-      if (res.status !== 200) {
-        
+      debugger
+      if (typeof (res) != 'undefined') {
+        this.navCtrl.push(AddOtpPage);
+      }
+      else {
         const alert = this.alertCtrl.create({
           title: 'Error!',
           subTitle: 'Please enter your email address!',
@@ -48,9 +50,13 @@ export class LoginPage {
         });
         alert.present();
       }
-      else {
-        this.navCtrl.push(AddOtpPage)
-      }
+    }, (err) => {
+      const alert = this.alertCtrl.create({
+        title: 'Error!',
+        subTitle: 'Something went wrong!',
+        buttons: ['OK']
+      });
+      alert.present();
 
     });
   }
