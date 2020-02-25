@@ -41,7 +41,6 @@ export class RegistercsoPage {
   provinceArr = new Array();
   municipalityArr = new Array();
   csosectorArr = new Array();
-  districtArrFilter = new Array();
 
   // arrays that store data
   districtArrData = new Array();
@@ -67,7 +66,7 @@ export class RegistercsoPage {
  
 
   gotoback(){
-    this.navCtrl.push(DisplayListOfCsoPage)
+    this.navCtrl.pop();
   }
 
 
@@ -146,7 +145,7 @@ export class RegistercsoPage {
   populateDistrict(proviceId: NgModel){
     this.districtArr =  this.districtArrData
       .filter(x => x.province_id === proviceId);
-      console.log(this.districtArr);
+      console.log(this.districtArrData);
   }
 
    /**

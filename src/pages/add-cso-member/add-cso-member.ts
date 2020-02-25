@@ -16,7 +16,10 @@ import { EntityProvider } from '../../providers/entity/cso';
   templateUrl: 'add-cso-member.html',
 })
 export class AddCsoMemberPage {
+  //array
+  CsoDetailsArr = new Array()
 
+  cso_uuid;
   constructor(public navCtrl: NavController, public navParams: NavParams,
     public lookupService: LookUpService,
     public entityProvider: EntityProvider,
@@ -24,19 +27,27 @@ export class AddCsoMemberPage {
   }
 
   ionViewDidLoad() {
-    console.log('ionViewDidLoad AddCsoMemberPage');
+    this.CsoDetailsArr.push(this.navParams.get('orgObject'));
+    console.log(this.CsoDetailsArr)
+    this.cso_uuid = this.CsoDetailsArr[0].cso_uuid
+    console.log(this.cso_uuid)
+  }
+
+  // ** go to back to the cso member list
+  goBackToCsoMemberList(){
+    this.navCtrl.pop();
   }
 
 
     /**
    * Get registering cso member
    */
-  addCsoMember(csoMember: NgForm){
-    this.entityProvider.saveMembers(csoMember.value)
+  addCsoMember(csomember: NgForm){
+    this.entityProvider.saveMembers(csomember.value)
       .subscribe(res =>{
         if(res){
           // cso.reset();
-        }else{
+        // }else{
           const alert = this.alertCtrl.create({
             title: 'Alert',
             subTitle: 'cso registered',

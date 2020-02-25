@@ -44,7 +44,7 @@ export class DisplayListOfCsoPage implements OnInit{
     this.navCtrl.push(RegistercsoPage)
   }
   gotoLanding(){
-    this.navCtrl.push(LandingPage)
+    this.navCtrl.pop();
   }
   ngOnInit(){
   this.displayCsoList();

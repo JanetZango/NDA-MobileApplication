@@ -60,8 +60,10 @@ export class AddCapacityPage {
     this.getCapacityBuilding();
   }
 
-  gotoback(){
-    this.navCtrl.push(DisplayListOfCapacityPage)
+
+  // ** to back to capacity building list
+  goBackToCapacityBuildingList(){
+    this.navCtrl.pop();
   }
 
   /**

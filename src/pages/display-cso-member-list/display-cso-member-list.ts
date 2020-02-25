@@ -39,4 +39,10 @@ export class DisplayCsoMemberListPage {
     } 
   }
 
+
+  //** Go back to view deatils of cso */
+
+  goBackToCsoDetails(){
+    this.navCtrl.pop();
+  }
 }

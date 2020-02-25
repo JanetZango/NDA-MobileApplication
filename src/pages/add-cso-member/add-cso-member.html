@@ -1,9 +1,13 @@
 <ion-content class="content">
-
+  <div class="btn">
+    <button clear ion-button (click)="goBackToCsoMemberList()">
+        <ion-icon ios="ios-arrow-back" md="md-arrow-back"></ion-icon>
+    </button>
+</div>
     <div class="divImage">
       <p>Add a Cso Member</p>
     </div>
-    <form #csoMember="ngForm" (ngSubmit)="addCsoMember(csoMember)">
+    <form #csomember="ngForm" (ngSubmit)="addCsoMember(csomember)">
         <ion-input placeholder="First_name" type="text" class="user-input" [(ngModel)]="first_name" name="first_name" ngModel id="anim1"></ion-input>
 
 
@@ -41,7 +45,7 @@
           </ion-select>
         </ion-item>
 
-        <ion-input placeholder="Passport_number" type="text" class="user-input" name="Passport_number"
+        <ion-input placeholder="Passport_number" type="text" class="user-input" name="passport_number"
           [(ngModel)]="passport_number" name="Passport_number" ngModel id="anim1"></ion-input>
 
 
@@ -64,17 +68,16 @@
         <ion-input placeholder="Contact_Number" [(ngModel)]="contact_number" type="number" class="user-input" name="contact_number" ngModel
           id="anim1"></ion-input>
 
-        <form name="pleasevalidateme">
+        <!-- <form name="pleasevalidateme"> -->
           <ion-input type="text" name="id_number" [(ngModel)]="id_number" ngModel placeholder="ID number" id="anim1"></ion-input>
-          <input type="checkbox" name="saidCB" /> SA ID number
-          <button ion-button (click)="validateID()">verify</button>
-        </form>
+          <!-- <input type="checkbox" name="saidCB" /> SA ID number
+          <button ion-button (click)="validateID()">verify</button> -->
+        <!-- </form> -->
 
 
         <div class="moveCont">
           <button  type="submit" ion-button round class="btnSign" id="anim2"
-           >Rgister
-            A Member</button>
+           >Add Cso Member</button>
         </div>
       </form>
 

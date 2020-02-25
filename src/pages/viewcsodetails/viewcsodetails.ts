@@ -19,26 +19,6 @@ import { DisplayCsoMemberListPage } from '../display-cso-member-list/display-cso
 export class ViewcsodetailsPage {
   viewCSoArr = new Array();
 
-  name_of_cso;
-  Collected_by;
-  email_address;
-  contact_person;
-  contact_number;
-  cso_sector_id;
-  cso_type_id;
-  district_id;
-  Municipality;
-  Paddress;
-  total_staff;
-  ward_number;
-  province_id;
-  physical_address;
-  nda_registration;
-  municipality_id;
-  modified_date;
-  modified_by;
-  id;
-  cso_uuid;
   constructor(public navCtrl: NavController, public navParams: NavParams) {
     this.viewCSoArr.push(this.navParams.get('orgObject'));
     console.log(this.viewCSoArr);
@@ -51,7 +31,7 @@ export class ViewcsodetailsPage {
   }
    //**  */
    gotoback(){
-     this.navCtrl.push(DisplayListOfCsoPage);
+     this.navCtrl.pop();
    }
 
   // ** move data to the nect page

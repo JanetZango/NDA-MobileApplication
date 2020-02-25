@@ -7,6 +7,7 @@ export class Cso {
     cso_sector_id:number;
     province_id:number;
     district_id:number;
+    cso_uuid:number;
     municipality_id:number;
     ward_number:number;
     contact_person:string;

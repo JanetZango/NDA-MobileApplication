@@ -1,12 +1,10 @@
 <ion-content class="content">
-  <div class="divImage">
     <div class="btn">
-      <button ion-button (click)="gotoback()">
+      <button clear  ion-button (click)="goBackToCapacityBuildingList()">
           <ion-icon ios="ios-arrow-back" md="md-arrow-back"></ion-icon>
       </button>
   </div>
     <p>Add Capacity Building</p>
-  </div>
   <form #capacity="ngForm"  (ngSubmit)="addCapacity(capacity)"> 
         <ion-input placeholder="Name Of Cso" [(ngModel)]="cso_name" ngModel  name="cso_name"   type="text" class="user-input" id="anim1"
         ></ion-input>
