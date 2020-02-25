@@ -92,25 +92,20 @@ export class RegistercsoPage {
 
  
 
-  
+
   getProvince(){
     this.lookupService.getProvince().subscribe(res =>{
       this.provinceArr = res
       console.log(this.provinceArr)
+      // for(var x = 0; x <this.provinceArr.length;x++){
+      //   this.province_id = this.provinceArr[x].id
+      //   console.log(this.province_id)
+      // }
 
-      for(var x = 0; x <this.provinceArr.length;x++){
-        this.province_id = this.provinceArr[x].id
-        console.log(this.province_id)
-      }
     })
   }
 
-  getDistrictFilter(){
-    if(this.province_id == this.district_id){
-      this.districtArrFilter = this.district_id
-      console.log(this.districtArrFilter)
-    }
-  }
+ 
 
   getDistrict(){
     this.lookupService.getDistrict().subscribe(res =>{
@@ -123,6 +118,14 @@ export class RegistercsoPage {
         console.log(this.district_id)
       }
     })
+  }
+
+  getDistrictFilter(){
+    console.log(this.province_id)
+    if(this.province_id == this.district_id){
+      this.districtArrFilter = this.district_id
+      console.log(this.districtArrFilter)
+    }
   }
 
 
