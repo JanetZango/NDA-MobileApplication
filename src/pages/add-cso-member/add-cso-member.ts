@@ -4,6 +4,7 @@ import { NgModel, NgForm } from '@angular/forms';
 import { LookUpService } from '../../providers/lookup/lookups.service';
 import { EntityProvider } from '../../providers/entity/cso';
 import { Member } from '../../model/member-class';
+import { DisplayCsoMemberListPage } from '../display-cso-member-list/display-cso-member-list';
 /**
  * Generated class for the AddCsoMemberPage page.
  *
@@ -51,23 +52,37 @@ export class AddCsoMemberPage {
    * Get registering cso member
    * @param csoMember
    */
-  addCsoMember(csoMember: NgForm){
 
+  addCsoMember(csoMember: NgForm){
     this.csoMember = csoMember.value
     this.csoMember.cso_uuid = this.cso_uuid;
-    this.entityProvider.saveMembers(this.csoMember)
-      .subscribe(res =>{
-        if(res){
-          // cso.reset();
-        // }else{
-          const alert = this.alertCtrl.create({
-            title: 'Alert',
-            subTitle: 'cso registered',
-            buttons: ['OK']
-          });
-          alert.present();
-        }
+    this.entityProvider.saveMembers(this.csoMember).subscribe(res => {
+      if (typeof (res) != 'undefined') {
+        const alert = this.alertCtrl.create({
+          title: 'Alert',
+          subTitle: 'cso registered',
+          buttons: ['OK']
+        });
+        alert.present();
+        this.navCtrl.push(DisplayCsoMemberListPage);
+      }
+      else {
+        const alert = this.alertCtrl.create({
+          title: 'Oops!',
+          subTitle: 'Please enter your details!',
+          buttons: ['OK']
+        });
+        alert.present();
+      }
+    }, (err) => {
+      const alert = this.alertCtrl.create({
+        title: 'Error!',
+        subTitle: 'Something went wrong!',
+        buttons: ['OK']
       });
+      alert.present();
+
+    });
   }
 
 }

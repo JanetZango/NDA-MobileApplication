@@ -162,20 +162,37 @@ export class RegistercsoPage {
    /**
    * Get registering cso
    */
+
+
+
   addCso(cso: NgForm){
-    this.entityProvider.saveCso(cso.value)
-      .subscribe(res =>{
-        if(res){
-          // cso.reset();
-        }else{
-          const alert = this.alertCtrl.create({
-            title: 'Alert',
-            subTitle: 'cso registered',
-            buttons: ['OK']
-          });
-          alert.present();
-        }
+     this.entityProvider.saveCso(cso.value).subscribe(res =>{
+      if (typeof (res) != 'undefined') {
+        const alert = this.alertCtrl.create({
+          title: 'Alert',
+          subTitle: 'cso registered',
+          buttons: ['OK']
+        });
+        alert.present();
+        this.navCtrl.push(DisplayListOfCsoPage);
+      }
+      else {
+        const alert = this.alertCtrl.create({
+          title: 'Oops!',
+          subTitle: 'Please enter your otp code!',
+          buttons: ['OK']
+        });
+        alert.present();
+      }
+    }, (err) => {
+      const alert = this.alertCtrl.create({
+        title: 'Error!',
+        subTitle: 'Something went wrong!',
+        buttons: ['OK']
       });
+      alert.present();
+
+    });
   }
 
 }

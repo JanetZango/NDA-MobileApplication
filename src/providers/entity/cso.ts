@@ -11,7 +11,6 @@ import { ConfigService } from '../config/config.server';
   See https://angular.io/guide/dependency-injection for more info on providers
   and Angular DI.
 */
-
 const httpOptions = {
   headers: new HttpHeaders({ 'Content-Type': 'application/json' }),
   // observe: 'response'
@@ -25,14 +24,14 @@ export class EntityProvider {
     public config: ConfigService
 
   ) {
-
     this.url = config.getApiUrl();
   }
 
+  // back end url
   private url: string;
-
-
-
+  /**
+   * Get Cso
+   */
   public getCso(): Observable <any> {
     const url = `${this.url}/cso`;
     console.log(url)
@@ -41,12 +40,18 @@ export class EntityProvider {
       .pipe(catchError(this.handleError(<any>("getCso"))));
   }
 
+  /**
+   * Get Capacity Building
+   */
   public getCapacityBuilding(): Observable <any> {
     const url = `${this.url}/capacity_building`;
     return this.http.get(url)
       .pipe(catchError(this.handleError(<any>("getCapacityBuilding"))));
   }
 
+  /**
+   *  Get Assessment
+   */
   public getAssessment(): Observable <any> {
     const url = `${this.url}/assessment`;
     return this.http.get(url)
@@ -63,6 +68,10 @@ export class EntityProvider {
   
 
 
+  /**
+   * 
+   * @param capacity 
+   */
   public saveCapacityBuilding(capacity): Observable<any> {
     const url = `${this.url}/capacity_building`;
     debugger
@@ -70,18 +79,31 @@ export class EntityProvider {
       .pipe(catchError(this.handleError(<any>("saveCapacityBuilding"))));
   }
 
+  /**
+   * 
+   * @param cso 
+   */
   public saveCso(cso): Observable<any> {
     const url = `${this.url}/cso`;
     return this.http.post(url,cso,httpOptions)
       .pipe(catchError(this.handleError(<any>("saveCso"))));
   }
-  
+
+  /**
+   * 
+   * @param assessment 
+   */
   public saveAssessment(assessment): Observable <any> {
+    debugger
     const url = `${this.url}/assessment`;
     return this.http.post(url,assessment,httpOptions)
       .pipe(catchError(this.handleError(<any>("getAssessment"))));
   }
 
+  /**
+   * 
+   * @param members 
+   */
   public saveMembers(members): Observable <any> {
     const url = `${this.url}/members`;
     return this.http.post(url,members,httpOptions)
