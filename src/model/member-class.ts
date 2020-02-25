@@ -1,5 +1,5 @@
 export class Member{
-    member_id: number;
+    member_uuid: string;
     first_name: string;
     last_name: string;
     member_position_id: number;
