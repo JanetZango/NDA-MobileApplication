@@ -80,7 +80,8 @@ import { AddCsoMemberPage } from '../pages/add-cso-member/add-cso-member';
     EntityProvider,
     ConfigService,
     LookUpService,
-    DataProvider
+    DataProvider,
+    
 
   ]
 })

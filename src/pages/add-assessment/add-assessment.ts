@@ -54,7 +54,7 @@ export class AddAssessmentPage {
     }
   }
 
-  addCapacity(assessment: NgForm){
+  addAssessment(assessment: NgForm){
     this.entityProvider.saveAssessment(assessment.value)
       .subscribe(res =>{
         if(res.status === 201){

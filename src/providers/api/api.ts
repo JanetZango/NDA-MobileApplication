@@ -14,7 +14,7 @@ import { ConfigService } from '../config/config.server';
 
 const httpOptions = {
   headers: new HttpHeaders({ 'Content-Type': 'application/json' }),
-  // observe: 'response'
+  // observe: "response"
 };
 
 @Injectable()

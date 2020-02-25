@@ -1,7 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { DisplayListOfCsoPage } from '../display-list-of-cso/display-list-of-cso';
-import { ViewCsoMemberPage } from '../view-cso-member/view-cso-member';
 import { DisplayCsoMemberListPage } from '../display-cso-member-list/display-cso-member-list';
 
 /**
@@ -19,8 +18,13 @@ import { DisplayCsoMemberListPage } from '../display-cso-member-list/display-cso
 export class ViewcsodetailsPage {
   viewCSoArr = new Array();
 
+  csoObj:any
   constructor(public navCtrl: NavController, public navParams: NavParams) {
+  
+    // this will show data on the card view
     this.viewCSoArr.push(this.navParams.get('orgObject'));
+    // this use to transfer cso data
+    this.csoObj =this.navParams.get('orgObject');
     console.log(this.viewCSoArr);
  
 
@@ -36,10 +40,10 @@ export class ViewcsodetailsPage {
 
   // ** move data to the nect page
   seeCsoMmbers(){
-      for (var x = 0; x < this.viewCSoArr.length; x++) {
-          this.navCtrl.push(DisplayCsoMemberListPage, { orgObject: this.viewCSoArr[x] });
-          
-      }
+      this.navCtrl.push(DisplayCsoMemberListPage, { orgObject: this.csoObj });
+
   }
+
+  
 
 }

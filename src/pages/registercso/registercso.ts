@@ -122,7 +122,7 @@ export class RegistercsoPage {
 
   getDistrict(){
     this.lookupService.getDistrict().subscribe(res =>{
-      this.districtArr = res 
+      this.districtArrData = res 
     })
   }
 
@@ -131,7 +131,7 @@ export class RegistercsoPage {
    */
   getMunicipality(){
     this.lookupService.getLocalMunicipality().subscribe(res =>{
-      this.municipalityArr = res
+      this.municipalityArrData = res
     })
   }
 
@@ -153,7 +153,7 @@ export class RegistercsoPage {
    * @param districtId
    */
   populateMunicipality(districtId: NgModel){
-    debugger
+    
     this.municipalityArr = this.municipalityArrData
       .filter(m => m.district_id === districtId);
       console.log(this.municipalityArr)

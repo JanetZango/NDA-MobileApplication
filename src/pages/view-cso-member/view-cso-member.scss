@@ -1,3 +1,61 @@
 page-view-cso-member {
+    .round{
+        height: 70vh;
+        width: 100vh;
+        position: absolute;
+        bottom: 50%;
+        right: -50%;
+        background-color: #00919E;
+        border-radius: 100%;
+    }
+    ion-card{
+        position: relative;
+        padding:20px;
+       
 
+        b{
+            font-family: 'Jomolhari', serif;
+            text-transform: capitalize;
+        }
+        p{
+            font-family: 'Jomolhari', serif;
+            text-transform: capitalize;
+        }
+    }
+    .card{
+        margin-top:30px;
+        height:400px;
+        border-radius: 10px;
+        background-color: whitesmoke;
+        // box-shadow: 6px 10px 10px  rgba(17, 16, 16, 0.408);
+ 
+    
+    }
+    .btn{
+        // text-align: left;
+        button{
+            // font-size: 1.5em;
+            color:white;
+        }
+    }
+    .infor{
+        padding:20px;
+    }
+   
+    .btnCreate{
+        // margin-left:10px;
+        margin-top: 50px;
+        // text-align: left;
+        button{
+            background-color: #00919E;
+            width:95%;
+            color: white;
+            border: 1px solid white;
+            // text-align: center;
+        }
+    }
+    h1{
+        font-family: 'Yeon Sung', cursive;
+        text-align: center;
+    }
 }

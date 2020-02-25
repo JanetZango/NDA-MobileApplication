@@ -22,8 +22,15 @@ export class ViewCsoMemberPage {
 
   CsoDetailsArr = new Array();
   constructor(public navCtrl: NavController, public navParams: NavParams) {
+    this.CsoDetailsArr.push(this.navParams.get('orgObject'));
+    console.log(this.CsoDetailsArr)
   
     
+  }
+
+  // ** go back to cso member list
+  gotoback(){
+    this.navCtrl.pop();
   }
 
   ionViewDidLoad() {

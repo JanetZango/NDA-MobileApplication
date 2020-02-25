@@ -1,7 +1,10 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { AddCsoMemberPage } from '../add-cso-member/add-cso-member';
-
+import { LoadingController } from 'ionic-angular';
+import { ApiProvider } from '../../providers/api/api';
+import { EntityProvider } from '../../providers/entity/cso';
+import { ViewCsoMemberPage } from '../view-cso-member/view-cso-member';
 /**
  * Generated class for the DisplayCsoMemberListPage page.
  *
@@ -14,20 +17,28 @@ import { AddCsoMemberPage } from '../add-cso-member/add-cso-member';
   selector: 'page-display-cso-member-list',
   templateUrl: 'display-cso-member-list.html',
 })
-export class DisplayCsoMemberListPage {
+export class DisplayCsoMemberListPage implements OnInit {
  //variables
  cso_uuid;
 
 
  //retrieve data array
 
+ csoObj:any 
+ DisplayCsoMember:any
+
  CsoDetailsArr = new Array();
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  constructor(public navCtrl: NavController,
+     public navParams: NavParams,
+     public loadingCtrl: LoadingController,
+     public api:ApiProvider,
+     public csoApi:EntityProvider) {
   }
 
   ionViewDidLoad() {
-    // console.log('ionViewDidLoad DisplayCsoMemberListPage');
     this.CsoDetailsArr.push(this.navParams.get('orgObject'));
+    this.csoObj =this.navParams.get('orgObject');
+
     console.log(this.CsoDetailsArr)
     this.cso_uuid = this.CsoDetailsArr[0].cso_uuid
     console.log(this.cso_uuid)
@@ -35,10 +46,42 @@ export class DisplayCsoMemberListPage {
 
   addCsoMember(){
     for (var x = 0; x < this.CsoDetailsArr.length; x++) {
-      this.navCtrl.push(AddCsoMemberPage, { orgObject: this.CsoDetailsArr[x] });
+      this.navCtrl.push(AddCsoMemberPage, { orgObject: this.csoObj });
     } 
   }
 
+  viewMore(name){
+    for (var x = 0; x < this.DisplayCsoMember.length; x++) {
+      if(name == this.DisplayCsoMember[x].first_name){
+        this.navCtrl.push(ViewCsoMemberPage, { orgObject: this.DisplayCsoMember[x] });
+      }
+    } 
+  }
+  
+  ngOnInit(){
+       this.displayCsoList();
+    }
+
+
+    displayCsoList(){
+      const loader = this.loadingCtrl.create({
+        content: "Please wait information is stil loading...",
+        duration: 300000000
+      });
+      loader.present();
+      this.csoApi.getCsoMember().subscribe(res => {
+        if(res){
+          console.log(res.results);
+          this.DisplayCsoMember = res.results
+          loader.dismiss()
+          // console.log(this.DisplayCso[0].cso_name)
+          // for(var x =0; x < this.DisplayCso.length;x ++){
+          //   this.storeOrgNames(this.DisplayCso[x].cso_name)
+             
+          // }
+        }
+      })
+    }
 
   //** Go back to view deatils of cso */
 

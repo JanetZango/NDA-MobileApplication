@@ -53,6 +53,15 @@ export class EntityProvider {
       .pipe(catchError(this.handleError(<any>("getAssessment"))));
   }
 
+  public getCsoMember(): Observable <any> {
+    const url = `${this.url}/members`;
+    return this.http.get(url)
+      .pipe(catchError(this.handleError(<any>("getMember"))));
+  }
+
+
+  
+
 
   public saveCapacityBuilding(capacity): Observable<any> {
     const url = `${this.url}/capacity_building`;
