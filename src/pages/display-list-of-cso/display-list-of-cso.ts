@@ -6,6 +6,7 @@ import { ApiProvider } from '../../providers/api/api';
 import { EntityProvider } from '../../providers/entity/cso'
 import { ViewcsodetailsPage } from '../viewcsodetails/viewcsodetails';
 import { filter } from 'rxjs/operators';
+import { LoadingController } from 'ionic-angular';
 /**
  * Generated class for the DisplayListOfCsoPage page.
  *
@@ -31,7 +32,8 @@ export class DisplayListOfCsoPage implements OnInit{
     public navCtrl: NavController, 
     public navParams: NavParams,
     public api:ApiProvider,
-    public csoApi:EntityProvider
+    public csoApi:EntityProvider,
+    public loadingCtrl: LoadingController
     ) {
   }
 
@@ -49,16 +51,22 @@ export class DisplayListOfCsoPage implements OnInit{
   }
 
   displayCsoList(){
+    const loader = this.loadingCtrl.create({
+      content: "Please wait information is stil loading...",
+      duration: 300000000
+    });
+    loader.present();
     this.csoApi.getCso().subscribe(res => {
       if(res){
         console.log(res.results);
         this.DisplayCso = res.results
         this.storeNames();
+        loader.dismiss()
         // console.log(this.DisplayCso[0].cso_name)
-        for(var x =0; x < this.DisplayCso.length;x ++){
-          this.storeOrgNames(this.DisplayCso[x].cso_name)
+        // for(var x =0; x < this.DisplayCso.length;x ++){
+        //   this.storeOrgNames(this.DisplayCso[x].cso_name)
            
-        }
+        // }
       }
     })
   }

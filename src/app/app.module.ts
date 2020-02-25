@@ -24,6 +24,9 @@ import { EntityProvider } from '../providers/entity/cso'
 import { ViewcsodetailsPage } from '../pages/viewcsodetails/viewcsodetails';
 import { LookUpService } from '../providers/lookup/lookups.service';
 import { DataProvider } from '../providers/dataproviders/dataprovider';
+import { ViewCsoMemberPage } from '../pages/view-cso-member/view-cso-member';
+import { DisplayCsoMemberListPage } from '../pages/display-cso-member-list/display-cso-member-list';
+import { AddCsoMemberPage } from '../pages/add-cso-member/add-cso-member';
 
 
 @NgModule({
@@ -40,7 +43,10 @@ import { DataProvider } from '../providers/dataproviders/dataprovider';
     AddCapacityPage,
     AddOtpPage,
     AsynPage,
-    ViewcsodetailsPage
+    ViewcsodetailsPage,
+    ViewCsoMemberPage,
+    DisplayCsoMemberListPage,
+    AddCsoMemberPage
   ],
   imports: [
     BrowserModule,
@@ -61,7 +67,10 @@ import { DataProvider } from '../providers/dataproviders/dataprovider';
     DisplayListOfCapacityPage,
     AddAssessmentPage,
     AsynPage,
-    ViewcsodetailsPage
+    ViewcsodetailsPage,
+    ViewCsoMemberPage,
+    DisplayCsoMemberListPage,
+    AddCsoMemberPage
   ],
   providers: [
     StatusBar,

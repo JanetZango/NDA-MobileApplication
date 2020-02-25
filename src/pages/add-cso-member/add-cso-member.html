@@ -1,0 +1,81 @@
+<ion-content class="content">
+
+    <div class="divImage">
+      <p>Add a Cso Member</p>
+    </div>
+    <form #csoMember="ngForm" (ngSubmit)="addCsoMember(csoMember)">
+        <ion-input placeholder="First_name" type="text" class="user-input" [(ngModel)]="first_name" name="first_name" ngModel id="anim1"></ion-input>
+
+
+        <ion-input placeholder="Last_name" type="text" class="user-input" [(ngModel)]="last_name" name="last_name" ngModel id="anim1"></ion-input>
+
+
+        <ion-item id="item">
+          <ion-label> Select Member Position</ion-label>
+          <ion-select [(ngModel)]="member_position_id" name="member_position_id" ngModel>
+            <ion-option value="1">Trustee</ion-option>
+            <ion-option value="2">Management</ion-option>
+            <ion-option value="3">General Monitor</ion-option>
+            <ion-option value="4">Baord Monitor</ion-option>
+            <ion-option value="5">Other</ion-option>
+          </ion-select>
+        </ion-item>
+
+        <ion-item id="item">
+          <ion-label> Select Gender</ion-label>
+          <ion-select [(ngModel)]="gender" name="gender" ngModel>
+            <ion-option value="Female">Female</ion-option>
+            <ion-option value="Male">Male</ion-option>
+          </ion-select>
+        </ion-item>
+
+
+
+        <ion-item id="item">
+          <ion-label> Select Race</ion-label>
+          <ion-select [(ngModel)]="race" name="race" ngModel>
+            <ion-option value="African">African</ion-option>
+            <ion-option value="Colored">Colored</ion-option>
+            <ion-option value="Indian">Indian</ion-option>
+            <ion-option value="White">White</ion-option>
+          </ion-select>
+        </ion-item>
+
+        <ion-input placeholder="Passport_number" type="text" class="user-input" name="Passport_number"
+          [(ngModel)]="passport_number" name="Passport_number" ngModel id="anim1"></ion-input>
+
+
+        <ion-item id="item">
+          <ion-label> Select Disability</ion-label>
+          <ion-select [(ngModel)]="disability" name="disability" ngModel>
+            <ion-option value="Yes">Yes</ion-option>
+            <ion-option value="No">No</ion-option>
+          </ion-select>
+        </ion-item>
+
+        <ion-item id="item">
+          <ion-label> Select Nationality</ion-label>
+          <ion-select [(ngModel)]="nationality" name="nationality" ngModel>
+            <ion-option value="South African">South African</ion-option>
+            <ion-option value="Other">Other</ion-option>
+          </ion-select>
+        </ion-item>
+
+        <ion-input placeholder="Contact_Number" [(ngModel)]="contact_number" type="number" class="user-input" name="contact_number" ngModel
+          id="anim1"></ion-input>
+
+        <form name="pleasevalidateme">
+          <ion-input type="text" name="id_number" [(ngModel)]="id_number" ngModel placeholder="ID number" id="anim1"></ion-input>
+          <input type="checkbox" name="saidCB" /> SA ID number
+          <button ion-button (click)="validateID()">verify</button>
+        </form>
+
+
+        <div class="moveCont">
+          <button  type="submit" ion-button round class="btnSign" id="anim2"
+           >Rgister
+            A Member</button>
+        </div>
+      </form>
+
+</ion-content>

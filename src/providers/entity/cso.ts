@@ -72,6 +72,12 @@ export class EntityProvider {
     return this.http.post(url,assessment,httpOptions)
       .pipe(catchError(this.handleError(<any>("getAssessment"))));
   }
+
+  public saveMembers(members): Observable <any> {
+    const url = `${this.url}/members`;
+    return this.http.post(url,members,httpOptions)
+      .pipe(catchError(this.handleError(<any>("getCsoMembers"))));
+  }
   
 
   /**
