@@ -168,13 +168,14 @@ export class RegistercsoPage {
       .subscribe(res =>{
         if(res){
           // cso.reset();
-        }else{
           const alert = this.alertCtrl.create({
             title: 'Alert',
             subTitle: 'cso registered',
             buttons: ['OK']
           });
           alert.present();
+        }else{
+          // TODO 
         }
       });
   }

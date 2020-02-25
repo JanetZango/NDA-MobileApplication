@@ -55,17 +55,19 @@ export class AddAssessmentPage {
   }
 
   addCapacity(assessment: NgForm){
+
+    debugger
     this.entityProvider.saveAssessment(assessment.value)
       .subscribe(res =>{
-        if(res.status === 201){
-          // TODO
-        }else{
+        if(res){
           const alert = this.alertCtrl.create({
             title: 'Alert',
             subTitle: 'assessment Building Saved',
             buttons: ['OK']
           });
           alert.present();
+        }else{
+          // TODO
         }
       });
   }

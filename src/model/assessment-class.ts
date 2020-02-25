@@ -3,5 +3,4 @@ export class Assessment {
     assessment_date:Date;
     assessment_type_id:number;
     assessment_questions:string;
-
 }
