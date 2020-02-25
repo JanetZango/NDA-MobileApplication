@@ -33,14 +33,11 @@ export class LoginPage {
   }
   verifyemail(form: NgForm) {
 
-    if(form.value.email=== ''){
-      return;
-    }
-    
+    // if(form.value.email=== ''){
+    //   return;
+    // }
     this.authUser.verifyUser(form.value.email).subscribe(res => {
-      
-      if (res.status !== 200) {
-        
+      if (res) {
         const alert = this.alertCtrl.create({
           title: 'Error!',
           subTitle: 'Please enter your email address!',

@@ -62,11 +62,11 @@ export class DisplayListOfCsoPage implements OnInit{
         this.DisplayCso = res.results
         this.storeNames();
         loader.dismiss()
-        // console.log(this.DisplayCso[0].cso_name)
-        // for(var x =0; x < this.DisplayCso.length;x ++){
-        //   this.storeOrgNames(this.DisplayCso[x].cso_name)
+        console.log(this.DisplayCso[0].cso_name)
+        for(var x =0; x < this.DisplayCso.length;x ++){
+          this.storeOrgNames(this.DisplayCso[x].cso_name)
            
-        // }
+        }
       }
     })
   }
