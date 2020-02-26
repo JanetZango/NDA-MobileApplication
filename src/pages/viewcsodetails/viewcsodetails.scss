@@ -1,4 +1,8 @@
 page-viewcsodetails {
+    .content{
+        background-color: #fefefe;
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4' viewBox='0 0 4 4'%3E%3Cpath fill='%2300919e' fill-opacity='0.4' d='M1 3h1v1H1V3zm2-2h1v1H3V1z'%3E%3C/path%3E%3C/svg%3E");
+    }
     .round{
         height: 70vh;
         width: 100vh;
@@ -8,33 +12,43 @@ page-viewcsodetails {
         background-color: #00919E;
         border-radius: 100%;
     }
-    ion-card{
-        position: relative;
-        padding:20px;
+    // ion-card{
+    //     position: relative;
+    //     padding:20px;
        
 
-        b{
-            font-family: 'Jomolhari', serif;
-            text-transform: capitalize;
-        }
-        p{
-            font-family: 'Jomolhari', serif;
-            text-transform: capitalize;
-        }
+    //     b{
+    //         font-family: 'Jomolhari', serif;
+    //         text-transform: capitalize;
+    //     }
+    //     p{
+    //         font-family: 'Jomolhari', serif;
+    //         text-transform: capitalize;
+    //     }
+    // }
+    h2{
+        color: black;
+        text-align: center;
+        margin-top:60px;
+        font-family: 'ZCOOL XiaoWei', serif;
+
     }
     .card{
-        margin-top:30px;
+        width:350px;
+        // background-color: white;
         height:400px;
         border-radius: 10px;
-        background-color: whitesmoke;
+        padding-left:30px;
+        margin:0 auto 10px;
         // box-shadow: 6px 10px 10px  rgba(17, 16, 16, 0.408);
- 
-    
+
     }
     .btn{
         text-align: left;
         button{
-            font-size: 1.5em;
+            // font-size: 1.5em;
+            color:white;
+
         }
     }
     .infor{
@@ -42,11 +56,12 @@ page-viewcsodetails {
     }
    
     .btnCreate{
-        margin-left:10px;
-        margin-top: 50px;
+        text-align: right;
+        margin-top:-50px;
+        padding:10px;
         button{
             background-color: #00919E;
-            width:95%;
+            width:200px;
             color: white;
             border: 1px solid white;
             text-align: center;
@@ -55,5 +70,9 @@ page-viewcsodetails {
     h1{
         font-family: 'Yeon Sung', cursive;
         text-align: center;
+    }
+    .top{
+        background-color: #00919E;
+        height: 10%;
     }
 }

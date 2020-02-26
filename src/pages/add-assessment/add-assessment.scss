@@ -12,6 +12,9 @@ page-add-assessment {
             color:#00919E;
             font-family: 'Righteous', cursive;
         }
+        button{
+            color:#00919E;
+        }
 
     }
     .btnSign{
@@ -81,14 +84,15 @@ page-add-assessment {
         color: white;
     }
     .Qcard{
-        height: 60%;
-        width:97%;
-        background-color: rgb(255, 255, 255);
-        position: relative;
-        margin:0px auto;
-        margin-top:150px;
-        border-radius: 10px;
-        box-shadow: 0px 15px 30px -15px rgb(0, 0, 0); 
+        padding:10px;
+        text-align: center;
+        h2{
+           
+        }
+        b{
+            
+        }
+       
     }
     #anim1{
         background-color:  whitesmoke;
@@ -116,16 +120,26 @@ page-add-assessment {
         text-align: center;
         margin-top:35px;
         color:white;
+        button{
+            border-radius: 100px;
+            width:200px;
+        }
         
     }
-    #btn{
+    .btn{
+        text-align: left;
+
         button{
-            width:70%;
-            // background-color:  #00919E;
-            color:white;
+            color:#00919E;
         }
+    
     }
-  
+    .p{
+        text-align: center;
+        font-size: 1.7em;
+        color:#00919E;
+        font-family: 'Righteous', cursive;
+    }
     span{
         justify-content: center;
     }

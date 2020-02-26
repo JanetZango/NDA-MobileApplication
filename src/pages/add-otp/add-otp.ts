@@ -31,16 +31,11 @@ export class AddOtpPage {
   }
   
   login(otpf: NgForm){
-
-    if (otpf.value.otp === '') {
-     return   
-     }
-
      this.authUser.verifyOpt(otpf.value.otp).subscribe(res =>{
       if (typeof (res) != 'undefined') {
-        this.navCtrl.push(LandingPage);
+        this.navCtrl.setRoot(LandingPage);
       }
-      else {
+      else if (otpf.value.otp === ''){
         const alert = this.alertCtrl.create({
           title: 'Oops!',
           subTitle: 'Please enter your otp code!',

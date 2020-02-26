@@ -1,6 +1,6 @@
 
 
-<ion-content >
+<ion-content class="content">
   <div class="top">
     <div class="back">
       <button clear ion-button (click)="gotoLanding()">
@@ -28,14 +28,14 @@
   <h3 style="text-align: center;">*Manage Mobilisation-CSO <br>Registration</h3>
   <div class="mainInfor">
     <ion-card *ngFor="let a of DisplayCso">
-      <div class="card">
+      <div class="card" (click)="viewMore(a)">
         <p><b>Cso Name:</b>{{a.cso_name}}</p>
         <p><b>Cso Sector:</b>{{a.cso_sector}}</p>
         <p><b>Municipality:</b>{{a.municipality}}</p>
         <p><b>District:</b>{{a.district}}</p>
         <p><b>Cso_type:</b>{{a.cso_type}}</p>
         <div class="viewBtn">
-          <button ion-button (click)="viewMore(a)">View more
+          <button clear ion-button ><ion-icon name="ios-arrow-forward-outline"></ion-icon>
           </button>
         </div>
 

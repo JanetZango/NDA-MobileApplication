@@ -1,9 +1,10 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { IonicPage, NavController, NavParams, AlertController } from 'ionic-angular';
 import { DisplayListOfAssessmentPage } from '../display-list-of-assessment/display-list-of-assessment';
 import { LookUpService } from '../../providers/lookup/lookups.service';
 import { NgModel, NgForm } from '@angular/forms';
 import { EntityProvider } from '../../providers/entity/cso';
+import { ApiProvider } from '../../providers/api/api';
 
 /**
  * Generated class for the AddAssessmentPage page.
@@ -17,18 +18,25 @@ import { EntityProvider } from '../../providers/entity/cso';
   selector: 'page-add-assessment',
   templateUrl: 'add-assessment.html',
 })
-export class AddAssessmentPage {
+export class AddAssessmentPage  implements OnInit{
   assessment_type_id;
   showQuestions: boolean = false;
   assessmentQuestionArr = new Array();
   assessmentAnswerArr = new Array();
   answerObj = new Array();
+  DisplayCso = new Array();
+
+
+
+  //variables
+  items;
   constructor(
     public navCtrl: NavController,
     public navParams: NavParams,
     public lookupService: LookUpService,
     public entityProvider: EntityProvider,
     public alertCtrl: AlertController,
+    public csoApi:EntityProvider
   ) {
     this.getAssessmentQuestion();
   }
@@ -39,6 +47,9 @@ export class AddAssessmentPage {
   }
   gotoback() {
     this.navCtrl.push(DisplayListOfAssessmentPage)
+  }
+  ngOnInit(){
+    this.displayCsoList();
   }
 
   getAssessementAnswer() {
@@ -78,7 +89,6 @@ export class AddAssessmentPage {
   addAssessment() {
 
     this.entityProvider.saveAssessment(this.answerObj).subscribe(res => {
-      debugger
       if (typeof (res) != 'undefined') {
         const alert = this.alertCtrl.create({
           title: 'Alert',
@@ -112,7 +122,6 @@ export class AddAssessmentPage {
    * @param answers 
    */
   selectRad(answers){
-    debugger
     if(this.answerObj.length > 0){
       // checking if there is answer from the same Question if is there is must be removed and replaced with new selected answer
         for(var i = 0; i < this.answerObj.length;i++ ){
@@ -124,6 +133,65 @@ export class AddAssessmentPage {
     }
     this.answerObj.push(answers);
   }
+
+
+
+  // ** search by name
+  displayCsoList(){
+    this.csoApi.getCso().subscribe(res => {
+      if(res){
+        console.log(res.results);
+        this.DisplayCso = res.results
+        this.storeNames();
+        console.log(this.DisplayCso[0].cso_name)
+        for(var x =0; x < this.DisplayCso.length;x ++){
+          this.storeOrgNames(this.DisplayCso[x].cso_name)
+           
+        }
+      }
+    })
+  }
+  CsoName = new Array();
+  storeOrgNames(cso_name) {
+    this.CsoName.push(cso_name);
+    console.log(this.CsoName)
+  }
+
+  getCsoName(){
+    return this.CsoName
+    
+  }
+
+  getItems(ev: any) {
+    console.log(`hi serach`);
+    this.initializeItems();
+    // this.searchlist = true
+    // set val to the value of the searchbar
+    const val = ev.target.value;
+    // if the value is an empty string don't filter the items
+    if (val && val.trim() != '') {
+      this.items = this.items.filter((cso_name) => {
+        return (cso_name.toLowerCase().indexOf(val.toLowerCase()) > -1);
+      })
+      let searchlist = document.getElementsByClassName('searchitem') as HTMLCollectionOf<HTMLElement>;
+      //searchlist[0].style.display = 'block';
+    }
+    else {
+      this.items = []
+    }
+  }
+
+  initializeItems() {
+    this.items = []
+    this.items = this.namesArr
+    console.log(this.items)
+  }
+  namesArr = new Array()
+  storeNames() {
+    this.namesArr = this.CsoName;
+    console.log(this.namesArr)
+  }
+
 
 
 }

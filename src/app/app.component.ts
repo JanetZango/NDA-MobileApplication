@@ -8,18 +8,23 @@ import { LandingPage } from '../pages/landing/landing';
 import { DisplayListOfCsoPage } from '../pages/display-list-of-cso/display-list-of-cso';
 import { EntityProvider } from '../providers/entity/cso';
 import { DataProvider } from '../providers/dataproviders/dataprovider';
+import { timer } from 'rxjs/observable/timer';
+import { LoginPage } from '../pages/login/login';
+
+
 @Component({
   templateUrl: 'app.html'
 })
 export class MyApp {
-  //rootPage:any = HomePage;
+  // rootPage:any = LoginPage;
   rootPage:any = LandingPage;
-
+  showSplash = true;
   constructor(platform: Platform, 
     statusBar: StatusBar, 
     splashScreen: SplashScreen,
     public entityProvider: EntityProvider,
-    public csoProvider: DataProvider
+    public csoProvider: DataProvider,
+   
     ) {
 
     platform.ready().then(() => {
@@ -30,6 +35,9 @@ export class MyApp {
     });
 
     this.getAllCso();
+    statusBar.styleDefault();
+    splashScreen.hide();
+    timer(3000).subscribe(() => this.showSplash = false)
   }
 
   // to make sure that when the app load we get all the list of cso, to be to inject on pages

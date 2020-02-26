@@ -18,13 +18,11 @@ page-landing {
     }
     .card{
         height:200px;
-        // border: 1.5px solid rgb(241, 241, 241);
-        // width:360px;
         margin:0 auto 10px;
         margin-top:20px;
         background-color: #00919E;
         color:white;
-        box-shadow: 6px 15px 15px  rgba(17, 16, 16, 0.408);
+        // box-shadow: 6px 15px 15px  rgba(17, 16, 16, 0.408);
         transition: 0.5s ease;
         padding:35px;
         cursor: pointer;     
@@ -106,7 +104,7 @@ page-landing {
             margin-left: 200px;
             margin-top:-80px;
             width:100px;
-            border: 1px solid white;
+            // border: 1px solid white;
             color:white;
             // border-radius: 100px;
         }
@@ -303,6 +301,7 @@ page-landing {
             // border:2px solid red;
             margin-top:90px;
         }
-    
+     
     }
+   
 }

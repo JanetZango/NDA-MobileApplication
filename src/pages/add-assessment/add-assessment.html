@@ -1,77 +1,73 @@
 <ion-content>
-  <div class="divImage">
-    <div class="btn">
-      <button ion-button (click)="gotoback()">
-          <ion-icon ios="ios-arrow-back" md="md-arrow-back"></ion-icon>
-      </button>
+  <div class="btn">
+    <button ion-button (click)="gotoback()">
+      <ion-icon ios="ios-arrow-back" md="md-arrow-back"></ion-icon>
+    </button>
   </div>
-    <p>Add Assessment</p>
-  </div>
+  <p class="p">Add Assessment</p>
+ 
+      <ion-input placeholder="Type the name of CSO" type="search" id="site-search" class="user-input"
+      (input)="getItems($event)" [(ngModel)]="cso_name" name="cso_name" id="anim1" ngModel></ion-input>
 
-    <ion-slides pager="true" class="slide">
-      <ion-slide>
-        <ion-input placeholder="Type the name of CSO" type="search" id="site-search" class="user-input"
-          [(ngModel)]="cso_name" name="cso_name" id="anim1" ngModel></ion-input>
-
-        <div id="results">
-          <ion-item no-lines *ngFor="let item of items; let i=index" for="site-search" (click)="openMarkerInfo(item)">
-            <p>{{item}}</p>
-          </ion-item>
-        </div>
-
-    
-        <div class="Contacts">
-          <ion-label>Assessment date</ion-label>
-          <input type="date" id="input-field" [(ngModel)]="assessment_date" name="assessment_date" ngModel>
-          <br>
-        </div>
-
-      </ion-slide>
-      <ion-slide>
-        <ion-item id="item">
-          <ion-label> Assessment Type</ion-label>
-          <ion-select [(ngModel)]="assessment_type_id" (ionChange)="AssessmentQuestions()">
-            <ion-option value="1">CSO Mobilisation Needs Assessment Form</ion-option>
-            <ion-option value="2" disabled>Formalisation Needs Assessment</ion-option>
-            <ion-option value="3" disabled>Registration and Compliance</ion-option>
-            <ion-option value="4" disabled>Community Development</ion-option>
-            <ion-option value="5" disabled>Workplace Conflict</ion-option>
-            <ion-option value="6" disabled>Financial Management Needs Assessment
-            </ion-option>
-            <ion-option value="7" disabled>Capacity Building Governanace Needs
-              Assessment</ion-option>
-            <ion-option value="8" disabled>Capacity Building
-              Legislative
-              Registration and Governanace</ion-option>
-            <ion-option value="9" disabled>Organisational Management and Human
-              Resource Nedds</ion-option>
-            <ion-option value="10" disabled>Project Management Needs</ion-option>
-            <ion-option value="11" disabled>Resource Mobilisation and Sustainability
-            </ion-option>
-            <ion-option value="12" disabled>Networking and External Relations</ion-option>
-            <ion-option value="13" disabled>Grant Funding and Resource Needs</ion-option>
-            <ion-option value="14" disabled>Linkage for Sustainability Needs</ion-option>
-          </ion-select>
+      <div id="results">
+        <ion-item no-lines *ngFor="let item of items; let i=index" for="site-search" (click)="openMarkerInfo(item)">
+          <p>{{item}}</p>
         </ion-item>
-      </ion-slide>
-    </ion-slides>
+      </div>
 
-    <div id="placeholderDiv" *ngIf="showQuestions">
-      <div class="Qcard">
-        <ion-slides pager="true">
-          <ion-slide>
-            <h2>Section One</h2>
-            <b>Institutional Arrangement</b>
-            <div *ngFor="let assessmentAnswer of assessmentAnswerArr ; let i = index">
-              <p>{{i+1}}.{{assessmentAnswer.question}}</p>
-              <ion-list radio-group>
-                <ion-item id="item2"*ngFor="let answers of assessmentAnswer.answerlist ; let j = index" >
-                  <ion-label id="label">{{answers.answer}}</ion-label>
-                    <ion-radio (ionSelect)="selectRad(answers)" value="{{answers.id}}"></ion-radio>
-                </ion-item>
-              </ion-list>
-            </div>
-            <!-- <p>1.The CSO/NPO has a contituion approved by members of the <br>organisation</p>
+
+      <div class="Contacts">
+        <ion-label>Start date</ion-label>
+        <ion-item>
+          <ion-label>MM DD YY</ion-label>
+          <ion-datetime displayFormat="MM DD YY" placeholder="Select Date" required [(ngModel)]="assessment_date"
+            name="assessment_date" ngModel></ion-datetime>
+        </ion-item>
+        <br>
+      </div>
+
+
+      <ion-item id="item">
+        <ion-label> Assessment Type</ion-label>
+        <ion-select [(ngModel)]="assessment_type_id" (ionChange)="AssessmentQuestions()">
+          <ion-option value="1">CSO Mobilisation Needs Assessment Form</ion-option>
+          <ion-option value="2" disabled>Formalisation Needs Assessment</ion-option>
+          <ion-option value="3" disabled>Registration and Compliance</ion-option>
+          <ion-option value="4" disabled>Community Development</ion-option>
+          <ion-option value="5" disabled>Workplace Conflict</ion-option>
+          <ion-option value="6" disabled>Financial Management Needs Assessment
+          </ion-option>
+          <ion-option value="7" disabled>Capacity Building Governanace Needs
+            Assessment</ion-option>
+          <ion-option value="8" disabled>Capacity Building
+            Legislative
+            Registration and Governanace</ion-option>
+          <ion-option value="9" disabled>Organisational Management and Human
+            Resource Nedds</ion-option>
+          <ion-option value="10" disabled>Project Management Needs</ion-option>
+          <ion-option value="11" disabled>Resource Mobilisation and Sustainability
+          </ion-option>
+          <ion-option value="12" disabled>Networking and External Relations</ion-option>
+          <ion-option value="13" disabled>Grant Funding and Resource Needs</ion-option>
+          <ion-option value="14" disabled>Linkage for Sustainability Needs</ion-option>
+        </ion-select>
+      </ion-item>
+
+  <div id="placeholderDiv" *ngIf="showQuestions">
+    <div class="Qcard">
+     
+          <h2>Section One</h2>
+          <b>Institutional Arrangement</b>
+          <div *ngFor="let assessmentAnswer of assessmentAnswerArr ; let i = index">
+            <p>{{i+1}}.{{assessmentAnswer.question}}</p>
+            <ion-list radio-group>
+              <ion-item id="item2" *ngFor="let answers of assessmentAnswer.answerlist ; let j = index">
+                <ion-label id="label">{{answers.answer}}</ion-label>
+                <ion-radio (ionSelect)="selectRad(answers)" value="{{answers.id}}"></ion-radio>
+              </ion-item>
+            </ion-list>
+          </div>
+          <!-- <p>1.The CSO/NPO has a contituion approved by members of the <br>organisation</p>
             <ion-list [(ngModel)]="assessment_questions" radio-group>
               <ion-item id="item2">
                 <ion-label id="label">No constitution</ion-label>
@@ -993,12 +989,11 @@
                 <ion-radio value="131"></ion-radio>
               </ion-item>
             </ion-list> -->
-            <div class="moveCont">
-              <button ion-button  id="btn" (click)="addAssessment()">Add Assessment</button>
-            </div>
-          </ion-slide>
-        </ion-slides>
-    
+          <div class="moveCont">
+            <button ion-button id="btn" (click)="addAssessment()">Add Assessment</button>
+          </div>
+   
+
 
     </div>
 

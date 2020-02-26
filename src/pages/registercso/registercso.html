@@ -5,7 +5,7 @@
           <ion-icon ios="ios-arrow-back" md="md-arrow-back"></ion-icon>
       </button>
   </div>
-    <p>Add CSO</p>
+    <h3>Add CSO</h3>
   </div>
   <form #cso="ngForm" (ngSubmit)="addCso(cso)">
     <ion-input placeholder="Name of Cso" [(ngModel)]="cso_name" name="cso_name" ngModel type="text" class="user-input" id="anim1"
@@ -34,7 +34,7 @@
     <ion-label>Start date</ion-label>
     <ion-item>
       <ion-label>MM DD YY</ion-label>
-      <ion-datetime displayFormat="MM DD YY" placeholder="Select Date" required [(ngModel)]="Mobilisation_date" name="start_date" ngModel></ion-datetime>
+      <ion-datetime displayFormat="MMM DD YYYY" placeholder="Select Date" required [(ngModel)]="Mobilisation_date" name="start_date" ngModel></ion-datetime>
     </ion-item>
   </div>
 
