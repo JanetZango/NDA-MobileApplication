@@ -62,7 +62,16 @@
           <ion-slide>
             <h2>Section One</h2>
             <b>Institutional Arrangement</b>
-            <p>1.The CSO/NPO has a contituion approved by members of the <br>organisation</p>
+            <div *ngFor="let assessmentAnswer of assessmentAnswerArr ; let i = index">
+              <p>{{i+1}}.{{assessmentAnswer.question}}</p>
+              <ion-list radio-group>
+                <ion-item id="item2"*ngFor="let answers of assessmentAnswer.answerlist ; let j = index" >
+                  <ion-label id="label">{{answers.answer}}</ion-label>
+                    <ion-radio (ionSelect)="selectRad(answers)" value="{{answers.id}}"></ion-radio>
+                </ion-item>
+              </ion-list>
+            </div>
+            <!-- <p>1.The CSO/NPO has a contituion approved by members of the <br>organisation</p>
             <ion-list [(ngModel)]="assessment_questions" radio-group>
               <ion-item id="item2">
                 <ion-label id="label">No constitution</ion-label>
@@ -983,7 +992,7 @@
                   reports</ion-label>
                 <ion-radio value="131"></ion-radio>
               </ion-item>
-            </ion-list>
+            </ion-list> -->
             <div class="moveCont">
               <button ion-button  id="btn" (click)="addAssessment()">Add Assessment</button>
             </div>

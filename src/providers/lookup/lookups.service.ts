@@ -14,6 +14,7 @@ export class LookUpService {
 
     // look up data files.
     private AssessementAnswer = "../../assets/lookup_database/cso_tra_dbo_lkp_assessment_answer.json";
+    private AssessementQuestion = "../../assets/lookup_database/cso_tra_dbo_lkp_asseement_questions.json"
     private AssessementType = "../../assets/lookup_database/cso_tra_dbo_lkp_assessment_type.json";
     private AssessementTypeSection = "../../assets/lookup_database/cso_tra_dbo_lkp_assessment_type_sector.json";
     private CapacityBuildingType = "../../assets/lookup_database/cso_tra_dbo_lkp_capacity_building_type.json";
@@ -40,49 +41,54 @@ export class LookUpService {
     }
     public getAssessementTypeSection(): Observable<any> {
         return this.http.get(this.AssessementTypeSection)
-        .pipe(catchError(this.handleError(<any>("getAssessementTypeSection"))))
+        .pipe(catchError(this.handleError(<any>("getAssessementTypeSection"))));
     }
 
     public getCapacityBuildingType(): Observable<any> {
         return this.http.get(this.CapacityBuildingType)
-        .pipe(catchError(this.handleError(<any>("getCapacityBuildingType"))))
+        .pipe(catchError(this.handleError(<any>("getCapacityBuildingType"))));
     }
 
     public getCsoSector(): Observable<any> {
         return this.http.get(this.CsoSector)
-        .pipe(catchError(this.handleError(<any>("getCsoSector"))))
+        .pipe(catchError(this.handleError(<any>("getCsoSector"))));
     }
 
     public getCsoType(): Observable<any> {
         return this.http.get(this.CsoType)
-        .pipe(catchError(this.handleError(<any>("getCsoType"))))
+        .pipe(catchError(this.handleError(<any>("getCsoType"))));
     }
 
     public getDistrict(): Observable<any> {
         return this.http.get(this.District)
-        .pipe(catchError(this.handleError(<any>("getDistrict"))))
+        .pipe(catchError(this.handleError(<any>("getDistrict"))));
     }
 
     public getLocalMunicipality(): Observable<any> {
         return this.http.get(this.LocalMunicipality)
-        .pipe(catchError(this.handleError(<any>("getLocalMunicipality"))))
+        .pipe(catchError(this.handleError(<any>("getLocalMunicipality"))));
     }
 
     public getMemberPosition(): Observable<any> {
         return this.http.get(this.MemberPosition)
-        .pipe(catchError(this.handleError(<any>("getMemberPosition"))))
+        .pipe(catchError(this.handleError(<any>("getMemberPosition"))));
     }
 
     public getPartnerType(): Observable<any> {
         return this.http.get(this.PartnerType)
-        .pipe(catchError(this.handleError(<any>("getPartnerType"))))
+        .pipe(catchError(this.handleError(<any>("getPartnerType"))));
     }
 
     public getProvince(): Observable<any> {
         return this.http.get(this.Province)
-        .pipe(catchError(this.handleError(<any>("getProvince"))))
+        .pipe(catchError(this.handleError(<any>("getProvince"))));
     }
 
+    public getAssessmentQuestion(): Observable<any>{
+
+        return this.http.get(this.AssessementQuestion)
+        .pipe(catchError(this.handleError(<any>("getAssessmentQuestion"))));
+    }
 
     /**
      * Handle Http operation that failed.
