@@ -10,8 +10,8 @@
         (input)="getItems($event)" ></ion-input>
 
         <div id="results">
-          <ion-item no-lines *ngFor="let item of items; let i=index" (click)="openMarkerInfo(item)">
-            <p>{{item}}</p>
+          <ion-item no-lines *ngFor="let item of items; let i=index" button (click)="openMarkerInfo(item,capacity)">
+            <p>{{item.cso_name}}</p>
           </ion-item>
         </div>
 

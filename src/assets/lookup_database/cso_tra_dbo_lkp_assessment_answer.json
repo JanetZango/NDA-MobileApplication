@@ -454,5 +454,1125 @@
         "created_date": null
       }
     ]
+  },
+  {
+    "question": "The CSO / NPO has office support equipment for printing, photocopying and faxing",
+    "answerlist": [
+      {
+        "id": 40,
+        "assessment_question_id": 14,
+        "answer": "CSO / NPO does not have access to printing, photocopying and faxing on site",
+        "weight": 1,
+        "modified_by": null,
+        "modified_date": null,
+        "created_by": null,
+        "created_date": null
+      },
+      {
+        "id": 41,
+        "assessment_question_id": 14,
+        "answer": "CSO / NPO uses printers, photocopier and fax machines own by members of staff or relatives / friends",
+        "weight": 2,
+        "modified_by": null,
+        "modified_date": null,
+        "created_by": null,
+        "created_date": null
+      },
+      {
+        "id": 42,
+        "assessment_question_id": 14,
+        "answer": "CSO / NPO has printer, photocopier and fax machines on site and working",
+        "weight": 3,
+        "modified_by": null,
+        "modified_date": null,
+        "created_by": null,
+        "created_date": null
+      }
+    ]
+  },
+  {
+    "question": "The CSO / NPO has access to internet and connectivity",
+    "answerlist": [
+      {
+        "id": 43,
+        "assessment_question_id": 15,
+        "answer": "CSO / NPO does not have access to internet and connectivity",
+        "weight": 1,
+        "modified_by": null,
+        "modified_date": null,
+        "created_by": null,
+        "created_date": null
+      },
+      {
+        "id": 44,
+        "assessment_question_id": 15,
+        "answer": "CSO / NPO does not have access to internet and connectivity in its offices but uses Internet café available in the area",
+        "weight": 2,
+        "modified_by": null,
+        "modified_date": null,
+        "created_by": null,
+        "created_date": null
+      },
+      {
+        "id": 45,
+        "assessment_question_id": 15,
+        "answer": "CSO / NPO does have access to internet and connectivity in the office",
+        "weight": 3,
+        "modified_by": null,
+        "modified_date": null,
+        "created_by": null,
+        "created_date": null
+      }
+    ]
+  },
+  {
+    "question": "The CSO / NPO has full time staff members",
+    "answerlist": [
+      {
+        "id": 46,
+        "assessment_question_id": 16,
+        "answer": "CSO / NPO does not have any full-time staff members but Volunteers",
+        "weight": 1,
+        "modified_by": null,
+        "modified_date": null,
+        "created_by": null,
+        "created_date": null
+      },
+      {
+        "id": 47,
+        "assessment_question_id": 16,
+        "answer": "CSO /NPO have between one to five full time paid staff members and Volunteers",
+        "weight": 2,
+        "modified_by": null,
+        "modified_date": null,
+        "created_by": null,
+        "created_date": null
+      },
+      {
+        "id": 48,
+        "assessment_question_id": 16,
+        "answer": "CSO / NPO has six or more full time paid staff members and Volunteers",
+        "weight": 3,
+        "modified_by": null,
+        "modified_date": null,
+        "created_by": null,
+        "created_date": null
+      }
+    ]
+  },
+  {
+    "question": "The CSO / NPO has Management staff, operational staff and administrative staff",
+    "answerlist": [
+      {
+        "id": 49,
+        "assessment_question_id": 17,
+        "answer": "CSO / NPO has less than three staff members who does management, operational and administrative functions",
+        "weight": 1,
+        "modified_by": null,
+        "modified_date": null,
+        "created_by": null,
+        "created_date": null
+      },
+      {
+        "id": 50,
+        "assessment_question_id": 17,
+        "answer": "CSO / NPO has only dedicated management staff but other staff they do operation and administrative functions",
+        "weight": 2,
+        "modified_by": null,
+        "modified_date": null,
+        "created_by": null,
+        "created_date": null
+      },
+      {
+        "id": 51,
+        "assessment_question_id": 17,
+        "answer": "CSO / NPO has dedicated management staff, operations staff and administrative staff",
+        "weight": 3,
+        "modified_by": null,
+        "modified_date": null,
+        "created_by": null,
+        "created_date": null
+      }
+    ]
+  },
+  {
+    "question": "The CSO / NPO has full time staff trained in the business or sector they are operating",
+    "answerlist": [
+      {
+        "id": 52,
+        "assessment_question_id": 18,
+        "answer": "CSO / NPO does not have any staff member trained in the sector they are operating",
+        "weight": 1,
+        "modified_by": null,
+        "modified_date": null,
+        "created_by": null,
+        "created_date": null
+      },
+      {
+        "id": 53,
+        "assessment_question_id": 18,
+        "answer": "CSO / NPO has between \u0096one to three staff members trained and qualified in the sector or business they are operating",
+        "weight": 2,
+        "modified_by": null,
+        "modified_date": null,
+        "created_by": null,
+        "created_date": null
+      },
+      {
+        "id": 54,
+        "assessment_question_id": 18,
+        "answer": "CSO / NPO has more than four staff members trained and qualified in the sector or business they are operatin",
+        "weight": 3,
+        "modified_by": null,
+        "modified_date": null,
+        "created_by": null,
+        "created_date": null
+      }
+    ]
+  },
+  {
+    "question": "The CSO / NPO has a person full time working on managing its accounts (Financial Management)",
+    "answerlist": [
+      {
+        "id": 55,
+        "assessment_question_id": 19,
+        "answer": "CSO / NPO does not have any full-time Bookkeeper or Accountant",
+        "weight": 1,
+        "modified_by": null,
+        "modified_date": null,
+        "created_by": null,
+        "created_date": null
+      },
+      {
+        "id": 56,
+        "assessment_question_id": 19,
+        "answer": "CSO / NPO has a qualified Bookkeeper working full time",
+        "weight": 2,
+        "modified_by": null,
+        "modified_date": null,
+        "created_by": null,
+        "created_date": null
+      },
+      {
+        "id": 57,
+        "assessment_question_id": 19,
+        "answer": "CSO / NPO has a qualified accountant working full time",
+        "weight": 3,
+        "modified_by": null,
+        "modified_date": null,
+        "created_by": null,
+        "created_date": null
+      }
+    ]
+  },
+  {
+    "question": "The CSO / NPO own its own car for transportation",
+    "answerlist": [
+      {
+        "id": 58,
+        "assessment_question_id": 20,
+        "answer": "CSO / NPO does not have its own car used by staff for transport",
+        "weight": 1,
+        "modified_by": null,
+        "modified_date": null,
+        "created_by": null,
+        "created_date": null
+      },
+      {
+        "id": 59,
+        "assessment_question_id": 20,
+        "answer": "CSO / NPO has one (1) shared by all staff for the organisation work",
+        "weight": 2,
+        "modified_by": null,
+        "modified_date": null,
+        "created_by": null,
+        "created_date": null
+      },
+      {
+        "id": 60,
+        "assessment_question_id": 20,
+        "answer": "CSO / NPO has 2 (two) or more cars used by staff to do the organisation work",
+        "weight": 3,
+        "modified_by": null,
+        "modified_date": null,
+        "created_by": null,
+        "created_date": null
+      }
+    ]
+  },
+  {
+    "question": "The CSO / NPO raised funding in the past year totalling between:",
+    "answerlist": [
+      {
+        "id": 61,
+        "assessment_question_id": 21,
+        "answer": "R0.00 - R100 000",
+        "weight": 1,
+        "modified_by": null,
+        "modified_date": null,
+        "created_by": null,
+        "created_date": null
+      },
+      {
+        "id": 62,
+        "assessment_question_id": 21,
+        "answer": "R101 000 - R500 000",
+        "weight": 2,
+        "modified_by": null,
+        "modified_date": null,
+        "created_by": null,
+        "created_date": null
+      },
+      {
+        "id": 63,
+        "assessment_question_id": 21,
+        "answer": "More than R500 000",
+        "weight": 3,
+        "modified_by": null,
+        "modified_date": null,
+        "created_by": null,
+        "created_date": null
+      }
+    ]
+  },
+  {
+    "question": "The CSOs has the following number of regular donors for its work in a year",
+    "answerlist": [
+      {
+        "id": 64,
+        "assessment_question_id": 22,
+        "answer": "0-5 donors",
+        "weight": 1,
+        "modified_by": null,
+        "modified_date": null,
+        "created_by": null,
+        "created_date": null
+      },
+      {
+        "id": 65,
+        "assessment_question_id": 22,
+        "answer": "6-10 donors",
+        "weight": 2,
+        "modified_by": null,
+        "modified_date": null,
+        "created_by": null,
+        "created_date": null
+      },
+      {
+        "id": 66,
+        "assessment_question_id": 22,
+        "answer": "More than 10 donors",
+        "weight": 3,
+        "modified_by": null,
+        "modified_date": null,
+        "created_by": null,
+        "created_date": null
+      }
+    ]
+  },
+  {
+    "question": "The CSO / NPO budget per year is between the following",
+    "answerlist": [
+      {
+        "id": 67,
+        "assessment_question_id": 23,
+        "answer": "R0.00 - R500 000",
+        "weight": 1,
+        "modified_by": null,
+        "modified_date": null,
+        "created_by": null,
+        "created_date": null
+      },
+      {
+        "id": 68,
+        "assessment_question_id": 23,
+        "answer": "501 000 - R1 000 000",
+        "weight": 2,
+        "modified_by": null,
+        "modified_date": null,
+        "created_by": null,
+        "created_date": null
+      },
+      {
+        "id": 69,
+        "assessment_question_id": 23,
+        "answer": "More than R1 000 000",
+        "weight": 3,
+        "modified_by": null,
+        "modified_date": null,
+        "created_by": null,
+        "created_date": null
+      }
+    ]
+  },
+  {
+    "question": "The CSO / NPO has received government (National, Provincial or Municipality) funding before",
+    "answerlist": [
+      {
+        "id": 70,
+        "assessment_question_id": 24,
+        "answer": "CSO / NPO has never received funding from government institutions (National, Provincial or Municipality)",
+        "weight": 1,
+        "modified_by": null,
+        "modified_date": null,
+        "created_by": null,
+        "created_date": null
+      },
+      {
+        "id": 71,
+        "assessment_question_id": 24,
+        "answer": "CSO / NPO has received funding from government institutions (National, Provincial or Municipality) in the past year",
+        "weight": 2,
+        "modified_by": null,
+        "modified_date": null,
+        "created_by": null,
+        "created_date": null
+      },
+      {
+        "id": 72,
+        "assessment_question_id": 24,
+        "answer": "CSO / NPO has received funding from government institutions (National, Provincial or Municipality) in the past two years or more",
+        "weight": 3,
+        "modified_by": null,
+        "modified_date": null,
+        "created_by": null,
+        "created_date": null
+      }
+    ]
+  },
+  {
+    "question": "The CSO / NPO has received government (National, Provincial or Municipality) funding before",
+    "answerlist": [
+      {
+        "id": 73,
+        "assessment_question_id": 25,
+        "answer": "CSO / NPO has never received funding from private / business sector",
+        "weight": 1,
+        "modified_by": null,
+        "modified_date": null,
+        "created_by": null,
+        "created_date": null
+      },
+      {
+        "id": 74,
+        "assessment_question_id": 25,
+        "answer": "CSO / NPO has received funding from business / private sector in the past year",
+        "weight": 2,
+        "modified_by": null,
+        "modified_date": null,
+        "created_by": null,
+        "created_date": null
+      },
+      {
+        "id": 75,
+        "assessment_question_id": 25,
+        "answer": "CSO / NPO has received funding from private / business sector in the past two years or more",
+        "weight": 3,
+        "modified_by": null,
+        "modified_date": null,
+        "created_by": null,
+        "created_date": null
+      }
+    ]
+  },
+  {
+    "question": "CSO / NPO has never received funding from international or local foundations",
+    "answerlist": [
+      {
+        "id": 76,
+        "assessment_question_id": 26,
+        "answer": "The CSO / NPO has received International or local foundations funding before",
+        "weight": 1,
+        "modified_by": null,
+        "modified_date": null,
+        "created_by": null,
+        "created_date": null
+      },
+      {
+        "id": 77,
+        "assessment_question_id": 26,
+        "answer": "The CSO / NPO affiliation to networks or professional bodies",
+        "weight": 2,
+        "modified_by": null,
+        "modified_date": null,
+        "created_by": null,
+        "created_date": null
+      },
+      {
+        "id": 78,
+        "assessment_question_id": 26,
+        "answer": "The CSO / NPO has staff who belong to networks or professional bodies",
+        "weight": 3,
+        "modified_by": null,
+        "modified_date": null,
+        "created_by": null,
+        "created_date": null
+      }
+    ]
+  },
+  {
+    "question": "The CSO / NPO affiliation to networks or professional bodies",
+    "answerlist": [
+      {
+        "id": 79,
+        "assessment_question_id": 27,
+        "answer": "CSO / NPO does not belong to any networks or professional bodies",
+        "weight": 1,
+        "modified_by": null,
+        "modified_date": null,
+        "created_by": null,
+        "created_date": null
+      },
+      {
+        "id": 80,
+        "assessment_question_id": 27,
+        "answer": "CSO / NPO belong to local, provincial or national networks",
+        "weight": 2,
+        "modified_by": null,
+        "modified_date": null,
+        "created_by": null,
+        "created_date": null
+      },
+      {
+        "id": 81,
+        "assessment_question_id": 27,
+        "answer": "CSO / NPO belong to local, provincial, national networks or affiliated to professional bodies",
+        "weight": 3,
+        "modified_by": null,
+        "modified_date": null,
+        "created_by": null,
+        "created_date": null
+      }
+    ]
+  },
+  {
+    "question": "The CSO / NPO has staff who belong to networks or professional bodies",
+    "answerlist": [
+      {
+        "id": 82,
+        "assessment_question_id": 28,
+        "answer": "CSO / NPO does not have any staff belonging to any networks or affiliated with professional bodies",
+        "weight": 1,
+        "modified_by": null,
+        "modified_date": null,
+        "created_by": null,
+        "created_date": null
+      },
+      {
+        "id": 83,
+        "assessment_question_id": 28,
+        "answer": "CSO / NPO has a member of staff that belong to local, provincial or national networks",
+        "weight": 2,
+        "modified_by": null,
+        "modified_date": null,
+        "created_by": null,
+        "created_date": null
+      },
+      {
+        "id": 84,
+        "assessment_question_id": 28,
+        "answer": "CSO / NPO has members of staff who belong to local, provincial, national networks or affiliated to professional bodies",
+        "weight": 3,
+        "modified_by": null,
+        "modified_date": null,
+        "created_by": null,
+        "created_date": null
+      }
+    ]
+  },
+  {
+    "question": "The CSO / NPO has community membership belonging to the CSO / NPO",
+    "answerlist": [
+      {
+        "id": 85,
+        "assessment_question_id": 29,
+        "answer": "CSO / NPO does not have community membership",
+        "weight": 1,
+        "modified_by": null,
+        "modified_date": null,
+        "created_by": null,
+        "created_date": null
+      },
+      {
+        "id": 86,
+        "assessment_question_id": 29,
+        "answer": "CSO / NPO has community membership but they are not active",
+        "weight": 2,
+        "modified_by": null,
+        "modified_date": null,
+        "created_by": null,
+        "created_date": null
+      },
+      {
+        "id": 87,
+        "assessment_question_id": 29,
+        "answer": "CSO / NPO has active community membership",
+        "weight": 3,
+        "modified_by": null,
+        "modified_date": null,
+        "created_by": null,
+        "created_date": null
+      }
+    ]
+  },
+  {
+    "question": "The CSO / NPO staff attended any networking sessions (workshops, conferences, events, meetings  etc)",
+    "answerlist": [
+      {
+        "id": 88,
+        "assessment_question_id": 30,
+        "answer": "CSO / NPO staff has never attended any networking sessions",
+        "weight": 1,
+        "modified_by": null,
+        "modified_date": null,
+        "created_by": null,
+        "created_date": null
+      },
+      {
+        "id": 89,
+        "assessment_question_id": 30,
+        "answer": "CSO / NPO has never attended any networking session but they have received invites to such sessions before",
+        "weight": 2,
+        "modified_by": null,
+        "modified_date": null,
+        "created_by": null,
+        "created_date": null
+      },
+      {
+        "id": 90,
+        "assessment_question_id": 30,
+        "answer": "CSO / NPO staff have attended networking sessions before",
+        "weight": 3,
+        "modified_by": null,
+        "modified_date": null,
+        "created_by": null,
+        "created_date": null
+      }
+    ]
+  },
+  {
+    "question": "Training and skills of staff, management, board / committee on conflict management / resolution",
+    "answerlist": [
+      {
+        "id": 91,
+        "assessment_question_id": 31,
+        "answer": "CSO / NPO staff, management, board / committee has never been trained on conflict management / resolution",
+        "weight": 1,
+        "modified_by": null,
+        "modified_date": null,
+        "created_by": null,
+        "created_date": null
+      },
+      {
+        "id": 92,
+        "assessment_question_id": 31,
+        "answer": "CSO / NPO staff, management has been trained on conflict management / resolution",
+        "weight": 2,
+        "modified_by": null,
+        "modified_date": null,
+        "created_by": null,
+        "created_date": null
+      },
+      {
+        "id": 93,
+        "assessment_question_id": 31,
+        "answer": "CSO / NPO staff, management, board / committee has been trained on conflict management / resolution",
+        "weight": 3,
+        "modified_by": null,
+        "modified_date": null,
+        "created_by": null,
+        "created_date": null
+      }
+    ]
+  },
+  {
+    "question": "Training and skills of staff, management, board / committee on governance of organisations",
+    "answerlist": [
+      {
+        "id": 94,
+        "assessment_question_id": 32,
+        "answer": "CSO / NPO staff, management, board / committee has never been trained on governance",
+        "weight": 1,
+        "modified_by": null,
+        "modified_date": null,
+        "created_by": null,
+        "created_date": null
+      },
+      {
+        "id": 95,
+        "assessment_question_id": 32,
+        "answer": "CSO / NPO staff, management has been trained on governance",
+        "weight": 2,
+        "modified_by": null,
+        "modified_date": null,
+        "created_by": null,
+        "created_date": null
+      },
+      {
+        "id": 96,
+        "assessment_question_id": 32,
+        "answer": "CSO / NPO staff, management, board / committee has been trained on governance",
+        "weight": 3,
+        "modified_by": null,
+        "modified_date": null,
+        "created_by": null,
+        "created_date": null
+      }
+    ]
+  },
+  {
+    "question": "Training and skills of staff, management, board / committee on financial management",
+    "answerlist": [
+      {
+        "id": 97,
+        "assessment_question_id": 33,
+        "answer": "CSO / NPO staff, management, board / committee has never been trained on financial management",
+        "weight": 1,
+        "modified_by": null,
+        "modified_date": null,
+        "created_by": null,
+        "created_date": null
+      },
+      {
+        "id": 98,
+        "assessment_question_id": 33,
+        "answer": "CSO / NPO staff, management has been trained on financial management",
+        "weight": 2,
+        "modified_by": null,
+        "modified_date": null,
+        "created_by": null,
+        "created_date": null
+      },
+      {
+        "id": 99,
+        "assessment_question_id": 33,
+        "answer": "CSO / NPO staff, management, board / committee has been trained on financial management",
+        "weight": 3,
+        "modified_by": null,
+        "modified_date": null,
+        "created_by": null,
+        "created_date": null
+      }
+    ]
+  },
+  {
+    "question": "Training and skills of staff, management, board / committee on reporting and compliance to reporting requirements",
+    "answerlist": [
+      {
+        "id": 100,
+        "assessment_question_id": 34,
+        "answer": "CSO / NPO staff, management, board / committee has never been trained on reporting and reporting requirements",
+        "weight": 1,
+        "modified_by": null,
+        "modified_date": null,
+        "created_by": null,
+        "created_date": null
+      },
+      {
+        "id": 101,
+        "assessment_question_id": 34,
+        "answer": "CSO / NPO staff, management has been trained on reporting and reporting requirements",
+        "weight": 2,
+        "modified_by": null,
+        "modified_date": null,
+        "created_by": null,
+        "created_date": null
+      },
+      {
+        "id": 102,
+        "assessment_question_id": 34,
+        "answer": "CSO / NPO staff, management, board / committee has been trained on reporting and reporting requirements",
+        "weight": 3,
+        "modified_by": null,
+        "modified_date": null,
+        "created_by": null,
+        "created_date": null
+      }
+    ]
+  },
+  {
+    "question": "Training and skills of staff, management, board / committee on reporting and compliance to reporting requirements",
+    "answerlist": [
+      {
+        "id": 103,
+        "assessment_question_id": 35,
+        "answer": "CSO / NPO staff, management, board / committee has never been trained on strategic plans and operation plans",
+        "weight": 1,
+        "modified_by": null,
+        "modified_date": null,
+        "created_by": null,
+        "created_date": null
+      },
+      {
+        "id": 104,
+        "assessment_question_id": 35,
+        "answer": "CSO / NPO staff, management has been trained on strategic plans and operation plans",
+        "weight": 2,
+        "modified_by": null,
+        "modified_date": null,
+        "created_by": null,
+        "created_date": null
+      },
+      {
+        "id": 105,
+        "assessment_question_id": 35,
+        "answer": "CSO / NPO staff, management, board / committee has been trained on strategic plans and operation plans",
+        "weight": 3,
+        "modified_by": null,
+        "modified_date": null,
+        "created_by": null,
+        "created_date": null
+      }
+    ]
+  },
+  {
+    "question": "Training and skills of staff, management, board / committee on organisational development and human resources management",
+    "answerlist": [
+      {
+        "id": 106,
+        "assessment_question_id": 36,
+        "answer": "CSO / NPO staff, management, board / committee has never been trained on organisational development and human resources management",
+        "weight": 1,
+        "modified_by": null,
+        "modified_date": null,
+        "created_by": null,
+        "created_date": null
+      },
+      {
+        "id": 107,
+        "assessment_question_id": 36,
+        "answer": "CSO / NPO staff, management has been trained on organisational development and human resources management",
+        "weight": 2,
+        "modified_by": null,
+        "modified_date": null,
+        "created_by": null,
+        "created_date": null
+      },
+      {
+        "id": 108,
+        "assessment_question_id": 36,
+        "answer": "CSO / NPO staff, management, board / committee has been trained on organisational development and human resources management",
+        "weight": 3,
+        "modified_by": null,
+        "modified_date": null,
+        "created_by": null,
+        "created_date": null
+      }
+    ]
+  },
+  {
+    "question": "Training and skills of staff, management, board / committee on resource mobilisation and fund raising",
+    "answerlist": [
+      {
+        "id": 109,
+        "assessment_question_id": 37,
+        "answer": "CSO / NPO staff, management, board / committee has never been trained on resource mobilisation and fund raising",
+        "weight": 1,
+        "modified_by": null,
+        "modified_date": null,
+        "created_by": null,
+        "created_date": null
+      },
+      {
+        "id": 110,
+        "assessment_question_id": 37,
+        "answer": "CSO / NPO staff, management has been trained on resource mobilisation and fund raising",
+        "weight": 2,
+        "modified_by": null,
+        "modified_date": null,
+        "created_by": null,
+        "created_date": null
+      },
+      {
+        "id": 111,
+        "assessment_question_id": 37,
+        "answer": "CSO / NPO staff, management, board / committee has been trained on resource mobilisation and fund raising",
+        "weight": 3,
+        "modified_by": null,
+        "modified_date": null,
+        "created_by": null,
+        "created_date": null
+      }
+    ]
+  },
+  {
+    "question": "Training and skills of staff, management, board / committee on project management",
+    "answerlist": [
+      {
+        "id": 112,
+        "assessment_question_id": 38,
+        "answer": "CSO / NPO staff, management, board / committee has never been trained on project management",
+        "weight": 1,
+        "modified_by": null,
+        "modified_date": null,
+        "created_by": null,
+        "created_date": null
+      },
+      {
+        "id": 113,
+        "assessment_question_id": 38,
+        "answer": "CSO / NPO staff, management has been trained on project management",
+        "weight": 2,
+        "modified_by": null,
+        "modified_date": null,
+        "created_by": null,
+        "created_date": null
+      },
+      {
+        "id": 114,
+        "assessment_question_id": 38,
+        "answer": "CSO / NPO staff, management, board / committee has been trained on project management",
+        "weight": 3,
+        "modified_by": null,
+        "modified_date": null,
+        "created_by": null,
+        "created_date": null
+      }
+    ]
+  },
+  {
+    "question": "Training and skills of staff, management, board / committee on computer skills and information management",
+    "answerlist": [
+      {
+        "id": 115,
+        "assessment_question_id": 39,
+        "answer": "CSO / NPO staff, management, board / committee has never been trained on computer skills and information management",
+        "weight": 1,
+        "modified_by": null,
+        "modified_date": null,
+        "created_by": null,
+        "created_date": null
+      },
+      {
+        "id": 116,
+        "assessment_question_id": 39,
+        "answer": "CSO / NPO staff, management has been trained on computer skills and information management",
+        "weight": 2,
+        "modified_by": null,
+        "modified_date": null,
+        "created_by": null,
+        "created_date": null
+      },
+      {
+        "id": 117,
+        "assessment_question_id": 39,
+        "answer": "CSO / NPO staff, management, board / committee has been trained on computer skills and information management",
+        "weight": 3,
+        "modified_by": null,
+        "modified_date": null,
+        "created_by": null,
+        "created_date": null
+      }
+    ]
+  },
+  {
+    "question": "Training and skills of staff, management, board / committee on community needs assessment and profiling",
+    "answerlist": [
+      {
+        "id": 118,
+        "assessment_question_id": 40,
+        "answer": "CSO / NPO staff, management, board / committee has never been trained on community needs assessment and profiling",
+        "weight": 1,
+        "modified_by": null,
+        "modified_date": null,
+        "created_by": null,
+        "created_date": null
+      },
+      {
+        "id": 119,
+        "assessment_question_id": 40,
+        "answer": "CSO / NPO staff, management have been trained on community needs assessment and profiling",
+        "weight": 2,
+        "modified_by": null,
+        "modified_date": null,
+        "created_by": null,
+        "created_date": null
+      },
+      {
+        "id": 120,
+        "assessment_question_id": 40,
+        "answer": "CSO / NPO staff, management, board / committee have been trained on community needs assessment and profiling",
+        "weight": 3,
+        "modified_by": null,
+        "modified_date": null,
+        "created_by": null,
+        "created_date": null
+      }
+    ]
+  },
+  {
+    "question": "The CSO / NPO produces an annual report with annual financial statements registration authorities for compliance",
+    "answerlist": [
+      {
+        "id": 121,
+        "assessment_question_id": 41,
+        "answer": "CSO / NPO has never produced an annual report with an annual statement before",
+        "weight": 1,
+        "modified_by": null,
+        "modified_date": null,
+        "created_by": null,
+        "created_date": null
+      },
+      {
+        "id": 122,
+        "assessment_question_id": 41,
+        "answer": "CSO / NPO has produced an annual report with an annual statement before but was never submitted to anyone",
+        "weight": 2,
+        "modified_by": null,
+        "modified_date": null,
+        "created_by": null,
+        "created_date": null
+      },
+      {
+        "id": 123,
+        "assessment_question_id": 41,
+        "answer": "CSO / NPO has produces an annual report with an annual statement every year and submitted to registration authorities for compliance",
+        "weight": 3,
+        "modified_by": null,
+        "modified_date": null,
+        "created_by": null,
+        "created_date": null
+      }
+    ]
+  },
+  {
+    "question": "The CSO / NPO audit its financial books using an independent auditor",
+    "answerlist": [
+      {
+        "id": 124,
+        "assessment_question_id": 42,
+        "answer": "CSO / NPO has never audited its finances before",
+        "weight": 1,
+        "modified_by": null,
+        "modified_date": null,
+        "created_by": null,
+        "created_date": null
+      },
+      {
+        "id": 125,
+        "assessment_question_id": 42,
+        "answer": "CSO / NPO has audited its finances before but not every year",
+        "weight": 2,
+        "modified_by": null,
+        "modified_date": null,
+        "created_by": null,
+        "created_date": null
+      },
+      {
+        "id": 126,
+        "assessment_question_id": 42,
+        "answer": "CSO / NPO has audited its finances every year without fail",
+        "weight": 3,
+        "modified_by": null,
+        "modified_date": null,
+        "created_by": null,
+        "created_date": null
+      }
+    ]
+  },
+  {
+    "question": "The CSO / NPO submit all required documents for renewing registration with its registering authority (NPO, Cooperatives etc.)",
+    "answerlist": [
+      {
+        "id": 127,
+        "assessment_question_id": 43,
+        "answer": "CSO / NPO has never submitted any documents for renewing registration",
+        "weight": 1,
+        "modified_by": null,
+        "modified_date": null,
+        "created_by": null,
+        "created_date": null
+      },
+      {
+        "id": 128,
+        "assessment_question_id": 43,
+        "answer": "CSO / NPO has submitted documents to renew its registration once",
+        "weight": 2,
+        "modified_by": null,
+        "modified_date": null,
+        "created_by": null,
+        "created_date": null
+      },
+      {
+        "id": 129,
+        "assessment_question_id": 43,
+        "answer": "CSO / NPO has always submitted all documents for renewing registration every year",
+        "weight": 3,
+        "modified_by": null,
+        "modified_date": null,
+        "created_by": null,
+        "created_date": null
+      }
+    ]
+  },
+  {
+    "question": "The CSO / NPO holds an annual general meeting with its members and present annual reports",
+    "answerlist": [
+      {
+        "id": 130,
+        "assessment_question_id": 44,
+        "answer": "CSO / NPO has never submitted any documents for renewing registration",
+        "weight": 1,
+        "modified_by": null,
+        "modified_date": null,
+        "created_by": null,
+        "created_date": null
+      },
+      {
+        "id": 131,
+        "assessment_question_id": 44,
+        "answer": "CSO / NPO has submitted documents to renew its registration once",
+        "weight": 2,
+        "modified_by": null,
+        "modified_date": null,
+        "created_by": null,
+        "created_date": null
+      },
+      {
+        "id": 132,
+        "assessment_question_id": 44,
+        "answer": "CSO / NPO has always submitted all documents for renewing registration every year",
+        "weight": 3,
+        "modified_by": null,
+        "modified_date": null,
+        "created_by": null,
+        "created_date": null
+      }
+    ]
+  },
+  {
+    "question": "The CSO / NPO has a membership that belong to it",
+    "answerlist": [
+      {
+        "id": 133,
+        "assessment_question_id": 45,
+        "answer": "The CSO / NPO has no community membership or belong to an individual",
+        "weight": 1,
+        "modified_by": null,
+        "modified_date": null,
+        "created_by": null,
+        "created_date": null
+      },
+      {
+        "id": 134,
+        "assessment_question_id": 45,
+        "answer": "The CSO / NPO has close family or relatives or neighbours as members only",
+        "weight": 2,
+        "modified_by": null,
+        "modified_date": null,
+        "created_by": null,
+        "created_date": null
+      },
+      {
+        "id": 135,
+        "assessment_question_id": 45,
+        "answer": "The CSO / NPO has membership from the general community",
+        "weight": 3,
+        "modified_by": null,
+        "modified_date": null,
+        "created_by": null,
+        "created_date": null
+      }
+    ]
   }
 ]
