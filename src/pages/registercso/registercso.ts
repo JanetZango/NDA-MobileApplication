@@ -174,7 +174,7 @@ export class RegistercsoPage {
           buttons: ['OK']
         });
         alert.present();
-        this.navCtrl.push(DisplayListOfCsoPage);
+        // this.navCtrl.push(DisplayListOfCsoPage);
       }
       else {
         const alert = this.alertCtrl.create({

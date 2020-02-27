@@ -96,7 +96,7 @@ export class AddAssessmentPage  implements OnInit{
           buttons: ['OK']
         });
         alert.present();
-        this.navCtrl.push(DisplayListOfAssessmentPage);
+        // this.navCtrl.push(DisplayListOfAssessmentPage);
       }
       else {
         const alert = this.alertCtrl.create({

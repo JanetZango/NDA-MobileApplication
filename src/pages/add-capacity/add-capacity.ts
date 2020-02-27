@@ -154,7 +154,7 @@ export class AddCapacityPage {
           buttons: ['OK']
         });
         alert.present();
-        this.navCtrl.push(DisplayListOfCapacityPage);
+        // this.navCtrl.push(DisplayListOfCapacityPage);
       }
       else {
         const alert = this.alertCtrl.create({
