@@ -1,16 +1,21 @@
 page-display-list-of-cso {
+    .content{
+        background-color: #fefefe;
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4' viewBox='0 0 4 4'%3E%3Cpath fill='%2300919e' fill-opacity='0.4' d='M1 3h1v1H1V3zm2-2h1v1H3V1z'%3E%3C/path%3E%3C/svg%3E");
+    }
     .card{
         padding-top:15px;
-        height: 200px;
+        height: 160px;
         font-family: 'ZCOOL XiaoWei', serif;
         text-align: left;
         border-radius: 10px;
-        background-color: whitesmoke;
+        background-color: white;
         button{
-            margin-top:10px;
+            font-size: 2em;
+            margin-top:-150px;
             justify-content: left;
-            background-color: #00919E;
-            color:white;
+            // background-color: #00919E;
+            color:#00919E;
             
            
         }
@@ -27,7 +32,7 @@ page-display-list-of-cso {
        
        button{
         color:white;
-        font-size: 1.5em;
+        // font-size: 1.5em;
        }
     }
     .left{
@@ -72,6 +77,6 @@ page-display-list-of-cso {
         background-color: #EDEDED;
     }
     .mainInfor{
-        margin-top:50px;
+        margin-top:20px;
     }
 }

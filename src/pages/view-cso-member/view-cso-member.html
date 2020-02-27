@@ -1,15 +1,12 @@
-<ion-content>
-  <div class="round"></div>
-  <div class="btn">
-    <button  ion-button  (click)="gotoback()">
-      <ion-icon ios="ios-arrow-round-back" md="md-arrow-round-back"></ion-icon>
-    </button>
+<ion-content class="content">
+  <div class="top">
+    <div class="btn">
+      <button clear ion-button  (click)="gotoback()">
+        <ion-icon ios="ios-arrow-round-back" md="md-arrow-round-back"></ion-icon>
+      </button>
+    </div>
   </div>
-  <div class="btnCreate">
-    <button ion-button (click)="seeCsoMmbers(a)">
-      Manage Cso Members
-    </button>
-  </div>
+  <h3>Cso Member Details</h3>
   <div class="card">
     <ion-card *ngFor="let a of CsoDetailsArr">
       <div class="infor">

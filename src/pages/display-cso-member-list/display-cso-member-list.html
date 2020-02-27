@@ -1,8 +1,8 @@
-<ion-content>
+<ion-content class="content">
   <div class="top">
     <div class="btn">
-      <button ion-button clear (click)="goBackToCsoDetails()">
-        <ion-icon ios="ios-arrow-round-back" md="md-arrow-round-back"></ion-icon>
+      <button ion-button  (click)="goBackToCsoDetails()">
+        <ion-icon ios="ios-arrow-back" md="md-arrow-back"></ion-icon>
       </button>
     </div>
 
@@ -21,7 +21,7 @@
         <p><b>Nationality:</b>{{a.nationality}}</p>
 
         <div class="btn">
-            <button ion-button (click)="viewMore(a.first_name)">View More
+            <button clear ion-button (click)="viewMore(a.first_name)"><ion-icon name="ios-arrow-forward-outline"></ion-icon>
               </button>
         </div>
      

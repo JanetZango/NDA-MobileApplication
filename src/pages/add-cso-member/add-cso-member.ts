@@ -40,6 +40,7 @@ export class AddCsoMemberPage {
   }
 
   ionViewDidLoad() {
+    // this.validateID();
   }
 
 
@@ -84,5 +85,32 @@ export class AddCsoMemberPage {
 
     });
   }
+
+
+  //validate id number
+  // validateID() {
+  //   var cb = document.forms["id_number"]["saidCB"].checked;
+  //   if (cb) {
+  //     var ex = /^(((\d{2}((0[13578]|1[02])(0[1-9]|[12]\d|3[01])|(0[13456789]|1[012])(0[1-9]|[12]\d|30)|02(0[1-9]|1\d|2[0-8])))|([02468][048]|[13579][26])0229))(( |-)(\d{4})( |-)(\d{3})|(\d{7}))/;
+  //   } else {
+  //     var ex = /^[0-9]{1,}$/;
+  //   }
+  //   var theIDnumber = document.forms["id_number"]["idnumber"].value;
+  //   if (ex.test(theIDnumber) == false) {
+  //     const alert = this.alertCtrl.create({
+  //       subTitle: 'Please supply a valid ID number',
+  //       buttons: ['OK']
+  //     });
+  //     alert.present();
+  //     return false;
+  //   }
+  //   const alert = this.alertCtrl.create({
+  //     subTitle: theIDnumber + ' a valid ID number',
+  //     buttons: ['OK']
+  //   });
+  //   alert.present();
+
+  //   return true;
+  // }
 
 }

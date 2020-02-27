@@ -31,11 +31,15 @@ export class AddCapacityPage {
   provinceArr = new Array();
   municipalityArr = new Array();
   partnerArr = new Array();
+  DisplayCso = new Array();
 
   // arrays that store data
   districtArrData = new Array();
   municipalityArrData = new Array();
 
+
+  //variables
+  items
   capacity: CapacityBuilding = new CapacityBuilding();
   constructor(
     public navCtrl: NavController, 
@@ -58,7 +62,12 @@ export class AddCapacityPage {
     this.getPartnerType();
     this.getMunicipality();
     this.getCapacityBuilding();
+
+    this.displayCsoList();
   }
+
+ 
+
 
 
   // ** to back to capacity building list
@@ -145,7 +154,7 @@ export class AddCapacityPage {
           buttons: ['OK']
         });
         alert.present();
-        this.navCtrl.push(DisplayListOfCapacityPage);
+        // this.navCtrl.push(DisplayListOfCapacityPage);
       }
       else {
         const alert = this.alertCtrl.create({
@@ -165,5 +174,69 @@ export class AddCapacityPage {
 
     });
   }
+
+    // ** search by name
+    displayCsoList(){
+      this.entityProvider.getCso().subscribe(res => {
+        if(res){
+          console.log(res.results);
+          this.DisplayCso = res.results
+          this.storeNames();
+          console.log(this.DisplayCso[0].cso_name)
+          for(var x =0; x < this.DisplayCso.length;x ++){
+            this.storeOrgNames(this.DisplayCso[x].cso_name)
+             
+          }
+        }
+      })
+    }
+
+
+  CsoName = new Array();
+  storeOrgNames(cso_name) {
+    this.CsoName.push(cso_name);
+    console.log(this.CsoName)
+  }
+
+  getCsoName(){
+    return this.CsoName
+    
+  }
+
+  getItems(ev: any) {
+    console.log(`hi serach`);
+    this.initializeItems();
+    // this.searchlist = true
+    // set val to the value of the searchbar
+    const val = ev.target.value;
+    // if the value is an empty string don't filter the items
+    if (val && val.trim() != '') {
+      this.items = this.items.filter((cso_name) => {
+        return (cso_name.toLowerCase().indexOf(val.toLowerCase()) > -1);
+      })
+      let searchlist = document.getElementsByClassName('searchitem') as HTMLCollectionOf<HTMLElement>;
+      //searchlist[0].style.display = 'block';
+    }
+    else {
+      this.items = []
+    }
+  }
+
+  initializeItems() {
+    this.items = []
+    this.items = this.namesArr
+    console.log(this.items)
+  }
+  namesArr = new Array()
+  storeNames() {
+    this.namesArr = this.CsoName;
+    console.log(this.namesArr)
+  }
+
+// ** find cso id by using name
+
+openMarkerInfo(name){
+  
+}
 
 }

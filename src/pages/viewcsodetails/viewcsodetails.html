@@ -1,34 +1,34 @@
 
 
-<ion-content>
-  <div class="round"></div>
-  <div class="btn">
-    <button ion-button  (click)="gotoback()">
-      <ion-icon ios="ios-arrow-round-back" md="md-arrow-round-back"></ion-icon>
-    </button>
+<ion-content class="content">
+  <div class="top">
+    <div class="btn">
+      <button  clear ion-button  (click)="gotoback()">
+        <ion-icon ios="ios-arrow-round-back" md="md-arrow-round-back"></ion-icon>
+      </button>
+    </div>
+    <div class="btnCreate">
+      <button ion-button (click)="seeCsoMmbers()">
+        Manage Cso Members
+      </button>
+    </div>
   </div>
-  <div class="btnCreate">
-    <button ion-button (click)="seeCsoMmbers()">
-      Manage Cso Members
-    </button>
-  </div>
+  <h2>Cso Details</h2>
+  
   <div class="card">
-    <ion-card *ngFor="let a of viewCSoArr">
-      <div class="infor">
-        <p><b>CsoName:</b>{{a.cso_name}}</p>
-        <p><b>Collected_by:</b>{{a.collected_by}}</p>
-        <p><b>Contact_Number:</b>{{a.contact_number}}</p>
-        <p><b>Cso_sector:</b>{{a.cso_sector}}</p>
-        <p><b>Cso_type:</b>{{a.cso_type}}</p>
-        <p><b>District:</b>{{a.district}}</p>
-        <p><b>Municipality:</b>{{a.municipality}}</p>
-        <p><b>Physical Address:</b>{{a.physical_address}}</p>
-        <p><b>Total_Staff:</b>{{a.total_staff}}</p>
-        <p><b>Modified_date:</b>{{a.modified_date}}</p>
-        <p><b>Total_Staff:</b>{{a.total_staff}}</p>
-        <p><b>Email_address:</b>{{a.email_address}}</p>
-
-      </div>
-    </ion-card>
+    <div *ngFor="let a of viewCSoArr">
+        <p><b>CsoName:</b><br>{{a.cso_name}}</p>
+        <p><b>Collected_by:</b><br>{{a.collected_by}}</p>
+        <p><b>Contact_Number:</b><br>{{a.contact_number}}</p>
+        <p><b>Cso_sector:</b><br>{{a.cso_sector}}</p>
+        <p><b>Cso_type:</b><br>{{a.cso_type}}</p>
+        <p><b>District:</b><br>{{a.district}}</p>
+        <p><b>Municipality:</b><br>{{a.municipality}}</p>
+        <p><b>Physical Address:</b><br>{{a.physical_address}}</p>
+        <p><b>Total_Staff:</b><br>{{a.total_staff}}</p>
+        <p><b>Modified_date:</b><br>{{a.modified_date}}</p>
+        <p><b>Total_Staff:</b><br>{{a.total_staff}}</p>
+        <p><b>Email_address:</b><br>{{a.email_address}}</p>
+    </div>
   </div>
 </ion-content>

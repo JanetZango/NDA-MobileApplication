@@ -1,5 +1,8 @@
 page-registercso {
-
+     .content{
+        background-color: #fefefe;
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4' viewBox='0 0 4 4'%3E%3Cpath fill='%2300919e' fill-opacity='0.4' d='M1 3h1v1H1V3zm2-2h1v1H3V1z'%3E%3C/path%3E%3C/svg%3E");
+     }
     .move{
         height:100%;
         // margin-top:60px;
@@ -8,10 +11,10 @@ page-registercso {
     .divImage{
         text-align: center;
         
-        p{
+        h3{
             font-size: 2em;
-            color:#00919E;
-            font-family: 'Righteous', cursive;
+            color:black;
+            font-family: 'ZCOOL XiaoWei', serif;
         }
 
     }
@@ -43,7 +46,7 @@ page-registercso {
         #input-field {
           margin: 5px;
         //   width: 50% !important;
-          background-color:  whitesmoke;
+          background-color:  white;
           width:100%;  
           border-radius: 100px;
           height:50px;
@@ -76,7 +79,7 @@ page-registercso {
    
     }
     #anim1{
-        background-color:  whitesmoke;
+        background-color:  white;
         width:90%;  
         height:50px;
         text-align: center;
@@ -139,7 +142,7 @@ page-registercso {
         // border:1px solid #5C861E;
         width:90%;
         margin:15px auto;
-        background-color: whitesmoke;
+        background-color: white;
         border-radius: 100px;
         box-shadow: 0px 15px 20px -15px #000;
     }
