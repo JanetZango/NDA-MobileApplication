@@ -124,6 +124,4 @@ export class AddAssessmentPage {
     }
     this.answerObj.push(answers);
   }
-
-
 }
