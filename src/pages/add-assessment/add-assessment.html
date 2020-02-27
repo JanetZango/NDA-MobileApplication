@@ -6,7 +6,7 @@
   </div>
   <p class="p">Add Assessment</p>
  
-      <ion-input placeholder="Type the name of CSO" type="search" id="site-search" class="user-input"
+      <ion-input placeholder="Type the name of CSO" debounce="500"  class="user-input"
       (input)="getItems($event)" [(ngModel)]="cso_name" name="cso_name" id="anim1" ngModel></ion-input>
 
       <div id="results">
