@@ -4,7 +4,7 @@
           <ion-icon ios="ios-arrow-back" md="md-arrow-back"></ion-icon>
       </button>
   </div>
-    <p>Add Capacity Building</p>
+    <h3>Add Capacity Building</h3>
   <form #capacity="ngForm"  (ngSubmit)="addCapacity(capacity)"> 
         <ion-input placeholder="Name Of Cso" [(ngModel)]="cso_name" ngModel  name="cso_name"   type="text" class="user-input" id="anim1"
         (input)="getItems($event)" ></ion-input>
@@ -69,7 +69,7 @@
         <ion-input placeholder="Funding Source" type="text" class="user-input"  name="funding_source_id"  [(ngModel)]="funding_source_id"
           id="anim1" ngModel></ion-input>
 
-        <ion-input placeholder="Colllected by" type="text" class="user-input" name="collected_by" [(ngModel)]="collected_by" id="anim1" ngModel>
+        <ion-input placeholder="Collected by" type="text" class="user-input" name="collected_by" [(ngModel)]="collected_by" id="anim1" ngModel>
         </ion-input>
 
         <div class="Contacts">
@@ -77,20 +77,20 @@
           <!-- <input type="date" id="input-field" required [(ngModel)]="start_date" name="start_date" ngModel> -->
           <ion-item>
             <ion-label>MM DD YY</ion-label>
-            <ion-datetime displayFormat="MM DD YY" placeholder="Select Date" required [(ngModel)]="start_date" name="start_date" ngModel></ion-datetime>
+            <ion-datetime displayFormat="MMM DD YYYY" placeholder="Select Date" required [(ngModel)]="start_date" name="start_date" ngModel></ion-datetime>
           </ion-item>
           <br>
           <ion-label>End date</ion-label>
           <!-- <input type="date" id="input-field"  required name="end_date" [(ngModel)]="end_date" ngModel> -->
           <ion-item>
             <ion-label>MM DD YY</ion-label>
-            <ion-datetime displayFormat="MM DD YY" placeholder="Select Date" name="end_date" [(ngModel)]="end_date" ngModel></ion-datetime>
+            <ion-datetime displayFormat="MMM DD YYYY" placeholder="Select Date" name="end_date" [(ngModel)]="end_date" ngModel (click)="disableData()"></ion-datetime>
           </ion-item>
         </div>
     
         <div class="moveCont">
-          <button  type="submit"  ion-button round class="btnSign" id="anim2">Rgister
-            A Member</button>
+          <button  type="submit"  ion-button round class="btnSign" id="anim2">Add Capacity
+          </button>
         </div>
       </form>
 

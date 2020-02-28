@@ -40,6 +40,18 @@ export class AddCapacityPage {
 
   //variables
   items
+  start_date;
+  cso_name;
+  capacity_building_type_id;
+  province_id;
+  district_id;
+  municipality_id;
+  partner_id;
+  venue;
+  facilitator_name;
+  funding_source_id;
+  collected_by;
+ 
   capacity: CapacityBuilding = new CapacityBuilding();
   constructor(
     public navCtrl: NavController, 
@@ -52,6 +64,10 @@ export class AddCapacityPage {
     ) {
   }
 
+  disableData(){
+    var today = new Date().toISOString().split('T')[0];
+    document.getElementsByName("txtDate")[0].setAttribute('min', this.start_date);
+  }
   
 
   ionViewDidLoad() {
@@ -66,7 +82,19 @@ export class AddCapacityPage {
   }
 
  
-
+  reset(){
+    this.start_date="";
+    this.cso_name="";
+    this.capacity_building_type_id="";
+    this.province_id="";
+    this.district_id="";
+    this.municipality_id="";
+    this.partner_id="";
+    this.venue="";
+    this.facilitator_name="";
+    this.funding_source_id="";
+    this.collected_by="";
+  }
 
 
   // ** to back to capacity building list
@@ -133,7 +161,6 @@ export class AddCapacityPage {
    * @param districtId
    */
   populateMunicipality(districtId: NgModel){
-    debugger
     this.municipalityArr = this.municipalityArrData
       .filter(m => m.district_id === districtId);
       console.log(this.municipalityArr)
@@ -146,14 +173,33 @@ export class AddCapacityPage {
    */
   addCapacity(capacity: NgForm){
      this.entityProvider.saveCapacityBuilding(capacity.value).subscribe(res => {
-      if (typeof (res) != 'undefined') {
+       if( this.start_date=="" || this.start_date== null ||
+       this.cso_name=="" || this.cso_name==null ||
+       this.capacity_building_type_id=="" ||this.capacity_building_type_id==null||
+       this.province_id=="" ||     this.province_id==null||
+       this.district_id=="" ||  this.district_id==null ||
+       this.municipality_id=="" || this.municipality_id==null||
+       this.partner_id=="" ||  this.partner_id==null ||
+       this.venue=="" ||  this.venue==null||
+       this.facilitator_name=="" ||     this.facilitator_name==null||
+       this.funding_source_id=="" ||  this.funding_source_id==null||
+       this.collected_by=="" ||  this.collected_by==null ){
+        const alert = this.alertCtrl.create({
+          title: 'Alert',
+          subTitle: 'Please complete your capacity building form',
+          buttons: ['OK']
+        });
+        alert.present();
+     
+       }
+      else if (typeof (res) != 'undefined') {
         const alert = this.alertCtrl.create({
           title: 'Alert',
           subTitle: 'Capacity Building Saved',
           buttons: ['OK']
         });
         alert.present();
-        // this.navCtrl.push(DisplayListOfCapacityPage);
+        this.reset()
       }
       else {
         const alert = this.alertCtrl.create({
@@ -202,25 +248,6 @@ export class AddCapacityPage {
     
   }
 
-  // getItems(ev: any) {
-  //   debugger
-  //   console.log(`hi serach`);
-  //   this.initializeItems();
-  //   // this.searchlist = true
-  //   // set val to the value of the searchbar
-  //   const val = ev.target.value;
-  //   // if the value is an empty string don't filter the items
-  //   if (val && val.trim() != '') {
-  //     this.items = this.items.filter((cso_name) => {
-  //       return (cso_name.toLowerCase().indexOf(val.toLowerCase()) > -1);
-  //     })
-  //     let searchlist = document.getElementsByClassName('searchitem') as HTMLCollectionOf<HTMLElement>;
-  //     //searchlist[0].style.display = 'block';
-  //   }
-  //   else {
-  //     this.items = []
-  //   }
-  // }
 
   /**
    * 

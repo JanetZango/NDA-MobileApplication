@@ -5,6 +5,7 @@ import { LookUpService } from '../../providers/lookup/lookups.service';
 import { NgModel, NgForm } from '@angular/forms';
 import { EntityProvider } from '../../providers/entity/cso';
 import { ApiProvider } from '../../providers/api/api';
+import { DataProvider } from '../../providers/dataproviders/dataprovider';
 
 /**
  * Generated class for the AddAssessmentPage page.
@@ -36,7 +37,8 @@ export class AddAssessmentPage  implements OnInit{
     public lookupService: LookUpService,
     public entityProvider: EntityProvider,
     public alertCtrl: AlertController,
-    public csoApi:EntityProvider
+    public csoApi:EntityProvider,
+    public csoProvider: DataProvider,
   ) {
     this.getAssessmentQuestion();
   }
@@ -162,23 +164,16 @@ export class AddAssessmentPage  implements OnInit{
     
   }
 
-  getItems(ev: any) {
-    console.log(`hi serach`);
-    this.initializeItems();
-    // this.searchlist = true
-    // set val to the value of the searchbar
+  /**
+   * 
+   * @param ev 
+   * 
+   */
+  getItems(ev: any){
     const val = ev.target.value;
-    // if the value is an empty string don't filter the items
-    if (val && val.trim() != '') {
-      this.items = this.items.filter((cso_name) => {
-        return (cso_name.toLowerCase().indexOf(val.toLowerCase()) > -1);
+    this.items = this.csoProvider.listOfCso.filter((x) => {
+          return (x.cso_name.toLowerCase().indexOf(val.toLowerCase()) > -1);
       })
-      let searchlist = document.getElementsByClassName('searchitem') as HTMLCollectionOf<HTMLElement>;
-      //searchlist[0].style.display = 'block';
-    }
-    else {
-      this.items = []
-    }
   }
 
   initializeItems() {
@@ -192,6 +187,11 @@ export class AddAssessmentPage  implements OnInit{
     console.log(this.namesArr)
   }
 
+
+  openMarkerInfo(name, assessment){
+    assessment.controls['cso_name'].setValue(name.cso_name);
+    this.items = []
+  }
 
 
 }

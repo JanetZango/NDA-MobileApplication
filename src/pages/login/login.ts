@@ -20,6 +20,7 @@ import { ApiProvider } from '../../providers/api/api';
 })
 export class LoginPage {
   email;
+  message;
   constructor(
     public navCtrl: NavController,
     public navParams: NavParams,

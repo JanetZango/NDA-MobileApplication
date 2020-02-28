@@ -1,4 +1,8 @@
 page-add-assessment {
+    .content{
+        background-color: #fefefe;
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4' viewBox='0 0 4 4'%3E%3Cpath fill='%2300919e' fill-opacity='0.4' d='M1 3h1v1H1V3zm2-2h1v1H3V1z'%3E%3C/path%3E%3C/svg%3E");
+     }
     .move{
         height:100%;
         // margin-top:60px;
@@ -16,6 +20,12 @@ page-add-assessment {
             color:#00919E;
         }
 
+    }
+    h3{
+        font-size: 2em;
+        color:black;
+        font-family: 'ZCOOL XiaoWei', serif;
+        text-align: center;
     }
     .btnSign{
         height: 40px;
@@ -131,6 +141,7 @@ page-add-assessment {
 
         button{
             color:#00919E;
+            // background-color: black;
         }
     
     }

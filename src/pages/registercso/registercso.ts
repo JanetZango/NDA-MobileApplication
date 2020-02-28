@@ -4,6 +4,7 @@ import { NgModel, NgForm } from '@angular/forms';
 import { DisplayListOfCsoPage } from '../display-list-of-cso/display-list-of-cso';
 import { LookUpService } from '../../providers/lookup/lookups.service';
 import { EntityProvider } from '../../providers/entity/cso';
+
 /**
  * Generated class for the RegistercsoPage page.
  *
@@ -34,6 +35,10 @@ export class RegistercsoPage {
   contact_number;
   total_staff;
   Collected_by
+  Mobilisation_date;
+  collected_by;
+  contactValidation;
+
 
   //arrays
   csotypeArr = new Array();
@@ -86,6 +91,9 @@ export class RegistercsoPage {
     this.total_staff="";
     this.Collected_by="";
     this.contact_person="";
+    this.Mobilisation_date="";
+    this.cso_sector_id="";
+    this.collected_by ="";
   }
 
  /**
@@ -163,23 +171,54 @@ export class RegistercsoPage {
    * Get registering cso
    */
 
-
+  
 
   addCso(cso: NgForm){
+    this.phonenumberValidatinservice()
      this.entityProvider.saveCso(cso.value).subscribe(res =>{
-      if (typeof (res) != 'undefined') {
+       if(this.cso_name ==null || this.cso_name == '' || 
+       this.cso_mobilisation_method_id == null  || this.cso_mobilisation_method_id  == '' ||
+       this.physical_address == null || this.physical_address =='' ||
+       this.cso_type_id == null || this.cso_type_id =='' ||
+       this.province_id == null ||   this.province_id ==''||
+       this.district_id == null ||   this.district_id =='' ||
+       this.ward_number ==null || this.ward_number ==''||
+       this.contact_number ==null ||this.contact_number ==''||
+       this.total_staff ==null || this.total_staff ==''||
+       this.collected_by ==null ||this.collected_by ==''||
+       this.contact_person ==null ||  this.contact_person ==''||
+       this.Mobilisation_date ==null ||   this.Mobilisation_date ==''||
+       this.cso_sector_id ==null || this.cso_sector_id ==''
+       ){
         const alert = this.alertCtrl.create({
           title: 'Alert',
-          subTitle: 'cso registered',
+          subTitle: 'Please complete the form to register a new CSO',
           buttons: ['OK']
         });
         alert.present();
-        // this.navCtrl.push(DisplayListOfCsoPage);
+       }
+       else if(this.contactValidation ==1){
+        const alert = this.alertCtrl.create({
+          title: 'Alert',
+          subTitle: 'Oops your phone number is incorrect',
+          buttons: ['OK']
+        });
+        alert.present();
+
+       }
+      else if (typeof (res) != 'undefined') {
+        const alert = this.alertCtrl.create({
+          title: 'Alert',
+          subTitle: 'CSO successfully registered',
+          buttons: ['OK']
+        });
+        alert.present();
+        this.reset();
       }
       else {
         const alert = this.alertCtrl.create({
           title: 'Oops!',
-          subTitle: 'Please enter your otp code!',
+          subTitle: 'Oops your information was not saved correctly!',
           buttons: ['OK']
         });
         alert.present();
@@ -194,5 +233,30 @@ export class RegistercsoPage {
 
     });
   }
+
+
+  phonenumberValidatinservice() {
+    if (this.contact_number == undefined) {
+    } else {
+      var phoneno = /^\+?([0-9]{2})\)?[-. ]?([0-9]{4})[-. ]?([0-9]{4})$/;
+      if (this.contact_number.match(phoneno)) {
+        console.log(this.contact_number.match(phoneno));
+        this.contactValidation = 0;
+      }
+      else {
+        this.contactValidation = 1;
+        console.log(this.contact_number.match(phoneno));
+        console.log("wrong");
+
+      }
+
+    }
+
+
+
+    //VALIDATIONS FOR services
+
+  }
+
 
 }

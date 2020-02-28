@@ -45,8 +45,18 @@
           </ion-select>
         </ion-item>
 
-        <ion-input placeholder="Passport_number" type="text" class="user-input" name="passport_number"
-          [(ngModel)]="passport_number" name="Passport_number" ngModel id="anim1"></ion-input>
+        <ion-item id="item">
+          <ion-label> Select Nationality</ion-label>
+          <ion-select [(ngModel)]="nationality" name="nationality" (ionChange)="DisplayNumber()" ngModel>
+            <ion-option value="South African">South African</ion-option>
+            <ion-option value="Other">Other</ion-option>
+          </ion-select>
+        </ion-item>
+
+        <ion-input  type="number" *ngIf="showIDNumber" name="id_number"  [(ngModel)]="id_number" ngModel placeholder="ID number" id="anim1"></ion-input>
+
+        <ion-input placeholder="Passport_number" type="text" *ngIf="showPassport" class="user-input" name="passport_number"
+          [(ngModel)]="passport_number" name="passport_number" ngModel id="anim1"></ion-input>
 
 
         <ion-item id="item">
@@ -57,18 +67,9 @@
           </ion-select>
         </ion-item>
 
-        <ion-item id="item">
-          <ion-label> Select Nationality</ion-label>
-          <ion-select [(ngModel)]="nationality" name="nationality" ngModel>
-            <ion-option value="South African">South African</ion-option>
-            <ion-option value="Other">Other</ion-option>
-          </ion-select>
-        </ion-item>
-
         <ion-input placeholder="Contact_Number" [(ngModel)]="contact_number" type="number" class="user-input" name="contact_number" ngModel
           id="anim1"></ion-input>
 
-          <ion-input type="text" name="id_number"  [(ngModel)]="id_number" ngModel placeholder="ID number" id="anim1"></ion-input>
         
         <div class="moveCont">
           <button  type="submit" ion-button round class="btnSign" id="anim2"

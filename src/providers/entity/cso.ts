@@ -74,7 +74,6 @@ export class EntityProvider {
    */
   public saveCapacityBuilding(capacity): Observable<any> {
     const url = `${this.url}/capacity_building`;
-    debugger
     return this.http.post(url,capacity,httpOptions)
       .pipe(catchError(this.handleError(<any>("saveCapacityBuilding"))));
   }
@@ -94,7 +93,6 @@ export class EntityProvider {
    * @param assessment 
    */
   public saveAssessment(assessment): Observable <any> {
-    debugger
     const url = `${this.url}/assessment`;
     return this.http.post(url,assessment,httpOptions)
       .pipe(catchError(this.handleError(<any>("getAssessment"))));
@@ -105,7 +103,7 @@ export class EntityProvider {
    * @param members 
    */
   public saveMembers(members): Observable <any> {
-    const url = `${this.url}/members`;
+    const url = `${this.url}/members/4556`;
     return this.http.post(url,members,httpOptions)
       .pipe(catchError(this.handleError(<any>("getCsoMembers"))));
   }

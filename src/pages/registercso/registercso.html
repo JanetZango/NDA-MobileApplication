@@ -31,10 +31,11 @@
     </ion-select>
   </ion-item>
   <div class="Contacts">
-    <ion-label>Start date</ion-label>
+    <ion-label>Mobilisation Date</ion-label>
     <ion-item>
       <ion-label>MM DD YY</ion-label>
-      <ion-datetime displayFormat="MMM DD YYYY" placeholder="Select Date" required [(ngModel)]="Mobilisation_date" name="start_date" ngModel></ion-datetime>
+      <ion-datetime displayFormat="MMM DD YYYY" placeholder="Select Date" required   [(ngModel)]="Mobilisation_date" name="Mobilisation_date" ngModel></ion-datetime>
+      <!-- <span style="color: red" *ngIf="!Mobilisation_date.valid && Mobilisation_date.touched" class="help-block">Please enter your email</span> -->
     </ion-item>
   </div>
 
@@ -92,7 +93,7 @@
   <ion-input placeholder="Contact_Person" type="text" class="user-input" [(ngModel)]="contact_person" id="anim1" name="contact_person" ngModel>
   </ion-input>
 
-  <ion-input placeholder="Contact_Number" type="number" class="user-input" [(ngModel)]="contact_number"
+  <ion-input placeholder="Contact_Number" type="tel"  onkeyup="this.value=this.value.replace(/[^0-9]/g,'');" class="user-input" [(ngModel)]="contact_number"
     id="anim1" name="contact_number" ngModel>
   </ion-input>
 
