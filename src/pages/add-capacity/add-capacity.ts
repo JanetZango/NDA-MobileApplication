@@ -1,4 +1,4 @@
-import { Component, ViewChild } from '@angular/core';
+import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams, AlertController, LoadingController } from 'ionic-angular';
 import { NgModel, NgForm } from '@angular/forms';
 import { DisplayListOfCapacityPage } from '../display-list-of-capacity/display-list-of-capacity';
@@ -50,7 +50,6 @@ export class AddCapacityPage {
     public csoProvider: DataProvider,
     public loadingController: LoadingController 
     ) {
-      
   }
 
   
@@ -203,23 +202,36 @@ export class AddCapacityPage {
     
   }
 
-  getItems(ev: any) {
-    console.log(`hi serach`);
-    this.initializeItems();
-    // this.searchlist = true
-    // set val to the value of the searchbar
+  // getItems(ev: any) {
+  //   debugger
+  //   console.log(`hi serach`);
+  //   this.initializeItems();
+  //   // this.searchlist = true
+  //   // set val to the value of the searchbar
+  //   const val = ev.target.value;
+  //   // if the value is an empty string don't filter the items
+  //   if (val && val.trim() != '') {
+  //     this.items = this.items.filter((cso_name) => {
+  //       return (cso_name.toLowerCase().indexOf(val.toLowerCase()) > -1);
+  //     })
+  //     let searchlist = document.getElementsByClassName('searchitem') as HTMLCollectionOf<HTMLElement>;
+  //     //searchlist[0].style.display = 'block';
+  //   }
+  //   else {
+  //     this.items = []
+  //   }
+  // }
+
+  /**
+   * 
+   * @param ev 
+   * 
+   */
+  getItems(ev: any){
     const val = ev.target.value;
-    // if the value is an empty string don't filter the items
-    if (val && val.trim() != '') {
-      this.items = this.items.filter((cso_name) => {
-        return (cso_name.toLowerCase().indexOf(val.toLowerCase()) > -1);
+    this.items = this.csoProvider.listOfCso.filter((x) => {
+          return (x.cso_name.toLowerCase().indexOf(val.toLowerCase()) > -1);
       })
-      let searchlist = document.getElementsByClassName('searchitem') as HTMLCollectionOf<HTMLElement>;
-      //searchlist[0].style.display = 'block';
-    }
-    else {
-      this.items = []
-    }
   }
 
   initializeItems() {
@@ -235,8 +247,14 @@ export class AddCapacityPage {
 
 // ** find cso id by using name
 
-openMarkerInfo(name){
-  
+/**
+ * 
+ * @param name 
+ * @param capacity 
+ */
+openMarkerInfo(name, capacity: NgForm){
+  capacity.controls['cso_name'].setValue(name.cso_name);
+  this.items = []
 }
 
 }
