@@ -6,7 +6,6 @@ import { LoginPage } from '../login/login';
   templateUrl: 'home.html'
 })
 export class HomePage {
-  name;
   constructor(public navCtrl: NavController) {
 
  

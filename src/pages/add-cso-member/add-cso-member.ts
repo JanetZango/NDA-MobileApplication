@@ -1,10 +1,9 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams, AlertController } from 'ionic-angular';
-import { NgModel, NgForm } from '@angular/forms';
+import { NgForm } from '@angular/forms';
 import { LookUpService } from '../../providers/lookup/lookups.service';
 import { EntityProvider } from '../../providers/entity/cso';
 import { Member } from '../../model/member-class';
-import { DisplayCsoMemberListPage } from '../display-cso-member-list/display-cso-member-list';
 /**
  * Generated class for the AddCsoMemberPage page.
  *
@@ -40,7 +39,7 @@ export class AddCsoMemberPage {
   disability;
   id_number;
   race;
-  contactValidation ;
+  contactValidation;
   constructor(public navCtrl: NavController,
     public navParams: NavParams,
     public lookupService: LookUpService,
@@ -88,33 +87,30 @@ export class AddCsoMemberPage {
     this.csoMember.cso_uuid = this.cso_uuid;
     // this.validateID();
     this.phonenumberValidatinservice();
+
+    if (!csoMember.valid) {
+      const alert = this.alertCtrl.create({
+        title: 'Alert',
+        subTitle: 'Please complete the form to add a cso member',
+        buttons: ['OK']
+      });
+      alert.present();
+      // exit the method when the condition are true
+      return
+    }
+    else if (this.contactValidation = 1) {
+      const alert = this.alertCtrl.create({
+        title: 'Alert',
+        subTitle: 'Please check your number something is wrong',
+        buttons: ['OK']
+      });
+      alert.present();
+      // exit the method when the condition are true
+      return
+    }
     this.entityProvider.saveMembers(this.csoMember).subscribe(res => {
-      if (this.first_name == "" || this.first_name == null ||
-        this.last_name == "" || this.last_name == null ||
-        this.member_position_id == "" || this.member_position_id == null ||
-        this.gender == "" || this.gender == null ||
-        this.race == "" || this.race == null ||
-        this.nationality == "" || this.nationality == null ||
-        this.id_number == "" || this.id_number == null ||
-        this.disability == "" || this.disability == null ||
-        this.contact_number == "" || this.disability == null ||
-        this.contact_number == "") {
-        const alert = this.alertCtrl.create({
-          title: 'Alert',
-          subTitle: 'Please complete the form to add a cso member',
-          buttons: ['OK']
-        });
-        alert.present();
-      }
-      else if(this.contactValidation =1){
-        const alert = this.alertCtrl.create({
-          title: 'Alert',
-          subTitle: 'Please check your number something is wrong',
-          buttons: ['OK']
-        });
-        alert.present();
-      }
-      else if (typeof (res) != 'undefined') {
+
+      if (typeof (res) != 'undefined') {
         const alert = this.alertCtrl.create({
           title: 'Alert',
           subTitle: 'cso member successfully added',
@@ -147,10 +143,11 @@ export class AddCsoMemberPage {
   //validate id number
   validateID() {
     var cb = document.forms["id_number"].checked;
+    let ex:any
     if (cb) {
-      var ex = /^(((\d{2}((0[13578]|1[02])(0[1-9]|[12]\d|3[01])|(0[13456789]|1[012])(0[1-9]|[12]\d|30)|02(0[1-9]|1\d|2[0-8])))|([02468][048]|[13579][26])0229))(( |-)(\d{4})( |-)(\d{3})|(\d{7}))/;
+      ex = /^(((\d{2}((0[13578]|1[02])(0[1-9]|[12]\d|3[01])|(0[13456789]|1[012])(0[1-9]|[12]\d|30)|02(0[1-9]|1\d|2[0-8])))|([02468][048]|[13579][26])0229))(( |-)(\d{4})( |-)(\d{3})|(\d{7}))/;
     } else {
-      var ex = /^[0-9]{1,}$/;
+      ex = /^[0-9]{1,}$/;
     }
     var theIDnumber = document.forms["id_number"]["idnumber"].value;
     if (ex.test(theIDnumber) == false) {

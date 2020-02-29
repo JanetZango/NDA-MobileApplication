@@ -27,6 +27,7 @@ import { DataProvider } from '../providers/dataproviders/dataprovider';
 import { ViewCsoMemberPage } from '../pages/view-cso-member/view-cso-member';
 import { DisplayCsoMemberListPage } from '../pages/display-cso-member-list/display-cso-member-list';
 import { AddCsoMemberPage } from '../pages/add-cso-member/add-cso-member';
+import { httpInterceptorProviders } from '../providers/api';
 
 
 @NgModule({
@@ -81,6 +82,7 @@ import { AddCsoMemberPage } from '../pages/add-cso-member/add-cso-member';
     ConfigService,
     LookUpService,
     DataProvider,
+    httpInterceptorProviders
     
 
   ]

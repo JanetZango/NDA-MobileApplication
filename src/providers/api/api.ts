@@ -1,20 +1,18 @@
 import { Injectable } from '@angular/core';
-import { HttpClient, HttpHeaders, HttpErrorResponse } from '@angular/common/http';
+import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Observable } from 'rxjs/Observable';
 import { of } from 'rxjs/observable/of';
 import { catchError, tap } from 'rxjs/operators';
 import { ConfigService } from '../config/config.server';
+import { Tokens } from '../../model/tokens';
 
-/*
-  Generated class for the ApiProvider provider.
-
-  See https://angular.io/guide/dependency-injection for more info on providers
-  and Angular DI.
-*/
 
 const httpOptions = {
   headers: new HttpHeaders({ 'Content-Type': 'application/json' }),
 };
+
+const JWT_TOKEN = 'JWT_TOKEN';
+const REFRESH_TOKEN = 'REFRESH_TOKEN';
 
 @Injectable()
 export class ApiProvider {
@@ -30,20 +28,84 @@ export class ApiProvider {
 
   private url: string;
 
+  //private loggedUser: string;
 
+  /**
+   * 
+   * @param email 
+   */
   public verifyUser(email: string): Observable<any> {
     const url = `${this.url}/user/verifyUser`;
     return this.http.post(url, { "email": email }, httpOptions)
       .pipe(catchError(this.handleError(<any>("verifyUser"))));
 
   }
-
+  /**
+   * 
+   * @param code 
+   */
   public verifyOpt(code: string): Observable<any> {
     const url = `${this.url}/user/otp`;
+    debugger
     return this.http.post(url, { "otp": code }, httpOptions)
-      .pipe(catchError(this.handleError(<any>("verifyOpt"))));
+      .pipe(
+       tap(res => this.doLoginUser(res)),
+        catchError(this.handleError(<any>("verifyOpt"))));
   }
 
+  refreshToken() {
+    return this.http.post<any>(`${this.url}}/refresh`, {
+      'refreshToken': this.getRefreshToken()
+    }).pipe(tap((tokens: Tokens) => {
+      this.storeJwtToken(tokens.token);
+    }));
+  }
+
+  getJwtToken() {
+    return localStorage.getItem(JWT_TOKEN);
+  }
+  /**
+   * 
+   * @param username 
+   * @param tokens 
+   */
+  private doLoginUser(tokens: any) {
+   // this.loggedUser = username;
+    this.storeTokens(tokens);
+  }
+
+  private doLogoutUser() {
+   // this.loggedUser = null;
+    this.removeTokens();
+  }
+
+  private getRefreshToken() {
+    return localStorage.getItem(REFRESH_TOKEN);
+  }
+  /**
+   * 
+   * @param jwt 
+   */
+  private storeJwtToken(jwt: string) {
+    localStorage.setItem(JWT_TOKEN, jwt);
+  }
+  /**
+   * 
+   * @param tokens 
+   */
+  private storeTokens(tokens: Tokens) {
+    debugger
+    localStorage.setItem(JWT_TOKEN, tokens.token);
+    localStorage.setItem(REFRESH_TOKEN, tokens.token);
+  }
+
+  /**
+   * 
+   */
+  private removeTokens() {
+    localStorage.removeItem(JWT_TOKEN);
+    localStorage.removeItem(REFRESH_TOKEN);
+  }
 
   /**
    * Handle Http operation that failed.

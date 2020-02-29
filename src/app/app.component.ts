@@ -17,7 +17,7 @@ import { LoginPage } from '../pages/login/login';
 })
 export class MyApp {
   // rootPage:any = LandingPage;
-  rootPage:any = LandingPage;
+  rootPage:any = HomePage;
   showSplash = true;
   constructor(platform: Platform, 
     statusBar: StatusBar, 

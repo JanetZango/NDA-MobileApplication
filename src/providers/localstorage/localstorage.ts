@@ -11,7 +11,6 @@ import { Injectable } from '@angular/core';
 export class LocalstorageProvider {
 
   constructor(public http: HttpClient) {
-    console.log('Hello LocalstorageProvider Provider');
   }
 
 }

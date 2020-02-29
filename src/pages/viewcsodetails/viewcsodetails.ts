@@ -1,6 +1,5 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
-import { DisplayListOfCsoPage } from '../display-list-of-cso/display-list-of-cso';
 import { DisplayCsoMemberListPage } from '../display-cso-member-list/display-cso-member-list';
 
 /**

@@ -2,9 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { IonicPage, NavController, NavParams, AlertController } from 'ionic-angular';
 import { DisplayListOfAssessmentPage } from '../display-list-of-assessment/display-list-of-assessment';
 import { LookUpService } from '../../providers/lookup/lookups.service';
-import { NgModel, NgForm } from '@angular/forms';
 import { EntityProvider } from '../../providers/entity/cso';
-import { ApiProvider } from '../../providers/api/api';
 import { DataProvider } from '../../providers/dataproviders/dataprovider';
 
 /**
@@ -44,7 +42,6 @@ export class AddAssessmentPage  implements OnInit{
   }
 
   ionViewDidLoad() {
-    console.log('ionViewDidLoad AddAssessmentPage');
     this.getAssessementAnswer();
   }
   gotoback() {
@@ -77,7 +74,6 @@ export class AddAssessmentPage  implements OnInit{
   AssessmentQuestions() {
     if (this.assessment_type_id == "1") {
       this.showQuestions = true;
-      console.log("show")
     }
     else {
       this.showQuestions = false
@@ -98,7 +94,6 @@ export class AddAssessmentPage  implements OnInit{
           buttons: ['OK']
         });
         alert.present();
-        // this.navCtrl.push(DisplayListOfAssessmentPage);
       }
       else {
         const alert = this.alertCtrl.create({
@@ -142,10 +137,8 @@ export class AddAssessmentPage  implements OnInit{
   displayCsoList(){
     this.csoApi.getCso().subscribe(res => {
       if(res){
-        console.log(res.results);
         this.DisplayCso = res.results
         this.storeNames();
-        console.log(this.DisplayCso[0].cso_name)
         for(var x =0; x < this.DisplayCso.length;x ++){
           this.storeOrgNames(this.DisplayCso[x].cso_name)
            
@@ -156,7 +149,6 @@ export class AddAssessmentPage  implements OnInit{
   CsoName = new Array();
   storeOrgNames(cso_name) {
     this.CsoName.push(cso_name);
-    console.log(this.CsoName)
   }
 
   getCsoName(){
@@ -171,6 +163,10 @@ export class AddAssessmentPage  implements OnInit{
    */
   getItems(ev: any){
     const val = ev.target.value;
+    if(val === ''){
+      this.items =[];
+      return;
+    }
     this.items = this.csoProvider.listOfCso.filter((x) => {
           return (x.cso_name.toLowerCase().indexOf(val.toLowerCase()) > -1);
       })
@@ -179,12 +175,10 @@ export class AddAssessmentPage  implements OnInit{
   initializeItems() {
     this.items = []
     this.items = this.namesArr
-    console.log(this.items)
   }
   namesArr = new Array()
   storeNames() {
     this.namesArr = this.CsoName;
-    console.log(this.namesArr)
   }
 
 

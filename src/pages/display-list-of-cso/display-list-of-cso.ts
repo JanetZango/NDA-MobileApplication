@@ -1,11 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { RegistercsoPage } from '../registercso/registercso';
-import { LandingPage } from '../landing/landing';
 import { ApiProvider } from '../../providers/api/api';
 import { EntityProvider } from '../../providers/entity/cso'
 import { ViewcsodetailsPage } from '../viewcsodetails/viewcsodetails';
-import { filter } from 'rxjs/operators';
 import { LoadingController } from 'ionic-angular';
 /**
  * Generated class for the DisplayListOfCsoPage page.
