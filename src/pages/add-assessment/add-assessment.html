@@ -5,10 +5,10 @@
     </button>
   </div>
   <h3>Add Assessment</h3>
- <form #assessment="ngForm"  (ngSubmit)="addAssessment(assessment)"> 
-    <ion-input placeholder="Name Of Cso" [(ngModel)]="cso_name"  name="cso_name"  type="text" class="user-input" id="anim1"
+ <form [formGroup]="authForm" #assessment="ngForm"  (ngSubmit)="addAssessment(assessment)"> 
+    <ion-input placeholder="Name Of Cso" [(ngModel)]="cso_name"  formControlName="cso_name"  type="text" class="user-input" id="anim1"
     (input)="getItems($event)" ngModel ></ion-input>
-
+    <!-- <span ng-show="authForm.cso_name.$touched && authForm.cso_name.$invalid">The name is required.</span> -->
       <div id="results">
         <ion-item no-lines *ngFor="let item of items; let i=index" for="site-search" (click)="openMarkerInfo(item,assessment)">
           <p>{{item.cso_name}}</p>
@@ -21,7 +21,7 @@
         <ion-item>
           <ion-label>MM DD YY</ion-label>
           <ion-datetime displayFormat="MMM DD YYYY" placeholder="Select Date" required [(ngModel)]="assessment_date"
-            name="assessment_date" ngModel></ion-datetime>
+          formControlName="assessment_date" ngModel></ion-datetime>
         </ion-item>
         <br>
       </div>
@@ -29,7 +29,7 @@
 
       <ion-item id="item">
         <ion-label> Assessment Type</ion-label>
-        <ion-select [(ngModel)]="assessment_type_id" (ionChange)="AssessmentQuestions()" name="assessment_type_id" ngModel>
+        <ion-select [(ngModel)]="assessment_type_id" (ionChange)="AssessmentQuestions()" formControlName="assessment_type_id" ngModel>
           <ion-option value="1">CSO Mobilisation Needs Assessment Form</ion-option>
           <ion-option value="2" disabled>Formalisation Needs Assessment</ion-option>
           <ion-option value="3" disabled>Registration and Compliance</ion-option>
@@ -54,21 +54,21 @@
       </ion-item>
 
   <div id="placeholderDiv" *ngIf="showQuestions">
-    <div class="Qcard">
+    <div class="Qcard" >
      
           <h2>Section One</h2>
           <b>Institutional Arrangement</b>
           <div *ngFor="let assessmentAnswer of assessmentAnswerArr ; let i = index">
             <p>{{i+1}}.{{assessmentAnswer.question}}</p>
-            <ion-list radio-group>
+            <ion-list radio-group formControlName="answerQnA">
               <ion-item id="item2" *ngFor="let answers of assessmentAnswer.answerlist ; let j = index">
                 <ion-label id="label">{{answers.answer}}</ion-label>
-                <ion-radio (ionSelect)="selectRad(answers)" value="{{answers.id}}"></ion-radio>
+                <ion-radio (ionSelect)="selectRad(answers)" value="{{answers.id}}" ></ion-radio>
               </ion-item>
             </ion-list>
           </div>
           <div class="moveCont">
-            <button ion-button id="btn" type="submit">Add Assessment</button>
+            <button ion-button id="btn" type="submit" [disabled]="!authForm.valid">Add Assessment</button>
           </div>
     </div>
   </div>

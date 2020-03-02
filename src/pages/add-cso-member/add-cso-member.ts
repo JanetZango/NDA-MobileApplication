@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams, AlertController } from 'ionic-angular';
-import { NgForm } from '@angular/forms';
+import { NgModel, NgForm,Validators, FormBuilder, FormGroup } from '@angular/forms';
 import { LookUpService } from '../../providers/lookup/lookups.service';
 import { EntityProvider } from '../../providers/entity/cso';
 import { Member } from '../../model/member-class';
@@ -40,16 +40,34 @@ export class AddCsoMemberPage {
   id_number;
   race;
   contactValidation;
+  private authForm : FormGroup;
   constructor(public navCtrl: NavController,
     public navParams: NavParams,
     public lookupService: LookUpService,
     public entityProvider: EntityProvider,
     public alertCtrl: AlertController,
+    private fb: FormBuilder 
   ) {
 
 
     this.csoObj = this.navParams.get('orgObject');
     this.cso_uuid = this.csoObj.cso_uuid;
+
+
+    this.authForm = this.fb.group({  
+      'first_name': ['', Validators.compose([Validators.required])],
+      'last_name': ['', Validators.compose([Validators.required])],
+      'member_position_id': ['', Validators.compose([Validators.required])],
+      'gender': ['', Validators.compose([Validators.required])],
+      'race': ['', Validators.compose([Validators.required])],
+      'nationality': ['', Validators.compose([Validators.required])],
+      'id_number': ['', Validators.compose([Validators.required])],
+      'disability': ['', Validators.compose([Validators.required])],
+      'contact_number': ['', Validators.compose([Validators.required])],
+
+  });
+
+  // this.validateID();
   }
 
   ionViewDidLoad() {
@@ -98,16 +116,16 @@ export class AddCsoMemberPage {
       // exit the method when the condition are true
       return
     }
-    else if (this.contactValidation = 1) {
-      const alert = this.alertCtrl.create({
-        title: 'Alert',
-        subTitle: 'Please check your number something is wrong',
-        buttons: ['OK']
-      });
-      alert.present();
-      // exit the method when the condition are true
-      return
-    }
+    // else if (this.contactValidation = 1) {
+    //   const alert = this.alertCtrl.create({
+    //     title: 'Alert',
+    //     subTitle: 'Please check your number something is wrong',
+    //     buttons: ['OK']
+    //   });
+    //   alert.present();
+    //   // exit the method when the condition are true
+    //   return
+    // }
     this.entityProvider.saveMembers(this.csoMember).subscribe(res => {
 
       if (typeof (res) != 'undefined') {
@@ -120,14 +138,14 @@ export class AddCsoMemberPage {
         this.reset();
 
       }
-      else {
-        const alert = this.alertCtrl.create({
-          title: 'Oops!',
-          subTitle: 'Please enter your details!',
-          buttons: ['OK']
-        });
-        alert.present();
-      }
+      // else {
+      //   const alert = this.alertCtrl.create({
+      //     title: 'Oops!',
+      //     subTitle: 'Please enter your details!',
+      //     buttons: ['OK']
+      //   });
+      //   alert.present();
+      // }
     }, (err) => {
       const alert = this.alertCtrl.create({
         title: 'Error!',
@@ -149,7 +167,7 @@ export class AddCsoMemberPage {
     } else {
       ex = /^[0-9]{1,}$/;
     }
-    var theIDnumber = document.forms["id_number"]["idnumber"].value;
+    var theIDnumber =  this.authForm.controls["id_number"]["id_number"].value;
     if (ex.test(theIDnumber) == false) {
       const alert = this.alertCtrl.create({
         subTitle: 'Please supply a valid ID number',

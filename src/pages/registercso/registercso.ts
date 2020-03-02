@@ -1,8 +1,9 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams, AlertController } from 'ionic-angular';
-import { NgModel, NgForm } from '@angular/forms';
+import { NgModel, NgForm,Validators, FormBuilder, FormGroup } from '@angular/forms';
 import { LookUpService } from '../../providers/lookup/lookups.service';
 import { EntityProvider } from '../../providers/entity/cso';
+
 
 /**
  * Generated class for the RegistercsoPage page.
@@ -49,13 +50,32 @@ export class RegistercsoPage {
   // arrays that store data
   districtArrData = new Array();
   municipalityArrData = new Array();
+  private authForm : FormGroup;
 
 
   constructor(public navCtrl: NavController,
     public navParams: NavParams,
     public lookupService: LookUpService,
     public entityProvider: EntityProvider,
-    public alertCtrl: AlertController, ) {
+    public alertCtrl: AlertController,
+    private fb: FormBuilder ) {
+
+      this.authForm = this.fb.group({  
+        'cso_name': ['', Validators.compose([Validators.required])],
+        'cso_mobilisation_method_id': ['', Validators.compose([Validators.required])],
+        'Mobilisation_date': ['', Validators.compose([Validators.required])],
+        'physical_address': ['', Validators.compose([Validators.required])],
+        'cso_type_id': ['', Validators.compose([Validators.required])],
+        'cso_sector_id': ['', Validators.compose([Validators.required])],
+        'province_id': ['', Validators.compose([Validators.required])],
+        'district_id': ['', Validators.compose([Validators.required])],
+        'municipality_id': ['', Validators.compose([Validators.required])],
+        'ward_number': ['', Validators.compose([Validators.required])],
+        'contact_person': ['', Validators.compose([Validators.required])],
+        'contact_number': ['', Validators.compose([Validators.required])],
+        'total_staff': ['', Validators.compose([Validators.required])],
+        'collected_by': ['', Validators.compose([Validators.required])]
+    });
   }
 
   ionViewDidLoad() {

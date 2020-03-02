@@ -1,7 +1,8 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { LandingPage } from '../landing/landing';
 import { AddOtpPage } from '../add-otp/add-otp';
-import { NgForm } from '@angular/forms';
+import { NgModel, NgForm } from '@angular/forms';
 import { AlertController } from 'ionic-angular';
 import { ApiProvider } from '../../providers/api/api';
 
@@ -19,7 +20,7 @@ import { ApiProvider } from '../../providers/api/api';
 })
 export class LoginPage {
   email;
-  message;
+  message
   constructor(
     public navCtrl: NavController,
     public navParams: NavParams,
@@ -44,16 +45,10 @@ export class LoginPage {
         });
         alert.present();
       }
-    }, (err) => {
-      console.log(err)
-      const alert = this.alertCtrl.create({
-        title: 'Error!',
-        subTitle: 'Something went wrong!',
-        buttons: ['OK']
-      });
-      alert.present();
-
-    });
+     
+    },
+    (err) => {console.log(err)});
+    
   }
 
 }

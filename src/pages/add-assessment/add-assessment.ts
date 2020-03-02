@@ -3,6 +3,7 @@ import { IonicPage, NavController, NavParams, AlertController } from 'ionic-angu
 import { DisplayListOfAssessmentPage } from '../display-list-of-assessment/display-list-of-assessment';
 import { LookUpService } from '../../providers/lookup/lookups.service';
 import { EntityProvider } from '../../providers/entity/cso';
+import { NgModel, NgForm,Validators, FormBuilder, FormGroup } from '@angular/forms';
 import { DataProvider } from '../../providers/dataproviders/dataprovider';
 
 /**
@@ -18,7 +19,6 @@ import { DataProvider } from '../../providers/dataproviders/dataprovider';
   templateUrl: 'add-assessment.html',
 })
 export class AddAssessmentPage  implements OnInit{
-  assessment_type_id;
   showQuestions: boolean = false;
   assessmentQuestionArr = new Array();
   assessmentAnswerArr = new Array();
@@ -26,9 +26,13 @@ export class AddAssessmentPage  implements OnInit{
   DisplayCso = new Array();
 
 
-
+  private authForm : FormGroup;
   //variables
   items;
+  cso_name;
+  assessment_date;
+  assessment_type_id;
+  answerQnA;
   constructor(
     public navCtrl: NavController,
     public navParams: NavParams,
@@ -37,12 +41,28 @@ export class AddAssessmentPage  implements OnInit{
     public alertCtrl: AlertController,
     public csoApi:EntityProvider,
     public csoProvider: DataProvider,
+    private fb: FormBuilder
   ) {
     this.getAssessmentQuestion();
+
+
+    this.authForm = this.fb.group({  
+      'cso_name': ['', Validators.compose([Validators.required])],
+      'assessment_date': ['', Validators.compose([Validators.required])],
+      'assessment_type_id': ['', Validators.compose([Validators.required])],
+      'answerQnA': ['', Validators.compose([Validators.required])]
+  });
   }
 
   ionViewDidLoad() {
     this.getAssessementAnswer();
+  }
+
+  reset(){
+    this.cso_name =="";
+    this.assessment_date =="";
+    this.assessment_type_id =="";
+    this.answerQnA =="";
   }
   gotoback() {
     this.navCtrl.push(DisplayListOfAssessmentPage)
@@ -94,6 +114,7 @@ export class AddAssessmentPage  implements OnInit{
           buttons: ['OK']
         });
         alert.present();
+        this.reset();
       }
       else {
         const alert = this.alertCtrl.create({
@@ -183,7 +204,7 @@ export class AddAssessmentPage  implements OnInit{
 
 
   openMarkerInfo(name, assessment){
-    assessment.controls['cso_name'].setValue(name.cso_name);
+    this.authForm.controls['cso_name'].setValue(name.cso_name);
     this.items = []
   }
 

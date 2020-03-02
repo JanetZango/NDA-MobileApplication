@@ -7,16 +7,16 @@
     <div class="divImage">
       <p>Add a Cso Member</p>
     </div>
-    <form #csomember="ngForm" (ngSubmit)="addCsoMember(csomember)">
-        <ion-input placeholder="First_name" type="text" class="user-input" [(ngModel)]="first_name" name="first_name" ngModel id="anim1"></ion-input>
+    <form [formGroup]="authForm" #csomember="ngForm" (ngSubmit)="addCsoMember(csomember)">
+        <ion-input placeholder="First_name" type="text" class="user-input" [(ngModel)]="first_name" formControlName="first_name" ngModel id="anim1"></ion-input>
 
 
-        <ion-input placeholder="Last_name" type="text" class="user-input" [(ngModel)]="last_name" name="last_name" ngModel id="anim1"></ion-input>
+        <ion-input placeholder="Last_name" type="text" class="user-input" [(ngModel)]="last_name" formControlName="last_name" ngModel id="anim1"></ion-input>
 
 
         <ion-item id="item">
           <ion-label> Select Member Position</ion-label>
-          <ion-select [(ngModel)]="member_position_id" name="member_position_id" ngModel>
+          <ion-select [(ngModel)]="member_position_id" formControlName="member_position_id" ngModel>
             <ion-option value="1">Trustee</ion-option>
             <ion-option value="2">Management</ion-option>
             <ion-option value="3">General Monitor</ion-option>
@@ -27,7 +27,7 @@
 
         <ion-item id="item">
           <ion-label> Select Gender</ion-label>
-          <ion-select [(ngModel)]="gender" name="gender" ngModel>
+          <ion-select [(ngModel)]="gender" formControlName="gender" ngModel>
             <ion-option value="Female">Female</ion-option>
             <ion-option value="Male">Male</ion-option>
           </ion-select>
@@ -37,7 +37,7 @@
 
         <ion-item id="item">
           <ion-label> Select Race</ion-label>
-          <ion-select [(ngModel)]="race" name="race" ngModel>
+          <ion-select [(ngModel)]="race" formControlName="race" ngModel>
             <ion-option value="African">African</ion-option>
             <ion-option value="Colored">Colored</ion-option>
             <ion-option value="Indian">Indian</ion-option>
@@ -47,33 +47,33 @@
 
         <ion-item id="item">
           <ion-label> Select Nationality</ion-label>
-          <ion-select [(ngModel)]="nationality" name="nationality" (ionChange)="DisplayNumber()" ngModel>
+          <ion-select [(ngModel)]="nationality" formControlName="nationality" (ionChange)="DisplayNumber()" ngModel>
             <ion-option value="South African">South African</ion-option>
             <ion-option value="Other">Other</ion-option>
           </ion-select>
         </ion-item>
 
-        <ion-input  type="number" *ngIf="showIDNumber" name="id_number"  [(ngModel)]="id_number" ngModel placeholder="ID number" id="anim1"></ion-input>
+        <ion-input  type="number"  *ngIf="showIDNumber" formControlName="id_number"  [(ngModel)]="id_number" ngModel placeholder="ID number" id="anim1"></ion-input>
 
         <ion-input placeholder="Passport_number" type="text" *ngIf="showPassport" class="user-input" name="passport_number"
-          [(ngModel)]="passport_number" name="passport_number" ngModel id="anim1"></ion-input>
+          [(ngModel)]="passport_number" formControlName="passport_number" ngModel id="anim1"></ion-input>
 
 
         <ion-item id="item">
           <ion-label> Select Disability</ion-label>
-          <ion-select [(ngModel)]="disability" name="disability" ngModel>
+          <ion-select [(ngModel)]="disability" formControlName="disability" ngModel>
             <ion-option value="Yes">Yes</ion-option>
             <ion-option value="No">No</ion-option>
           </ion-select>
         </ion-item>
 
-        <ion-input placeholder="Contact_Number" [(ngModel)]="contact_number" type="number" class="user-input" name="contact_number" ngModel
+        <ion-input placeholder="Contact_Number"  [(ngModel)]="contact_number" type="number" class="user-input" formControlName="contact_number" ngModel
           id="anim1"></ion-input>
 
         
         <div class="moveCont">
           <button  type="submit" ion-button round class="btnSign" id="anim2"
-           >Add Cso Member</button>
+          [disabled]="!authForm.valid" >Add Cso Member</button>
         </div>
       </form>
 

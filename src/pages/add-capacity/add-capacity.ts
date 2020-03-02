@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams, AlertController, LoadingController } from 'ionic-angular';
-import { NgModel, NgForm } from '@angular/forms';
+import { NgModel, NgForm,Validators, FormBuilder, FormGroup } from '@angular/forms';
 import { LookUpService } from '../../providers/lookup/lookups.service';
 import { CapacityBuilding } from '../../model/capacitybuilding-class';
 import { EntityProvider } from '../../providers/entity/cso';
@@ -50,7 +50,7 @@ export class AddCapacityPage {
   facilitator_name;
   funding_source_id;
   collected_by;
-
+  private authForm : FormGroup;
   capacity: CapacityBuilding = new CapacityBuilding();
   constructor(
     public navCtrl: NavController,
@@ -59,8 +59,26 @@ export class AddCapacityPage {
     public entityProvider: EntityProvider,
     public alertCtrl: AlertController,
     public csoProvider: DataProvider,
-    public loadingController: LoadingController
+    public loadingController: LoadingController,
+    private fb: FormBuilder
   ) {
+
+    this.authForm = this.fb.group({  
+      'cso_name': ['', Validators.compose([Validators.required])],
+      'capacity_building_type_id': ['', Validators.compose([Validators.required])],
+      'province_id': ['', Validators.compose([Validators.required])],
+      'district_id': ['', Validators.compose([Validators.required])],
+      'municipality_id': ['', Validators.compose([Validators.required])],
+      'partner_id': ['', Validators.compose([Validators.required])],
+      'venue': ['', Validators.compose([Validators.required])],
+      'facilitator_name': ['', Validators.compose([Validators.required])],
+      'funding_source_id': ['', Validators.compose([Validators.required])],
+      'collected_by': ['', Validators.compose([Validators.required])],
+      'start_date': ['', Validators.compose([Validators.required])],
+      'end_date': ['', Validators.compose([Validators.required])],
+
+
+  });
   }
 
   disableData() {
@@ -268,7 +286,7 @@ export class AddCapacityPage {
    * @param capacity 
    */
   openMarkerInfo(name, capacity: NgForm) {
-    capacity.controls['cso_name'].setValue(name.cso_name);
+    this.authForm.controls['cso_name'].setValue(name.cso_name);
     this.items = []
   }
 

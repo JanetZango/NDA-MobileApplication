@@ -2,127 +2,132 @@
   <div class="divImage">
     <div class="btn">
       <button clear ion-button (click)="gotoback()">
-          <ion-icon ios="ios-arrow-back" md="md-arrow-back"></ion-icon>
+        <ion-icon ios="ios-arrow-back" md="md-arrow-back"></ion-icon>
       </button>
-  </div>
+    </div>
     <h3>Add CSO</h3>
   </div>
-  <form #cso="ngForm" (ngSubmit)="addCso(cso)">
-    <ion-input placeholder="Name of Cso" [(ngModel)]="cso_name" name="cso_name" ngModel type="text" class="user-input" id="anim1"
-    ></ion-input>
+  <form [formGroup]="authForm" #cso="ngForm" (ngSubmit)="addCso(cso)" >
+  
+      <ion-input placeholder="Name of Cso" name="cso_name" [(ngModel)]="cso_name" formControlName="cso_name" ngModel type="text" class="user-input"
+        id="anim1"></ion-input>
 
-  <div id="results">
-    <ion-item no-lines *ngFor="let item of items; let i=index" (click)="openMarkerInfo(item)">
-      <p>{{item}}</p>
+    <div id="results">
+      <ion-item no-lines *ngFor="let item of items; let i=index" (click)="openMarkerInfo(item)">
+        <p>{{item}}</p>
+      </ion-item>
+    </div>
+
+    <ion-item id="item">
+      <ion-label> Mobilisation Method</ion-label>
+      <ion-select [(ngModel)]="cso_mobilisation_method_id" formControlName="cso_mobilisation_method_id" ngModel>
+        <ion-option value="1">SASSA ICROP</ion-option>
+        <ion-option value="2">DSD Outreach Program</ion-option>
+        <ion-option value="3">Government Outreach Program</ion-option>
+        <ion-option value="4">Community Dialogues</ion-option>
+        <ion-option value="5">Community Consultations</ion-option>
+        <ion-option value="6">Partnership</ion-option>
+        <ion-option value="7">Civil Society Networks</ion-option>
+        <ion-option value="8">Office Walk-ins</ion-option>
+      </ion-select>
     </ion-item>
-  </div>
+    <div class="Contacts">
+      <ion-label>Mobilisation Date</ion-label>
+      <ion-item>
+        <ion-label>MM DD YY</ion-label>
+        <ion-datetime displayFormat="MMM DD YYYY" placeholder="Select Date" [(ngModel)]="Mobilisation_date"
+        formControlName="Mobilisation_date" ngModel required></ion-datetime>
+          <!-- <span style="color: red" *ngIf="!form.Mobilisation_date.valid && form.Mobilisation_date.touched" class="help-block">Please enter your email</span> -->
+      </ion-item>
+    </div>
 
-  <ion-item id="item">
-    <ion-label> Mobilisation Method</ion-label>
-    <ion-select [(ngModel)]="cso_mobilisation_method_id" name="cso_mobilisation_method_id" ngModel>
-      <ion-option value="1">SASSA ICROP</ion-option>
-      <ion-option value="2">DSD Outreach Program</ion-option>
-      <ion-option value="3">Government Outreach Program</ion-option>
-      <ion-option value="4">Community Dialogues</ion-option>
-      <ion-option value="5">Community Consultations</ion-option>
-      <ion-option value="6">Partnership</ion-option>
-      <ion-option value="7">Civil Society Networks</ion-option>
-      <ion-option value="8">Office Walk-ins</ion-option>
-    </ion-select>
-  </ion-item>
-  <div class="Contacts">
-    <ion-label>Mobilisation Date</ion-label>
-    <ion-item>
-      <ion-label>MM DD YY</ion-label>
-      <ion-datetime displayFormat="MMM DD YYYY" placeholder="Select Date" required   [(ngModel)]="Mobilisation_date" name="Mobilisation_date" ngModel></ion-datetime>
-      <!-- <span style="color: red" *ngIf="!Mobilisation_date.valid && Mobilisation_date.touched" class="help-block">Please enter your email</span> -->
+    <ion-input placeholder="Physical_Address" type="text" class="user-input" [(ngModel)]="physical_address" id="anim1"
+    formControlName="physical_address" ngModel>
+    </ion-input>
+
+
+    <ion-item id="item">
+      <ion-label> Select Cso_type</ion-label>
+      <ion-select [(ngModel)]="cso_type_id" formControlName="cso_type_id" ngModel>
+        <ion-option *ngFor="let a of csotypeArr" [value]="a.id">{{a.cso_type_name}}
+        </ion-option>
+      </ion-select>
     </ion-item>
-  </div>
-
-  <ion-input placeholder="Physical_Address" type="text" class="user-input" [(ngModel)]="physical_address"
-    id="anim1" name="physical_address" ngModel>
-  </ion-input>
 
 
-  <ion-item id="item">
-    <ion-label> Select Cso_type</ion-label>
-    <ion-select [(ngModel)]="cso_type_id" name="cso_type_id" ngModel>
-      <ion-option *ngFor="let a of csotypeArr" [value]="a.id">{{a.cso_type_name}}
-      </ion-option>
-    </ion-select>
-  </ion-item>
+    <ion-item id="item">
+      <ion-label> Select Cso_sector</ion-label>
+      <ion-select [(ngModel)]="cso_sector_id" formControlName="cso_sector_id" ngModel>
+        <ion-option *ngFor="let a of csosectorArr" [value]="a.id">{{a.cso_sector_name}}
+        </ion-option>
+      </ion-select>
+    </ion-item>
 
 
-  <ion-item id="item">
-    <ion-label> Select Cso_sector</ion-label>
-    <ion-select [(ngModel)]="cso_sector_id" name="cso_sector_id" ngModel>
-      <ion-option *ngFor="let a of csosectorArr" [value]="a.id">{{a.cso_sector_name}}
-      </ion-option>
-    </ion-select>
-  </ion-item>
-
-
-  <ion-item id="item">
-    <ion-label> Select Province</ion-label >
-      <ion-select  [(ngModel)]="province_id" ngModel name="province_id" required  (ionChange)="populateDistrict(province_id)">
+    <ion-item id="item">
+      <ion-label> Select Province</ion-label>
+      <ion-select [(ngModel)]="province_id" ngModel formControlName="province_id" required
+        (ionChange)="populateDistrict(province_id)">
         <ion-option *ngFor="let a of provinceArr" [value]="a.id">{{a.province_name}}
         </ion-option>
       </ion-select>
-  </ion-item>
-
-  <ion-item id="item">
-    <ion-label> Select District</ion-label>
-    <ion-select [(ngModel)]="district_id" ngModel name="district_id" required (ionChange)="populateMunicipality(district_id)">
-      <ion-option *ngFor="let district of districtArr" [value]="district.id">{{district.district_name}}
-      </ion-option>
-    </ion-select>
-  </ion-item>
-
-   <ion-item id="item">
-          <ion-label> Select Municipality</ion-label>
-          <ion-select [(ngModel)]="municipality_id" required ngModel name="municipality_id">
-            <ion-option *ngFor="let municipality of municipalityArr" [value]="municipality.id">
-              {{municipality.municipality_name}}
-            </ion-option>
-          </ion-select>
-        </ion-item>
-
-  <ion-input placeholder="Ward_number" type="number" class="user-input" [(ngModel)]="ward_number" id="anim1" name="ward_number" ngModel>
-  </ion-input>
-
-  <ion-input placeholder="Contact_Person" type="text" class="user-input" [(ngModel)]="contact_person" id="anim1" name="contact_person" ngModel>
-  </ion-input>
-
-  <ion-input placeholder="Contact_Number" type="tel"  onkeyup="this.value=this.value.replace(/[^0-9]/g,'');" class="user-input" [(ngModel)]="contact_number"
-    id="anim1" name="contact_number" ngModel>
-  </ion-input>
-
-
-
-
-  <ion-input placeholder="Total_Staff" type="number" class="user-input" [(ngModel)]="total_staff" id="anim1" name="total_staff" ngModel>
-  </ion-input>
-
-
-  <ion-input placeholder="Collected_by" [(ngModel)]="collected_by" type="text" class="user-input" id="anim1"  name="collected_by" ngModel
-   ></ion-input>
-
-  <div id="results">
-    <ion-item no-lines *ngFor="let item of items; let i=index" (click)="openMarkerInfo(item)">
-      <p>{{item}}</p>
     </ion-item>
-  </div>
+
+    <ion-item id="item">
+      <ion-label> Select District</ion-label>
+      <ion-select [(ngModel)]="district_id" ngModel formControlName="district_id" required
+        (ionChange)="populateMunicipality(district_id)">
+        <ion-option *ngFor="let district of districtArr" [value]="district.id">{{district.district_name}}
+        </ion-option>
+      </ion-select>
+    </ion-item>
+
+    <ion-item id="item">
+      <ion-label> Select Municipality</ion-label>
+      <ion-select [(ngModel)]="municipality_id" required ngModel formControlName="municipality_id">
+        <ion-option *ngFor="let municipality of municipalityArr" [value]="municipality.id">
+          {{municipality.municipality_name}}
+        </ion-option>
+      </ion-select>
+    </ion-item>
+
+    <ion-input placeholder="Ward_number" type="number" class="user-input" [(ngModel)]="ward_number" id="anim1"
+    formControlName="ward_number" ngModel>
+    </ion-input>
+
+    <ion-input placeholder="Contact_Person" type="text" class="user-input" [(ngModel)]="contact_person" id="anim1"
+    formControlName="contact_person" ngModel>
+    </ion-input>
+
+    <ion-input placeholder="Contact_Number" type="tel" onkeyup="this.value=this.value.replace(/[^0-9]/g,'');"
+      class="user-input" [(ngModel)]="contact_number" id="anim1" formControlName="contact_number" ngModel>
+    </ion-input>
 
 
 
-  <div class="moveCont">
-    <button  type="submit" ion-button round class="btnSign" id="anim2" color="secAlert" id="myBtn"
-     >Save</button>
-    <button ion-button round class="btnSign" id="anim2" color="secAlert" id="myBtn"
-      (click)="reset()">Reset</button>
-  </div>
+
+    <ion-input placeholder="Total_Staff" type="number" class="user-input" [(ngModel)]="total_staff" id="anim1"
+    formControlName="total_staff" ngModel>
+    </ion-input>
+
+
+    <ion-input placeholder="Collected_by" [(ngModel)]="collected_by" type="text" class="user-input" id="anim1"
+    formControlName="collected_by" ngModel></ion-input>
+
+    <div id="results">
+      <ion-item no-lines *ngFor="let item of items; let i=index" (click)="openMarkerInfo(item)">
+        <p>{{item}}</p>
+      </ion-item>
+    </div>
+
+
+
+    <div class="moveCont">
+      <button type="submit" ion-button round class="btnSign" id="anim2" color="secAlert" id="myBtn" [disabled]="!authForm.valid">Save</button>
+      <button ion-button round class="btnSign" id="anim2" color="secAlert" id="myBtn" (click)="reset()">Reset</button>
+    </div>
 
   </form>
-        
- 
+
+
 </ion-content>
