@@ -33,9 +33,9 @@
     </ion-item>
     <div class="Contacts">
       <ion-label>Mobilisation Date</ion-label>
-      <ion-item>
+      <ion-item id="item2">
         <ion-label>MM DD YY</ion-label>
-        <ion-datetime displayFormat="MMM DD YYYY" placeholder="Select Date" [(ngModel)]="Mobilisation_date"
+        <ion-datetime displayFormat="MMM DD YYYY" placeholder="Select Date" [(ngModel)]="Mobilisation_date" 
         formControlName="Mobilisation_date" ngModel required></ion-datetime>
           <!-- <span style="color: red" *ngIf="!form.Mobilisation_date.valid && form.Mobilisation_date.touched" class="help-block">Please enter your email</span> -->
       </ion-item>

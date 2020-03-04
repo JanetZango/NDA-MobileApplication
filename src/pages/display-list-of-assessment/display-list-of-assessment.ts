@@ -2,7 +2,8 @@ import { Component,OnInit } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { AddAssessmentPage } from '../add-assessment/add-assessment';
 import { LandingPage } from '../landing/landing';
-import { EntityProvider } from '../../providers/entity/cso'
+import { EntityProvider } from '../../providers/entity/cso';
+import { LoadingController } from 'ionic-angular';
 
 /**
  * Generated class for the DisplayListOfAssessmentPage page.
@@ -18,7 +19,10 @@ import { EntityProvider } from '../../providers/entity/cso'
 })
 export class DisplayListOfAssessmentPage implements OnInit {
   DisplayAssessment = new Array();
-  constructor(public navCtrl: NavController, public navParams: NavParams,public csoApi:EntityProvider ) {
+  constructor(public navCtrl: NavController,
+     public navParams: NavParams,
+     public csoApi:EntityProvider,
+     public loadingCtrl: LoadingController ) {
   }
 
   ionViewDidLoad() {
@@ -32,12 +36,17 @@ export class DisplayListOfAssessmentPage implements OnInit {
   }
 
   ngOnInit(){
+    const loader = this.loadingCtrl.create({
+      content: "Please wait information is stil loading...",
+      duration: 300000000
+    });
+    loader.present();
     this.csoApi.getAssessment().subscribe(res => {
-      
       if(res){
         console.log(res.results);
         this.DisplayAssessment = res.results
         console.log(this.DisplayAssessment)
+        loader.dismiss()
       }
 
     })

@@ -1,30 +1,38 @@
-
-
 <ion-content>
-  <div class="top">
-    <div class="btn">
-        <button clear ion-button  (click)="gotoback()">
-            <ion-icon ios="ios-arrow-round-back" md="md-arrow-round-back"></ion-icon>
-        </button>
-    </div>
-    <div class="btnCreate">
-        <button ion-button (click)="addBuilding()">Create CSO Capacity Building Intervention</button>
-    </div>
-</div>
-<div class="Bottom">
-    <h3>Manage CSO Capacity Building Interventions</h3>
-    <ion-card *ngFor="let x of DisplayCapacity">
-        <div class="card">
-            <p><b>Capacity Building:</b>{{x.capacity_building}}</p>
-            <p><b>Facilitor Name:</b>{{x.facilitator_name}}</p>
-            <p><b>District:</b>{{x.district}}</p>
-            <p><b>Municipality:</b>{{x.municipality}}</p>
-            <p><b>Province:</b>{{x.province}}</p>
-            <p><b>Venue:</b>{{x.venue}}</p>
-            <p><b>Start Date:</b>{{x.start_date}}</p>
-            <p><b>End Date:</b>{{x.end_date}}</p>
-           
+    <div class="top">
+        <div class="btn">
+            <button clear ion-button (click)="gotoback()">
+                <ion-icon ios="ios-arrow-round-back" md="md-arrow-round-back"></ion-icon>
+            </button>
         </div>
-    </ion-card>
-</div>
+        <div class="btnCreate">
+            <button ion-button (click)="addBuilding()">Create CSO Capacity Building Intervention</button>
+        </div>
+        <div class="search">
+            <ion-searchbar (input)="getItems($event)"></ion-searchbar>
+        </div>
+    </div>
+    
+    <div id="results">
+        <ion-item no-lines *ngFor="let item of items; let i=index" (click)="openMarkerInfo(item)">
+          <p>{{item}}</p>
+        </ion-item>
+      </div>
+
+    <div class="Bottom">
+        <h3>Manage CSO Capacity Building Interventions</h3>
+        <ion-card *ngFor="let x of DisplayCapacity">
+            <div class="card">
+                <p><b>Capacity Building:</b>{{x.capacity_building}}</p>
+                <p><b>Facilitor Name:</b>{{x.facilitator_name}}</p>
+                <p><b>District:</b>{{x.district}}</p>
+                <p><b>Municipality:</b>{{x.municipality}}</p>
+                <p><b>Province:</b>{{x.province}}</p>
+                <p><b>Venue:</b>{{x.venue}}</p>
+                <p><b>Start Date:</b>{{x.start_date}}</p>
+                <p><b>End Date:</b>{{x.end_date}}</p>
+
+            </div>
+        </ion-card>
+    </div>
 </ion-content>
