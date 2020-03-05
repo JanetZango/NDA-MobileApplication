@@ -13,18 +13,18 @@ import { Observable } from 'rxjs/Observable';
 export class LookUpService {
 
     // look up data files.
-    private AssessementAnswer = "../../assets/lookup_database/cso_tra_dbo_lkp_assessment_answer.json";
-    private AssessementQuestion = "../../assets/lookup_database/cso_tra_dbo_lkp_asseement_questions.json"
+    private AssessementAnswer = "../../assets/lookup_database/assessment_answer.json";
+    private AssessementQuestion = "../../assets/lookup_database/asseement_question.json"
     private AssessementType = "../../assets/lookup_database/cso_tra_dbo_lkp_assessment_type.json";
-    private AssessementTypeSection = "../../assets/lookup_database/cso_tra_dbo_lkp_assessment_type_sector.json";
-    private CapacityBuildingType = "../../assets/lookup_database/cso_tra_dbo_lkp_capacity_building_type.json";
-    private CsoSector = "../../assets/lookup_database/cso_tra_dbo_lkp_cso_sector.json";
-    private CsoType = "../../assets/lookup_database/cso_tra_dbo_lkp_cso_type.json";
-    private District = "../../assets/lookup_database/cso_tra_dbo_lkp_district.json";
-    private LocalMunicipality = "../../assets/lookup_database/cso_tra_dbo_lkp_local_municipality.json";
+    private AssessementTypeSection = "../../assets/lookup_database/assessment_type_section.json";
+    private CapacityBuildingType = "../../assets/lookup_database/capacity_building_type.json";
+    private CsoSector = "../../assets/lookup_database/cso_sector.json";
+    private CsoType = "../../assets/lookup_database/cso_type.json";
+    private District = "../../assets/lookup_database/district.json";
+    private LocalMunicipality = "../../assets/lookup_database/municipality.json";
     private MemberPosition = "../../assets/lookup_database/cso_tra_dbo_lkp_local_member_position.json";
     private PartnerType = "../../assets/lookup_database/cso_tra_dbo_lkp_partner_type.json";
-    private Province = "../../assets/lookup_database/cso_tra_dbo_lkp_province.json";
+    private Province = "../../assets/lookup_database/province.json";
 
     constructor(
         public http: HttpClient

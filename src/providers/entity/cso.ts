@@ -33,10 +33,9 @@ export class EntityProvider {
    * Get Cso
    */
   public getCso(): Observable <any> {
-    const url = `${this.url}/cso`;
+    const url = `${this.url}/api/cso`;
     console.log(url)
     return this.http.get(url)
-   
       .pipe(catchError(this.handleError(<any>("getCso"))));
   }
 
@@ -44,7 +43,7 @@ export class EntityProvider {
    * Get Capacity Building
    */
   public getCapacityBuilding(): Observable <any> {
-    const url = `${this.url}/capacity_building`;
+    const url = `${this.url}/api/capacity_building/`;
     return this.http.get(url)
       .pipe(catchError(this.handleError(<any>("getCapacityBuilding"))));
   }
@@ -53,13 +52,17 @@ export class EntityProvider {
    *  Get Assessment
    */
   public getAssessment(): Observable <any> {
-    const url = `${this.url}/assessment`;
+    const url = `${this.url}/api/assessment`;
     return this.http.get(url)
       .pipe(catchError(this.handleError(<any>("getAssessment"))));
   }
 
+   /**
+   *  Get cso member
+   */
+
   public getCsoMember(): Observable <any> {
-    const url = `${this.url}/members`;
+    const url = `${this.url}/api/cso_member`;
     return this.http.get(url)
       .pipe(catchError(this.handleError(<any>("getMember"))));
   }
@@ -73,7 +76,7 @@ export class EntityProvider {
    * @param capacity 
    */
   public saveCapacityBuilding(capacity): Observable<any> {
-    const url = `${this.url}/capacity_building`;
+    const url = `${this.url}/api/capacity_building/create`;
     return this.http.post(url,capacity,httpOptions)
       .pipe(catchError(this.handleError(<any>("saveCapacityBuilding"))));
   }
@@ -83,7 +86,7 @@ export class EntityProvider {
    * @param cso 
    */
   public saveCso(cso): Observable<any> {
-    const url = `${this.url}/cso`;
+    const url = `${this.url}/api/cso/create`;
     return this.http.post(url,cso,httpOptions)
       .pipe(catchError(this.handleError(<any>("saveCso"))));
   }
@@ -103,7 +106,7 @@ export class EntityProvider {
    * @param members 
    */
   public saveMembers(members): Observable <any> {
-    const url = `${this.url}/members/4556`;
+    const url = `${this.url}/api/cso_member/create`;
     return this.http.post(url,members,httpOptions)
       .pipe(catchError(this.handleError(<any>("getCsoMembers"))));
   }

@@ -1,0 +1,338 @@
+[
+  {
+    "guid": "741e3826-8b63-41e2-9aa2-43fa7d1a35b6",
+    "origin_id": 1,
+    "title": "Institutional Arrangement",
+    "description": null,
+    "created_at": "2020-03-04 09:19:19.017089"
+  },
+  {
+    "guid": "217cdc55-6f04-4055-ab94-fe5b3e243b8c",
+    "origin_id": 2,
+    "title": "Infrastructure",
+    "description": null,
+    "created_at": "2020-03-04 09:19:19.042027"
+  },
+  {
+    "guid": "0a57cdc0-89b6-40bd-89bc-50eda6bfcac1",
+    "origin_id": 3,
+    "title": "Staffing and Resources ",
+    "description": null,
+    "created_at": "2020-03-04 09:19:19.048651"
+  },
+  {
+    "guid": "45f467d9-4f3a-47d6-9cdd-9c8c179dfb9e",
+    "origin_id": 4,
+    "title": "Networking and Membership",
+    "description": null,
+    "created_at": "2020-03-04 09:19:19.054954"
+  },
+  {
+    "guid": "42d4b3d9-e6ec-4f86-994d-43ba7ac54c05",
+    "origin_id": 5,
+    "title": "Training and Capacity Building ",
+    "description": null,
+    "created_at": "2020-03-04 09:19:19.061490"
+  },
+  {
+    "guid": "5bd01f94-177c-4bd0-a600-e856cba58e90",
+    "origin_id": 6,
+    "title": "Compliance with Laws and policies ",
+    "description": null,
+    "created_at": "2020-03-04 09:19:19.068506"
+  },
+  {
+    "guid": "88bc3315-9bcb-48d4-a6a1-f94d52384651",
+    "origin_id": 8,
+    "title": "Registration and Compliance",
+    "description": null,
+    "created_at": "2020-03-04 09:19:19.078379"
+  },
+  {
+    "guid": "cad1c245-4c02-4e8c-b4ab-87aa1df7c2f0",
+    "origin_id": 12,
+    "title": "Monitoring and Evaluation",
+    "description": null,
+    "created_at": "2020-03-04 09:19:19.087569"
+  },
+  {
+    "guid": "5f3a5c7a-f776-4eb1-9f90-fc69892f39bc",
+    "origin_id": 18,
+    "title": "Workplace Conflict",
+    "description": null,
+    "created_at": "2020-03-04 09:19:19.096448"
+  },
+  {
+    "guid": "dcd333a1-6e12-460d-9d86-ff6d42ca71b7",
+    "origin_id": 22,
+    "title": "Accounting and financial management systems",
+    "description": null,
+    "created_at": "2020-03-04 09:19:19.104322"
+  },
+  {
+    "guid": "81dd59f0-1789-4cd1-b4d1-4b8cedc67c42",
+    "origin_id": 23,
+    "title": "Financial control and budgeting",
+    "description": null,
+    "created_at": "2020-03-04 09:19:19.112254"
+  },
+  {
+    "guid": "390b7753-6831-4bfb-9d11-bee6f6dac18c",
+    "origin_id": 25,
+    "title": "Financial reports",
+    "description": null,
+    "created_at": "2020-03-04 09:19:19.119511"
+  },
+  {
+    "guid": "b34cdaea-f13f-4d5e-b26f-a6f4461d4cd5",
+    "origin_id": 26,
+    "title": "Procurement and financial records",
+    "description": null,
+    "created_at": "2020-03-04 09:19:19.128158"
+  },
+  {
+    "guid": "cd7eeb74-e085-4256-94d7-88238dfd0728",
+    "origin_id": 28,
+    "title": "Organization Governance",
+    "description": null,
+    "created_at": "2020-03-04 09:19:19.136850"
+  },
+  {
+    "guid": "e33b8175-1198-4678-8f04-976172e24c46",
+    "origin_id": 29,
+    "title": "Mission and goal",
+    "description": null,
+    "created_at": "2020-03-04 09:19:19.145506"
+  },
+  {
+    "guid": "56817440-2407-4e31-b4a5-8dee83ed638b",
+    "origin_id": 30,
+    "title": "Leadership",
+    "description": null,
+    "created_at": "2020-03-04 09:19:19.152650"
+  },
+  {
+    "guid": "beb51268-ecfc-4d5c-95ce-45f36c8feafb",
+    "origin_id": 31,
+    "title": "Organisation",
+    "description": null,
+    "created_at": "2020-03-04 09:19:19.160301"
+  },
+  {
+    "guid": "caf63a6a-d6d5-4f46-84f5-96eb34790e64",
+    "origin_id": 33,
+    "title": "Registration in terms of NPO Act or Cooperatives Act",
+    "description": null,
+    "created_at": "2020-03-04 09:19:19.167242"
+  },
+  {
+    "guid": "82e5655e-6ada-4eab-bc7b-513cf6fbf920",
+    "origin_id": 34,
+    "title": "Compliance",
+    "description": null,
+    "created_at": "2020-03-04 09:19:19.176136"
+  },
+  {
+    "guid": "2cdb9d31-6778-48c2-80cc-17c35e60b0d9",
+    "origin_id": 36,
+    "title": "Organisational structure",
+    "description": null,
+    "created_at": "2020-03-04 09:19:19.184827"
+  },
+  {
+    "guid": "8c714ff7-c5bc-4756-8ff2-881bedfe9871",
+    "origin_id": 37,
+    "title": "Planning",
+    "description": null,
+    "created_at": "2020-03-04 09:19:19.192855"
+  },
+  {
+    "guid": "bc79819e-59f0-4a2f-8d2f-08ad8647fc10",
+    "origin_id": 38,
+    "title": "Monitoring and evaluation",
+    "description": null,
+    "created_at": "2020-03-04 09:19:19.200626"
+  },
+  {
+    "guid": "a0d0109f-6b74-48f3-a310-1da6dfdc733b",
+    "origin_id": 39,
+    "title": "Programme development",
+    "description": null,
+    "created_at": "2020-03-04 09:19:19.207820"
+  },
+  {
+    "guid": "001ca24d-dade-4118-ba71-b4ff919299bb",
+    "origin_id": 40,
+    "title": "Personnel management",
+    "description": null,
+    "created_at": "2020-03-04 09:19:19.214814"
+  },
+  {
+    "guid": "da8c30ab-0ad8-4ba1-82c9-36bf934a7e5e",
+    "origin_id": 41,
+    "title": "Work environment",
+    "description": null,
+    "created_at": "2020-03-04 09:19:19.222086"
+  },
+  {
+    "guid": "ac2c81b2-02fe-42e3-bfb0-0dd24b0f1b33",
+    "origin_id": 42,
+    "title": "Staff performance assessments",
+    "description": null,
+    "created_at": "2020-03-04 09:19:19.230180"
+  },
+  {
+    "guid": "8adc0e38-66d2-4c47-ae82-3f2442b65313",
+    "origin_id": 44,
+    "title": "Programmes and projects",
+    "description": null,
+    "created_at": "2020-03-04 09:19:19.238420"
+  },
+  {
+    "guid": "77928e47-a158-4912-8040-bdf1b9d16b91",
+    "origin_id": 45,
+    "title": "Application of project management",
+    "description": null,
+    "created_at": "2020-03-04 09:19:19.246146"
+  },
+  {
+    "guid": "ce2f39fe-895c-4d29-b491-5b30375de535",
+    "origin_id": 46,
+    "title": "Project planning and integration",
+    "description": null,
+    "created_at": "2020-03-04 09:19:19.253498"
+  },
+  {
+    "guid": "3cdfe31e-ffe4-445d-b682-9f2d63a750ea",
+    "origin_id": 47,
+    "title": "Project implementation",
+    "description": null,
+    "created_at": "2020-03-04 09:19:19.260756"
+  },
+  {
+    "guid": "23c2b026-d6bc-4233-80bd-1323e5c29079",
+    "origin_id": 49,
+    "title": "Sustainable resource mobilisation",
+    "description": null,
+    "created_at": "2020-03-04 09:19:19.268022"
+  },
+  {
+    "guid": "32574cf4-299f-4e8e-acdf-d0581feff6ad",
+    "origin_id": 50,
+    "title": "Fundraising",
+    "description": null,
+    "created_at": "2020-03-04 09:19:19.276202"
+  },
+  {
+    "guid": "bbe91555-ee39-416d-8ee6-64117a901d99",
+    "origin_id": 51,
+    "title": "Funding Proposals Development",
+    "description": null,
+    "created_at": "2020-03-04 09:19:19.284031"
+  },
+  {
+    "guid": "a7abe224-9b3d-4aa5-81bc-a8fdf3903edc",
+    "origin_id": 52,
+    "title": "Fund raising ethics",
+    "description": null,
+    "created_at": "2020-03-04 09:19:19.291647"
+  },
+  {
+    "guid": "cbe4b6f0-2b0c-42a1-acd0-b3c67c650afe",
+    "origin_id": 54,
+    "title": "Networking",
+    "description": null,
+    "created_at": "2020-03-04 09:19:19.298946"
+  },
+  {
+    "guid": "3c7535b0-3957-44a8-b424-47061c4a3f97",
+    "origin_id": 55,
+    "title": "Organisational Communication Strategy",
+    "description": null,
+    "created_at": "2020-03-04 09:19:19.305418"
+  },
+  {
+    "guid": "288f19c5-bc82-452f-823b-b8b81c7c9110",
+    "origin_id": 56,
+    "title": "Organisational Identity and Review",
+    "description": null,
+    "created_at": "2020-03-04 09:19:19.313215"
+  },
+  {
+    "guid": "4005196f-6433-4a32-8729-7679db7d29c0",
+    "origin_id": 57,
+    "title": "Audience Analysis and Communication Vehicles",
+    "description": null,
+    "created_at": "2020-03-04 09:19:19.321055"
+  },
+  {
+    "guid": "def8f652-1b24-4df1-a0cd-94312918384a",
+    "origin_id": 59,
+    "title": "Grant Funding",
+    "description": null,
+    "created_at": "2020-03-04 09:19:19.329031"
+  },
+  {
+    "guid": "c644b1ba-4b17-4e2d-ac56-38af001425b4",
+    "origin_id": 60,
+    "title": "Linkages to resources",
+    "description": null,
+    "created_at": "2020-03-04 09:19:19.337397"
+  },
+  {
+    "guid": "9832644f-9f3a-4355-8e0a-f2e6eaeaf264",
+    "origin_id": 61,
+    "title": "Budgets for programmes and support services",
+    "description": null,
+    "created_at": "2020-03-04 09:19:19.345259"
+  },
+  {
+    "guid": "4f2592ef-8fae-4e40-83c4-01912dddd224",
+    "origin_id": 62,
+    "title": "Fundraising and resource mobilisation",
+    "description": null,
+    "created_at": "2020-03-04 09:19:19.352530"
+  },
+  {
+    "guid": "0c6f5ff8-c39c-4672-b6fb-bad14b29bbe2",
+    "origin_id": 63,
+    "title": "Funding needs",
+    "description": null,
+    "created_at": "2020-03-04 09:19:19.359710"
+  },
+  {
+    "guid": "2d1a346a-9db0-4e4e-a19f-c8570879fb57",
+    "origin_id": 64,
+    "title": "Non-financial needs of the CSO / NPO",
+    "description": null,
+    "created_at": "2020-03-04 09:19:19.366507"
+  },
+  {
+    "guid": "636be360-8d41-42ed-9f8b-771dbd0eef38",
+    "origin_id": 65,
+    "title": "Funding levels needs",
+    "description": null,
+    "created_at": "2020-03-04 09:19:19.373937"
+  },
+  {
+    "guid": "2db5ae9c-75b9-46ed-849f-59df22478b8b",
+    "origin_id": 67,
+    "title": "Sustainability",
+    "description": null,
+    "created_at": "2020-03-04 09:19:19.382243"
+  },
+  {
+    "guid": "5b0ff4fe-4f2c-4bea-9671-316b37820bea",
+    "origin_id": 68,
+    "title": "CSOs linkages to resources",
+    "description": null,
+    "created_at": "2020-03-04 09:19:19.389962"
+  },
+  {
+    "guid": "2ff8c879-6f1c-481f-94b9-0e2ffdddfad9",
+    "origin_id": 69,
+    "title": "CSO / NPO networks",
+    "description": null,
+    "created_at": "2020-03-04 09:19:19.397057"
+  }
+]

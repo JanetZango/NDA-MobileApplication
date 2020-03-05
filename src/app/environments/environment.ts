@@ -10,7 +10,7 @@ export const environment = {
     isDebugMode: true,
     dismissLoader: 2000,
     //apiUrl: 'http://157.245.251.223:5000/' Test url,
-    apiUrl: 'http://157.245.251.223:5000',
+    apiUrl: 'http://134.122.96.252:5000',
     buildVesion: '0.0.1',
     apiError: 'There was an error processing your request, please try again later.'
 };

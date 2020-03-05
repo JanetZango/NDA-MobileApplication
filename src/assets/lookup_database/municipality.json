@@ -1,0 +1,1706 @@
+[
+  {
+    "guid": "18931cb4-bc36-46b4-825c-785dddafa7d6",
+    "origin_id": 1,
+    "district_guid": "4c85d9f4-b0ea-405b-a2be-c49efab3c66d",
+    "title": "Dr Beyers Naude",
+    "code": "EC101",
+    "created_at": "2020-03-04 09:20:00.757072"
+  },
+  {
+    "guid": "84717525-3044-4b80-9cfb-2779beb9fbd2",
+    "origin_id": 2,
+    "district_guid": "4c85d9f4-b0ea-405b-a2be-c49efab3c66d",
+    "title": "Makana",
+    "code": "EC104",
+    "created_at": "2020-03-04 09:20:00.786252"
+  },
+  {
+    "guid": "52d89523-fcd4-4322-a4db-6939507d6b67",
+    "origin_id": 3,
+    "district_guid": "4c85d9f4-b0ea-405b-a2be-c49efab3c66d",
+    "title": "Ndlambe",
+    "code": "EC105",
+    "created_at": "2020-03-04 09:20:00.801826"
+  },
+  {
+    "guid": "c05a2f3e-3c19-42a4-bf6a-cfdb8dd13731",
+    "origin_id": 4,
+    "district_guid": "3c669b32-07f3-467c-a3c4-6a97866653f2",
+    "title": "Mbhashe",
+    "code": "EC121",
+    "created_at": "2020-03-04 09:20:00.820075"
+  },
+  {
+    "guid": "c2901981-c909-4609-bccb-3149f5d6160c",
+    "origin_id": 5,
+    "district_guid": "3c669b32-07f3-467c-a3c4-6a97866653f2",
+    "title": "Mnquma",
+    "code": "EC122",
+    "created_at": "2020-03-04 09:20:00.837557"
+  },
+  {
+    "guid": "c866d6eb-6594-4a13-95da-1b7ca0c3a759",
+    "origin_id": 6,
+    "district_guid": "16de0834-7cb4-4ecb-9f22-5b20ee273aff",
+    "title": "Inxuba Yethemba",
+    "code": "EC131",
+    "created_at": "2020-03-04 09:20:00.854495"
+  },
+  {
+    "guid": "6e9afa32-0180-4714-82de-b9ff9581a17b",
+    "origin_id": 7,
+    "district_guid": "16de0834-7cb4-4ecb-9f22-5b20ee273aff",
+    "title": "Engcobo",
+    "code": "EC137",
+    "created_at": "2020-03-04 09:20:00.868835"
+  },
+  {
+    "guid": "c8f960e5-cd4b-4ea4-9978-002110b42bcf",
+    "origin_id": 8,
+    "district_guid": "db576dd9-d2fc-4e07-94b5-236cdc3a6e42",
+    "title": "Elundini",
+    "code": "EC141",
+    "created_at": "2020-03-04 09:20:00.882896"
+  },
+  {
+    "guid": "46b8b713-8198-44fa-a975-19ab729b0215",
+    "origin_id": 9,
+    "district_guid": "db576dd9-d2fc-4e07-94b5-236cdc3a6e42",
+    "title": "Senqu",
+    "code": "EC142",
+    "created_at": "2020-03-04 09:20:00.896182"
+  },
+  {
+    "guid": "4d635da7-c4cb-4fcb-98eb-483e3f2c7c77",
+    "origin_id": 10,
+    "district_guid": "dfd66348-d8c5-4bd1-b33d-b34c9f4fdc2a",
+    "title": "Ngquza Hill",
+    "code": "EC153",
+    "created_at": "2020-03-04 09:20:00.909095"
+  },
+  {
+    "guid": "eb5f6c98-9d6c-4f83-b252-d06bfe236245",
+    "origin_id": 11,
+    "district_guid": "dfd66348-d8c5-4bd1-b33d-b34c9f4fdc2a",
+    "title": "Port St Johns",
+    "code": "EC154",
+    "created_at": "2020-03-04 09:20:00.921994"
+  },
+  {
+    "guid": "bbb0e6b3-b7d3-4a3f-b73b-c4d9ce30a010",
+    "origin_id": 12,
+    "district_guid": "dfd66348-d8c5-4bd1-b33d-b34c9f4fdc2a",
+    "title": "Nyandeni",
+    "code": "EC155",
+    "created_at": "2020-03-04 09:20:00.936449"
+  },
+  {
+    "guid": "a0bddc90-e89d-4b87-b51f-09105e825a5a",
+    "origin_id": 13,
+    "district_guid": "dfd66348-d8c5-4bd1-b33d-b34c9f4fdc2a",
+    "title": "Mhlontlo",
+    "code": "EC156",
+    "created_at": "2020-03-04 09:20:00.950379"
+  },
+  {
+    "guid": "3e55242a-ae9e-450c-858e-3868386c9a4b",
+    "origin_id": 14,
+    "district_guid": "dfd66348-d8c5-4bd1-b33d-b34c9f4fdc2a",
+    "title": "King Sabata Dalindyebo",
+    "code": "EC157",
+    "created_at": "2020-03-04 09:20:00.966411"
+  },
+  {
+    "guid": "7bbaafe3-50fd-4300-b38b-89dc132f102c",
+    "origin_id": 15,
+    "district_guid": "c5947e87-2f7f-4f16-a117-d2cf68b428f0",
+    "title": "Matatiele",
+    "code": "EC441",
+    "created_at": "2020-03-04 09:20:00.981872"
+  },
+  {
+    "guid": "263bd02f-f58b-428c-b09e-22d3f808a43e",
+    "origin_id": 16,
+    "district_guid": "c5947e87-2f7f-4f16-a117-d2cf68b428f0",
+    "title": "Umzimvubu",
+    "code": "EC442",
+    "created_at": "2020-03-04 09:20:00.995964"
+  },
+  {
+    "guid": "23a07589-6705-4173-96ad-d073bad7de5b",
+    "origin_id": 17,
+    "district_guid": "c5947e87-2f7f-4f16-a117-d2cf68b428f0",
+    "title": "Ntabankulu",
+    "code": "EC444",
+    "created_at": "2020-03-04 09:20:01.009462"
+  },
+  {
+    "guid": "49f1200a-d858-419d-8a73-1151ff32e412",
+    "origin_id": 18,
+    "district_guid": "c5947e87-2f7f-4f16-a117-d2cf68b428f0",
+    "title": "Mbizana",
+    "code": "EC443",
+    "created_at": "2020-03-04 09:20:01.021900"
+  },
+  {
+    "guid": "67b0ab4b-5370-448a-831c-d21eb77897fa",
+    "origin_id": 19,
+    "district_guid": "3c669b32-07f3-467c-a3c4-6a97866653f2",
+    "title": "Great Kei",
+    "code": "EC123",
+    "created_at": "2020-03-04 09:20:01.034960"
+  },
+  {
+    "guid": "2194da1a-fa99-414c-b4d1-0fa358b59793",
+    "origin_id": 20,
+    "district_guid": "3c669b32-07f3-467c-a3c4-6a97866653f2",
+    "title": "Amahlathi",
+    "code": "EC124",
+    "created_at": "2020-03-04 09:20:01.047581"
+  },
+  {
+    "guid": "e1043a4b-bd4d-4578-9fc4-e05a2310f2de",
+    "origin_id": 21,
+    "district_guid": "4c85d9f4-b0ea-405b-a2be-c49efab3c66d",
+    "title": "Sundays River Valley",
+    "code": "EC106",
+    "created_at": "2020-03-04 09:20:01.060185"
+  },
+  {
+    "guid": "0c022f95-c5ab-4215-9b4d-f68ef1d88b37",
+    "origin_id": 22,
+    "district_guid": "4c85d9f4-b0ea-405b-a2be-c49efab3c66d",
+    "title": "Kouga",
+    "code": "EC108",
+    "created_at": "2020-03-04 09:20:01.076087"
+  },
+  {
+    "guid": "e4839955-c0e2-4b7e-9cb9-5238328d25af",
+    "origin_id": 23,
+    "district_guid": "4c85d9f4-b0ea-405b-a2be-c49efab3c66d",
+    "title": "Kou-Kamma",
+    "code": "EC109",
+    "created_at": "2020-03-04 09:20:01.090079"
+  },
+  {
+    "guid": "27622b64-a1fa-45de-a038-f1ed17a3919e",
+    "origin_id": 24,
+    "district_guid": "db831644-6642-4a7d-962f-783e120793a6",
+    "title": "Nelson Mandela Bay",
+    "code": "NMA",
+    "created_at": "2020-03-04 09:20:01.103817"
+  },
+  {
+    "guid": "e4df78eb-ddda-44a7-a250-a5eb4a409ec9",
+    "origin_id": 25,
+    "district_guid": "24e362f9-fc0d-498e-81ac-a1cda10804d7",
+    "title": "Bufalo City",
+    "code": "BUF",
+    "created_at": "2020-03-04 09:20:01.118060"
+  },
+  {
+    "guid": "3c376f5f-67e2-4316-8908-66ace4597e9c",
+    "origin_id": 26,
+    "district_guid": "3c669b32-07f3-467c-a3c4-6a97866653f2",
+    "title": "Ngqushwa",
+    "code": "EC126",
+    "created_at": "2020-03-04 09:20:01.132591"
+  },
+  {
+    "guid": "7eec82b8-462f-46b9-9696-7f28c0f0585a",
+    "origin_id": 27,
+    "district_guid": "16de0834-7cb4-4ecb-9f22-5b20ee273aff",
+    "title": "Intsika Yethu",
+    "code": "EC135",
+    "created_at": "2020-03-04 09:20:01.146304"
+  },
+  {
+    "guid": "f0ee2229-81e3-47c6-86c8-8ba35d2e7159",
+    "origin_id": 28,
+    "district_guid": "16de0834-7cb4-4ecb-9f22-5b20ee273aff",
+    "title": "Emalahleni",
+    "code": "EC136",
+    "created_at": "2020-03-04 09:20:01.159209"
+  },
+  {
+    "guid": "792903bd-364e-4b4e-965b-913d2efd97d6",
+    "origin_id": 29,
+    "district_guid": "16de0834-7cb4-4ecb-9f22-5b20ee273aff",
+    "title": "Sakhisizwe",
+    "code": "EC138",
+    "created_at": "2020-03-04 09:20:01.173389"
+  },
+  {
+    "guid": "86cf3f05-97da-4470-b487-b31d492bbe26",
+    "origin_id": 30,
+    "district_guid": "db576dd9-d2fc-4e07-94b5-236cdc3a6e42",
+    "title": "Walter Sisulu",
+    "code": "EC145",
+    "created_at": "2020-03-04 09:20:01.186343"
+  },
+  {
+    "guid": "5a2f9309-b58b-4365-b1eb-fc8fd9679bef",
+    "origin_id": 31,
+    "district_guid": "16de0834-7cb4-4ecb-9f22-5b20ee273aff",
+    "title": "Enoch Mgijima",
+    "code": "EC139",
+    "created_at": "2020-03-04 09:20:01.200190"
+  },
+  {
+    "guid": "fa762cc1-a6b7-4e05-a1e5-f3941a88a1e6",
+    "origin_id": 32,
+    "district_guid": "3c669b32-07f3-467c-a3c4-6a97866653f2",
+    "title": "Raymond Mhlaba",
+    "code": "EC129",
+    "created_at": "2020-03-04 09:20:01.214287"
+  },
+  {
+    "guid": "238fc982-4001-4fa2-9580-44b2422dd0d4",
+    "origin_id": 33,
+    "district_guid": "4c85d9f4-b0ea-405b-a2be-c49efab3c66d",
+    "title": "Blue Crane Route",
+    "code": "EC102",
+    "created_at": "2020-03-04 09:20:01.227944"
+  },
+  {
+    "guid": "8d75346d-2019-4bbb-8f16-f484690ba8cd",
+    "origin_id": 34,
+    "district_guid": "c6cbb868-8893-43cd-8886-ff1b102d2055",
+    "title": "Letsemeng",
+    "code": "FS161",
+    "created_at": "2020-03-04 09:20:01.241211"
+  },
+  {
+    "guid": "ac3b3b3c-3cd4-4b9d-ba75-ffc02d187b87",
+    "origin_id": 35,
+    "district_guid": "c6cbb868-8893-43cd-8886-ff1b102d2055",
+    "title": "Kopanong",
+    "code": "FS162",
+    "created_at": "2020-03-04 09:20:01.254919"
+  },
+  {
+    "guid": "17615c3f-0c64-40a4-ab6b-eb1e83b48232",
+    "origin_id": 36,
+    "district_guid": "c6cbb868-8893-43cd-8886-ff1b102d2055",
+    "title": "Mohokare",
+    "code": "FS163",
+    "created_at": "2020-03-04 09:20:01.268400"
+  },
+  {
+    "guid": "ee859864-54fe-41fe-a1cc-ac934b182ea9",
+    "origin_id": 37,
+    "district_guid": "1d5d1cc8-347d-4d19-85d9-3b19c5cbc0dc",
+    "title": "Masilonyana",
+    "code": "FS181",
+    "created_at": "2020-03-04 09:20:01.283464"
+  },
+  {
+    "guid": "f914593b-62b4-4e5c-acbe-577691c75342",
+    "origin_id": 38,
+    "district_guid": "1d5d1cc8-347d-4d19-85d9-3b19c5cbc0dc",
+    "title": "Tokologo",
+    "code": "FS182",
+    "created_at": "2020-03-04 09:20:01.297918"
+  },
+  {
+    "guid": "ca6d5729-c54b-46d9-9a30-a9bb6c2049d4",
+    "origin_id": 39,
+    "district_guid": "1d5d1cc8-347d-4d19-85d9-3b19c5cbc0dc",
+    "title": "Tswelopele",
+    "code": "FS183",
+    "created_at": "2020-03-04 09:20:01.312648"
+  },
+  {
+    "guid": "39e71366-c613-44f9-8e87-7e67890e78a5",
+    "origin_id": 40,
+    "district_guid": "1d5d1cc8-347d-4d19-85d9-3b19c5cbc0dc",
+    "title": "Matjhabeng",
+    "code": "FS184",
+    "created_at": "2020-03-04 09:20:01.326584"
+  },
+  {
+    "guid": "db43ba50-f907-41a1-9d20-dc4b10483519",
+    "origin_id": 41,
+    "district_guid": "1d5d1cc8-347d-4d19-85d9-3b19c5cbc0dc",
+    "title": "Nala",
+    "code": "FS185",
+    "created_at": "2020-03-04 09:20:01.340077"
+  },
+  {
+    "guid": "65f72541-da3a-46ea-8096-6295402d2bcf",
+    "origin_id": 42,
+    "district_guid": "7445331c-5def-47d1-9d6b-02a4d116790a",
+    "title": "Setsoto",
+    "code": "FS191",
+    "created_at": "2020-03-04 09:20:01.352489"
+  },
+  {
+    "guid": "473aa609-345c-4742-8dc2-2553b4d4ef8e",
+    "origin_id": 43,
+    "district_guid": "7445331c-5def-47d1-9d6b-02a4d116790a",
+    "title": "Dihlabeng",
+    "code": "FS192",
+    "created_at": "2020-03-04 09:20:01.365797"
+  },
+  {
+    "guid": "99d053d4-80c8-4c97-9638-221c772c6dd7",
+    "origin_id": 44,
+    "district_guid": "7445331c-5def-47d1-9d6b-02a4d116790a",
+    "title": "Nketoana",
+    "code": "FS193",
+    "created_at": "2020-03-04 09:20:01.378907"
+  },
+  {
+    "guid": "cb875d3d-af43-45da-82f3-f71ec5bee6e3",
+    "origin_id": 45,
+    "district_guid": "7445331c-5def-47d1-9d6b-02a4d116790a",
+    "title": "Maluti a Phofung",
+    "code": "FS194",
+    "created_at": "2020-03-04 09:20:01.390536"
+  },
+  {
+    "guid": "774fa287-bd94-4fd9-ab64-580c0b09d09d",
+    "origin_id": 46,
+    "district_guid": "7445331c-5def-47d1-9d6b-02a4d116790a",
+    "title": "Phumelela",
+    "code": "FS195",
+    "created_at": "2020-03-04 09:20:01.402447"
+  },
+  {
+    "guid": "d718ba2a-0a5b-4841-8cc2-631cf2332bc5",
+    "origin_id": 47,
+    "district_guid": "7445331c-5def-47d1-9d6b-02a4d116790a",
+    "title": "Mantsopa",
+    "code": "FS196",
+    "created_at": "2020-03-04 09:20:01.415017"
+  },
+  {
+    "guid": "c6af328a-a5cf-4e52-86f5-157dd6a9ad34",
+    "origin_id": 48,
+    "district_guid": "4afa2a3d-35b4-4468-a753-d33797e63731",
+    "title": "Moqhaka",
+    "code": "FS201",
+    "created_at": "2020-03-04 09:20:01.426685"
+  },
+  {
+    "guid": "97bff584-fa64-4892-b310-2ba00d0cbc97",
+    "origin_id": 49,
+    "district_guid": "4afa2a3d-35b4-4468-a753-d33797e63731",
+    "title": "Ngwathe",
+    "code": "FS203",
+    "created_at": "2020-03-04 09:20:01.438808"
+  },
+  {
+    "guid": "def4ccc9-2dea-47cb-838b-7da8e093f2d3",
+    "origin_id": 50,
+    "district_guid": "4afa2a3d-35b4-4468-a753-d33797e63731",
+    "title": "Metsimaholo",
+    "code": "FS204",
+    "created_at": "2020-03-04 09:20:01.450482"
+  },
+  {
+    "guid": "dbe36ae8-982b-454e-a9e9-9562d32c95ed",
+    "origin_id": 51,
+    "district_guid": "4afa2a3d-35b4-4468-a753-d33797e63731",
+    "title": "Mafube",
+    "code": "FS205",
+    "created_at": "2020-03-04 09:20:01.461507"
+  },
+  {
+    "guid": "ec5aae9e-83eb-445e-aafb-4729c579f984",
+    "origin_id": 52,
+    "district_guid": "212bfe56-958c-4a84-87d5-54d5afce7c03",
+    "title": "Mangaung",
+    "code": "MAN",
+    "created_at": "2020-03-04 09:20:01.480041"
+  },
+  {
+    "guid": "a0270e4a-43c5-4062-9597-51a873525ab3",
+    "origin_id": 53,
+    "district_guid": "3f9f8d94-7e14-4ae8-9710-c198823c91c4",
+    "title": "Mogale City",
+    "code": "GT481",
+    "created_at": "2020-03-04 09:20:01.492516"
+  },
+  {
+    "guid": "488187f0-dfe7-4891-9e2e-ab3dfcbf2c90",
+    "origin_id": 54,
+    "district_guid": "3f9f8d94-7e14-4ae8-9710-c198823c91c4",
+    "title": "Rand West City",
+    "code": "GT485",
+    "created_at": "2020-03-04 09:20:01.505210"
+  },
+  {
+    "guid": "a8cc20bf-aac6-43ea-b3ca-08a6c7dbc974",
+    "origin_id": 55,
+    "district_guid": "3f9f8d94-7e14-4ae8-9710-c198823c91c4",
+    "title": "Merafong City",
+    "code": "GT484",
+    "created_at": "2020-03-04 09:20:01.517930"
+  },
+  {
+    "guid": "bc95c83c-b543-45bd-b033-cbf0981f17a1",
+    "origin_id": 56,
+    "district_guid": "187a75c3-5137-411a-aa55-caa5f09905d5",
+    "title": "City of Tshwane",
+    "code": "TSH",
+    "created_at": "2020-03-04 09:20:01.530738"
+  },
+  {
+    "guid": "412b2de3-d197-49ef-88db-6061bebf90ac",
+    "origin_id": 57,
+    "district_guid": "24dfa550-456a-4a0a-bef5-10c7a44d232a",
+    "title": "Lesedi",
+    "code": "GT423",
+    "created_at": "2020-03-04 09:20:01.545150"
+  },
+  {
+    "guid": "1f2132f5-f31c-4908-ace4-84c6068dea65",
+    "origin_id": 58,
+    "district_guid": "24dfa550-456a-4a0a-bef5-10c7a44d232a",
+    "title": "Midvaal",
+    "code": "GT422",
+    "created_at": "2020-03-04 09:20:01.557917"
+  },
+  {
+    "guid": "1edafb1f-414b-4ec5-93c1-49a27c5786d7",
+    "origin_id": 59,
+    "district_guid": "24dfa550-456a-4a0a-bef5-10c7a44d232a",
+    "title": "Emfuleni",
+    "code": "GT421",
+    "created_at": "2020-03-04 09:20:01.570302"
+  },
+  {
+    "guid": "c77b4fc9-4043-4014-b590-3b650e77c1d6",
+    "origin_id": 60,
+    "district_guid": "3830a466-6ebd-40a9-83f9-8ffbd61c6205",
+    "title": "City of Johannesburg",
+    "code": "JHB",
+    "created_at": "2020-03-04 09:20:01.582968"
+  },
+  {
+    "guid": "aeac1c2f-86a2-450d-a417-6b575681c5d4",
+    "origin_id": 61,
+    "district_guid": "b2ec95c3-0f6f-4259-8b3c-7b0244df3be1",
+    "title": "Ekurhuleni",
+    "code": "EKU",
+    "created_at": "2020-03-04 09:20:01.596204"
+  },
+  {
+    "guid": "3e304a9d-b877-4288-842f-6b8f955f7772",
+    "origin_id": 62,
+    "district_guid": "bd3d990e-b043-426d-bb82-ffb6c98ab756",
+    "title": "Umdoni",
+    "code": "KZN212",
+    "created_at": "2020-03-04 09:20:01.608843"
+  },
+  {
+    "guid": "13b403d9-02b6-4db7-ba0e-d3b9915d8803",
+    "origin_id": 63,
+    "district_guid": "bd3d990e-b043-426d-bb82-ffb6c98ab756",
+    "title": "uMuziwabantu",
+    "code": "KZN214",
+    "created_at": "2020-03-04 09:20:01.620210"
+  },
+  {
+    "guid": "45d248c0-2b4d-49ca-ad82-69253d0f0c6d",
+    "origin_id": 64,
+    "district_guid": "bd3d990e-b043-426d-bb82-ffb6c98ab756",
+    "title": "Ray Nkonyeni",
+    "code": "KZN216",
+    "created_at": "2020-03-04 09:20:01.632571"
+  },
+  {
+    "guid": "5accf69a-c6d0-4e1f-88c6-2adac2b6996b",
+    "origin_id": 65,
+    "district_guid": "afc74e9c-794f-400d-8700-9582538eadf4",
+    "title": "Alfred Duma",
+    "code": "KZN238",
+    "created_at": "2020-03-04 09:20:01.647223"
+  },
+  {
+    "guid": "a8667e1d-e690-4b2e-8497-0a4ba218ad7b",
+    "origin_id": 66,
+    "district_guid": "afc74e9c-794f-400d-8700-9582538eadf4",
+    "title": "Inkosi Langalibalele",
+    "code": "KZN237",
+    "created_at": "2020-03-04 09:20:01.661559"
+  },
+  {
+    "guid": "b2fb3e7d-93fd-44bc-9ce8-4cce140e3045",
+    "origin_id": 67,
+    "district_guid": "afc74e9c-794f-400d-8700-9582538eadf4",
+    "title": "Okhahlamba",
+    "code": "KZN235",
+    "created_at": "2020-03-04 09:20:01.676314"
+  },
+  {
+    "guid": "0193a470-65cd-4c39-a1e3-21effcab5cd3",
+    "origin_id": 68,
+    "district_guid": "74c143a5-6c36-4307-b465-8d45fce1ab4d",
+    "title": "Endumeni",
+    "code": "KZN241",
+    "created_at": "2020-03-04 09:20:01.692830"
+  },
+  {
+    "guid": "148d26c2-6256-4020-b336-3deaf12c44cb",
+    "origin_id": 69,
+    "district_guid": "74c143a5-6c36-4307-b465-8d45fce1ab4d",
+    "title": "Nqutu",
+    "code": "KZN242",
+    "created_at": "2020-03-04 09:20:01.708631"
+  },
+  {
+    "guid": "0208b580-d9a6-4c0e-8adc-8ac4c3d26ec9",
+    "origin_id": 70,
+    "district_guid": "0f064bdf-f53a-4f92-8762-30057afe846b",
+    "title": "Newcastle",
+    "code": "KZN252",
+    "created_at": "2020-03-04 09:20:01.723663"
+  },
+  {
+    "guid": "46dc7db6-342b-4729-81b3-d707902681f8",
+    "origin_id": 71,
+    "district_guid": "0f064bdf-f53a-4f92-8762-30057afe846b",
+    "title": "Emadlangeni",
+    "code": "KZN253",
+    "created_at": "2020-03-04 09:20:01.740187"
+  },
+  {
+    "guid": "9d918d91-0980-4524-842b-8b9d51077076",
+    "origin_id": 72,
+    "district_guid": "0f064bdf-f53a-4f92-8762-30057afe846b",
+    "title": "Dannhauser",
+    "code": "KZN254",
+    "created_at": "2020-03-04 09:20:01.760592"
+  },
+  {
+    "guid": "d45f5456-c99f-4725-aaec-8e0d62ca537c",
+    "origin_id": 73,
+    "district_guid": "1bd0482e-c77a-43ed-b5bc-74dd5eb4254f",
+    "title": "eDumbe",
+    "code": "KZN261",
+    "created_at": "2020-03-04 09:20:01.775730"
+  },
+  {
+    "guid": "4c6aa52a-3eda-4ddf-9551-33f4d4a86ee1",
+    "origin_id": 74,
+    "district_guid": "1bd0482e-c77a-43ed-b5bc-74dd5eb4254f",
+    "title": "uPhongolo",
+    "code": "KZN262",
+    "created_at": "2020-03-04 09:20:01.792338"
+  },
+  {
+    "guid": "21d00d48-b66e-4da0-8c37-c300c8e64835",
+    "origin_id": 75,
+    "district_guid": "1bd0482e-c77a-43ed-b5bc-74dd5eb4254f",
+    "title": "Abaqulusi",
+    "code": "KZN263",
+    "created_at": "2020-03-04 09:20:01.806490"
+  },
+  {
+    "guid": "24acf0f9-b109-4313-a6b4-fb7a458603f2",
+    "origin_id": 76,
+    "district_guid": "1bd0482e-c77a-43ed-b5bc-74dd5eb4254f",
+    "title": "Nongoma",
+    "code": "KZN265",
+    "created_at": "2020-03-04 09:20:01.821434"
+  },
+  {
+    "guid": "ab3bcbc9-7b16-4763-bee2-791632cfd2fa",
+    "origin_id": 77,
+    "district_guid": "1bd0482e-c77a-43ed-b5bc-74dd5eb4254f",
+    "title": "Ulundi",
+    "code": "KZN266",
+    "created_at": "2020-03-04 09:20:01.838545"
+  },
+  {
+    "guid": "44c586ab-4c0f-4d86-9cf0-6b82d152add9",
+    "origin_id": 78,
+    "district_guid": "2dde9ef1-646e-4f66-90ec-725054077372",
+    "title": "Umhlabuyalingana",
+    "code": "KZN271",
+    "created_at": "2020-03-04 09:20:01.853367"
+  },
+  {
+    "guid": "df87eb5e-8c68-4fff-a2b7-f6e2b878bd08",
+    "origin_id": 79,
+    "district_guid": "2dde9ef1-646e-4f66-90ec-725054077372",
+    "title": "Jozini",
+    "code": "KZN272",
+    "created_at": "2020-03-04 09:20:01.866386"
+  },
+  {
+    "guid": "4a9240a3-af2a-41aa-ab33-c21da7c175b9",
+    "origin_id": 80,
+    "district_guid": "2dde9ef1-646e-4f66-90ec-725054077372",
+    "title": "Mtubatuba",
+    "code": "KZN275",
+    "created_at": "2020-03-04 09:20:01.883404"
+  },
+  {
+    "guid": "c2d36acb-97d4-4e3d-879b-8f4ec1c9b641",
+    "origin_id": 81,
+    "district_guid": "ba28c4e7-184d-4987-87c5-a267e06a06fa",
+    "title": "uMlalazi",
+    "code": "KZN284",
+    "created_at": "2020-03-04 09:20:01.899789"
+  },
+  {
+    "guid": "d6b499fc-752b-4c98-a549-35207c939810",
+    "origin_id": 82,
+    "district_guid": "ba28c4e7-184d-4987-87c5-a267e06a06fa",
+    "title": "Nkandla",
+    "code": "KZN286",
+    "created_at": "2020-03-04 09:20:01.915340"
+  },
+  {
+    "guid": "0447bf87-d1c5-4c85-a5b4-566524d9f3b2",
+    "origin_id": 83,
+    "district_guid": "37a3543f-d8e1-40b2-9a3e-46ce03c339f6",
+    "title": "Mandeni",
+    "code": "KZN291",
+    "created_at": "2020-03-04 09:20:01.929310"
+  },
+  {
+    "guid": "e879fbf4-acb4-47cc-8945-d727385af003",
+    "origin_id": 84,
+    "district_guid": "37a3543f-d8e1-40b2-9a3e-46ce03c339f6",
+    "title": "KwaDukuza",
+    "code": "KZN292",
+    "created_at": "2020-03-04 09:20:01.945246"
+  },
+  {
+    "guid": "154a5948-0660-4271-99ce-718d9981cdff",
+    "origin_id": 85,
+    "district_guid": "37a3543f-d8e1-40b2-9a3e-46ce03c339f6",
+    "title": "Ndwedwe",
+    "code": "KZN293",
+    "created_at": "2020-03-04 09:20:01.958698"
+  },
+  {
+    "guid": "8f266524-48f4-4603-8d05-85af551fadcb",
+    "origin_id": 86,
+    "district_guid": "37a3543f-d8e1-40b2-9a3e-46ce03c339f6",
+    "title": "Maphumulo",
+    "code": "KZN294",
+    "created_at": "2020-03-04 09:20:01.974222"
+  },
+  {
+    "guid": "489bde16-2222-42ef-abc5-602e6c52b159",
+    "origin_id": 87,
+    "district_guid": "6968617d-92a8-4a00-bb0b-cf3dfc38fe4d",
+    "title": "Dr Nkosazana Dlamini Zuma",
+    "code": "KZN436",
+    "created_at": "2020-03-04 09:20:01.987813"
+  },
+  {
+    "guid": "3eba30be-b0f6-4fe1-98cb-99d128cb151b",
+    "origin_id": 88,
+    "district_guid": "6968617d-92a8-4a00-bb0b-cf3dfc38fe4d",
+    "title": "Ubuhlebezwe",
+    "code": "KZN434",
+    "created_at": "2020-03-04 09:20:02.001046"
+  },
+  {
+    "guid": "3691a24a-0ac4-48bb-85c5-08fe084b9c53",
+    "origin_id": 89,
+    "district_guid": "bd3d990e-b043-426d-bb82-ffb6c98ab756",
+    "title": "Umzumbe",
+    "code": "KZN213",
+    "created_at": "2020-03-04 09:20:02.023273"
+  },
+  {
+    "guid": "ff328c27-d42f-4bf4-b316-3e87daa1545b",
+    "origin_id": 90,
+    "district_guid": "2dde9ef1-646e-4f66-90ec-725054077372",
+    "title": "Big Five Hlabisa",
+    "code": "KZN276",
+    "created_at": "2020-03-04 09:20:02.036473"
+  },
+  {
+    "guid": "074e5def-786b-4948-bafd-e89965dfe63c",
+    "origin_id": 91,
+    "district_guid": "d7cc0412-1ed4-40f3-98fd-c7a8b51ee450",
+    "title": "Richmond",
+    "code": "KZN227",
+    "created_at": "2020-03-04 09:20:02.049525"
+  },
+  {
+    "guid": "388245dc-739c-4bed-8381-d7a40c89ed0f",
+    "origin_id": 92,
+    "district_guid": "6968617d-92a8-4a00-bb0b-cf3dfc38fe4d",
+    "title": "Greater Kokstad",
+    "code": "KZN433",
+    "created_at": "2020-03-04 09:20:02.062783"
+  },
+  {
+    "guid": "889d3dd4-e5b6-49ae-95d4-575a3187ad45",
+    "origin_id": 93,
+    "district_guid": "6968617d-92a8-4a00-bb0b-cf3dfc38fe4d",
+    "title": "Umzimkhulu",
+    "code": "KZN435",
+    "created_at": "2020-03-04 09:20:02.077772"
+  },
+  {
+    "guid": "a15eaf2c-a1e5-4799-a0c8-798fb85920af",
+    "origin_id": 94,
+    "district_guid": "d7cc0412-1ed4-40f3-98fd-c7a8b51ee450",
+    "title": "uMshwathi",
+    "code": "KZN221",
+    "created_at": "2020-03-04 09:20:02.091498"
+  },
+  {
+    "guid": "27a5a688-71c8-4dd0-835c-30c8ec2d9cb8",
+    "origin_id": 95,
+    "district_guid": "74c143a5-6c36-4307-b465-8d45fce1ab4d",
+    "title": "Msinga",
+    "code": "KZN244",
+    "created_at": "2020-03-04 09:20:02.104977"
+  },
+  {
+    "guid": "4684202f-a87c-4b8f-9ced-1f29b083f08f",
+    "origin_id": 96,
+    "district_guid": "3e781c95-843b-4d56-9538-1a53bcccfc89",
+    "title": "eThekwini",
+    "code": "ETH",
+    "created_at": "2020-03-04 09:20:02.118528"
+  },
+  {
+    "guid": "97b27e8f-36e2-4371-870a-73b438eabada",
+    "origin_id": 97,
+    "district_guid": "d7cc0412-1ed4-40f3-98fd-c7a8b51ee450",
+    "title": "Mkhambathini",
+    "code": "KZN226",
+    "created_at": "2020-03-04 09:20:02.131228"
+  },
+  {
+    "guid": "27fbd603-1306-444b-b444-eeb623d4a4f6",
+    "origin_id": 98,
+    "district_guid": "d7cc0412-1ed4-40f3-98fd-c7a8b51ee450",
+    "title": "The Msunduzi",
+    "code": "KZN225",
+    "created_at": "2020-03-04 09:20:02.145463"
+  },
+  {
+    "guid": "265e1d6c-0909-4dfa-b8f4-8ec42d561653",
+    "origin_id": 99,
+    "district_guid": "d7cc0412-1ed4-40f3-98fd-c7a8b51ee450",
+    "title": "uMngeni",
+    "code": "KZN222",
+    "created_at": "2020-03-04 09:20:02.159670"
+  },
+  {
+    "guid": "fd79841b-20d2-4249-9409-fad8ae7ddd24",
+    "origin_id": 100,
+    "district_guid": "d7cc0412-1ed4-40f3-98fd-c7a8b51ee450",
+    "title": "Impendle",
+    "code": "KZN224",
+    "created_at": "2020-03-04 09:20:02.173317"
+  },
+  {
+    "guid": "674d4c8d-754b-4272-aab2-f7a41f6fffba",
+    "origin_id": 101,
+    "district_guid": "ba28c4e7-184d-4987-87c5-a267e06a06fa",
+    "title": "Mfolozi",
+    "code": "KZN281",
+    "created_at": "2020-03-04 09:20:02.188416"
+  },
+  {
+    "guid": "35a6a00c-d4ff-4539-8f15-633de350b9d0",
+    "origin_id": 102,
+    "district_guid": "ba28c4e7-184d-4987-87c5-a267e06a06fa",
+    "title": "uMhlathuze",
+    "code": "KZN282",
+    "created_at": "2020-03-04 09:20:02.204537"
+  },
+  {
+    "guid": "4543a083-c3c8-467a-b74f-e13a699dbffc",
+    "origin_id": 103,
+    "district_guid": "ba28c4e7-184d-4987-87c5-a267e06a06fa",
+    "title": "Mthonjaneni",
+    "code": "KZN285",
+    "created_at": "2020-03-04 09:20:02.221916"
+  },
+  {
+    "guid": "f51cd21c-9602-40f4-bf94-cf69f372371c",
+    "origin_id": 104,
+    "district_guid": "74c143a5-6c36-4307-b465-8d45fce1ab4d",
+    "title": "Umvoti",
+    "code": "KZN245",
+    "created_at": "2020-03-04 09:20:02.236985"
+  },
+  {
+    "guid": "8593fc46-ed8e-4fcb-a4ec-7baf466bc023",
+    "origin_id": 105,
+    "district_guid": "d7cc0412-1ed4-40f3-98fd-c7a8b51ee450",
+    "title": "Mpofana",
+    "code": "KZN223",
+    "created_at": "2020-03-04 09:20:02.251178"
+  },
+  {
+    "guid": "ecf28acf-a07d-4e7a-80cd-a8835a4543a3",
+    "origin_id": 106,
+    "district_guid": "1e951b8a-95a4-4a0e-84a4-80b0cf88c7d3",
+    "title": "Greater Giyani",
+    "code": "LIM331",
+    "created_at": "2020-03-04 09:20:02.264494"
+  },
+  {
+    "guid": "1d4f2827-b55f-4db7-81cc-c27dfb5b6057",
+    "origin_id": 107,
+    "district_guid": "1e951b8a-95a4-4a0e-84a4-80b0cf88c7d3",
+    "title": "Greater Letaba",
+    "code": "LIM332",
+    "created_at": "2020-03-04 09:20:02.278524"
+  },
+  {
+    "guid": "ecd82b9c-d098-41e9-8ce0-dab084bca20d",
+    "origin_id": 108,
+    "district_guid": "1e951b8a-95a4-4a0e-84a4-80b0cf88c7d3",
+    "title": "Greater Tzaneen",
+    "code": "LIM333",
+    "created_at": "2020-03-04 09:20:02.291569"
+  },
+  {
+    "guid": "3a0c78a1-abc6-46af-89d3-a38dfb9b5415",
+    "origin_id": 109,
+    "district_guid": "1e951b8a-95a4-4a0e-84a4-80b0cf88c7d3",
+    "title": "Ba-Phalaborwa",
+    "code": "LIM334",
+    "created_at": "2020-03-04 09:20:02.307307"
+  },
+  {
+    "guid": "fe1870c9-93b8-48e1-81d4-233ace0057a3",
+    "origin_id": 110,
+    "district_guid": "1e951b8a-95a4-4a0e-84a4-80b0cf88c7d3",
+    "title": "Maruleng",
+    "code": "LIM335",
+    "created_at": "2020-03-04 09:20:02.322762"
+  },
+  {
+    "guid": "8649644b-14ff-42f1-b48d-dae1b033bdb1",
+    "origin_id": 111,
+    "district_guid": "c277cc1c-0328-4982-8a05-a1bde6e362b9",
+    "title": "Lepele-Nkumpi",
+    "code": "LIM355",
+    "created_at": "2020-03-04 09:20:02.338486"
+  },
+  {
+    "guid": "a5f373d0-92e5-4b12-8b3d-4fffd31d7415",
+    "origin_id": 112,
+    "district_guid": "5f043ebb-60ed-4de3-94d0-981ff13e9189",
+    "title": "Thabazimbi",
+    "code": "LIM361",
+    "created_at": "2020-03-04 09:20:02.352497"
+  },
+  {
+    "guid": "571035e2-77ac-423a-86bc-835891c91460",
+    "origin_id": 113,
+    "district_guid": "5f043ebb-60ed-4de3-94d0-981ff13e9189",
+    "title": "Lephalale",
+    "code": "LIM362",
+    "created_at": "2020-03-04 09:20:02.365789"
+  },
+  {
+    "guid": "9adbe7a8-79d1-49a3-bacd-96bfcdf2535d",
+    "origin_id": 114,
+    "district_guid": "5f043ebb-60ed-4de3-94d0-981ff13e9189",
+    "title": "Bela-Bela",
+    "code": "LIM366",
+    "created_at": "2020-03-04 09:20:02.379196"
+  },
+  {
+    "guid": "2a1e4be1-500c-4d27-8b86-f9e54068f245",
+    "origin_id": 115,
+    "district_guid": "5f043ebb-60ed-4de3-94d0-981ff13e9189",
+    "title": "Mogalakwena",
+    "code": "LIM367",
+    "created_at": "2020-03-04 09:20:02.391805"
+  },
+  {
+    "guid": "40879502-b03c-4d7a-92b7-17eae03cdac6",
+    "origin_id": 116,
+    "district_guid": "ded4ea8c-8584-478e-8405-de7a1b187dba",
+    "title": "Ephraim Mogale",
+    "code": "LIM471",
+    "created_at": "2020-03-04 09:20:02.404317"
+  },
+  {
+    "guid": "a01ba100-785f-4136-8812-b8d49f928d02",
+    "origin_id": 117,
+    "district_guid": "ded4ea8c-8584-478e-8405-de7a1b187dba",
+    "title": "Elias Motsoaledi",
+    "code": "LIM472",
+    "created_at": "2020-03-04 09:20:02.425964"
+  },
+  {
+    "guid": "aa642843-89e7-4a8e-a9ab-cd7094c45ebf",
+    "origin_id": 118,
+    "district_guid": "ded4ea8c-8584-478e-8405-de7a1b187dba",
+    "title": "Makhuduthamaga",
+    "code": "LIM473",
+    "created_at": "2020-03-04 09:20:02.438571"
+  },
+  {
+    "guid": "94f1b041-c8a7-4ddc-9d88-0e79c2220273",
+    "origin_id": 119,
+    "district_guid": "c277cc1c-0328-4982-8a05-a1bde6e362b9",
+    "title": "Blouberg",
+    "code": "LIM351",
+    "created_at": "2020-03-04 09:20:02.451094"
+  },
+  {
+    "guid": "05f1302e-a0b7-4b15-897f-4db0cd11272c",
+    "origin_id": 120,
+    "district_guid": "c277cc1c-0328-4982-8a05-a1bde6e362b9",
+    "title": "Molemole",
+    "code": "LIM353",
+    "created_at": "2020-03-04 09:20:02.462843"
+  },
+  {
+    "guid": "d80b9995-a3df-4de0-8d85-dce835293cbf",
+    "origin_id": 121,
+    "district_guid": "c277cc1c-0328-4982-8a05-a1bde6e362b9",
+    "title": "Polokwane",
+    "code": "LIM354",
+    "created_at": "2020-03-04 09:20:02.475470"
+  },
+  {
+    "guid": "375cb675-f393-4e53-aef7-7d9518631965",
+    "origin_id": 122,
+    "district_guid": "5f043ebb-60ed-4de3-94d0-981ff13e9189",
+    "title": "Modimolle/Mookgophong",
+    "code": "LIM368",
+    "created_at": "2020-03-04 09:20:02.487705"
+  },
+  {
+    "guid": "e67f0612-6e98-4926-88c9-921c6a3d20d3",
+    "origin_id": 123,
+    "district_guid": "ded4ea8c-8584-478e-8405-de7a1b187dba",
+    "title": "Greater Tubatse/Fetakgomo",
+    "code": "LIM476",
+    "created_at": "2020-03-04 09:20:02.500570"
+  },
+  {
+    "guid": "6ac80f16-5d95-4733-8f34-aa50babefd14",
+    "origin_id": 124,
+    "district_guid": "1c0de287-9146-4e3c-b89d-ca657fc221ae",
+    "title": "Musina",
+    "code": "LIM341",
+    "created_at": "2020-03-04 09:20:02.514616"
+  },
+  {
+    "guid": "24cb7abd-84c3-4944-a523-5ebecfdb8c72",
+    "origin_id": 125,
+    "district_guid": "1c0de287-9146-4e3c-b89d-ca657fc221ae",
+    "title": "Thulamela",
+    "code": "LIM343",
+    "created_at": "2020-03-04 09:20:02.535107"
+  },
+  {
+    "guid": "bb2aeab7-fda1-4d96-a933-6eaf446e9eb4",
+    "origin_id": 126,
+    "district_guid": "1c0de287-9146-4e3c-b89d-ca657fc221ae",
+    "title": "Makhado",
+    "code": "LIM344",
+    "created_at": "2020-03-04 09:20:02.548564"
+  },
+  {
+    "guid": "8b5aa597-8252-4d49-9f53-49667a8f1f5b",
+    "origin_id": 127,
+    "district_guid": "1c0de287-9146-4e3c-b89d-ca657fc221ae",
+    "title": "New",
+    "code": "LIM345",
+    "created_at": "2020-03-04 09:20:02.561136"
+  },
+  {
+    "guid": "79719474-4d23-40a1-b9d3-442c6dee2031",
+    "origin_id": 128,
+    "district_guid": "a6bf08cc-f7d8-46eb-978c-5444a22ea878",
+    "title": "Chief Albert Luthuli",
+    "code": "MP301",
+    "created_at": "2020-03-04 09:20:02.573219"
+  },
+  {
+    "guid": "281f2b4a-d097-4ce1-8fe6-c8a07d00b0dd",
+    "origin_id": 129,
+    "district_guid": "a6bf08cc-f7d8-46eb-978c-5444a22ea878",
+    "title": "Msukaligwa",
+    "code": "MP302",
+    "created_at": "2020-03-04 09:20:02.585175"
+  },
+  {
+    "guid": "93938692-148e-4960-8bd5-449a076a92c1",
+    "origin_id": 130,
+    "district_guid": "a6bf08cc-f7d8-46eb-978c-5444a22ea878",
+    "title": "Mkhondo",
+    "code": "MP303",
+    "created_at": "2020-03-04 09:20:02.596735"
+  },
+  {
+    "guid": "0108dca2-b260-4c5d-afac-8ec6e4f31885",
+    "origin_id": 131,
+    "district_guid": "a6bf08cc-f7d8-46eb-978c-5444a22ea878",
+    "title": "Dr Pixley Ka Isaka Seme",
+    "code": "MP304",
+    "created_at": "2020-03-04 09:20:02.608850"
+  },
+  {
+    "guid": "0e1a7623-53b3-4721-9e0f-beff4afbe8e0",
+    "origin_id": 132,
+    "district_guid": "a6bf08cc-f7d8-46eb-978c-5444a22ea878",
+    "title": "Lekwa",
+    "code": "MP305",
+    "created_at": "2020-03-04 09:20:02.621033"
+  },
+  {
+    "guid": "f1f728df-79b2-43f5-9c55-919dc5dca703",
+    "origin_id": 133,
+    "district_guid": "a6bf08cc-f7d8-46eb-978c-5444a22ea878",
+    "title": "Dipaleseng",
+    "code": "MP306",
+    "created_at": "2020-03-04 09:20:02.633462"
+  },
+  {
+    "guid": "b0a5d5c4-b530-495e-8d8a-0ff62a59c373",
+    "origin_id": 134,
+    "district_guid": "a6bf08cc-f7d8-46eb-978c-5444a22ea878",
+    "title": "Govan Mbeki",
+    "code": "MP307",
+    "created_at": "2020-03-04 09:20:02.645148"
+  },
+  {
+    "guid": "57296eda-4db6-41e1-9eb7-4b3cc502b34f",
+    "origin_id": 135,
+    "district_guid": "123852cc-7fb0-4f76-b346-083429c3c76c",
+    "title": "Victor Khanye",
+    "code": "MP311",
+    "created_at": "2020-03-04 09:20:02.656950"
+  },
+  {
+    "guid": "afb88c63-6700-42a0-aecd-59a13dc7a513",
+    "origin_id": 136,
+    "district_guid": "123852cc-7fb0-4f76-b346-083429c3c76c",
+    "title": "Emalahleni",
+    "code": "MP312",
+    "created_at": "2020-03-04 09:20:02.669158"
+  },
+  {
+    "guid": "8986473e-ff90-40a1-ada6-b65c1bb2fbe7",
+    "origin_id": 137,
+    "district_guid": "123852cc-7fb0-4f76-b346-083429c3c76c",
+    "title": "Steve Tshwete",
+    "code": "MP313",
+    "created_at": "2020-03-04 09:20:02.681730"
+  },
+  {
+    "guid": "2f01af2e-210a-4751-951d-dd82317319ba",
+    "origin_id": 138,
+    "district_guid": "123852cc-7fb0-4f76-b346-083429c3c76c",
+    "title": "Emakhazeni",
+    "code": "MP314",
+    "created_at": "2020-03-04 09:20:02.693473"
+  },
+  {
+    "guid": "396b8ee3-fcac-4f8a-be89-9609e60c16f1",
+    "origin_id": 139,
+    "district_guid": "123852cc-7fb0-4f76-b346-083429c3c76c",
+    "title": "Thembisile",
+    "code": "MP315",
+    "created_at": "2020-03-04 09:20:02.705347"
+  },
+  {
+    "guid": "020fd126-66ae-4608-9e58-8a5091e29c50",
+    "origin_id": 140,
+    "district_guid": "123852cc-7fb0-4f76-b346-083429c3c76c",
+    "title": "Dr JS Moroka",
+    "code": "MP316",
+    "created_at": "2020-03-04 09:20:02.717380"
+  },
+  {
+    "guid": "a8062607-4b74-4839-905d-e1dd49432a74",
+    "origin_id": 141,
+    "district_guid": "33272112-d51e-45e8-bd98-33f40c4559a9",
+    "title": "Thaba Chweu",
+    "code": "MP321",
+    "created_at": "2020-03-04 09:20:02.729543"
+  },
+  {
+    "guid": "84cf9683-2d16-4a1d-a394-9f78e3ab08ac",
+    "origin_id": 142,
+    "district_guid": "33272112-d51e-45e8-bd98-33f40c4559a9",
+    "title": "Nkomazi",
+    "code": "MP324",
+    "created_at": "2020-03-04 09:20:02.743943"
+  },
+  {
+    "guid": "9f872fdf-809d-4012-b317-d90dd002169d",
+    "origin_id": 143,
+    "district_guid": "33272112-d51e-45e8-bd98-33f40c4559a9",
+    "title": "Bushbuckridge",
+    "code": "MP325",
+    "created_at": "2020-03-04 09:20:02.755844"
+  },
+  {
+    "guid": "b9d7d514-8884-448b-b601-7795036c59dc",
+    "origin_id": 144,
+    "district_guid": "33272112-d51e-45e8-bd98-33f40c4559a9",
+    "title": "City of Mbombela",
+    "code": "MP326",
+    "created_at": "2020-03-04 09:20:02.769243"
+  },
+  {
+    "guid": "485b3610-d000-46e9-82a7-4667026c8ae8",
+    "origin_id": 145,
+    "district_guid": "a0272213-2a5e-4f92-8ded-eadf54f38554",
+    "title": "Richtersveld",
+    "code": "NC061",
+    "created_at": "2020-03-04 09:20:02.781096"
+  },
+  {
+    "guid": "c17cd436-707d-46e7-bedd-35f65452970e",
+    "origin_id": 146,
+    "district_guid": "a0272213-2a5e-4f92-8ded-eadf54f38554",
+    "title": "Nama Khoi",
+    "code": "NC062",
+    "created_at": "2020-03-04 09:20:02.792623"
+  },
+  {
+    "guid": "e88b706c-55e9-4210-9e43-181d35736c16",
+    "origin_id": 147,
+    "district_guid": "a0272213-2a5e-4f92-8ded-eadf54f38554",
+    "title": "Kamiesberg",
+    "code": "NC064",
+    "created_at": "2020-03-04 09:20:02.804030"
+  },
+  {
+    "guid": "7c969cfb-7136-4c9d-94d1-7d009f3da488",
+    "origin_id": 148,
+    "district_guid": "a0272213-2a5e-4f92-8ded-eadf54f38554",
+    "title": "Hantam",
+    "code": "NC065",
+    "created_at": "2020-03-04 09:20:02.822903"
+  },
+  {
+    "guid": "3b166b5c-fefa-4e9c-be69-61144f20ee7e",
+    "origin_id": 149,
+    "district_guid": "a0272213-2a5e-4f92-8ded-eadf54f38554",
+    "title": "Karoo Hoogland",
+    "code": "NC066",
+    "created_at": "2020-03-04 09:20:02.833964"
+  },
+  {
+    "guid": "a00308fa-eb6c-46c3-91c6-432df7fce9d9",
+    "origin_id": 150,
+    "district_guid": "a0272213-2a5e-4f92-8ded-eadf54f38554",
+    "title": "Kh??i-Ma",
+    "code": "NC067",
+    "created_at": "2020-03-04 09:20:02.845890"
+  },
+  {
+    "guid": "1b791c84-e098-4968-8e69-93c217d9a25e",
+    "origin_id": 151,
+    "district_guid": "4a3f60cb-50ac-44cc-b9af-d6e38f150447",
+    "title": "Ubuntu",
+    "code": "NC071",
+    "created_at": "2020-03-04 09:20:02.856582"
+  },
+  {
+    "guid": "f9d6bc6d-aaae-45c0-8139-b46d05b0df81",
+    "origin_id": 152,
+    "district_guid": "4a3f60cb-50ac-44cc-b9af-d6e38f150447",
+    "title": "Umsobomvu",
+    "code": "NC072",
+    "created_at": "2020-03-04 09:20:02.868602"
+  },
+  {
+    "guid": "378942a9-9218-4567-8a19-1d22ae1105e6",
+    "origin_id": 153,
+    "district_guid": "4a3f60cb-50ac-44cc-b9af-d6e38f150447",
+    "title": "Emthanjeni",
+    "code": "NC073",
+    "created_at": "2020-03-04 09:20:02.880017"
+  },
+  {
+    "guid": "bb745280-db3a-48e6-b0c6-647bb8f487af",
+    "origin_id": 154,
+    "district_guid": "4a3f60cb-50ac-44cc-b9af-d6e38f150447",
+    "title": "Kareeberg",
+    "code": "NC074",
+    "created_at": "2020-03-04 09:20:02.890943"
+  },
+  {
+    "guid": "da4b4b0f-94dd-4d15-819e-1cf71b329376",
+    "origin_id": 155,
+    "district_guid": "4a3f60cb-50ac-44cc-b9af-d6e38f150447",
+    "title": "Renosterberg",
+    "code": "NC075",
+    "created_at": "2020-03-04 09:20:02.901392"
+  },
+  {
+    "guid": "158c46d9-27ac-4fb6-84ec-50de169cfcdd",
+    "origin_id": 156,
+    "district_guid": "4a3f60cb-50ac-44cc-b9af-d6e38f150447",
+    "title": "Thembelihle",
+    "code": "NC076",
+    "created_at": "2020-03-04 09:20:02.912037"
+  },
+  {
+    "guid": "e81f70a8-6f57-442e-b856-6d6fbe428156",
+    "origin_id": 157,
+    "district_guid": "4a3f60cb-50ac-44cc-b9af-d6e38f150447",
+    "title": "Siyathemba",
+    "code": "NC077",
+    "created_at": "2020-03-04 09:20:02.922661"
+  },
+  {
+    "guid": "92eb1203-9d76-4a76-91cc-71806e110693",
+    "origin_id": 158,
+    "district_guid": "4a3f60cb-50ac-44cc-b9af-d6e38f150447",
+    "title": "Siyancuma",
+    "code": "NC078",
+    "created_at": "2020-03-04 09:20:02.933094"
+  },
+  {
+    "guid": "b1dde5e4-446e-4d95-aeea-82042830c45b",
+    "origin_id": 159,
+    "district_guid": "4503197a-0f6d-44ac-934a-49ef2192e07c",
+    "title": "Kai !Garib",
+    "code": "NC082",
+    "created_at": "2020-03-04 09:20:02.944087"
+  },
+  {
+    "guid": "1d6c2b73-b38e-436e-962c-87cac8171ba6",
+    "origin_id": 160,
+    "district_guid": "4503197a-0f6d-44ac-934a-49ef2192e07c",
+    "title": "!Kheis",
+    "code": "NC084",
+    "created_at": "2020-03-04 09:20:02.955540"
+  },
+  {
+    "guid": "2f1f95ea-adeb-415c-b1bf-ec0a3b0d4978",
+    "origin_id": 161,
+    "district_guid": "4503197a-0f6d-44ac-934a-49ef2192e07c",
+    "title": "Tsantsabane",
+    "code": "NC085",
+    "created_at": "2020-03-04 09:20:02.966800"
+  },
+  {
+    "guid": "e8dbd136-e542-4e06-8aa8-d79aaf9e8ade",
+    "origin_id": 162,
+    "district_guid": "4503197a-0f6d-44ac-934a-49ef2192e07c",
+    "title": "Kgatelopele",
+    "code": "NC086",
+    "created_at": "2020-03-04 09:20:02.978674"
+  },
+  {
+    "guid": "e6bbe00e-7c99-4053-9d76-ab546f96ceb6",
+    "origin_id": 163,
+    "district_guid": "64156142-da32-47bf-9c4b-1a3874983344",
+    "title": "Sol Plaatjie",
+    "code": "NC091",
+    "created_at": "2020-03-04 09:20:02.989964"
+  },
+  {
+    "guid": "ed077071-97c3-4ed9-8d42-fcd55ec59c17",
+    "origin_id": 164,
+    "district_guid": "64156142-da32-47bf-9c4b-1a3874983344",
+    "title": "Dikgatlong",
+    "code": "NC092",
+    "created_at": "2020-03-04 09:20:03.000771"
+  },
+  {
+    "guid": "d5c12afc-87f7-4f29-a58c-2d509402f079",
+    "origin_id": 165,
+    "district_guid": "e17f635d-0daa-4dc7-b13a-719283d2f6c5",
+    "title": "Gamagara",
+    "code": "NC453",
+    "created_at": "2020-03-04 09:20:03.011477"
+  },
+  {
+    "guid": "3f2af251-1b65-45be-9081-9a2a964a3bdf",
+    "origin_id": 166,
+    "district_guid": "e17f635d-0daa-4dc7-b13a-719283d2f6c5",
+    "title": "Joe Morolong",
+    "code": "NC451",
+    "created_at": "2020-03-04 09:20:03.022650"
+  },
+  {
+    "guid": "fd7d1765-df35-4407-bfc3-86d1971d048c",
+    "origin_id": 167,
+    "district_guid": "e17f635d-0daa-4dc7-b13a-719283d2f6c5",
+    "title": "Ga-Segonyana",
+    "code": "NC452",
+    "created_at": "2020-03-04 09:20:03.033514"
+  },
+  {
+    "guid": "bb95c27d-0b26-4858-8887-ad1f61cdca9d",
+    "origin_id": 168,
+    "district_guid": "64156142-da32-47bf-9c4b-1a3874983344",
+    "title": "Magareng",
+    "code": "NC093",
+    "created_at": "2020-03-04 09:20:03.044263"
+  },
+  {
+    "guid": "75e7f5c3-b6e5-460a-9345-0c14e73de26a",
+    "origin_id": 169,
+    "district_guid": "64156142-da32-47bf-9c4b-1a3874983344",
+    "title": "Phokwane",
+    "code": "NC094",
+    "created_at": "2020-03-04 09:20:03.054759"
+  },
+  {
+    "guid": "8df63373-0130-4058-b7e8-5b840abbd99b",
+    "origin_id": 170,
+    "district_guid": "4503197a-0f6d-44ac-934a-49ef2192e07c",
+    "title": "Dawid Kruiper",
+    "code": "NC087",
+    "created_at": "2020-03-04 09:20:03.066386"
+  },
+  {
+    "guid": "beb58269-8ba6-4397-8bb8-910e22eb2f3b",
+    "origin_id": 171,
+    "district_guid": "0c0a82e5-6cd8-4ef1-a1b5-d488f1d0380a",
+    "title": "Moretele",
+    "code": "NW371",
+    "created_at": "2020-03-04 09:20:03.078476"
+  },
+  {
+    "guid": "a67c90af-10f2-49f7-b209-c23c685cc533",
+    "origin_id": 172,
+    "district_guid": "0c0a82e5-6cd8-4ef1-a1b5-d488f1d0380a",
+    "title": "Local Municipality of Madibeng",
+    "code": "NW372",
+    "created_at": "2020-03-04 09:20:03.090997"
+  },
+  {
+    "guid": "88b9e4f0-5ee5-4a8c-ab6c-806db560efa1",
+    "origin_id": 173,
+    "district_guid": "0c0a82e5-6cd8-4ef1-a1b5-d488f1d0380a",
+    "title": "Rustenburg",
+    "code": "NW373",
+    "created_at": "2020-03-04 09:20:03.102706"
+  },
+  {
+    "guid": "51f9ef7c-2316-4296-9fef-1dc8cd1212a7",
+    "origin_id": 174,
+    "district_guid": "0c0a82e5-6cd8-4ef1-a1b5-d488f1d0380a",
+    "title": "Kgetlengrivier",
+    "code": "NW374",
+    "created_at": "2020-03-04 09:20:03.114300"
+  },
+  {
+    "guid": "1bbc26d3-7ef4-4c6f-b728-5d47cc8d8118",
+    "origin_id": 175,
+    "district_guid": "0c0a82e5-6cd8-4ef1-a1b5-d488f1d0380a",
+    "title": "Moses Kotane",
+    "code": "NW375",
+    "created_at": "2020-03-04 09:20:03.127105"
+  },
+  {
+    "guid": "91525f3c-d255-4018-9d3d-814255c96c9b",
+    "origin_id": 176,
+    "district_guid": "70b83cdb-b887-4a20-8e8e-428678b279a3",
+    "title": "Ratlou",
+    "code": "NW381",
+    "created_at": "2020-03-04 09:20:03.138689"
+  },
+  {
+    "guid": "c5056ccd-cf96-4bde-9d8d-9489f14ff86a",
+    "origin_id": 177,
+    "district_guid": "70b83cdb-b887-4a20-8e8e-428678b279a3",
+    "title": "Tswaing",
+    "code": "NW382",
+    "created_at": "2020-03-04 09:20:03.150924"
+  },
+  {
+    "guid": "f4af9220-7bd8-4dce-89cf-ba742d4fefe6",
+    "origin_id": 178,
+    "district_guid": "70b83cdb-b887-4a20-8e8e-428678b279a3",
+    "title": "Mafikeng",
+    "code": "NW383",
+    "created_at": "2020-03-04 09:20:03.162308"
+  },
+  {
+    "guid": "3314fbca-20ca-4c9d-9390-0c16cf58747d",
+    "origin_id": 179,
+    "district_guid": "70b83cdb-b887-4a20-8e8e-428678b279a3",
+    "title": "Ditsobotla",
+    "code": "NW384",
+    "created_at": "2020-03-04 09:20:03.173230"
+  },
+  {
+    "guid": "ca94d004-959c-4ceb-ad1b-627441778905",
+    "origin_id": 180,
+    "district_guid": "70b83cdb-b887-4a20-8e8e-428678b279a3",
+    "title": "Ramotshere Moiloa",
+    "code": "NW385",
+    "created_at": "2020-03-04 09:20:03.184089"
+  },
+  {
+    "guid": "71b8bd63-924b-44f4-8739-1b4759894461",
+    "origin_id": 181,
+    "district_guid": "3c228393-0e2b-4418-b232-f82877a13442",
+    "title": "Naledi",
+    "code": "NW392",
+    "created_at": "2020-03-04 09:20:03.202538"
+  },
+  {
+    "guid": "43f5c717-a87d-483f-8ed5-c6f9b863b510",
+    "origin_id": 182,
+    "district_guid": "3c228393-0e2b-4418-b232-f82877a13442",
+    "title": "Mamusa",
+    "code": "NW393",
+    "created_at": "2020-03-04 09:20:03.214182"
+  },
+  {
+    "guid": "3ee82486-bd80-4334-9aaf-352157694d93",
+    "origin_id": 183,
+    "district_guid": "3c228393-0e2b-4418-b232-f82877a13442",
+    "title": "Greater Taung",
+    "code": "NW394",
+    "created_at": "2020-03-04 09:20:03.226342"
+  },
+  {
+    "guid": "7b649404-3e41-4ee7-97eb-94c3f43c42b0",
+    "origin_id": 184,
+    "district_guid": "3c228393-0e2b-4418-b232-f82877a13442",
+    "title": "Lekwa-Teemane",
+    "code": "NW396",
+    "created_at": "2020-03-04 09:20:03.237289"
+  },
+  {
+    "guid": "9b50b84e-32d8-431e-8574-8416373506eb",
+    "origin_id": 185,
+    "district_guid": "3c228393-0e2b-4418-b232-f82877a13442",
+    "title": "Kagisano/Molopo",
+    "code": "NW397",
+    "created_at": "2020-03-04 09:20:03.249125"
+  },
+  {
+    "guid": "42d73c88-a07c-41be-a597-7454f844623d",
+    "origin_id": 186,
+    "district_guid": "d6efc57b-8d9f-4247-b106-038b5b55ba8d",
+    "title": "City of Matlosana",
+    "code": "NW403",
+    "created_at": "2020-03-04 09:20:03.261066"
+  },
+  {
+    "guid": "40bed2d6-5bdb-4616-a9a6-9cf584511271",
+    "origin_id": 187,
+    "district_guid": "d6efc57b-8d9f-4247-b106-038b5b55ba8d",
+    "title": "Maquassi Hills",
+    "code": "NW404",
+    "created_at": "2020-03-04 09:20:03.271870"
+  },
+  {
+    "guid": "2dfb5f8d-ba32-4976-a1c3-f629ec71183a",
+    "origin_id": 188,
+    "district_guid": "d6efc57b-8d9f-4247-b106-038b5b55ba8d",
+    "title": "Ventersdorp/Tlokwe",
+    "code": "NW405",
+    "created_at": "2020-03-04 09:20:03.283803"
+  },
+  {
+    "guid": "e743cd73-c2eb-4be9-b93f-17dc773808c5",
+    "origin_id": 189,
+    "district_guid": "1333862c-5c8e-4ea9-a964-c3b4cf4beb2b",
+    "title": "Matzikama",
+    "code": "WC011",
+    "created_at": "2020-03-04 09:20:03.294212"
+  },
+  {
+    "guid": "d47a9f0b-de21-4a7d-915f-45c115b55816",
+    "origin_id": 190,
+    "district_guid": "1333862c-5c8e-4ea9-a964-c3b4cf4beb2b",
+    "title": "Cederberg",
+    "code": "WC012",
+    "created_at": "2020-03-04 09:20:03.308589"
+  },
+  {
+    "guid": "3428ed12-7519-4151-a4a6-b38f20950d98",
+    "origin_id": 191,
+    "district_guid": "1333862c-5c8e-4ea9-a964-c3b4cf4beb2b",
+    "title": "Bergrivier",
+    "code": "WC013",
+    "created_at": "2020-03-04 09:20:03.322314"
+  },
+  {
+    "guid": "200142d5-b747-4afe-bdf8-583a250afc97",
+    "origin_id": 192,
+    "district_guid": "470092ae-19f5-4bb5-8e1d-83a3ceb6ff8f",
+    "title": "Witzenberg",
+    "code": "WC022",
+    "created_at": "2020-03-04 09:20:03.337787"
+  },
+  {
+    "guid": "f9edffa7-f83d-417a-b80e-bf7c18d26e36",
+    "origin_id": 193,
+    "district_guid": "470092ae-19f5-4bb5-8e1d-83a3ceb6ff8f",
+    "title": "Drakenstein",
+    "code": "WC023",
+    "created_at": "2020-03-04 09:20:03.353688"
+  },
+  {
+    "guid": "adbeb439-cddf-4493-bb1e-72e52620636e",
+    "origin_id": 194,
+    "district_guid": "470092ae-19f5-4bb5-8e1d-83a3ceb6ff8f",
+    "title": "Breede Valley",
+    "code": "WC025",
+    "created_at": "2020-03-04 09:20:03.365097"
+  },
+  {
+    "guid": "b696d84d-effb-4630-bd8f-6e1d086aa12f",
+    "origin_id": 195,
+    "district_guid": "470092ae-19f5-4bb5-8e1d-83a3ceb6ff8f",
+    "title": "Langeberg",
+    "code": "WC026",
+    "created_at": "2020-03-04 09:20:03.375847"
+  },
+  {
+    "guid": "a972cf5f-1068-4a23-801f-0ef13125641d",
+    "origin_id": 196,
+    "district_guid": "418a1280-c694-4bff-9703-b980b235b156",
+    "title": "Cape Agulhas",
+    "code": "WC033",
+    "created_at": "2020-03-04 09:20:03.387444"
+  },
+  {
+    "guid": "adb95e0c-b70e-44a1-aa8f-b99db2a72e3b",
+    "origin_id": 197,
+    "district_guid": "418a1280-c694-4bff-9703-b980b235b156",
+    "title": "Swellendam",
+    "code": "WC034",
+    "created_at": "2020-03-04 09:20:03.397225"
+  },
+  {
+    "guid": "995a871c-9085-422e-9fea-3ef1db730df5",
+    "origin_id": 198,
+    "district_guid": "3727076f-bb69-4fa6-9ca6-ecbb84f7cee5",
+    "title": "Kannaland",
+    "code": "WC041",
+    "created_at": "2020-03-04 09:20:03.408794"
+  },
+  {
+    "guid": "cf6f881d-9cd7-4a34-b149-da110f423f56",
+    "origin_id": 199,
+    "district_guid": "3727076f-bb69-4fa6-9ca6-ecbb84f7cee5",
+    "title": "Hessequa",
+    "code": "WC042",
+    "created_at": "2020-03-04 09:20:03.421014"
+  },
+  {
+    "guid": "b5353d6e-75af-4b83-b074-389422795f95",
+    "origin_id": 200,
+    "district_guid": "3727076f-bb69-4fa6-9ca6-ecbb84f7cee5",
+    "title": "Mossel Bay",
+    "code": "WC043",
+    "created_at": "2020-03-04 09:20:03.432721"
+  },
+  {
+    "guid": "745da842-9e13-47a8-b560-8ffe4a8d91b3",
+    "origin_id": 201,
+    "district_guid": "3727076f-bb69-4fa6-9ca6-ecbb84f7cee5",
+    "title": "George",
+    "code": "WC044",
+    "created_at": "2020-03-04 09:20:03.443212"
+  },
+  {
+    "guid": "335898af-9853-4866-b9aa-f63e6944e0bc",
+    "origin_id": 202,
+    "district_guid": "3727076f-bb69-4fa6-9ca6-ecbb84f7cee5",
+    "title": "Oudtshoorn",
+    "code": "WC045",
+    "created_at": "2020-03-04 09:20:03.454245"
+  },
+  {
+    "guid": "23a02743-05d6-4a52-9bbd-65eb1e14f0f2",
+    "origin_id": 203,
+    "district_guid": "3727076f-bb69-4fa6-9ca6-ecbb84f7cee5",
+    "title": "Bitou",
+    "code": "WC047",
+    "created_at": "2020-03-04 09:20:03.465426"
+  },
+  {
+    "guid": "868fc003-2302-4ae4-9009-74a2f492b62b",
+    "origin_id": 204,
+    "district_guid": "3727076f-bb69-4fa6-9ca6-ecbb84f7cee5",
+    "title": "Knysna",
+    "code": "WC048",
+    "created_at": "2020-03-04 09:20:03.476011"
+  },
+  {
+    "guid": "a450d99a-1945-4761-b361-1428bb828b75",
+    "origin_id": 205,
+    "district_guid": "3cf1aa58-48f5-49d1-bdff-9b8a1e580d28",
+    "title": "Laingsburg",
+    "code": "WC051",
+    "created_at": "2020-03-04 09:20:03.487796"
+  },
+  {
+    "guid": "d2f0e318-3aa1-446a-845b-63e008ce5ae8",
+    "origin_id": 206,
+    "district_guid": "3cf1aa58-48f5-49d1-bdff-9b8a1e580d28",
+    "title": "Prince Albert",
+    "code": "WC052",
+    "created_at": "2020-03-04 09:20:03.498936"
+  },
+  {
+    "guid": "5c615ac5-f56b-4d40-9fb7-bd53f4232d76",
+    "origin_id": 207,
+    "district_guid": "3cf1aa58-48f5-49d1-bdff-9b8a1e580d28",
+    "title": "Beaufort West",
+    "code": "WC053",
+    "created_at": "2020-03-04 09:20:03.509262"
+  },
+  {
+    "guid": "9842bb4a-c3d0-4652-9ff4-5060c484821b",
+    "origin_id": 208,
+    "district_guid": "470092ae-19f5-4bb5-8e1d-83a3ceb6ff8f",
+    "title": "Stellenbosch",
+    "code": "WC024",
+    "created_at": "2020-03-04 09:20:03.519421"
+  },
+  {
+    "guid": "8348d789-d96e-4bba-9518-93c483c02431",
+    "origin_id": 209,
+    "district_guid": "418a1280-c694-4bff-9703-b980b235b156",
+    "title": "Theewaterskloof",
+    "code": "WC031",
+    "created_at": "2020-03-04 09:20:03.529768"
+  },
+  {
+    "guid": "e973f550-c2b4-48a9-9d97-c167e4580e07",
+    "origin_id": 210,
+    "district_guid": "1333862c-5c8e-4ea9-a964-c3b4cf4beb2b",
+    "title": "Saldanha Bay",
+    "code": "WC014",
+    "created_at": "2020-03-04 09:20:03.540336"
+  },
+  {
+    "guid": "4a0ebf42-37ca-46ad-994c-abc5bac88f42",
+    "origin_id": 211,
+    "district_guid": "1333862c-5c8e-4ea9-a964-c3b4cf4beb2b",
+    "title": "Swartland",
+    "code": "WC015",
+    "created_at": "2020-03-04 09:20:03.550753"
+  },
+  {
+    "guid": "3fcfbbce-0bbf-4a6b-800c-f4d2df65decd",
+    "origin_id": 212,
+    "district_guid": "418a1280-c694-4bff-9703-b980b235b156",
+    "title": "Overstrand",
+    "code": "WC032",
+    "created_at": "2020-03-04 09:20:03.562651"
+  },
+  {
+    "guid": "eeae4ed1-2ac6-45ba-a391-71921755f219",
+    "origin_id": 213,
+    "district_guid": "bd49410c-4ed2-4f9e-a634-d266b2f42848",
+    "title": "City of Cape Town",
+    "code": "CPT",
+    "created_at": "2020-03-04 09:20:03.573278"
+  }
+]

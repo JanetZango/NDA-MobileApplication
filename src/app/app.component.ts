@@ -34,7 +34,7 @@ export class MyApp {
       splashScreen.hide();
     });
 
-    this.getAllCso();
+    // this.getAllCso();
     statusBar.styleDefault();
     splashScreen.hide();
     timer(3000).subscribe(() => this.showSplash = false)

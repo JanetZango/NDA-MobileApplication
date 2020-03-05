@@ -1,0 +1,65 @@
+[
+  {
+    "guid": "f75cd6ac-f683-4825-b1af-4e9172ce35df",
+    "origin_id": 1,
+    "title": "Eastern Cape",
+    "code": "EC",
+    "created_at": "2020-03-04 09:18:27.299850"
+  },
+  {
+    "guid": "26a52ce9-a92b-4720-a211-87b738ff3c66",
+    "origin_id": 2,
+    "title": "Free State",
+    "code": "FS",
+    "created_at": "2020-03-04 09:18:27.317993"
+  },
+  {
+    "guid": "c38ff723-5c6d-442d-b669-b70b50590d93",
+    "origin_id": 3,
+    "title": "Gauteng",
+    "code": "GT",
+    "created_at": "2020-03-04 09:18:27.325748"
+  },
+  {
+    "guid": "7a15dab4-1374-4d5d-8079-f1bb73cae8e7",
+    "origin_id": 4,
+    "title": "Kwazulu Natal",
+    "code": "KZN",
+    "created_at": "2020-03-04 09:18:27.332748"
+  },
+  {
+    "guid": "3b5001b0-9d38-4a10-b8da-7830b979267a",
+    "origin_id": 5,
+    "title": "Limpopo",
+    "code": "LIM",
+    "created_at": "2020-03-04 09:18:27.339706"
+  },
+  {
+    "guid": "97b16635-e908-4bc3-bfa3-a8d44364ca09",
+    "origin_id": 6,
+    "title": "Mpumalanga",
+    "code": "MP",
+    "created_at": "2020-03-04 09:18:27.346039"
+  },
+  {
+    "guid": "5ec09448-6077-4549-869a-e315816a7c07",
+    "origin_id": 7,
+    "title": "Northern Cape",
+    "code": "NC",
+    "created_at": "2020-03-04 09:18:27.353499"
+  },
+  {
+    "guid": "869f9c04-7137-4ed4-9350-221524ae4054",
+    "origin_id": 8,
+    "title": "North West",
+    "code": "NW",
+    "created_at": "2020-03-04 09:18:27.360137"
+  },
+  {
+    "guid": "a41d0d83-f485-404c-af0d-ffba592ede5c",
+    "origin_id": 9,
+    "title": "Western Cape",
+    "code": "WC",
+    "created_at": "2020-03-04 09:18:27.366918"
+  }
+]

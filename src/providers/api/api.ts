@@ -35,7 +35,7 @@ export class ApiProvider {
    * @param email 
    */
   public verifyUser(email: string): Observable<any> {
-    const url = `${this.url}/user/verifyUser`;
+    const url = `${this.url}/api/auth/login`;
     return this.http.post(url, { "email": email }, httpOptions)
       .pipe(catchError(this.handleError(<any>("verifyUser"))));
 
@@ -45,19 +45,21 @@ export class ApiProvider {
    * @param code 
    */
   public verifyOpt(code: string): Observable<any> {
-    const url = `${this.url}/user/otp`;
-    debugger
+    const url = `${this.url}/api/auth/otp`;
     return this.http.post(url, { "otp": code }, httpOptions)
       .pipe(
        tap(res => this.doLoginUser(res)),
         catchError(this.handleError(<any>("verifyOpt"))));
+     
   }
 
   refreshToken() {
-    return this.http.post<any>(`${this.url}}/refresh`, {
+    return this.http.post<any>(`${this.url}/api/auth/refresh`, {
       'refreshToken': this.getRefreshToken()
     }).pipe(tap((tokens: Tokens) => {
-      this.storeJwtToken(tokens.token);
+      console.log(Tokens)
+      this.storeJwtToken(tokens.access_token);
+      console.log(tokens.access_token)
     }));
   }
 
@@ -94,9 +96,8 @@ export class ApiProvider {
    * @param tokens 
    */
   private storeTokens(tokens: Tokens) {
-    debugger
-    localStorage.setItem(JWT_TOKEN, tokens.token);
-    localStorage.setItem(REFRESH_TOKEN, tokens.token);
+    localStorage.setItem(JWT_TOKEN, tokens.access_token);
+    localStorage.setItem(REFRESH_TOKEN, tokens.refresh_token);
   }
 
   /**

@@ -60,14 +60,14 @@ export class DisplayListOfCsoPage implements OnInit{
         this.DisplayCso = res.results
         this.storeNames();
         loader.dismiss()
-        console.log(this.DisplayCso[0].cso_name)
+        console.log(this.DisplayCso[0].name_of_cso)
         for(var x =0; x < this.DisplayCso.length;x ++){
-          this.storeOrgNames(this.DisplayCso[x].cso_name)
+          this.storeOrgNames(this.DisplayCso[x].name_of_cso)
            
         }
       }
     })
-  }
+  }cso_name
   CsoName = new Array();
   storeOrgNames(cso_name) {
     this.CsoName.push(cso_name);

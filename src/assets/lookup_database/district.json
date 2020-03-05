@@ -1,0 +1,418 @@
+[
+  {
+    "guid": "4c85d9f4-b0ea-405b-a2be-c49efab3c66d",
+    "origin_id": 1,
+    "province_guid": "f75cd6ac-f683-4825-b1af-4e9172ce35df",
+    "title": "Sarah Baartman",
+    "code": "DC10",
+    "created_at": "2020-03-04 09:19:49.771408"
+  },
+  {
+    "guid": "3c669b32-07f3-467c-a3c4-6a97866653f2",
+    "origin_id": 2,
+    "province_guid": "f75cd6ac-f683-4825-b1af-4e9172ce35df",
+    "title": "Amathole",
+    "code": "DC12",
+    "created_at": "2020-03-04 09:19:49.795610"
+  },
+  {
+    "guid": "16de0834-7cb4-4ecb-9f22-5b20ee273aff",
+    "origin_id": 3,
+    "province_guid": "f75cd6ac-f683-4825-b1af-4e9172ce35df",
+    "title": "Chris Hani",
+    "code": "DC13",
+    "created_at": "2020-03-04 09:19:49.808142"
+  },
+  {
+    "guid": "db576dd9-d2fc-4e07-94b5-236cdc3a6e42",
+    "origin_id": 4,
+    "province_guid": "f75cd6ac-f683-4825-b1af-4e9172ce35df",
+    "title": "Joe Gqabi",
+    "code": "DC14",
+    "created_at": "2020-03-04 09:19:49.822368"
+  },
+  {
+    "guid": "dfd66348-d8c5-4bd1-b33d-b34c9f4fdc2a",
+    "origin_id": 5,
+    "province_guid": "f75cd6ac-f683-4825-b1af-4e9172ce35df",
+    "title": "O.R.Tambo",
+    "code": "DC15",
+    "created_at": "2020-03-04 09:19:49.834604"
+  },
+  {
+    "guid": "c5947e87-2f7f-4f16-a117-d2cf68b428f0",
+    "origin_id": 6,
+    "province_guid": "f75cd6ac-f683-4825-b1af-4e9172ce35df",
+    "title": "Alfred Nzo",
+    "code": "DC44",
+    "created_at": "2020-03-04 09:19:49.847103"
+  },
+  {
+    "guid": "db831644-6642-4a7d-962f-783e120793a6",
+    "origin_id": 7,
+    "province_guid": "f75cd6ac-f683-4825-b1af-4e9172ce35df",
+    "title": "Nelson Mandela Bay",
+    "code": "NMA",
+    "created_at": "2020-03-04 09:19:49.859908"
+  },
+  {
+    "guid": "24e362f9-fc0d-498e-81ac-a1cda10804d7",
+    "origin_id": 8,
+    "province_guid": "f75cd6ac-f683-4825-b1af-4e9172ce35df",
+    "title": "Buffalo City",
+    "code": "BUF",
+    "created_at": "2020-03-04 09:19:49.870700"
+  },
+  {
+    "guid": "c6cbb868-8893-43cd-8886-ff1b102d2055",
+    "origin_id": 9,
+    "province_guid": "26a52ce9-a92b-4720-a211-87b738ff3c66",
+    "title": "Xhariep",
+    "code": "DC16",
+    "created_at": "2020-03-04 09:19:49.882486"
+  },
+  {
+    "guid": "1d5d1cc8-347d-4d19-85d9-3b19c5cbc0dc",
+    "origin_id": 10,
+    "province_guid": "26a52ce9-a92b-4720-a211-87b738ff3c66",
+    "title": "Lejweleputswa",
+    "code": "DC18",
+    "created_at": "2020-03-04 09:19:49.893837"
+  },
+  {
+    "guid": "7445331c-5def-47d1-9d6b-02a4d116790a",
+    "origin_id": 11,
+    "province_guid": "26a52ce9-a92b-4720-a211-87b738ff3c66",
+    "title": "Thabo Mofutsanyane",
+    "code": "DC19",
+    "created_at": "2020-03-04 09:19:49.904979"
+  },
+  {
+    "guid": "4afa2a3d-35b4-4468-a753-d33797e63731",
+    "origin_id": 12,
+    "province_guid": "26a52ce9-a92b-4720-a211-87b738ff3c66",
+    "title": "Fezile Dabi",
+    "code": "DC20",
+    "created_at": "2020-03-04 09:19:49.917143"
+  },
+  {
+    "guid": "212bfe56-958c-4a84-87d5-54d5afce7c03",
+    "origin_id": 13,
+    "province_guid": "26a52ce9-a92b-4720-a211-87b738ff3c66",
+    "title": "Mangaung",
+    "code": "MAN",
+    "created_at": "2020-03-04 09:19:49.931629"
+  },
+  {
+    "guid": "3f9f8d94-7e14-4ae8-9710-c198823c91c4",
+    "origin_id": 14,
+    "province_guid": "c38ff723-5c6d-442d-b669-b70b50590d93",
+    "title": "West Rand",
+    "code": "DC48",
+    "created_at": "2020-03-04 09:19:49.943733"
+  },
+  {
+    "guid": "187a75c3-5137-411a-aa55-caa5f09905d5",
+    "origin_id": 15,
+    "province_guid": "c38ff723-5c6d-442d-b669-b70b50590d93",
+    "title": "City of Tshwane",
+    "code": "TSH",
+    "created_at": "2020-03-04 09:19:49.957410"
+  },
+  {
+    "guid": "24dfa550-456a-4a0a-bef5-10c7a44d232a",
+    "origin_id": 16,
+    "province_guid": "c38ff723-5c6d-442d-b669-b70b50590d93",
+    "title": "Sedibeng",
+    "code": "DC42",
+    "created_at": "2020-03-04 09:19:49.972001"
+  },
+  {
+    "guid": "3830a466-6ebd-40a9-83f9-8ffbd61c6205",
+    "origin_id": 17,
+    "province_guid": "c38ff723-5c6d-442d-b669-b70b50590d93",
+    "title": "City of Johannesburg",
+    "code": "JHB",
+    "created_at": "2020-03-04 09:19:49.987456"
+  },
+  {
+    "guid": "b2ec95c3-0f6f-4259-8b3c-7b0244df3be1",
+    "origin_id": 18,
+    "province_guid": "c38ff723-5c6d-442d-b669-b70b50590d93",
+    "title": "City of Ekurhuleni",
+    "code": "EKU",
+    "created_at": "2020-03-04 09:19:50.004817"
+  },
+  {
+    "guid": "bd3d990e-b043-426d-bb82-ffb6c98ab756",
+    "origin_id": 19,
+    "province_guid": "7a15dab4-1374-4d5d-8079-f1bb73cae8e7",
+    "title": "Ugu",
+    "code": "DC21",
+    "created_at": "2020-03-04 09:19:50.020082"
+  },
+  {
+    "guid": "afc74e9c-794f-400d-8700-9582538eadf4",
+    "origin_id": 20,
+    "province_guid": "7a15dab4-1374-4d5d-8079-f1bb73cae8e7",
+    "title": "Uthukela",
+    "code": "DC23",
+    "created_at": "2020-03-04 09:19:50.036276"
+  },
+  {
+    "guid": "74c143a5-6c36-4307-b465-8d45fce1ab4d",
+    "origin_id": 21,
+    "province_guid": "7a15dab4-1374-4d5d-8079-f1bb73cae8e7",
+    "title": "Umzinyathi",
+    "code": "DC24",
+    "created_at": "2020-03-04 09:19:50.051614"
+  },
+  {
+    "guid": "0f064bdf-f53a-4f92-8762-30057afe846b",
+    "origin_id": 22,
+    "province_guid": "7a15dab4-1374-4d5d-8079-f1bb73cae8e7",
+    "title": "Amajuba",
+    "code": "DC25",
+    "created_at": "2020-03-04 09:19:50.074700"
+  },
+  {
+    "guid": "1bd0482e-c77a-43ed-b5bc-74dd5eb4254f",
+    "origin_id": 23,
+    "province_guid": "7a15dab4-1374-4d5d-8079-f1bb73cae8e7",
+    "title": "Zululand",
+    "code": "DC26",
+    "created_at": "2020-03-04 09:19:50.098281"
+  },
+  {
+    "guid": "2dde9ef1-646e-4f66-90ec-725054077372",
+    "origin_id": 24,
+    "province_guid": "7a15dab4-1374-4d5d-8079-f1bb73cae8e7",
+    "title": "Umkhanyakude",
+    "code": "DC27",
+    "created_at": "2020-03-04 09:19:50.120781"
+  },
+  {
+    "guid": "ba28c4e7-184d-4987-87c5-a267e06a06fa",
+    "origin_id": 25,
+    "province_guid": "7a15dab4-1374-4d5d-8079-f1bb73cae8e7",
+    "title": "Uthungulu",
+    "code": "DC28",
+    "created_at": "2020-03-04 09:19:50.140816"
+  },
+  {
+    "guid": "37a3543f-d8e1-40b2-9a3e-46ce03c339f6",
+    "origin_id": 26,
+    "province_guid": "7a15dab4-1374-4d5d-8079-f1bb73cae8e7",
+    "title": "iLembe",
+    "code": "DC29",
+    "created_at": "2020-03-04 09:19:50.159343"
+  },
+  {
+    "guid": "6968617d-92a8-4a00-bb0b-cf3dfc38fe4d",
+    "origin_id": 27,
+    "province_guid": "7a15dab4-1374-4d5d-8079-f1bb73cae8e7",
+    "title": "Sisonke",
+    "code": "DC43",
+    "created_at": "2020-03-04 09:19:50.173777"
+  },
+  {
+    "guid": "d7cc0412-1ed4-40f3-98fd-c7a8b51ee450",
+    "origin_id": 28,
+    "province_guid": "7a15dab4-1374-4d5d-8079-f1bb73cae8e7",
+    "title": "Umgungundlovu",
+    "code": "DC22",
+    "created_at": "2020-03-04 09:19:50.186326"
+  },
+  {
+    "guid": "3e781c95-843b-4d56-9538-1a53bcccfc89",
+    "origin_id": 29,
+    "province_guid": "7a15dab4-1374-4d5d-8079-f1bb73cae8e7",
+    "title": "eThekwini",
+    "code": "ETH",
+    "created_at": "2020-03-04 09:19:50.198956"
+  },
+  {
+    "guid": "1e951b8a-95a4-4a0e-84a4-80b0cf88c7d3",
+    "origin_id": 30,
+    "province_guid": "3b5001b0-9d38-4a10-b8da-7830b979267a",
+    "title": "Mopani",
+    "code": "DC33",
+    "created_at": "2020-03-04 09:19:50.213221"
+  },
+  {
+    "guid": "c277cc1c-0328-4982-8a05-a1bde6e362b9",
+    "origin_id": 31,
+    "province_guid": "3b5001b0-9d38-4a10-b8da-7830b979267a",
+    "title": "Capricorn",
+    "code": "DC35",
+    "created_at": "2020-03-04 09:19:50.228720"
+  },
+  {
+    "guid": "5f043ebb-60ed-4de3-94d0-981ff13e9189",
+    "origin_id": 32,
+    "province_guid": "3b5001b0-9d38-4a10-b8da-7830b979267a",
+    "title": "Waterberg",
+    "code": "DC36",
+    "created_at": "2020-03-04 09:19:50.243240"
+  },
+  {
+    "guid": "ded4ea8c-8584-478e-8405-de7a1b187dba",
+    "origin_id": 33,
+    "province_guid": "3b5001b0-9d38-4a10-b8da-7830b979267a",
+    "title": "Sekhukhune",
+    "code": "DC47",
+    "created_at": "2020-03-04 09:19:50.258185"
+  },
+  {
+    "guid": "1c0de287-9146-4e3c-b89d-ca657fc221ae",
+    "origin_id": 34,
+    "province_guid": "3b5001b0-9d38-4a10-b8da-7830b979267a",
+    "title": "Vhembe",
+    "code": "DC34",
+    "created_at": "2020-03-04 09:19:50.270353"
+  },
+  {
+    "guid": "a6bf08cc-f7d8-46eb-978c-5444a22ea878",
+    "origin_id": 35,
+    "province_guid": "97b16635-e908-4bc3-bfa3-a8d44364ca09",
+    "title": "Gert Sibande",
+    "code": "DC30",
+    "created_at": "2020-03-04 09:19:50.283297"
+  },
+  {
+    "guid": "123852cc-7fb0-4f76-b346-083429c3c76c",
+    "origin_id": 36,
+    "province_guid": "97b16635-e908-4bc3-bfa3-a8d44364ca09",
+    "title": "Nkangala",
+    "code": "DC31",
+    "created_at": "2020-03-04 09:19:50.295699"
+  },
+  {
+    "guid": "33272112-d51e-45e8-bd98-33f40c4559a9",
+    "origin_id": 37,
+    "province_guid": "97b16635-e908-4bc3-bfa3-a8d44364ca09",
+    "title": "Ehlanzeni",
+    "code": "DC32",
+    "created_at": "2020-03-04 09:19:50.315820"
+  },
+  {
+    "guid": "a0272213-2a5e-4f92-8ded-eadf54f38554",
+    "origin_id": 38,
+    "province_guid": "5ec09448-6077-4549-869a-e315816a7c07",
+    "title": "Namakwa",
+    "code": "DC6",
+    "created_at": "2020-03-04 09:19:50.329925"
+  },
+  {
+    "guid": "4a3f60cb-50ac-44cc-b9af-d6e38f150447",
+    "origin_id": 39,
+    "province_guid": "5ec09448-6077-4549-869a-e315816a7c07",
+    "title": "Pixley ka Seme",
+    "code": "DC7",
+    "created_at": "2020-03-04 09:19:50.342651"
+  },
+  {
+    "guid": "4503197a-0f6d-44ac-934a-49ef2192e07c",
+    "origin_id": 40,
+    "province_guid": "5ec09448-6077-4549-869a-e315816a7c07",
+    "title": "Z F Mgcawu",
+    "code": "DC8",
+    "created_at": "2020-03-04 09:19:50.354329"
+  },
+  {
+    "guid": "64156142-da32-47bf-9c4b-1a3874983344",
+    "origin_id": 41,
+    "province_guid": "5ec09448-6077-4549-869a-e315816a7c07",
+    "title": "Frances Baard",
+    "code": "DC9",
+    "created_at": "2020-03-04 09:19:50.367159"
+  },
+  {
+    "guid": "e17f635d-0daa-4dc7-b13a-719283d2f6c5",
+    "origin_id": 42,
+    "province_guid": "5ec09448-6077-4549-869a-e315816a7c07",
+    "title": "John Taolo Gaetsewe",
+    "code": "DC45",
+    "created_at": "2020-03-04 09:19:50.386918"
+  },
+  {
+    "guid": "0c0a82e5-6cd8-4ef1-a1b5-d488f1d0380a",
+    "origin_id": 43,
+    "province_guid": "869f9c04-7137-4ed4-9350-221524ae4054",
+    "title": "Bojanala",
+    "code": "DC37",
+    "created_at": "2020-03-04 09:19:50.401612"
+  },
+  {
+    "guid": "70b83cdb-b887-4a20-8e8e-428678b279a3",
+    "origin_id": 44,
+    "province_guid": "869f9c04-7137-4ed4-9350-221524ae4054",
+    "title": "Ngaka Modiri Molema",
+    "code": "DC38",
+    "created_at": "2020-03-04 09:19:50.413895"
+  },
+  {
+    "guid": "3c228393-0e2b-4418-b232-f82877a13442",
+    "origin_id": 45,
+    "province_guid": "869f9c04-7137-4ed4-9350-221524ae4054",
+    "title": "Dr Ruth Segomotsi Mompati",
+    "code": "DC39",
+    "created_at": "2020-03-04 09:19:50.427624"
+  },
+  {
+    "guid": "d6efc57b-8d9f-4247-b106-038b5b55ba8d",
+    "origin_id": 46,
+    "province_guid": "869f9c04-7137-4ed4-9350-221524ae4054",
+    "title": "Dr Kenneth Kaunda",
+    "code": "DC40",
+    "created_at": "2020-03-04 09:19:50.439259"
+  },
+  {
+    "guid": "1333862c-5c8e-4ea9-a964-c3b4cf4beb2b",
+    "origin_id": 47,
+    "province_guid": "a41d0d83-f485-404c-af0d-ffba592ede5c",
+    "title": "West Coast",
+    "code": "DC1",
+    "created_at": "2020-03-04 09:19:50.451060"
+  },
+  {
+    "guid": "470092ae-19f5-4bb5-8e1d-83a3ceb6ff8f",
+    "origin_id": 48,
+    "province_guid": "a41d0d83-f485-404c-af0d-ffba592ede5c",
+    "title": "Cape Winelands",
+    "code": "DC2",
+    "created_at": "2020-03-04 09:19:50.468611"
+  },
+  {
+    "guid": "418a1280-c694-4bff-9703-b980b235b156",
+    "origin_id": 49,
+    "province_guid": "a41d0d83-f485-404c-af0d-ffba592ede5c",
+    "title": "Overberg",
+    "code": "DC3",
+    "created_at": "2020-03-04 09:19:50.484459"
+  },
+  {
+    "guid": "3727076f-bb69-4fa6-9ca6-ecbb84f7cee5",
+    "origin_id": 50,
+    "province_guid": "a41d0d83-f485-404c-af0d-ffba592ede5c",
+    "title": "Garden Route",
+    "code": "DC4",
+    "created_at": "2020-03-04 09:19:50.500474"
+  },
+  {
+    "guid": "3cf1aa58-48f5-49d1-bdff-9b8a1e580d28",
+    "origin_id": 51,
+    "province_guid": "a41d0d83-f485-404c-af0d-ffba592ede5c",
+    "title": "Central Karoo",
+    "code": "DC5",
+    "created_at": "2020-03-04 09:19:50.516636"
+  },
+  {
+    "guid": "bd49410c-4ed2-4f9e-a634-d266b2f42848",
+    "origin_id": 52,
+    "province_guid": "a41d0d83-f485-404c-af0d-ffba592ede5c",
+    "title": "City of Cape Town",
+    "code": "CPT",
+    "created_at": "2020-03-04 09:19:50.534217"
+  }
+]
