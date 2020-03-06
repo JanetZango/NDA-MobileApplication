@@ -34,6 +34,7 @@ export class LoginPage {
   }
   verifyemail(form: NgForm) {
     this.authUser.verifyUser(form.value.email).subscribe(res => {
+      console.log(res)
       if (typeof (res) != 'undefined') {
         this.navCtrl.push(AddOtpPage);
       }

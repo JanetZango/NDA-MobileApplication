@@ -37,14 +37,14 @@ export class DisplayListOfAssessmentPage implements OnInit {
 
   ngOnInit(){
     const loader = this.loadingCtrl.create({
-      content: "Please wait information is stil loading...",
+      content: "Please wait information is still loading...",
       duration: 300000000
     });
     loader.present();
     this.csoApi.getAssessment().subscribe(res => {
       if(res){
-        console.log(res.results);
-        this.DisplayAssessment = res.results
+        console.log(res.capacity_buildings);
+        this.DisplayAssessment = res.capacity_buildings
         console.log(this.DisplayAssessment)
         loader.dismiss()
       }

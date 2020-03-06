@@ -15,15 +15,27 @@ export class HttpAuthInterceptor implements HttpInterceptor {
 
   }
 
-  intercept(res: HttpRequest<any>, next: HttpHandler): Observable<HttpEvent<any>> {
+  intercept(req: HttpRequest<any>, next: HttpHandler): Observable<HttpEvent<any>> {
+
+    req = req.clone({
+      setHeaders: {
+        'Access-Control-Allow-Origin': '*',
+        'No-Auth':'True',
+        'Access-Control-Allow-Credentials':'true',
+        'withCredentials': 'true',
+        'Access-Control-Allow-Methods': 'GET, POST, PATCH, PUT, DELETE, OPTIONS'
+      }
+    });
+
 
     if (this.apiService.getJwtToken()) {
-      res = this.addToken(res, this.apiService.getJwtToken());
+      req = this.addToken(req, this.apiService.getJwtToken());
     }
 
-    return next.handle(res).pipe(catchError(error => {
+    return next.handle(req).pipe(catchError(error => {
+      debugger
       if(error instanceof HttpErrorResponse && error.status === 401){
-        return this.handle401Error(res, next);
+        return this.handle401Error(req, next);
       }
     }));
   }

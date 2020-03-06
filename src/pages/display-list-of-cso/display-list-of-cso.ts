@@ -50,7 +50,7 @@ export class DisplayListOfCsoPage implements OnInit{
 
   displayCsoList(){
     const loader = this.loadingCtrl.create({
-      content: "Please wait information is stil loading...",
+      content: "Please wait information is still loading...",
       duration: 300000000
     });
     loader.present();

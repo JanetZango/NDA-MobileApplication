@@ -65,14 +65,14 @@ export class AddCapacityPage {
 
     this.authForm = this.fb.group({  
       'cso_name': ['', Validators.compose([Validators.required])],
-      'capacity_building_type_id': ['', Validators.compose([Validators.required])],
-      'province_id': ['', Validators.compose([Validators.required])],
-      'district_id': ['', Validators.compose([Validators.required])],
-      'municipality_id': ['', Validators.compose([Validators.required])],
-      'partner_id': ['', Validators.compose([Validators.required])],
+      'capacity_building_type': ['', Validators.compose([Validators.required])],
+      'province': ['', Validators.compose([Validators.required])],
+      'district': ['', Validators.compose([Validators.required])],
+      'municipality': ['', Validators.compose([Validators.required])],
+      'partner': ['', Validators.compose([Validators.required])],
       'venue': ['', Validators.compose([Validators.required])],
       'facilitator_name': ['', Validators.compose([Validators.required])],
-      'funding_source_id': ['', Validators.compose([Validators.required])],
+      'funding_source': ['', Validators.compose([Validators.required])],
       'collected_by': ['', Validators.compose([Validators.required])],
       'start_date': ['', Validators.compose([Validators.required])],
       'end_date': ['', Validators.compose([Validators.required])],
@@ -132,8 +132,10 @@ export class AddCapacityPage {
    * Get District
    */
   getDistrict() {
+    const that = this;
     this.lookupService.getDistrict().subscribe(res => {
-      this.districtArrData = res;
+      debugger
+      that.districtArrData = res;
     })
   }
 
@@ -168,8 +170,9 @@ export class AddCapacityPage {
    * @param proviceId
    */
   populateDistrict(proviceId: NgModel) {
+    debugger
     this.districtArr = this.districtArrData
-      .filter(x => x.province_id === proviceId);
+      .filter(x => x.province_guid === proviceId);
   }
 
   /**
@@ -178,7 +181,7 @@ export class AddCapacityPage {
    */
   populateMunicipality(districtId: NgModel) {
     this.municipalityArr = this.municipalityArrData
-      .filter(m => m.district_id === districtId);
+      .filter(m => m.district_guid === districtId);
   }
 
   /**

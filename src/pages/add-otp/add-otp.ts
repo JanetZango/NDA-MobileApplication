@@ -32,7 +32,6 @@ export class AddOtpPage {
   
   login(otpf: NgForm){
      this.authUser.verifyOpt(otpf.value.otp).subscribe(res =>{
-       debugger
       if (typeof (res) != 'undefined') {
         this.navCtrl.setRoot(LandingPage);
       }

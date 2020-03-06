@@ -49,9 +49,10 @@ export class DisplayListOfCapacityPage implements OnInit {
     });
     loader.present();
     this.csoApi.getCapacityBuilding().subscribe(res => {
+      debugger
       if(res){
-        console.log(res.results);
-        this.DisplayCapacity = res.results
+        console.log(res.capacity_buildings);
+        this.DisplayCapacity = res.capacity_buildings
         console.log(this.DisplayCapacity)
         loader.dismiss()
       }
@@ -61,17 +62,15 @@ export class DisplayListOfCapacityPage implements OnInit {
 
   displayCsoList(){
     const loader = this.loadingCtrl.create({
-      content: "Please wait information is stil loading...",
+      content: "Please wait information is still loading...",
       duration: 300000000
     });
     loader.present();
     this.csoApi.getCapacityBuilding().subscribe(res => {
       if(res){
-        console.log(res.results);
-        this.DisplayCso = res.results
+        this.DisplayCso = res.capacity_buildings
         this.storeNames();
         loader.dismiss()
-        console.log(this.DisplayCso[0].capacity_building)
         for(var x =0; x < this.DisplayCso.length;x ++){
           this.storeOrgNames(this.DisplayCso[x].capacity_building)
            
