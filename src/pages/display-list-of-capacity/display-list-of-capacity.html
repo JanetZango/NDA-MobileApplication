@@ -23,11 +23,11 @@
         <h3>Manage CSO Capacity Building Interventions</h3>
         <ion-card *ngFor="let x of DisplayCapacity">
             <div class="card">
-                <p><b>Capacity Building:</b>{{x.capacity_building}}</p>
-                <p><b>Facilitor Name:</b>{{x.facilitator_name}}</p>
-                <p><b>District:</b>{{x.district}}</p>
-                <p><b>Municipality:</b>{{x.municipality}}</p>
-                <p><b>Province:</b>{{x.province}}</p>
+                <p><b>Capacity Building:</b>{{x.capacity_building_type.title}}</p>
+                <p><b>Facilitor Name:</b>{{x.co_facilitator_name}}</p>
+                <p><b>District:</b>{{x.district.title}}</p>
+                <p><b>Municipality:</b>{{x.municipality.title}}</p>
+                <p><b>Province:</b>{{x.province.title}}</p>
                 <p><b>Venue:</b>{{x.venue}}</p>
                 <p><b>Start Date:</b>{{x.start_date}}</p>
                 <p><b>End Date:</b>{{x.end_date}}</p>

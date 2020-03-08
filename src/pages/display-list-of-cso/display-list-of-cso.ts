@@ -36,7 +36,6 @@ export class DisplayListOfCsoPage implements OnInit{
   }
 
   ionViewDidLoad() {
-    console.log('ionViewDidLoad DisplayListOfCsoPage');
   }
   registerCSO(){
     this.navCtrl.push(RegistercsoPage)
@@ -56,31 +55,27 @@ export class DisplayListOfCsoPage implements OnInit{
     loader.present();
     this.csoApi.getCso().subscribe(res => {
       if(res){
-        console.log(res.results);
-        this.DisplayCso = res.results
-        this.storeNames();
-        loader.dismiss()
-        console.log(this.DisplayCso[0].name_of_cso)
-        for(var x =0; x < this.DisplayCso.length;x ++){
-          this.storeOrgNames(this.DisplayCso[x].name_of_cso)
+        this.DisplayCso = res.csoes
+        //this.storeNames();
+        //loader.dismiss()
+        // for(var x =0; x < this.DisplayCso.length;x ++){
+        //   this.storeOrgNames(this.DisplayCso[x].name_of_cso)
            
-        }
+        // }
       }
+      loader.dismiss();
     })
-  }cso_name
+  }
   CsoName = new Array();
   storeOrgNames(cso_name) {
     this.CsoName.push(cso_name);
-    console.log(this.CsoName)
   }
 
   getCsoName(){
     return this.CsoName
-    
   }
 
   getItems(ev: any) {
-    console.log(`hi serach`);
     this.initializeItems();
     // this.searchlist = true
     // set val to the value of the searchbar
@@ -101,20 +96,18 @@ export class DisplayListOfCsoPage implements OnInit{
   initializeItems() {
     this.items = []
     this.items = this.namesArr
-    console.log(this.items)
   }
   namesArr = new Array()
   storeNames() {
     this.namesArr = this.CsoName;
-    console.log(this.namesArr)
   }
-
 
   /**
    * 
    * @param cso 
    */
   viewMore(cso) {
+    debugger
     this.navCtrl.push(ViewcsodetailsPage, { orgObject: cso});
   }
 
@@ -126,10 +119,4 @@ export class DisplayListOfCsoPage implements OnInit{
       }
     }
   }
-
-
-  
-
-
-
 }

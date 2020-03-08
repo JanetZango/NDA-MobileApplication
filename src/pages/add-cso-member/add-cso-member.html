@@ -16,7 +16,7 @@
 
         <ion-item id="item">
           <ion-label> Select Member Position</ion-label>
-          <ion-select [(ngModel)]="member_position_id" formControlName="member_position_id" ngModel>
+          <ion-select [(ngModel)]="member_position_guid" formControlName="member_position_id" ngModel>
             <ion-option value="1">Trustee</ion-option>
             <ion-option value="2">Management</ion-option>
             <ion-option value="3">General Monitor</ion-option>
@@ -53,7 +53,7 @@
           </ion-select>
         </ion-item>
 
-        <ion-input  type="number"  *ngIf="showIDNumber" formControlName="id_number"  [(ngModel)]="id_number" ngModel placeholder="ID number" id="anim1"></ion-input>
+        <ion-input  type="number"  *ngIf="showIDNumber" formControlName="id_number"  [(ngModel)]="rsa_id_number" ngModel placeholder="ID number" id="anim1"></ion-input>
 
         <ion-input placeholder="Passport_number" type="text" *ngIf="showPassport" class="user-input" name="passport_number"
           [(ngModel)]="passport_number" formControlName="passport_number" ngModel id="anim1"></ion-input>

@@ -14,8 +14,6 @@
           <p>{{item.cso_name}}</p>
         </ion-item>
       </div>
-
-
       <div class="Contacts">
         <ion-label>Assessment Date</ion-label>
         <ion-item>
@@ -25,8 +23,6 @@
         </ion-item>
         <br>
       </div>
-
-
       <ion-item id="item">
         <ion-label> Assessment Type</ion-label>
         <ion-select [(ngModel)]="assessment_type_id" (ionChange)="AssessmentQuestions()" formControlName="assessment_type_id" ngModel>
@@ -55,7 +51,6 @@
 
   <div id="placeholderDiv" *ngIf="showQuestions">
     <div class="Qcard" >
-     
           <h2>Section One</h2>
           <b>Institutional Arrangement</b>
           <div *ngFor="let assessmentAnswer of assessmentAnswerArr ; let i = index">

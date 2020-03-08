@@ -25,6 +25,7 @@ export class LookUpService {
     private MemberPosition = "../../assets/lookup_database/cso_tra_dbo_lkp_local_member_position.json";
     private PartnerType = "../../assets/lookup_database/cso_tra_dbo_lkp_partner_type.json";
     private Province = "../../assets/lookup_database/province.json";
+    private Mobilisation ="../../assets/lookup_database/mobilisation_method.json";
 
     constructor(
         public http: HttpClient
@@ -88,6 +89,11 @@ export class LookUpService {
 
         return this.http.get(this.AssessementQuestion)
         .pipe(catchError(this.handleError(<any>("getAssessmentQuestion"))));
+    }
+
+    public getMobilisationMethod(): Observable<any>{
+        return this.http.get(this.Mobilisation)
+        .pipe(catchError(this.handleError(<any>("getMobilisationMethod"))));
     }
 
     /**

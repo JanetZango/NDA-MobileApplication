@@ -28,7 +28,6 @@ export class DisplayListOfCapacityPage implements OnInit {
   }
 
   ionViewDidLoad() {
-    console.log('ionViewDidLoad DisplayListOfCapacityPage');
   }
   addBuilding(){
     this.navCtrl.push(AddCapacityPage)
@@ -51,12 +50,9 @@ export class DisplayListOfCapacityPage implements OnInit {
     this.csoApi.getCapacityBuilding().subscribe(res => {
       debugger
       if(res){
-        console.log(res.capacity_buildings);
         this.DisplayCapacity = res.capacity_buildings
-        console.log(this.DisplayCapacity)
-        loader.dismiss()
       }
-
+      loader.dismiss();
     })
   }
 
@@ -81,16 +77,13 @@ export class DisplayListOfCapacityPage implements OnInit {
   CsoName = new Array();
   storeOrgNames(cso_name) {
     this.CsoName.push(cso_name);
-    console.log(this.CsoName)
   }
 
   getCsoName(){
     return this.CsoName
-    
   }
 
   getItems(ev: any) {
-    console.log(`hi serach`);
     this.initializeItems();
     // this.searchlist = true
     // set val to the value of the searchbar
@@ -111,12 +104,10 @@ export class DisplayListOfCapacityPage implements OnInit {
   initializeItems() {
     this.items = []
     this.items = this.namesArr
-    console.log(this.items)
   }
   namesArr = new Array()
   storeNames() {
     this.namesArr = this.CsoName;
-    console.log(this.namesArr)
   }
 
 

@@ -1,0 +1,27 @@
+[
+    {
+        "guid": "0a204c7d-6ed6-442e-9ed6-e334eb03b14a",
+        "title": "Board Member",
+        "origin_id": 1
+    },
+    {
+        "guid": "13683532-364e-425c-91e6-77f62425ea78",
+        "title": "Trustee",
+        "origin_id": 2
+    },
+    {
+        "guid": "66635ba8-5c50-4242-bfcc-6ff2c7cc09d0",
+        "title": "Management",
+        "origin_id": 3
+    },
+    {
+        "guid": "2db28093-9fdd-4ed7-ac89-383a82aa51c6",
+        "title": "General Member",
+        "origin_id": 4
+    },
+    {
+        "guid": "bb01c8cd-01cc-4172-8fed-d3215637f84c",
+        "title": "Other",
+        "origin_id": 5
+    }
+]

@@ -38,10 +38,7 @@ export class DisplayCsoMemberListPage implements OnInit {
   ionViewDidLoad() {
     this.CsoDetailsArr.push(this.navParams.get('orgObject'));
     this.csoObj =this.navParams.get('orgObject');
-
-    console.log(this.CsoDetailsArr)
     this.cso_uuid = this.CsoDetailsArr[0].cso_uuid
-    console.log(this.cso_uuid)
   }
 
   addCsoMember(){
@@ -70,15 +67,10 @@ export class DisplayCsoMemberListPage implements OnInit {
       });
       loader.present();
       this.csoApi.getCsoMember().subscribe(res => {
+        debugger
         if(res){
-          console.log(res.results);
           this.DisplayCsoMember = res.results
           loader.dismiss()
-          // console.log(this.DisplayCso[0].cso_name)
-          // for(var x =0; x < this.DisplayCso.length;x ++){
-          //   this.storeOrgNames(this.DisplayCso[x].cso_name)
-             
-          // }
         }
       })
     }

@@ -46,10 +46,12 @@ export class RegistercsoPage {
   provinceArr = new Array();
   municipalityArr = new Array();
   csosectorArr = new Array();
+  mobilisationArr = new Array();
 
   // arrays that store data
   districtArrData = new Array();
   municipalityArrData = new Array();
+
   private authForm : FormGroup;
 
 
@@ -59,6 +61,8 @@ export class RegistercsoPage {
     public entityProvider: EntityProvider,
     public alertCtrl: AlertController,
     private fb: FormBuilder ) {
+
+      this.getMobilisationMethod();
 
       this.authForm = this.fb.group({  
         'cso_name': ['', Validators.compose([Validators.required])],
@@ -93,6 +97,16 @@ export class RegistercsoPage {
     this.navCtrl.pop();
   }
 
+    /**
+   * 
+   * Get Mobilisation
+   */
+  getMobilisationMethod(){
+    this.lookupService.getMobilisationMethod()
+      .subscribe( res =>{
+        this.mobilisationArr = res;
+    });
+  }
 
   // **
   // rest data from the form

@@ -94,7 +94,6 @@ export class AddCapacityPage {
     this.getPartnerType();
     this.getMunicipality();
     this.getCapacityBuilding();
-
     this.displayCsoList();
   }
 
@@ -134,7 +133,6 @@ export class AddCapacityPage {
   getDistrict() {
     const that = this;
     this.lookupService.getDistrict().subscribe(res => {
-      debugger
       that.districtArrData = res;
     })
   }
@@ -170,7 +168,6 @@ export class AddCapacityPage {
    * @param proviceId
    */
   populateDistrict(proviceId: NgModel) {
-    debugger
     this.districtArr = this.districtArrData
       .filter(x => x.province_guid === proviceId);
   }
@@ -232,8 +229,9 @@ export class AddCapacityPage {
   // ** search by name
   displayCsoList() {
     this.entityProvider.getCso().subscribe(res => {
+      debugger
       if (res) {
-        this.DisplayCso = res.results
+        this.DisplayCso = res.csoes  
         this.storeNames();
         for (var x = 0; x < this.DisplayCso.length; x++) {
           this.storeOrgNames(this.DisplayCso[x].cso_name)
@@ -251,9 +249,7 @@ export class AddCapacityPage {
 
   getCsoName() {
     return this.CsoName
-
   }
-
 
   /**
    * 

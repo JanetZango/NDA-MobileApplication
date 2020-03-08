@@ -1,5 +1,3 @@
-
-
 <ion-content class="content">
   <div class="top">
     <div class="back">
@@ -29,18 +27,16 @@
   <div class="mainInfor">
     <ion-card *ngFor="let a of DisplayCso">
       <div class="card" (click)="viewMore(a)">
-        <p><b>Cso Name:</b>{{a.cso_name}}</p>
-        <p><b>Cso Sector:</b>{{a.cso_sector}}</p>
-        <p><b>Municipality:</b>{{a.municipality}}</p>
-        <p><b>District:</b>{{a.district}}</p>
-        <p><b>Cso_type:</b>{{a.cso_type}}</p>
+        <p><b>Cso Name:</b>{{a.name_of_cso}}</p>
+        <p><b>Cso Sector:</b>{{a.cso_sector.title}}</p>
+        <p><b>Municipality:</b>{{a.municipality.title}}</p>
+        <p><b>District:</b>{{a.district.title}}</p>
+        <p><b>Cso_type:</b>{{a.cso_type.title}}</p>
         <div class="viewBtn">
           <button clear ion-button ><ion-icon name="ios-arrow-forward-outline"></ion-icon>
           </button>
         </div>
-
       </div>
     </ion-card>
   </div>
-
 </ion-content>

@@ -1,4 +1,4 @@
-import { Component,OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { AddAssessmentPage } from '../add-assessment/add-assessment';
 import { LandingPage } from '../landing/landing';
@@ -17,12 +17,14 @@ import { LoadingController } from 'ionic-angular';
   selector: 'page-display-list-of-assessment',
   templateUrl: 'display-list-of-assessment.html',
 })
-export class DisplayListOfAssessmentPage implements OnInit {
+export class DisplayListOfAssessmentPage {
   DisplayAssessment = new Array();
   constructor(public navCtrl: NavController,
      public navParams: NavParams,
      public csoApi:EntityProvider,
      public loadingCtrl: LoadingController ) {
+
+      this.getAssessments();
   }
 
   ionViewDidLoad() {
@@ -35,23 +37,23 @@ export class DisplayListOfAssessmentPage implements OnInit {
     this.navCtrl.push(LandingPage)
   }
 
-  ngOnInit(){
+  /**
+   * 
+   * Get List off Assessments
+   */
+  getAssessments(){
     const loader = this.loadingCtrl.create({
-      content: "Please wait information is still loading...",
-      duration: 300000000
+      content: "Please wait information is still loading..."
+      //duration: 300000000
     });
     loader.present();
     this.csoApi.getAssessment().subscribe(res => {
+      debugger
       if(res){
-        console.log(res.capacity_buildings);
-        this.DisplayAssessment = res.capacity_buildings
-        console.log(this.DisplayAssessment)
-        loader.dismiss()
+        this.DisplayAssessment = res.assessments
       }
-
+      loader.dismiss();
     })
-
-
   }
 
 }

@@ -22,7 +22,6 @@ export class AddCsoMemberPage {
   //array
   CsoDetailsArr = new Array()
 
-
   // variables
   cso_uuid: string;
   nationality;
@@ -48,7 +47,6 @@ export class AddCsoMemberPage {
     public alertCtrl: AlertController,
     private fb: FormBuilder 
   ) {
-
 
     this.csoObj = this.navParams.get('orgObject');
     this.cso_uuid = this.csoObj.cso_uuid;
@@ -79,12 +77,6 @@ export class AddCsoMemberPage {
   goBackToCsoMemberList() {
     this.navCtrl.pop()
   }
-
-  /**
- * Get registering cso member
- * @param csoMember
- */
-
 
   //  reset
   reset() {

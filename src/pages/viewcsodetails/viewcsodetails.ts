@@ -40,9 +40,5 @@ export class ViewcsodetailsPage {
   // ** move data to the nect page
   seeCsoMmbers(){
       this.navCtrl.push(DisplayCsoMemberListPage, { orgObject: this.csoObj });
-
   }
-
-  
-
 }
