@@ -33,7 +33,6 @@ export class HttpAuthInterceptor implements HttpInterceptor {
     }
 
     return next.handle(req).pipe(catchError(error => {
-      debugger
       if(error instanceof HttpErrorResponse && error.status === 401){
         return this.handle401Error(req, next);
       }

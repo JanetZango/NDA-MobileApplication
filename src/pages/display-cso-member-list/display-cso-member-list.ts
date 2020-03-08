@@ -67,7 +67,6 @@ export class DisplayCsoMemberListPage implements OnInit {
       });
       loader.present();
       this.csoApi.getCsoMember().subscribe(res => {
-        debugger
         if(res){
           this.DisplayCsoMember = res.results
           loader.dismiss()

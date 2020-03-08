@@ -5,6 +5,7 @@ import { LookUpService } from '../../providers/lookup/lookups.service';
 import { EntityProvider } from '../../providers/entity/cso';
 import { NgModel, NgForm,Validators, FormBuilder, FormGroup } from '@angular/forms';
 import { DataProvider } from '../../providers/dataproviders/dataprovider';
+import { Assessment } from '../../model/assessment-class';
 
 /**
  * Generated class for the AddAssessmentPage page.
@@ -18,14 +19,16 @@ import { DataProvider } from '../../providers/dataproviders/dataprovider';
   selector: 'page-add-assessment',
   templateUrl: 'add-assessment.html',
 })
-export class AddAssessmentPage  implements OnInit{
+export class AddAssessmentPage {
   showQuestions: boolean = false;
   assessmentQuestionArr = new Array();
+  dataAssessmentQuestionArr = new Array();
   assessmentAnswerArr = new Array();
   answerObj = new Array();
   DisplayCso = new Array();
-
-
+  assessmentTypeArr = new Array();
+  assessmentQuestionAnswerArr = new Array();
+  dataAssessmentQuestionAnswerArr = new Array();
   private authForm : FormGroup;
   //variables
   items;
@@ -33,6 +36,10 @@ export class AddAssessmentPage  implements OnInit{
   assessment_date;
   assessment_type_id;
   answerQnA;
+
+  cso_guid_value:string;
+
+  assessmentObject = new Assessment();
   constructor(
     public navCtrl: NavController,
     public navParams: NavParams,
@@ -44,18 +51,18 @@ export class AddAssessmentPage  implements OnInit{
     private fb: FormBuilder
   ) {
     this.getAssessmentQuestion();
-
+    this.getAssessmnetType();
+    this.getAssessementAnswer();
+    this.getQuestionsAnswers();
 
     this.authForm = this.fb.group({  
-      'cso_name': ['', Validators.compose([Validators.required])],
+      'name_of_cso': ['', Validators.compose([Validators.required])],
       'assessment_date': ['', Validators.compose([Validators.required])],
-      'assessment_type_id': ['', Validators.compose([Validators.required])],
-      'answerQnA': ['', Validators.compose([Validators.required])]
+      'assessment_type_guid': ['', Validators.compose([Validators.required])],
   });
   }
 
   ionViewDidLoad() {
-    this.getAssessementAnswer();
   }
 
   reset(){
@@ -67,14 +74,25 @@ export class AddAssessmentPage  implements OnInit{
   gotoback() {
     this.navCtrl.push(DisplayListOfAssessmentPage)
   }
-  ngOnInit(){
-    this.displayCsoList();
+  /**
+   * 
+   * Get the List Of Assessment type
+   */
+  getAssessmnetType(){
+    this.lookupService.getAssessementType().subscribe(res =>{
+      this.assessmentTypeArr = res;
+    });
+  }
+
+  getQuestionsAnswers(){
+    this.lookupService.getQuestionAnswer().subscribe(res => {
+      this.assessmentQuestionAnswerArr = res;
+    });
+
   }
 
   getAssessementAnswer() {
-
     this.lookupService.getAssessementAnswer().subscribe(res => {
-     // console.log(res);
       this.assessmentAnswerArr = res;
     });
   }
@@ -85,14 +103,13 @@ export class AddAssessmentPage  implements OnInit{
     this.lookupService.getAssessmentQuestion()
       .subscribe(res => {
         if(res){
-          //console.log("Assessments Question"+res);
           this.assessmentQuestionArr =  res
         }
       })
   }
 
-  AssessmentQuestions() {
-    if (this.assessment_type_id == "1") {
+  AssessmentQuestions(value) {
+    if (value== "b564ecdb-6e0a-4903-89fc-c9c8f72b0fa8") {
       this.showQuestions = true;
     }
     else {
@@ -104,9 +121,13 @@ export class AddAssessmentPage  implements OnInit{
    * 
    * @param assessment 
    */
-  addAssessment() {
-
-    this.entityProvider.saveAssessment(this.answerObj).subscribe(res => {
+  addAssessment(assessment:NgForm) {
+    // creating an answer obj
+    this.assessmentObject.cso_guid = this.cso_guid_value;
+    this.assessmentObject.assessment_date = assessment.value.assessment_date
+    this.assessmentObject.assessment_type_guid = assessment.value.assessment_type_guid
+    this.assessmentObject.cso_assessment = this.answerObj
+    this.entityProvider.saveAssessment(JSON.stringify(this.assessmentObject)).subscribe(res => {
       if (typeof (res) != 'undefined') {
         const alert = this.alertCtrl.create({
           title: 'Alert',
@@ -114,7 +135,9 @@ export class AddAssessmentPage  implements OnInit{
           buttons: ['OK']
         });
         alert.present();
-        this.reset();
+        assessment.resetForm();
+        this.assessmentObject = new Assessment();
+        //this.navCtrl.push(LandingPage);
       }
       else {
         const alert = this.alertCtrl.create({
@@ -143,17 +166,17 @@ export class AddAssessmentPage  implements OnInit{
     if(this.answerObj.length > 0){
       // checking if there is answer from the same Question if is there is must be removed and replaced with new selected answer
         for(var i = 0; i < this.answerObj.length;i++ ){
-            if(this.answerObj[i].assessment_question_id ===  answers.assessment_question_id){
+            if(this.answerObj[i].question_guid ===  answers.question_guid){
               this.answerObj.splice(i, 1);
               break;
             }
         }
     }
+    // deleting element which are not needed 
+    delete answers.weight;
+    delete answers.answer;
     this.answerObj.push(answers);
   }
-
-
-
   // ** search by name
   displayCsoList(){
     this.csoApi.getCso().subscribe(res => {
@@ -186,10 +209,11 @@ export class AddAssessmentPage  implements OnInit{
     const val = ev.target.value;
     if(val === ''){
       this.items =[];
+      this.cso_guid_value ="";
       return;
     }
     this.items = this.csoProvider.listOfCso.filter((x) => {
-          return (x.cso_name.toLowerCase().indexOf(val.toLowerCase()) > -1);
+          return (x.name_of_cso.toLowerCase().indexOf(val.toLowerCase()) > -1);
       })
   }
 
@@ -204,9 +228,8 @@ export class AddAssessmentPage  implements OnInit{
 
 
   openMarkerInfo(name, assessment){
-    this.authForm.controls['cso_name'].setValue(name.cso_name);
+    this.authForm.controls['name_of_cso'].setValue(name.name_of_cso);
+    this.cso_guid_value = name.guid;
     this.items = []
   }
-
-
 }

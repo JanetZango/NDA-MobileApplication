@@ -4,6 +4,8 @@ import { DisplayListOfCsoPage } from '../display-list-of-cso/display-list-of-cso
 import { DisplayListOfAssessmentPage } from '../display-list-of-assessment/display-list-of-assessment';
 import { DisplayListOfCapacityPage } from '../display-list-of-capacity/display-list-of-capacity';
 import { AsynPage } from '../asyn/asyn';
+import { EntityProvider } from '../../providers/entity/cso';
+import { DataProvider } from '../../providers/dataproviders/dataprovider';
 
 /**
  * Generated class for the LandingPage page.
@@ -19,11 +21,16 @@ import { AsynPage } from '../asyn/asyn';
 })
 export class LandingPage {
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  constructor(
+    public navCtrl: NavController, 
+    public navParams: NavParams,
+    public entityProvider: EntityProvider,
+    public csoProvider: DataProvider
+    ) {
+      this.getAllCso();
   }
 
   ionViewDidLoad() {
-    console.log('ionViewDidLoad LandingPage');
   }
   DisplayListOfCSO(){
       this.navCtrl.push(DisplayListOfCsoPage)
@@ -37,6 +44,15 @@ export class LandingPage {
   }
    gotoAsync(){
        this.navCtrl.push(AsynPage)
+  }
+
+  getAllCso(){
+    const that = this;
+    this.entityProvider.getCso().subscribe(res => {
+      if(res){
+        that.csoProvider.listOfCso = res.csoes;
+      }
+    });
   }
 
 }

@@ -48,7 +48,6 @@ export class DisplayListOfAssessmentPage {
     });
     loader.present();
     this.csoApi.getAssessment().subscribe(res => {
-      debugger
       if(res){
         this.DisplayAssessment = res.assessments
       }

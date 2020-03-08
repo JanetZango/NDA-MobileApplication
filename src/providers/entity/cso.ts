@@ -91,8 +91,9 @@ export class EntityProvider {
    * @param assessment 
    */
   public saveAssessment(assessment): Observable <any> {
-    const url = `${this.url}/assessment`;
-    return this.http.post(url,assessment,httpOptions)
+    const assessmentObj = JSON.parse(assessment);
+    const url = `${this.url}/api/assessment/create`;
+    return this.http.post(url,assessmentObj,httpOptions)
       .pipe(catchError(this.handleError(<any>("saveAssessment"))));
   }
 

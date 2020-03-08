@@ -229,7 +229,6 @@ export class AddCapacityPage {
   // ** search by name
   displayCsoList() {
     this.entityProvider.getCso().subscribe(res => {
-      debugger
       if (res) {
         this.DisplayCso = res.csoes  
         this.storeNames();

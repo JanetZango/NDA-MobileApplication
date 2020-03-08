@@ -107,7 +107,6 @@ export class DisplayListOfCsoPage implements OnInit{
    * @param cso 
    */
   viewMore(cso) {
-    debugger
     this.navCtrl.push(ViewcsodetailsPage, { orgObject: cso});
   }
 

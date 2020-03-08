@@ -6,12 +6,12 @@
   </div>
   <h3>Add Assessment</h3>
  <form [formGroup]="authForm" #assessment="ngForm"  (ngSubmit)="addAssessment(assessment)"> 
-    <ion-input placeholder="Name Of Cso" [(ngModel)]="cso_name"  formControlName="cso_name"  type="text" class="user-input" id="anim1"
+    <ion-input placeholder="Name Of Cso" [(ngModel)]="name_of_cso"  formControlName="name_of_cso"  type="text" class="user-input" id="anim1"
     (input)="getItems($event)" ngModel ></ion-input>
     <!-- <span ng-show="authForm.cso_name.$touched && authForm.cso_name.$invalid">The name is required.</span> -->
       <div id="results">
         <ion-item no-lines *ngFor="let item of items; let i=index" for="site-search" (click)="openMarkerInfo(item,assessment)">
-          <p>{{item.cso_name}}</p>
+          <p>{{item.name_of_cso}}</p>
         </ion-item>
       </div>
       <div class="Contacts">
@@ -25,27 +25,11 @@
       </div>
       <ion-item id="item">
         <ion-label> Assessment Type</ion-label>
-        <ion-select [(ngModel)]="assessment_type_id" (ionChange)="AssessmentQuestions()" formControlName="assessment_type_id" ngModel>
-          <ion-option value="1">CSO Mobilisation Needs Assessment Form</ion-option>
-          <ion-option value="2" disabled>Formalisation Needs Assessment</ion-option>
-          <ion-option value="3" disabled>Registration and Compliance</ion-option>
-          <ion-option value="4" disabled>Community Development</ion-option>
-          <ion-option value="5" disabled>Workplace Conflict</ion-option>
-          <ion-option value="6" disabled>Financial Management Needs Assessment
+        <ion-select [(ngModel)]="assessment_type_guid" (ionChange)="AssessmentQuestions($event)" formControlName="assessment_type_guid" ngModel>
+          <ion-option *ngFor="let assessmenttype of assessmentTypeArr" [value]="assessmenttype.guid" 
+          [disabled]="assessmenttype.guid !== 'b564ecdb-6e0a-4903-89fc-c9c8f72b0fa8'">
+            {{assessmenttype.title}}
           </ion-option>
-          <ion-option value="7" disabled>Capacity Building Governanace Needs
-            Assessment</ion-option>
-          <ion-option value="8" disabled>Capacity Building
-            Legislative
-            Registration and Governanace</ion-option>
-          <ion-option value="9" disabled>Organisational Management and Human
-            Resource Nedds</ion-option>
-          <ion-option value="10" disabled>Project Management Needs</ion-option>
-          <ion-option value="11" disabled>Resource Mobilisation and Sustainability
-          </ion-option>
-          <ion-option value="12" disabled>Networking and External Relations</ion-option>
-          <ion-option value="13" disabled>Grant Funding and Resource Needs</ion-option>
-          <ion-option value="14" disabled>Linkage for Sustainability Needs</ion-option>
         </ion-select>
       </ion-item>
 
@@ -53,12 +37,12 @@
     <div class="Qcard" >
           <h2>Section One</h2>
           <b>Institutional Arrangement</b>
-          <div *ngFor="let assessmentAnswer of assessmentAnswerArr ; let i = index">
-            <p>{{i+1}}.{{assessmentAnswer.question}}</p>
-            <ion-list radio-group formControlName="answerQnA">
-              <ion-item id="item2" *ngFor="let answers of assessmentAnswer.answerlist ; let j = index">
+          <div *ngFor="let assessmentAnswer of assessmentQuestionAnswerArr ; let i = index">
+            <p>{{i+1}}.{{assessmentAnswer.title}}</p>
+            <ion-list radio-group>
+              <ion-item id="item2" *ngFor="let answers of assessmentAnswer.answers ; let j = index">
                 <ion-label id="label">{{answers.answer}}</ion-label>
-                <ion-radio (ionSelect)="selectRad(answers)" value="{{answers.id}}" ></ion-radio>
+                <ion-radio (ionSelect)="selectRad(answers)" value="{{answers.guid}}" ></ion-radio>
               </ion-item>
             </ion-list>
           </div>

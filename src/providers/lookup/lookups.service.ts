@@ -5,17 +5,13 @@ import { catchError } from 'rxjs/operators';
 import { Observable } from 'rxjs/Observable';
 
 
-
-
-
-
 @Injectable()
 export class LookUpService {
 
     // look up data files.
     private AssessementAnswer = "../../assets/lookup_database/assessment_answer.json";
-    private AssessementQuestion = "../../assets/lookup_database/asseement_question.json"
-    private AssessementType = "../../assets/lookup_database/cso_tra_dbo_lkp_assessment_type.json";
+    private AssessementQuestion = "../../assets/lookup_database/asssessment_question.json"
+    private AssessementType = "../../assets/lookup_database/assessment_type.json";
     private AssessementTypeSection = "../../assets/lookup_database/assessment_type_section.json";
     private CapacityBuildingType = "../../assets/lookup_database/capacity_building_type.json";
     private CsoSector = "../../assets/lookup_database/cso_sector.json";
@@ -26,6 +22,7 @@ export class LookUpService {
     private PartnerType = "../../assets/lookup_database/cso_tra_dbo_lkp_partner_type.json";
     private Province = "../../assets/lookup_database/province.json";
     private Mobilisation ="../../assets/lookup_database/mobilisation_method.json";
+    private QuestionAnswer = "../../assets/lookup_database/questions_and_answers.json"
 
     constructor(
         public http: HttpClient
@@ -86,7 +83,6 @@ export class LookUpService {
     }
 
     public getAssessmentQuestion(): Observable<any>{
-
         return this.http.get(this.AssessementQuestion)
         .pipe(catchError(this.handleError(<any>("getAssessmentQuestion"))));
     }
@@ -94,6 +90,11 @@ export class LookUpService {
     public getMobilisationMethod(): Observable<any>{
         return this.http.get(this.Mobilisation)
         .pipe(catchError(this.handleError(<any>("getMobilisationMethod"))));
+    }
+
+    public getQuestionAnswer(): Observable<any>{
+        return this.http.get(this.QuestionAnswer)
+        .pipe(catchError(this.handleError(<any>("getQuestionAnswer"))));
     }
 
     /**

@@ -48,7 +48,6 @@ export class DisplayListOfCapacityPage implements OnInit {
     });
     loader.present();
     this.csoApi.getCapacityBuilding().subscribe(res => {
-      debugger
       if(res){
         this.DisplayCapacity = res.capacity_buildings
       }
