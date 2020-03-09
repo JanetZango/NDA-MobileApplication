@@ -1,65 +1,47 @@
 [
   {
-    "guid": "bd5f6ba7-1e4c-4d12-a104-61affafa455b",
-    "origin_id": 1,
+    "guid": "f016ce12-b62c-4e57-a869-d4a8d34418e5",
     "title": "NPO",
-    "description": "Non-Profit organisation ",
-    "created_at": "2020-03-04 09:18:37.140125"
+    "description": "Non-Profit organisation "
   },
   {
-    "guid": "9d0ec0f8-f3fb-4d4e-a944-4ce6e1971188",
-    "origin_id": 2,
+    "guid": "48a68eca-82b7-4596-b0fe-4ee05b9f17a2",
     "title": "CBO",
-    "description": "Community based organisation ",
-    "created_at": "2020-03-04 09:18:37.159656"
+    "description": "Community based organisation "
   },
   {
-    "guid": "6543a109-eda6-4c2e-89d5-f9a3b320f0cb",
-    "origin_id": 3,
+    "guid": "99e9a390-f983-46d2-8e20-97844384d163",
     "title": "FBO",
-    "description": "Faith based organisation ",
-    "created_at": "2020-03-04 09:18:37.165750"
+    "description": "Faith based organisation "
   },
   {
-    "guid": "919507eb-761b-48b3-89d3-d92500ef1a23",
-    "origin_id": 4,
+    "guid": "a36c3221-07ac-4a2c-ac38-ba913e1083dc",
     "title": "ECD Centre",
-    "description": "Early childhood development",
-    "created_at": "2020-03-04 09:18:37.172916"
+    "description": "Early childhood development"
   },
   {
-    "guid": "045c7b77-ba25-4f25-b382-2a596340a540",
-    "origin_id": 5,
+    "guid": "45bc992e-6da5-4f20-a037-0df095dd22ec",
     "title": "Cooperative",
-    "description": "Cooperative",
-    "created_at": "2020-03-04 09:18:37.180590"
+    "description": "Cooperative"
   },
   {
-    "guid": "f3dfc5c3-7fe4-4767-a1f3-c4e17132ccf9",
-    "origin_id": 6,
+    "guid": "1a33f29b-a4ec-41ab-a61e-85f2e7f69772",
     "title": "Community structure",
-    "description": "Community structure",
-    "created_at": "2020-03-04 09:18:37.188231"
+    "description": "Community structure"
   },
   {
-    "guid": "744e9bd9-9ecc-46b6-abaa-fb92d368bce5",
-    "origin_id": 7,
+    "guid": "7c017a43-0caa-4c67-abc6-01a084488e23",
     "title": "Company/CC",
-    "description": "Company/CC",
-    "created_at": "2020-03-04 09:18:37.196422"
+    "description": "Company/CC"
   },
   {
-    "guid": "07873913-32d8-4974-9a41-2cd76400d809",
-    "origin_id": 8,
+    "guid": "06b7eb44-d3a0-46c9-94c4-70cc4c6e6455",
     "title": "DPO",
-    "description": "Disability people organisation ",
-    "created_at": "2020-03-04 09:18:37.203342"
+    "description": "Disability people organisation "
   },
   {
-    "guid": "8e9f8218-7795-420e-9c54-a9dfb04d1dda",
-    "origin_id": 10,
+    "guid": "ca0c2d9e-d6c9-4ebe-97de-b58bee9fabb7",
     "title": "Sport",
-    "description": "SPort",
-    "created_at": "2020-03-04 09:18:37.210525"
+    "description": "SPort"
   }
 ]

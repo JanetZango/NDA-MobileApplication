@@ -1,65 +1,47 @@
 [
   {
-    "guid": "f75cd6ac-f683-4825-b1af-4e9172ce35df",
-    "origin_id": 1,
+    "guid": "3087fd28-2af4-4fc2-91af-6d1088fb4547",
     "title": "Eastern Cape",
-    "code": "EC",
-    "created_at": "2020-03-04 09:18:27.299850"
+    "code": "EC"
   },
   {
-    "guid": "26a52ce9-a92b-4720-a211-87b738ff3c66",
-    "origin_id": 2,
+    "guid": "631bfb47-eabf-4303-bb5d-74f87c24fd2d",
     "title": "Free State",
-    "code": "FS",
-    "created_at": "2020-03-04 09:18:27.317993"
+    "code": "FS"
   },
   {
-    "guid": "c38ff723-5c6d-442d-b669-b70b50590d93",
-    "origin_id": 3,
+    "guid": "d2560d7c-b5af-4903-9517-08f154c36297",
     "title": "Gauteng",
-    "code": "GT",
-    "created_at": "2020-03-04 09:18:27.325748"
+    "code": "GT"
   },
   {
-    "guid": "7a15dab4-1374-4d5d-8079-f1bb73cae8e7",
-    "origin_id": 4,
+    "guid": "91ced8c4-a513-4d05-9d23-fe7b6731dcfa",
     "title": "Kwazulu Natal",
-    "code": "KZN",
-    "created_at": "2020-03-04 09:18:27.332748"
+    "code": "KZN"
   },
   {
-    "guid": "3b5001b0-9d38-4a10-b8da-7830b979267a",
-    "origin_id": 5,
+    "guid": "928e1bc5-149c-4ad1-949a-4b361436d382",
     "title": "Limpopo",
-    "code": "LIM",
-    "created_at": "2020-03-04 09:18:27.339706"
+    "code": "LIM"
   },
   {
-    "guid": "97b16635-e908-4bc3-bfa3-a8d44364ca09",
-    "origin_id": 6,
+    "guid": "c07a458f-77d2-4648-9ce5-11daca2e255f",
     "title": "Mpumalanga",
-    "code": "MP",
-    "created_at": "2020-03-04 09:18:27.346039"
+    "code": "MP"
   },
   {
-    "guid": "5ec09448-6077-4549-869a-e315816a7c07",
-    "origin_id": 7,
+    "guid": "2d2231f8-a385-4ec8-a1a4-edd596e47e1c",
     "title": "Northern Cape",
-    "code": "NC",
-    "created_at": "2020-03-04 09:18:27.353499"
+    "code": "NC"
   },
   {
-    "guid": "869f9c04-7137-4ed4-9350-221524ae4054",
-    "origin_id": 8,
+    "guid": "4458bd34-0b51-4c01-b09e-c413910d32b1",
     "title": "North West",
-    "code": "NW",
-    "created_at": "2020-03-04 09:18:27.360137"
+    "code": "NW"
   },
   {
-    "guid": "a41d0d83-f485-404c-af0d-ffba592ede5c",
-    "origin_id": 9,
+    "guid": "87b2ebcc-60f0-4a82-96a9-458f16b45ba0",
     "title": "Western Cape",
-    "code": "WC",
-    "created_at": "2020-03-04 09:18:27.366918"
+    "code": "WC"
   }
 ]

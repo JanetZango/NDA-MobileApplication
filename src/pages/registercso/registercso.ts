@@ -66,8 +66,8 @@ export class RegistercsoPage {
 
       this.authForm = this.fb.group({  
         'name_of_cso': ['', Validators.compose([Validators.required])],
-        // 'cso_mobilisation_method_id': ['', Validators.compose([Validators.required])],
-        // 'Mobilisation_date': ['', Validators.compose([Validators.required])],
+        'cso_mobilisation_method_guid': ['', Validators.compose([Validators.required])],
+        'mobilisation_date': ['', Validators.compose([Validators.required])],
         'physical_address': ['', Validators.compose([Validators.required])],
         'cso_type_guid': ['', Validators.compose([Validators.required])],
         'cso_sector_guid': ['', Validators.compose([Validators.required])],
@@ -227,7 +227,7 @@ export class RegistercsoPage {
       // exit the method when the condition are true
       return;
     }
-
+    debugger
     this.entityProvider.saveCso(cso.value).subscribe(res => {
       if (typeof (res) != 'undefined') {
         const alert = this.alertCtrl.create({

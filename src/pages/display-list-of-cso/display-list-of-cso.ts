@@ -22,6 +22,8 @@ export class DisplayListOfCsoPage implements OnInit{
 //variables
   cso;
   DisplayCso = new Array();
+  dataDisplayCso = new Array();
+
   items;
   filteedRe;
   name;
@@ -54,15 +56,10 @@ export class DisplayListOfCsoPage implements OnInit{
     });
     loader.present();
     this.csoApi.getCso().subscribe(res => {
+      debugger
       if(res){
         this.DisplayCso = res.csoes
-        console.log(this.DisplayCso)
-        this.storeNames();
-        loader.dismiss()
-        for(var x =0; x < this.DisplayCso.length;x ++){
-          this.storeOrgNames(this.DisplayCso[x].name_of_cso)
-           
-        }
+        this.dataDisplayCso  = this.DisplayCso;
       }
       loader.dismiss();
     })
@@ -77,21 +74,16 @@ export class DisplayListOfCsoPage implements OnInit{
   }
 
   getItems(ev: any) {
-    this.initializeItems();
-    // this.searchlist = true
-    // set val to the value of the searchbar
     const val = ev.target.value;
-    // if the value is an empty string don't filter the items
-    if (val && val.trim() != '') {
-      this.items = this.items.filter((item) => {
-        return (item.toLowerCase().indexOf(val.toLowerCase()) > -1);
-      })
-      let searchlist = document.getElementsByClassName('searchitem') as HTMLCollectionOf<HTMLElement>;
-      //searchlist[0].style.display = 'block';
+
+    if (val === '') {
+      this.dataDisplayCso = [];
+      return;
     }
-    else {
-      this.items = []
-    }
+    debugger
+     this.dataDisplayCso = this.DisplayCso.filter((x) => {
+      return (x.name_of_cso.toLowerCase().indexOf(val.toLowerCase()) > -1);
+    })
   }
 
   initializeItems() {
@@ -119,4 +111,6 @@ export class DisplayListOfCsoPage implements OnInit{
       }
     }
   }
+
+
 }

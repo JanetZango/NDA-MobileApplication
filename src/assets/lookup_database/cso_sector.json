@@ -1,93 +1,67 @@
 [
   {
-    "guid": "6453551a-e52b-4ceb-b20b-737931bf540c",
-    "origin_id": 1,
+    "guid": "3164f039-ae75-42af-9672-a7d408de2588",
     "title": "Education",
-    "description": null,
-    "created_at": "2020-03-04 09:18:46.259892"
+    "description": null
   },
   {
-    "guid": "8a632941-f9db-4b14-9427-6016eec4cfae",
-    "origin_id": 2,
+    "guid": "9fafced6-1f3d-4666-9a7a-61ffc423710c",
     "title": "Health Care",
-    "description": null,
-    "created_at": "2020-03-04 09:18:46.275652"
+    "description": null
   },
   {
-    "guid": "b3c69685-aa39-4fe7-96a1-bfee885e6405",
-    "origin_id": 3,
+    "guid": "dcdc2168-95c5-4c46-a796-f7297fda32cb",
     "title": "Older Person/ Senior Citizens",
-    "description": null,
-    "created_at": "2020-03-04 09:18:46.280724"
+    "description": null
   },
   {
-    "guid": "81314bdb-413e-405c-a29b-ae7e0fc0ca59",
-    "origin_id": 4,
+    "guid": "3945fa26-2374-42bd-81fc-5b97794e4d0e",
     "title": "Youth",
-    "description": null,
-    "created_at": "2020-03-04 09:18:46.285835"
+    "description": null
   },
   {
-    "guid": "fe6d10b5-a010-4ef2-96a0-6aa97299471b",
-    "origin_id": 5,
+    "guid": "b59753ef-a679-4dc3-aa0d-d8c07837ae88",
     "title": "Orphanage and Vulnerable Children (OVC)",
-    "description": null,
-    "created_at": "2020-03-04 09:18:46.291178"
+    "description": null
   },
   {
-    "guid": "3d2f6970-93db-454f-b281-23d56488657f",
-    "origin_id": 6,
+    "guid": "5d3dbbea-4a6b-44d4-8f57-7ae9e0d50228",
     "title": "Gender",
-    "description": null,
-    "created_at": "2020-03-04 09:18:46.296488"
+    "description": null
   },
   {
-    "guid": "0a619d6d-a868-45c1-ac1c-a80d9c93fb69",
-    "origin_id": 7,
+    "guid": "df7d7854-28a8-4239-b8fb-1517fbb8da9d",
     "title": "Human Rights",
-    "description": null,
-    "created_at": "2020-03-04 09:18:46.301760"
+    "description": null
   },
   {
-    "guid": "0115748c-d6b0-4b36-82a6-5781455da6f2",
-    "origin_id": 8,
+    "guid": "cf41844e-335d-4cc0-b048-26dd2a800421",
     "title": "Environment",
-    "description": null,
-    "created_at": "2020-03-04 09:18:46.307607"
+    "description": null
   },
   {
-    "guid": "89ea4d6c-8145-4b42-aa54-f6e228584991",
-    "origin_id": 9,
+    "guid": "3dc6ef26-bc9a-4478-8f85-7a8cceba273b",
     "title": "Trade",
-    "description": null,
-    "created_at": "2020-03-04 09:18:46.315359"
+    "description": null
   },
   {
-    "guid": "15e6167a-1666-4a92-9994-1d17aeef50af",
-    "origin_id": 10,
+    "guid": "a08583ba-2af8-4d25-b693-602b39d80e69",
     "title": "Poverty Alleviation",
-    "description": null,
-    "created_at": "2020-03-04 09:18:46.321604"
+    "description": null
   },
   {
-    "guid": "9ad82a83-4531-4c17-ac96-64360c5dd107",
-    "origin_id": 11,
+    "guid": "4f508729-e0dd-4300-8191-7764568bd71f",
     "title": "Community Safety",
-    "description": null,
-    "created_at": "2020-03-04 09:18:46.327809"
+    "description": null
   },
   {
-    "guid": "9af2212f-8f83-45fa-9442-a4894ba4a7ca",
-    "origin_id": 12,
+    "guid": "4f3c117d-7080-4baf-9812-54f8fe5ee91f",
     "title": "Communal Property Association (CPA)",
-    "description": "Communal Property Association (CPA)",
-    "created_at": "2020-03-04 09:18:46.333405"
+    "description": "Communal Property Association (CPA)"
   },
   {
-    "guid": "f6b37839-b24d-4a57-a8c1-e2449c032bec",
-    "origin_id": 13,
+    "guid": "8eaf5fac-be9f-45c0-b47f-1162fec305f7",
     "title": "Agriculture",
-    "description": "Animal Husbandry",
-    "created_at": "2020-03-04 09:18:46.340283"
+    "description": "Animal Husbandry"
   }
 ]
