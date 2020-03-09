@@ -35,12 +35,12 @@ export class ViewcsodetailsPage {
     this.csoObj = this.navParams.get('orgObject');
 
 
-    // this.cso_sector = this.viewCSoArr[0].cso_sector.title
-    // this.cso_type = this.viewCSoArr[0].cso_type.title
-    // this.district = this.viewCSoArr[0].district.title
-    // this.municipality = this.viewCSoArr[0].municipality.title
-    // this.province = this.viewCSoArr[0].province.title
-    // this.cso_name = this.viewCSoArr[0].name_of_cso
+    this.cso_sector = this.viewCSoArr[0].cso_sector.title
+    this.cso_type = this.viewCSoArr[0].cso_type.title
+    this.district = this.viewCSoArr[0].district.title
+    this.municipality = this.viewCSoArr[0].municipality.title
+    this.province = this.viewCSoArr[0].province.title
+    this.cso_name = this.viewCSoArr[0].name_of_cso
 
   }
 
