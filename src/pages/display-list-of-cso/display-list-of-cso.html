@@ -25,7 +25,7 @@
   </ion-list>
   <h3 style="text-align: center;">Manage Mobilisation-CSO <br>Registration</h3>
   <div class="mainInfor">
-    <ion-card *ngFor="let a of DisplayCso">
+    <ion-card *ngFor="let a of dataDisplayCso">
       <div class="card" (click)="viewMore(a)">
         <p><b>Cso Name:</b>{{a.name_of_cso}}</p>
         <p><b>Cso Sector:</b>{{a.cso_sector.title}}</p>
