@@ -77,7 +77,7 @@ export class DisplayListOfCsoPage implements OnInit{
     const val = ev.target.value;
 
     if (val === '') {
-      this.dataDisplayCso = [];
+      this.dataDisplayCso = this.DisplayCso;
       return;
     }
     debugger
@@ -111,6 +111,4 @@ export class DisplayListOfCsoPage implements OnInit{
       }
     }
   }
-
-
 }
