@@ -64,15 +64,15 @@ export class AddCapacityPage {
   ) {
 
     this.authForm = this.fb.group({  
-      'cso_name': ['', Validators.compose([Validators.required])],
-      'capacity_building_type': ['', Validators.compose([Validators.required])],
-      'province': ['', Validators.compose([Validators.required])],
-      'district': ['', Validators.compose([Validators.required])],
-      'municipality': ['', Validators.compose([Validators.required])],
+      // 'cso_name': ['', Validators.compose([Validators.required])],
+      'capacity_building_type_guid': ['', Validators.compose([Validators.required])],
+      'province_guid': ['', Validators.compose([Validators.required])],
+      'district_guid': ['', Validators.compose([Validators.required])],
+      'municipality_guid': ['', Validators.compose([Validators.required])],
       'partner': ['', Validators.compose([Validators.required])],
       'venue': ['', Validators.compose([Validators.required])],
       'facilitator_name': ['', Validators.compose([Validators.required])],
-      'funding_source': ['', Validators.compose([Validators.required])],
+      'co_facilitator_name': ['', Validators.compose([Validators.required])],
       'collected_by': ['', Validators.compose([Validators.required])],
       'start_date': ['', Validators.compose([Validators.required])],
       'end_date': ['', Validators.compose([Validators.required])],

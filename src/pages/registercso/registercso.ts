@@ -65,20 +65,20 @@ export class RegistercsoPage {
       this.getMobilisationMethod();
 
       this.authForm = this.fb.group({  
-        'cso_name': ['', Validators.compose([Validators.required])],
-        'cso_mobilisation_method_id': ['', Validators.compose([Validators.required])],
-        'Mobilisation_date': ['', Validators.compose([Validators.required])],
+        'name_of_cso': ['', Validators.compose([Validators.required])],
+        // 'cso_mobilisation_method_id': ['', Validators.compose([Validators.required])],
+        // 'Mobilisation_date': ['', Validators.compose([Validators.required])],
         'physical_address': ['', Validators.compose([Validators.required])],
-        'cso_type_id': ['', Validators.compose([Validators.required])],
-        'cso_sector_id': ['', Validators.compose([Validators.required])],
-        'province_id': ['', Validators.compose([Validators.required])],
-        'district_id': ['', Validators.compose([Validators.required])],
-        'municipality_id': ['', Validators.compose([Validators.required])],
+        'cso_type_guid': ['', Validators.compose([Validators.required])],
+        'cso_sector_guid': ['', Validators.compose([Validators.required])],
+        'province_guid': ['', Validators.compose([Validators.required])],
+        'district_guid': ['', Validators.compose([Validators.required])],
+        'municipality_guid': ['', Validators.compose([Validators.required])],
         'ward_number': ['', Validators.compose([Validators.required])],
         'contact_person': ['', Validators.compose([Validators.required])],
         'contact_number': ['', Validators.compose([Validators.required])],
         'total_staff': ['', Validators.compose([Validators.required])],
-        'collected_by': ['', Validators.compose([Validators.required])]
+        'email_address': ['', Validators.compose([Validators.required])]
     });
   }
 
@@ -185,19 +185,18 @@ export class RegistercsoPage {
  */
   populateDistrict(proviceId: NgModel) {
     this.districtArr = this.districtArrData
-      .filter(x => x.province_id === proviceId);
-    console.log(this.districtArrData);
+    .filter(x => x.province_guid === proviceId);
+    // console.log(this.districtArrData);
   }
 
   /**
   * to populate the Municipality by select district id
   * @param districtId
   */
-  populateMunicipality(districtId: NgModel) {
-
+  populateMunicipality(districtId: NgModel) { 
     this.municipalityArr = this.municipalityArrData
-      .filter(m => m.district_id === districtId);
-    console.log(this.municipalityArr)
+    .filter(m => m.district_guid === districtId);
+    // console.log(this.municipalityArr)
   }
 
   /**
@@ -242,7 +241,7 @@ export class RegistercsoPage {
       else {
         const alert = this.alertCtrl.create({
           title: 'Oops!',
-          subTitle: 'Oops your information was not saved correctly!',
+          subTitle: 'Some of the information you entered is incorrectly!',
           buttons: ['OK']
         });
         alert.present();

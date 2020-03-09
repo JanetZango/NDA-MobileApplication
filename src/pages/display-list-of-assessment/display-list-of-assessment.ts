@@ -50,7 +50,10 @@ export class DisplayListOfAssessmentPage {
     this.csoApi.getAssessment().subscribe(res => {
       if(res){
         this.DisplayAssessment = res.assessments
+        console.log(this.DisplayAssessment[0].assessment_type.calculate_assessment_level)
+  
       }
+
       loader.dismiss();
     })
   }

@@ -56,12 +56,13 @@ export class DisplayListOfCsoPage implements OnInit{
     this.csoApi.getCso().subscribe(res => {
       if(res){
         this.DisplayCso = res.csoes
-        //this.storeNames();
-        //loader.dismiss()
-        // for(var x =0; x < this.DisplayCso.length;x ++){
-        //   this.storeOrgNames(this.DisplayCso[x].name_of_cso)
+        console.log(this.DisplayCso)
+        this.storeNames();
+        loader.dismiss()
+        for(var x =0; x < this.DisplayCso.length;x ++){
+          this.storeOrgNames(this.DisplayCso[x].name_of_cso)
            
-        // }
+        }
       }
       loader.dismiss();
     })
@@ -112,7 +113,7 @@ export class DisplayListOfCsoPage implements OnInit{
 
   viewSearched(name) {
     for (var x = 0; x < this.DisplayCso.length; x++) {
-      if (name == this.DisplayCso[x].cso_name) {
+      if (name == this.DisplayCso[x].name_of_cso) {
         this.navCtrl.push(ViewcsodetailsPage, { orgObject: this.DisplayCso[x] });
         break;
       }

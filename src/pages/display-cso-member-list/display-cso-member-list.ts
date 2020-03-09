@@ -5,6 +5,7 @@ import { LoadingController } from 'ionic-angular';
 import { ApiProvider } from '../../providers/api/api';
 import { EntityProvider } from '../../providers/entity/cso';
 import { ViewCsoMemberPage } from '../view-cso-member/view-cso-member';
+import { ViewcsodetailsPage } from '../viewcsodetails/viewcsodetails';
 /**
  * Generated class for the DisplayCsoMemberListPage page.
  *
@@ -38,6 +39,7 @@ export class DisplayCsoMemberListPage implements OnInit {
   ionViewDidLoad() {
     this.CsoDetailsArr.push(this.navParams.get('orgObject'));
     this.csoObj =this.navParams.get('orgObject');
+    console.log(this.csoObj)
     this.cso_uuid = this.CsoDetailsArr[0].cso_uuid
   }
 
@@ -54,6 +56,10 @@ export class DisplayCsoMemberListPage implements OnInit {
       }
     } 
   }
+
+  gotoLanding(){
+    this.navCtrl.pop();
+  }
   
   ngOnInit(){
        this.displayCsoList();
@@ -68,7 +74,8 @@ export class DisplayCsoMemberListPage implements OnInit {
       loader.present();
       this.csoApi.getCsoMember().subscribe(res => {
         if(res){
-          this.DisplayCsoMember = res.results
+          this.DisplayCsoMember = res.cso_members
+          console.log(this.DisplayCsoMember)
           loader.dismiss()
         }
       })

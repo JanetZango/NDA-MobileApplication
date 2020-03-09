@@ -35,8 +35,22 @@ export class LoginPage {
   verifyemail(form: NgForm) {
     this.authUser.verifyUser(form.value.email).subscribe(res => {
       console.log(res)
-      if (typeof (res) != 'undefined') {
+      if(typeof (res) == 'undefined'){
+        const alert = this.alertCtrl.create({
+          // title: 'Oops!',
+          subTitle: 'Please check your email address something seems to be wrong',
+          buttons: ['OK']
+        });
+        alert.present();
+      }
+      else if (typeof (res) != 'undefined') {
         this.navCtrl.push(AddOtpPage);
+        const alert = this.alertCtrl.create({
+          // title: 'Oops!',
+          subTitle: 'Please check your email address for the OTP code',
+          buttons: ['OK']
+        });
+        alert.present();
       }
       else if (form.value.email === ''){
         const alert = this.alertCtrl.create({

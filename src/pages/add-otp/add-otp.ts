@@ -23,19 +23,27 @@ export class AddOtpPage {
     public navParams: NavParams,
     public alertCtrl: AlertController,
     public authUser: ApiProvider
-    ) {
+  ) {
   }
 
   ionViewDidLoad() {
     //console.log('ionViewDidLoad AddOtpPage');
   }
-  
-  login(otpf: NgForm){
-     this.authUser.verifyOpt(otpf.value.otp).subscribe(res =>{
-      if (typeof (res) != 'undefined') {
+
+  login(otpf: NgForm) {
+    this.authUser.verifyOpt(otpf.value.otp).subscribe(res => {
+      if(typeof (res) == 'undefined'){
+        const alert = this.alertCtrl.create({
+          // title: 'Oops!',
+          subTitle: 'Please check your OTP code something seems to be wrong',
+          buttons: ['OK']
+        });
+        alert.present();
+      }
+      else if (typeof (res) != 'undefined') {
         this.navCtrl.setRoot(LandingPage);
       }
-      else if (otpf.value.otp === ''){
+      else if (otpf.value.otp === '') {
         const alert = this.alertCtrl.create({
           title: 'Oops!',
           subTitle: 'Please enter your otp code!',

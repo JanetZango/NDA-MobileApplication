@@ -94,7 +94,7 @@ export class AddCsoMemberPage {
 
   addCsoMember(csoMember: NgForm) {
     this.csoMember = csoMember.value
-    this.csoMember.cso_uuid = this.cso_uuid;
+    this.csoMember.cso_guid = this.cso_uuid;
     // this.validateID();
     this.phonenumberValidatinservice();
 
