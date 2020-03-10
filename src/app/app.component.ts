@@ -10,14 +10,15 @@ import { EntityProvider } from '../providers/entity/cso';
 import { DataProvider } from '../providers/dataproviders/dataprovider';
 import { timer } from 'rxjs/observable/timer';
 import { LoginPage } from '../pages/login/login';
+import { RegistercsoPage } from '../pages/registercso/registercso';
 
 
 @Component({
   templateUrl: 'app.html'
 })
 export class MyApp {
-  // rootPage:any = LandingPage;
   rootPage:any = LoginPage;
+  // rootPage:any = RegistercsoPage;
   showSplash = true;
   constructor(platform: Platform, 
     statusBar: StatusBar, 

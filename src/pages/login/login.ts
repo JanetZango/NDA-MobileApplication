@@ -35,10 +35,18 @@ export class LoginPage {
   verifyemail(form: NgForm) {
     this.authUser.verifyUser(form.value.email).subscribe(res => {
       console.log(res)
-      if(typeof (res) == 'undefined'){
+       if (form.value.email === ''){
         const alert = this.alertCtrl.create({
-          // title: 'Oops!',
-          subTitle: 'Please check your email address something seems to be wrong',
+          title: 'Oops',
+          subTitle: 'You did not enter your email address please enter your valid email address',
+          buttons: ['OK']
+        });
+        alert.present();
+      }
+      else if(typeof (res) == 'undefined'){
+        const alert = this.alertCtrl.create({
+          title: 'Incorrect email',
+          subTitle: 'You have entered an invalid email address',
           buttons: ['OK']
         });
         alert.present();
@@ -51,16 +59,7 @@ export class LoginPage {
           buttons: ['OK']
         });
         alert.present();
-      }
-      else if (form.value.email === ''){
-        const alert = this.alertCtrl.create({
-          title: 'Oops!',
-          subTitle: 'Please enter your email address!',
-          buttons: ['OK']
-        });
-        alert.present();
-      }
-     
+      }    
     },
     (err) => {console.log(err)});
     

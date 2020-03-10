@@ -1,8 +1,8 @@
 page-registercso {
-     .content{
-        background-color: #fefefe;
-        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4' viewBox='0 0 4 4'%3E%3Cpath fill='%2300919e' fill-opacity='0.4' d='M1 3h1v1H1V3zm2-2h1v1H3V1z'%3E%3C/path%3E%3C/svg%3E");
-     }
+    //  .content{
+    //     background-color: #fefefe;
+    //     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4' viewBox='0 0 4 4'%3E%3Cpath fill='%2300919e' fill-opacity='0.4' d='M1 3h1v1H1V3zm2-2h1v1H3V1z'%3E%3C/path%3E%3C/svg%3E");
+    //  }
     .move{
         height:100%;
         // margin-top:60px;
@@ -15,12 +15,41 @@ page-registercso {
             font-size: 2em;
             color:black;
             font-family: 'ZCOOL XiaoWei', serif;
+           
+        }
+        p{
+            color: rgb(199, 199, 199);
         }
 
     }
     .btn{
         text-align: left;
     
+    }
+    .list{
+        position: relative;
+        top: 50px;
+        // margin:10px auto;
+    }
+    .item{
+        border-radius: 50px;
+        width:80%;
+        margin:10px auto;
+        padding-left:20px;
+        // background-color:  transparent;
+        border:2px solid rgb(199, 199, 199);
+        color: black;
+        ::-webkit-input-placeholder{
+            color: rgb(199, 199, 199);
+          
+        }
+        ion-icon{
+            font-size:2em;
+            border-radius: 100px;
+            // border:2px solid #00919E;
+            // background-color: #00919E;
+            color:#00919E
+        }
     }
     .btnSign{
         height: 40px;
@@ -39,12 +68,13 @@ page-registercso {
     }
     .Contacts {
         width: calc(80% + 10px);
-        margin: 10px auto;
+        margin: 0px auto;
+        margin-left:2px;
         // display: flex;
     
         // border: 1px solid red;
         #input-field {
-          margin: 5px;
+        //   margin: 5px;
         //   width: 50% !important;
           background-color:  white;
           width:100%;  
@@ -86,7 +116,8 @@ page-registercso {
         border-radius: 100px;
         margin:15px auto;
         color:black;
-        padding-left: 10px;
+        padding-top:5px;
+        padding-left: 20px;
         border-radius: 100px;
         box-shadow: 0px 15px 20px -15px #000; 
     }
@@ -105,7 +136,7 @@ page-registercso {
         margin-top:35px;
         
         button{
-            background-color:  #00919E;
+            background-color:   linear-gradient(135deg, #DAA520,rgb(4, 86, 93),#00919E); ;
             color:white;
         }
     }
@@ -138,18 +169,20 @@ page-registercso {
         text-align: center;
     }
 
-    #item{
-        // border:1px solid #5C861E;
-        width:90%;
-        margin:15px auto;
-        background-color: white;
-        border-radius: 100px;
-        box-shadow: 0px 15px 20px -15px #000;
-    }
+    // #item{
+    //     // border:1px solid #5C861E;
+    //     width:90%;
+    //     padding-left:20px;
+    //     margin:15px auto;
+    //     background-color: white;
+    //     border-radius: 100px;
+    //     box-shadow: 0px 15px 20px -15px #000;
+    // }
     #item2{
         // border:1px solid #5C861E;
-        width:652px;
-        margin:15px auto;
+        width:680px;
+        // margin:15px auto;
+        // margin-right:10px;
         background-color: white;
         border-radius: 100px;
         box-shadow: 0px 15px 20px -15px #000;

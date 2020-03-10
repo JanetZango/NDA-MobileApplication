@@ -5,91 +5,136 @@
         <ion-icon ios="ios-arrow-back" md="md-arrow-back"></ion-icon>
       </button>
     </div>
-    <h3>Add CSO</h3>
+    <h3><b>Add CSO</b></h3>
+    <p>Please complete the form below to register a CSO</p>
   </div>
-  <form [formGroup]="authForm" #cso="ngForm" (ngSubmit)="addCso(cso)" >
-      <ion-input placeholder="Name of Cso" name="name_of_cso" [(ngModel)]="name_of_cso" formControlName="name_of_cso" ngModel type="text" class="user-input"
-        id="anim1"></ion-input>
-    <div id="results">
-      <ion-item no-lines *ngFor="let item of items; let i=index" (click)="openMarkerInfo(item)">
-        <p>{{item}}</p>
+  <form [formGroup]="authForm" #cso="ngForm" (ngSubmit)="addCso(cso)">
+    <div class="list">
+      <ion-item  class="item">
+        <ion-label>
+          <ion-icon name="person"></ion-icon>
+        </ion-label>
+        <ion-input placeholder="Name of Cso" name="name_of_cso" [(ngModel)]="name_of_cso" formControlName="name_of_cso"
+          ngModel type="text"></ion-input>
       </ion-item>
-    </div>
-    <ion-item id="item">
-      <ion-label> Mobilisation Method</ion-label>
-      <ion-select [(ngModel)]="cso_mobilisation_method_guid" formControlName="cso_mobilisation_method_guid" ngModel>
-        <ion-option *ngFor="let mobi of mobilisationArr" [value]="mobi.guid">{{mobi.title}}
-        </ion-option>
-      </ion-select>
-    </ion-item>
-    <div class="Contacts">
-      <ion-label>Mobilisation Date</ion-label>
-      <ion-item id="item2">
-        <ion-label>MM DD YY</ion-label>
-        <ion-datetime displayFormat="MMM DD YYYY" placeholder="Select Date" [(ngModel)]="mobilisation_date" 
-        formControlName="mobilisation_date" ngModel required></ion-datetime>
-        <!-- <span style="color: red" *ngIf="!form.mobilisation_date.valid && form.mobilisation_date.touched" class="help-block">Please enter your email</span> -->
-      </ion-item> 
-    </div>
-    <ion-input placeholder="Physical_Address" type="text" class="user-input" [(ngModel)]="physical_address" id="anim1"
-    formControlName="physical_address" ngModel>
-    </ion-input>
-    <ion-item id="item">
-      <ion-label> Select Cso_type</ion-label>
-      <ion-select [(ngModel)]="cso_type_guid" formControlName="cso_type_guid" ngModel>
-        <ion-option *ngFor="let a of csotypeArr" [value]="a.guid">{{a.title}}
-        </ion-option>
-      </ion-select>
-    </ion-item>
-    <ion-item id="item">
-      <ion-label> Select Cso_sector</ion-label>
-      <ion-select [(ngModel)]="cso_sector_guid" formControlName="cso_sector_guid" ngModel>
-        <ion-option *ngFor="let a of csosectorArr" [value]="a.guid">{{a.title}}
-        </ion-option>
-      </ion-select>
-    </ion-item>
-    <ion-item id="item">
-      <ion-label> Select Province</ion-label>
-      <ion-select [(ngModel)]="province_guid" ngModel formControlName="province_guid" required
-        (ionChange)="populateDistrict(province_guid)">
-        <ion-option *ngFor="let a of provinceArr" [value]="a.guid">{{a.title}}
-        </ion-option>
-      </ion-select>
-    </ion-item>
-    <ion-item id="item">
-      <ion-label> Select District</ion-label>
-      <ion-select [(ngModel)]="district_guid" ngModel formControlName="district_guid" required
-        (ionChange)="populateMunicipality(district_guid)">
-        <ion-option *ngFor="let district of districtArr" [value]="district.guid">{{district.title}}
-        </ion-option>
-      </ion-select>
-    </ion-item>
-    <ion-item id="item">
-      <ion-label> Select Municipality</ion-label>
-      <ion-select [(ngModel)]="municipality_guid" required ngModel formControlName="municipality_guid">
-        <ion-option *ngFor="let municipality of municipalityArr" [value]="municipality.guid">
-          {{municipality.title}}
-        </ion-option>
-      </ion-select>
-    </ion-item>
-    <ion-input placeholder="Ward_number" type="number" class="user-input" [(ngModel)]="ward_number" id="anim1"
-    formControlName="ward_number" ngModel>
-    </ion-input>
-    <ion-input placeholder="Contact_Person" type="text" class="user-input" [(ngModel)]="contact_person" id="anim1"
-    formControlName="contact_person" ngModel>
-    </ion-input>
-    <ion-input placeholder="Contact_Number" type="tel" 
-      class="user-input" [(ngModel)]="contact_number" id="anim1" formControlName="contact_number" ngModel>
-    </ion-input>
-    <ion-input placeholder="Total_Staff" type="number" class="user-input" [(ngModel)]="total_staff" id="anim1"
-    formControlName="total_staff" ngModel>
-    </ion-input>
-    <ion-input placeholder="Enter email address" [(ngModel)]="email_address" type="text" class="user-input" id="anim1"
-    formControlName="email_address" ngModel></ion-input>
+      <ion-item class="item">
+        <ion-label>
+          <ion-icon name="logo-dropbox"></ion-icon>
+        </ion-label>
+   
+        <ion-select placeholder="Select Mobilisation Method" [(ngModel)]="cso_mobilisation_method_guid" formControlName="cso_mobilisation_method_guid"  ngModel>
+          <ion-option *ngFor="let mobi of mobilisationArr" [value]="mobi.guid">{{mobi.title}}
+          </ion-option>
+        </ion-select>
+      </ion-item>
+      <ion-item class="item">
+        <ion-label > <ion-icon name="calendar"></ion-icon></ion-label>
+        <ion-datetime displayFormat="MMM DD YYYY"  [(ngModel)]="mobilisation_date" placeholder="Select Mobilisation Date"
+          formControlName="mobilisation_date" ngModel required></ion-datetime>
+      </ion-item>
+          <ion-item class="item">
+          <ion-label>
+            <ion-icon name="home"></ion-icon>
+          </ion-label>
+        <ion-input placeholder="Physical_Address" type="text" class="user-input" [(ngModel)]="physical_address"
+          formControlName="physical_address" ngModel>
+        </ion-input>
+      </ion-item>
+      <ion-item class="item">
+        <ion-label>
+          <ion-icon name="logo-dropbox"></ion-icon>
+        </ion-label>
+        <ion-select [(ngModel)]="cso_type_guid" formControlName="cso_type_guid" ngModel placeholder="Select Mobilisation Date">
+          <ion-option *ngFor="let a of csotypeArr" [value]="a.guid">{{a.title}}
+          </ion-option>
+        </ion-select>
+      </ion-item>
+      <ion-item class="item">
+        <ion-label>
+          <ion-icon name="logo-dropbox"></ion-icon>
+        </ion-label>
+        <ion-select [(ngModel)]="cso_sector_guid" formControlName="cso_sector_guid" ngModel placeholder="Select Cso Type">
+          <ion-option *ngFor="let a of csosectorArr" [value]="a.guid">{{a.title}}
+          </ion-option>
+        </ion-select>
+      </ion-item>
+      <ion-item class="item">
+        <ion-label>
+          <ion-icon name="logo-dropbox"></ion-icon>
+        </ion-label>
 
-    <div class="moveCont">
-      <button type="submit" ion-button round class="btnSign" id="anim2" color="secAlert" id="myBtn" [disabled]="!authForm.valid">Save</button>
-      <button ion-button round class="btnSign" id="anim2" color="secAlert" id="myBtn" (click)="reset()">Reset</button>
+        <ion-select [(ngModel)]="province_guid" ngModel formControlName="province_guid" required placeholder="Select Province"
+          (ionChange)="populateDistrict(province_guid)">
+          <ion-option *ngFor="let a of provinceArr" [value]="a.guid">{{a.title}}
+          </ion-option>
+        </ion-select>
+      </ion-item>
+      <ion-item class="item">
+        <ion-label>
+          <ion-icon name="logo-dropbox"></ion-icon>
+        </ion-label>
+
+        <ion-select [(ngModel)]="district_guid" ngModel formControlName="district_guid" required placeholder="Select District"
+          (ionChange)="populateMunicipality(district_guid)">
+          <ion-option *ngFor="let district of districtArr" [value]="district.guid">{{district.title}}
+          </ion-option>
+        </ion-select>
+      </ion-item>
+      <ion-item class="item">
+        <ion-label>
+          <ion-icon name="logo-dropbox"></ion-icon>
+        </ion-label>
+     
+        <ion-select [(ngModel)]="municipality_guid" required ngModel formControlName="municipality_guid" placeholder="Select Municipality">
+          <ion-option *ngFor="let municipality of municipalityArr" [value]="municipality.guid">
+            {{municipality.title}}
+          </ion-option>
+        </ion-select>
+      </ion-item>
+      <ion-item class="item">
+        <ion-label>
+          <ion-icon name="person"></ion-icon>
+        </ion-label>
+      <ion-input placeholder="Ward_number" type="number"  [(ngModel)]="ward_number"
+        formControlName="ward_number" ngModel>
+      </ion-input>
+      </ion-item>
+      <ion-item class="item">
+        <ion-label>
+          <ion-icon name="contacts"></ion-icon>
+        </ion-label>
+      <ion-input placeholder="Contact_Person" type="text"  [(ngModel)]="contact_person"
+        formControlName="contact_person" ngModel>
+      </ion-input>
+      </ion-item>
+      <ion-item class="item">
+        <ion-label>
+          <ion-icon name="person"></ion-icon>
+        </ion-label>
+      <ion-input placeholder="Contact_Number" type="tel"  [(ngModel)]="contact_number"
+        formControlName="contact_number" ngModel>
+      </ion-input>
+      </ion-item>
+      <ion-item class="item">
+        <ion-label>
+          <ion-icon name="contacts"></ion-icon>
+        </ion-label>
+      <ion-input placeholder="Total_Staff" type="number"  [(ngModel)]="total_staff"
+        formControlName="total_staff" ngModel>
+      </ion-input>
+      </ion-item>
+      <ion-item class="item">
+        <ion-label>
+          <ion-icon name="mail"></ion-icon>
+        </ion-label>
+      <ion-input placeholder="Email address" [(ngModel)]="email_address" type="text" 
+        formControlName="email_address" ngModel></ion-input>
+      </ion-item>
+      <div class="moveCont">
+        <button type="submit" ion-button round class="btnSign" id="anim2" color="secAlert" id="myBtn"
+          [disabled]="!authForm.valid">Save</button>
+        <button ion-button round class="btnSign" id="anim2" color="secAlert" id="myBtn" (click)="reset()">Reset</button>
+      </div>
     </div>
   </form>
 </ion-content>
