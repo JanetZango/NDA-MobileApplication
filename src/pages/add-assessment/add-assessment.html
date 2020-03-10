@@ -27,7 +27,7 @@
         <ion-label> Assessment Type</ion-label>
         <ion-select [(ngModel)]="assessment_type_guid" (ionChange)="AssessmentQuestions($event)" formControlName="assessment_type_guid" ngModel>
           <ion-option *ngFor="let assessmenttype of assessmentTypeArr" [value]="assessmenttype.guid" 
-          [disabled]="assessmenttype.guid !== 'b564ecdb-6e0a-4903-89fc-c9c8f72b0fa8'">
+          [disabled]="assessmenttype.guid !== '91ea8013-3118-45a5-9929-7890eeb80be4'">
             {{assessmenttype.title}}
           </ion-option>
         </ion-select>
