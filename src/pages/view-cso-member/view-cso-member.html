@@ -1,29 +1,25 @@
 <ion-content class="content">
   <div class="top">
     <div class="btn">
-      <button clear ion-button  (click)="gotoback()">
+      <button clear ion-button  (click)="goBack()">
         <ion-icon ios="ios-arrow-round-back" md="md-arrow-round-back"></ion-icon>
       </button>
     </div>
   </div>
   <h3>Cso Member Details</h3>
   <div class="card">
-    <ion-card *ngFor="let a of CsoDetailsArr">
+    <ion-card>
       <div class="infor">
-        <p><b>Start Date:</b><br>{{a.added_at}}</p>
-        <p><b>Created By:</b><br>{{a.added_by}}</p>
-        <p><b>Contact Number:</b><br>{{a.contact_number}}</p>
-        <p><b>Cso Name:</b><br>{{a.cso_name}}</p>
-        <p><b>Disability:</b><br>{{a.disability}}</p>
-        <p><b>First Name:</b><br>{{a.first_name}}</p>
-        <p><b>Gender:</b><br>{{a.gender}}</p>
-        <p><b>ID Number:</b><br>{{a.id_number}}</p>
-        <p><b>Last Name:</b><br>{{a.last_name}}</p>
-        <p><b>Nationality:</b><br>{{a.nationality}}</p>
-        <p><b>Total_Staff:</b><br>{{a.passport_number}}</p>
-        <p><b>Race:</b><br>{{a.race}}</p>
-        <p><b>Modeified Date:</b>{{a.updated_at}}</p>
-
+        <p><b>First name:</b><br>{{member.first_name}}</p>
+        <p><b>Last name:</b><br>{{member.last_name}}</p>
+        <p><b>ID Number:</b><br>{{member.rsa_id_number ? member.rsa_id_number : "Not available"}}</p>
+        <p><b>Passport Number:</b><br>{{member.passport_number? member.passport_number : "Not available"}}</p>
+        <p><b>Nationality:</b><br>{{member.nationality ? member.nationality : "Not available"}}</p>
+        <p><b>Gender:</b><br>{{member.gender ? member.gender : "Not available"}}</p>
+        <p><b>Race:</b><br>{{member.race ? member.race : "Not available"}}</p>
+        <p><b>Disability:</b><br>{{member.disability ? member.disability : "Not available"}}</p>
+        <p><b>Start date:</b><br>{{member.start_date ? member.start_date : "Not available"}}</p>
+        <p><b>End date:</b><br>{{member.end_date ? member.end_date : "Not available"}}</p>
       </div>
     </ion-card>
   </div>

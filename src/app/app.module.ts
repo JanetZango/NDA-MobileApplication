@@ -21,7 +21,7 @@ import { LocalstorageProvider } from '../providers/localstorage/localstorage';
 import { AsynPage } from '../pages/asyn/asyn';
 import { ConfigService } from '../providers/config/config.server';
 import { EntityProvider } from '../providers/entity/cso'
-import { ViewcsodetailsPage } from '../pages/viewcsodetails/viewcsodetails';
+import { ViewCsoDetailsPage } from '../pages/view-cso-details/view-cso-details';
 import { LookUpService } from '../providers/lookup/lookups.service';
 import { DataProvider } from '../providers/dataproviders/dataprovider';
 import { ViewCsoMemberPage } from '../pages/view-cso-member/view-cso-member';
@@ -44,7 +44,7 @@ import { httpInterceptorProviders } from '../providers/api';
     AddCapacityPage,
     AddOtpPage,
     AsynPage,
-    ViewcsodetailsPage,
+    ViewCsoDetailsPage,
     ViewCsoMemberPage,
     DisplayCsoMemberListPage,
     AddCsoMemberPage
@@ -68,7 +68,7 @@ import { httpInterceptorProviders } from '../providers/api';
     DisplayListOfCapacityPage,
     AddAssessmentPage,
     AsynPage,
-    ViewcsodetailsPage,
+    ViewCsoDetailsPage,
     ViewCsoMemberPage,
     DisplayCsoMemberListPage,
     AddCsoMemberPage
@@ -83,7 +83,7 @@ import { httpInterceptorProviders } from '../providers/api';
     LookUpService,
     DataProvider,
     httpInterceptorProviders
-    
+
 
   ]
 })

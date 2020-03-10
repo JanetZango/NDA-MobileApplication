@@ -1,114 +1,72 @@
-import { Component, OnInit } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
-import { RegistercsoPage } from '../registercso/registercso';
-import { ApiProvider } from '../../providers/api/api';
-import { EntityProvider } from '../../providers/entity/cso'
-import { ViewcsodetailsPage } from '../viewcsodetails/viewcsodetails';
-import { LoadingController } from 'ionic-angular';
-/**
- * Generated class for the DisplayListOfCsoPage page.
- *
- * See https://ionicframework.com/docs/components/#navigation for more info on
- * Ionic pages and navigation.
- */
+import {Component, OnInit} from '@angular/core';
+import {IonicPage, NavController, NavParams} from 'ionic-angular';
+import {RegistercsoPage} from '../registercso/registercso';
+import {EntityProvider} from '../../providers/entity/cso'
+import {ViewCsoDetailsPage} from '../view-cso-details/view-cso-details';
+import {LoadingController} from 'ionic-angular';
 
 @IonicPage()
 @Component({
   selector: 'page-display-list-of-cso',
   templateUrl: 'display-list-of-cso.html',
 })
-export class DisplayListOfCsoPage implements OnInit{
-  
-//variables
-  cso;
-  DisplayCso = new Array();
-  dataDisplayCso = new Array();
+export class DisplayListOfCsoPage implements OnInit {
 
-  items;
-  filteedRe;
-  name;
+  originalListOfCsoes = [];
+  listOfCsoes = []
 
   constructor(
-    public navCtrl: NavController, 
+    public navCtrl: NavController,
     public navParams: NavParams,
-    public api:ApiProvider,
-    public csoApi:EntityProvider,
+    public api: EntityProvider,
     public loadingCtrl: LoadingController
-    ) {
+  ) {
   }
 
-  ionViewDidLoad() {
-  }
-  registerCSO(){
+  registerCSO() {
     this.navCtrl.push(RegistercsoPage)
   }
-  gotoLanding(){
+
+  gotoLanding() {
     this.navCtrl.pop();
   }
-  ngOnInit(){
-  this.displayCsoList();
+
+  ngOnInit() {
+    this.getListOfCsoes();
   }
 
-  displayCsoList(){
+  getListOfCsoes() {
+
     const loader = this.loadingCtrl.create({
       content: "Please wait information is still loading...",
       duration: 300000000
     });
+
     loader.present();
-    this.csoApi.getCso().subscribe(res => {
-      debugger
-      if(res){
-        this.DisplayCso = res.csoes
-        this.dataDisplayCso  = this.DisplayCso;
+
+    this.api.getCso().subscribe(response => {
+      if (response) {
+        this.originalListOfCsoes = response.csoes;
+        this.listOfCsoes = response.csoes;
       }
       loader.dismiss();
     })
   }
-  CsoName = new Array();
-  storeOrgNames(cso_name) {
-    this.CsoName.push(cso_name);
+
+  viewCsoDetail(cso) {
+    this.navCtrl.push(ViewCsoDetailsPage, {cso_guid: cso.guid});
   }
 
-  getCsoName(){
-    return this.CsoName
-  }
+  searchForCso(element: any) {
+    const niddle = element.target.value;
 
-  getItems(ev: any) {
-    const val = ev.target.value;
-
-    if (val === '') {
-      this.dataDisplayCso = this.DisplayCso;
+    if (niddle === '') {
+      this.listOfCsoes = this.originalListOfCsoes;
       return;
     }
-    debugger
-     this.dataDisplayCso = this.DisplayCso.filter((x) => {
-      return (x.name_of_cso.toLowerCase().indexOf(val.toLowerCase()) > -1);
+
+    this.listOfCsoes = this.originalListOfCsoes.filter((x) => {
+      return (x.name_of_cso.toLowerCase().indexOf(niddle.toLowerCase()) > -1);
     })
-  }
-
-  initializeItems() {
-    this.items = []
-    this.items = this.namesArr
-  }
-  namesArr = new Array()
-  storeNames() {
-    this.namesArr = this.CsoName;
-  }
-
-  /**
-   * 
-   * @param cso 
-   */
-  viewMore(cso) {
-    this.navCtrl.push(ViewcsodetailsPage, { orgObject: cso});
-  }
-
-  viewSearched(name) {
-    for (var x = 0; x < this.DisplayCso.length; x++) {
-      if (name == this.DisplayCso[x].name_of_cso) {
-        this.navCtrl.push(ViewcsodetailsPage, { orgObject: this.DisplayCso[x] });
-        break;
-      }
-    }
   }
 }

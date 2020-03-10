@@ -1,13 +1,13 @@
-page-viewcsodetails {
+page-view-cso-details {
     .content{
         background-color: #fefefe;
         background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4' viewBox='0 0 4 4'%3E%3Cpath fill='%2300919e' fill-opacity='0.4' d='M1 3h1v1H1V3zm2-2h1v1H3V1z'%3E%3C/path%3E%3C/svg%3E");
     }
     .round{
-        height: 70vh;
+        height: 90vh;
         width: 100vh;
         position: absolute;
-        bottom: 50%;
+        bottom: 40%;
         right: -50%;
         background-color: #00919E;
         border-radius: 100%;
@@ -15,7 +15,7 @@ page-viewcsodetails {
     // ion-card{
     //     position: relative;
     //     padding:20px;
-       
+
 
     //     b{
     //         font-family: 'Jomolhari', serif;
@@ -55,7 +55,7 @@ page-viewcsodetails {
     .infor{
         padding:20px;
     }
-   
+
     .btnCreate{
         text-align: right;
         margin-top:-50px;

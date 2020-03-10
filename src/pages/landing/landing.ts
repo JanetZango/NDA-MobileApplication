@@ -22,13 +22,11 @@ import { DataProvider } from '../../providers/dataproviders/dataprovider';
 export class LandingPage {
 
   constructor(
-    public navCtrl: NavController, 
+    public navCtrl: NavController,
     public navParams: NavParams,
     public entityProvider: EntityProvider,
     public csoProvider: DataProvider
-    ) {
-      this.getAllCso();
-  }
+    ) {}
 
   ionViewDidLoad() {
   }
@@ -44,15 +42,6 @@ export class LandingPage {
   }
    gotoAsync(){
        this.navCtrl.push(AsynPage)
-  }
-
-  getAllCso(){
-    const that = this;
-    this.entityProvider.getCso().subscribe(res => {
-      if(res){
-        that.csoProvider.listOfCso = res.csoes;
-      }
-    });
   }
 
 }

@@ -38,6 +38,18 @@ export class EntityProvider {
       .pipe(catchError(this.handleError(<any>("getCso"))));
   }
 
+  public getCsoByGuid(guid: string): Observable <any> {
+    const url = `${this.url}/api/cso/` + guid;
+    return this.http.get(url,httpOptions)
+      .pipe(catchError(this.handleError(<any>("getCsoByGuid"))));
+  }
+
+  public getCsoMembers(guid: string): Observable <any> {
+    const url = `${this.url}/api/cso_member/cso/` + guid;
+    return this.http.get(url,httpOptions)
+      .pipe(catchError(this.handleError(<any>("getCsoMembers"))));
+  }
+
   /**
    * Get Capacity Building
    */
@@ -66,9 +78,15 @@ export class EntityProvider {
       .pipe(catchError(this.handleError(<any>("getMember"))));
   }
 
+  public getCsoMemberByGuid(guid: string): Observable <any> {
+    const url = `${this.url}/api/cso_member/`+ guid;
+    return this.http.get(url)
+      .pipe(catchError(this.handleError(<any>("getCsoMemberByGuid"))));
+  }
+
   /**
-   * 
-   * @param capacity 
+   *
+   * @param capacity
    */
   public saveCapacityBuilding(capacity): Observable<any> {
     const url = `${this.url}/api/capacity_building/create`;
@@ -77,8 +95,8 @@ export class EntityProvider {
   }
 
   /**
-   * 
-   * @param cso 
+   *
+   * @param cso
    */
   public saveCso(cso): Observable<any> {
     const url = `${this.url}/api/cso/create`;
@@ -87,8 +105,8 @@ export class EntityProvider {
   }
 
   /**
-   * 
-   * @param assessment 
+   *
+   * @param assessment
    */
   public saveAssessment(assessment): Observable <any> {
     const assessmentObj = JSON.parse(assessment);
@@ -98,20 +116,20 @@ export class EntityProvider {
   }
 
   /**
-   * 
-   * @param members 
+   *
+   * @param members
    */
   public saveMembers(members): Observable <any> {
     const url = `${this.url}/api/cso_member/create`;
     return this.http.post(url,members,httpOptions)
       .pipe(catchError(this.handleError(<any>("getCsoMembers"))));
   }
-  
+
 
   /**
  * Handle Http operation that failed.
  * Let the app continue.
- * 
+ *
  * @param operation - name of the operation that failed
  * @param result - optional value to return as the observable result
  */

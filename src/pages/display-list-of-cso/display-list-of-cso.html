@@ -10,28 +10,23 @@
         Register CSO
       </button>
     </div>
-   
-    <div class="search"> 
-      <ion-searchbar (input)="getItems($event)" ></ion-searchbar>
+
+    <div class="search">
+      <ion-searchbar (input)="searchForCso($event)" ></ion-searchbar>
   </div>
 
   </div>
   <div class="bottom">
   </div>
-  <ion-list>
-    <ion-item *ngFor="let item of items" (click)="viewSearched(item)">
-      {{ item }}
-    </ion-item>
-  </ion-list>
   <h3 style="text-align: center;">Manage Mobilisation-CSO <br>Registration</h3>
   <div class="mainInfor">
-    <ion-card *ngFor="let a of dataDisplayCso">
-      <div class="card" (click)="viewMore(a)">
-        <p><b>Cso Name:</b>{{a.name_of_cso}}</p>
-        <p><b>Cso Sector:</b>{{a.cso_sector.title}}</p>
-        <p><b>Municipality:</b>{{a.municipality.title}}</p>
-        <p><b>District:</b>{{a.district.title}}</p>
-        <p><b>Cso_type:</b>{{a.cso_type.title}}</p>
+    <ion-card *ngFor="let cso of listOfCsoes">
+      <div class="card" (click)="viewCsoDetail(cso)">
+        <p><b>Name:</b> {{cso.name_of_cso}}</p>
+        <p><b>Sector:</b> {{cso.cso_sector.title}}</p>
+        <p><b>Municipality:</b> {{cso.municipality.title}}</p>
+        <p><b>District:</b> {{cso.district.title}}</p>
+        <p><b>Type:</b> {{cso.cso_type.title}}</p>
         <div class="viewBtn">
           <button clear ion-button ><ion-icon name="ios-arrow-forward-outline"></ion-icon>
           </button>
