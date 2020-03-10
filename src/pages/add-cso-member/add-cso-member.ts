@@ -3,7 +3,7 @@ import {IonicPage, NavController, NavParams, AlertController} from 'ionic-angula
 import {NgModel, NgForm, Validators, FormBuilder, FormGroup} from '@angular/forms';
 import {LookUpService} from '../../providers/lookup/lookups.service';
 import {EntityProvider} from '../../providers/entity/cso';
-import {Member} from '../../model/member-class';
+import {Member} from '../../model/member.model';
 
 /**
  * Generated class for the AddCsoMemberPage page.
