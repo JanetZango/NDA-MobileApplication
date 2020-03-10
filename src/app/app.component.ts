@@ -12,6 +12,7 @@ import { timer } from 'rxjs/observable/timer';
 import { LoginPage } from '../pages/login/login';
 import { RegistercsoPage } from '../pages/registercso/registercso';
 import { AddCsoMemberPage } from '../pages/add-cso-member/add-cso-member';
+import { AddCapacityPage } from '../pages/add-capacity/add-capacity';
 
 
 @Component({
@@ -19,7 +20,7 @@ import { AddCsoMemberPage } from '../pages/add-cso-member/add-cso-member';
 })
 export class MyApp {
   // rootPage:any = LoginPage;
-   rootPage:any = AddCsoMemberPage;
+   rootPage:any = AddCapacityPage;
   // rootPage:any = RegistercsoPage;
   showSplash = true;
   constructor(platform: Platform, 
