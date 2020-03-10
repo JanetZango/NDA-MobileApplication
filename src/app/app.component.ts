@@ -11,13 +11,15 @@ import { DataProvider } from '../providers/dataproviders/dataprovider';
 import { timer } from 'rxjs/observable/timer';
 import { LoginPage } from '../pages/login/login';
 import { RegistercsoPage } from '../pages/registercso/registercso';
+import { AddCsoMemberPage } from '../pages/add-cso-member/add-cso-member';
 
 
 @Component({
   templateUrl: 'app.html'
 })
 export class MyApp {
-  rootPage:any = LoginPage;
+  // rootPage:any = LoginPage;
+   rootPage:any = AddCsoMemberPage;
   // rootPage:any = RegistercsoPage;
   showSplash = true;
   constructor(platform: Platform, 

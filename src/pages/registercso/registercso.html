@@ -10,28 +10,35 @@
   </div>
   <form [formGroup]="authForm" #cso="ngForm" (ngSubmit)="addCso(cso)">
     <div class="list">
+      <ion-label class="naming">Cso Name</ion-label>
       <ion-item  class="item">
-        <ion-label>
+        <ion-label class="labelforicon">
           <ion-icon name="person"></ion-icon>
         </ion-label>
         <ion-input placeholder="Name of Cso" name="name_of_cso" [(ngModel)]="name_of_cso" formControlName="name_of_cso"
           ngModel type="text"></ion-input>
       </ion-item>
+      <br>
+      <ion-label class="naming">Mobilisation Method</ion-label>
       <ion-item class="item">
         <ion-label>
           <ion-icon name="logo-dropbox"></ion-icon>
         </ion-label>
-   
+     
         <ion-select placeholder="Select Mobilisation Method" [(ngModel)]="cso_mobilisation_method_guid" formControlName="cso_mobilisation_method_guid"  ngModel>
           <ion-option *ngFor="let mobi of mobilisationArr" [value]="mobi.guid">{{mobi.title}}
           </ion-option>
         </ion-select>
       </ion-item>
+      <br>
+      <ion-label class="naming">Mobilisation Date</ion-label>
       <ion-item class="item">
         <ion-label > <ion-icon name="calendar"></ion-icon></ion-label>
         <ion-datetime displayFormat="MMM DD YYYY"  [(ngModel)]="mobilisation_date" placeholder="Select Mobilisation Date"
           formControlName="mobilisation_date" ngModel required></ion-datetime>
       </ion-item>
+      <br>
+      <ion-label class="naming">Physical Address</ion-label>
           <ion-item class="item">
           <ion-label>
             <ion-icon name="home"></ion-icon>
@@ -40,6 +47,8 @@
           formControlName="physical_address" ngModel>
         </ion-input>
       </ion-item>
+      <br>
+      <ion-label class="naming">Cso Type</ion-label>
       <ion-item class="item">
         <ion-label>
           <ion-icon name="logo-dropbox"></ion-icon>
@@ -49,6 +58,8 @@
           </ion-option>
         </ion-select>
       </ion-item>
+      <br>
+      <ion-label class="naming">Cso Sector</ion-label>
       <ion-item class="item">
         <ion-label>
           <ion-icon name="logo-dropbox"></ion-icon>
@@ -58,6 +69,8 @@
           </ion-option>
         </ion-select>
       </ion-item>
+      <br>
+      <ion-label class="naming">Province</ion-label>
       <ion-item class="item">
         <ion-label>
           <ion-icon name="logo-dropbox"></ion-icon>
@@ -69,6 +82,8 @@
           </ion-option>
         </ion-select>
       </ion-item>
+      <br>
+      <ion-label class="naming">District</ion-label>
       <ion-item class="item">
         <ion-label>
           <ion-icon name="logo-dropbox"></ion-icon>
@@ -80,6 +95,8 @@
           </ion-option>
         </ion-select>
       </ion-item>
+      <br>
+      <ion-label class="naming">Municipality</ion-label>
       <ion-item class="item">
         <ion-label>
           <ion-icon name="logo-dropbox"></ion-icon>
@@ -91,6 +108,8 @@
           </ion-option>
         </ion-select>
       </ion-item>
+      <br>
+      <ion-label class="naming">Ward Number</ion-label>
       <ion-item class="item">
         <ion-label>
           <ion-icon name="person"></ion-icon>
@@ -99,6 +118,8 @@
         formControlName="ward_number" ngModel>
       </ion-input>
       </ion-item>
+      <br>
+      <ion-label class="naming">Contact Person</ion-label>
       <ion-item class="item">
         <ion-label>
           <ion-icon name="contacts"></ion-icon>
@@ -107,6 +128,8 @@
         formControlName="contact_person" ngModel>
       </ion-input>
       </ion-item>
+      <br>
+      <ion-label class="naming">Contact Number</ion-label>
       <ion-item class="item">
         <ion-label>
           <ion-icon name="person"></ion-icon>
@@ -115,6 +138,8 @@
         formControlName="contact_number" ngModel>
       </ion-input>
       </ion-item>
+      <br>
+        <ion-label class="naming">Total Staff</ion-label>
       <ion-item class="item">
         <ion-label>
           <ion-icon name="contacts"></ion-icon>
@@ -123,6 +148,8 @@
         formControlName="total_staff" ngModel>
       </ion-input>
       </ion-item>
+      <br>
+      <ion-label class="naming">Email Address</ion-label>
       <ion-item class="item">
         <ion-label>
           <ion-icon name="mail"></ion-icon>

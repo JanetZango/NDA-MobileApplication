@@ -22,6 +22,11 @@ page-registercso {
         }
 
     }
+    .naming{
+        margin-left:80px;
+        color:#00919E;
+        font-size:1.5em;
+    }
     .btn{
         text-align: left;
     
@@ -44,12 +49,19 @@ page-registercso {
           
         }
         ion-icon{
-            font-size:2em;
-            border-radius: 100px;
-            // border:2px solid #00919E;
-            // background-color: #00919E;
-            color:#00919E
-        }
+            background: #00919E;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            line-height: 50px;
+            text-align: center;
+            color: #FFF;
+          }
+        
+    }
+    .labelforicon{
+        // border:2px solid green;
+        width:50px;
     }
     .btnSign{
         height: 40px;
