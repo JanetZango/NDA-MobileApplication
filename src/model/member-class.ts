@@ -1,5 +1,5 @@
 export class Member{
-    member_uuid: string;
+    member_guid: string;
     first_name: string;
     last_name: string;
     member_position_guid: number;
@@ -11,4 +11,5 @@ export class Member{
     contact_number: string;
     rsa_id_number: number;
     cso_guid: string;
+    physical_address: string
 }

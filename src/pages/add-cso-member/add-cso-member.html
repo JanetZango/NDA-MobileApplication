@@ -7,21 +7,22 @@
     <div class="divImage">
       <p>Add a Cso Member</p>
     </div>
-    <form [formGroup]="authForm" #csomember="ngForm" (ngSubmit)="addCsoMember(csomember)">
-        <ion-input placeholder="First_name" type="text" class="user-input" [(ngModel)]="first_name" formControlName="first_name" ngModel id="anim1"></ion-input>
+    <form [formGroup]="authForm" #csoMember="ngForm" (ngSubmit)="addCsoMember(csoMember)">
+        <ion-input placeholder="First name" type="text" class="user-input" [(ngModel)]="first_name" formControlName="first_name" ngModel id="anim1"></ion-input>
 
 
-        <ion-input placeholder="Last_name" type="text" class="user-input" [(ngModel)]="last_name" formControlName="last_name" ngModel id="anim1"></ion-input>
-
+        <ion-input placeholder="Last name" type="text" class="user-input" [(ngModel)]="last_name" formControlName="last_name" ngModel id="anim1"></ion-input>
+        <ion-input placeholder="Contact number" type="text" class="user-input" [(ngModel)]="contact_number" formControlName="contact_number" ngModel id="anim1"></ion-input>
+        <ion-input placeholder="Physical address" type="text" class="user-input" [(ngModel)]="physical_address" formControlName="physical_address" ngModel id="anim1"></ion-input>
 
         <ion-item id="item">
           <ion-label> Select Member Position</ion-label>
-          <ion-select [(ngModel)]="member_position_guid" formControlName="member_position_id" ngModel>
-            <ion-option value="1">Trustee</ion-option>
-            <ion-option value="2">Management</ion-option>
-            <ion-option value="3">General Monitor</ion-option>
-            <ion-option value="4">Baord Monitor</ion-option>
-            <ion-option value="5">Other</ion-option>
+          <ion-select [(ngModel)]="member_position_guid" formControlName="member_position_guid" ngModel>
+            <ion-option value="f0965be9-595b-4005-ac75-73bf575e53a4">Trustee</ion-option>
+            <ion-option value="2300cae8-0a25-4f50-bf82-aad8fb8a7fd9">Management</ion-option>
+            <ion-option value="4a8aa57d-1d05-48ad-a51f-7bad9357aa28">General Monitor</ion-option>
+            <ion-option value="72eb9ce9-75d3-4bb9-b80c-c1bf31b3ec4e">Baord Monitor</ion-option>
+            <ion-option value="5f467b4f-eb05-47e9-8549-0c1b6f61db9f">Other</ion-option>
           </ion-select>
         </ion-item>
 
@@ -53,7 +54,7 @@
           </ion-select>
         </ion-item>
 
-        <ion-input  type="number"  *ngIf="showIDNumber" formControlName="id_number"  [(ngModel)]="rsa_id_number" ngModel placeholder="ID number" id="anim1"></ion-input>
+        <ion-input  type="number"  *ngIf="showIDNumber" formControlName="rsa_id_number"  [(ngModel)]="rsa_id_number" ngModel placeholder="ID number" id="anim1"></ion-input>
 
         <ion-input placeholder="Passport_number" type="text" *ngIf="showPassport" class="user-input" name="passport_number"
           [(ngModel)]="passport_number" formControlName="passport_number" ngModel id="anim1"></ion-input>
@@ -66,11 +67,9 @@
             <ion-option value="No">No</ion-option>
           </ion-select>
         </ion-item>
+      <ion-input placeholder="Start date" type="date" class="user-input" [(ngModel)]="start_date" formControlName="start_date" ngModel id="anim1"></ion-input>
+      <ion-input placeholder="End date" type="date" class="user-input" [(ngModel)]="end_date" formControlName="end_date" ngModel id="anim1"></ion-input>
 
-        <ion-input placeholder="Contact_Number"  [(ngModel)]="contact_number" type="number" class="user-input" formControlName="contact_number" ngModel
-          id="anim1"></ion-input>
-
-        
         <div class="moveCont">
           <button  type="submit" ion-button round class="btnSign" id="anim2"
           [disabled]="!authForm.valid" >Add Cso Member</button>

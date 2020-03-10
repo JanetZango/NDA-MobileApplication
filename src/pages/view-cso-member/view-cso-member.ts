@@ -1,5 +1,6 @@
-import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import {Component} from '@angular/core';
+import {IonicPage, LoadingController, NavController, NavParams} from 'ionic-angular';
+import {EntityProvider} from "../../providers/entity/cso";
 
 /**
  * Generated class for the ViewCsoMemberPage page.
@@ -14,28 +15,41 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
   templateUrl: 'view-cso-member.html',
 })
 export class ViewCsoMemberPage {
-  //variables
-  cso_uuid;
 
+  member_guid: any;
+  member = [];
 
-  //retrieve data array
-
-  CsoDetailsArr = new Array();
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
-    this.CsoDetailsArr.push(this.navParams.get('orgObject'));
-    console.log(this.CsoDetailsArr)
-  
-    
+  constructor(
+    public navCtrl: NavController,
+    public navParams: NavParams,
+    public api: EntityProvider,
+    public loadingCtrl: LoadingController
+  ) {
+    this.member_guid = this.navParams.get('member_guid');
   }
 
-  // ** go back to cso member list
-  gotoback(){
+  ngOnInit() {
+    this.getCsoMember();
+  }
+
+  getCsoMember() {
+
+    const loader = this.loadingCtrl.create({
+      content: "Please wait information is still loading...",
+      duration: 300000000
+    });
+
+    loader.present();
+
+    this.api.getCsoMemberByGuid(this.member_guid).subscribe(response => {
+      if (response) {
+        this.member = response.cso_member;
+      }
+      loader.dismiss();
+    })
+  }
+
+  goBack() {
     this.navCtrl.pop();
   }
-
-  ionViewDidLoad() {
-    // console.log('ionViewDidLoad ViewCsoMemberPage');
-   
-  }
-
 }
