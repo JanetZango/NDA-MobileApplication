@@ -61,8 +61,8 @@ export class AddCsoMemberPage {
       'disability': ['', Validators.compose([Validators.required])],
       'contact_number': ['', Validators.compose([Validators.required])],
       'physical_address': ['', Validators.compose([Validators.required])],
-      'start_date': ['', Validators.compose()],
-      'end_date': ['', Validators.compose()],
+      'start_date': ['', Validators.compose([Validators.required])],
+      'end_date': ['', Validators.compose([Validators.required])],
 
     });
 
