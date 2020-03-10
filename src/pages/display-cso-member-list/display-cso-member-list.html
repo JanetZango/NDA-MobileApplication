@@ -15,13 +15,13 @@
   <div class="Bottom">
       <h3 style="text-align: center;">Manage Cso Members</h3>
     <ion-card *ngFor="let member of listOfCsoMembers">
-      <div class="card">
+      <div class="card" (click)="viewMemberDetails(member.guid)">
         <p><b>First name:</b>{{member.first_name}}</p>
         <p><b>Last name:</b>{{member.last_name}}</p>
         <p><b>Nationality:</b>{{member.nationality}}</p>
 
-        <div class="btn">
-            <button clear ion-button (click)="viewMemberDetails(member.guid)"><ion-icon name="ios-arrow-forward-outline"></ion-icon>
+        <div class="btn2">
+            <button clear ion-button ><ion-icon name="ios-arrow-forward-outline"></ion-icon>
               </button>
         </div>
 

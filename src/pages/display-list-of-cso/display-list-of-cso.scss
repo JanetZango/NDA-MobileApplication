@@ -21,6 +21,47 @@ page-display-list-of-cso {
            
         }
     }
+    .naming{
+        margin-left:80px;
+        color:#00919E;
+        font-size:1.5em;
+    }
+    .btn{
+        text-align: left;
+    
+    }
+    .list{
+        position: relative;
+        top: 50px;
+        // margin:10px auto;
+    }
+    .item{
+        border-radius: 50px;
+        width:80%;
+        margin:10px auto;
+        padding-left:20px;
+        // background-color:  transparent;
+        border:2px solid rgb(199, 199, 199);
+        color: black;
+        ::-webkit-input-placeholder{
+            color: rgb(199, 199, 199);
+          
+        }
+        ion-icon{
+            background: #00919E;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            line-height: 50px;
+            text-align: center;
+            color: #FFF;
+          }
+        
+    }
+    .labelforicon{
+        // border:2px solid green;
+        width:50px;
+    }
     h3{
         font-family: 'ZCOOL XiaoWei', serif;
     }
@@ -93,10 +134,10 @@ page-display-list-of-cso {
     }
 
     @media only screen and (max-width: 1024px) {
-        .content{
-            background-color: #fefefe;
-            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4' viewBox='0 0 4 4'%3E%3Cpath fill='%2300919e' fill-opacity='0.4' d='M1 3h1v1H1V3zm2-2h1v1H3V1z'%3E%3C/path%3E%3C/svg%3E");
-        }
+        // .content{
+        //     background-color: #fefefe;
+        //     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4' viewBox='0 0 4 4'%3E%3Cpath fill='%2300919e' fill-opacity='0.4' d='M1 3h1v1H1V3zm2-2h1v1H3V1z'%3E%3C/path%3E%3C/svg%3E");
+        // }
         .card{
             padding-top:15px;
             height: 160px;
@@ -104,6 +145,7 @@ page-display-list-of-cso {
             text-align: left;
             border-radius: 10px;
             background-color: white;
+            box-shadow: 0px 15px 30px -15px rgb(0, 0, 0);
           
             button{
                 font-size: 2em;

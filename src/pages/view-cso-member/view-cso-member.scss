@@ -1,8 +1,8 @@
 page-view-cso-member {
-    .content{
-        background-color: #fefefe;
-        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4' viewBox='0 0 4 4'%3E%3Cpath fill='%2300919e' fill-opacity='0.4' d='M1 3h1v1H1V3zm2-2h1v1H3V1z'%3E%3C/path%3E%3C/svg%3E");
-    }
+    // .content{
+    //     background-color: #fefefe;
+    //     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4' viewBox='0 0 4 4'%3E%3Cpath fill='%2300919e' fill-opacity='0.4' d='M1 3h1v1H1V3zm2-2h1v1H3V1z'%3E%3C/path%3E%3C/svg%3E");
+    // }
     .round{
         height: 70vh;
         width: 100vh;
@@ -32,13 +32,18 @@ page-view-cso-member {
         text-align: center;
     }
     .card{
-        margin-top:30px;
-        // height:400px;
+        margin-top:40px;
+        width:700px;
+        height:850px;
+        background-color: whitesmoke;
+        padding:20px;
+        // height:600px;
         border-radius: 10px;
-        // background-color: whitesmoke;
+        padding-left:30px;
+        margin:0 auto 10px;
+
         // box-shadow: 6px 10px 10px  rgba(17, 16, 16, 0.408);
- 
-    
+
     }
     .btn{
         // text-align: left;
@@ -70,5 +75,34 @@ page-view-cso-member {
     .top{
         background-color: #00919E;
         height:10%;
+    }
+    .image{
+        height:200px;
+        width: 200px;
+        text-align: center;
+        margin:0px auto;
+
+    }
+    .infor{
+        margin-top:60px;
+        text-align: center;
+
+    }
+    .btn{
+        text-align: left;
+        button{
+            // font-size: 1.5em;
+            color:white;
+
+        }
+    }
+    .top1{
+    background-color: blue;
+    }
+    .bottom2{
+        background-color: burlywood;
+    }
+    .infor{
+        padding:20px;
     }
 }

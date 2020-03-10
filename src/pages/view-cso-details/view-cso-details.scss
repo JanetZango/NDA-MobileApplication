@@ -1,8 +1,8 @@
 page-view-cso-details {
-    .content{
-        background-color: #fefefe;
-        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4' viewBox='0 0 4 4'%3E%3Cpath fill='%2300919e' fill-opacity='0.4' d='M1 3h1v1H1V3zm2-2h1v1H3V1z'%3E%3C/path%3E%3C/svg%3E");
-    }
+    // .content{
+    //     background-color: #fefefe;
+    //     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4' viewBox='0 0 4 4'%3E%3Cpath fill='%2300919e' fill-opacity='0.4' d='M1 3h1v1H1V3zm2-2h1v1H3V1z'%3E%3C/path%3E%3C/svg%3E");
+    // }
     .round{
         height: 90vh;
         width: 100vh;
@@ -34,14 +34,29 @@ page-view-cso-details {
 
     }
     .card{
-        width:650px;
-        background-color: white;
+        margin-top:50px;
+        width:700px;
+        height:850px;
+        background-color: whitesmoke;
         padding:20px;
-        height:600px;
+        // height:600px;
         border-radius: 10px;
         padding-left:30px;
         margin:0 auto 10px;
-        box-shadow: 6px 10px 10px  rgba(17, 16, 16, 0.408);
+
+        // box-shadow: 6px 10px 10px  rgba(17, 16, 16, 0.408);
+
+    }
+    .image{
+        height:200px;
+        width: 200px;
+        text-align: center;
+        margin:0px auto;
+
+    }
+    .infor{
+        margin-top:60px;
+        text-align: center;
 
     }
     .btn{
@@ -51,6 +66,12 @@ page-view-cso-details {
             color:white;
 
         }
+    }
+    .top1{
+    background-color: blue;
+    }
+    .bottom2{
+        background-color: burlywood;
     }
     .infor{
         padding:20px;
@@ -75,5 +96,10 @@ page-view-cso-details {
     .top{
         background-color: #00919E;
         height: 10%;
+    }
+    .bottom{
+        // height:90%;
+        background-color: white;
+        margin-top:30px;
     }
 }

@@ -1,8 +1,8 @@
 page-display-list-of-capacity {
-    .content{
-        background-color: #fefefe;
-        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4' viewBox='0 0 4 4'%3E%3Cpath fill='%2300919e' fill-opacity='0.4' d='M1 3h1v1H1V3zm2-2h1v1H3V1z'%3E%3C/path%3E%3C/svg%3E");
-    }
+    // .content{
+    //     background-color: #fefefe;
+    //     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4' viewBox='0 0 4 4'%3E%3Cpath fill='%2300919e' fill-opacity='0.4' d='M1 3h1v1H1V3zm2-2h1v1H3V1z'%3E%3C/path%3E%3C/svg%3E");
+    // }
     .top{
         width:100%;
         height:15%;
@@ -14,8 +14,10 @@ page-display-list-of-capacity {
 
     .btn{
         text-align: left;
-        // margin-top:20px;
+        margin-top:-20px;
+      
         button{
+            margin-left:20px;
             font-size: 1.5em;
             color:white;
         }
@@ -42,8 +44,8 @@ page-display-list-of-capacity {
         width:100%;
         position: absolute;
         text-align: center;
-        background-color: #fefefe;
-        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4' viewBox='0 0 4 4'%3E%3Cpath fill='%2300919e' fill-opacity='0.4' d='M1 3h1v1H1V3zm2-2h1v1H3V1z'%3E%3C/path%3E%3C/svg%3E");
+        // background-color: #fefefe;
+        // background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4' viewBox='0 0 4 4'%3E%3Cpath fill='%2300919e' fill-opacity='0.4' d='M1 3h1v1H1V3zm2-2h1v1H3V1z'%3E%3C/path%3E%3C/svg%3E");
     }
     .card{
         padding:10px;
@@ -51,6 +53,7 @@ page-display-list-of-capacity {
         font-family: 'ZCOOL XiaoWei', serif;
         background-color: white;
         border-radius: 10px;
+        box-shadow: 0px 15px 30px -15px rgb(0, 0, 0);
         button{
             margin-top:-40px;
             margin-left:400px;
@@ -65,5 +68,12 @@ page-display-list-of-capacity {
             height:100px;
             width:100px;
         }
+    }
+    .search{
+        width:735px;
+        border-radius: 100px;
+        background-color: white;
+        padding-left:25px;
+        
     }
 }

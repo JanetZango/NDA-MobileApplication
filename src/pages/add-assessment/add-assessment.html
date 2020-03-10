@@ -1,30 +1,41 @@
 <ion-content class="content">
   <div class="btn">
-    <button  ion-button  (click)="gotoback()">
+    <button  ion-button   (click)="gotoback()">
       <ion-icon ios="ios-arrow-back" md="md-arrow-back"></ion-icon>
     </button>
   </div>
-  <h3>Add Assessment</h3>
+  <h3><b>Add Assessment</b></h3>
  <form [formGroup]="authForm" #assessment="ngForm"  (ngSubmit)="addAssessment(assessment)"> 
-    <ion-input placeholder="Name Of Cso" [(ngModel)]="name_of_cso"  formControlName="name_of_cso"  type="text" class="user-input" id="anim1"
+  <div class="list">
+    <ion-label class="naming">Cso Name</ion-label>
+    <ion-item  class="item">
+      <ion-label class="labelforicon">
+        <ion-icon name="person"></ion-icon>
+      </ion-label>
+    <ion-input placeholder="Enter cso name" [(ngModel)]="name_of_cso"  formControlName="name_of_cso"  type="text"
     (input)="getItems($event)" ngModel ></ion-input>
+    </ion-item>
     <!-- <span ng-show="authForm.cso_name.$touched && authForm.cso_name.$invalid">The name is required.</span> -->
       <div id="results">
         <ion-item no-lines *ngFor="let item of items; let i=index" for="site-search" (click)="openMarkerInfo(item,assessment)">
           <p>{{item.name_of_cso}}</p>
         </ion-item>
       </div>
-      <div class="Contacts">
-        <ion-label>Assessment Date</ion-label>
-        <ion-item>
-          <ion-label>MM DD YY</ion-label>
+      <ion-label class="naming">Assessment Date</ion-label>
+      <ion-item  class="item">
+        <ion-label class="labelforicon">
+          <ion-icon name="logo-dropbox"></ion-icon>
+        </ion-label>
           <ion-datetime displayFormat="MMM DD YYYY" placeholder="Select Date" required [(ngModel)]="assessment_date"
           formControlName="assessment_date" ngModel></ion-datetime>
         </ion-item>
         <br>
-      </div>
-      <ion-item id="item">
-        <ion-label> Assessment Type</ion-label>
+      
+        <ion-label class="naming">Assessment Date</ion-label>
+        <ion-item  class="item">
+          <ion-label class="labelforicon">
+            <ion-icon name="logo-dropbox"></ion-icon>
+          </ion-label>
         <ion-select [(ngModel)]="assessment_type_guid" (ionChange)="AssessmentQuestions($event)" formControlName="assessment_type_guid" ngModel>
           <ion-option *ngFor="let assessmenttype of assessmentTypeArr" [value]="assessmenttype.guid" 
           [disabled]="assessmenttype.guid !== '91ea8013-3118-45a5-9929-7890eeb80be4'">
@@ -50,6 +61,7 @@
             <button ion-button id="btn" type="submit" [disabled]="!authForm.valid">Add Assessment</button>
           </div>
     </div>
+  </div>
   </div>
   </form>
 </ion-content>

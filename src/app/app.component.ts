@@ -13,14 +13,16 @@ import { LoginPage } from '../pages/login/login';
 import { RegistercsoPage } from '../pages/registercso/registercso';
 import { AddCsoMemberPage } from '../pages/add-cso-member/add-cso-member';
 import { AddCapacityPage } from '../pages/add-capacity/add-capacity';
+import { AddAssessmentPage } from '../pages/add-assessment/add-assessment';
+import { ViewCsoDetailsPage } from '../pages/view-cso-details/view-cso-details';
 
 
 @Component({
   templateUrl: 'app.html'
 })
 export class MyApp {
-  // rootPage:any = LoginPage;
-   rootPage:any = AddCapacityPage;
+  rootPage:any = LoginPage;
+  //  rootPage:any = AddCapacityPage;
   // rootPage:any = RegistercsoPage;
   showSplash = true;
   constructor(platform: Platform, 
