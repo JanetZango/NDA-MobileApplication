@@ -18,7 +18,7 @@
 
         <ion-item id="item">
           <ion-label> Select Capacity Building Type</ion-label>
-          <ion-select [(ngModel)]="capacity_building_type_guid"  required formControlName="capacity_building_type" ngModel>
+          <ion-select [(ngModel)]="capacity_building_type_guid"  required formControlName="capacity_building_type_guid" ngModel>
             <ion-option *ngFor="let a of capacityArr" [value]="a.guid">{{a.title}}
             </ion-option>
           </ion-select>
@@ -53,8 +53,8 @@
         <ion-item id="item">
           <ion-label> Select Partner</ion-label>
           <ion-select [(ngModel)]="partner_guid" ngModel formControlName="partner" >
-            <ion-option *ngFor="let district of partnerArr" [value]="district.guid">
-              {{district.title}}
+            <ion-option *ngFor="let partner of partnerArr" [value]="partner.guid">
+              {{partner.title}}
             </ion-option>
           </ion-select>
         </ion-item>
@@ -66,7 +66,7 @@
           id="anim1" ngModel>
         </ion-input>
 
-        <ion-input placeholder="co_facilitator_name" type="text" class="user-input"  formControlName="co_facilitator_name"  [(ngModel)]="co_facilitator_name"
+        <ion-input placeholder="Co Facilitator Name" type="text" class="user-input"  formControlName="co_facilitator_name"  [(ngModel)]="co_facilitator_name"
           id="anim1" ngModel></ion-input>
 
         <!-- <ion-input placeholder="Collected by" type="text" class="user-input" formControlName="collected_by" [(ngModel)]="collected_by" id="anim1" ngModel>

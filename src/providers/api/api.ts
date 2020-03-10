@@ -27,7 +27,7 @@ export class ApiProvider {
   }
 
   private url: string;
-
+  
   //private loggedUser: string;
 
   /**
