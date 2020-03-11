@@ -19,7 +19,8 @@ import { LoadingController } from 'ionic-angular';
 })
 export class DisplayListOfCapacityPage implements OnInit {
   DisplayCso = new Array();
-  DisplayCapacity = new Array();
+  originalListOfCapacity = new Array();
+  listOfapacity = new Array();
   items;
   constructor(public navCtrl: NavController,
      public navParams: NavParams,
@@ -37,7 +38,7 @@ export class DisplayListOfCapacityPage implements OnInit {
   }
   ngOnInit(){
    this.displayListOfCapacityBuilding();
-   this.displayCsoList();
+   //this.displayCsoList();
   }
 
   // ** display the list of capacity building 
@@ -49,7 +50,8 @@ export class DisplayListOfCapacityPage implements OnInit {
     loader.present();
     this.csoApi.getCapacityBuilding().subscribe(res => {
       if(res){
-        this.DisplayCapacity = res.capacity_buildings
+        this.originalListOfCapacity = res.capacity_buildings;
+        this.listOfapacity =  this.originalListOfCapacity;
       }
       loader.dismiss();
     })
@@ -63,13 +65,8 @@ export class DisplayListOfCapacityPage implements OnInit {
     loader.present();
     this.csoApi.getCapacityBuilding().subscribe(res => {
       if(res){
-        this.DisplayCso = res.capacity_buildings
-        this.storeNames();
-        loader.dismiss()
-        for(var x =0; x < this.DisplayCso.length;x ++){
-          this.storeOrgNames(this.DisplayCso[x].capacity_building)
-           
-        }
+        this.DisplayCso = res.capacity_buildings;
+        
       }
     })
   }
@@ -80,6 +77,20 @@ export class DisplayListOfCapacityPage implements OnInit {
 
   getCsoName(){
     return this.CsoName
+  }
+
+
+  searchForCapacity(element: any) {
+    const niddle = element.target.value;
+
+    if (niddle === '') {
+      this.listOfapacity = this.originalListOfCapacity;
+      return;
+    }
+
+    this.listOfapacity = this.originalListOfCapacity.filter((x) => {
+      return (x.capacity_building_type.title.toLowerCase().indexOf(niddle.toLowerCase()) > -1);
+    })
   }
 
   getItems(ev: any) {

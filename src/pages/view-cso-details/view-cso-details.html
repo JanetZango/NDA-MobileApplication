@@ -11,10 +11,13 @@
       </button>
     </div>
   </div>
-  <h2>Cso Details</h2>
-
+ <div class="bottom">
   <div class="card">
-    <div>
+     <div class="image">
+      <img src="../../assets/pic.png">
+     </div>
+   
+<div class="infor">
       <p><b>Name :</b><br>{{csoDetail?.name_of_cso}}</p>
       <p><b>Sector :</b><br>{{csoDetail?.cso_sector.title}}</p>
       <p><b>Type:</b><br>{{csoDetail?.cso_type.title}}</p>
@@ -27,6 +30,9 @@
       <p><b>District :</b><br>{{csoDetail?.district.title}}</p>
       <p><b>Municipality :</b><br>{{csoDetail?.municipality.title}}</p>
       <p><b>Ward number :</b><br>{{csoDetail?.ward_number}}</p>
-    </div>
+    </div> 
   </div>
+ </div>
+
+ 
 </ion-content>

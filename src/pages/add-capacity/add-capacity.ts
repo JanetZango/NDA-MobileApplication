@@ -30,6 +30,7 @@ export class AddCapacityPage {
   provinceArr = new Array();
   municipalityArr = new Array();
   partnerArr = new Array();
+  partnerTypeArr = new Array();
   DisplayCso = new Array();
 
   // arrays that store data
@@ -73,7 +74,7 @@ export class AddCapacityPage {
       'venue': ['', Validators.compose([Validators.required])],
       'facilitator_name': ['', Validators.compose([Validators.required])],
       'co_facilitator_name': ['', Validators.compose([Validators.required])],
-      'collected_by': ['', Validators.compose([Validators.required])],
+      //'collected_by': ['', Validators.compose([Validators.required])],
       'start_date': ['', Validators.compose([Validators.required])],
       'end_date': ['', Validators.compose([Validators.required])],
 
@@ -95,6 +96,7 @@ export class AddCapacityPage {
     this.getMunicipality();
     this.getCapacityBuilding();
     this.displayCsoList();
+    this.getPartner();
   }
 
 
@@ -150,10 +152,17 @@ export class AddCapacityPage {
    */
   getPartnerType() {
     this.lookupService.getPartnerType().subscribe(res => {
+      this.partnerTypeArr = res;
+    })
+  }
+  /**
+   * Get Partner
+   */
+  getPartner() {
+    this.lookupService.getPartner().subscribe(res => {
       this.partnerArr = res;
     })
   }
-
   /**
    * Get Municipality
    */

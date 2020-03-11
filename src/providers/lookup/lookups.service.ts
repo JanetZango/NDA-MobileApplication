@@ -23,6 +23,7 @@ export class LookUpService {
     private Province = "../../assets/lookup_database/province.json";
     private Mobilisation ="../../assets/lookup_database/mobilisation_method.json";
     private QuestionAnswer = "../../assets/lookup_database/questions_and_answers.json"
+    private Partner = "../../assets/lookup_database/partner.json";
 
     constructor(
         public http: HttpClient
@@ -94,6 +95,12 @@ export class LookUpService {
 
     public getQuestionAnswer(): Observable<any>{
         return this.http.get(this.QuestionAnswer)
+        .pipe(catchError(this.handleError(<any>("getQuestionAnswer"))));
+    }
+
+    public getPartner():Observable<any>{
+
+        return this.http.get(this.Partner)
         .pipe(catchError(this.handleError(<any>("getQuestionAnswer"))));
     }
 

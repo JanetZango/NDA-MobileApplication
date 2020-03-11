@@ -9,7 +9,7 @@
             <button ion-button (click)="addBuilding()">Create CSO Capacity Building Intervention</button>
         </div>
         <div class="search">
-            <ion-searchbar (input)="getItems($event)"></ion-searchbar>
+            <ion-input placeholder="Search by capacity building type" (input)="searchForCapacity($event)"></ion-input>
         </div>
     </div>
     
@@ -21,7 +21,7 @@
 
     <div class="Bottom">
         <h3>Manage CSO Capacity Building Interventions</h3>
-        <ion-card *ngFor="let x of dataDisplayCso">
+        <ion-card *ngFor="let x of listOfapacity">
             <div class="card">
                 <p><b>Capacity Building:</b>{{x.capacity_building_type.title}}</p>
                 <p><b>Facilitor Name:</b>{{x.co_facilitator_name}}</p>

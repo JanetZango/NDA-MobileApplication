@@ -6,9 +6,11 @@
       </button>
     </div>
   </div>
-  <h3>Cso Member Details</h3>
-  <div class="card">
-    <ion-card>
+  <div class="bottom">
+    <div class="card">
+       <div class="image">
+        <img src="../../assets/pic.png">
+       </div>
       <div class="infor">
         <p><b>First name:</b><br>{{member.first_name}}</p>
         <p><b>Last name:</b><br>{{member.last_name}}</p>
@@ -21,7 +23,7 @@
         <p><b>Start date:</b><br>{{member.start_date ? member.start_date : "Not available"}}</p>
         <p><b>End date:</b><br>{{member.end_date ? member.end_date : "Not available"}}</p>
       </div>
-    </ion-card>
+    </div>
   </div>
 </ion-content>
 
