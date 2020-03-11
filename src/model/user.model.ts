@@ -1,10 +1,11 @@
 export class User {
   private _access_token: string;
   private _refresh_token: string;
-  private _full_name: string;
+  private _user_details: string;
 
   constructor() {
   }
+
 
   get access_token(): string {
     return this._access_token;
@@ -22,11 +23,11 @@ export class User {
     this._refresh_token = value;
   }
 
-  get full_name(): string {
-    return this._full_name;
+  get user_details(): string {
+    return this._user_details;
   }
 
-  set full_name(value: string) {
-    this._full_name = value;
+  set user_details(value: string) {
+    this._user_details = value;
   }
 }

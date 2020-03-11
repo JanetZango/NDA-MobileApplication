@@ -21,8 +21,8 @@ import { ViewCsoDetailsPage } from '../pages/view-cso-details/view-cso-details';
   templateUrl: 'app.html'
 })
 export class MyApp {
-  // rootPage:any = LandingPage;
-  rootPage:any = LoginPage;
+  rootPage:any = LandingPage;
+  // rootPage:any = LoginPage;
   //rootPage:any = AddCapacityPage;
   //rootPage:any = AddCsoMemberPage;
   showSplash = true;

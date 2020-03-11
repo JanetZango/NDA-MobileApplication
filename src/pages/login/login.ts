@@ -6,12 +6,6 @@ import { NgModel, NgForm } from '@angular/forms';
 import { AlertController } from 'ionic-angular';
 import { ApiProvider } from '../../providers/api/api';
 
-/**
- * Generated class for the LoginPage page.
- *
- * See https://ionicframework.com/docs/components/#navigation for more info on
- * Ionic pages and navigation.
- */
 
 @IonicPage()
 @Component({
@@ -55,14 +49,14 @@ export class LoginPage {
         this.navCtrl.push(AddOtpPage);
         const alert = this.alertCtrl.create({
           // title: 'Oops!',
-          subTitle: 'Please check your email address for the OTP code',
+          subTitle: 'Please check your email address for an OTP code.',
           buttons: ['OK']
         });
         alert.present();
-      }    
+      }
     },
     (err) => {console.log(err)});
-    
+
   }
 
 }

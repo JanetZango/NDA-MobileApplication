@@ -4,6 +4,8 @@ import {IonicPage, LoadingController, NavController, NavParams} from 'ionic-angu
 import {EntityProvider} from "../../providers/entity/cso";
 import {AddCsoMemberPage} from "../add-cso-member/add-cso-member";
 import {Member} from "../../model/member.model";
+import {LandingPage} from "../landing/landing";
+import {DisplayCsoMemberListPage} from "../display-cso-member-list/display-cso-member-list";
 
 @IonicPage()
 @Component({
@@ -30,7 +32,11 @@ export class ViewCsoMemberPage {
     this.navCtrl.push(AddCsoMemberPage);
   }
 
-  goBack() {
-    this.navCtrl.pop();
+  goBackToHomePage(){
+    this.navCtrl.push(LandingPage)
+  }
+
+  goBackToMemberList() {
+    this.navCtrl.push(DisplayCsoMemberListPage);
   }
 }

@@ -4,7 +4,7 @@ import { Observable } from 'rxjs/Observable';
 import { of } from 'rxjs/observable/of';
 import { catchError, tap } from 'rxjs/operators';
 import { ConfigService } from '../config/config.server';
-import { Tokens } from '../../model/tokens';
+import { Auth } from '../../model/auth';
 
 
 const httpOptions = {
@@ -13,6 +13,7 @@ const httpOptions = {
 
 const JWT_TOKEN = 'JWT_TOKEN';
 const REFRESH_TOKEN = 'REFRESH_TOKEN';
+const USER_INFO = 'USER_INFO';
 
 @Injectable()
 export class ApiProvider {
@@ -27,12 +28,12 @@ export class ApiProvider {
   }
 
   private url: string;
-  
+
   //private loggedUser: string;
 
   /**
-   * 
-   * @param email 
+   *
+   * @param email
    */
   public verifyUser(email: string): Observable<any> {
     const url = `${this.url}/api/auth/login`;
@@ -41,8 +42,8 @@ export class ApiProvider {
 
   }
   /**
-   * 
-   * @param code 
+   *
+   * @param code
    */
   public verifyOpt(code: string): Observable<any> {
     const url = `${this.url}/api/auth/otp`;
@@ -50,30 +51,34 @@ export class ApiProvider {
       .pipe(
        tap(res => this.doLoginUser(res)),
         catchError(this.handleError(<any>("verifyOpt"))));
-     
+
   }
 
   refreshToken() {
     return this.http.post<any>(`${this.url}/api/auth/refresh`, {
       'refreshToken': this.getRefreshToken()
-    }).pipe(tap((tokens: Tokens) => {
-      console.log(Tokens)
-      this.storeJwtToken(tokens.access_token);
-      console.log(tokens.access_token)
+    }).pipe(tap((auth: Auth) => {
+      localStorage.setItem(JWT_TOKEN, auth.access_token);
+      localStorage.setItem(REFRESH_TOKEN, auth.refresh_token);
+      localStorage.setItem(USER_INFO, auth.user_details);
     }));
   }
 
   getJwtToken() {
     return localStorage.getItem(JWT_TOKEN);
   }
+
+  getRefreshToken() {
+    return localStorage.getItem(REFRESH_TOKEN);
+  }
   /**
-   * 
-   * @param username 
-   * @param tokens 
+   *
+   * @param username
+   * @param tokens
    */
-  private doLoginUser(tokens: any) {
+  private doLoginUser(auth: any) {
    // this.loggedUser = username;
-    this.storeTokens(tokens);
+    this.storeTokens(auth);
   }
 
   private doLogoutUser() {
@@ -84,24 +89,16 @@ export class ApiProvider {
   private getRefreshToken() {
     return localStorage.getItem(REFRESH_TOKEN);
   }
-  /**
-   * 
-   * @param jwt 
-   */
-  private storeJwtToken(jwt: string) {
-    localStorage.setItem(JWT_TOKEN, jwt);
-  }
-  /**
-   * 
-   * @param tokens 
-   */
-  private storeTokens(tokens: Tokens) {
-    localStorage.setItem(JWT_TOKEN, tokens.access_token);
-    localStorage.setItem(REFRESH_TOKEN, tokens.refresh_token);
+
+
+  private storeTokens(auth: Auth) {
+    localStorage.setItem(JWT_TOKEN, auth.access_token);
+    localStorage.setItem(REFRESH_TOKEN, auth.refresh_token);
+    localStorage.setItem(USER_INFO, auth.user_details);
   }
 
   /**
-   * 
+   *
    */
   private removeTokens() {
     localStorage.removeItem(JWT_TOKEN);
@@ -111,7 +108,7 @@ export class ApiProvider {
   /**
    * Handle Http operation that failed.
    * Let the app continue.
-   * 
+   *
    * @param operation - name of the operation that failed
    * @param result - optional value to return as the observable result
    */

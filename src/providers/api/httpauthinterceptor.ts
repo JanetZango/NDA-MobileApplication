@@ -29,7 +29,11 @@ export class HttpAuthInterceptor implements HttpInterceptor {
 
 
     if (this.apiService.getJwtToken()) {
-      req = this.addToken(req, this.apiService.getJwtToken());
+      if(req.url.includes("refresh")){
+        req = this.addToken(req, this.apiService.getRefreshToken());
+      }else{
+        req = this.addToken(req, this.apiService.getJwtToken());
+      }
     }
 
     return next.handle(req).pipe(catchError(error => {

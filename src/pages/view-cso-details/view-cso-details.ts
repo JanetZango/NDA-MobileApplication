@@ -5,6 +5,7 @@ import {DisplayCsoMemberListPage} from '../display-cso-member-list/display-cso-m
 import {EntityProvider} from '../../providers/entity/cso'
 import {Cso} from "../../model/cso.model";
 import {DisplayListOfCsoPage} from "../display-list-of-cso/display-list-of-cso";
+import {LandingPage} from "../landing/landing";
 
 @IonicPage()
 @Component({
@@ -29,6 +30,10 @@ export class ViewCsoDetailsPage {
 
   goToCSOListView() {
     this.navCtrl.push(DisplayListOfCsoPage);
+  }
+
+  goBackToHomePage(){
+    this.navCtrl.push(LandingPage)
   }
 
   viewCsoMembers() {

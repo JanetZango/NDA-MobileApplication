@@ -29,11 +29,13 @@ import { ViewCsoMemberPage } from '../pages/view-cso-member/view-cso-member';
 import { DisplayCsoMemberListPage } from '../pages/display-cso-member-list/display-cso-member-list';
 import { AddCsoMemberPage } from '../pages/add-cso-member/add-cso-member';
 import { httpInterceptorProviders } from '../providers/api';
+import { TabsPage } from '../pages/tabs/tabs';
 
 
 @NgModule({
   declarations: [
     MyApp,
+    TabsPage,
     HomePage,
     LoginPage,
     LandingPage,
@@ -59,6 +61,7 @@ import { httpInterceptorProviders } from '../providers/api';
   bootstrap: [IonicApp],
   entryComponents: [
     MyApp,
+    TabsPage,
     HomePage,
     LoginPage,
     LandingPage,

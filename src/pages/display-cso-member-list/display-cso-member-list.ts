@@ -8,6 +8,7 @@ import {ViewCsoMemberPage} from '../view-cso-member/view-cso-member';
 import {Cso} from "../../model/cso.model";
 import {ViewCsoDetailsPage} from "../view-cso-details/view-cso-details";
 import {Member} from "../../model/member.model";
+import {LandingPage} from "../landing/landing";
 
 @IonicPage()
 @Component({
@@ -77,4 +78,9 @@ export class DisplayCsoMemberListPage implements OnInit {
   goBackToCsoDetails() {
     this.navCtrl.push(ViewCsoDetailsPage);
   }
+
+  goBackToHomePage() {
+    this.navCtrl.push(LandingPage)
+  }
+
 }

@@ -1,7 +1,7 @@
 <ion-content class="content">
   <div class="nav-bar">
     <div class="button-back">
-      <button clear ion-button (click)="goBack()">
+      <button clear ion-button (click)="goBackToMemberList()">
         <ion-icon ios="ios-arrow-round-back" md="md-arrow-round-back"></ion-icon>
       </button>
     </div>
@@ -33,4 +33,12 @@
     </div>
   </div>
 </ion-content>
+
+<ion-footer class="ion-no-border">
+  <ion-toolbar>
+    <ion-buttons>
+      <button class="button-footer-home" (click)="goBackToHomePage()"><ion-icon name="home"></ion-icon>&nbsp;Home</button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-footer>
 

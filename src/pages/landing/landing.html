@@ -3,7 +3,7 @@
   <div class="top">
     <div (click)="get()" class="images">
       <img  src="../../assets/pic.png">
-      <p>Janet</p>
+      <p>{{this.userDetails | titlecase}}</p>
     </div>
     <!-- <div class="asyncBtn">
       <button clear ion-button (click)="gotoAsync()"><ion-icon name="notifications"></ion-icon>sync</button>

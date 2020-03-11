@@ -37,7 +37,7 @@ export class DisplayListOfCsoPage implements OnInit {
   }
 
   _getListOfCsoes() {
-    if(this.originalListOfCsoes.length == 0){
+
       const _loader = this.loadingCtrl.create({
         content: "Please wait information is still loading...",
         duration: 300000000
@@ -52,7 +52,7 @@ export class DisplayListOfCsoPage implements OnInit {
         }
         _loader.dismiss();
       })
-    }
+
   }
 
   goBackToHomePage(){

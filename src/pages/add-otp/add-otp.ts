@@ -46,7 +46,7 @@ export class AddOtpPage {
       else if (otpf.value.otp === '') {
         const alert = this.alertCtrl.create({
           title: 'Oops!',
-          subTitle: 'Please enter your otp code!',
+          subTitle: 'Please enter your OTP code!',
           buttons: ['OK']
         });
         alert.present();

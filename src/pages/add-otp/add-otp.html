@@ -5,20 +5,19 @@
       <div class="left" padding>
           <img class="logo" src="../../assets/logo.png">
         <div class="login">
-          <div text-center  class="h1">Enter you OTP to get started</div>
+          <div text-center  class="h1">Enter your One Time Password</div>
           <br>
           <div class="logininputdiv">
              <!-- <p>{{email}}</p>  -->
              <form #otpf="ngForm" (ngSubmit)="login(otpf)">
             <ion-list>
               <ion-item no-lines class="inputs">
-                <ion-input type="number" placeholder="Otp" ngModel name="otp"></ion-input>
+                <ion-input type="number" placeholder="One time password" ngModel name="otp"></ion-input>
               </ion-item>
             </ion-list>
             <ion-list>
             </ion-list>
-            <button type="submit" block round ion-button block color="primary"
-            >Login</button>
+            <button type="submit" block round ion-button block color="primary">Verify</button>
             <br>
           </form>
           </div>
