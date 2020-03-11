@@ -29,9 +29,8 @@ export class ViewAssessmentDetailsPage {
   }
 
   ngOnInit() {
-    debugger
-    this.storage.get('cso_assessment').then((assessment) => {
-      this.assessment = assessment;
+    this.storage.get('cso_assessment').then((entity) => {
+      this.assessment = entity;
     });
   }
   ionViewDidLoad() {
