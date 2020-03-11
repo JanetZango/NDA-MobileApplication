@@ -1,5 +1,6 @@
 export class Cso {
-    name_of_cso:string;
+    public guid:string
+    public name_of_cso:string;
     // cso_mobilisation_method_id:number;
     // mobilisation_date:Date;
     physical_address:string;

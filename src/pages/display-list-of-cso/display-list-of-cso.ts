@@ -4,6 +4,7 @@ import {RegistercsoPage} from '../registercso/registercso';
 import {EntityProvider} from '../../providers/entity/cso'
 import {ViewCsoDetailsPage} from '../view-cso-details/view-cso-details';
 import {LoadingController} from 'ionic-angular';
+import {CsoViewModel} from "../../model/view/cso.view.model";
 
 @IonicPage()
 @Component({
@@ -12,8 +13,8 @@ import {LoadingController} from 'ionic-angular';
 })
 export class DisplayListOfCsoPage implements OnInit {
 
-  originalListOfCsoes = [];
-  listOfCsoes = []
+  originalListOfCsoes: CsoViewModel[] = [];
+  listOfCsoes: CsoViewModel[] = [];
 
   constructor(
     public navCtrl: NavController,
@@ -36,37 +37,34 @@ export class DisplayListOfCsoPage implements OnInit {
   }
 
   getListOfCsoes() {
-
-    const loader = this.loadingCtrl.create({
+    const _loader = this.loadingCtrl.create({
       content: "Please wait information is still loading...",
       duration: 300000000
     });
 
-    loader.present();
+    _loader.present();
 
     this.api.getCso().subscribe(response => {
       if (response) {
         this.originalListOfCsoes = response.csoes;
         this.listOfCsoes = response.csoes;
       }
-      loader.dismiss();
+      _loader.dismiss();
     })
   }
 
-  viewCsoDetail(cso) {
-    this.navCtrl.push(ViewCsoDetailsPage, {cso_guid: cso.guid});
+  viewCsoDetail(_cso: CsoViewModel) {
+    this.navCtrl.push(ViewCsoDetailsPage, {cso:_cso});
   }
 
   searchForCso(element: any) {
-    const niddle = element.target.value;
-
-    if (niddle === '') {
+    const _needle = element.target.value;
+    if (_needle === '') {
       this.listOfCsoes = this.originalListOfCsoes;
       return;
     }
-
     this.listOfCsoes = this.originalListOfCsoes.filter((x) => {
-      return (x.name_of_cso.toLowerCase().indexOf(niddle.toLowerCase()) > -1);
+      return (x.name_of_cso.toLowerCase().indexOf(_needle.toLowerCase()) > -1);
     })
   }
 }

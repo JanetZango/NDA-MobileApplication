@@ -10,6 +10,7 @@ import { EntityProvider } from '../providers/entity/cso';
 import { DataProvider } from '../providers/dataproviders/dataprovider';
 import { timer } from 'rxjs/observable/timer';
 import { LoginPage } from '../pages/login/login';
+import {AddCsoMemberPage} from "../pages/add-cso-member/add-cso-member";
 
 
 @Component({
@@ -17,10 +18,11 @@ import { LoginPage } from '../pages/login/login';
 })
 export class MyApp {
   // rootPage:any = LandingPage;
-  rootPage:any = LoginPage;
+  //rootPage:any = LoginPage;
+  rootPage:any = AddCsoMemberPage;
   showSplash = true;
-  constructor(platform: Platform, 
-    statusBar: StatusBar, 
+  constructor(platform: Platform,
+    statusBar: StatusBar,
     splashScreen: SplashScreen,
     ) {
 
@@ -35,6 +37,6 @@ export class MyApp {
     statusBar.styleDefault();
     splashScreen.hide();
     timer(3000).subscribe(() => this.showSplash = false)
-  } 
+  }
 }
 

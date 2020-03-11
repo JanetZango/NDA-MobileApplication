@@ -1,4 +1,4 @@
-export class Member {
+export class MemberFormModel {
   private _member_guid: string;
   private _first_name: string;
   private _last_name: string;
