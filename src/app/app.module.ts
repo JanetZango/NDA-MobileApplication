@@ -29,6 +29,7 @@ import { ViewCsoMemberPage } from '../pages/view-cso-member/view-cso-member';
 import { DisplayCsoMemberListPage } from '../pages/display-cso-member-list/display-cso-member-list';
 import { AddCsoMemberPage } from '../pages/add-cso-member/add-cso-member';
 import { httpInterceptorProviders } from '../providers/api';
+import { ViewAssessmentDetailsPage } from '../pages/view-assessment-details/view-assessment-details';
 
 
 @NgModule({
@@ -48,7 +49,8 @@ import { httpInterceptorProviders } from '../providers/api';
     ViewCsoDetailsPage,
     ViewCsoMemberPage,
     DisplayCsoMemberListPage,
-    AddCsoMemberPage
+    AddCsoMemberPage,
+    ViewAssessmentDetailsPage
   ],
   imports: [
     BrowserModule,
@@ -73,7 +75,8 @@ import { httpInterceptorProviders } from '../providers/api';
     ViewCsoDetailsPage,
     ViewCsoMemberPage,
     DisplayCsoMemberListPage,
-    AddCsoMemberPage
+    AddCsoMemberPage,
+    ViewAssessmentDetailsPage
   ],
   providers: [
     StatusBar,

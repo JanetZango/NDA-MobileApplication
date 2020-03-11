@@ -6,10 +6,44 @@ export class Assessment {
     private _assessment_completed: string;
     private _assessment_date: Date;
     private _assessment_type: AssessmentType;
+    private _calculate_assessment_level: string;
+    private _calculate_assessment_score: string;
     private _cso:Cso;
 
     constructor() {
     }
+
+    /**
+     * Getter calculate_assessment_level
+     * @return {string}
+     */
+	public get calculate_assessment_level(): string {
+		return this._calculate_assessment_level;
+	}
+
+    /**
+     * Getter calculate_assessment_score
+     * @return {string}
+     */
+	public get calculate_assessment_score(): string {
+		return this._calculate_assessment_score;
+	}
+
+    /**
+     * Setter calculate_assessment_level
+     * @param {string} value
+     */
+	public set calculate_assessment_level(value: string) {
+		this._calculate_assessment_level = value;
+	}
+
+    /**
+     * Setter calculate_assessment_score
+     * @param {string} value
+     */
+	public set calculate_assessment_score(value: string) {
+		this._calculate_assessment_score = value;
+	}
 
 
     /**

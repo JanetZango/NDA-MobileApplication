@@ -17,7 +17,7 @@
     <div class="main-content">
         <h3>Manage CSO Assessment Interventions</h3>
         <ion-card *ngFor="let assessment of filteredListOfAssessment">
-            <div class="card">
+            <div class="card" (click)="viewAssessmentDatials(assessment)">
                 <p><b>Cso Name:</b>{{assessment.cso.name_of_cso}}</p>
                 <p><b>Assessment Type:</b>{{assessment.assessment_type.title}}</p>
                 <p><b>Assessment Completed:</b>{{assessment.assessment_completed}}</p>

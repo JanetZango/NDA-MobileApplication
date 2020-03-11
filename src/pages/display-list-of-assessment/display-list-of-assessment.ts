@@ -5,6 +5,8 @@ import { LandingPage } from '../landing/landing';
 import { EntityProvider } from '../../providers/entity/cso';
 import { LoadingController } from 'ionic-angular';
 import { Assessment } from '../../model/assessment-model';
+import { Storage } from '@ionic/storage';
+import { ViewAssessmentDetailsPage } from '../view-assessment-details/view-assessment-details';
 
 /**
  * Generated class for the DisplayListOfAssessmentPage page.
@@ -27,7 +29,7 @@ export class DisplayListOfAssessmentPage {
      public navParams: NavParams,
      public csoApi:EntityProvider,
      public loadingCtrl: LoadingController,
-   //  public storage: Storage
+     public storage: Storage
     ) {
       this._getListOfAssessments();
   }
@@ -80,7 +82,8 @@ export class DisplayListOfAssessmentPage {
    * @param _assessment 
    */
   viewAssessmentDatials(_assessment: Assessment) {
-   // this.storage.set('assessment',_assessment);
+    this.storage.set('cso_assessment',_assessment);
+    this.navCtrl.push(ViewAssessmentDetailsPage);
   }
 
 }

@@ -1,0 +1,31 @@
+<ion-content class="content">
+  <div class="nav-bar">
+    <div class="button-back">
+      <button clear ion-button (click)="goToAssessmentListView()">
+        <ion-icon ios="ios-arrow-round-back" md="md-arrow-round-back"></ion-icon>
+      </button>
+    </div>
+    <!-- <div class="button-create">
+      <button ion-button (click)="viewCsoMembers()">
+        Manage Cs
+      </button>
+    </div> -->
+  </div>
+  <div class="main-content">
+    <h3>Assessment detail view</h3>
+    <div class="card-profile-view">
+      <div class="card-profile-view-icon">
+        <img src="../../assets/cso.png" style="max-height: 50%">
+      </div>
+      <hr />
+      <div class="card-profile-view-info">
+        <p><b>Name :</b><br>{{assessment?.cos.name_of_cso}}</p>
+        <p><b>Assessment Type :</b><br>{{assessment?.assessment_type.title}}</p>
+        <p><b>Assessment Completed:</b><br>{{assessment?.assessment_completed}}</p>
+        <p><b>Assessment Level:</b><br>{{assessment?.calculate_assessment_level}}</p>
+        <p><b>Assessment Score:</b><br>{{assessment?.calculate_assessment_score}}</p>
+        <p><b>Assessment Date:</b><br>{{assessment?.assessment_date}}</p>
+      </div>
+    </div>
+  </div>
+</ion-content>
