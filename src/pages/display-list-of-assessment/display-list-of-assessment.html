@@ -1,25 +1,35 @@
 <ion-content class="content">
-    <div class="top">
-        <div class="btn">
+    <div class="nav-bar-search">
+        <div class="button-back">
             <button clear ion-button (click)="gotoback()">
                 <ion-icon ios="ios-arrow-back" md="md-arrow-back"></ion-icon>
             </button>
         </div>
-        <div class="btnCreate">
-            <button ion-button (click)="addBuilding()">Create Capacity CSO Building Intervention</button>
+        <div class="button-create">
+            <button ion-button (click)="createAssessment()">
+                Create Assessment
+            </button>
+        </div>
+        <div class="filter-search-input">
+            <ion-input placeholder="Filter by Cso Name" (input)="searchForAssessmentByCsoName($event)"></ion-input>
         </div>
     </div>
-    <div class="Bottom">
+    <div class="main-content">
         <h3>Manage CSO Assessment Interventions</h3>
-        <ion-card *ngFor="let x of DisplayAssessment"> 
+        <ion-card *ngFor="let assessment of filteredListOfAssessment">
             <div class="card">
-                <!-- <p><b>Cso Name:</b>{{x.cso_name}}</p> -->
-                <p><b>Assessment completed:</b>{{x.assessment_completed}}</p>
-                <p><b>Calc Assessment Score:</b>{{x.calc_assessment_score}}</p>
-                <p><b>Calc Assessment Level:</b>{{x.calc_assessment_level}}</p> 
-               <!-- <button ion-button (click)="viewMore(x.Fname)">View More</button> --> 
-           </div>
+                <p><b>Cso Name:</b>{{assessment.cso.name_of_cso}}</p>
+                <p><b>Assessment Type:</b>{{assessment.assessment_type.title}}</p>
+                <p><b>Assessment Completed:</b>{{assessment.assessment_completed}}</p>
+                <p><b>Assessment Date:</b>{{assessment.assessment_date}}</p>
+            </div>
+        </ion-card>
+        <ion-card *ngIf="filteredListOfAssessment.length == 0">
+            <div class="no-content-notification">
+                <ion-icon name="warning">
+                    <p>NB: There are no results!</p>
+                </ion-icon>
+            </div>
         </ion-card>
     </div>
-
 </ion-content>

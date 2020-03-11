@@ -5,7 +5,7 @@ import { LookUpService } from '../../providers/lookup/lookups.service';
 import { EntityProvider } from '../../providers/entity/cso';
 import { NgModel, NgForm,Validators, FormBuilder, FormGroup } from '@angular/forms';
 import { DataProvider } from '../../providers/dataproviders/dataprovider';
-import { Assessment } from '../../model/assessment-class';
+import { Assessment } from '../../model/assessment-model';
 
 /**
  * Generated class for the AddAssessmentPage page.
@@ -123,39 +123,39 @@ export class AddAssessmentPage {
    */
   addAssessment(assessment:NgForm) {
     // creating an answer obj
-    this.assessmentObject.cso_guid = this.cso_guid_value;
-    this.assessmentObject.assessment_date = assessment.value.assessment_date
-    this.assessmentObject.assessment_type_guid = assessment.value.assessment_type_guid
-    this.assessmentObject.cso_assessment = this.answerObj
-    this.entityProvider.saveAssessment(JSON.stringify(this.assessmentObject)).subscribe(res => {
-      if (typeof (res) != 'undefined') {
-        const alert = this.alertCtrl.create({
-          title: 'Alert',
-          subTitle: 'Assessment Saved',
-          buttons: ['OK']
-        });
-        alert.present();
-        assessment.resetForm();
-        this.assessmentObject = new Assessment();
-        //this.navCtrl.push(LandingPage);
-      }
-      else {
-        const alert = this.alertCtrl.create({
-          title: 'Oops!',
-          subTitle: 'Assessment was not saved',
-          buttons: ['OK']
-        });
-        alert.present();
-      }
-    }, (err) => {
-      const alert = this.alertCtrl.create({
-        title: 'Error!',
-        subTitle: 'Something went wrong!',
-        buttons: ['OK']
-      });
-      alert.present();
+    // this.assessmentObject.cso_guid = this.cso_guid_value;
+    // this.assessmentObject.assessment_date = assessment.value.assessment_date
+    // this.assessmentObject.assessment_type_guid = assessment.value.assessment_type_guid
+    // this.assessmentObject.cso_assessment = this.answerObj
+    // this.entityProvider.saveAssessment(JSON.stringify(this.assessmentObject)).subscribe(res => {
+    //   if (typeof (res) != 'undefined') {
+    //     const alert = this.alertCtrl.create({
+    //       title: 'Alert',
+    //       subTitle: 'Assessment Saved',
+    //       buttons: ['OK']
+    //     });
+    //     alert.present();
+    //     assessment.resetForm();
+    //     this.assessmentObject = new Assessment();
+    //     //this.navCtrl.push(LandingPage);
+    //   }
+    //   else {
+    //     const alert = this.alertCtrl.create({
+    //       title: 'Oops!',
+    //       subTitle: 'Assessment was not saved',
+    //       buttons: ['OK']
+    //     });
+    //     alert.present();
+    //   }
+    // }, (err) => {
+    //   const alert = this.alertCtrl.create({
+    //     title: 'Error!',
+    //     subTitle: 'Something went wrong!',
+    //     buttons: ['OK']
+    //   });
+    //   alert.present();
 
-    });
+    // });
   }
 
   /**
