@@ -1,30 +1,39 @@
 <ion-content class="content">
-  <div class="top">
-    <div class="btn">
-      <button clear ion-button (click)="goToLanding()">
+  <div class="nav-bar-search">
+    <div class="button-back">
+      <button clear ion-button (click)="goBackToCsoDetails()">
         <ion-icon ios="ios-arrow-back" md="md-arrow-back"></ion-icon>
       </button>
     </div>
-
-    <div class="btnCreate">
+    <div class="button-create">
       <button ion-button (click)="addCsoMember()">
-        Create CSO Member
+        Add CSO Member
       </button>
     </div>
+    <div class="filter-search-input">
+      <ion-input placeholder="Filter by name"  (input)="searchForMember($event)" ></ion-input>
+    </div>
   </div>
-  <div class="Bottom">
-      <h3 style="text-align: center;">Manage Cso Members</h3>
-    <ion-card *ngFor="let member of listOfCsoMembers">
-      <div class="card" (click)="viewMemberDetails(member.guid)">
-        <p><b>First name:</b>{{member.first_name}}</p>
-        <p><b>Last name:</b>{{member.last_name}}</p>
-        <p><b>Nationality:</b>{{member.nationality}}</p>
-
-        <div class="btn2">
-            <button clear ion-button ><ion-icon name="ios-arrow-forward-outline"></ion-icon>
-              </button>
+  <div class="main-content">
+    <h1>Manage CSO Members</h1>
+    <div class="cso-name">
+      <p>{{cso?.name_of_cso}}</p>
+    </div>
+    <ion-card *ngFor="let member of filteredListOfCsoMembers">
+      <div class="card-list" (click)="viewMemberDetails(member)">
+        <p><b>First name: </b>{{member.first_name}}</p>
+        <p><b>Last name: </b>{{member.last_name}}</p>
+        <p><b>Nationality: </b>{{member.nationality}}</p>
+        <div class="button-navigate-list">
+          <button clear ion-button>
+            <ion-icon name="ios-arrow-forward-outline"></ion-icon>
+          </button>
         </div>
-
+      </div>
+    </ion-card>
+    <ion-card *ngIf="filteredListOfCsoMembers.length == 0">
+      <div class="no-content-notification">
+        <ion-icon name="warning"><p>NB: There are no results!</p></ion-icon>
       </div>
     </ion-card>
   </div>

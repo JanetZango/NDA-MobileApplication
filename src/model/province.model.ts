@@ -1,4 +1,4 @@
-export class DistrictViewModel {
+export class Province {
   private _guid: string;
   private _title: string;
 

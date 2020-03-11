@@ -1,7 +1,10 @@
-import { Component } from '@angular/core';
+import {Component} from '@angular/core';
+import {Storage} from '@ionic/storage';
 import {IonicPage, LoadingController, NavController, NavParams} from 'ionic-angular';
-import { DisplayCsoMemberListPage } from '../display-cso-member-list/display-cso-member-list';
+import {DisplayCsoMemberListPage} from '../display-cso-member-list/display-cso-member-list';
 import {EntityProvider} from '../../providers/entity/cso'
+import {Cso} from "../../model/cso.model";
+import {DisplayListOfCsoPage} from "../display-list-of-cso/display-list-of-cso";
 
 @IonicPage()
 @Component({
@@ -9,46 +12,26 @@ import {EntityProvider} from '../../providers/entity/cso'
   templateUrl: 'view-cso-details.html',
 })
 export class ViewCsoDetailsPage {
-
-  csoDetail: any
-  cso_guid: any;
-
+  cso: Cso;
   constructor(
     public navCtrl: NavController,
     public navParams: NavParams,
     public api: EntityProvider,
-    public loadingCtrl: LoadingController
-  )
-  {
-    this.cso_guid = this.navParams.get('cso_guid');
-  }
+    public loadingCtrl: LoadingController,
+    public  storage: Storage
+  ) {}
 
   ngOnInit() {
-    this.getCsoDetail();
-  }
-
-  getCsoDetail() {
-
-    const loader = this.loadingCtrl.create({
-      content: "Please wait information is still loading...",
-      duration: 300000000
+    this.storage.get('current_cso').then((entity) => {
+      this.cso = entity;
     });
-
-    loader.present();
-
-    this.api.getCsoByGuid(this.cso_guid).subscribe(response => {
-      if (response) {
-        this.csoDetail = response.cso;
-      }
-      loader.dismiss();
-    })
   }
 
-  goBack() {
-    this.navCtrl.pop();
+  goToCSOListView() {
+    this.navCtrl.push(DisplayListOfCsoPage);
   }
 
   viewCsoMembers() {
-    this.navCtrl.push(DisplayCsoMemberListPage, { cso_guid:this.cso_guid});
+    this.navCtrl.push(DisplayCsoMemberListPage);
   }
 }

@@ -1,242 +1,242 @@
 [
   {
-    "guid": "187afb82-0b5f-4d17-883a-3e54022a55a7",
+    "guid": "f8636ea8-1d5b-4854-a53a-8e45e78a4836",
     "title": "Institutional Arrangement",
-    "assessment_type_guid": "91ea8013-3118-45a5-9929-7890eeb80be4"
+    "assessment_type_guid": "f622c816-6484-409e-ac5d-432a9be4b710"
   },
   {
-    "guid": "e8ddf163-112a-432c-878f-1905b76f2412",
+    "guid": "60975b91-18c1-4283-bd96-b5ba3046422a",
     "title": "Infrastructure",
-    "assessment_type_guid": "91ea8013-3118-45a5-9929-7890eeb80be4"
+    "assessment_type_guid": "f622c816-6484-409e-ac5d-432a9be4b710"
   },
   {
-    "guid": "3a069ddf-4c12-44b0-a2f8-b920952518fe",
+    "guid": "1520aad9-4e4f-45da-9a73-dfaeb39c1370",
     "title": "Staffing and Resources ",
-    "assessment_type_guid": "91ea8013-3118-45a5-9929-7890eeb80be4"
+    "assessment_type_guid": "f622c816-6484-409e-ac5d-432a9be4b710"
   },
   {
-    "guid": "40d4d855-0120-4b66-b2b2-41a8247eae67",
+    "guid": "aaccd99c-72b7-4427-a8c2-4f54b73e0c0d",
     "title": "Networking and Membership",
-    "assessment_type_guid": "91ea8013-3118-45a5-9929-7890eeb80be4"
+    "assessment_type_guid": "f622c816-6484-409e-ac5d-432a9be4b710"
   },
   {
-    "guid": "98719a06-0e3e-4bee-8417-0d7c90665461",
+    "guid": "aae4fe0c-b27f-41b2-97c6-0f414e04ece9",
     "title": "Training and Capacity Building ",
-    "assessment_type_guid": "91ea8013-3118-45a5-9929-7890eeb80be4"
+    "assessment_type_guid": "f622c816-6484-409e-ac5d-432a9be4b710"
   },
   {
-    "guid": "46d8bf58-454a-4813-b9e1-a3eb184bd05c",
+    "guid": "7773add8-bbf7-4ba4-8032-6ac0d07bc735",
     "title": "Compliance with Laws and policies ",
-    "assessment_type_guid": "91ea8013-3118-45a5-9929-7890eeb80be4"
+    "assessment_type_guid": "f622c816-6484-409e-ac5d-432a9be4b710"
   },
   {
-    "guid": "0df8b11a-4f5c-4a0c-a165-2d50f2fbe40b",
+    "guid": "8e4c0a4e-ab8f-4441-9872-45b6b0bb52ab",
     "title": "Registration and Compliance",
-    "assessment_type_guid": "cd861a6c-f4e7-4e21-af13-9909cce16133"
+    "assessment_type_guid": "1dde309a-89d5-41cc-85f7-a7d2178862be"
   },
   {
-    "guid": "af72c6ca-7855-4f6b-9f38-23407f66c6d3",
+    "guid": "bc8f0fb7-d85b-4e60-857e-cf80537a4f43",
     "title": "Monitoring and Evaluation",
-    "assessment_type_guid": "eedf9a7d-cca6-4049-95bf-2d04e175e15c"
+    "assessment_type_guid": "a4c8a1d4-9c96-46f9-bbe1-f0df67b3aa62"
   },
   {
-    "guid": "6cb8887d-6701-4754-9b96-128501c3c702",
+    "guid": "5895aebc-1565-4220-bc08-26010f5de460",
     "title": "Workplace Conflict",
-    "assessment_type_guid": "57bd599f-34cd-4c3b-a5b1-5eecf8feba75"
+    "assessment_type_guid": "7c5d4fe1-3bdd-47e2-b261-ff152184344f"
   },
   {
-    "guid": "dce6bcad-0ceb-4700-b3e3-2172ad514e40",
+    "guid": "a3621b43-5d5b-4226-ac02-d2a141879a69",
     "title": "Accounting and financial management systems",
-    "assessment_type_guid": "712eeee8-66fb-4290-8e3c-6727845beef4"
+    "assessment_type_guid": "b8ed9f23-4e9f-48f4-9656-749048b311a4"
   },
   {
-    "guid": "ec10397e-a9c4-40cb-8b7a-a34f3e070dfb",
+    "guid": "7d02e183-cf9f-4650-90b7-bdc2203b1fc9",
     "title": "Financial control and budgeting",
-    "assessment_type_guid": "712eeee8-66fb-4290-8e3c-6727845beef4"
+    "assessment_type_guid": "b8ed9f23-4e9f-48f4-9656-749048b311a4"
   },
   {
-    "guid": "489f0fcd-cc24-4a26-b1ca-d84bf0b59128",
+    "guid": "f2b788af-c0f6-40e6-899d-f47f347e3aee",
     "title": "Financial reports",
-    "assessment_type_guid": "712eeee8-66fb-4290-8e3c-6727845beef4"
+    "assessment_type_guid": "b8ed9f23-4e9f-48f4-9656-749048b311a4"
   },
   {
-    "guid": "fcf9807b-3e72-4480-885a-6277e433b82c",
+    "guid": "20ee4402-3fe8-4a3a-a8b8-d26465040473",
     "title": "Procurement and financial records",
-    "assessment_type_guid": "712eeee8-66fb-4290-8e3c-6727845beef4"
+    "assessment_type_guid": "b8ed9f23-4e9f-48f4-9656-749048b311a4"
   },
   {
-    "guid": "4c841786-d7ab-4d4c-a36f-28d233b4f8ef",
+    "guid": "5eefebeb-1c82-4c10-a932-4baa0228f699",
     "title": "Organization Governance",
-    "assessment_type_guid": "42d95e1b-d8b0-4ed1-8b12-7875868098e8"
+    "assessment_type_guid": "9408da9d-5954-4f15-9713-08c4be995eab"
   },
   {
-    "guid": "f3e0ac01-be1a-44ee-b020-245a5580efc9",
+    "guid": "5c44ad79-1b4b-48aa-b039-eb6d44482b6b",
     "title": "Mission and goal",
-    "assessment_type_guid": "42d95e1b-d8b0-4ed1-8b12-7875868098e8"
+    "assessment_type_guid": "9408da9d-5954-4f15-9713-08c4be995eab"
   },
   {
-    "guid": "15dcb618-c5ae-4d4c-b3ab-6d435574f23b",
+    "guid": "50bc4bd8-7ff0-4a89-ab60-582d4d131aff",
     "title": "Leadership",
-    "assessment_type_guid": "42d95e1b-d8b0-4ed1-8b12-7875868098e8"
+    "assessment_type_guid": "9408da9d-5954-4f15-9713-08c4be995eab"
   },
   {
-    "guid": "3ccead74-4429-4136-8743-ce164d1497f9",
+    "guid": "a480be65-9670-4a60-a496-0da81fde9f49",
     "title": "Organisation",
-    "assessment_type_guid": "42d95e1b-d8b0-4ed1-8b12-7875868098e8"
+    "assessment_type_guid": "9408da9d-5954-4f15-9713-08c4be995eab"
   },
   {
-    "guid": "80e8da6e-7d92-44b9-be2f-f7e8a783d470",
+    "guid": "87f39808-6cf6-487f-9edb-deff0fe217bc",
     "title": "Registration in terms of NPO Act or Cooperatives Act",
-    "assessment_type_guid": "c8d19c00-e50c-4e82-8e5f-8af629e177ef"
+    "assessment_type_guid": "e4c9abd7-3f9b-42d8-afbb-e5cd2d6b10d2"
   },
   {
-    "guid": "68b789a4-207b-47e9-9f61-0477a528e570",
+    "guid": "c42bd098-4ac5-4326-91e2-a93d11a328f2",
     "title": "Compliance",
-    "assessment_type_guid": "c8d19c00-e50c-4e82-8e5f-8af629e177ef"
+    "assessment_type_guid": "e4c9abd7-3f9b-42d8-afbb-e5cd2d6b10d2"
   },
   {
-    "guid": "5e42caf7-eee4-453e-8dd8-a7ea2b290663",
+    "guid": "e140e6cb-6fbe-4f1f-ae11-46b31f37225a",
     "title": "Organisational structure",
-    "assessment_type_guid": "b694adcc-554b-4994-b166-50f9d8fc8ba1"
+    "assessment_type_guid": "a5563b5b-b94e-4359-ac9f-6206c00fad5a"
   },
   {
-    "guid": "e30ed351-24e5-4abc-b80b-574862c4bb64",
+    "guid": "07030723-aa01-497d-b250-08400c905496",
     "title": "Planning",
-    "assessment_type_guid": "b694adcc-554b-4994-b166-50f9d8fc8ba1"
+    "assessment_type_guid": "a5563b5b-b94e-4359-ac9f-6206c00fad5a"
   },
   {
-    "guid": "9d2264b5-d77a-4d3d-a5b0-10c3a8718af0",
+    "guid": "847e7537-b483-4558-be31-abb33cc4d648",
     "title": "Monitoring and evaluation",
-    "assessment_type_guid": "b694adcc-554b-4994-b166-50f9d8fc8ba1"
+    "assessment_type_guid": "a5563b5b-b94e-4359-ac9f-6206c00fad5a"
   },
   {
-    "guid": "4c5b7563-9623-47c6-93cf-c24319210732",
+    "guid": "94e26254-2a6b-4e0f-8fee-3c2e87ef0f57",
     "title": "Programme development",
-    "assessment_type_guid": "b694adcc-554b-4994-b166-50f9d8fc8ba1"
+    "assessment_type_guid": "a5563b5b-b94e-4359-ac9f-6206c00fad5a"
   },
   {
-    "guid": "834cb48c-6f98-4ec7-ac0a-5c43d52d1491",
+    "guid": "cbcd4dac-5b75-4e02-b7a5-c801c8394631",
     "title": "Personnel management",
-    "assessment_type_guid": "b694adcc-554b-4994-b166-50f9d8fc8ba1"
+    "assessment_type_guid": "a5563b5b-b94e-4359-ac9f-6206c00fad5a"
   },
   {
-    "guid": "e567cb1a-d8c0-477e-9d25-dfec595f05f8",
+    "guid": "dfbacbf1-bb97-46a8-84d4-96f358613f2b",
     "title": "Work environment",
-    "assessment_type_guid": "b694adcc-554b-4994-b166-50f9d8fc8ba1"
+    "assessment_type_guid": "a5563b5b-b94e-4359-ac9f-6206c00fad5a"
   },
   {
-    "guid": "7ab5064b-f3a4-4169-8a5e-a868f892127a",
+    "guid": "491a9df6-cc99-4c88-bcc7-9fdbff39ee57",
     "title": "Staff performance assessments",
-    "assessment_type_guid": "b694adcc-554b-4994-b166-50f9d8fc8ba1"
+    "assessment_type_guid": "a5563b5b-b94e-4359-ac9f-6206c00fad5a"
   },
   {
-    "guid": "a571902e-40f9-4d56-8fa1-d40322738fa9",
+    "guid": "c4cc2473-060d-43be-9fbc-ee6cb1a3c489",
     "title": "Programmes and projects",
-    "assessment_type_guid": "21899fa4-7976-4387-a199-307122812190"
+    "assessment_type_guid": "9155498f-8539-4f9c-b646-36ea886e31f9"
   },
   {
-    "guid": "27de0e9f-33c8-4952-8f4b-2dc293094d4d",
+    "guid": "44121569-401c-43cf-b023-002252723bdc",
     "title": "Application of project management",
-    "assessment_type_guid": "21899fa4-7976-4387-a199-307122812190"
+    "assessment_type_guid": "9155498f-8539-4f9c-b646-36ea886e31f9"
   },
   {
-    "guid": "9583bcc9-64c0-4bc7-becf-a0d914ba7f99",
+    "guid": "81670f1e-b675-4089-af8c-567de36d1701",
     "title": "Project planning and integration",
-    "assessment_type_guid": "21899fa4-7976-4387-a199-307122812190"
+    "assessment_type_guid": "9155498f-8539-4f9c-b646-36ea886e31f9"
   },
   {
-    "guid": "42af7572-b87a-4607-a92a-5299001d776d",
+    "guid": "d39d85be-1730-4abb-8a22-4f830a8a6cd8",
     "title": "Project implementation",
-    "assessment_type_guid": "21899fa4-7976-4387-a199-307122812190"
+    "assessment_type_guid": "9155498f-8539-4f9c-b646-36ea886e31f9"
   },
   {
-    "guid": "8cea7a0d-f603-4eba-a9c3-25d998a9d53f",
+    "guid": "581229bc-eaee-4063-a291-2968009b0aff",
     "title": "Sustainable resource mobilisation",
-    "assessment_type_guid": "95bf8841-9a9b-47f2-b8c2-78da2a2a4071"
+    "assessment_type_guid": "7e180b68-66ed-4c7b-ad89-892fa9d2a219"
   },
   {
-    "guid": "82f4d118-b3b1-425c-b256-ecda4f7d8531",
+    "guid": "794e0110-5bd5-4b4a-b998-5d0c1f73e871",
     "title": "Fundraising",
-    "assessment_type_guid": "95bf8841-9a9b-47f2-b8c2-78da2a2a4071"
+    "assessment_type_guid": "7e180b68-66ed-4c7b-ad89-892fa9d2a219"
   },
   {
-    "guid": "e28bdcd1-d39c-489a-9fa2-f3fc14cf0139",
+    "guid": "9f917d72-7c0d-4dc6-9045-8ebc83933824",
     "title": "Funding Proposals Development",
-    "assessment_type_guid": "95bf8841-9a9b-47f2-b8c2-78da2a2a4071"
+    "assessment_type_guid": "7e180b68-66ed-4c7b-ad89-892fa9d2a219"
   },
   {
-    "guid": "3ab966d2-34b2-43d7-968d-02cf8e72c297",
+    "guid": "dff0a593-7971-4f30-a9c7-d106b471b42f",
     "title": "Fund raising ethics",
-    "assessment_type_guid": "95bf8841-9a9b-47f2-b8c2-78da2a2a4071"
+    "assessment_type_guid": "7e180b68-66ed-4c7b-ad89-892fa9d2a219"
   },
   {
-    "guid": "aa872b73-6479-4e7d-b20f-114e32210dd1",
+    "guid": "f3ccb44b-e900-45ba-ba10-b8f7c6ffe65e",
     "title": "Networking",
-    "assessment_type_guid": "15d98091-ba74-4f77-a28d-10d3ceda0a60"
+    "assessment_type_guid": "3d408aae-e00a-4199-8e22-c144732a62dd"
   },
   {
-    "guid": "3520b654-8ea2-40a4-b6b0-9eb21da26fe0",
+    "guid": "c8140c83-3800-4f55-a039-4042aa20117d",
     "title": "Organisational Communication Strategy",
-    "assessment_type_guid": "15d98091-ba74-4f77-a28d-10d3ceda0a60"
+    "assessment_type_guid": "3d408aae-e00a-4199-8e22-c144732a62dd"
   },
   {
-    "guid": "b5826cc2-7a19-4a73-8116-3243b1b73f62",
+    "guid": "bb9bc8b0-f9b5-4c7d-b433-3649bb1688d8",
     "title": "Organisational Identity and Review",
-    "assessment_type_guid": "15d98091-ba74-4f77-a28d-10d3ceda0a60"
+    "assessment_type_guid": "3d408aae-e00a-4199-8e22-c144732a62dd"
   },
   {
-    "guid": "02de871a-04e0-424a-bd92-4f0ecde6d9be",
+    "guid": "20619edc-75c8-4c8b-97ab-4701c7770ff5",
     "title": "Audience Analysis and Communication Vehicles",
-    "assessment_type_guid": "15d98091-ba74-4f77-a28d-10d3ceda0a60"
+    "assessment_type_guid": "3d408aae-e00a-4199-8e22-c144732a62dd"
   },
   {
-    "guid": "a5fc8045-ac51-4539-82d5-46a2dae84c3c",
+    "guid": "a8b68d74-ab47-4e6b-9c5b-13741e895cfa",
     "title": "Grant Funding",
-    "assessment_type_guid": "8ddc5852-5010-4da7-a7dd-d29c501b70fe"
+    "assessment_type_guid": "fdf5aa72-151b-4151-9934-a8bf2f5d4104"
   },
   {
-    "guid": "ba19fbcd-a9ae-4063-99a8-579bf780af14",
+    "guid": "43775b93-c31e-4970-ad41-b1d3b29b9d8f",
     "title": "Linkages to resources",
-    "assessment_type_guid": "8ddc5852-5010-4da7-a7dd-d29c501b70fe"
+    "assessment_type_guid": "fdf5aa72-151b-4151-9934-a8bf2f5d4104"
   },
   {
-    "guid": "eb52f8b0-c660-4dcd-bce3-5137f12c0315",
+    "guid": "4b04345f-9e96-4ae0-bc46-7ff3ed802f07",
     "title": "Budgets for programmes and support services",
-    "assessment_type_guid": "8ddc5852-5010-4da7-a7dd-d29c501b70fe"
+    "assessment_type_guid": "fdf5aa72-151b-4151-9934-a8bf2f5d4104"
   },
   {
-    "guid": "2877c425-a355-4517-ac6c-ee7e4624253e",
+    "guid": "1c90ff3b-ea03-44fb-ab5d-ef9225f7605d",
     "title": "Fundraising and resource mobilisation",
-    "assessment_type_guid": "8ddc5852-5010-4da7-a7dd-d29c501b70fe"
+    "assessment_type_guid": "fdf5aa72-151b-4151-9934-a8bf2f5d4104"
   },
   {
-    "guid": "b74ac565-eead-4baa-9278-de3639cca445",
+    "guid": "b264feed-b0ff-46cd-b82d-4c823ce8b5e5",
     "title": "Funding needs",
-    "assessment_type_guid": "8ddc5852-5010-4da7-a7dd-d29c501b70fe"
+    "assessment_type_guid": "fdf5aa72-151b-4151-9934-a8bf2f5d4104"
   },
   {
-    "guid": "7ef2f3c2-8d95-47c1-b5b9-19002c77eff2",
+    "guid": "273c8334-76cd-4975-a182-f4be7f09d92a",
     "title": "Non-financial needs of the CSO / NPO",
-    "assessment_type_guid": "8ddc5852-5010-4da7-a7dd-d29c501b70fe"
+    "assessment_type_guid": "fdf5aa72-151b-4151-9934-a8bf2f5d4104"
   },
   {
-    "guid": "9309ea6f-0712-4b35-b10a-c14049f1fb0d",
+    "guid": "49d13c29-867a-4335-83c8-44fb6abf5670",
     "title": "Funding levels needs",
-    "assessment_type_guid": "8ddc5852-5010-4da7-a7dd-d29c501b70fe"
+    "assessment_type_guid": "fdf5aa72-151b-4151-9934-a8bf2f5d4104"
   },
   {
-    "guid": "e8da3dfb-08c5-425e-ab8a-b5dea1ce681f",
+    "guid": "be3bd7e8-6e54-4178-9bed-cfea65cc5465",
     "title": "Sustainability",
-    "assessment_type_guid": "87e03bea-5795-479e-8d07-23b302c26576"
+    "assessment_type_guid": "d0320adf-4039-4d6f-890f-e3539d1bc6f8"
   },
   {
-    "guid": "7ff53c24-79c5-49f6-8b16-59f4fa134a00",
+    "guid": "901eb5a6-2307-4236-a321-f2267d693309",
     "title": "CSOs linkages to resources",
-    "assessment_type_guid": "87e03bea-5795-479e-8d07-23b302c26576"
+    "assessment_type_guid": "d0320adf-4039-4d6f-890f-e3539d1bc6f8"
   },
   {
-    "guid": "bec10bfe-092d-4e92-a9d0-41345b4bdb1a",
+    "guid": "8c9c84e1-d2d2-4341-b72a-970fdb0d4a9c",
     "title": "CSO / NPO networks",
-    "assessment_type_guid": "87e03bea-5795-479e-8d07-23b302c26576"
+    "assessment_type_guid": "d0320adf-4039-4d6f-890f-e3539d1bc6f8"
   }
 ]

@@ -1,4 +1,4 @@
-export class CsoSectorViewModel {
+export class District {
   private _guid: string;
   private _title: string;
 

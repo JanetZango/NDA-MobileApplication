@@ -1,22 +1,22 @@
 [
-    {
-      "guid": "f4f71462-7e91-45e1-97d0-4fc3561fa290",
-      "title": "Board Member"
-    },
-    {
-      "guid": "e8f9eb0a-aae8-4cec-b34b-b506e5de6d69",
-      "title": "Trustee"
-    },
-    {
-      "guid": "8df112a8-7889-4893-949a-f51b78c79eba",
-      "title": "Management"
-    },
-    {
-      "guid": "e40bf547-f992-45c4-b818-8cb453ce4639",
-      "title": "General Member"
-    },
-    {
-      "guid": "72a75dd5-9cc8-43b0-b4eb-0fea84db7d8e",
-      "title": "Other"
-    }
-  ]
+  {
+    "guid": "72eb9ce9-75d3-4bb9-b80c-c1bf31b3ec4e",
+    "title": "Board Member"
+  },
+  {
+    "guid": "f0965be9-595b-4005-ac75-73bf575e53a4",
+    "title": "Trustee"
+  },
+  {
+    "guid": "2300cae8-0a25-4f50-bf82-aad8fb8a7fd9",
+    "title": "Management"
+  },
+  {
+    "guid": "4a8aa57d-1d05-48ad-a51f-7bad9357aa28",
+    "title": "General Member"
+  },
+  {
+    "guid": "5f467b4f-eb05-47e9-8549-0c1b6f61db9f",
+    "title": "Other"
+  }
+]

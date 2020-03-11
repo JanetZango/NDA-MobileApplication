@@ -2,17 +2,12 @@ import {Component, OnInit} from '@angular/core';
 import {IonicPage, NavController, NavParams} from 'ionic-angular';
 import {AddCsoMemberPage} from '../add-cso-member/add-cso-member';
 import {LoadingController} from 'ionic-angular';
-import {ApiProvider} from '../../providers/api/api';
+import {Storage} from '@ionic/storage';
 import {EntityProvider} from '../../providers/entity/cso';
 import {ViewCsoMemberPage} from '../view-cso-member/view-cso-member';
-import {ViewCsoDetailsPage} from '../view-cso-details/view-cso-details';
-
-/**
- * Generated class for the DisplayCsoMemberListPage page.
- *
- * See https://ionicframework.com/docs/components/#navigation for more info on
- * Ionic pages and navigation.
- */
+import {Cso} from "../../model/cso.model";
+import {ViewCsoDetailsPage} from "../view-cso-details/view-cso-details";
+import {Member} from "../../model/member.model";
 
 @IonicPage()
 @Component({
@@ -20,41 +15,38 @@ import {ViewCsoDetailsPage} from '../view-cso-details/view-cso-details';
   templateUrl: 'display-cso-member-list.html',
 })
 export class DisplayCsoMemberListPage implements OnInit {
-
-  cso_guid: any;
-  listOfCsoMembers = [];
+  cso: Cso;
+  originalListOfCsoMembers: Member[] = [];
+  filteredListOfCsoMembers: Member[] = [];
 
   constructor(public navCtrl: NavController,
               public navParams: NavParams,
               public loadingCtrl: LoadingController,
-              public api: EntityProvider)
-  {
-    this.cso_guid = this.navParams.get('cso_guid');
-  }
+              public api: EntityProvider,
+              public  storage: Storage
+  ) {}
 
-  ionViewDidLoad() {
-
+  ngOnInit() {
+    this.storage.get('current_cso').then((entity) => {
+      this.cso = entity;
+      this._getCsoMembers();
+    });
   }
 
   addCsoMember() {
-      this.navCtrl.push(AddCsoMemberPage, {cso_guid: this.cso_guid});
+    this.navCtrl.push(AddCsoMemberPage);
   }
 
-  viewMemberDetails(member_guid) {
-    this.navCtrl.push(ViewCsoMemberPage, {member_guid: member_guid});
+  viewMemberDetails(member: Member) {
+    this.storage.set('current_member', member);
+    this.navCtrl.push(ViewCsoMemberPage);
   }
 
   goToLanding() {
     this.navCtrl.pop();
   }
 
-  ngOnInit() {
-    this.getCsoMembers();
-  }
-
-
-  getCsoMembers() {
-
+  _getCsoMembers() {
     const loader = this.loadingCtrl.create({
       content: "Please wait information is still loading...",
       duration: 300000000
@@ -62,15 +54,27 @@ export class DisplayCsoMemberListPage implements OnInit {
 
     loader.present();
 
-    this.api.getCsoMembers(this.cso_guid).subscribe(response => {
+    this.api.getCsoMembers(this.cso.guid).subscribe(response => {
       if (response) {
-        this.listOfCsoMembers = response.cso_members;
+        this.originalListOfCsoMembers = response.cso_members;
+        this.filteredListOfCsoMembers = response.cso_members;
       }
       loader.dismiss();
     })
   }
 
+  searchForMember(element: any) {
+    const _needle = element.target.value;
+    if (_needle === '') {
+      this.filteredListOfCsoMembers = this.originalListOfCsoMembers;
+      return;
+    }
+    this.filteredListOfCsoMembers = this.originalListOfCsoMembers.filter((member) => {
+      return (member.first_name.toLowerCase().indexOf(_needle.toLowerCase()) > -1);
+    })
+  }
+
   goBackToCsoDetails() {
-    this.navCtrl.pop();
+    this.navCtrl.push(ViewCsoDetailsPage);
   }
 }

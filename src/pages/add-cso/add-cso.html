@@ -1,0 +1,153 @@
+<ion-content class="content">
+  <div class="nav-bar">
+    <div class="button-back">
+      <button clear ion-button (click)="redirectToCSOList()">
+        <ion-icon ios="ios-arrow-round-back" md="md-arrow-round-back"></ion-icon>
+      </button>
+    </div>
+  </div>
+  <div class="main-content">
+    <h3>Register CSO</h3>
+    <div class="form-fields-required">All fields required.</div>
+    <div class="card-form">
+      <form [formGroup]="csoForm" (ngSubmit)="formSubmit()">
+
+        <ion-item class="input-select">
+          <ion-label>Type</ion-label>
+          <ion-select formControlName="cso_type">
+            <ion-option *ngFor="let type of listLookupCsoType" [value]="type.guid">{{type.title}}</ion-option>
+          </ion-select>
+        </ion-item>
+
+        <ion-item class="input-select">
+          <ion-label>Sector</ion-label>
+          <ion-select formControlName="cso_sector">
+            <ion-option *ngFor="let sector of listLookupCsoSector" [value]="sector.guid">{{sector.title}}</ion-option>
+          </ion-select>
+        </ion-item>
+
+        <ion-item class="input-select">
+          <ion-label>Mobilization method</ion-label>
+          <ion-select formControlName="mobilization_method">
+            <ion-option *ngFor="let mobilization of listLookupMobilizationMethod" [value]="mobilization.guid">{{mobilization.title}}</ion-option>
+          </ion-select>
+        </ion-item>
+
+        <ion-item class="input-select">
+          <ion-label> Mobilization date</ion-label>
+          <ion-datetime  class="input-field" formControlName="mobilization_date"></ion-datetime>
+        </ion-item>
+
+        <div class="input-field">
+          <ion-input
+            placeholder="Name"
+            type="text"
+            formControlName="name_of_cso">
+          </ion-input>
+          <div class="field-error" *ngIf="_isInvalidControl('name_of_cso')">
+            <p>Please provide a valid name</p>
+          </div>
+        </div>
+
+        <div class="input-field">
+          <ion-input
+            placeholder="Registration number"
+            type="text"
+            formControlName="registration_number">
+          </ion-input>
+          <div class="field-error" *ngIf="_isInvalidControl('registration_number')">
+            <p>Please provide a valid registration number.</p>
+          </div>
+        </div>
+
+        <div class="input-field">
+          <ion-input
+            placeholder="Total staff"
+            type="number"
+            formControlName="total_staff">
+          </ion-input>
+          <div class="field-error" *ngIf="_isInvalidControl('total_staff')">
+            <p>Please provide total staff count.</p>
+          </div>
+        </div>
+
+        <div class="input-field">
+          <ion-input
+            placeholder="Ward number"
+            type="number"
+            formControlName="ward_number">
+          </ion-input>
+          <div class="field-error" *ngIf="_isInvalidControl('ward_number')">
+            <p>Please provide a valid ward number.</p>
+          </div>
+        </div>
+
+        <div class="input-field">
+          <ion-input
+            placeholder="Contact number"
+            type="number"
+            formControlName="contact_number">
+          </ion-input>
+          <div class="field-error" *ngIf="_isInvalidControl('contact_number')">
+            <p>Please provide a valid contact number.</p>
+          </div>
+        </div>
+
+        <div class="input-field">
+          <ion-input
+            placeholder="Email address"
+            type="email"
+            formControlName="email_address">
+          </ion-input>
+          <div class="field-error" *ngIf="_isInvalidControl('email_address')">
+            <p>Please provide a valid email address.</p>
+          </div>
+        </div>
+
+        <div class="input-field">
+          <ion-input
+            placeholder="Contact person"
+            type="text"
+            formControlName="contact_person">
+          </ion-input>
+          <div class="field-error" *ngIf="_isInvalidControl('contact_person')">
+            <p>Please provide a valid contact person name.</p>
+          </div>
+        </div>
+        <div class="input-field">
+          <ion-input
+            placeholder="Physical address"
+            type="text"
+            formControlName="physical_address">
+          </ion-input>
+          <div class="field-error" *ngIf="_isInvalidControl('physical_address')">
+            <p>Please provide a valid physical address.</p>
+          </div>
+        </div>
+
+        <ion-item class="input-select">
+          <ion-label>Province</ion-label>
+          <ion-select formControlName="province" (ionChange)="onchangeProvince()" >
+            <ion-option *ngFor="let province of listLookupProvince" [value]="province.guid">{{province.title}}</ion-option>
+          </ion-select>
+        </ion-item>
+
+        <ion-item class="input-select">
+          <ion-label>District</ion-label>
+          <ion-select formControlName="district" [disabled]="disableDistrictDropdown" (ionChange)="onchangeDistrict()">
+            <ion-option *ngFor="let district of listFilteredLookupDistrict" [value]="district.guid">{{district.title}}</ion-option>
+          </ion-select>
+        </ion-item>
+
+        <ion-item class="input-select">
+          <ion-label>Municipality</ion-label>
+          <ion-select formControlName="municipality" [disabled]="disableMunicipalityDropdown">
+            <ion-option *ngFor="let municipality of listFilteredLookupMunicipality" [value]="municipality.guid">{{municipality.title}}</ion-option>
+          </ion-select>
+        </ion-item>
+
+        <button type="submit" class="input-submit" ion-button [disabled]="!csoForm.valid">Submit</button>
+      </form>
+    </div>
+  </div>
+</ion-content>

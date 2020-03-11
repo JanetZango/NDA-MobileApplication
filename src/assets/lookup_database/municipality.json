@@ -1,1280 +1,1280 @@
 [
   {
-    "guid": "1113bb90-7353-4140-8374-07f697ff6f94",
+    "guid": "acbb6c9c-d7fa-43a6-91ed-836b240611d5",
     "title": "Dr Beyers Naude",
     "code": "EC101",
-    "district_guid": "450fd6a1-4f57-46ce-b738-93bdef6c967d"
+    "district_guid": "0e9e73c2-da06-4814-b70c-2a8eca991b9a"
   },
   {
-    "guid": "351dda82-4dea-4563-add4-f0246c447c21",
+    "guid": "a4f0c08e-83fe-4cd7-8adc-d03ee191d796",
     "title": "Makana",
     "code": "EC104",
-    "district_guid": "450fd6a1-4f57-46ce-b738-93bdef6c967d"
+    "district_guid": "0e9e73c2-da06-4814-b70c-2a8eca991b9a"
   },
   {
-    "guid": "a74463d8-29ee-4e85-a74c-9c6d61840112",
+    "guid": "25278531-27bf-405a-b747-0d9eb90a5855",
     "title": "Ndlambe",
     "code": "EC105",
-    "district_guid": "450fd6a1-4f57-46ce-b738-93bdef6c967d"
+    "district_guid": "0e9e73c2-da06-4814-b70c-2a8eca991b9a"
   },
   {
-    "guid": "966f4103-dc53-4ae2-bdf1-85a4e2b65c85",
+    "guid": "815c59da-3e53-46a8-b044-3e7e2a7ff626",
     "title": "Mbhashe",
     "code": "EC121",
-    "district_guid": "cca70e0f-9fb3-495b-be13-e50f0e22ec67"
+    "district_guid": "986ed78a-15c8-43c9-9a25-ec52ac0bbb73"
   },
   {
-    "guid": "3488bf0f-85ca-4d16-b429-f6e24aac8369",
+    "guid": "9bd48507-849e-4241-9187-af860dd6d529",
     "title": "Mnquma",
     "code": "EC122",
-    "district_guid": "cca70e0f-9fb3-495b-be13-e50f0e22ec67"
+    "district_guid": "986ed78a-15c8-43c9-9a25-ec52ac0bbb73"
   },
   {
-    "guid": "1697b33d-6fa7-4c8e-b6d8-82bef822404c",
+    "guid": "7cb4fd90-727d-42d8-a486-8c39d87c4f1b",
     "title": "Inxuba Yethemba",
     "code": "EC131",
-    "district_guid": "3b5974ac-1a1b-4dff-a54c-2f280926e69b"
+    "district_guid": "cc1ced74-c9a7-4055-a0bb-c32d6e597642"
   },
   {
-    "guid": "b8bd62bb-8ad3-40c4-ae40-477fd1c77182",
+    "guid": "da814f36-2e51-4158-8f37-218338d53108",
     "title": "Engcobo",
     "code": "EC137",
-    "district_guid": "3b5974ac-1a1b-4dff-a54c-2f280926e69b"
+    "district_guid": "cc1ced74-c9a7-4055-a0bb-c32d6e597642"
   },
   {
-    "guid": "ea2dbf6b-3f39-4c50-9a43-450f3ebdd020",
+    "guid": "9b7425ab-46f2-4349-b4bb-92cae12b89f0",
     "title": "Elundini",
     "code": "EC141",
-    "district_guid": "ff750267-4c60-43fc-aef2-c9f9916b3bfb"
+    "district_guid": "710113cf-8735-4d35-9b89-3cffcbffbcac"
   },
   {
-    "guid": "aaa405fa-f4ab-4fef-a678-d0bf89e3ac96",
+    "guid": "938ca67a-f9fa-44e3-bfd2-0e0a0e8960c7",
     "title": "Senqu",
     "code": "EC142",
-    "district_guid": "ff750267-4c60-43fc-aef2-c9f9916b3bfb"
+    "district_guid": "710113cf-8735-4d35-9b89-3cffcbffbcac"
   },
   {
-    "guid": "23be4e1f-ddb8-42c8-8188-84ec3e6c0d90",
+    "guid": "0ce4fcc6-bc4e-45c7-aea9-77163eab6ec9",
     "title": "Ngquza Hill",
     "code": "EC153",
-    "district_guid": "ca911ebf-24c2-4319-a745-fced0b442fd3"
+    "district_guid": "c14d13c0-b00b-4df0-8e57-f74186c80473"
   },
   {
-    "guid": "98ebe2c9-ea8d-4913-81d0-66aa7af644bb",
+    "guid": "d8e775fe-c6c0-4ecc-8fd6-f85e3adf2457",
     "title": "Port St Johns",
     "code": "EC154",
-    "district_guid": "ca911ebf-24c2-4319-a745-fced0b442fd3"
+    "district_guid": "c14d13c0-b00b-4df0-8e57-f74186c80473"
   },
   {
-    "guid": "9cd4dd9b-1934-4266-bc48-1d22673ce301",
+    "guid": "a9d0506f-6cc3-4c03-abdd-041fbe9cbafb",
     "title": "Nyandeni",
     "code": "EC155",
-    "district_guid": "ca911ebf-24c2-4319-a745-fced0b442fd3"
+    "district_guid": "c14d13c0-b00b-4df0-8e57-f74186c80473"
   },
   {
-    "guid": "8dcfe024-2b57-452a-98b8-72bd8acb3c62",
+    "guid": "67fa0d26-a745-4c94-ae24-c8937c4360dc",
     "title": "Mhlontlo",
     "code": "EC156",
-    "district_guid": "ca911ebf-24c2-4319-a745-fced0b442fd3"
+    "district_guid": "c14d13c0-b00b-4df0-8e57-f74186c80473"
   },
   {
-    "guid": "4c2c11aa-f94e-44c2-b80c-466480cf6ac4",
+    "guid": "5cac5c85-838c-471b-8062-0941043f6d27",
     "title": "King Sabata Dalindyebo",
     "code": "EC157",
-    "district_guid": "ca911ebf-24c2-4319-a745-fced0b442fd3"
+    "district_guid": "c14d13c0-b00b-4df0-8e57-f74186c80473"
   },
   {
-    "guid": "effcb936-2f70-4398-86d4-23b13b71353b",
+    "guid": "47a7c7e8-2945-4673-9ac9-7058402706be",
     "title": "Matatiele",
     "code": "EC441",
-    "district_guid": "0a495ab3-0b07-4823-aed4-cc433655bf19"
+    "district_guid": "63258ee6-cd29-4a26-8f99-f624a3a337b6"
   },
   {
-    "guid": "7df782b6-f249-4e78-8daf-4dab9260c72b",
+    "guid": "482db2f4-60af-477d-bd97-eb3c4fe688cf",
     "title": "Umzimvubu",
     "code": "EC442",
-    "district_guid": "0a495ab3-0b07-4823-aed4-cc433655bf19"
+    "district_guid": "63258ee6-cd29-4a26-8f99-f624a3a337b6"
   },
   {
-    "guid": "9a8ea243-1a6f-48af-ae84-6e1664ce6868",
+    "guid": "4f530f36-968e-4814-a78d-2f77f7094576",
     "title": "Ntabankulu",
     "code": "EC444",
-    "district_guid": "0a495ab3-0b07-4823-aed4-cc433655bf19"
+    "district_guid": "63258ee6-cd29-4a26-8f99-f624a3a337b6"
   },
   {
-    "guid": "9e9b5934-8d7a-44ec-a8fb-9c7e080fa7e0",
+    "guid": "6d5cd6b0-05ce-49ab-b72e-8a0d8245e219",
     "title": "Mbizana",
     "code": "EC443",
-    "district_guid": "0a495ab3-0b07-4823-aed4-cc433655bf19"
+    "district_guid": "63258ee6-cd29-4a26-8f99-f624a3a337b6"
   },
   {
-    "guid": "dc2aaacb-f2c7-47e0-83ea-621828437166",
+    "guid": "704c6a38-c1e4-49f6-8034-59fa502f6ba2",
     "title": "Great Kei",
     "code": "EC123",
-    "district_guid": "cca70e0f-9fb3-495b-be13-e50f0e22ec67"
+    "district_guid": "986ed78a-15c8-43c9-9a25-ec52ac0bbb73"
   },
   {
-    "guid": "519c328b-a0d5-4a16-bde2-94c86194374f",
+    "guid": "7845f9b8-f81a-4332-9666-94686e6642e2",
     "title": "Amahlathi",
     "code": "EC124",
-    "district_guid": "cca70e0f-9fb3-495b-be13-e50f0e22ec67"
+    "district_guid": "986ed78a-15c8-43c9-9a25-ec52ac0bbb73"
   },
   {
-    "guid": "da82fed8-f60a-4054-a038-61bd8d3b11de",
+    "guid": "0514d44b-3c9a-475c-adcc-69316cffd188",
     "title": "Sundays River Valley",
     "code": "EC106",
-    "district_guid": "450fd6a1-4f57-46ce-b738-93bdef6c967d"
+    "district_guid": "0e9e73c2-da06-4814-b70c-2a8eca991b9a"
   },
   {
-    "guid": "6c8b140d-a130-43d4-b062-68d378880d92",
+    "guid": "30e7c24f-846a-49dd-8ee8-b060c6b578b3",
     "title": "Kouga",
     "code": "EC108",
-    "district_guid": "450fd6a1-4f57-46ce-b738-93bdef6c967d"
+    "district_guid": "0e9e73c2-da06-4814-b70c-2a8eca991b9a"
   },
   {
-    "guid": "e63f6b2e-8a8b-48f7-85a1-022167597e03",
+    "guid": "7fb7ebd5-6c2e-4910-87e3-48b1e2a2733b",
     "title": "Kou-Kamma",
     "code": "EC109",
-    "district_guid": "450fd6a1-4f57-46ce-b738-93bdef6c967d"
+    "district_guid": "0e9e73c2-da06-4814-b70c-2a8eca991b9a"
   },
   {
-    "guid": "aae12155-0589-4fab-bf28-0d0c40d44ea3",
+    "guid": "dabb0246-0322-4fbd-88d4-02144b48cea8",
     "title": "Nelson Mandela Bay",
     "code": "NMA",
-    "district_guid": "9f972bd3-1b96-402d-bd24-b70bdc894f4a"
+    "district_guid": "af631e4f-576d-4eb4-978d-d5bfda8a77bb"
   },
   {
-    "guid": "0c556529-2e55-41fc-a6af-4f9886b2420a",
+    "guid": "6854b755-f167-4f01-9af3-07fd1a2c5c03",
     "title": "Bufalo City",
     "code": "BUF",
-    "district_guid": "fe4820ce-67c6-4dc4-9f67-0b49b8063a04"
+    "district_guid": "53652baa-f99a-4bf3-b57a-16a651db2d7f"
   },
   {
-    "guid": "8d298359-746c-41ee-a0da-f6aceca0c218",
+    "guid": "556b67dc-d7af-4e7d-8129-a87e17e1024a",
     "title": "Ngqushwa",
     "code": "EC126",
-    "district_guid": "cca70e0f-9fb3-495b-be13-e50f0e22ec67"
+    "district_guid": "986ed78a-15c8-43c9-9a25-ec52ac0bbb73"
   },
   {
-    "guid": "6e21a5e7-3815-47f3-b97a-49e1ab557eb4",
+    "guid": "2a8fc659-c41a-4a46-b37c-c361ac5a6f11",
     "title": "Intsika Yethu",
     "code": "EC135",
-    "district_guid": "3b5974ac-1a1b-4dff-a54c-2f280926e69b"
+    "district_guid": "cc1ced74-c9a7-4055-a0bb-c32d6e597642"
   },
   {
-    "guid": "dd5d7f2b-ddd0-4e2a-aa9b-866d22fff5ab",
+    "guid": "00de1313-93a9-4ce9-a891-430b2b7b405a",
     "title": "Emalahleni",
     "code": "EC136",
-    "district_guid": "3b5974ac-1a1b-4dff-a54c-2f280926e69b"
+    "district_guid": "cc1ced74-c9a7-4055-a0bb-c32d6e597642"
   },
   {
-    "guid": "48354f8f-145f-4938-867a-9a740ac5b449",
+    "guid": "f2c9d9a8-d956-442e-ad12-ff30e7ba82df",
     "title": "Sakhisizwe",
     "code": "EC138",
-    "district_guid": "3b5974ac-1a1b-4dff-a54c-2f280926e69b"
+    "district_guid": "cc1ced74-c9a7-4055-a0bb-c32d6e597642"
   },
   {
-    "guid": "3ae110fa-fa46-451e-b88d-ebf4b63324a6",
+    "guid": "9681c496-d3f0-4fc4-b74a-d198869e923b",
     "title": "Walter Sisulu",
     "code": "EC145",
-    "district_guid": "ff750267-4c60-43fc-aef2-c9f9916b3bfb"
+    "district_guid": "710113cf-8735-4d35-9b89-3cffcbffbcac"
   },
   {
-    "guid": "5043e7b4-8803-47b6-947e-d385f98d91a4",
+    "guid": "e3b81b48-dbc1-449b-93dc-abf5346015dd",
     "title": "Enoch Mgijima",
     "code": "EC139",
-    "district_guid": "3b5974ac-1a1b-4dff-a54c-2f280926e69b"
+    "district_guid": "cc1ced74-c9a7-4055-a0bb-c32d6e597642"
   },
   {
-    "guid": "6cf58552-ab28-40ee-82f8-ed2f35c7318d",
+    "guid": "aeb51b0a-34b9-4dd1-9f99-560f9bb152f7",
     "title": "Raymond Mhlaba",
     "code": "EC129",
-    "district_guid": "cca70e0f-9fb3-495b-be13-e50f0e22ec67"
+    "district_guid": "986ed78a-15c8-43c9-9a25-ec52ac0bbb73"
   },
   {
-    "guid": "c809a8d7-ccd4-4265-bb27-b1d91ff14977",
+    "guid": "4e3ec52c-a606-45b9-8fb4-6ee4036bf14f",
     "title": "Blue Crane Route",
     "code": "EC102",
-    "district_guid": "450fd6a1-4f57-46ce-b738-93bdef6c967d"
+    "district_guid": "0e9e73c2-da06-4814-b70c-2a8eca991b9a"
   },
   {
-    "guid": "b32afe3e-c9b8-472b-9081-a348ab4c2061",
+    "guid": "861967c4-e32d-48f4-974e-89885d0d512a",
     "title": "Letsemeng",
     "code": "FS161",
-    "district_guid": "c79bf7f6-9514-49c5-8e9f-11f6c14f987d"
+    "district_guid": "d57828fa-00a6-4dc0-9a8d-c7eefaa71176"
   },
   {
-    "guid": "5221a24c-3d40-494a-9b7c-38300614fae7",
+    "guid": "06bb6323-6dd3-4cd9-a4ef-4d8df1d4a507",
     "title": "Kopanong",
     "code": "FS162",
-    "district_guid": "c79bf7f6-9514-49c5-8e9f-11f6c14f987d"
+    "district_guid": "d57828fa-00a6-4dc0-9a8d-c7eefaa71176"
   },
   {
-    "guid": "5b9ac9c7-c7dc-4c36-a6f6-39ee8c20acf9",
+    "guid": "58d55e42-3f08-4736-8495-fbf6781b789e",
     "title": "Mohokare",
     "code": "FS163",
-    "district_guid": "c79bf7f6-9514-49c5-8e9f-11f6c14f987d"
+    "district_guid": "d57828fa-00a6-4dc0-9a8d-c7eefaa71176"
   },
   {
-    "guid": "a7945d63-8519-443e-990b-6a259174d75f",
+    "guid": "096eeb1b-56ba-4812-a5e7-bca22caea3c7",
     "title": "Masilonyana",
     "code": "FS181",
-    "district_guid": "103e6b08-34fd-44b1-aad7-a433ae85d0d9"
+    "district_guid": "f0d31986-cb41-4a78-acc0-1788d861d5d2"
   },
   {
-    "guid": "8609c1f6-0c42-4d61-9317-bb84351c6168",
+    "guid": "a7d9f313-6f4b-4c0a-b269-fc72218d69bc",
     "title": "Tokologo",
     "code": "FS182",
-    "district_guid": "103e6b08-34fd-44b1-aad7-a433ae85d0d9"
+    "district_guid": "f0d31986-cb41-4a78-acc0-1788d861d5d2"
   },
   {
-    "guid": "b26ef8f0-fcee-44c0-a312-c7bf817b8af8",
+    "guid": "79898bc8-ce2e-4145-b59b-ad1e7bc0ea4c",
     "title": "Tswelopele",
     "code": "FS183",
-    "district_guid": "103e6b08-34fd-44b1-aad7-a433ae85d0d9"
+    "district_guid": "f0d31986-cb41-4a78-acc0-1788d861d5d2"
   },
   {
-    "guid": "027d855d-1f6d-406b-9d7c-2941ca3049d0",
+    "guid": "5b2c3346-1924-44f5-a108-15c885227ef2",
     "title": "Matjhabeng",
     "code": "FS184",
-    "district_guid": "103e6b08-34fd-44b1-aad7-a433ae85d0d9"
+    "district_guid": "f0d31986-cb41-4a78-acc0-1788d861d5d2"
   },
   {
-    "guid": "e6a94e54-ba51-43ea-beaa-19258bad3019",
+    "guid": "2ccbb967-b76d-4ec8-b3a0-4bfd02da38eb",
     "title": "Nala",
     "code": "FS185",
-    "district_guid": "103e6b08-34fd-44b1-aad7-a433ae85d0d9"
+    "district_guid": "f0d31986-cb41-4a78-acc0-1788d861d5d2"
   },
   {
-    "guid": "323ae9b1-a50a-4d0a-a60a-2865e7776980",
+    "guid": "b111c150-6f0b-4008-a339-51af56cab341",
     "title": "Setsoto",
     "code": "FS191",
-    "district_guid": "7dbf5b0c-51aa-44ad-acb8-6193a5aacf28"
+    "district_guid": "1e545413-de3b-483e-a097-0044bd3c30de"
   },
   {
-    "guid": "ee3d14d1-2838-4941-a07d-585579b5c5ce",
+    "guid": "06ede97a-7702-42e8-a272-22a9300376c1",
     "title": "Dihlabeng",
     "code": "FS192",
-    "district_guid": "7dbf5b0c-51aa-44ad-acb8-6193a5aacf28"
+    "district_guid": "1e545413-de3b-483e-a097-0044bd3c30de"
   },
   {
-    "guid": "39f12fa4-af58-4156-8d94-d1b96f6622d2",
+    "guid": "c564fe3b-eb4a-461d-8a50-ad5f42d64352",
     "title": "Nketoana",
     "code": "FS193",
-    "district_guid": "7dbf5b0c-51aa-44ad-acb8-6193a5aacf28"
+    "district_guid": "1e545413-de3b-483e-a097-0044bd3c30de"
   },
   {
-    "guid": "c9267060-6783-49ea-a8ad-cc08ff61b3fd",
+    "guid": "8f805d38-abec-465f-8b85-4d97c4d861c7",
     "title": "Maluti a Phofung",
     "code": "FS194",
-    "district_guid": "7dbf5b0c-51aa-44ad-acb8-6193a5aacf28"
+    "district_guid": "1e545413-de3b-483e-a097-0044bd3c30de"
   },
   {
-    "guid": "b5031c94-c141-48cf-9a49-3c9113b8f503",
+    "guid": "78def42e-e1d6-49f9-9653-cff80c348ad5",
     "title": "Phumelela",
     "code": "FS195",
-    "district_guid": "7dbf5b0c-51aa-44ad-acb8-6193a5aacf28"
+    "district_guid": "1e545413-de3b-483e-a097-0044bd3c30de"
   },
   {
-    "guid": "5e838fd7-981a-46b2-9114-f373e50f4329",
+    "guid": "13126298-6854-46d5-af12-28cfeac242bd",
     "title": "Mantsopa",
     "code": "FS196",
-    "district_guid": "7dbf5b0c-51aa-44ad-acb8-6193a5aacf28"
+    "district_guid": "1e545413-de3b-483e-a097-0044bd3c30de"
   },
   {
-    "guid": "0a0b5de0-334f-43a5-b0b1-b9d6f6e68a57",
+    "guid": "f39d98cd-0520-4f16-b4ff-431c87222158",
     "title": "Moqhaka",
     "code": "FS201",
-    "district_guid": "3983f181-c210-4b33-9ceb-0d7f03ec7726"
+    "district_guid": "dc78e2ce-36d8-4030-aba1-d9d97e2e1b8f"
   },
   {
-    "guid": "d849a208-2e6c-4a1c-96e4-190c06680e1d",
+    "guid": "9302966a-9055-4eea-acde-f34c87d2cfac",
     "title": "Ngwathe",
     "code": "FS203",
-    "district_guid": "3983f181-c210-4b33-9ceb-0d7f03ec7726"
+    "district_guid": "dc78e2ce-36d8-4030-aba1-d9d97e2e1b8f"
   },
   {
-    "guid": "5fbe5f06-8465-4ac2-9b12-6f13346622a3",
+    "guid": "7982f92f-e465-4517-8303-96b60fc0e3b1",
     "title": "Metsimaholo",
     "code": "FS204",
-    "district_guid": "3983f181-c210-4b33-9ceb-0d7f03ec7726"
+    "district_guid": "dc78e2ce-36d8-4030-aba1-d9d97e2e1b8f"
   },
   {
-    "guid": "0db9d65f-e761-4e77-b2d6-18e34fa0cbf9",
+    "guid": "fb7235d2-f656-4eb2-baf0-717a87f0f3f8",
     "title": "Mafube",
     "code": "FS205",
-    "district_guid": "3983f181-c210-4b33-9ceb-0d7f03ec7726"
+    "district_guid": "dc78e2ce-36d8-4030-aba1-d9d97e2e1b8f"
   },
   {
-    "guid": "767ae518-6d40-487d-a8f4-74ce27d6a8ea",
+    "guid": "cccf240d-4971-4579-bf1a-e69ed6ab6331",
     "title": "Mangaung",
     "code": "MAN",
-    "district_guid": "f49b1fdb-3c81-4657-827b-538e597201b1"
+    "district_guid": "b9fd2453-2f4e-4b46-865a-5580bc2b59ac"
   },
   {
-    "guid": "eeb1485d-3354-40b1-914f-7e2eebc9050d",
+    "guid": "15d5401a-724e-430c-a858-851dce6fd27f",
     "title": "Mogale City",
     "code": "GT481",
-    "district_guid": "4c3538c6-84d6-4868-a6de-2b9948d345ed"
+    "district_guid": "ff300884-2db6-4cb3-9287-76b0fc539a92"
   },
   {
-    "guid": "f49de16c-5e45-4e0b-ade6-49483a1ff901",
+    "guid": "2677c386-9fe8-4b7f-a24c-fd6c3ab695c4",
     "title": "Rand West City",
     "code": "GT485",
-    "district_guid": "4c3538c6-84d6-4868-a6de-2b9948d345ed"
+    "district_guid": "ff300884-2db6-4cb3-9287-76b0fc539a92"
   },
   {
-    "guid": "73cde91d-d08e-4734-a557-e5f5d2770d31",
+    "guid": "7d082180-f967-4a63-b757-a304d77ce9c4",
     "title": "Merafong City",
     "code": "GT484",
-    "district_guid": "4c3538c6-84d6-4868-a6de-2b9948d345ed"
+    "district_guid": "ff300884-2db6-4cb3-9287-76b0fc539a92"
   },
   {
-    "guid": "73bf5853-9ee5-42ab-9983-ae3391e208b9",
+    "guid": "4950cc8d-6360-4796-bfb3-827177dd62ce",
     "title": "City of Tshwane",
     "code": "TSH",
-    "district_guid": "4673f64d-3f54-4f95-9c1c-d88a5a2a792b"
+    "district_guid": "c6405701-7c94-487e-ae1d-be13093b66a7"
   },
   {
-    "guid": "c083f938-1b8f-4bec-8dfc-d90af55dd43a",
+    "guid": "730234e7-60ad-4193-899e-691f7ad1100c",
     "title": "Lesedi",
     "code": "GT423",
-    "district_guid": "d7f1d4b1-d4a1-47ab-ba82-762df3414580"
+    "district_guid": "2cc69bef-cfd7-404c-af7d-600320db1e8f"
   },
   {
-    "guid": "e360d7fa-5632-42bb-85cf-52d5d21a079c",
+    "guid": "ea3e1102-15ab-432d-9fa7-46e3168e6eb2",
     "title": "Midvaal",
     "code": "GT422",
-    "district_guid": "d7f1d4b1-d4a1-47ab-ba82-762df3414580"
+    "district_guid": "2cc69bef-cfd7-404c-af7d-600320db1e8f"
   },
   {
-    "guid": "b7b72076-7864-4cf1-8fab-e77e6ad25f79",
+    "guid": "0789c90f-d353-45f8-b6e9-8888cb1d714f",
     "title": "Emfuleni",
     "code": "GT421",
-    "district_guid": "d7f1d4b1-d4a1-47ab-ba82-762df3414580"
+    "district_guid": "2cc69bef-cfd7-404c-af7d-600320db1e8f"
   },
   {
-    "guid": "00959aa2-73a8-42a1-b9a5-a725e1860f6e",
+    "guid": "a2fd05f6-1688-46a0-9e1c-69a0b12faae7",
     "title": "City of Johannesburg",
     "code": "JHB",
-    "district_guid": "e080c958-26bd-4c6f-821e-d20fe3b8e073"
+    "district_guid": "921faf89-7522-4f49-97d7-165fc629761b"
   },
   {
-    "guid": "2b3f76ce-a699-43d9-a7a3-69c195b01efd",
+    "guid": "a943a9c0-2095-43a4-bf23-0ff4ad78f797",
     "title": "Ekurhuleni",
     "code": "EKU",
-    "district_guid": "f0f7463a-cf15-4a9d-9606-020e8b1e66a3"
+    "district_guid": "88719a66-f8fd-4bf9-8ed4-612231e5390b"
   },
   {
-    "guid": "3defe3d8-1f90-4d29-8d0d-194d72ba011a",
+    "guid": "19114e73-7831-4cca-a160-d3967e3bd3a1",
     "title": "Umdoni",
     "code": "KZN212",
-    "district_guid": "a84ea35f-264a-420e-899e-592c4a79d248"
+    "district_guid": "400fd943-c0db-47dc-a202-917dd6c98e17"
   },
   {
-    "guid": "2bfbc322-e68a-4a55-ad17-34826521e3fe",
+    "guid": "7a29006b-10ff-4211-b7f8-f1e9c29d1a05",
     "title": "uMuziwabantu",
     "code": "KZN214",
-    "district_guid": "a84ea35f-264a-420e-899e-592c4a79d248"
+    "district_guid": "400fd943-c0db-47dc-a202-917dd6c98e17"
   },
   {
-    "guid": "1e986b51-9738-4b6e-a3cc-7eb3bab932aa",
+    "guid": "968a3e0e-0b75-4ce1-82ed-4b5a7c877acf",
     "title": "Ray Nkonyeni",
     "code": "KZN216",
-    "district_guid": "a84ea35f-264a-420e-899e-592c4a79d248"
+    "district_guid": "400fd943-c0db-47dc-a202-917dd6c98e17"
   },
   {
-    "guid": "20a7852d-fdea-405a-9931-06fa7e553a76",
+    "guid": "fdca9d66-6f2d-432d-a966-d5b6c8e07e1e",
     "title": "Alfred Duma",
     "code": "KZN238",
-    "district_guid": "081f384d-cc72-4907-8016-e51962d1217a"
+    "district_guid": "0494abf3-285b-4cd5-96e5-f7062ddf9f87"
   },
   {
-    "guid": "3f8f8594-1cfe-4d3e-a862-bea87eb6b459",
+    "guid": "273fa939-76b1-4764-ace2-13e53d873550",
     "title": "Inkosi Langalibalele",
     "code": "KZN237",
-    "district_guid": "081f384d-cc72-4907-8016-e51962d1217a"
+    "district_guid": "0494abf3-285b-4cd5-96e5-f7062ddf9f87"
   },
   {
-    "guid": "ff40dab6-650c-40e7-b4ea-cfb1e7d18953",
+    "guid": "8a406d86-d083-49b7-b042-17d65b6ea857",
     "title": "Okhahlamba",
     "code": "KZN235",
-    "district_guid": "081f384d-cc72-4907-8016-e51962d1217a"
+    "district_guid": "0494abf3-285b-4cd5-96e5-f7062ddf9f87"
   },
   {
-    "guid": "9f6d1a1d-484a-4083-b813-213fb3675476",
+    "guid": "c8afd1c9-5e4a-4b03-ad7d-33595425cda5",
     "title": "Endumeni",
     "code": "KZN241",
-    "district_guid": "e410dd90-25bc-4fd7-8115-3d806d411eec"
+    "district_guid": "4af4435d-6cdf-4e99-904c-d66318ddd795"
   },
   {
-    "guid": "65452267-c303-42b3-88f4-4064c2777c03",
+    "guid": "8bdd5e2d-9444-449d-b534-309c51f03d10",
     "title": "Nqutu",
     "code": "KZN242",
-    "district_guid": "e410dd90-25bc-4fd7-8115-3d806d411eec"
+    "district_guid": "4af4435d-6cdf-4e99-904c-d66318ddd795"
   },
   {
-    "guid": "2f89cbd1-fbbd-46b8-a406-077322c26797",
+    "guid": "4c29c86d-153e-4777-b894-04febe30e182",
     "title": "Newcastle",
     "code": "KZN252",
-    "district_guid": "85492c7a-c41f-4cb2-a761-d10ac446ca6a"
+    "district_guid": "0091cef6-49c9-477c-8257-737f41f65244"
   },
   {
-    "guid": "3c06e94c-cc57-483f-a81e-7dd7387870e5",
+    "guid": "a9cc69f9-ab15-42b3-8ac0-a88e7b0832de",
     "title": "Emadlangeni",
     "code": "KZN253",
-    "district_guid": "85492c7a-c41f-4cb2-a761-d10ac446ca6a"
+    "district_guid": "0091cef6-49c9-477c-8257-737f41f65244"
   },
   {
-    "guid": "18569d72-53bf-426c-aa02-84b20856a802",
+    "guid": "e2babdf7-02ae-42a2-bfa4-c82417244496",
     "title": "Dannhauser",
     "code": "KZN254",
-    "district_guid": "85492c7a-c41f-4cb2-a761-d10ac446ca6a"
+    "district_guid": "0091cef6-49c9-477c-8257-737f41f65244"
   },
   {
-    "guid": "722fe541-e035-4c7a-a564-9c5592c824fd",
+    "guid": "69a66b06-aef6-4043-8995-007b926bcfd6",
     "title": "eDumbe",
     "code": "KZN261",
-    "district_guid": "4583e58e-14e8-4307-896e-d53fedffd679"
+    "district_guid": "5d06f6df-a178-43a6-9c48-61fa4f7ea7d1"
   },
   {
-    "guid": "f19479df-c57a-4489-a359-feef8453eb81",
+    "guid": "d8a5f788-37ef-48b2-85c5-f7383344e020",
     "title": "uPhongolo",
     "code": "KZN262",
-    "district_guid": "4583e58e-14e8-4307-896e-d53fedffd679"
+    "district_guid": "5d06f6df-a178-43a6-9c48-61fa4f7ea7d1"
   },
   {
-    "guid": "55817172-217d-4c16-8c13-10397f6d5963",
+    "guid": "eebd1818-530c-4115-953f-2ed32a2543db",
     "title": "Abaqulusi",
     "code": "KZN263",
-    "district_guid": "4583e58e-14e8-4307-896e-d53fedffd679"
+    "district_guid": "5d06f6df-a178-43a6-9c48-61fa4f7ea7d1"
   },
   {
-    "guid": "db84378d-647d-431c-91e9-453a94e3037d",
+    "guid": "d4f74d69-75b4-426d-856a-7bbcd4175a9e",
     "title": "Nongoma",
     "code": "KZN265",
-    "district_guid": "4583e58e-14e8-4307-896e-d53fedffd679"
+    "district_guid": "5d06f6df-a178-43a6-9c48-61fa4f7ea7d1"
   },
   {
-    "guid": "362580da-2e98-4df4-af73-6fd0aca6a2d7",
+    "guid": "535bb8cd-3071-44e0-9ab2-601b0dc1aeef",
     "title": "Ulundi",
     "code": "KZN266",
-    "district_guid": "4583e58e-14e8-4307-896e-d53fedffd679"
+    "district_guid": "5d06f6df-a178-43a6-9c48-61fa4f7ea7d1"
   },
   {
-    "guid": "a48b8376-e412-4627-8543-05b7988dafa6",
+    "guid": "637fd9f3-917f-4fd1-9f54-431a5c2b3d05",
     "title": "Umhlabuyalingana",
     "code": "KZN271",
-    "district_guid": "8b56c732-167f-4a43-b158-0122fa120f85"
+    "district_guid": "71f2e5d9-36d9-4cc4-b0eb-e5b265f51ae5"
   },
   {
-    "guid": "d901338c-9fb7-47fe-a187-c4a6f809e053",
+    "guid": "b4d7ef02-dd51-454a-bcd5-ddb17b36af87",
     "title": "Jozini",
     "code": "KZN272",
-    "district_guid": "8b56c732-167f-4a43-b158-0122fa120f85"
+    "district_guid": "71f2e5d9-36d9-4cc4-b0eb-e5b265f51ae5"
   },
   {
-    "guid": "25262918-6bb2-4ca2-97a9-c65337d7ed3c",
+    "guid": "103acb0f-619c-408a-b5de-08e00ea42cc7",
     "title": "Mtubatuba",
     "code": "KZN275",
-    "district_guid": "8b56c732-167f-4a43-b158-0122fa120f85"
+    "district_guid": "71f2e5d9-36d9-4cc4-b0eb-e5b265f51ae5"
   },
   {
-    "guid": "f691deb2-8596-4b63-bc7e-37d32dea9052",
+    "guid": "a0f84f5a-2182-4681-b182-0b324201ecd6",
     "title": "uMlalazi",
     "code": "KZN284",
-    "district_guid": "76bb32ef-91ba-4acd-a9d1-49959acd46d2"
+    "district_guid": "781ba88a-5dfc-49d4-bd23-4013f59e79ea"
   },
   {
-    "guid": "a48fc50e-244d-452e-89ab-459d6d834ac3",
+    "guid": "9b09560e-de62-484b-ba5b-901ca06a4aed",
     "title": "Nkandla",
     "code": "KZN286",
-    "district_guid": "76bb32ef-91ba-4acd-a9d1-49959acd46d2"
+    "district_guid": "781ba88a-5dfc-49d4-bd23-4013f59e79ea"
   },
   {
-    "guid": "904de5a1-c646-4d5c-9e62-af684b8e26d5",
+    "guid": "132ecf1d-e309-47e3-a7df-27845cdf6e6f",
     "title": "Mandeni",
     "code": "KZN291",
-    "district_guid": "33ff5c01-9ae5-481b-a2bd-900449294c96"
+    "district_guid": "127e86d2-f881-4d9e-8115-63d38e1f49c9"
   },
   {
-    "guid": "8de883e7-ae9d-4031-b119-ce996aadbf0f",
+    "guid": "a9d7970a-daee-437c-ae9b-03c7f3f1c934",
     "title": "KwaDukuza",
     "code": "KZN292",
-    "district_guid": "33ff5c01-9ae5-481b-a2bd-900449294c96"
+    "district_guid": "127e86d2-f881-4d9e-8115-63d38e1f49c9"
   },
   {
-    "guid": "19788eb6-f798-4b24-a31d-6c0086e7dab4",
+    "guid": "b77d5def-5d66-46f0-bc4b-918ed9911340",
     "title": "Ndwedwe",
     "code": "KZN293",
-    "district_guid": "33ff5c01-9ae5-481b-a2bd-900449294c96"
+    "district_guid": "127e86d2-f881-4d9e-8115-63d38e1f49c9"
   },
   {
-    "guid": "381435f2-56f0-4d54-a8e2-cb6473955b15",
+    "guid": "7bc032d4-bfeb-4ab6-96fc-41d45e0352a6",
     "title": "Maphumulo",
     "code": "KZN294",
-    "district_guid": "33ff5c01-9ae5-481b-a2bd-900449294c96"
+    "district_guid": "127e86d2-f881-4d9e-8115-63d38e1f49c9"
   },
   {
-    "guid": "05584a25-3ebc-4549-a9f7-3494e4b075c9",
+    "guid": "498b2ab3-0604-40cc-aa57-71db21a215c9",
     "title": "Dr Nkosazana Dlamini Zuma",
     "code": "KZN436",
-    "district_guid": "ab64aa60-969c-4f5a-a0ad-6fbf36397e0f"
+    "district_guid": "9fae0d56-14fd-4ab0-bd16-d4bff8a552c0"
   },
   {
-    "guid": "79931cfc-d42f-4e79-bd73-35cb4189c5be",
+    "guid": "97af2c31-2a84-4cc4-a892-832b7262eaf3",
     "title": "Ubuhlebezwe",
     "code": "KZN434",
-    "district_guid": "ab64aa60-969c-4f5a-a0ad-6fbf36397e0f"
+    "district_guid": "9fae0d56-14fd-4ab0-bd16-d4bff8a552c0"
   },
   {
-    "guid": "ed8200af-e4e8-499d-bf77-e1dcf9939db2",
+    "guid": "71a992b6-bc22-40b3-92fc-41b89439fb95",
     "title": "Umzumbe",
     "code": "KZN213",
-    "district_guid": "a84ea35f-264a-420e-899e-592c4a79d248"
+    "district_guid": "400fd943-c0db-47dc-a202-917dd6c98e17"
   },
   {
-    "guid": "c3e02980-bbfd-4ba0-942c-d78c3ad2ea89",
+    "guid": "89818fc9-d27e-4983-a919-823f258e8ece",
     "title": "Big Five Hlabisa",
     "code": "KZN276",
-    "district_guid": "8b56c732-167f-4a43-b158-0122fa120f85"
+    "district_guid": "71f2e5d9-36d9-4cc4-b0eb-e5b265f51ae5"
   },
   {
-    "guid": "b2d12421-959b-4cfa-a028-65cbc8e728e3",
+    "guid": "53f948e2-2481-4016-aeb8-238b63844a8e",
     "title": "Richmond",
     "code": "KZN227",
-    "district_guid": "d9b2d886-2334-46c8-b336-e216fd887df3"
+    "district_guid": "3a6725b2-a91f-4544-afbe-356810e88888"
   },
   {
-    "guid": "5375588a-85fb-4d4f-9b96-872d6e1e8591",
+    "guid": "336a6c93-ba34-4fb1-bfda-ab8ee1c0846b",
     "title": "Greater Kokstad",
     "code": "KZN433",
-    "district_guid": "ab64aa60-969c-4f5a-a0ad-6fbf36397e0f"
+    "district_guid": "9fae0d56-14fd-4ab0-bd16-d4bff8a552c0"
   },
   {
-    "guid": "f3c5cd28-ecc6-430d-a719-f8776b5f4d50",
+    "guid": "ae5ee3a5-ed35-4159-92d1-c41141edd7ac",
     "title": "Umzimkhulu",
     "code": "KZN435",
-    "district_guid": "ab64aa60-969c-4f5a-a0ad-6fbf36397e0f"
+    "district_guid": "9fae0d56-14fd-4ab0-bd16-d4bff8a552c0"
   },
   {
-    "guid": "4430b816-30c5-4d31-8b9d-e49b361377df",
+    "guid": "62799bc3-a1a1-42a5-9b1c-d9fd360342df",
     "title": "uMshwathi",
     "code": "KZN221",
-    "district_guid": "d9b2d886-2334-46c8-b336-e216fd887df3"
+    "district_guid": "3a6725b2-a91f-4544-afbe-356810e88888"
   },
   {
-    "guid": "57f63d42-6484-4e9e-92b4-2110f33de06b",
+    "guid": "3ba2bae2-0bc7-4a74-9e23-ce86f7b2f3cb",
     "title": "Msinga",
     "code": "KZN244",
-    "district_guid": "e410dd90-25bc-4fd7-8115-3d806d411eec"
+    "district_guid": "4af4435d-6cdf-4e99-904c-d66318ddd795"
   },
   {
-    "guid": "684f0540-af5c-46f1-a0da-df883980cacd",
+    "guid": "42cd3df2-ebcb-4e15-9af6-80259b3ace45",
     "title": "eThekwini",
     "code": "ETH",
-    "district_guid": "b7452b7f-e355-491c-ac99-399dc307c650"
+    "district_guid": "12a5b10b-14ba-407e-8d4e-6fe994d1c722"
   },
   {
-    "guid": "6a296a4e-986f-4032-9498-4c40e03b63cd",
+    "guid": "80d8de36-6036-45ca-855e-2b5f033aee78",
     "title": "Mkhambathini",
     "code": "KZN226",
-    "district_guid": "d9b2d886-2334-46c8-b336-e216fd887df3"
+    "district_guid": "3a6725b2-a91f-4544-afbe-356810e88888"
   },
   {
-    "guid": "c91bc3c4-e1cd-4faa-8180-376189bfbf6b",
+    "guid": "51719df3-9efa-42c3-b8ee-794a872218eb",
     "title": "The Msunduzi",
     "code": "KZN225",
-    "district_guid": "d9b2d886-2334-46c8-b336-e216fd887df3"
+    "district_guid": "3a6725b2-a91f-4544-afbe-356810e88888"
   },
   {
-    "guid": "35c8b8f2-de8e-42d9-84f9-96c12947b41d",
+    "guid": "fed38aa8-da3e-4d7f-a213-01a0df67df56",
     "title": "uMngeni",
     "code": "KZN222",
-    "district_guid": "d9b2d886-2334-46c8-b336-e216fd887df3"
+    "district_guid": "3a6725b2-a91f-4544-afbe-356810e88888"
   },
   {
-    "guid": "51a387ea-cd1c-432d-94fc-5d8d54b17d71",
+    "guid": "718cad50-e58b-4cb0-8c6f-9781ee82825a",
     "title": "Impendle",
     "code": "KZN224",
-    "district_guid": "d9b2d886-2334-46c8-b336-e216fd887df3"
+    "district_guid": "3a6725b2-a91f-4544-afbe-356810e88888"
   },
   {
-    "guid": "5a400c5b-91a7-4dbf-9bac-eb3deaa97cbd",
+    "guid": "2dcb3d4a-3e39-42ac-b787-cc20a3c278cf",
     "title": "Mfolozi",
     "code": "KZN281",
-    "district_guid": "76bb32ef-91ba-4acd-a9d1-49959acd46d2"
+    "district_guid": "781ba88a-5dfc-49d4-bd23-4013f59e79ea"
   },
   {
-    "guid": "7f445e62-6b0e-4bbe-9c3d-3c533727b0b4",
+    "guid": "09489a43-3b2c-4d1c-9e21-5ac076e09a5e",
     "title": "uMhlathuze",
     "code": "KZN282",
-    "district_guid": "76bb32ef-91ba-4acd-a9d1-49959acd46d2"
+    "district_guid": "781ba88a-5dfc-49d4-bd23-4013f59e79ea"
   },
   {
-    "guid": "17a452a0-a804-4182-8502-42dc615bd7af",
+    "guid": "6ea2a377-b15f-4936-bec2-f03e1844cfb4",
     "title": "Mthonjaneni",
     "code": "KZN285",
-    "district_guid": "76bb32ef-91ba-4acd-a9d1-49959acd46d2"
+    "district_guid": "781ba88a-5dfc-49d4-bd23-4013f59e79ea"
   },
   {
-    "guid": "8b6957db-c349-43a5-a2b7-5960dc34e3bd",
+    "guid": "fd0d78c0-9b88-4c0b-bf2a-bb3cab409775",
     "title": "Umvoti",
     "code": "KZN245",
-    "district_guid": "e410dd90-25bc-4fd7-8115-3d806d411eec"
+    "district_guid": "4af4435d-6cdf-4e99-904c-d66318ddd795"
   },
   {
-    "guid": "18849dd4-0fa2-4419-bb04-03e5ea1fa40b",
+    "guid": "5db331e6-3fbb-45dc-95a8-10fd5863daf4",
     "title": "Mpofana",
     "code": "KZN223",
-    "district_guid": "d9b2d886-2334-46c8-b336-e216fd887df3"
+    "district_guid": "3a6725b2-a91f-4544-afbe-356810e88888"
   },
   {
-    "guid": "1914d04b-e786-4730-8ea1-122e8467c1a1",
+    "guid": "e1997933-0e94-4d34-8124-e676d8bcc0a1",
     "title": "Greater Giyani",
     "code": "LIM331",
-    "district_guid": "e4617f94-ff89-43dd-b242-05d444edca8d"
+    "district_guid": "9cac0baf-5aae-4e24-9cd0-8384a251bd00"
   },
   {
-    "guid": "782953a4-210c-4133-a7ef-cbe4ed0156aa",
+    "guid": "f1ad5461-9de9-4f6f-b01c-8941eb6ec5db",
     "title": "Greater Letaba",
     "code": "LIM332",
-    "district_guid": "e4617f94-ff89-43dd-b242-05d444edca8d"
+    "district_guid": "9cac0baf-5aae-4e24-9cd0-8384a251bd00"
   },
   {
-    "guid": "be62e938-ac31-4d3d-aebb-663fdfd6f775",
+    "guid": "c7a714cb-554a-4452-9c39-7e2288817d6e",
     "title": "Greater Tzaneen",
     "code": "LIM333",
-    "district_guid": "e4617f94-ff89-43dd-b242-05d444edca8d"
+    "district_guid": "9cac0baf-5aae-4e24-9cd0-8384a251bd00"
   },
   {
-    "guid": "fc70751d-4fd1-4af0-a0a6-3a9c79931ebf",
+    "guid": "2c63f870-08bb-4da3-afa4-6255319794c8",
     "title": "Ba-Phalaborwa",
     "code": "LIM334",
-    "district_guid": "e4617f94-ff89-43dd-b242-05d444edca8d"
+    "district_guid": "9cac0baf-5aae-4e24-9cd0-8384a251bd00"
   },
   {
-    "guid": "f6acbcba-0ba4-42aa-a4ec-4e64537614bf",
+    "guid": "fec5e776-9cb8-46c5-8870-438fdba7e219",
     "title": "Maruleng",
     "code": "LIM335",
-    "district_guid": "e4617f94-ff89-43dd-b242-05d444edca8d"
+    "district_guid": "9cac0baf-5aae-4e24-9cd0-8384a251bd00"
   },
   {
-    "guid": "e5875469-5008-453d-9eae-647c2744223a",
+    "guid": "28cc20ea-2e03-411b-b4ba-388389ac3eff",
     "title": "Lepele-Nkumpi",
     "code": "LIM355",
-    "district_guid": "25627ead-7e6c-4cfb-9c4a-385c5ab1d710"
+    "district_guid": "238b1c65-8ce6-4d57-a990-14c55febac1d"
   },
   {
-    "guid": "7245bcad-1fe5-4b93-aa42-950fce79dd55",
+    "guid": "6dcce904-1912-4432-9ca1-6d762113190c",
     "title": "Thabazimbi",
     "code": "LIM361",
-    "district_guid": "75cba077-4ffa-4ee1-ac55-3ef75a27c434"
+    "district_guid": "fbb38124-4b1b-4762-ba7b-40c986b97994"
   },
   {
-    "guid": "fb137431-32c3-4231-a243-1b35a448a1cd",
+    "guid": "7d3047b1-86b9-48d7-83b5-8eee654819d7",
     "title": "Lephalale",
     "code": "LIM362",
-    "district_guid": "75cba077-4ffa-4ee1-ac55-3ef75a27c434"
+    "district_guid": "fbb38124-4b1b-4762-ba7b-40c986b97994"
   },
   {
-    "guid": "be77a788-d8aa-4a3b-9b53-f6c657385d9f",
+    "guid": "947d1b7d-f942-4f06-aed3-bd1ebbfde32c",
     "title": "Bela-Bela",
     "code": "LIM366",
-    "district_guid": "75cba077-4ffa-4ee1-ac55-3ef75a27c434"
+    "district_guid": "fbb38124-4b1b-4762-ba7b-40c986b97994"
   },
   {
-    "guid": "58ed45fd-ac33-4fd1-abaf-7b10aab47fc9",
+    "guid": "a63ef160-a9e4-4157-b2df-11e287a94766",
     "title": "Mogalakwena",
     "code": "LIM367",
-    "district_guid": "75cba077-4ffa-4ee1-ac55-3ef75a27c434"
+    "district_guid": "fbb38124-4b1b-4762-ba7b-40c986b97994"
   },
   {
-    "guid": "a43b3dba-43e5-42da-a153-16c793db2a6d",
+    "guid": "fc8fc97b-15df-4835-a3dc-1a7958910870",
     "title": "Ephraim Mogale",
     "code": "LIM471",
-    "district_guid": "9fb13eb8-896a-42a0-addc-86dee7ce874b"
+    "district_guid": "61364446-8a73-4b1e-8eb2-6a08e8630df2"
   },
   {
-    "guid": "6d2d691b-f11f-4dd7-9413-5a86484b5a5c",
+    "guid": "ab0ad181-b33b-4d09-b690-f9eb29bafdb8",
     "title": "Elias Motsoaledi",
     "code": "LIM472",
-    "district_guid": "9fb13eb8-896a-42a0-addc-86dee7ce874b"
+    "district_guid": "61364446-8a73-4b1e-8eb2-6a08e8630df2"
   },
   {
-    "guid": "d2d847fe-471b-4aef-ab54-fe7f73a8d5cc",
+    "guid": "00a6a4d8-5781-4052-9447-144b63545705",
     "title": "Makhuduthamaga",
     "code": "LIM473",
-    "district_guid": "9fb13eb8-896a-42a0-addc-86dee7ce874b"
+    "district_guid": "61364446-8a73-4b1e-8eb2-6a08e8630df2"
   },
   {
-    "guid": "aa1088e4-a646-471a-8d27-6353b6d66c9a",
+    "guid": "8fc24a1c-6a8d-4ec6-b21a-c14b8432c944",
     "title": "Blouberg",
     "code": "LIM351",
-    "district_guid": "25627ead-7e6c-4cfb-9c4a-385c5ab1d710"
+    "district_guid": "238b1c65-8ce6-4d57-a990-14c55febac1d"
   },
   {
-    "guid": "99aa80d4-595b-4297-be10-d0b7cd63afb3",
+    "guid": "f388864d-5c31-49ae-ab52-a074146d5ba5",
     "title": "Molemole",
     "code": "LIM353",
-    "district_guid": "25627ead-7e6c-4cfb-9c4a-385c5ab1d710"
+    "district_guid": "238b1c65-8ce6-4d57-a990-14c55febac1d"
   },
   {
-    "guid": "c94e5892-4d51-47a9-a781-7501a2d45a10",
+    "guid": "325a6053-caa0-4c9b-ad2d-a830b63cad94",
     "title": "Polokwane",
     "code": "LIM354",
-    "district_guid": "25627ead-7e6c-4cfb-9c4a-385c5ab1d710"
+    "district_guid": "238b1c65-8ce6-4d57-a990-14c55febac1d"
   },
   {
-    "guid": "2c2420b4-5e3b-4b50-954f-de4ebd406026",
+    "guid": "3a6851f1-517d-4e2c-9aa9-d2a7f214611b",
     "title": "Modimolle/Mookgophong",
     "code": "LIM368",
-    "district_guid": "75cba077-4ffa-4ee1-ac55-3ef75a27c434"
+    "district_guid": "fbb38124-4b1b-4762-ba7b-40c986b97994"
   },
   {
-    "guid": "2b660183-46d2-40ee-bbb2-a2ab5c4e1de3",
+    "guid": "d215066d-4718-41ad-b75e-dc425e89e683",
     "title": "Greater Tubatse/Fetakgomo",
     "code": "LIM476",
-    "district_guid": "9fb13eb8-896a-42a0-addc-86dee7ce874b"
+    "district_guid": "61364446-8a73-4b1e-8eb2-6a08e8630df2"
   },
   {
-    "guid": "a55ba9f8-b547-4626-b18c-b84cd60cc44e",
+    "guid": "b47d05ec-a18f-4dd6-b28d-b20926be4b5e",
     "title": "Musina",
     "code": "LIM341",
-    "district_guid": "f8ec989d-552c-4d25-ada4-d4d6f7d50050"
+    "district_guid": "342fac89-9a17-4c10-97c0-ce234d38c586"
   },
   {
-    "guid": "3e021e06-7870-443f-8243-b9c869978e0f",
+    "guid": "18f30b20-ba6e-401d-853f-7b2db42512b3",
     "title": "Thulamela",
     "code": "LIM343",
-    "district_guid": "f8ec989d-552c-4d25-ada4-d4d6f7d50050"
+    "district_guid": "342fac89-9a17-4c10-97c0-ce234d38c586"
   },
   {
-    "guid": "b770d0f8-fe28-48c7-94d1-dc25ab39d045",
+    "guid": "be77f99e-c4ee-4441-b2bf-4f60ccd77579",
     "title": "Makhado",
     "code": "LIM344",
-    "district_guid": "f8ec989d-552c-4d25-ada4-d4d6f7d50050"
+    "district_guid": "342fac89-9a17-4c10-97c0-ce234d38c586"
   },
   {
-    "guid": "9cb7e694-87e7-45c3-881d-ed803b5b0fce",
+    "guid": "99cc64c4-90cc-4b56-b12f-7ce0045dd2df",
     "title": "New",
     "code": "LIM345",
-    "district_guid": "f8ec989d-552c-4d25-ada4-d4d6f7d50050"
+    "district_guid": "342fac89-9a17-4c10-97c0-ce234d38c586"
   },
   {
-    "guid": "69d911e1-e4b4-4b48-8e94-f503e76eee81",
+    "guid": "bd90ec41-83d5-4e81-8675-c343ca627207",
     "title": "Chief Albert Luthuli",
     "code": "MP301",
-    "district_guid": "9cb7c699-196b-4572-91d9-2c5967cf0cdf"
+    "district_guid": "60072dbe-f031-4a9f-b87e-d4ca4b3c2a62"
   },
   {
-    "guid": "b03e2185-b210-4841-b15b-45ad86726f85",
+    "guid": "6e5fa21d-c1c7-4863-9a3c-4b2747d52d90",
     "title": "Msukaligwa",
     "code": "MP302",
-    "district_guid": "9cb7c699-196b-4572-91d9-2c5967cf0cdf"
+    "district_guid": "60072dbe-f031-4a9f-b87e-d4ca4b3c2a62"
   },
   {
-    "guid": "f0415121-077e-4ba5-9933-0dc94ca1b868",
+    "guid": "bfe80535-4c32-4588-867e-6b5f32a52017",
     "title": "Mkhondo",
     "code": "MP303",
-    "district_guid": "9cb7c699-196b-4572-91d9-2c5967cf0cdf"
+    "district_guid": "60072dbe-f031-4a9f-b87e-d4ca4b3c2a62"
   },
   {
-    "guid": "fe4bd3a7-725f-4852-a0b5-edf160a64f2d",
+    "guid": "22916e28-7a89-4267-a64b-eafe5d50b8a5",
     "title": "Dr Pixley Ka Isaka Seme",
     "code": "MP304",
-    "district_guid": "9cb7c699-196b-4572-91d9-2c5967cf0cdf"
+    "district_guid": "60072dbe-f031-4a9f-b87e-d4ca4b3c2a62"
   },
   {
-    "guid": "e0096dc6-fece-4352-986c-2adf9f400e22",
+    "guid": "5bde9976-8c0b-4cb5-a5ec-e5ab717be73d",
     "title": "Lekwa",
     "code": "MP305",
-    "district_guid": "9cb7c699-196b-4572-91d9-2c5967cf0cdf"
+    "district_guid": "60072dbe-f031-4a9f-b87e-d4ca4b3c2a62"
   },
   {
-    "guid": "83bb3751-7eb3-428a-8522-6ac1b76e60e0",
+    "guid": "1626d649-6957-4cf1-9bca-4a258f5f3f97",
     "title": "Dipaleseng",
     "code": "MP306",
-    "district_guid": "9cb7c699-196b-4572-91d9-2c5967cf0cdf"
+    "district_guid": "60072dbe-f031-4a9f-b87e-d4ca4b3c2a62"
   },
   {
-    "guid": "dce38448-e03a-463f-89df-72ad9d39cc55",
+    "guid": "294da0c5-c966-4b06-876d-6c1c7efafa59",
     "title": "Govan Mbeki",
     "code": "MP307",
-    "district_guid": "9cb7c699-196b-4572-91d9-2c5967cf0cdf"
+    "district_guid": "60072dbe-f031-4a9f-b87e-d4ca4b3c2a62"
   },
   {
-    "guid": "ee258ea8-6eda-4474-a8b1-69f2d21f4bc1",
+    "guid": "8efcc4e2-4a8d-488f-9eb7-70092b17330b",
     "title": "Victor Khanye",
     "code": "MP311",
-    "district_guid": "0643d343-9d94-4e7d-b3c3-601b6a7e9332"
+    "district_guid": "ac584bd8-4ce9-4af1-814e-7fbd466d2c40"
   },
   {
-    "guid": "b6f9f1b5-69d6-4890-92bd-b3cc4c420cd8",
+    "guid": "96b33aad-4ec6-414d-b999-79558145dcad",
     "title": "Emalahleni",
     "code": "MP312",
-    "district_guid": "0643d343-9d94-4e7d-b3c3-601b6a7e9332"
+    "district_guid": "ac584bd8-4ce9-4af1-814e-7fbd466d2c40"
   },
   {
-    "guid": "c80a2d86-844f-4128-8225-43bc22185a8a",
+    "guid": "e925d5da-f4a1-4e6d-a58d-b65443434e88",
     "title": "Steve Tshwete",
     "code": "MP313",
-    "district_guid": "0643d343-9d94-4e7d-b3c3-601b6a7e9332"
+    "district_guid": "ac584bd8-4ce9-4af1-814e-7fbd466d2c40"
   },
   {
-    "guid": "48aca31a-b47e-4cdb-bdf9-48799a031e9e",
+    "guid": "4ba68d53-7712-4553-ab46-7c413795963a",
     "title": "Emakhazeni",
     "code": "MP314",
-    "district_guid": "0643d343-9d94-4e7d-b3c3-601b6a7e9332"
+    "district_guid": "ac584bd8-4ce9-4af1-814e-7fbd466d2c40"
   },
   {
-    "guid": "1c687530-52ae-4d9b-a28e-acd892b9c730",
+    "guid": "93aa71a6-04b0-4c3b-9efb-ce6934472fdc",
     "title": "Thembisile",
     "code": "MP315",
-    "district_guid": "0643d343-9d94-4e7d-b3c3-601b6a7e9332"
+    "district_guid": "ac584bd8-4ce9-4af1-814e-7fbd466d2c40"
   },
   {
-    "guid": "a2a937e5-826a-4b20-95cc-bc2879d1f24d",
+    "guid": "5b0aacee-2865-4d3c-b429-0b843ec8c0e7",
     "title": "Dr JS Moroka",
     "code": "MP316",
-    "district_guid": "0643d343-9d94-4e7d-b3c3-601b6a7e9332"
+    "district_guid": "ac584bd8-4ce9-4af1-814e-7fbd466d2c40"
   },
   {
-    "guid": "2a9611ce-b5c1-4e85-a659-489d59ddd029",
+    "guid": "bf27d54f-8611-4c04-b063-fa2984c2ee33",
     "title": "Thaba Chweu",
     "code": "MP321",
-    "district_guid": "42ab46df-3f35-4c60-bdbb-361d6525030b"
+    "district_guid": "470356c3-f489-4e7a-acdc-2856f3f770df"
   },
   {
-    "guid": "6db90ebd-51f8-4862-86d6-7b8729ee7c4b",
+    "guid": "421c6ca7-e833-4d9d-8ae7-62572f0f84e5",
     "title": "Nkomazi",
     "code": "MP324",
-    "district_guid": "42ab46df-3f35-4c60-bdbb-361d6525030b"
+    "district_guid": "470356c3-f489-4e7a-acdc-2856f3f770df"
   },
   {
-    "guid": "af706be2-c910-4b22-8637-3c04254275a8",
+    "guid": "90eaf34e-3ef4-4763-b61f-efc1bd662f34",
     "title": "Bushbuckridge",
     "code": "MP325",
-    "district_guid": "42ab46df-3f35-4c60-bdbb-361d6525030b"
+    "district_guid": "470356c3-f489-4e7a-acdc-2856f3f770df"
   },
   {
-    "guid": "bca68f6e-3817-45c7-846d-54be3a4a98ef",
+    "guid": "51df92f5-c951-407f-9224-fb9342e9a6d2",
     "title": "City of Mbombela",
     "code": "MP326",
-    "district_guid": "42ab46df-3f35-4c60-bdbb-361d6525030b"
+    "district_guid": "470356c3-f489-4e7a-acdc-2856f3f770df"
   },
   {
-    "guid": "d571e108-b542-4e29-8ff8-ecf5c3c0e882",
+    "guid": "94b97e06-2c23-44a8-b46c-d6227982dac5",
     "title": "Richtersveld",
     "code": "NC061",
-    "district_guid": "668045c5-a534-45f1-9272-7dddd38305ef"
+    "district_guid": "6972ab36-fab5-4df4-8e59-febe76473a73"
   },
   {
-    "guid": "4ca9f6bc-cfc8-4ed5-ba60-bd64743ee2c1",
+    "guid": "99eef497-e702-4567-8bae-3c16677f7626",
     "title": "Nama Khoi",
     "code": "NC062",
-    "district_guid": "668045c5-a534-45f1-9272-7dddd38305ef"
+    "district_guid": "6972ab36-fab5-4df4-8e59-febe76473a73"
   },
   {
-    "guid": "5114e2be-7ab0-4763-bdc1-d08acac21075",
+    "guid": "41a712a1-7133-46bf-b0f0-c1adef1b0481",
     "title": "Kamiesberg",
     "code": "NC064",
-    "district_guid": "668045c5-a534-45f1-9272-7dddd38305ef"
+    "district_guid": "6972ab36-fab5-4df4-8e59-febe76473a73"
   },
   {
-    "guid": "7a7be71f-bee6-4a2b-96db-f5185a177cb6",
+    "guid": "de049623-1896-4139-a6a0-1492d5122ab2",
     "title": "Hantam",
     "code": "NC065",
-    "district_guid": "668045c5-a534-45f1-9272-7dddd38305ef"
+    "district_guid": "6972ab36-fab5-4df4-8e59-febe76473a73"
   },
   {
-    "guid": "d9deb52f-0364-47f9-9042-6b6ebabc802f",
+    "guid": "1fdce6a0-f37c-430b-9337-7af82efe622e",
     "title": "Karoo Hoogland",
     "code": "NC066",
-    "district_guid": "668045c5-a534-45f1-9272-7dddd38305ef"
+    "district_guid": "6972ab36-fab5-4df4-8e59-febe76473a73"
   },
   {
-    "guid": "2b84e225-1484-42d8-916c-d2c9840898f9",
+    "guid": "315b7326-4bf1-477c-bf04-67d0de7b5bcf",
     "title": "Kh??i-Ma",
     "code": "NC067",
-    "district_guid": "668045c5-a534-45f1-9272-7dddd38305ef"
+    "district_guid": "6972ab36-fab5-4df4-8e59-febe76473a73"
   },
   {
-    "guid": "a7d5e15d-b676-4a51-97aa-36996d1012e5",
+    "guid": "c63d423f-7c2c-4d33-bce6-a36374721818",
     "title": "Ubuntu",
     "code": "NC071",
-    "district_guid": "ba6dd94c-4b32-4b3a-87f8-6c7af23b9fa5"
+    "district_guid": "ceeaccdb-d9a9-4e13-ab5e-291aaef15fba"
   },
   {
-    "guid": "2f67bae3-36ed-45b9-8275-2147867d5111",
+    "guid": "fe12c6c8-3d81-4c11-9f99-224b78a50865",
     "title": "Umsobomvu",
     "code": "NC072",
-    "district_guid": "ba6dd94c-4b32-4b3a-87f8-6c7af23b9fa5"
+    "district_guid": "ceeaccdb-d9a9-4e13-ab5e-291aaef15fba"
   },
   {
-    "guid": "b0aa3425-46e8-40b0-9711-6717f4bbdf23",
+    "guid": "07752fc1-2589-4ee3-b05f-777bdbcbb8f9",
     "title": "Emthanjeni",
     "code": "NC073",
-    "district_guid": "ba6dd94c-4b32-4b3a-87f8-6c7af23b9fa5"
+    "district_guid": "ceeaccdb-d9a9-4e13-ab5e-291aaef15fba"
   },
   {
-    "guid": "526777ac-8241-4a42-92c9-a06f12458d80",
+    "guid": "572653b2-a09b-4ef9-bd77-d7c20171f7c1",
     "title": "Kareeberg",
     "code": "NC074",
-    "district_guid": "ba6dd94c-4b32-4b3a-87f8-6c7af23b9fa5"
+    "district_guid": "ceeaccdb-d9a9-4e13-ab5e-291aaef15fba"
   },
   {
-    "guid": "fb7ab6db-5598-472d-b78f-a0f983e32e0b",
+    "guid": "08884652-4c58-42b8-8794-300d330ab1a3",
     "title": "Renosterberg",
     "code": "NC075",
-    "district_guid": "ba6dd94c-4b32-4b3a-87f8-6c7af23b9fa5"
+    "district_guid": "ceeaccdb-d9a9-4e13-ab5e-291aaef15fba"
   },
   {
-    "guid": "1341435a-9aec-47a9-8b15-711e3dd69e18",
+    "guid": "b169fe3c-cdb0-4859-b14e-84453e7c7c39",
     "title": "Thembelihle",
     "code": "NC076",
-    "district_guid": "ba6dd94c-4b32-4b3a-87f8-6c7af23b9fa5"
+    "district_guid": "ceeaccdb-d9a9-4e13-ab5e-291aaef15fba"
   },
   {
-    "guid": "bd98ced5-8adf-45a6-893c-316d3a540053",
+    "guid": "b5200b1b-b583-42e7-8b33-1aa7286713ff",
     "title": "Siyathemba",
     "code": "NC077",
-    "district_guid": "ba6dd94c-4b32-4b3a-87f8-6c7af23b9fa5"
+    "district_guid": "ceeaccdb-d9a9-4e13-ab5e-291aaef15fba"
   },
   {
-    "guid": "ebf1a271-ab5c-4480-870a-1c2b978be5c0",
+    "guid": "11909123-ea26-42f1-903e-7a3d75ecab8b",
     "title": "Siyancuma",
     "code": "NC078",
-    "district_guid": "ba6dd94c-4b32-4b3a-87f8-6c7af23b9fa5"
+    "district_guid": "ceeaccdb-d9a9-4e13-ab5e-291aaef15fba"
   },
   {
-    "guid": "31d0e7ed-3bde-4ecd-9f12-5cad0a78ec39",
+    "guid": "84e1007a-0cf2-4251-b85e-2343f6761244",
     "title": "Kai !Garib",
     "code": "NC082",
-    "district_guid": "4d63a202-b9ec-4661-83fa-353439065821"
+    "district_guid": "129c6226-b67b-43ac-95d3-25c67ba6979e"
   },
   {
-    "guid": "341d4a26-05b6-47de-aff5-99d562187609",
+    "guid": "9c81b617-abc2-47b8-82c4-db783b20fa13",
     "title": "!Kheis",
     "code": "NC084",
-    "district_guid": "4d63a202-b9ec-4661-83fa-353439065821"
+    "district_guid": "129c6226-b67b-43ac-95d3-25c67ba6979e"
   },
   {
-    "guid": "682b4aec-db58-41a1-b92c-b1fdc3de3740",
+    "guid": "87d0fa8c-9c66-42bd-a6bc-cf16c1176d51",
     "title": "Tsantsabane",
     "code": "NC085",
-    "district_guid": "4d63a202-b9ec-4661-83fa-353439065821"
+    "district_guid": "129c6226-b67b-43ac-95d3-25c67ba6979e"
   },
   {
-    "guid": "2761a095-033d-4bda-9552-698deeebf463",
+    "guid": "8c60ad8e-bcb5-4943-93c9-56d3b3d3b5dc",
     "title": "Kgatelopele",
     "code": "NC086",
-    "district_guid": "4d63a202-b9ec-4661-83fa-353439065821"
+    "district_guid": "129c6226-b67b-43ac-95d3-25c67ba6979e"
   },
   {
-    "guid": "a0eb2cea-53c1-4b7b-be72-2e563f9e7441",
+    "guid": "bc9a9aa1-ef77-4fd5-a0d3-1e11e4e6f0b4",
     "title": "Sol Plaatjie",
     "code": "NC091",
-    "district_guid": "9be2b857-593a-4209-931d-1786f113501e"
+    "district_guid": "759fe53b-36be-44dd-be2d-1f1ce1211a13"
   },
   {
-    "guid": "5e7940e0-2445-4cf5-a95c-52bfd640e34b",
+    "guid": "6d051c3c-1549-4ed3-9eaa-39cf8e789483",
     "title": "Dikgatlong",
     "code": "NC092",
-    "district_guid": "9be2b857-593a-4209-931d-1786f113501e"
+    "district_guid": "759fe53b-36be-44dd-be2d-1f1ce1211a13"
   },
   {
-    "guid": "4ab8207b-5bbc-459d-a0e7-76aaed604c43",
+    "guid": "b7ee5e38-61ce-4b91-b616-44a9290ace23",
     "title": "Gamagara",
     "code": "NC453",
-    "district_guid": "7f355489-7345-44c4-b652-1ee9760a71b0"
+    "district_guid": "f55dbbc9-6550-4786-af42-02b5be686d9e"
   },
   {
-    "guid": "06c94cb1-7a91-44fc-84ce-1b675eb4a434",
+    "guid": "3c9672be-c29a-42ba-887b-40dbb08a410a",
     "title": "Joe Morolong",
     "code": "NC451",
-    "district_guid": "7f355489-7345-44c4-b652-1ee9760a71b0"
+    "district_guid": "f55dbbc9-6550-4786-af42-02b5be686d9e"
   },
   {
-    "guid": "3103085e-521d-4186-b5ac-ed100bbe6c04",
+    "guid": "ab223742-7830-4078-9a31-a2791c811514",
     "title": "Ga-Segonyana",
     "code": "NC452",
-    "district_guid": "7f355489-7345-44c4-b652-1ee9760a71b0"
+    "district_guid": "f55dbbc9-6550-4786-af42-02b5be686d9e"
   },
   {
-    "guid": "8ed33f6d-e691-4721-b0bf-b40f1b336bc8",
+    "guid": "42dabe56-ae5c-4211-9793-dea9379b512f",
     "title": "Magareng",
     "code": "NC093",
-    "district_guid": "9be2b857-593a-4209-931d-1786f113501e"
+    "district_guid": "759fe53b-36be-44dd-be2d-1f1ce1211a13"
   },
   {
-    "guid": "9bd6612a-b48d-4383-b920-be7d4ada6228",
+    "guid": "be1bbab6-2125-4de5-94eb-493312d3a7bd",
     "title": "Phokwane",
     "code": "NC094",
-    "district_guid": "9be2b857-593a-4209-931d-1786f113501e"
+    "district_guid": "759fe53b-36be-44dd-be2d-1f1ce1211a13"
   },
   {
-    "guid": "4d98fd53-ef3f-48e1-807d-ec0f34d0d637",
+    "guid": "b9f73f14-e26f-4288-b450-b2c07f0cc67f",
     "title": "Dawid Kruiper",
     "code": "NC087",
-    "district_guid": "4d63a202-b9ec-4661-83fa-353439065821"
+    "district_guid": "129c6226-b67b-43ac-95d3-25c67ba6979e"
   },
   {
-    "guid": "4f5c4f84-e651-4703-93d1-c0c9c6a52263",
+    "guid": "e777e053-381a-45f5-9d80-de4e0257229c",
     "title": "Moretele",
     "code": "NW371",
-    "district_guid": "36a7303e-2bc1-4340-8966-2721eb66407c"
+    "district_guid": "70bec53f-83e4-4402-b848-2e6228c4a4bd"
   },
   {
-    "guid": "8bf6aa9d-6a63-4260-8b6e-ed740ef8d0e8",
+    "guid": "a3694c47-fe7a-48c4-85a0-b56a1cccfa7d",
     "title": "Local Municipality of Madibeng",
     "code": "NW372",
-    "district_guid": "36a7303e-2bc1-4340-8966-2721eb66407c"
+    "district_guid": "70bec53f-83e4-4402-b848-2e6228c4a4bd"
   },
   {
-    "guid": "3fcb814a-d324-47c8-be56-9e2659b7b545",
+    "guid": "ad1e7119-9f08-482e-ac21-dffe5b5fa60c",
     "title": "Rustenburg",
     "code": "NW373",
-    "district_guid": "36a7303e-2bc1-4340-8966-2721eb66407c"
+    "district_guid": "70bec53f-83e4-4402-b848-2e6228c4a4bd"
   },
   {
-    "guid": "55bef3ab-b198-462c-8f59-2c8cc4ae9dab",
+    "guid": "d37c71ae-1e4b-4dd9-8fe7-d125c93b7aa6",
     "title": "Kgetlengrivier",
     "code": "NW374",
-    "district_guid": "36a7303e-2bc1-4340-8966-2721eb66407c"
+    "district_guid": "70bec53f-83e4-4402-b848-2e6228c4a4bd"
   },
   {
-    "guid": "515c1927-2996-455b-9a34-3db40fe0730f",
+    "guid": "eac1cd50-a213-41ce-bcd2-82e591a59c4d",
     "title": "Moses Kotane",
     "code": "NW375",
-    "district_guid": "36a7303e-2bc1-4340-8966-2721eb66407c"
+    "district_guid": "70bec53f-83e4-4402-b848-2e6228c4a4bd"
   },
   {
-    "guid": "0d4ae483-4862-41f3-aaae-1b497fb73867",
+    "guid": "51a80da5-3c07-486a-a7da-991f2d880a28",
     "title": "Ratlou",
     "code": "NW381",
-    "district_guid": "2eec6f35-46de-486b-9966-bc90894411c9"
+    "district_guid": "adff8e7f-4b71-43f0-8079-2e514133cf2c"
   },
   {
-    "guid": "c1e05e22-e3ca-4dbb-86fa-6a83b34ff3f1",
+    "guid": "d78feded-34c9-4aa7-991e-d182500854fa",
     "title": "Tswaing",
     "code": "NW382",
-    "district_guid": "2eec6f35-46de-486b-9966-bc90894411c9"
+    "district_guid": "adff8e7f-4b71-43f0-8079-2e514133cf2c"
   },
   {
-    "guid": "afabe5b2-7e6e-4ab4-b2ef-43855d9751a0",
+    "guid": "53749393-11f6-4266-a3e3-70ab3261206c",
     "title": "Mafikeng",
     "code": "NW383",
-    "district_guid": "2eec6f35-46de-486b-9966-bc90894411c9"
+    "district_guid": "adff8e7f-4b71-43f0-8079-2e514133cf2c"
   },
   {
-    "guid": "19e00817-5e53-4743-bcc5-f9d081e68567",
+    "guid": "94c63821-91b6-4fab-92a5-c25f373a0913",
     "title": "Ditsobotla",
     "code": "NW384",
-    "district_guid": "2eec6f35-46de-486b-9966-bc90894411c9"
+    "district_guid": "adff8e7f-4b71-43f0-8079-2e514133cf2c"
   },
   {
-    "guid": "e1eca233-be5e-4ad0-9719-5ba9861ae596",
+    "guid": "8533ce4a-1fa1-4030-93da-0d7374355915",
     "title": "Ramotshere Moiloa",
     "code": "NW385",
-    "district_guid": "2eec6f35-46de-486b-9966-bc90894411c9"
+    "district_guid": "adff8e7f-4b71-43f0-8079-2e514133cf2c"
   },
   {
-    "guid": "8cf872a8-294d-4d2d-ae76-a7492375b484",
+    "guid": "6000dad6-1652-427d-b140-13699d396e7a",
     "title": "Naledi",
     "code": "NW392",
-    "district_guid": "68078f32-f7da-4dc4-9647-986aceffa0cf"
+    "district_guid": "4044d37e-5cef-40c8-81a8-e991b2388094"
   },
   {
-    "guid": "7d37e80e-0a08-41bd-8980-55014b36ea9e",
+    "guid": "0f6024ca-acb4-4f03-b245-34d471d7b7c6",
     "title": "Mamusa",
     "code": "NW393",
-    "district_guid": "68078f32-f7da-4dc4-9647-986aceffa0cf"
+    "district_guid": "4044d37e-5cef-40c8-81a8-e991b2388094"
   },
   {
-    "guid": "4f1fb506-618a-4ef8-b7b5-41fbd45357e6",
+    "guid": "704d754f-d23c-4b43-b83d-1ac4682967ea",
     "title": "Greater Taung",
     "code": "NW394",
-    "district_guid": "68078f32-f7da-4dc4-9647-986aceffa0cf"
+    "district_guid": "4044d37e-5cef-40c8-81a8-e991b2388094"
   },
   {
-    "guid": "2a6f40a8-9c57-4832-8c50-9645e1aab60e",
+    "guid": "696529a8-cf88-419c-825f-dd19f2a23ee2",
     "title": "Lekwa-Teemane",
     "code": "NW396",
-    "district_guid": "68078f32-f7da-4dc4-9647-986aceffa0cf"
+    "district_guid": "4044d37e-5cef-40c8-81a8-e991b2388094"
   },
   {
-    "guid": "700752ea-4443-431d-8d14-cdaa135823ee",
+    "guid": "5e2e5bfc-b3e8-4084-9f72-f0d28c520a38",
     "title": "Kagisano/Molopo",
     "code": "NW397",
-    "district_guid": "68078f32-f7da-4dc4-9647-986aceffa0cf"
+    "district_guid": "4044d37e-5cef-40c8-81a8-e991b2388094"
   },
   {
-    "guid": "e428b7ce-706b-4c53-956e-4e38f8a61f2e",
+    "guid": "55dc165c-4ac5-4de0-b2a7-41417b4243bc",
     "title": "City of Matlosana",
     "code": "NW403",
-    "district_guid": "ddd0ae07-d199-40e8-b59f-12851be33557"
+    "district_guid": "55081d10-bc14-409f-8d21-3cd50b2bdd8a"
   },
   {
-    "guid": "8cec7a9f-ad58-4543-ba6f-6d996ffba8b9",
+    "guid": "f896cbbc-4690-436d-b65a-24a6c7e532a5",
     "title": "Maquassi Hills",
     "code": "NW404",
-    "district_guid": "ddd0ae07-d199-40e8-b59f-12851be33557"
+    "district_guid": "55081d10-bc14-409f-8d21-3cd50b2bdd8a"
   },
   {
-    "guid": "faecfa03-2583-4301-9227-7c7852191a26",
+    "guid": "d07dbe77-8eb5-450c-ba25-2a0885bd7ccd",
     "title": "Ventersdorp/Tlokwe",
     "code": "NW405",
-    "district_guid": "ddd0ae07-d199-40e8-b59f-12851be33557"
+    "district_guid": "55081d10-bc14-409f-8d21-3cd50b2bdd8a"
   },
   {
-    "guid": "826647d8-9ab0-4d9d-84af-d9ab19fb4803",
+    "guid": "3335d550-3518-4fd0-8175-62b44dba8f89",
     "title": "Matzikama",
     "code": "WC011",
-    "district_guid": "2d5edd6c-f35a-4f29-8a8d-a2ed88252aeb"
+    "district_guid": "104c0241-4952-46f5-9125-685d1e754566"
   },
   {
-    "guid": "6755d71d-fa6e-42a0-b5cb-eecffe65c925",
+    "guid": "c0a06a2d-9e32-4770-8596-1764127c6a46",
     "title": "Cederberg",
     "code": "WC012",
-    "district_guid": "2d5edd6c-f35a-4f29-8a8d-a2ed88252aeb"
+    "district_guid": "104c0241-4952-46f5-9125-685d1e754566"
   },
   {
-    "guid": "65352b82-b394-4db9-bc19-4d3666802f67",
+    "guid": "69845195-6f90-484c-ba11-d414032707da",
     "title": "Bergrivier",
     "code": "WC013",
-    "district_guid": "2d5edd6c-f35a-4f29-8a8d-a2ed88252aeb"
+    "district_guid": "104c0241-4952-46f5-9125-685d1e754566"
   },
   {
-    "guid": "0c2699a9-0f67-46bb-885f-2e4cd92e6205",
+    "guid": "dbd10060-e3c9-46ec-93bb-4ad778d20368",
     "title": "Witzenberg",
     "code": "WC022",
-    "district_guid": "c4fca1c1-76ab-4601-89e5-db641041bf13"
+    "district_guid": "24dab4cf-4c73-4c0f-96ef-68fa861d6ce2"
   },
   {
-    "guid": "a7e6a8ba-82e7-423c-a389-e88305f505d8",
+    "guid": "e4c12f68-0b8e-4aec-a7c2-937a00c14435",
     "title": "Drakenstein",
     "code": "WC023",
-    "district_guid": "c4fca1c1-76ab-4601-89e5-db641041bf13"
+    "district_guid": "24dab4cf-4c73-4c0f-96ef-68fa861d6ce2"
   },
   {
-    "guid": "89351962-777b-4003-9712-52836fd8a799",
+    "guid": "5fff08f0-8530-469c-b772-e8a1cd0b3c43",
     "title": "Breede Valley",
     "code": "WC025",
-    "district_guid": "c4fca1c1-76ab-4601-89e5-db641041bf13"
+    "district_guid": "24dab4cf-4c73-4c0f-96ef-68fa861d6ce2"
   },
   {
-    "guid": "2c87a90b-85f6-447e-a39b-006a17df1260",
+    "guid": "28ace7e7-6ae1-41b1-99a1-a3851ccb42b9",
     "title": "Langeberg",
     "code": "WC026",
-    "district_guid": "c4fca1c1-76ab-4601-89e5-db641041bf13"
+    "district_guid": "24dab4cf-4c73-4c0f-96ef-68fa861d6ce2"
   },
   {
-    "guid": "0e13935b-b6b6-4de8-b60e-73c5c89543ba",
+    "guid": "d012fc0f-75ad-49a8-b7e5-dcbf0699ff45",
     "title": "Cape Agulhas",
     "code": "WC033",
-    "district_guid": "35848636-2ec4-4a33-84ad-a2458eddee5f"
+    "district_guid": "ed8f8a70-9e5a-45f9-a534-7a5570759f92"
   },
   {
-    "guid": "f033c51f-5b9a-4810-b4a3-3e0d8479d19e",
+    "guid": "3d218200-616e-4e57-aa63-74d427efd9ba",
     "title": "Swellendam",
     "code": "WC034",
-    "district_guid": "35848636-2ec4-4a33-84ad-a2458eddee5f"
+    "district_guid": "ed8f8a70-9e5a-45f9-a534-7a5570759f92"
   },
   {
-    "guid": "1ecb0dd7-e947-4781-a0ea-51b52718d37a",
+    "guid": "a44b336f-1ca2-422f-a0ad-2123c6ef617d",
     "title": "Kannaland",
     "code": "WC041",
-    "district_guid": "6dbde029-a031-435f-9c19-641d71b89e7c"
+    "district_guid": "c34e5ebb-6174-4f35-b177-f9781a5739a0"
   },
   {
-    "guid": "531ac5f4-d68a-4277-b918-2c7c7e56119d",
+    "guid": "74f8be11-f3f8-471a-aa92-3de67e562110",
     "title": "Hessequa",
     "code": "WC042",
-    "district_guid": "6dbde029-a031-435f-9c19-641d71b89e7c"
+    "district_guid": "c34e5ebb-6174-4f35-b177-f9781a5739a0"
   },
   {
-    "guid": "31cff495-18a4-4c02-a46e-042fd5e97e9f",
+    "guid": "b894f309-6069-4b8f-bd9e-c4e718bc729c",
     "title": "Mossel Bay",
     "code": "WC043",
-    "district_guid": "6dbde029-a031-435f-9c19-641d71b89e7c"
+    "district_guid": "c34e5ebb-6174-4f35-b177-f9781a5739a0"
   },
   {
-    "guid": "af674e2a-9d8f-4410-b02e-684c6753cce4",
+    "guid": "b6cdc450-1fd0-4fa1-9767-70314f1b2918",
     "title": "George",
     "code": "WC044",
-    "district_guid": "6dbde029-a031-435f-9c19-641d71b89e7c"
+    "district_guid": "c34e5ebb-6174-4f35-b177-f9781a5739a0"
   },
   {
-    "guid": "7bdb7c96-9f72-4d61-9438-2f7ad1d34b8a",
+    "guid": "6bea2ca9-7345-44cb-bbaa-b347d2e4a2a9",
     "title": "Oudtshoorn",
     "code": "WC045",
-    "district_guid": "6dbde029-a031-435f-9c19-641d71b89e7c"
+    "district_guid": "c34e5ebb-6174-4f35-b177-f9781a5739a0"
   },
   {
-    "guid": "40f61727-36ce-4a08-b7e4-648549be9951",
+    "guid": "c0509851-8a7e-4ce3-91a7-44badfae63f3",
     "title": "Bitou",
     "code": "WC047",
-    "district_guid": "6dbde029-a031-435f-9c19-641d71b89e7c"
+    "district_guid": "c34e5ebb-6174-4f35-b177-f9781a5739a0"
   },
   {
-    "guid": "cc6cedfb-ad2c-4ced-9e05-2ce123140dc9",
+    "guid": "7af88498-2890-4031-9831-ecc058bb636e",
     "title": "Knysna",
     "code": "WC048",
-    "district_guid": "6dbde029-a031-435f-9c19-641d71b89e7c"
+    "district_guid": "c34e5ebb-6174-4f35-b177-f9781a5739a0"
   },
   {
-    "guid": "1b41a99c-adf9-4ebf-88ed-a75780ccd408",
+    "guid": "2052a6f4-5a3a-4969-b841-6400142000be",
     "title": "Laingsburg",
     "code": "WC051",
-    "district_guid": "ced62ed6-5eca-44dd-855e-233572dc8aed"
+    "district_guid": "28758428-bf79-4281-8599-ca75ca7c34b4"
   },
   {
-    "guid": "22b382c3-455a-4236-8ce3-1edb2ae3e5c5",
+    "guid": "f93fe0d5-935f-465e-b798-d0e317830e10",
     "title": "Prince Albert",
     "code": "WC052",
-    "district_guid": "ced62ed6-5eca-44dd-855e-233572dc8aed"
+    "district_guid": "28758428-bf79-4281-8599-ca75ca7c34b4"
   },
   {
-    "guid": "c0d94d4c-5151-46be-9f83-18ab98e931ab",
+    "guid": "3ee3e854-c10d-4230-adde-7d541a4bf6ed",
     "title": "Beaufort West",
     "code": "WC053",
-    "district_guid": "ced62ed6-5eca-44dd-855e-233572dc8aed"
+    "district_guid": "28758428-bf79-4281-8599-ca75ca7c34b4"
   },
   {
-    "guid": "694e3301-1510-43b0-8f3f-d80f9911b8e1",
+    "guid": "fc19b106-fb0c-4a65-8645-df6b6011bc4a",
     "title": "Stellenbosch",
     "code": "WC024",
-    "district_guid": "c4fca1c1-76ab-4601-89e5-db641041bf13"
+    "district_guid": "24dab4cf-4c73-4c0f-96ef-68fa861d6ce2"
   },
   {
-    "guid": "6d8313cb-dd79-4bac-a266-95c491571911",
+    "guid": "fe2f688e-028c-46ff-a6f2-7b74b931752a",
     "title": "Theewaterskloof",
     "code": "WC031",
-    "district_guid": "35848636-2ec4-4a33-84ad-a2458eddee5f"
+    "district_guid": "ed8f8a70-9e5a-45f9-a534-7a5570759f92"
   },
   {
-    "guid": "b64d6d09-87be-48ad-ba95-c8fe12047c64",
+    "guid": "7a690b33-b0f4-4157-b0e3-d799843d7bc2",
     "title": "Saldanha Bay",
     "code": "WC014",
-    "district_guid": "2d5edd6c-f35a-4f29-8a8d-a2ed88252aeb"
+    "district_guid": "104c0241-4952-46f5-9125-685d1e754566"
   },
   {
-    "guid": "828889bc-b135-4a60-afed-9d5bb8383454",
+    "guid": "b2cd8625-2c34-4975-9f25-8a6f2f59c71a",
     "title": "Swartland",
     "code": "WC015",
-    "district_guid": "2d5edd6c-f35a-4f29-8a8d-a2ed88252aeb"
+    "district_guid": "104c0241-4952-46f5-9125-685d1e754566"
   },
   {
-    "guid": "ab9b068c-3307-4191-8bc5-5344b863d2e5",
+    "guid": "765f3737-ffc6-43fb-8994-82623449e8ac",
     "title": "Overstrand",
     "code": "WC032",
-    "district_guid": "35848636-2ec4-4a33-84ad-a2458eddee5f"
+    "district_guid": "ed8f8a70-9e5a-45f9-a534-7a5570759f92"
   },
   {
-    "guid": "b1018df4-4c47-4b77-adef-b1e0cbf952af",
+    "guid": "4232cbd0-4c8d-4977-9fdf-0ca3d597e147",
     "title": "City of Cape Town",
     "code": "CPT",
-    "district_guid": "4d5bcd23-c4be-4c83-927c-39ff8e9d9233"
+    "district_guid": "50c274c7-3502-453f-afd6-655d1e3351cd"
   }
 ]

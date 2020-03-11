@@ -1,135 +1,111 @@
 <ion-content class="content">
-    <div class="btn">
-      <button clear  ion-button (click)="goBackToCapacityBuildingList()">
-          <ion-icon ios="ios-arrow-back" md="md-arrow-back"></ion-icon>
+  <div class="nav-bar">
+    <div class="button-back">
+      <button clear ion-button (click)="redirectToCapacityBuildingList()">
+        <ion-icon ios="ios-arrow-round-back" md="md-arrow-round-back"></ion-icon>
       </button>
+    </div>
   </div>
-    <h3><b>Add Capacity Building</b></h3>
-    <p>Please complete the form to add capacity building</p>
-  <form [formGroup]="authForm"  #capacity="ngForm"  (ngSubmit)="addCapacity(capacity)"> 
-    <div class="list">
-        <!-- <ion-input placeholder="Name Of Cso" [(ngModel)]="cso_name"   formControlName="cso_name"   type="text" class="user-input" id="anim1"
-        (input)="getItems($event)" ngModel ></ion-input> -->
+  <div class="main-content">
+    <h3>Add Capacity building event</h3>
+    <div class="form-fields-required">All fields required.</div>
+    <div class="card-form">
+      <form [formGroup]="capacityBuildingForm" (ngSubmit)="formSubmit()">
 
-        <div id="results">
-          <ion-item no-lines *ngFor="let item of items; let i=index" button (click)="openMarkerInfo(item,capacity)">
-            <p>{{item.cso_name}}</p>
-          </ion-item>
+        <ion-item class="input-select">
+          <ion-label>Type</ion-label>
+          <ion-select formControlName="capacity_building_type">
+            <ion-option *ngFor="let type of listLookupCapacityBuildingType" [value]="type.guid">{{type.title}}</ion-option>
+          </ion-select>
+        </ion-item>
+
+        <ion-item class="input-select">
+          <ion-label>Funding source</ion-label>
+          <ion-select formControlName="funding_source">
+            <ion-option *ngFor="let funding of listLookupFundingSource" [value]="funding.guid">{{funding.title}}</ion-option>
+          </ion-select>
+        </ion-item>
+
+        <ion-item class="input-select">
+          <ion-label>Partner Type</ion-label>
+          <ion-select formControlName="partner_type"  (ionChange)="onchangePartnerType()">
+            <ion-option *ngFor="let type of listLookupPartnerType" [value]="type.guid">{{type.title}}</ion-option>
+          </ion-select>
+        </ion-item>
+
+        <ion-item class="input-select">
+          <ion-label>Partner</ion-label>
+          <ion-select formControlName="partner" [disabled]="disablePartnerDropdown">
+            <ion-option *ngFor="let partner of listFilteredLookupPartner" [value]="partner.guid">{{partner.title}}</ion-option>
+          </ion-select>
+        </ion-item>
+
+        <div class="input-field">
+          <ion-input
+            placeholder="Facilitator name"
+            type="text"
+            formControlName="facilitator_name">
+          </ion-input>
+          <div class="field-error" *ngIf="_isInvalidControl('facilitator_name')">
+            <p>Please provide a valid facilitator name.</p>
+          </div>
         </div>
 
-
-        <ion-label class="naming">Capacity building</ion-label>
-        <ion-item  class="item">
-          <ion-label class="labelforicon">
-            <ion-icon name="logo-dropbox"></ion-icon>
-          </ion-label>
-          <ion-label> Select Capacity Building Type</ion-label>
-          <ion-select [(ngModel)]="capacity_building_type_guid"  required formControlName="capacity_building_type_guid" ngModel>
-            <ion-option *ngFor="let a of capacityArr" [value]="a.guid">{{a.title}}
-            </ion-option>
-          </ion-select>
-        </ion-item>
-
-        <ion-label class="naming">Province</ion-label>
-      <ion-item  class="item">
-        <ion-label class="labelforicon">
-          <ion-icon name="logo-dropbox"></ion-icon>
-        </ion-label>
-          <ion-label> Select Province</ion-label>
-          <ion-select  [(ngModel)]="province_guid" ngModel formControlName="province_guid" required  (ionChange)="populateDistrict(province_guid)">
-            <ion-option *ngFor="let a of provinceArr" [value]="a.guid">{{a.title}}
-            </ion-option>
-          </ion-select>
-        </ion-item>
-
-        <ion-label class="naming">District</ion-label>
-      <ion-item  class="item">
-        <ion-label class="labelforicon">
-          <ion-icon name="logo-dropbox"></ion-icon>
-        </ion-label>
-          <ion-label> Select District</ion-label>
-          <ion-select [(ngModel)]="district_guid" ngModel formControlName="district_guid" required (ionChange)="populateMunicipality(district_guid)">
-            <ion-option *ngFor="let district of districtArr" [value]="district.guid">{{district.title}}
-            </ion-option>
-          </ion-select>
-        </ion-item>
-    
-        <ion-label class="naming">Municipality</ion-label>
-        <ion-item  class="item">
-          <ion-label class="labelforicon">
-            <ion-icon name="logo-dropbox"></ion-icon>
-          </ion-label>
-          <ion-label> Select Municipality</ion-label>
-          <ion-select [(ngModel)]="municipality_guid" required ngModel formControlName="municipality_guid">
-            <ion-option *ngFor="let municipality of municipalityArr" [value]="municipality.guid">
-              {{municipality.title}}
-            </ion-option>
-          </ion-select>
-        </ion-item>
-        <ion-label class="naming">Partner</ion-label>
-        <ion-item  class="item">
-          <ion-label class="labelforicon">
-            <ion-icon name="logo-dropbox"></ion-icon>
-          </ion-label>
-          <ion-label> Select Partner</ion-label>
-          <ion-select [(ngModel)]="partner_guid" ngModel formControlName="partner" >
-            <ion-option *ngFor="let partner of partnerArr" [value]="partner.guid">
-              {{partner.title}}
-            </ion-option>
-          </ion-select>
-        </ion-item>
-        <ion-label class="naming">Venue</ion-label>
-        <ion-item  class="item">
-          <ion-label class="labelforicon">
-            <ion-icon name="home"></ion-icon>
-          </ion-label>
-        <ion-input placeholder="Venue" type="text" class="user-input" formControlName="venue" [(ngModel)]="venue"  ngModel ></ion-input>
-
-        </ion-item>
-        <ion-label class="naming">Facilitator Name</ion-label>
-        <ion-item  class="item">
-          <ion-label class="labelforicon">
-            <ion-icon name="person"></ion-icon>
-          </ion-label>
-        <ion-input placeholder="Facilitor Name" type="text" class="user-input" formControlName="facilitator_name" [(ngModel)]="facilitator_name"
-        ngModel>
-        </ion-input>
-        </ion-item>
-        <ion-label class="naming">Co Facilitator Name</ion-label>
-        <ion-item  class="item">
-          <ion-label class="labelforicon">
-            <ion-icon name="person"></ion-icon>
-          </ion-label>
-        <ion-input placeholder="Co Facilitator Name" type="text" class="user-input"  formControlName="co_facilitator_name"  [(ngModel)]="co_facilitator_name"
-         ngModel></ion-input>
-        </ion-item>
-        <!-- <ion-input placeholder="Collected by" type="text" class="user-input" formControlName="collected_by" [(ngModel)]="collected_by" id="anim1" ngModel>
-        </ion-input> -->
-
-      
-        <ion-label class="naming">Start Date</ion-label>
-        <ion-item  class="item">
-          <ion-label class="labelforicon">
-            <ion-icon name="logo-dropbox"></ion-icon>
-          </ion-label>
-            <ion-datetime displayFormat="MMM DD YYYY" placeholder="Select Date" required [(ngModel)]="start_date" formControlName="start_date" ngModel></ion-datetime>
-          </ion-item>
-          <br>
-
-          <ion-label class="naming">End Date</ion-label>
-          <ion-item  class="item">
-            <ion-label class="labelforicon">
-              <ion-icon name="logo-dropbox"></ion-icon>
-            </ion-label>
-            <ion-datetime displayFormat="MMM DD YYYY" placeholder="Select Date" formControlName="end_date" [(ngModel)]="end_date" ngModel></ion-datetime>
-          </ion-item>
-     
-    
-        <div class="moveCont">
-          <button  type="submit"  ion-button round class="btnSign" id="anim2" [disabled]="!authForm.valid">Add Capacity
-          </button>
+        <div class="input-field">
+          <ion-input
+            placeholder="Co Facilitator name"
+            type="text"
+            formControlName="co_facilitator_name">
+          </ion-input>
+          <div class="field-error" *ngIf="_isInvalidControl('co_facilitator_name')">
+            <p>Please provide a valid Co facilitator name.</p>
+          </div>
         </div>
+
+        <div class="input-field">
+          <ion-input
+            placeholder="Venue"
+            type="text"
+            formControlName="venue">
+          </ion-input>
+          <div class="field-error" *ngIf="_isInvalidControl('venue')">
+            <p>Please provide a valid venue name.</p>
+          </div>
         </div>
+
+        <ion-item class="input-select">
+          <ion-label>Province</ion-label>
+          <ion-select formControlName="province" (ionChange)="onchangeProvince()" >
+            <ion-option *ngFor="let province of listLookupProvince" [value]="province.guid">{{province.title}}</ion-option>
+          </ion-select>
+        </ion-item>
+
+        <ion-item class="input-select">
+          <ion-label>District</ion-label>
+          <ion-select formControlName="district" [disabled]="disableDistrictDropdown" (ionChange)="onchangeDistrict()">
+            <ion-option *ngFor="let district of listFilteredLookupDistrict" [value]="district.guid">{{district.title}}</ion-option>
+          </ion-select>
+        </ion-item>
+
+        <ion-item class="input-select">
+          <ion-label>Municipality</ion-label>
+          <ion-select formControlName="municipality" [disabled]="disableMunicipalityDropdown">
+            <ion-option *ngFor="let municipality of listFilteredLookupMunicipality" [value]="municipality.guid">{{municipality.title}}</ion-option>
+          </ion-select>
+        </ion-item>
+
+        <ion-item class="input-select">
+          <ion-label> Event start date</ion-label>
+          <ion-datetime  class="input-field" formControlName="start_date"></ion-datetime>
+        </ion-item>
+
+        <ion-item class="input-select">
+          <ion-label> Event end date</ion-label>
+          <ion-datetime  class="input-field" formControlName="end_date"></ion-datetime>
+        </ion-item>
+
+        <button type="submit" class="input-submit" ion-button [disabled]="!capacityBuildingForm.valid">Submit</button>
       </form>
-
+    </div>
+  </div>
 </ion-content>

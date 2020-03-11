@@ -3,8 +3,11 @@ import {IonicPage, NavController, NavParams, AlertController} from 'ionic-angula
 import {Validators, FormBuilder, FormGroup} from '@angular/forms';
 import {LookUpService} from '../../providers/lookup/lookups.service';
 import {EntityProvider} from '../../providers/entity/cso';
-import {Member} from '../../model/member.model';
+import {Storage} from '@ionic/storage';
 import {RsaIdValidator} from "../../providers/validators/rsaid.validator";
+import {Cso} from "../../model/cso.model";
+import {DisplayCsoMemberListPage} from "../display-cso-member-list/display-cso-member-list";
+import {MemberPayload} from "../../model/payload/memberpayload.model";
 
 @IonicPage()
 @Component({
@@ -13,8 +16,8 @@ import {RsaIdValidator} from "../../providers/validators/rsaid.validator";
 })
 
 export class AddCsoMemberPage implements OnInit{
-  private cso: string;
-  private member: Member;
+  private cso: Cso;
+  private memberPayload: MemberPayload;
   private memberForm: FormGroup;
   private defaultRace = "African";
   private defaultGender = "Male";
@@ -28,14 +31,16 @@ export class AddCsoMemberPage implements OnInit{
               public lookupService: LookUpService,
               public entityProvider: EntityProvider,
               public alertCtrl: AlertController,
-              private formBuilder: FormBuilder
-  ) {
-    this.csoGuid = this.navParams.get('cso_guid');
-  }
+              private formBuilder: FormBuilder,
+              public  storage: Storage
+  ) {}
 
   ngOnInit(): void {
-    this._buildForm()
-    this._setPassportNumberValidation()
+    this.storage.get('current_cso').then((entity) => {
+      this.cso = entity;
+    });
+    this._buildForm();
+    this._setPassportNumberValidation();
   }
 
   _buildForm(){
@@ -59,7 +64,7 @@ export class AddCsoMemberPage implements OnInit{
         Validators.required, Validators.minLength(9), Validators.maxLength(15),
       ]],
       'physical_address': ['', [
-        Validators.required, Validators.minLength(2), Validators.maxLength(50),
+        Validators.required, Validators.minLength(2), Validators.maxLength(100),
       ]],
       'start_date': ['', [Validators.required,Validators]],
       'end_date': ['', [Validators.required,Validators]],
@@ -97,130 +102,50 @@ export class AddCsoMemberPage implements OnInit{
     this.navCtrl.pop()
   }
 
-  formSubmit(){
-    this.member = new Member();
-    this.member.first_name = this.memberForm.value.first_name;
-    this.member.last_name = this.memberForm.value.last_name;
-    this.member.member_position_guid = this.memberForm.value.member_position_guid;
-    this.member.gender = this.memberForm.value.gender;
-    this.member.race = this.memberForm.value.race;
-    this.member.nationality = this.memberForm.value.nationality;
-    this.member.passport_number = this.memberForm.value.passport_number;
-    this.member.contact_number = this.memberForm.value.contact_number;
-    this.member.physical_address = this.memberForm.value.physical_address;
-    this.member.start_date = this.memberForm.value.start_date;
-    this.member.end_date = this.memberForm.value.end_date;
-    this.member.rsa_id_number = this.memberForm.value.rsa_id_number;
-
-    this.entityProvider.saveMembers(this.member).subscribe(_response =>{
-
-      if (_response) {
-        const alert = this.alertCtrl.create({
-          header: 'Success',
-          subHeader: 'Subtitle',
-          message: 'This is an alert message.',
-          buttons: ['OK']
-        });
-        alert.present();
-      } else {
-        console.log("Something went wrong, data input is invalid");
-        const alert = this.alertCtrl.create({
-          header: 'Error',
-          message: 'An error, occurred. Please contact admin for more information.',
-          buttons: ['OK']
-        });
-        alert.present();
-
-      }
-
-    });
-
-
-    // console.log(csoMember);
-    // this.member = new Member(
-    //   "",
-    //   frm,
-    //   formMember.value.last_name,
-    //
-    //
-    //
-    // )
-
-
-    // this.csoMember = csoMember.value
-    // this.csoMember.cso_guid = this.cso_guid;
-    // // this.validateID();
-    // this.phonenumberValidatinservice();
-    //
-    // if (this.csoMember.rsa_id_number) {
-    //   this.csoMember.passport_number = '';
-    // }
-    //
-    // if (!csoMember.valid) {
-    //   const alert = this.alertCtrl.create({
-    //     title: 'Alert',
-    //     subTitle: 'Please complete the form to add a cso member',
-    //     buttons: ['OK']
-    //   });
-    //   alert.present();
-    //   // exit the method when the condition are true
-    //   return
-    // }
-    // else if (this.contactValidation = 1) {
-    //   const alert = this.alertCtrl.create({
-    //     title: 'Alert',
-    //     subTitle: 'Please check your number something is wrong',
-    //     buttons: ['OK']
-    //   });
-    //   alert.present();
-    //   // exit the method when the condition are true
-    //   return
-    // }
-    // this.entityProvider.saveMembers(this.csoMember).subscribe(response => {
-    //   console.log(response)
-    //   const alert = this.alertCtrl.create({
-    //     title: 'Alert',
-    //     subTitle: 'cso member successfully added',
-    //     buttons: ['OK']
-    //   });
-    //   alert.present();
-    //
-    //   this.reset();
-    // }, (err) => {
-    //   const alert = this.alertCtrl.create({
-    //     title: 'Error!',
-    //     subTitle: 'Something went wrong!',
-    //     buttons: ['OK']
-    //   });
-    //   alert.present();
-    // });
+  redirectToMemberList(){
+    this.navCtrl.push(DisplayCsoMemberListPage)
   }
 
+  formSubmit(){
+    this.memberPayload = new MemberPayload();
+    this.memberPayload.first_name = this.memberForm.value.first_name;
+    this.memberPayload.last_name = this.memberForm.value.last_name;
+    this.memberPayload.member_position_guid = this.memberForm.value.member_position_guid;
+    this.memberPayload.gender = this.memberForm.value.gender;
+    this.memberPayload.race = this.memberForm.value.race;
+    this.memberPayload.nationality = this.memberForm.value.nationality;
+    this.memberPayload.disability = this.memberForm.value.disability;
+    this.memberPayload.passport_number = this.memberForm.value.passport_number;
+    this.memberPayload.contact_number = this.memberForm.value.contact_number;
+    this.memberPayload.physical_address = this.memberForm.value.physical_address;
+    this.memberPayload.start_date = this.memberForm.value.start_date;
+    this.memberPayload.end_date = this.memberForm.value.end_date;
+    this.memberPayload.rsa_id_number = this.memberForm.value.rsa_id_number;
+    this.memberPayload.cso_guid = this.cso.guid
 
-  //validate id number
-  // validateID() {
-  //   var cb = document.forms["rsa_id_number"].checked;
-  //   let ex: any
-  //   if (cb) {
-  //     ex = /^(((\d{2}((0[13578]|1[02])(0[1-9]|[12]\d|3[01])|(0[13456789]|1[012])(0[1-9]|[12]\d|30)|02(0[1-9]|1\d|2[0-8])))|([02468][048]|[13579][26])0229))(( |-)(\d{4})( |-)(\d{3})|(\d{7}))/;
-  //   } else {
-  //     ex = /^[0-9]{1,}$/;
-  //   }
-  //   var theIDnumber = this.authForm.controls["rsa_id_number"]["rsa_id_number"].value;
-  //   if (ex.test(theIDnumber) == false) {
-  //     const alert = this.alertCtrl.create({
-  //       subTitle: 'Please supply a valid ID number',
-  //       buttons: ['OK']
-  //     });
-  //     alert.present();
-  //     return false;
-  //   }
-  //   const alert = this.alertCtrl.create({
-  //     subTitle: theIDnumber + ' a valid ID number',
-  //     buttons: ['OK']
-  //   });
-  //   alert.present();
-  //
-  //   return true;
-  // }
+    this.entityProvider.saveMembers(this.memberPayload).subscribe(_response =>{
+
+      if (_response) {
+           const alert = this.alertCtrl.create({
+             title: 'Alert',
+             subTitle: 'Member was added successfully.',
+             buttons: ['OK']
+           });
+           alert.present();
+
+      } else {
+        const alert = this.alertCtrl.create({
+          title: 'Alert',
+          subTitle: 'An error occurred, please contact administrator!',
+          buttons: ['OK']
+        });
+        alert.present();
+      }
+      return this.redirectToMemberList();
+    });
+  }
+
+  goBack() {
+    this.navCtrl.pop();
+  }
 }

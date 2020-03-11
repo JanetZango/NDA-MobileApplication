@@ -4,13 +4,14 @@ import { IonicApp, IonicErrorHandler, IonicModule } from 'ionic-angular';
 import { HttpClientModule } from "@angular/common/http";
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { StatusBar } from '@ionic-native/status-bar';
+import { IonicStorageModule } from '@ionic/storage';
 
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
 import { LoginPage } from '../pages/login/login';
 import { LandingPage } from '../pages/landing/landing';
 import { DisplayListOfCsoPage } from '../pages/display-list-of-cso/display-list-of-cso';
-import { RegistercsoPage } from '../pages/registercso/registercso';
+import { AddCsoPage } from '../pages/add-cso/add-cso';
 import { DisplayListOfCapacityPage } from '../pages/display-list-of-capacity/display-list-of-capacity';
 import { DisplayListOfAssessmentPage } from '../pages/display-list-of-assessment/display-list-of-assessment';
 import { AddAssessmentPage } from '../pages/add-assessment/add-assessment';
@@ -37,7 +38,7 @@ import { httpInterceptorProviders } from '../providers/api';
     LoginPage,
     LandingPage,
     DisplayListOfCsoPage,
-    RegistercsoPage,
+    AddCsoPage,
     DisplayListOfAssessmentPage,
     DisplayListOfCapacityPage,
     AddAssessmentPage,
@@ -52,7 +53,8 @@ import { httpInterceptorProviders } from '../providers/api';
   imports: [
     BrowserModule,
     HttpClientModule,
-    IonicModule.forRoot(MyApp)
+    IonicModule.forRoot(MyApp),
+    IonicStorageModule.forRoot()
   ],
   bootstrap: [IonicApp],
   entryComponents: [
@@ -61,7 +63,7 @@ import { httpInterceptorProviders } from '../providers/api';
     LoginPage,
     LandingPage,
     DisplayListOfCsoPage,
-    RegistercsoPage,
+    AddCsoPage,
     AddOtpPage,
     AddCapacityPage,
     DisplayListOfAssessmentPage,

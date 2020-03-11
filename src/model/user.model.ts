@@ -1,4 +1,4 @@
-export class UserViewModel {
+export class User {
   private _access_token: string;
   private _refresh_token: string;
   private _full_name: string;

@@ -8,39 +8,39 @@ import { Observable } from 'rxjs/Observable';
 @Injectable()
 export class LookUpService {
 
-    // look up data files.
-    private AssessementAnswer = "../../assets/lookup_database/assessment_answer.json";
-    private AssessementQuestion = "../../assets/lookup_database/asssessment_question.json"
-    private AssessementType = "../../assets/lookup_database/assessment_type.json";
-    private AssessementTypeSection = "../../assets/lookup_database/assessment_type_section.json";
+    private AssessmentAnswer = "../../assets/lookup_database/assessment_answer.json";
+    private AssessmentQuestion = "../../assets/lookup_database/assessment_question.json"
+    private AssessmentType = "../../assets/lookup_database/assessment_type.json";
+    private AssessmentTypeSection = "../../assets/lookup_database/assessment_type_section.json";
     private CapacityBuildingType = "../../assets/lookup_database/capacity_building_type.json";
     private CsoSector = "../../assets/lookup_database/cso_sector.json";
     private CsoType = "../../assets/lookup_database/cso_type.json";
     private District = "../../assets/lookup_database/district.json";
     private LocalMunicipality = "../../assets/lookup_database/municipality.json";
-    private MemberPosition = "../../assets/lookup_database/cso_tra_dbo_lkp_local_member_position.json";
-    private PartnerType = "../../assets/lookup_database/cso_tra_dbo_lkp_partner_type.json";
+    private MemberPosition = "../../assets/lookup_database/member_position.json";
+    private PartnerType = "../../assets/lookup_database/partner_type.json";
     private Province = "../../assets/lookup_database/province.json";
-    private Mobilisation ="../../assets/lookup_database/mobilisation_method.json";
+    private Mobilisation ="../../assets/lookup_database/cso_mobilization_method.json";
     private QuestionAnswer = "../../assets/lookup_database/questions_and_answers.json"
     private Partner = "../../assets/lookup_database/partner.json";
+    private FundingSource = "../../assets/lookup_database/funding_source.json";
 
     constructor(
         public http: HttpClient
     ) { }
 
     public getAssessementAnswer(): Observable<any> {
-        return this.http.get(this.AssessementAnswer)
-            .pipe(catchError(this.handleError(<any>("getAssessementAnswer"))));
+        return this.http.get(this.AssessmentAnswer)
+            .pipe(catchError(this.handleError(<any>("getAssessmentAnswer"))));
     }
 
     public getAssessementType(): Observable<any> {
-        return this.http.get(this.AssessementType)
-            .pipe(catchError(this.handleError(<any>("getAssessementType"))));
+        return this.http.get(this.AssessmentType)
+            .pipe(catchError(this.handleError(<any>("getAssessmentType"))));
     }
     public getAssessementTypeSection(): Observable<any> {
-        return this.http.get(this.AssessementTypeSection)
-        .pipe(catchError(this.handleError(<any>("getAssessementTypeSection"))));
+        return this.http.get(this.AssessmentTypeSection)
+        .pipe(catchError(this.handleError(<any>("getAssessmentTypeSection"))));
     }
 
     public getCapacityBuildingType(): Observable<any> {
@@ -84,7 +84,7 @@ export class LookUpService {
     }
 
     public getAssessmentQuestion(): Observable<any>{
-        return this.http.get(this.AssessementQuestion)
+        return this.http.get(this.AssessmentQuestion)
         .pipe(catchError(this.handleError(<any>("getAssessmentQuestion"))));
     }
 
@@ -104,10 +104,15 @@ export class LookUpService {
         .pipe(catchError(this.handleError(<any>("getQuestionAnswer"))));
     }
 
+  public getFundingSource():Observable<any>{
+    return this.http.get(this.FundingSource)
+      .pipe(catchError(this.handleError(<any>("getFundingSource"))));
+  }
+
     /**
      * Handle Http operation that failed.
      * Let the app continue.
-     * 
+     *
      * @param operation - name of the operation that failed
      * @param result - optional value to return as the observable result
      */

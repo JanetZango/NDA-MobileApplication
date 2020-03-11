@@ -1,0 +1,38 @@
+[
+  {
+    "guid": "b04a0872-22c6-4d83-bba9-d82a8aa18411",
+    "title": "NDA"
+  },
+  {
+    "guid": "cd13d55e-fbc7-46b1-bbef-206c3fac5e68",
+    "title": "DSD"
+  },
+  {
+    "guid": "a241b933-dd5d-4be3-8d94-270082dc0340",
+    "title": "Other"
+  },
+  {
+    "guid": "c378c57f-4083-4775-935e-35e919e3d3e5",
+    "title": "Government"
+  },
+  {
+    "guid": "53d0da3f-c304-4d9e-a231-a120c35e861f",
+    "title": "NGO"
+  },
+  {
+    "guid": "bcd83b62-5b64-487c-b9b4-2dccc484c2ca",
+    "title": "Private Sector"
+  },
+  {
+    "guid": "05af2aa6-a9f3-41a6-9f4a-d065f0f2241d",
+    "title": "International"
+  },
+  {
+    "guid": "bf067e50-2ad6-4eab-9b8e-6532f40561df",
+    "title": "Individual"
+  },
+  {
+    "guid": "f2eb3a78-c54f-48f3-bf0a-d176845a17cc",
+    "title": "this is my new funding source"
+  }
+]

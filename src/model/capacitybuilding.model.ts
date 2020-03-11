@@ -1,19 +1,19 @@
-import {CapacityBuildingTypeViewModel} from "./capacitybuildingtype.view.model";
-import {DistrictViewModel} from "./district.view.model";
-import {MunicipalityViewModel} from "./municipality.view.model";
-import {ProvinceViewModel} from "./province.view.model";
+import {CapacityBuildingType} from "./capacitybuildingtype.model";
+import {District} from "./district.model";
+import {Municipality} from "./municipality.model";
+import {Province} from "./province.model";
 
-export class CapacityBuildingViewModel {
+export class CapacityBuilding {
   private _guid: string;
   private _facilitator_name: string;
   private _co_facilitator_name: string;
   private _end_date: string;
   private _start_date: string;
   private _venue: string;
-  private _capacity_building_type: CapacityBuildingTypeViewModel;
-  private _district: DistrictViewModel;
-  private _municipality: MunicipalityViewModel;
-  private _province: ProvinceViewModel;
+  private _capacity_building_type: CapacityBuildingType;
+  private _district: District;
+  private _municipality: Municipality;
+  private _province: Province;
 
   constructor() {
   }
@@ -66,35 +66,35 @@ export class CapacityBuildingViewModel {
     this._venue = value;
   }
 
-  get capacity_building_type(): CapacityBuildingTypeViewModel {
+  get capacity_building_type(): CapacityBuildingType {
     return this._capacity_building_type;
   }
 
-  set capacity_building_type(value: CapacityBuildingTypeViewModel) {
+  set capacity_building_type(value: CapacityBuildingType) {
     this._capacity_building_type = value;
   }
 
-  get district(): DistrictViewModel {
+  get district(): District {
     return this._district;
   }
 
-  set district(value: DistrictViewModel) {
+  set district(value: District) {
     this._district = value;
   }
 
-  get municipality(): MunicipalityViewModel {
+  get municipality(): Municipality {
     return this._municipality;
   }
 
-  set municipality(value: MunicipalityViewModel) {
+  set municipality(value: Municipality) {
     this._municipality = value;
   }
 
-  get province(): ProvinceViewModel {
+  get province(): Province {
     return this._province;
   }
 
-  set province(value: ProvinceViewModel) {
+  set province(value: Province) {
     this._province = value;
   }
 }

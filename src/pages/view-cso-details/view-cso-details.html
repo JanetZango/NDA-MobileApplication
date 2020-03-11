@@ -1,38 +1,39 @@
 <ion-content class="content">
-  <div class="top">
-    <div class="btn">
-      <button clear ion-button (click)="goBack()">
+  <div class="nav-bar">
+    <div class="button-back">
+      <button clear ion-button (click)="goToCSOListView()">
         <ion-icon ios="ios-arrow-round-back" md="md-arrow-round-back"></ion-icon>
       </button>
     </div>
-    <div class="btnCreate">
+    <div class="button-create">
       <button ion-button (click)="viewCsoMembers()">
         Manage Cso Members
       </button>
     </div>
   </div>
- <div class="bottom">
-  <div class="card">
-     <div class="image">
-      <img src="../../assets/pic.png">
-     </div>
-   
-<div class="infor">
-      <p><b>Name :</b><br>{{csoDetail?.name_of_cso}}</p>
-      <p><b>Sector :</b><br>{{csoDetail?.cso_sector.title}}</p>
-      <p><b>Type:</b><br>{{csoDetail?.cso_type.title}}</p>
-      <p><b>Entity Reg No. :</b><br>{{csoDetail?.registration_number}}</p>
-      <p><b>NDA Reg No. :</b><br>{{csoDetail?.nda_registration}}</p>
-      <p><b>Total staff :</b><br>{{csoDetail?.total_staff}}</p>
-      <p><b>Contact person :</b><br>{{csoDetail?.contact_person}}</p>
-      <p><b>Contact number :</b><br>{{csoDetail?.contact_number}}</p>
-      <p><b>Contact email :</b><br>{{csoDetail?.email_address}}</p>
-      <p><b>District :</b><br>{{csoDetail?.district.title}}</p>
-      <p><b>Municipality :</b><br>{{csoDetail?.municipality.title}}</p>
-      <p><b>Ward number :</b><br>{{csoDetail?.ward_number}}</p>
-    </div> 
+  <div class="main-content">
+    <h3>CSO detail view</h3>
+    <div class="card-profile-view">
+      <div class="card-profile-view-icon">
+        <img src="../../assets/cso.png" style="max-height: 50%">
+      </div>
+      <hr />
+      <div class="card-profile-view-info">
+        <p><b>Name :</b><br>{{cso?.name_of_cso}}</p>
+        <p><b>Sector :</b><br>{{cso?.cso_sector?.title}}</p>
+        <p><b>Type:</b><br>{{cso?.cso_type?.title}}</p>
+        <p><b>Mobilization method:</b><br>{{cso?.cso_mobilization_method?.title}}</p>
+        <p><b>Mobilization date:</b><br>{{cso?.mobilization_date}}</p>
+        <p><b>Entity Reg No. :</b><br>{{cso?.registration_number}}</p>
+        <p><b>NDA Reg No. :</b><br>{{cso?.nda_registration}}</p>
+        <p><b>Total staff :</b><br>{{cso?.total_staff}}</p>
+        <p><b>Contact person :</b><br>{{cso?.contact_person}}</p>
+        <p><b>Contact number :</b><br>{{cso?.contact_number}}</p>
+        <p><b>Contact email :</b><br>{{cso?.email_address}}</p>
+        <p><b>District :</b><br>{{cso?.district?.title}}</p>
+        <p><b>Municipality :</b><br>{{cso?.municipality?.title}}</p>
+        <p><b>Ward number :</b><br>{{cso?.ward_number}}</p>
+      </div>
+    </div>
   </div>
- </div>
-
- 
 </ion-content>

@@ -1,4 +1,4 @@
-export class CsoTypeViewModel {
+export class CsoType {
   private _guid: string;
   private _title: string;
 

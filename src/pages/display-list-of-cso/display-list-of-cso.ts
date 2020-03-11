@@ -1,10 +1,12 @@
 import {Component, OnInit} from '@angular/core';
+import { Storage } from '@ionic/storage';
 import {IonicPage, NavController, NavParams} from 'ionic-angular';
-import {RegistercsoPage} from '../registercso/registercso';
 import {EntityProvider} from '../../providers/entity/cso'
 import {ViewCsoDetailsPage} from '../view-cso-details/view-cso-details';
 import {LoadingController} from 'ionic-angular';
-import {CsoViewModel} from "../../model/view/cso.view.model";
+import {Cso} from "../../model/cso.model";
+import {LandingPage} from "../landing/landing";
+import {AddCsoPage} from "../add-cso/add-cso";
 
 @IonicPage()
 @Component({
@@ -13,58 +15,63 @@ import {CsoViewModel} from "../../model/view/cso.view.model";
 })
 export class DisplayListOfCsoPage implements OnInit {
 
-  originalListOfCsoes: CsoViewModel[] = [];
-  listOfCsoes: CsoViewModel[] = [];
+  originalListOfCsoes: Cso[] = [];
+  filteredListOfCsoes: Cso[] = [];
 
   constructor(
     public navCtrl: NavController,
     public navParams: NavParams,
     public api: EntityProvider,
-    public loadingCtrl: LoadingController
+    public loadingCtrl: LoadingController,
+    public storage: Storage
   ) {
   }
 
   registerCSO() {
-    this.navCtrl.push(RegistercsoPage)
+    this.navCtrl.push(AddCsoPage)
   }
 
-  gotoLanding() {
-    this.navCtrl.pop();
-  }
 
   ngOnInit() {
-    this.getListOfCsoes();
+    this._getListOfCsoes();
   }
 
-  getListOfCsoes() {
-    const _loader = this.loadingCtrl.create({
-      content: "Please wait information is still loading...",
-      duration: 300000000
-    });
+  _getListOfCsoes() {
+    if(this.originalListOfCsoes.length == 0){
+      const _loader = this.loadingCtrl.create({
+        content: "Please wait information is still loading...",
+        duration: 300000000
+      });
 
-    _loader.present();
+      _loader.present();
 
-    this.api.getCso().subscribe(response => {
-      if (response) {
-        this.originalListOfCsoes = response.csoes;
-        this.listOfCsoes = response.csoes;
-      }
-      _loader.dismiss();
-    })
+      this.api.getCso().subscribe(response => {
+        if (response) {
+          this.originalListOfCsoes = response.csoes;
+          this.filteredListOfCsoes = response.csoes;
+        }
+        _loader.dismiss();
+      })
+    }
   }
 
-  viewCsoDetail(_cso: CsoViewModel) {
-    this.navCtrl.push(ViewCsoDetailsPage, {cso:_cso});
+  goBackToHomePage(){
+    this.navCtrl.push(LandingPage)
+  }
+
+  viewCsoDetail(_cso: Cso) {
+    this.storage.set('current_cso',_cso);
+    this.navCtrl.push(ViewCsoDetailsPage)
   }
 
   searchForCso(element: any) {
     const _needle = element.target.value;
     if (_needle === '') {
-      this.listOfCsoes = this.originalListOfCsoes;
+      this.filteredListOfCsoes = this.originalListOfCsoes;
       return;
     }
-    this.listOfCsoes = this.originalListOfCsoes.filter((x) => {
-      return (x.name_of_cso.toLowerCase().indexOf(_needle.toLowerCase()) > -1);
+    this.filteredListOfCsoes = this.originalListOfCsoes.filter((cso) => {
+      return (cso.name_of_cso.toLowerCase().indexOf(_needle.toLowerCase()) > -1);
     })
   }
 }

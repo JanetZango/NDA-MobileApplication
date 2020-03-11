@@ -1,4 +1,4 @@
-export class CapacityBuildingTypeViewModel {
+export class CsoSector {
   private _guid: string;
   private _title: string;
 

@@ -1,4 +1,4 @@
-export class MunicipalityViewModel {
+export class CapacityBuildingType {
   private _guid: string;
   private _title: string;
 

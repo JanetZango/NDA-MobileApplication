@@ -1,4 +1,4 @@
-export class ProvinceViewModel {
+export class CsoMobilizationMethod {
   private _guid: string;
   private _title: string;
 
