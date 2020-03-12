@@ -5,7 +5,7 @@ import { LookUpService } from '../../providers/lookup/lookups.service';
 import { EntityProvider } from '../../providers/entity/cso';
 import { NgModel, NgForm,Validators, FormBuilder, FormGroup } from '@angular/forms';
 import { DataProvider } from '../../providers/dataproviders/dataprovider';
-import { Assessment } from '../../model/assessment-class';
+import { Assessment } from '../../model/assessment.model';
 
 /**
  * Generated class for the AddAssessmentPage page.
@@ -55,7 +55,7 @@ export class AddAssessmentPage {
     this.getAssessementAnswer();
     this.getQuestionsAnswers();
 
-    this.authForm = this.fb.group({  
+    this.authForm = this.fb.group({
       'name_of_cso': ['', Validators.compose([Validators.required])],
       'assessment_date': ['', Validators.compose([Validators.required])],
       'assessment_type_guid': ['', Validators.compose([Validators.required])],
@@ -75,7 +75,7 @@ export class AddAssessmentPage {
     this.navCtrl.push(DisplayListOfAssessmentPage)
   }
   /**
-   * 
+   *
    * Get the List Of Assessment type
    */
   getAssessmnetType(){
@@ -118,49 +118,49 @@ export class AddAssessmentPage {
   }
 
   /**
-   * 
-   * @param assessment 
+   *
+   * @param assessment
    */
   addAssessment(assessment:NgForm) {
     // creating an answer obj
-    this.assessmentObject.cso_guid = this.cso_guid_value;
-    this.assessmentObject.assessment_date = assessment.value.assessment_date
-    this.assessmentObject.assessment_type_guid = assessment.value.assessment_type_guid
-    this.assessmentObject.cso_assessment = this.answerObj
-    this.entityProvider.saveAssessment(JSON.stringify(this.assessmentObject)).subscribe(res => {
-      if (typeof (res) != 'undefined') {
-        const alert = this.alertCtrl.create({
-          title: 'Alert',
-          subTitle: 'Assessment Saved',
-          buttons: ['OK']
-        });
-        alert.present();
-        assessment.resetForm();
-        this.assessmentObject = new Assessment();
-        //this.navCtrl.push(LandingPage);
-      }
-      else {
-        const alert = this.alertCtrl.create({
-          title: 'Oops!',
-          subTitle: 'Assessment was not saved',
-          buttons: ['OK']
-        });
-        alert.present();
-      }
-    }, (err) => {
-      const alert = this.alertCtrl.create({
-        title: 'Error!',
-        subTitle: 'Something went wrong!',
-        buttons: ['OK']
-      });
-      alert.present();
+    // this.assessmentObject.cso_guid = this.cso_guid_value;
+    // this.assessmentObject.assessment_date = assessment.value.assessment_date
+    // this.assessmentObject.assessment_type_guid = assessment.value.assessment_type_guid
+    // this.assessmentObject.cso_assessment = this.answerObj
+    // this.entityProvider.saveAssessment(JSON.stringify(this.assessmentObject)).subscribe(res => {
+    //   if (typeof (res) != 'undefined') {
+    //     const alert = this.alertCtrl.create({
+    //       title: 'Alert',
+    //       subTitle: 'Assessment Saved',
+    //       buttons: ['OK']
+    //     });
+    //     alert.present();
+    //     assessment.resetForm();
+    //     this.assessmentObject = new Assessment();
+    //     //this.navCtrl.push(LandingPage);
+    //   }
+    //   else {
+    //     const alert = this.alertCtrl.create({
+    //       title: 'Oops!',
+    //       subTitle: 'Assessment was not saved',
+    //       buttons: ['OK']
+    //     });
+    //     alert.present();
+    //   }
+    // }, (err) => {
+    //   const alert = this.alertCtrl.create({
+    //     title: 'Error!',
+    //     subTitle: 'Something went wrong!',
+    //     buttons: ['OK']
+    //   });
+    //   alert.present();
 
-    });
+    // });
   }
 
   /**
-   * 
-   * @param answers 
+   *
+   * @param answers
    */
   selectRad(answers){
     if(this.answerObj.length > 0){
@@ -172,7 +172,7 @@ export class AddAssessmentPage {
             }
         }
     }
-    // deleting element which are not needed 
+    // deleting element which are not needed
     delete answers.weight;
     delete answers.answer;
     this.answerObj.push(answers);
@@ -185,7 +185,7 @@ export class AddAssessmentPage {
         this.storeNames();
         for(var x =0; x < this.DisplayCso.length;x ++){
           this.storeOrgNames(this.DisplayCso[x].cso_name)
-           
+
         }
       }
     })
@@ -197,13 +197,13 @@ export class AddAssessmentPage {
 
   getCsoName(){
     return this.CsoName
-    
+
   }
 
   /**
-   * 
-   * @param ev 
-   * 
+   *
+   * @param ev
+   *
    */
   getItems(ev: any){
     const val = ev.target.value;

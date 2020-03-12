@@ -1,0 +1,45 @@
+<ion-content class="content">
+  <div class="nav-bar">
+    <div class="button-back">
+      <button clear ion-button (click)="goBackToAssessmentList()">
+        <ion-icon ios="ios-arrow-round-back" md="md-arrow-round-back"></ion-icon>
+      </button>
+    </div>
+    <div class="button-create">
+      <button ion-button (click)="createCapacityBuilding()">
+        Add event
+      </button>
+    </div>
+  </div>
+  <div class="main-content">
+    <h3>Capacity building event details</h3>
+    <div class="card-profile-view">
+      <div class="card-profile-view-icon">
+        <img src="../../assets/capacity_building.png">
+      </div>
+      <hr />
+      <div class="card-profile-view-info">
+        <p><b>Type:</b><br> {{capacityBuilding?.capacity_building_type?.title}}</p>
+        <p><b>Sector:</b><br> {{capacityBuilding?.funding_source?.title}}</p>
+        <p><b>Partner:</b><br> {{capacityBuilding?.partner?.partner_name}}</p>
+        <p><b>Facilitator:</b><br> {{capacityBuilding?.facilitator_name}}</p>
+        <p><b>Co Facilitator:</b><br> {{capacityBuilding?.co_facilitator_name}}</p>
+        <p><b>Venue:</b><br> {{capacityBuilding?.venue}}</p>
+        <p><b>Province:</b><br> {{capacityBuilding?.province?.title}}</p>
+        <p><b>District:</b><br> {{capacityBuilding?.district?.title}}</p>
+        <p><b>Municipality:</b><br> {{capacityBuilding?.municipality?.title}}</p>
+        <p><b>Start date:</b><br> {{capacityBuilding?.start_date}}</p>
+        <p><b>End date:</b><br> {{capacityBuilding?.end_date}}</p>
+      </div>
+    </div>
+  </div>
+</ion-content>
+
+<ion-footer class="ion-no-border">
+  <ion-toolbar>
+    <ion-buttons>
+      <button class="button-footer-home" (click)="goBackToHomePage()"><ion-icon name="home"></ion-icon>&nbsp;Home</button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-footer>
+

@@ -2,6 +2,8 @@ import {CapacityBuildingType} from "./capacitybuildingtype.model";
 import {District} from "./district.model";
 import {Municipality} from "./municipality.model";
 import {Province} from "./province.model";
+import {Fundingsource} from "./fundingsource.model";
+import {Partner} from "./partner.model";
 
 export class CapacityBuilding {
   private _guid: string;
@@ -14,9 +16,13 @@ export class CapacityBuilding {
   private _district: District;
   private _municipality: Municipality;
   private _province: Province;
+  private _funding_source: Fundingsource;
+  private _partner: Partner
+
 
   constructor() {
   }
+
 
   get guid(): string {
     return this._guid;
@@ -96,5 +102,21 @@ export class CapacityBuilding {
 
   set province(value: Province) {
     this._province = value;
+  }
+
+  get funding_source(): Fundingsource {
+    return this._funding_source;
+  }
+
+  set funding_source(value: Fundingsource) {
+    this._funding_source = value;
+  }
+
+  get partner(): Partner {
+    return this._partner;
+  }
+
+  set partner(value: Partner) {
+    this._partner = value;
   }
 }

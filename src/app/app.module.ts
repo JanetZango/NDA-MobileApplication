@@ -23,6 +23,8 @@ import { AsynPage } from '../pages/asyn/asyn';
 import { ConfigService } from '../providers/config/config.server';
 import { EntityProvider } from '../providers/entity/cso'
 import { ViewCsoDetailsPage } from '../pages/view-cso-details/view-cso-details';
+import { ViewAssessmentPage } from '../pages/view-assessment/view-assessment';
+import { ViewCapacityBuildingPage } from '../pages/view-capacity-building/view-capacity-building';
 import { LookUpService } from '../providers/lookup/lookups.service';
 import { DataProvider } from '../providers/dataproviders/dataprovider';
 import { ViewCsoMemberPage } from '../pages/view-cso-member/view-cso-member';
@@ -50,7 +52,9 @@ import { TabsPage } from '../pages/tabs/tabs';
     ViewCsoDetailsPage,
     ViewCsoMemberPage,
     DisplayCsoMemberListPage,
-    AddCsoMemberPage
+    AddCsoMemberPage,
+    ViewAssessmentPage,
+    ViewCapacityBuildingPage
   ],
   imports: [
     BrowserModule,
@@ -76,7 +80,9 @@ import { TabsPage } from '../pages/tabs/tabs';
     ViewCsoDetailsPage,
     ViewCsoMemberPage,
     DisplayCsoMemberListPage,
-    AddCsoMemberPage
+    AddCsoMemberPage,
+    ViewAssessmentPage,
+    ViewCapacityBuildingPage
   ],
   providers: [
     StatusBar,

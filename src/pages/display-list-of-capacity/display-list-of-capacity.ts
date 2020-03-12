@@ -6,6 +6,7 @@ import {EntityProvider} from '../../providers/entity/cso';
 import {LoadingController} from 'ionic-angular';
 import {CapacityBuilding} from "../../model/capacitybuilding.model";
 import {Storage} from "@ionic/storage";
+import {ViewCapacityBuildingPage} from "../view-capacity-building/view-capacity-building";
 
 
 
@@ -55,6 +56,7 @@ export class DisplayListOfCapacityPage implements OnInit {
 
   viewCapacityBuildingDetail(_capacity_building: CapacityBuilding) {
     this.storage.set('current_capacity_building',_capacity_building);
+    this.navCtrl.push(ViewCapacityBuildingPage);
 
   }
 

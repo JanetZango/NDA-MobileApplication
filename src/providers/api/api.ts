@@ -86,11 +86,6 @@ export class ApiProvider {
     this.removeTokens();
   }
 
-  private getRefreshToken() {
-    return localStorage.getItem(REFRESH_TOKEN);
-  }
-
-
   private storeTokens(auth: Auth) {
     localStorage.setItem(JWT_TOKEN, auth.access_token);
     localStorage.setItem(REFRESH_TOKEN, auth.refresh_token);

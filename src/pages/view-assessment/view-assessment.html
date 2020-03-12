@@ -1,0 +1,40 @@
+<ion-content class="content">
+  <div class="nav-bar">
+    <div class="button-back">
+      <button clear ion-button (click)="goBackToAssessmentList()">
+        <ion-icon ios="ios-arrow-round-back" md="md-arrow-round-back"></ion-icon>
+      </button>
+    </div>
+    <div class="button-create">
+      <button ion-button>
+        Create assessment
+      </button>
+    </div>
+  </div>
+  <div class="main-content">
+    <h3>Assessment details</h3>
+    <div class="card-profile-view">
+      <div class="card-profile-view-icon">
+        <img src="../../assets/assessment.png">
+      </div>
+      <hr />
+      <div class="card-profile-view-info">
+        <p><b>CSO name:</b><br>{{assessment?.cso?.name_of_cso}}</p>
+        <p><b>Type:</b><br>{{assessment?.assessment_type?.title}}</p>
+        <p><b>Calculated level:</b><br>{{assessment?.calculate_assessment_level}}</p>
+        <p><b>Calculated score:</b><br>{{assessment?.calculate_assessment_score}}</p>
+        <p><b>Completed:</b><br>{{assessment?.assessment_completed? "Yes" : "No"}}</p>
+        <p><b>Date:</b><br>{{assessment?.assessment_date}}</p>
+      </div>
+    </div>
+  </div>
+</ion-content>
+
+<ion-footer class="ion-no-border">
+  <ion-toolbar>
+    <ion-buttons>
+      <button class="button-footer-home" (click)="goBackToHomePage()"><ion-icon name="home"></ion-icon>&nbsp;Home</button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-footer>
+
