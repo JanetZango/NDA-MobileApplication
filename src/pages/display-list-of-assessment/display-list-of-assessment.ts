@@ -6,8 +6,8 @@ import { LandingPage } from '../landing/landing';
 import { EntityProvider } from '../../providers/entity/cso';
 import { LoadingController } from 'ionic-angular';
 import { Assessment } from '../../model/assessment.model';
-import {ViewCsoDetailsPage} from "../view-cso-details/view-cso-details";
 import {ViewAssessmentPage} from "../view-assessment/view-assessment";
+
 
 @IonicPage()
 @Component({
@@ -62,7 +62,7 @@ export class DisplayListOfAssessmentPage {
     })
   }
 
-  viewAssessmentDatials(_assessment: Assessment) {
+  viewAssessmentDetails(_assessment: Assessment) {
     this.storage.set('current_assessment',_assessment);
     this.navCtrl.push(ViewAssessmentPage)
   }
