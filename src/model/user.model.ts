@@ -1,33 +1,21 @@
 export class User {
-  private _access_token: string;
-  private _refresh_token: string;
-  private _user_details: string;
+  public guid?: string;
+  public full_name: string;
+  public email: string;
+  public province_guid: string;
+  public access_token: string;
+  public access_token_expiration_date: Date;
+  public refresh_token: string;
+  public refresh_token_expiration_date: Date;
 
-  constructor() {
-  }
-
-
-  get access_token(): string {
-    return this._access_token;
-  }
-
-  set access_token(value: string) {
-    this._access_token = value;
-  }
-
-  get refresh_token(): string {
-    return this._refresh_token;
-  }
-
-  set refresh_token(value: string) {
-    this._refresh_token = value;
-  }
-
-  get user_details(): string {
-    return this._user_details;
-  }
-
-  set user_details(value: string) {
-    this._user_details = value;
+  constructor(guid: string, full_name: string, email: string, province_guid: string, access_token: string, access_token_expiration_date: Date, refresh_token: string, refresh_token_expiration_date: Date) {
+    this.guid = guid;
+    this.full_name = full_name;
+    this.email = email;
+    this.province_guid = province_guid;
+    this.access_token = access_token;
+    this.access_token_expiration_date = access_token_expiration_date;
+    this.refresh_token = refresh_token;
+    this.refresh_token_expiration_date = refresh_token_expiration_date;
   }
 }

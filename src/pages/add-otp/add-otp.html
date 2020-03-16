@@ -9,7 +9,7 @@
           <br>
           <div class="logininputdiv">
              <!-- <p>{{email}}</p>  -->
-             <form #otpf="ngForm" (ngSubmit)="login(otpf)">
+             <form #otpForm="ngForm" (ngSubmit)="verifyOTP(otpForm)">
             <ion-list>
               <ion-item no-lines class="inputs">
                 <ion-input type="number" placeholder="One time password" ngModel name="otp"></ion-input>

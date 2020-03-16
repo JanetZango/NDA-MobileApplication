@@ -1,21 +1,15 @@
 import {Component, OnInit} from '@angular/core';
-import {IonicPage, LoadingController, NavController, NavParams} from 'ionic-angular';
-import { DisplayListOfCsoPage } from '../display-list-of-cso/display-list-of-cso';
-import { DisplayListOfAssessmentPage } from '../display-list-of-assessment/display-list-of-assessment';
-import { DisplayListOfCapacityPage } from '../display-list-of-capacity/display-list-of-capacity';
-import { AsynPage } from '../asyn/asyn';
-import { EntityProvider } from '../../providers/entity/cso';
-import { DataProvider } from '../../providers/dataproviders/dataprovider';
-import {ViewCsoDetailsPage} from "../view-cso-details/view-cso-details";
+import {AlertController, IonicPage, LoadingController, NavController, NavParams} from 'ionic-angular';
+import {DisplayListOfCsoPage} from '../display-list-of-cso/display-list-of-cso';
+import {DisplayListOfAssessmentPage} from '../display-list-of-assessment/display-list-of-assessment';
+import {DisplayListOfCapacityPage} from '../display-list-of-capacity/display-list-of-capacity';
+import {AsynPage} from '../asyn/asyn';
+import { Storage } from '@ionic/storage';
+import {DataProvider} from '../../providers/dataproviders/dataprovider';
 import {LoginPage} from "../login/login";
-import {ApiProvider} from "../../providers/api/api";
-
-/**
- * Generated class for the LandingPage page.
- *
- * See https://ionicframework.com/docs/components/#navigation for more info on
- * Ionic pages and navigation.
- */
+import {AuthService} from "../../service/auth.service";
+import {User} from "../../model/user.model";
+import {UserService} from "../../service/user.service";
 
 @IonicPage()
 @Component({
@@ -23,50 +17,76 @@ import {ApiProvider} from "../../providers/api/api";
   templateUrl: 'landing.html',
 })
 export class LandingPage implements OnInit {
-  userDetails = "";
-  refreshToken = "";
+  authUser: User;
+
   constructor(
     public navCtrl: NavController,
     public navParams: NavParams,
-    public authUser: ApiProvider,
-    public csoProvider: DataProvider,
-    public loadingCtrl: LoadingController
-    ) {
-    this.userDetails = localStorage.getItem('USER_INFO');
-    this.refreshToken = localStorage.getItem('REFRESH_TOKEN');
-  }
+    public authService: AuthService,
+    private storage: Storage,
+    public alertCtrl: AlertController,
+    public loadingCtrl: LoadingController,
+    public userService: UserService
+  ) {}
 
   ngOnInit(): void {
-    if(this.refreshToken !== "undefined"){
-      const _loader = this.loadingCtrl.create({
-        content: "Please wait information is still loading...",
-        duration: 300000000
-      });
-
-      _loader.present();
-
-      this.authUser.refreshToken().subscribe(response => {
-        _loader.dismiss();
-      })
-    }else{
-      this.navCtrl.push(LoginPage)
-    }
-  }
-
-
-
-  DisplayListOfCSO(){
-      this.navCtrl.push(DisplayListOfCsoPage)
-  }
-  DisplayListOfAssessment(){
-      this.navCtrl.push(DisplayListOfAssessmentPage)
-  }
-  DisplayListOfCapacity(){
-      this.navCtrl.push(DisplayListOfCapacityPage)
+     this.storage.get('authUser').then((storageAuthUser: User) => {
+        if(storageAuthUser){
+          this.authUser = storageAuthUser;
+          this.userService.full_name = this.authUser.full_name;
+          this.userService.email = this.authUser.email;
+          this.userService.guid = this.authUser.guid;
+          this.userService.province_guid = this.authUser.province_guid;
+          this.userService.access_token = this.authUser.access_token;
+          this.userService.refresh_token = this.authUser.refresh_token;
+          this.userService.access_token_expiration_date = this.authUser.access_token_expiration_date;
+          this.userService.refresh_token_expiration_date = this.authUser.refresh_token_expiration_date;
+        } else {
+          return this.navCtrl.push(LoginPage);
+        }
+     });
 
   }
-   gotoAsync(){
-       this.navCtrl.push(AsynPage)
+
+  displayListOfCSO() {
+    this.navCtrl.push(DisplayListOfCsoPage)
+  }
+
+  displayListOfAssessment() {
+    this.navCtrl.push(DisplayListOfAssessmentPage)
+  }
+
+  displayListOfCapacity() {
+    this.navCtrl.push(DisplayListOfCapacityPage)
+  }
+
+  logout(){
+    let alert = this.alertCtrl.create({
+      title: 'Logout',
+      message: 'You are about to logout, do you want to proceed?',
+      buttons: [
+        {
+          text: 'Cancel',
+          role: 'cancel',
+          handler: () => {
+            console.log('Cancel clicked');
+          }
+        },
+        {
+          text: 'Logout',
+          handler: () => {
+            this.storage.remove('authUser').then(removed => {
+                this.navCtrl.push(LoginPage);
+            });
+          }
+        }
+      ]
+    });
+    alert.present();
+  }
+
+  gotoAsync() {
+    this.navCtrl.push(AsynPage)
   }
 
 }

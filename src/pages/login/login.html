@@ -8,7 +8,7 @@
         <div class="h1" text-center>Enter your email address</div>
         <br>
         <div class="logininputdiv">
-          <form #user="ngForm" (ngSubmit)="verifyemail(user)">
+          <form #user="ngForm" (ngSubmit)="getEmail(user)">
             <ion-list>
               <ion-item no-lines class="inputs">
                 <ion-input type="email" placeholder="Email address" ngModel name="email" email required>

@@ -126,15 +126,8 @@
         </div>
 
         <ion-item class="input-select">
-          <ion-label>Province</ion-label>
-          <ion-select formControlName="province" (ionChange)="onchangeProvince()" >
-            <ion-option *ngFor="let province of listLookupProvince" [value]="province.guid">{{province.title}}</ion-option>
-          </ion-select>
-        </ion-item>
-
-        <ion-item class="input-select">
           <ion-label>District</ion-label>
-          <ion-select formControlName="district" [disabled]="disableDistrictDropdown" (ionChange)="onchangeDistrict()">
+          <ion-select formControlName="district" (ionChange)="onchangeDistrict()">
             <ion-option *ngFor="let district of listFilteredLookupDistrict" [value]="district.guid">{{district.title}}</ion-option>
           </ion-select>
         </ion-item>
@@ -151,3 +144,15 @@
     </div>
   </div>
 </ion-content>
+
+
+<ion-footer class="ion-no-border">
+  <ion-toolbar>
+    <ion-buttons>
+      <button class="button-footer-home" (click)="goBackToHomePage()"><ion-icon name="home"></ion-icon>&nbsp;Home</button>
+      <button class="button-footer-home" style="float: right" (click)="logout()">
+        <ion-icon ios="ios-exit" md="md-exit"></ion-icon>&nbsp;Logout
+      </button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-footer>

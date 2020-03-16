@@ -1,18 +1,23 @@
 import {Component, OnInit} from '@angular/core';
-import { IonicPage, NavController, NavParams, AlertController } from 'ionic-angular';
-import { Validators, FormBuilder, FormGroup } from '@angular/forms';
-import { LookUpService } from '../../providers/lookup/lookups.service';
-import { EntityProvider } from '../../providers/entity/cso';
+import {IonicPage, NavController, NavParams, AlertController, LoadingController} from 'ionic-angular';
+import {Validators, FormBuilder, FormGroup} from '@angular/forms';
+import {LookUpService} from '../../providers/lookup/lookups.service';
+import {EntityProvider} from '../../providers/entity/cso';
 import {CsoPayload} from "../../model/payload/csopayload.model";
 import {DisplayCsoMemberListPage} from "../display-cso-member-list/display-cso-member-list";
 import {DisplayListOfCsoPage} from "../display-list-of-cso/display-list-of-cso";
+import {LandingPage} from "../landing/landing";
+import {LoginPage} from "../login/login";
+import {Storage} from "@ionic/storage";
+import {CsoService} from "../../service/cso.service";
+import {UserService} from "../../service/user.service";
 
 @IonicPage()
 @Component({
   selector: 'page-add-cso',
   templateUrl: 'add-cso.html',
 })
-export class AddCsoPage implements OnInit{
+export class AddCsoPage implements OnInit {
 
   listLookupProvince = [];
   listLookupCsoType = [];
@@ -30,24 +35,28 @@ export class AddCsoPage implements OnInit{
   csoPayload: CsoPayload;
   private csoForm: FormGroup;
 
-  constructor(public navCtrl: NavController,
+  constructor(
+    public navCtrl: NavController,
     public navParams: NavParams,
     public lookupService: LookUpService,
-    public entityProvider: EntityProvider,
+    public csoService: CsoService,
+    public loadingCtrl: LoadingController,
+    public storage: Storage,
     public alertCtrl: AlertController,
-    private formBuilder: FormBuilder ) {}
+    private formBuilder: FormBuilder,
+    public userService: UserService) {
+  }
 
   ngOnInit(): void {
     this._buildForm();
     this._getCsoType();
     this._getCsoSector();
     this._getMobilisationMethod();
-    this._getProvince();
-    this._getDistrict();
+    this._getDistrict(this.userService.province_guid);
     this._getMunicipality();
   }
 
-  _buildForm(){
+  _buildForm() {
     this.csoForm = this.formBuilder.group({
       'name_of_cso': ['', [
         Validators.required, Validators.minLength(2), Validators.maxLength(50),
@@ -61,7 +70,7 @@ export class AddCsoPage implements OnInit{
       'registration_number': ['', [
         Validators.required, Validators.minLength(0), Validators.maxLength(20),
       ]],
-      'email_address': ['', [Validators.required,  Validators.email]],
+      'email_address': ['', [Validators.required, Validators.email]],
       'contact_number': ['', [
         Validators.required, Validators.minLength(9), Validators.maxLength(15),
       ]],
@@ -71,21 +80,20 @@ export class AddCsoPage implements OnInit{
       'physical_address': ['', [
         Validators.required, Validators.minLength(2), Validators.maxLength(100),
       ]],
-      'province': ['', [Validators.required]],
       'district': ['', [Validators.required]],
       'municipality': ['', [Validators.required]],
       'cso_type': ['', [Validators.required]],
       'cso_sector': ['', [Validators.required]],
       'mobilization_method': ['', [Validators.required]],
-      'mobilization_date': ['', [Validators.required,Validators]],
+      'mobilization_date': ['', [Validators.required, Validators]],
     });
   }
 
-  _getMobilisationMethod(){
+  _getMobilisationMethod() {
     this.lookupService.getMobilisationMethod()
-      .subscribe( res =>{
+      .subscribe(res => {
         this.listLookupMobilizationMethod = res;
-    });
+      });
   }
 
   _getCsoSector() {
@@ -106,10 +114,11 @@ export class AddCsoPage implements OnInit{
     })
   }
 
-  _getDistrict() {
+  _getDistrict(province_guid: string) {
     this.lookupService.getDistrict().subscribe(res => {
-      this.listOriginalLookupDistrict = res;
-      this.listFilteredLookupDistrict = res;
+      const listOfDistricts = res;
+      this.listOriginalLookupDistrict = listOfDistricts.filter(x => x.province_guid === province_guid);
+      this.listFilteredLookupDistrict = listOfDistricts.filter(x => x.province_guid === province_guid);
     })
   }
 
@@ -129,14 +138,14 @@ export class AddCsoPage implements OnInit{
 
   }
 
-  onchangeProvince(){
+  onchangeProvince() {
     const _provinceGuid = this.csoForm.get('province').value;
     this.disableDistrictDropdown = false;
     this.disableMunicipalityDropdown = true;
     this._updateDistrict(_provinceGuid);
   }
 
-  onchangeDistrict(){
+  onchangeDistrict() {
     const _districtGuid = this.csoForm.get('district').value;
     this.disableMunicipalityDropdown = false;
     this._updateMunicipality(_districtGuid);
@@ -146,11 +155,11 @@ export class AddCsoPage implements OnInit{
     return this.csoForm.get(name).invalid && this.csoForm.get(name).dirty;
   }
 
-  redirectToCSOList(){
+  redirectToCSOList() {
     this.navCtrl.push(DisplayListOfCsoPage)
   }
 
-  formSubmit(){
+  formSubmit() {
     this.csoPayload = new CsoPayload();
     this.csoPayload.name_of_cso = this.csoForm.value.name_of_cso;
     this.csoPayload.cso_type_guid = this.csoForm.value.cso_type;
@@ -166,25 +175,68 @@ export class AddCsoPage implements OnInit{
     this.csoPayload.mobilization_method_guid = this.csoForm.value.mobilization_method;
     this.csoPayload.mobilization_date = this.csoForm.value.mobilization_date;
 
-    this.entityProvider.saveCso(this.csoPayload).subscribe(_response =>{
+    const _loader = this.loadingCtrl.create({
+      content: "Please wait whilst we create cso...",
+      duration: 300000000
+    });
 
-      if (_response) {
+    _loader.present();
+
+    this.csoService.create(this.csoPayload).subscribe((_response: any) => {
+      _loader.dismiss();
+      const alert = this.alertCtrl.create({
+        title: 'Alert',
+        subTitle: 'CSO was added successfully.',
+        buttons: ['OK']
+      });
+      alert.present();
+      return this.redirectToCSOList();
+    }, _error => {
+      _loader.dismiss();
+      if (_error.status === 400) {
         const alert = this.alertCtrl.create({
-          title: 'Alert',
-          subTitle: 'CSO was added successfully.',
+          title: 'Oops',
+          subTitle: 'You have entered invalid details, please check your form inputs.',
           buttons: ['OK']
         });
         alert.present();
-
       } else {
         const alert = this.alertCtrl.create({
-          title: 'Alert',
-          subTitle: 'An error occurred, please contact administrator!',
+          title: 'Oops',
+          subTitle: 'Something went wrong, please contact administrator.',
           buttons: ['OK']
         });
         alert.present();
       }
-      return this.redirectToCSOList();
     });
+  }
+
+  goBackToHomePage() {
+    this.navCtrl.push(LandingPage)
+  }
+
+  logout() {
+    let alert = this.alertCtrl.create({
+      title: 'Logout',
+      message: 'You are about to logout, do you want to proceed?',
+      buttons: [
+        {
+          text: 'Cancel',
+          role: 'cancel',
+          handler: () => {
+            console.log('Cancel clicked');
+          }
+        },
+        {
+          text: 'Logout',
+          handler: () => {
+            this.storage.remove('authUser').then(removed => {
+              this.navCtrl.push(LoginPage);
+            });
+          }
+        }
+      ]
+    });
+    alert.present();
   }
 }

@@ -8,6 +8,7 @@ export class CapacityBuildingPayload {
   public venue: string;
   public start_date: string;
   public end_date: string;
+  public cso_guid: string;
 
   constructor() {
   }

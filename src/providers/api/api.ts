@@ -1,10 +1,10 @@
 import { Injectable } from '@angular/core';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
-import { Observable } from 'rxjs/Observable';
-import { of } from 'rxjs/observable/of';
+import { Observable } from 'rxjs';
+import { of } from 'rxjs';
 import { catchError, tap } from 'rxjs/operators';
-import { ConfigService } from '../config/config.server';
 import { Auth } from '../../model/auth';
+import {ConfigService} from "../../service/config.server";
 
 
 const httpOptions = {
@@ -14,6 +14,7 @@ const httpOptions = {
 const JWT_TOKEN = 'JWT_TOKEN';
 const REFRESH_TOKEN = 'REFRESH_TOKEN';
 const USER_INFO = 'USER_INFO';
+const PROVINCE = 'PROVINCE';
 
 @Injectable()
 export class ApiProvider {
@@ -24,7 +25,7 @@ export class ApiProvider {
 
   ) {
 
-    this.url = config.getApiUrl();
+    this.url = config.apiUrl;
   }
 
   private url: string;
@@ -61,6 +62,7 @@ export class ApiProvider {
       localStorage.setItem(JWT_TOKEN, auth.access_token);
       localStorage.setItem(REFRESH_TOKEN, auth.refresh_token);
       localStorage.setItem(USER_INFO, auth.user_details);
+      localStorage.setItem(PROVINCE, auth.province);
     }));
   }
 
@@ -90,6 +92,7 @@ export class ApiProvider {
     localStorage.setItem(JWT_TOKEN, auth.access_token);
     localStorage.setItem(REFRESH_TOKEN, auth.refresh_token);
     localStorage.setItem(USER_INFO, auth.user_details);
+    localStorage.setItem(PROVINCE, auth.province);
   }
 
   /**

@@ -1,5 +1,5 @@
 import {Component, OnInit} from '@angular/core';
-import {IonicPage, NavController, NavParams, AlertController} from 'ionic-angular';
+import {IonicPage, NavController, NavParams, AlertController, LoadingController} from 'ionic-angular';
 import {Validators, FormBuilder, FormGroup} from '@angular/forms';
 import {LookUpService} from '../../providers/lookup/lookups.service';
 import {EntityProvider} from '../../providers/entity/cso';
@@ -8,6 +8,9 @@ import {RsaIdValidator} from "../../providers/validators/rsaid.validator";
 import {Cso} from "../../model/cso.model";
 import {DisplayCsoMemberListPage} from "../display-cso-member-list/display-cso-member-list";
 import {MemberPayload} from "../../model/payload/memberpayload.model";
+import {LandingPage} from "../landing/landing";
+import {LoginPage} from "../login/login";
+import {CsoMemberService} from "../../service/cso-member.service";
 
 @IonicPage()
 @Component({
@@ -15,7 +18,7 @@ import {MemberPayload} from "../../model/payload/memberpayload.model";
   templateUrl: 'add-cso-member.html',
 })
 
-export class AddCsoMemberPage implements OnInit{
+export class AddCsoMemberPage implements OnInit {
   private cso: Cso;
   private memberPayload: MemberPayload;
   private memberForm: FormGroup;
@@ -26,14 +29,17 @@ export class AddCsoMemberPage implements OnInit{
   private defaultDisability = "No";
   private showPassportField = false;
 
-  constructor(public navCtrl: NavController,
-              public navParams: NavParams,
-              public lookupService: LookUpService,
-              public entityProvider: EntityProvider,
-              public alertCtrl: AlertController,
-              private formBuilder: FormBuilder,
-              public  storage: Storage
-  ) {}
+  constructor(
+    public navCtrl: NavController,
+    public navParams: NavParams,
+    public lookupService: LookUpService,
+    public csoMemberService: CsoMemberService,
+    public alertCtrl: AlertController,
+    private formBuilder: FormBuilder,
+    public  storage: Storage,
+    public loadingCtrl: LoadingController
+  ) {
+  }
 
   ngOnInit(): void {
     this.storage.get('current_cso').then((entity) => {
@@ -43,7 +49,7 @@ export class AddCsoMemberPage implements OnInit{
     this._setPassportNumberValidation();
   }
 
-  _buildForm(){
+  _buildForm() {
     this.memberForm = this.formBuilder.group({
       'first_name': ['', [
         Validators.required, Validators.minLength(2), Validators.maxLength(50),
@@ -66,18 +72,18 @@ export class AddCsoMemberPage implements OnInit{
       'physical_address': ['', [
         Validators.required, Validators.minLength(2), Validators.maxLength(100),
       ]],
-      'start_date': ['', [Validators.required,Validators]],
-      'end_date': ['', [Validators.required,Validators]],
+      'start_date': ['', [Validators.required, Validators]],
+      'end_date': ['', [Validators.required, Validators]],
     });
   }
 
-  _setPassportNumberValidation(){
+  _setPassportNumberValidation() {
     const passportNumberControl = this.memberForm.get('passport_number');
     const rsaIdNumberControl = this.memberForm.get('rsa_id_number');
 
     this.memberForm.get('nationality').valueChanges
       .subscribe(nationality => {
-        if(nationality === 'Other'){
+        if (nationality === 'Other') {
           passportNumberControl.setValidators([
             Validators.required, Validators.minLength(8), Validators.maxLength(30)
           ]);
@@ -102,11 +108,11 @@ export class AddCsoMemberPage implements OnInit{
     this.navCtrl.pop()
   }
 
-  redirectToMemberList(){
+  redirectToMemberList() {
     this.navCtrl.push(DisplayCsoMemberListPage)
   }
 
-  formSubmit(){
+  formSubmit() {
     this.memberPayload = new MemberPayload();
     this.memberPayload.first_name = this.memberForm.value.first_name;
     this.memberPayload.last_name = this.memberForm.value.last_name;
@@ -123,26 +129,72 @@ export class AddCsoMemberPage implements OnInit{
     this.memberPayload.rsa_id_number = this.memberForm.value.rsa_id_number;
     this.memberPayload.cso_guid = this.cso.guid
 
-    this.entityProvider.saveMembers(this.memberPayload).subscribe(_response =>{
+    const _loader = this.loadingCtrl.create({
+      content: "Please wait whilst we create cso member...",
+      duration: 300000000
+    });
 
-      if (_response) {
-           const alert = this.alertCtrl.create({
-             title: 'Alert',
-             subTitle: 'Member was added successfully.',
-             buttons: ['OK']
-           });
-           alert.present();
+    _loader.present();
 
+    this.csoMemberService.create(this.memberPayload).subscribe((_response: any) => {
+      _loader.dismiss();
+      const alert = this.alertCtrl.create({
+        title: 'Alert',
+        subTitle: 'CSO member was added successfully.',
+        buttons: ['OK']
+      });
+      alert.present();
+      return this.redirectToMemberList();
+    }, _error => {
+      _loader.dismiss();
+      if (_error.status === 400) {
+        const alert = this.alertCtrl.create({
+          title: 'Oops',
+          subTitle: 'You have entered invalid details, please check your form inputs.',
+          buttons: ['OK']
+        });
+        alert.present();
       } else {
         const alert = this.alertCtrl.create({
-          title: 'Alert',
-          subTitle: 'An error occurred, please contact administrator!',
+          title: 'Oops',
+          subTitle: 'Something went wrong, please contact administrator.',
           buttons: ['OK']
         });
         alert.present();
       }
-      return this.redirectToMemberList();
     });
+
+
+
+  }
+
+  goBackToHomePage() {
+    this.navCtrl.push(LandingPage)
+  }
+
+  logout() {
+    let alert = this.alertCtrl.create({
+      title: 'Logout',
+      message: 'You are about to logout, do you want to proceed?',
+      buttons: [
+        {
+          text: 'Cancel',
+          role: 'cancel',
+          handler: () => {
+            console.log('Cancel clicked');
+          }
+        },
+        {
+          text: 'Logout',
+          handler: () => {
+            this.storage.remove('authUser').then(removed => {
+              this.navCtrl.push(LoginPage);
+            });
+          }
+        }
+      ]
+    });
+    alert.present();
   }
 
   goBack() {

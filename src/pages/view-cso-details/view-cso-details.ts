@@ -1,11 +1,12 @@
 import {Component} from '@angular/core';
 import {Storage} from '@ionic/storage';
-import {IonicPage, LoadingController, NavController, NavParams} from 'ionic-angular';
+import {AlertController, IonicPage, LoadingController, NavController, NavParams} from 'ionic-angular';
 import {DisplayCsoMemberListPage} from '../display-cso-member-list/display-cso-member-list';
 import {EntityProvider} from '../../providers/entity/cso'
 import {Cso} from "../../model/cso.model";
 import {DisplayListOfCsoPage} from "../display-list-of-cso/display-list-of-cso";
 import {LandingPage} from "../landing/landing";
+import {LoginPage} from "../login/login";
 
 @IonicPage()
 @Component({
@@ -19,7 +20,8 @@ export class ViewCsoDetailsPage {
     public navParams: NavParams,
     public api: EntityProvider,
     public loadingCtrl: LoadingController,
-    public  storage: Storage
+    public storage: Storage,
+    public alertCtrl: AlertController,
   ) {}
 
   ngOnInit() {
@@ -30,6 +32,31 @@ export class ViewCsoDetailsPage {
 
   goToCSOListView() {
     this.navCtrl.push(DisplayListOfCsoPage);
+  }
+
+  logout(){
+    let alert = this.alertCtrl.create({
+      title: 'Logout',
+      message: 'You are about to logout, do you want to proceed?',
+      buttons: [
+        {
+          text: 'Cancel',
+          role: 'cancel',
+          handler: () => {
+            console.log('Cancel clicked');
+          }
+        },
+        {
+          text: 'Logout',
+          handler: () => {
+            this.storage.remove('authUser').then(removed => {
+              this.navCtrl.push(LoginPage);
+            });
+          }
+        }
+      ]
+    });
+    alert.present();
   }
 
   goBackToHomePage(){

@@ -3,22 +3,28 @@
   <div class="top">
     <div class="images">
       <img  src="../../assets/pic.png">
-      <p>{{this.userDetails | titlecase}}</p>
+      <p>{{this.authUser?.full_name | titlecase}}</p>
     </div>
-    <!-- <div class="asyncBtn">
-      <button clear ion-button (click)="gotoAsync()"><ion-icon name="notifications"></ion-icon>sync</button>
-    </div> -->
   </div>
 
   <div class="Bottom">
-    <ion-card class="card" (click)="DisplayListOfCSO()">
+    <ion-card class="card" (click)="displayListOfCSO()">
       <p> CSO Mobilisation</p>
     </ion-card>
-    <ion-card class="card2" (click)="DisplayListOfAssessment()">
+    <ion-card class="card2" (click)="displayListOfAssessment()">
       <p>CSO Assessment</p>
     </ion-card>
-    <ion-card class="card3" (click)="DisplayListOfCapacity()">
+    <ion-card class="card3" (click)="displayListOfCapacity()">
       <p>CSO Interventions & Classifications</p>
     </ion-card>
   </div>
 </ion-content>
+<ion-footer class="ion-no-border">
+  <ion-toolbar>
+    <ion-buttons style="text-align: right">
+      <button class="button-footer-home" (click)="logout()">
+        <ion-icon ios="ios-exit" md="md-exit"></ion-icon>&nbsp;Logout
+      </button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-footer>

@@ -1,12 +1,18 @@
 import {Component, OnInit} from '@angular/core';
 import { Storage } from '@ionic/storage';
-import {IonicPage, NavController, NavParams} from 'ionic-angular';
-import {EntityProvider} from '../../providers/entity/cso'
+import {AlertController, IonicPage, NavController, NavParams} from 'ionic-angular';
 import {ViewCsoDetailsPage} from '../view-cso-details/view-cso-details';
 import {LoadingController} from 'ionic-angular';
 import {Cso} from "../../model/cso.model";
 import {LandingPage} from "../landing/landing";
 import {AddCsoPage} from "../add-cso/add-cso";
+import {CsoService} from "../../service/cso.service";
+import {LoginPage} from "../login/login";
+
+export interface CSoResponseData {
+  csoes: any;
+}
+
 
 @IonicPage()
 @Component({
@@ -21,11 +27,11 @@ export class DisplayListOfCsoPage implements OnInit {
   constructor(
     public navCtrl: NavController,
     public navParams: NavParams,
-    public api: EntityProvider,
     public loadingCtrl: LoadingController,
-    public storage: Storage
-  ) {
-  }
+    public storage: Storage,
+    public csoService: CsoService,
+    public alertCtrl: AlertController,
+  ) {}
 
   registerCSO() {
     this.navCtrl.push(AddCsoPage)
@@ -45,14 +51,19 @@ export class DisplayListOfCsoPage implements OnInit {
 
       _loader.present();
 
-      this.api.getCso().subscribe(response => {
-        if (response) {
-          this.originalListOfCsoes = response.csoes;
-          this.filteredListOfCsoes = response.csoes;
-        }
+      this.csoService.list().subscribe((_responseData:CSoResponseData) => {
+        this.originalListOfCsoes = _responseData.csoes;
+        this.filteredListOfCsoes = _responseData.csoes;
         _loader.dismiss();
-      })
-
+      },_error => {
+        _loader.dismiss();
+        const alert = this.alertCtrl.create({
+          title: 'Oops',
+          subTitle: 'Something went wrong, please contact administrator.',
+          buttons: ['OK']
+        });
+        alert.present();
+      });
   }
 
   goBackToHomePage(){
@@ -62,6 +73,31 @@ export class DisplayListOfCsoPage implements OnInit {
   viewCsoDetail(_cso: Cso) {
     this.storage.set('current_cso',_cso);
     this.navCtrl.push(ViewCsoDetailsPage)
+  }
+
+  logout(){
+    let alert = this.alertCtrl.create({
+      title: 'Logout',
+      message: 'You are about to logout, do you want to proceed?',
+      buttons: [
+        {
+          text: 'Cancel',
+          role: 'cancel',
+          handler: () => {
+            console.log('Cancel clicked');
+          }
+        },
+        {
+          text: 'Logout',
+          handler: () => {
+            this.storage.remove('authUser').then(removed => {
+              this.navCtrl.push(LoginPage);
+            });
+          }
+        }
+      ]
+    });
+    alert.present();
   }
 
   searchForCso(element: any) {

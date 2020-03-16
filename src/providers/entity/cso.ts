@@ -1,9 +1,9 @@
 import { Injectable } from '@angular/core';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
-import { Observable } from 'rxjs/Observable';
-import { of } from 'rxjs/observable/of';
+import { Observable } from 'rxjs';
+import { of } from 'rxjs';
 import { catchError, tap } from 'rxjs/operators';
-import { ConfigService } from '../config/config.server';
+import { ConfigService } from '../../service/config.server';
 
 /*
   Generated class for the ApiProvider provider.
@@ -24,7 +24,7 @@ export class EntityProvider {
     public config: ConfigService
 
   ) {
-    this.url = config.getApiUrl();
+    this.url = config.apiUrl;
   }
 
   // back end url

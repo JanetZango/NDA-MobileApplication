@@ -1,15 +1,42 @@
 <ion-content class="content">
-  <div class="nav-bar">
+  <div class="nav-bar-search">
     <div class="button-back">
       <button clear ion-button (click)="redirectToCapacityBuildingList()">
-        <ion-icon ios="ios-arrow-round-back" md="md-arrow-round-back"></ion-icon>
+        <ion-icon ios="ios-arrow-back" md="md-arrow-back"></ion-icon>
       </button>
+    </div>
+    <div class="filter-search-input">
+      <ion-input placeholder="Filter by name"  (input)="searchForCso($event)" ></ion-input>
     </div>
   </div>
   <div class="main-content">
-    <h3>Add Capacity building event</h3>
-    <div class="form-fields-required">All fields required.</div>
-    <div class="card-form">
+    <h1 *ngIf="showCsoList">Select CSO to add event</h1>
+    <div *ngIf="showCsoList">
+      <ion-card *ngFor="let cso of filteredListOfCsoes">
+        <div class="card-list" (click)="selectCSO(cso)">
+          <p><b>Name:</b> {{cso?.name_of_cso}}</p>
+          <p><b>Sector:</b> {{cso?.cso_sector.title}}</p>
+          <p><b>Type:</b> {{cso?.cso_type.title}}</p>
+          <p><b>Municipality:</b> {{cso?.municipality.title}}</p>
+          <div class="button-navigate-list">
+            <button clear ion-button>
+              <ion-icon name="ios-arrow-forward-outline"></ion-icon>
+            </button>
+          </div>
+        </div>
+      </ion-card>
+      <ion-card *ngIf="filteredListOfCsoes.length == 0" >
+        <div class="no-content-notification">
+          <ion-icon name="warning"><p>NB: There are no results!</p></ion-icon>
+        </div>
+      </ion-card>
+    </div>
+
+
+
+    <h3 *ngIf="!showCsoList">Add Capacity building event</h3>
+    <div *ngIf="!showCsoList" class="form-fields-required">All fields required.</div>
+    <div *ngIf="!showCsoList" class="card-form">
       <form [formGroup]="capacityBuildingForm" (ngSubmit)="formSubmit()">
 
         <ion-item class="input-select">
@@ -109,3 +136,14 @@
     </div>
   </div>
 </ion-content>
+
+<ion-footer class="ion-no-border">
+  <ion-toolbar>
+    <ion-buttons>
+      <button class="button-footer-home" (click)="goBackToHomePage()"><ion-icon name="home"></ion-icon>&nbsp;Home</button>
+      <button class="button-footer-home" style="float: right" (click)="logout()">
+        <ion-icon ios="ios-exit" md="md-exit"></ion-icon>&nbsp;Logout
+      </button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-footer>

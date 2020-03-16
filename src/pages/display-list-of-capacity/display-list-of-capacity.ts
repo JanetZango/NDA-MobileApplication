@@ -1,13 +1,17 @@
 import {Component, OnInit} from '@angular/core';
-import {IonicPage, NavController, NavParams} from 'ionic-angular';
+import {AlertController, IonicPage, NavController, NavParams} from 'ionic-angular';
 import {AddCapacityPage} from '../add-capacity/add-capacity';
 import {LandingPage} from '../landing/landing';
-import {EntityProvider} from '../../providers/entity/cso';
 import {LoadingController} from 'ionic-angular';
 import {CapacityBuilding} from "../../model/capacitybuilding.model";
 import {Storage} from "@ionic/storage";
 import {ViewCapacityBuildingPage} from "../view-capacity-building/view-capacity-building";
+import {CapacityBuildingService} from "../../service/capacity-building.service";
+import {LoginPage} from "../login/login";
 
+export interface CapacityBuildingResponseData {
+  capacity_buildings: any;
+}
 
 
 @IonicPage()
@@ -23,9 +27,10 @@ export class DisplayListOfCapacityPage implements OnInit {
   constructor(
     public navCtrl: NavController,
     public navParams: NavParams,
-    public api: EntityProvider,
+    public capacityBuildingService: CapacityBuildingService,
     public loadingCtrl: LoadingController,
-    public storage: Storage
+    public storage: Storage,
+    public alertCtrl: AlertController,
   ) {
   }
 
@@ -33,9 +38,6 @@ export class DisplayListOfCapacityPage implements OnInit {
     this._getListOfCapacityBuilding();
   }
 
-  goBackToHomePage() {
-    this.navCtrl.push(LandingPage)
-  }
 
   _getListOfCapacityBuilding() {
     const _loader = this.loadingCtrl.create({
@@ -45,22 +47,57 @@ export class DisplayListOfCapacityPage implements OnInit {
 
     _loader.present();
 
-    this.api.getCapacityBuilding().subscribe(_response => {
-      if (_response) {
-        this.originalListOfCapacityBuilding = _response.capacity_buildings;
-        this.filteredListOfCapacityBuilding = _response.capacity_buildings;
-      }
+    this.capacityBuildingService.list().subscribe((_response: CapacityBuildingResponseData) => {
       _loader.dismiss();
+      this.originalListOfCapacityBuilding = _response.capacity_buildings;
+      this.filteredListOfCapacityBuilding = _response.capacity_buildings;
+    }, _error => {
+      _loader.dismiss();
+      const alert = this.alertCtrl.create({
+        title: 'Oops',
+        subTitle: 'Something went wrong, please contact administrator.',
+        buttons: ['OK']
+      });
+      alert.present();
     })
   }
 
   viewCapacityBuildingDetail(_capacity_building: CapacityBuilding) {
-    this.storage.set('current_capacity_building',_capacity_building);
+    this.storage.set('current_capacity_building', _capacity_building);
     this.navCtrl.push(ViewCapacityBuildingPage);
 
   }
 
-  addCapacityBuilding(){
+  goBackToHomePage() {
+    this.navCtrl.push(LandingPage)
+  }
+
+  logout() {
+    let alert = this.alertCtrl.create({
+      title: 'Logout',
+      message: 'You are about to logout, do you want to proceed?',
+      buttons: [
+        {
+          text: 'Cancel',
+          role: 'cancel',
+          handler: () => {
+            console.log('Cancel clicked');
+          }
+        },
+        {
+          text: 'Logout',
+          handler: () => {
+            this.storage.remove('authUser').then(removed => {
+              this.navCtrl.push(LoginPage);
+            });
+          }
+        }
+      ]
+    });
+    alert.present();
+  }
+
+  addCapacityBuilding() {
     this.navCtrl.push(AddCapacityPage);
   }
 
