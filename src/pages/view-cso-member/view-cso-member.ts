@@ -1,7 +1,6 @@
 import {Component} from '@angular/core';
 import {Storage} from '@ionic/storage';
 import {AlertController, IonicPage, LoadingController, NavController, NavParams} from 'ionic-angular';
-import {EntityProvider} from "../../providers/entity/cso";
 import {AddCsoMemberPage} from "../add-cso-member/add-cso-member";
 import {Member} from "../../model/member.model";
 import {LandingPage} from "../landing/landing";
@@ -19,7 +18,6 @@ export class ViewCsoMemberPage {
   constructor(
     public navCtrl: NavController,
     public navParams: NavParams,
-    public api: EntityProvider,
     public loadingCtrl: LoadingController,
     public storage: Storage,
     public alertCtrl: AlertController,

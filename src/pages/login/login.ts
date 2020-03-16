@@ -1,10 +1,8 @@
 import {Component} from '@angular/core';
 import {IonicPage, NavController, NavParams} from 'ionic-angular';
-import {LandingPage} from '../landing/landing';
 import {AddOtpPage} from '../add-otp/add-otp';
 import {NgModel, NgForm} from '@angular/forms';
 import {AlertController} from 'ionic-angular';
-import {ApiProvider} from '../../providers/api/api';
 import {AuthService} from "../../service/auth.service";
 
 @IonicPage()
@@ -13,8 +11,8 @@ import {AuthService} from "../../service/auth.service";
   templateUrl: 'login.html',
 })
 export class LoginPage {
-  email;
-  message
+  email:string;
+  message: string;
 
   constructor(
     public navCtrl: NavController,

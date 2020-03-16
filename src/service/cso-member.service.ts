@@ -3,8 +3,8 @@ import {ConfigService} from "./config.server";
 import {HttpClient, HttpErrorResponse, HttpHeaders} from "@angular/common/http";
 import {catchError} from 'rxjs/operators';
 import {throwError} from 'rxjs';
-import {CsoPayload} from "../model/payload/csopayload.model";
-import {MemberPayload} from "../model/payload/memberpayload.model";
+import {CsoPayload} from "../model/payload/cso-payload.model";
+import {MemberPayload} from "../model/payload/member-payload.model";
 
 const httpOptions = {
   headers: new HttpHeaders({'Content-Type': 'application/json'}),
@@ -44,8 +44,6 @@ export class CsoMemberService {
 
   private handleError(errorRes: HttpErrorResponse) {
     let errorMessage = 'An unknown error occurred!';
-    console.log(errorRes);
-    console.log(errorMessage);
     return throwError(errorRes);
   }
 }

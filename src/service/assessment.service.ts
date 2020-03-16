@@ -3,6 +3,7 @@ import {ConfigService} from "./config.server";
 import {HttpClient, HttpErrorResponse, HttpHeaders} from "@angular/common/http";
 import {catchError} from 'rxjs/operators';
 import {throwError} from 'rxjs';
+import {AssessmentPayloadModel} from "../model/payload/assessment-payload.model";
 
 
 const httpOptions = {
@@ -18,7 +19,7 @@ export class AssessmentService {
   }
 
   list() {
-    const url = `${this.baseUrl}/api/secured/assessment`;
+    const url = `${this.baseUrl}/api/secured/assessment/`;
     return this.http.get(url,httpOptions)
       .pipe(
         catchError(this.handleError)
@@ -33,10 +34,16 @@ export class AssessmentService {
       );
   }
 
+  create(assessment: AssessmentPayloadModel) {
+    const url = `${this.baseUrl}/api/secured/assessment/create`;
+    return this.http.post(url,assessment,httpOptions)
+      .pipe(
+        catchError(this.handleError)
+      );
+  }
+
   private handleError(errorRes: HttpErrorResponse) {
     let errorMessage = 'An unknown error occurred!';
-    console.log(errorRes);
-    console.log(errorMessage);
     return throwError(errorRes);
   }
 }

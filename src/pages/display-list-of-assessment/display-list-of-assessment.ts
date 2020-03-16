@@ -3,7 +3,6 @@ import {AlertController, IonicPage, NavController, NavParams} from 'ionic-angula
 import {Storage} from '@ionic/storage';
 import {AddAssessmentPage} from '../add-assessment/add-assessment';
 import {LandingPage} from '../landing/landing';
-import {EntityProvider} from '../../providers/entity/cso';
 import {LoadingController} from 'ionic-angular';
 import {Assessment} from '../../model/assessment.model';
 import {ViewAssessmentPage} from "../view-assessment/view-assessment";

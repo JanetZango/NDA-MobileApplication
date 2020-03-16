@@ -17,16 +17,10 @@ import {DisplayListOfAssessmentPage} from '../pages/display-list-of-assessment/d
 import {AddAssessmentPage} from '../pages/add-assessment/add-assessment';
 import {AddCapacityPage} from '../pages/add-capacity/add-capacity';
 import {AddOtpPage} from '../pages/add-otp/add-otp';
-import {ApiProvider} from '../providers/api/api';
-import {LocalstorageProvider} from '../providers/localstorage/localstorage';
-import {AsynPage} from '../pages/asyn/asyn';
-import {ConfigService} from '../service/config.server';
-import {EntityProvider} from '../providers/entity/cso'
 import {ViewCsoDetailsPage} from '../pages/view-cso-details/view-cso-details';
 import {ViewAssessmentPage} from '../pages/view-assessment/view-assessment';
 import {ViewCapacityBuildingPage} from '../pages/view-capacity-building/view-capacity-building';
 import {LookUpService} from '../providers/lookup/lookups.service';
-import {DataProvider} from '../providers/dataproviders/dataprovider';
 import {ViewCsoMemberPage} from '../pages/view-cso-member/view-cso-member';
 import {DisplayCsoMemberListPage} from '../pages/display-cso-member-list/display-cso-member-list';
 import {AddCsoMemberPage} from '../pages/add-cso-member/add-cso-member';
@@ -46,7 +40,6 @@ import {AuthInterceptorService} from "../service/auth-interceptor.service";
     AddAssessmentPage,
     AddCapacityPage,
     AddOtpPage,
-    AsynPage,
     ViewCsoDetailsPage,
     ViewCsoMemberPage,
     DisplayCsoMemberListPage,
@@ -73,7 +66,6 @@ import {AuthInterceptorService} from "../service/auth-interceptor.service";
     DisplayListOfAssessmentPage,
     DisplayListOfCapacityPage,
     AddAssessmentPage,
-    AsynPage,
     ViewCsoDetailsPage,
     ViewCsoMemberPage,
     DisplayCsoMemberListPage,
@@ -85,10 +77,7 @@ import {AuthInterceptorService} from "../service/auth-interceptor.service";
     StatusBar,
     SplashScreen,
     {provide: ErrorHandler, useClass: IonicErrorHandler},
-    ApiProvider,
-    EntityProvider,
     LookUpService,
-    DataProvider,
     {
       provide: HTTP_INTERCEPTORS,
       useClass: AuthInterceptorService,

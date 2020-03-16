@@ -1,67 +1,55 @@
 <ion-content class="content">
-  <div class="btn">
-    <button  ion-button   (click)="gotoback()">
-      <ion-icon ios="ios-arrow-back" md="md-arrow-back"></ion-icon>
-    </button>
-  </div>
-  <h3><b>Add Assessment</b></h3>
- <form [formGroup]="authForm" #assessment="ngForm"  (ngSubmit)="addAssessment(assessment)"> 
-  <div class="list">
-    <ion-label class="naming">Cso Name</ion-label>
-    <ion-item  class="item">
-      <ion-label class="labelforicon">
-        <ion-icon name="person"></ion-icon>
-      </ion-label>
-    <ion-input placeholder="Enter cso name" [(ngModel)]="name_of_cso"  formControlName="name_of_cso"  type="text"
-    (input)="getItems($event)" ngModel ></ion-input>
-    </ion-item>
-    <!-- <span ng-show="authForm.cso_name.$touched && authForm.cso_name.$invalid">The name is required.</span> -->
-      <div id="results">
-        <ion-item no-lines *ngFor="let item of items; let i=index" for="site-search" (click)="openMarkerInfo(item,assessment)">
-          <p>{{item.name_of_cso}}</p>
-        </ion-item>
-      </div>
-      <ion-label class="naming">Assessment Date</ion-label>
-      <ion-item  class="item">
-        <ion-label class="labelforicon">
-          <ion-icon name="logo-dropbox"></ion-icon>
-        </ion-label>
-          <ion-datetime displayFormat="MMM DD YYYY" placeholder="Select Date" required [(ngModel)]="assessment_date"
-          formControlName="assessment_date" ngModel></ion-datetime>
-        </ion-item>
-        <br>
-      
-        <ion-label class="naming">Assessment Date</ion-label>
-        <ion-item  class="item">
-          <ion-label class="labelforicon">
-            <ion-icon name="logo-dropbox"></ion-icon>
-          </ion-label>
-        <ion-select [(ngModel)]="assessment_type_guid" (ionChange)="AssessmentQuestions($event)" formControlName="assessment_type_guid" ngModel>
-          <ion-option *ngFor="let assessmenttype of assessmentTypeArr" [value]="assessmenttype.guid" 
-          [disabled]="assessmenttype.guid !== '91ea8013-3118-45a5-9929-7890eeb80be4'">
-            {{assessmenttype.title}}
-          </ion-option>
-        </ion-select>
-      </ion-item>
-
-  <div id="placeholderDiv" *ngIf="showQuestions">
-    <div class="Qcard" >
-          <h2>Section One</h2>
-          <b>Institutional Arrangement</b>
-          <div *ngFor="let assessmentAnswer of assessmentQuestionAnswerArr ; let i = index">
-            <p>{{i+1}}.{{assessmentAnswer.title}}</p>
-            <ion-list radio-group>
-              <ion-item id="item2" *ngFor="let answers of assessmentAnswer.answers ; let j = index">
-                <ion-label id="label">{{answers.answer}}</ion-label>
-                <ion-radio (ionSelect)="selectRad(answers)" value="{{answers.guid}}" ></ion-radio>
-              </ion-item>
-            </ion-list>
-          </div>
-          <div class="moveCont">
-            <button ion-button id="btn" type="submit" [disabled]="!authForm.valid">Add Assessment</button>
-          </div>
+  <div class="nav-bar">
+    <div class="button-back">
+      <button clear ion-button (click)="goBackToCsoViewDetails()">
+        <ion-icon ios="ios-arrow-round-back" md="md-arrow-round-back"></ion-icon>
+      </button>
     </div>
   </div>
+  <div class="main-content">
+    <h3>Add CSO Assessment</h3>
+    <div class="cso-name">{{cso?.name_of_cso}} </div>
+    <br/>
+    <div class="form-fields-required">All fields required.</div>
+    <div class="card-form">
+
+      <ion-list radio-group>
+
+        <div *ngFor="let assessmentTypeSection of filteredAssessmentTypeSections; let x=index">
+          <ion-list radio-group
+                    *ngFor="let question of getQuestionsByAssessmentTypeSection(assessmentTypeSection?.guid); let i=index"
+                    [(ngModel)]="listOfQuestions[ (x + '-'+question.guid+'-' + i)]">
+            <ion-card>
+              <ion-list-header text-wrap>
+                {{question.title}}
+              </ion-list-header>
+              {{countQuestions(question?.guid)}}
+              <ion-item *ngFor="let answer of getAnswersByQuestionGuid(question?.guid)" text-wrap>
+                <ion-label>{{answer.answer}}</ion-label>
+                <ion-radio value="{{assessmentTypeSection.guid}},{{question?.guid}},{{answer.guid}}"></ion-radio>
+              </ion-item>
+            </ion-card>
+
+          </ion-list>
+        </div>
+        <button type="submit" class="input-submit" ion-button name="submit" (click)="onSubmit()">Submit</button>
+      </ion-list>
+    </div>
+<!--    <div class="card-form">-->
+<!--      <button type="submit" class="input-submit" ion-button (click)="onSubmit()">Submit</button>-->
+<!--    </div>-->
   </div>
-  </form>
 </ion-content>
+
+<ion-footer class="ion-no-border">
+  <ion-toolbar>
+    <ion-buttons>
+      <button class="button-footer-home" (click)="goBackToHomePage()">
+        <ion-icon name="home"></ion-icon>&nbsp;Home
+      </button>
+      <button class="button-footer-home" style="float: right" (click)="logout()">
+        <ion-icon ios="ios-exit" md="md-exit"></ion-icon>&nbsp;Logout
+      </button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-footer>

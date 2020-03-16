@@ -3,9 +3,9 @@ import {ConfigService} from "./config.server";
 import {HttpClient, HttpErrorResponse, HttpHeaders} from "@angular/common/http";
 import {catchError} from 'rxjs/operators';
 import {throwError} from 'rxjs';
-import {MemberPayload} from "../model/payload/memberpayload.model";
+import {MemberPayload} from "../model/payload/member-payload.model";
 import {CapacityBuilding} from "../model/capacitybuilding.model";
-import {CapacityBuildingPayload} from "../model/payload/capacitybuildingpayload.model";
+import {CapacityBuildingPayload} from "../model/payload/capacity-building-payload.model";
 
 
 const httpOptions = {
@@ -21,7 +21,7 @@ export class CapacityBuildingService {
   }
 
   list() {
-    const url = `${this.baseUrl}/api/secured/capacity_building`;
+    const url = `${this.baseUrl}/api/secured/capacity_building/`;
     return this.http.get(url,httpOptions)
       .pipe(
         catchError(this.handleError)
@@ -46,8 +46,6 @@ export class CapacityBuildingService {
 
   private handleError(errorRes: HttpErrorResponse) {
     let errorMessage = 'An unknown error occurred!';
-    console.log(errorRes);
-    console.log(errorMessage);
     return throwError(errorRes);
   }
 }

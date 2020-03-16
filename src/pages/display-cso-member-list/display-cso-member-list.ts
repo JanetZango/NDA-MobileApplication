@@ -3,7 +3,6 @@ import {AlertController, IonicPage, NavController, NavParams} from 'ionic-angula
 import {AddCsoMemberPage} from '../add-cso-member/add-cso-member';
 import {LoadingController} from 'ionic-angular';
 import {Storage} from '@ionic/storage';
-import {EntityProvider} from '../../providers/entity/cso';
 import {ViewCsoMemberPage} from '../view-cso-member/view-cso-member';
 import {Cso} from "../../model/cso.model";
 import {ViewCsoDetailsPage} from "../view-cso-details/view-cso-details";

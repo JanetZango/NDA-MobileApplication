@@ -3,7 +3,7 @@ import {ConfigService} from "./config.server";
 import {HttpClient, HttpErrorResponse, HttpHeaders} from "@angular/common/http";
 import {catchError} from 'rxjs/operators';
 import {throwError} from 'rxjs';
-import {CsoPayload} from "../model/payload/csopayload.model";
+import {CsoPayload} from "../model/payload/cso-payload.model";
 
 const httpOptions = {
   headers: new HttpHeaders({'Content-Type': 'application/json'}),
@@ -18,7 +18,7 @@ export class CsoService {
   }
 
   list() {
-    const url = `${this.baseUrl}/api/secured/cso`;
+    const url = `${this.baseUrl}/api/secured/cso/`;
     return this.http.get(url,httpOptions)
       .pipe(
         catchError(this.handleError)
@@ -43,8 +43,6 @@ export class CsoService {
 
   private handleError(errorRes: HttpErrorResponse) {
     let errorMessage = 'An unknown error occurred!';
-    console.log(errorRes);
-    console.log(errorMessage);
     return throwError(errorRes);
   }
 }

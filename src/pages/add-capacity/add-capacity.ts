@@ -2,12 +2,11 @@ import {Component, OnInit} from '@angular/core';
 import { IonicPage, NavController, NavParams, AlertController, LoadingController } from 'ionic-angular';
 import { Validators, FormBuilder, FormGroup } from '@angular/forms';
 import { LookUpService } from '../../providers/lookup/lookups.service';
-import {CapacityBuildingPayload} from "../../model/payload/capacitybuildingpayload.model";
+import {CapacityBuildingPayload} from "../../model/payload/capacity-building-payload.model";
 import {DisplayListOfCapacityPage} from "../display-list-of-capacity/display-list-of-capacity";
 import {LandingPage} from "../landing/landing";
 import {LoginPage} from "../login/login";
 import {Storage} from "@ionic/storage";
-import {CsoService} from "../../service/cso.service";
 import {CapacityBuildingService} from "../../service/capacity-building.service";
 import {UserService} from "../../service/user.service";
 
