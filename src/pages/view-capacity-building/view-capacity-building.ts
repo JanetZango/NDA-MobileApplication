@@ -6,6 +6,7 @@ import {DisplayListOfAssessmentPage} from "../display-list-of-assessment/display
 import {AddCapacityPage} from "../add-capacity/add-capacity";
 import {CapacityBuilding} from "../../model/capacitybuilding.model";
 import {LoginPage} from "../login/login";
+import { DisplayListOfCapacityPage } from '../display-list-of-capacity/display-list-of-capacity';
 
 @IonicPage()
 @Component({
@@ -58,7 +59,7 @@ export class ViewCapacityBuildingPage {
   }
 
   goBackToAssessmentList() {
-    this.navCtrl.push(DisplayListOfAssessmentPage);
+    this.navCtrl.pop();
   }
 
   goBackToHomePage(){

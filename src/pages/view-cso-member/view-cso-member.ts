@@ -64,6 +64,6 @@ export class ViewCsoMemberPage {
   }
 
   goBackToMemberList() {
-    this.navCtrl.push(DisplayCsoMemberListPage);
+    this.navCtrl.pop();
   }
 }

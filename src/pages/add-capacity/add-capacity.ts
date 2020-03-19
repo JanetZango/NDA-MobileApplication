@@ -9,6 +9,7 @@ import {LoginPage} from "../login/login";
 import {Storage} from "@ionic/storage";
 import {CapacityBuildingService} from "../../service/capacity-building.service";
 import {UserService} from "../../service/user.service";
+import { ToastController } from 'ionic-angular';
 
 @IonicPage()
 @Component({
@@ -49,7 +50,8 @@ export class AddCapacityPage implements OnInit{
     public storage: Storage,
     public alertCtrl: AlertController,
     private formBuilder: FormBuilder,
-    public userService: UserService
+    public userService: UserService,
+    public toastCtrl: ToastController
   ) {}
 
   ngOnInit(): void {
@@ -189,12 +191,11 @@ export class AddCapacityPage implements OnInit{
     _loader.present();
     this.capacityBuildingService.create(this.capacityBuildingPayload).subscribe((_response: any) =>{
       _loader.dismiss();
-      const alert = this.alertCtrl.create({
-        title: 'Alert',
-        subTitle: 'Event was added successfully.',
-        buttons: ['OK']
+      const toast = this.toastCtrl.create({
+        message: 'Event was added successfully',
+        duration: 3000
       });
-      alert.present();
+      toast.present();
       return this.redirectToCapacityBuildingList();
     }, _error => {
       _loader.dismiss();

@@ -9,6 +9,7 @@ import {LoginPage} from "../login/login";
 import {Storage} from "@ionic/storage";
 import {CsoService} from "../../service/cso.service";
 import {UserService} from "../../service/user.service";
+import { ToastController } from 'ionic-angular';
 
 @IonicPage()
 @Component({
@@ -42,7 +43,8 @@ export class AddCsoPage implements OnInit {
     public storage: Storage,
     public alertCtrl: AlertController,
     private formBuilder: FormBuilder,
-    public userService: UserService) {
+    public userService: UserService,
+    public toastCtrl: ToastController) {
   }
 
   ngOnInit(): void {
@@ -182,12 +184,11 @@ export class AddCsoPage implements OnInit {
 
     this.csoService.create(this.csoPayload).subscribe((_response: any) => {
       _loader.dismiss();
-      const alert = this.alertCtrl.create({
-        title: 'Alert',
-        subTitle: 'CSO was added successfully.',
-        buttons: ['OK']
+      const toast = this.toastCtrl.create({
+        message: 'CSO was added successfully',
+        duration: 3000
       });
-      alert.present();
+      toast.present();
       return this.redirectToCSOList();
     }, _error => {
       _loader.dismiss();

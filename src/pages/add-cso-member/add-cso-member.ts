@@ -10,6 +10,7 @@ import {MemberPayload} from "../../model/payload/member-payload.model";
 import {LandingPage} from "../landing/landing";
 import {LoginPage} from "../login/login";
 import {CsoMemberService} from "../../service/cso-member.service";
+import { ToastController } from 'ionic-angular';
 
 @IonicPage()
 @Component({
@@ -36,7 +37,8 @@ export class AddCsoMemberPage implements OnInit {
     public alertCtrl: AlertController,
     private formBuilder: FormBuilder,
     public  storage: Storage,
-    public loadingCtrl: LoadingController
+    public loadingCtrl: LoadingController,
+    public toastCtrl: ToastController
   ) {
   }
 
@@ -137,12 +139,11 @@ export class AddCsoMemberPage implements OnInit {
 
     this.csoMemberService.create(this.memberPayload).subscribe((_response: any) => {
       _loader.dismiss();
-      const alert = this.alertCtrl.create({
-        title: 'Alert',
-        subTitle: 'CSO member was added successfully.',
-        buttons: ['OK']
+      const toast = this.toastCtrl.create({
+        message: 'CSO member was added successfully',
+        duration: 3000
       });
-      alert.present();
+      toast.present();
       return this.redirectToMemberList();
     }, _error => {
       _loader.dismiss();

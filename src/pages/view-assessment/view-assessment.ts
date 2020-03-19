@@ -53,7 +53,7 @@ export class ViewAssessmentPage {
   }
 
   goBackToAssessmentList() {
-    this.navCtrl.push(DisplayListOfAssessmentPage);
+    this.navCtrl.pop();
   }
 
   goBackToHomePage(){

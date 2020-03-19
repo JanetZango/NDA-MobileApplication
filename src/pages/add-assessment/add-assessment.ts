@@ -10,7 +10,7 @@ import {map} from "rxjs/operators";
 import {AssessmentPayloadModel} from "../../model/payload/assessment-payload.model";
 import {AssessmentService} from "../../service/assessment.service";
 import {DisplayListOfAssessmentPage} from "../display-list-of-assessment/display-list-of-assessment";
-
+import { ToastController } from 'ionic-angular';
 export interface AssessmentType {
     title: string;
     guid: string;
@@ -45,7 +45,8 @@ export class AddAssessmentPage implements OnInit {
     public storage: Storage,
     public alertCtrl: AlertController,
     public lookupService: LookUpService,
-    public assessmentService: AssessmentService
+    public assessmentService: AssessmentService,
+    public toastCtrl: ToastController
   ) {
 
   }
@@ -89,12 +90,11 @@ export class AddAssessmentPage implements OnInit {
 
       this.assessmentService.create(payload).subscribe((_responseData: any) => {
         _loader.dismiss();
-        const alert = this.alertCtrl.create({
-          title: 'Alert',
-          subTitle: 'Assessment was added successfully.',
-          buttons: ['OK']
+        const toast = this.toastCtrl.create({
+          message: 'Assesment was added successfully',
+          duration: 3000
         });
-        alert.present();
+        toast.present();
         return this.navCtrl.push(DisplayListOfAssessmentPage);
       }, _error => {
         _loader.dismiss();
@@ -174,7 +174,7 @@ export class AddAssessmentPage implements OnInit {
   }
 
   goBackToCsoViewDetails() {
-    this.navCtrl.push(ViewCsoDetailsPage)
+    this.navCtrl.pop()
   }
 
   goBackToHomePage() {
