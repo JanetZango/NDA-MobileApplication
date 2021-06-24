@@ -1,66 +1,66 @@
 [
   {
-    "guid": "4fa38a09-338a-445c-b4fd-ec115e581e54",
+    "guid": "e3bc7495-f2d0-49c5-9172-d8a42f15551b",
     "title": "Education",
     "description": null
   },
   {
-    "guid": "87c5df82-eed3-4309-b39f-9d40ff38d6ad",
+    "guid": "61ab789b-c9ac-406f-9f78-d421d8a63ff3",
     "title": "Health Care",
     "description": null
   },
   {
-    "guid": "6892caea-dbdd-4fe4-9dd2-fda171710509",
+    "guid": "cb3a012b-3ded-4368-b433-4ab20bdf7d5c",
     "title": "Older Person/ Senior Citizens",
     "description": null
   },
   {
-    "guid": "cde7dbb2-a1e1-4482-a448-87b052163eb7",
+    "guid": "ff8e515a-a2fc-4bb5-a226-71fd339594d7",
     "title": "Youth",
     "description": null
   },
   {
-    "guid": "f6576fac-ffcf-415a-b2c9-2783b4035b5f",
+    "guid": "9e2c522e-aaec-4eb7-b842-8379fa940f53",
     "title": "Orphanage and Vulnerable Children (OVC)",
     "description": null
   },
   {
-    "guid": "a6eddd38-e89a-4b82-a039-bc7f4b10bbcb",
+    "guid": "3ebf2fdb-d61d-49cd-9346-fce93c2b580a",
     "title": "Gender",
     "description": null
   },
   {
-    "guid": "650e1e7e-3438-4322-a90a-09aca0f4f7f4",
+    "guid": "a9399414-f673-4b4a-a3a3-16938b69b16b",
     "title": "Human Rights",
     "description": null
   },
   {
-    "guid": "7f02da6e-8214-4980-a823-8ceaa69605af",
+    "guid": "1c18c6fc-4618-4b86-bc73-2e7cefb887b0",
     "title": "Environment",
     "description": null
   },
   {
-    "guid": "57d25d82-686c-46ad-b710-66380a49d0f2",
+    "guid": "2e78227f-9a23-45c6-97a7-af7420734177",
     "title": "Trade",
     "description": null
   },
   {
-    "guid": "3c8f65f4-e7bf-46ad-82ab-8f0b87ce7999",
+    "guid": "f7758b80-c02e-459e-adc7-aff6c69c1303",
     "title": "Poverty Alleviation",
     "description": null
   },
   {
-    "guid": "2216b35c-e372-4bd2-b22d-462be2506288",
+    "guid": "b5a560c6-7136-4579-b0e9-8350ae49ad59",
     "title": "Community Safety",
     "description": null
   },
   {
-    "guid": "01650292-5eb3-4543-8e63-e957a317c42c",
+    "guid": "b871e1b0-43ad-4823-938a-bbb4c5e221eb",
     "title": "Communal Property Association (CPA)",
     "description": "Communal Property Association (CPA)"
   },
   {
-    "guid": "fcf6281a-39db-43fa-a264-cd65141fe5b7",
+    "guid": "a9f376a6-a478-4e08-8903-ca6dfae69f95",
     "title": "Agriculture",
     "description": "Animal Husbandry"
   }

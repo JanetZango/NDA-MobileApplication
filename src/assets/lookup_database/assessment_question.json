@@ -1,398 +1,2387 @@
 [
   {
-    "guid": "388fcfe0-ef0a-4b89-b26e-b9170a459622",
+    "guid": "d36033b4-3a06-46fe-a00d-4d9cfabea60f",
     "title": "The CSO / NPO has a constitution approved by members of the organisation ",
-    "assessment_type_section_guid": "f8636ea8-1d5b-4854-a53a-8e45e78a4836",
+    "assessment_type_section_guid": "30ef3dd4-52d7-4387-bdd6-fe55f4e70e6e",
     "answer_source": "Pre-Defined",
     "answer_option": "Mutually Exclusive",
     "question_number": 1,
     "answer_data_type": null
   },
   {
-    "guid": "d3ad3c2c-6705-4b3a-b88e-1737d86ee2ac",
+    "guid": "7c4f2884-40e4-4d54-abc0-1a7a6a8b8d12",
     "title": "The CSO / NPO has an independent Board/Committee governed by a constitution ",
-    "assessment_type_section_guid": "f8636ea8-1d5b-4854-a53a-8e45e78a4836",
+    "assessment_type_section_guid": "30ef3dd4-52d7-4387-bdd6-fe55f4e70e6e",
     "answer_source": "Pre-Defined",
     "answer_option": "Mutually Exclusive",
     "question_number": 2,
     "answer_data_type": null
   },
   {
-    "guid": "69d72708-aa46-429d-8594-be5dc48564be",
+    "guid": "d23c79ed-7bd3-4f1e-b960-b0503ec8304d",
     "title": "The Board / Committee is diverse, representative and provides technical expertise",
-    "assessment_type_section_guid": "f8636ea8-1d5b-4854-a53a-8e45e78a4836",
+    "assessment_type_section_guid": "30ef3dd4-52d7-4387-bdd6-fe55f4e70e6e",
     "answer_source": "Pre-Defined",
     "answer_option": "Mutually Exclusive",
     "question_number": 3,
     "answer_data_type": null
   },
   {
-    "guid": "27560922-7677-4abb-b5ff-242575d7eec1",
+    "guid": "0b6e9e77-3eb6-49ad-87d4-5ac64ed3ff19",
     "title": "The Board / Committee meets every quarter (three months) of the year",
-    "assessment_type_section_guid": "f8636ea8-1d5b-4854-a53a-8e45e78a4836",
+    "assessment_type_section_guid": "30ef3dd4-52d7-4387-bdd6-fe55f4e70e6e",
     "answer_source": "Pre-Defined",
     "answer_option": "Mutually Exclusive",
     "question_number": 4,
     "answer_data_type": null
   },
   {
-    "guid": "57a8110e-bcbf-4669-9bdf-20b8a998d49c",
+    "guid": "5f84b740-c275-4176-bef5-6c9666b5b01d",
     "title": "The CSO / NPO has a documented strategic plan, understood by all staff and used for operational planning",
-    "assessment_type_section_guid": "f8636ea8-1d5b-4854-a53a-8e45e78a4836",
+    "assessment_type_section_guid": "30ef3dd4-52d7-4387-bdd6-fe55f4e70e6e",
     "answer_source": "Pre-Defined",
     "answer_option": "Mutually Exclusive",
     "question_number": 5,
     "answer_data_type": null
   },
   {
-    "guid": "0f007d1a-9da3-4e61-874a-e54ee06f7d59",
+    "guid": "54c95760-bb1f-4363-93d2-b00146df9762",
     "title": "The CSO / NPO has organisational structure for delegating responsibilities",
-    "assessment_type_section_guid": "f8636ea8-1d5b-4854-a53a-8e45e78a4836",
+    "assessment_type_section_guid": "30ef3dd4-52d7-4387-bdd6-fe55f4e70e6e",
     "answer_source": "Pre-Defined",
     "answer_option": "Mutually Exclusive",
     "question_number": 6,
     "answer_data_type": null
   },
   {
-    "guid": "01fbc225-b4d7-46b5-ad72-e6280bfebb26",
+    "guid": "7b35ce0a-d13b-4315-a66c-aa8e84395dc2",
     "title": "The CSO / NPO is legally registered with the appropriate registration authority",
-    "assessment_type_section_guid": "f8636ea8-1d5b-4854-a53a-8e45e78a4836",
+    "assessment_type_section_guid": "30ef3dd4-52d7-4387-bdd6-fe55f4e70e6e",
     "answer_source": "Pre-Defined",
     "answer_option": "Mutually Exclusive",
     "question_number": 7,
     "answer_data_type": null
   },
   {
-    "guid": "ab0f509a-9148-4532-afb9-9a761334ec5b",
+    "guid": "f4191528-125c-4d28-9d85-eeaa7f9cdf40",
     "title": "The CSO / NPO is compliant with all registration requirements of the registration authority",
-    "assessment_type_section_guid": "f8636ea8-1d5b-4854-a53a-8e45e78a4836",
+    "assessment_type_section_guid": "30ef3dd4-52d7-4387-bdd6-fe55f4e70e6e",
     "answer_source": "Pre-Defined",
     "answer_option": "Mutually Exclusive",
     "question_number": 8,
     "answer_data_type": null
   },
   {
-    "guid": "81fd9616-aed5-4d56-b4b1-793166ed6ed0",
+    "guid": "9b6700da-ceb9-496e-9969-f17cf02f1e82",
     "title": "The CSO / NPO has an office where it operates for its business only",
-    "assessment_type_section_guid": "60975b91-18c1-4283-bd96-b5ba3046422a",
+    "assessment_type_section_guid": "f42bed1e-bd3b-4a87-9480-8c9078bd1fb8",
     "answer_source": "Pre-Defined",
     "answer_option": "Mutually Exclusive",
     "question_number": 9,
     "answer_data_type": null
   },
   {
-    "guid": "86f67ec1-8a7d-4987-a218-aca275d1d36a",
+    "guid": "28333351-3369-434f-832d-876ecaffc29e",
     "title": "The CSO / NPO have communications devices",
-    "assessment_type_section_guid": "60975b91-18c1-4283-bd96-b5ba3046422a",
+    "assessment_type_section_guid": "f42bed1e-bd3b-4a87-9480-8c9078bd1fb8",
     "answer_source": "Pre-Defined",
     "answer_option": "Mutually Exclusive",
     "question_number": 10,
     "answer_data_type": null
   },
   {
-    "guid": "b1179544-ee61-4e08-ac37-6499063eeb25",
+    "guid": "ab15978d-b945-4d54-a863-227e90d55207",
     "title": "The CSO / NPO email address / Facebook page / Twitter handle",
-    "assessment_type_section_guid": "60975b91-18c1-4283-bd96-b5ba3046422a",
+    "assessment_type_section_guid": "f42bed1e-bd3b-4a87-9480-8c9078bd1fb8",
     "answer_source": "Pre-Defined",
     "answer_option": "Mutually Exclusive",
     "question_number": 11,
     "answer_data_type": null
   },
   {
-    "guid": "bfab733a-c1dc-40ae-851e-3e362988a1d4",
+    "guid": "bb49680e-fbe3-4574-9cc5-45e71642a449",
     "title": "The CSO / NPO marketing and promotion material for its work",
-    "assessment_type_section_guid": "60975b91-18c1-4283-bd96-b5ba3046422a",
+    "assessment_type_section_guid": "f42bed1e-bd3b-4a87-9480-8c9078bd1fb8",
     "answer_source": "Pre-Defined",
     "answer_option": "Mutually Exclusive",
     "question_number": 12,
     "answer_data_type": null
   },
   {
-    "guid": "6c0ea6ba-3375-4e29-82c1-3cfcc545d09a",
+    "guid": "614b511d-e292-4048-bbc8-2975d17cfbf8",
     "title": "The CSO / NPO transportation mode used for business",
-    "assessment_type_section_guid": "60975b91-18c1-4283-bd96-b5ba3046422a",
+    "assessment_type_section_guid": "f42bed1e-bd3b-4a87-9480-8c9078bd1fb8",
     "answer_source": "Pre-Defined",
     "answer_option": "Mutually Exclusive",
     "question_number": 13,
     "answer_data_type": null
   },
   {
-    "guid": "e667ed80-50c4-4f8d-8b24-577c52f3b35c",
+    "guid": "bed9c500-41da-44a0-ad52-1b4f30b293bc",
     "title": "The CSO / NPO has office support equipment for printing, photocopying and faxing",
-    "assessment_type_section_guid": "60975b91-18c1-4283-bd96-b5ba3046422a",
+    "assessment_type_section_guid": "f42bed1e-bd3b-4a87-9480-8c9078bd1fb8",
     "answer_source": "Pre-Defined",
     "answer_option": "Mutually Exclusive",
     "question_number": 14,
     "answer_data_type": null
   },
   {
-    "guid": "5a8cdc32-934e-44a4-a1f2-dfeab28f8d85",
+    "guid": "91caa62f-dc1b-4dcb-a130-ebbfd1aba827",
     "title": "The CSO / NPO has access to internet and connectivity",
-    "assessment_type_section_guid": "60975b91-18c1-4283-bd96-b5ba3046422a",
+    "assessment_type_section_guid": "f42bed1e-bd3b-4a87-9480-8c9078bd1fb8",
     "answer_source": "Pre-Defined",
     "answer_option": "Mutually Exclusive",
     "question_number": 15,
     "answer_data_type": null
   },
   {
-    "guid": "abb743df-c63c-4120-897c-94f74a0cb670",
+    "guid": "749e29a5-e325-4ae6-948b-660074442416",
     "title": "The CSO / NPO has full time staff members",
-    "assessment_type_section_guid": "1520aad9-4e4f-45da-9a73-dfaeb39c1370",
+    "assessment_type_section_guid": "41ba7341-e329-4be2-bbb4-46e910ccbd23",
     "answer_source": "Pre-Defined",
     "answer_option": "Mutually Exclusive",
     "question_number": 16,
     "answer_data_type": null
   },
   {
-    "guid": "39d175b8-1d20-4afc-a67e-b82c9af9896d",
+    "guid": "a018f655-782f-45be-bd36-19b953fd5edb",
     "title": "The CSO / NPO has Management staff, operational staff and administrative staff",
-    "assessment_type_section_guid": "1520aad9-4e4f-45da-9a73-dfaeb39c1370",
+    "assessment_type_section_guid": "41ba7341-e329-4be2-bbb4-46e910ccbd23",
     "answer_source": "Pre-Defined",
     "answer_option": "Mutually Exclusive",
     "question_number": 17,
     "answer_data_type": null
   },
   {
-    "guid": "edf96da1-cd95-4491-848a-880dbb8494f2",
+    "guid": "2d16a699-5b58-47ba-aac7-b5f37b71f12b",
     "title": "The CSO / NPO has full time staff trained in the business or sector they are operating",
-    "assessment_type_section_guid": "1520aad9-4e4f-45da-9a73-dfaeb39c1370",
+    "assessment_type_section_guid": "41ba7341-e329-4be2-bbb4-46e910ccbd23",
     "answer_source": "Pre-Defined",
     "answer_option": "Mutually Exclusive",
     "question_number": 18,
     "answer_data_type": null
   },
   {
-    "guid": "acecc247-f7e4-49c5-ad26-52a3514ad705",
+    "guid": "e76cfb3c-2ea3-47fb-b282-b73fb64bcb1e",
     "title": "The CSO / NPO has a person full time working on managing its accounts (Financial Management)",
-    "assessment_type_section_guid": "1520aad9-4e4f-45da-9a73-dfaeb39c1370",
+    "assessment_type_section_guid": "41ba7341-e329-4be2-bbb4-46e910ccbd23",
     "answer_source": "Pre-Defined",
     "answer_option": "Mutually Exclusive",
     "question_number": 19,
     "answer_data_type": null
   },
   {
-    "guid": "e0198050-0fe9-45ed-b4bb-48660ffc23e2",
+    "guid": "63bb518f-f3ea-43e7-9efa-2d3df7e9ed2f",
     "title": "The CSO / NPO own its own car for transportation",
-    "assessment_type_section_guid": "1520aad9-4e4f-45da-9a73-dfaeb39c1370",
+    "assessment_type_section_guid": "41ba7341-e329-4be2-bbb4-46e910ccbd23",
     "answer_source": "Pre-Defined",
     "answer_option": "Mutually Exclusive",
     "question_number": 20,
     "answer_data_type": null
   },
   {
-    "guid": "2c058281-d0fd-4652-b87f-921c3d795738",
+    "guid": "066b1a12-460f-4a1a-97d3-eb55da396817",
     "title": "The CSO / NPO raised funding in the past year totalling between:",
-    "assessment_type_section_guid": "1520aad9-4e4f-45da-9a73-dfaeb39c1370",
+    "assessment_type_section_guid": "41ba7341-e329-4be2-bbb4-46e910ccbd23",
     "answer_source": "Pre-Defined",
     "answer_option": "Mutually Exclusive",
     "question_number": 21,
     "answer_data_type": null
   },
   {
-    "guid": "e28b03c4-0d4e-44d7-abc8-e40ee6e0db22",
+    "guid": "1a48abd7-a385-4d4c-9c0a-01a7b1fe3ee4",
     "title": "The CSOs has the following number of regular donors for its work in a year",
-    "assessment_type_section_guid": "1520aad9-4e4f-45da-9a73-dfaeb39c1370",
+    "assessment_type_section_guid": "41ba7341-e329-4be2-bbb4-46e910ccbd23",
     "answer_source": "Pre-Defined",
     "answer_option": "Mutually Exclusive",
     "question_number": 22,
     "answer_data_type": null
   },
   {
-    "guid": "36d484e9-d339-4a10-bac5-fad0b3333a03",
+    "guid": "032864df-727c-4c96-8fb7-0576255292d2",
     "title": "The CSO / NPO budget per year is between the following",
-    "assessment_type_section_guid": "1520aad9-4e4f-45da-9a73-dfaeb39c1370",
+    "assessment_type_section_guid": "41ba7341-e329-4be2-bbb4-46e910ccbd23",
     "answer_source": "Pre-Defined",
     "answer_option": "Mutually Exclusive",
     "question_number": 23,
     "answer_data_type": null
   },
   {
-    "guid": "77854da9-130b-4e5d-a29a-e3cd35950589",
+    "guid": "2b145d05-2a38-4c8b-91aa-e112f53c673d",
     "title": "The CSO / NPO has received government (National, Provincial or Municipality) funding before",
-    "assessment_type_section_guid": "1520aad9-4e4f-45da-9a73-dfaeb39c1370",
+    "assessment_type_section_guid": "41ba7341-e329-4be2-bbb4-46e910ccbd23",
     "answer_source": "Pre-Defined",
     "answer_option": "Mutually Exclusive",
     "question_number": 24,
     "answer_data_type": null
   },
   {
-    "guid": "9a50e6d6-ba13-4f2f-8893-7a6d6db73d7a",
+    "guid": "2af37baa-613b-482b-a5cc-f53aada48cdf",
     "title": "The CSO / NPO has received private sector / business funding before",
-    "assessment_type_section_guid": "1520aad9-4e4f-45da-9a73-dfaeb39c1370",
+    "assessment_type_section_guid": "41ba7341-e329-4be2-bbb4-46e910ccbd23",
     "answer_source": "Pre-Defined",
     "answer_option": "Mutually Exclusive",
     "question_number": 25,
     "answer_data_type": null
   },
   {
-    "guid": "87e5cb81-d6c8-409d-8dcc-c640a245746e",
+    "guid": "516f8fce-ee84-4869-8c34-d6d52f6ff18a",
     "title": "The CSO / NPO has received International or local foundations funding before",
-    "assessment_type_section_guid": "1520aad9-4e4f-45da-9a73-dfaeb39c1370",
+    "assessment_type_section_guid": "41ba7341-e329-4be2-bbb4-46e910ccbd23",
     "answer_source": "Pre-Defined",
     "answer_option": "Mutually Exclusive",
     "question_number": 26,
     "answer_data_type": null
   },
   {
-    "guid": "251c3904-90ae-49fe-8f69-4b6a13e766be",
+    "guid": "ca4502d2-d832-4e8f-9ceb-129a133863f5",
     "title": "The CSO / NPO affiliation to networks or professional bodies",
-    "assessment_type_section_guid": "aaccd99c-72b7-4427-a8c2-4f54b73e0c0d",
+    "assessment_type_section_guid": "06b44cef-dfea-4e2e-99fd-220c6fa7e88c",
     "answer_source": "Pre-Defined",
     "answer_option": "Mutually Exclusive",
     "question_number": 27,
     "answer_data_type": null
   },
   {
-    "guid": "84c91ba9-7d09-4d26-816a-4be44592fab9",
+    "guid": "b858d276-3af9-474c-be45-7dde0cc40800",
     "title": "The CSO / NPO has staff who belong to networks or professional bodies",
-    "assessment_type_section_guid": "aaccd99c-72b7-4427-a8c2-4f54b73e0c0d",
+    "assessment_type_section_guid": "06b44cef-dfea-4e2e-99fd-220c6fa7e88c",
     "answer_source": "Pre-Defined",
     "answer_option": "Mutually Exclusive",
     "question_number": 28,
     "answer_data_type": null
   },
   {
-    "guid": "ae84ff15-e233-4d46-99f8-321f6f8c3da1",
+    "guid": "db68a313-5951-41d5-a675-2318077004e4",
     "title": "The CSO / NPO has community membership belonging to the CSO / NPO",
-    "assessment_type_section_guid": "aaccd99c-72b7-4427-a8c2-4f54b73e0c0d",
+    "assessment_type_section_guid": "06b44cef-dfea-4e2e-99fd-220c6fa7e88c",
     "answer_source": "Pre-Defined",
     "answer_option": "Mutually Exclusive",
     "question_number": 29,
     "answer_data_type": null
   },
   {
-    "guid": "9ef58c29-559f-4c81-a3ef-0638e63210cf",
+    "guid": "c0afb863-f52c-42f4-b3b3-a8d2ef05e889",
     "title": "The CSO / NPO staff attended any networking sessions (workshops, conferences, events, meetings  etc) ",
-    "assessment_type_section_guid": "aaccd99c-72b7-4427-a8c2-4f54b73e0c0d",
+    "assessment_type_section_guid": "06b44cef-dfea-4e2e-99fd-220c6fa7e88c",
     "answer_source": "Pre-Defined",
     "answer_option": "Mutually Exclusive",
     "question_number": 30,
     "answer_data_type": null
   },
   {
-    "guid": "4af8f9c4-4869-4b5a-9043-43678dde15e5",
+    "guid": "8c8f903f-623b-44b9-9230-5bbac9891c17",
     "title": "Training and skills of staff, management, board / committee on conflict management / resolution",
-    "assessment_type_section_guid": "aae4fe0c-b27f-41b2-97c6-0f414e04ece9",
+    "assessment_type_section_guid": "4592116f-1d58-42ad-9679-0a4ec02616b0",
     "answer_source": "Pre-Defined",
     "answer_option": "Mutually Exclusive",
     "question_number": 31,
     "answer_data_type": null
   },
   {
-    "guid": "ae49b842-f96a-40c0-aa9e-7ed16bb5ac4d",
+    "guid": "851ce2a0-6ff0-4468-a73f-9a48856f8237",
     "title": "Training and skills of staff, management, board / committee on governance of organisations",
-    "assessment_type_section_guid": "aae4fe0c-b27f-41b2-97c6-0f414e04ece9",
+    "assessment_type_section_guid": "4592116f-1d58-42ad-9679-0a4ec02616b0",
     "answer_source": "Pre-Defined",
     "answer_option": "Mutually Exclusive",
     "question_number": 32,
     "answer_data_type": null
   },
   {
-    "guid": "508d0e89-cebe-43ae-ad4f-61c054fff3f3",
+    "guid": "2efd36a0-033b-4d6b-a03d-38e08c3a24d7",
     "title": "Training and skills of staff, management, board / committee on financial management",
-    "assessment_type_section_guid": "aae4fe0c-b27f-41b2-97c6-0f414e04ece9",
+    "assessment_type_section_guid": "4592116f-1d58-42ad-9679-0a4ec02616b0",
     "answer_source": "Pre-Defined",
     "answer_option": "Mutually Exclusive",
     "question_number": 33,
     "answer_data_type": null
   },
   {
-    "guid": "3dc793fe-805d-40c9-86e7-99bfde245854",
+    "guid": "5e3d64a4-f6bc-48be-9e3e-013a628299ca",
     "title": "Training and skills of staff, management, board / committee on reporting and compliance to reporting requirements",
-    "assessment_type_section_guid": "aae4fe0c-b27f-41b2-97c6-0f414e04ece9",
+    "assessment_type_section_guid": "4592116f-1d58-42ad-9679-0a4ec02616b0",
     "answer_source": "Pre-Defined",
     "answer_option": "Mutually Exclusive",
     "question_number": 34,
     "answer_data_type": null
   },
   {
-    "guid": "40dc576b-be8f-4351-90d2-5636664148d0",
+    "guid": "7bddf933-dc8d-47cb-bf0f-8cc0c0c4e1d3",
     "title": "Training and skills of staff, management, board / committee on development of strategic plans and operation plans",
-    "assessment_type_section_guid": "aae4fe0c-b27f-41b2-97c6-0f414e04ece9",
+    "assessment_type_section_guid": "4592116f-1d58-42ad-9679-0a4ec02616b0",
     "answer_source": "Pre-Defined",
     "answer_option": "Mutually Exclusive",
     "question_number": 35,
     "answer_data_type": null
   },
   {
-    "guid": "34092535-41fe-45d1-b25c-35c50f83253c",
+    "guid": "7d9c52a4-eafc-498a-8295-98d3d0503f0e",
     "title": "Training and skills of staff, management, board / committee on organisational development and human resources management",
-    "assessment_type_section_guid": "aae4fe0c-b27f-41b2-97c6-0f414e04ece9",
+    "assessment_type_section_guid": "4592116f-1d58-42ad-9679-0a4ec02616b0",
     "answer_source": "Pre-Defined",
     "answer_option": "Mutually Exclusive",
     "question_number": 36,
     "answer_data_type": null
   },
   {
-    "guid": "09dd5833-f793-4a6e-aad6-cd6555082bbc",
+    "guid": "6a8367f5-5898-4f6e-8529-6e9d8e4fa759",
     "title": "Training and skills of staff, management, board / committee on resource mobilisation and fund raising",
-    "assessment_type_section_guid": "aae4fe0c-b27f-41b2-97c6-0f414e04ece9",
+    "assessment_type_section_guid": "4592116f-1d58-42ad-9679-0a4ec02616b0",
     "answer_source": "Pre-Defined",
     "answer_option": "Mutually Exclusive",
     "question_number": 37,
     "answer_data_type": null
   },
   {
-    "guid": "f5be2f95-5137-4b7f-913d-64258de1c921",
+    "guid": "a8da0d9d-c545-4d7e-b4a5-e50a160d45dc",
     "title": "Training and skills of staff, management, board / committee on project management",
-    "assessment_type_section_guid": "aae4fe0c-b27f-41b2-97c6-0f414e04ece9",
+    "assessment_type_section_guid": "4592116f-1d58-42ad-9679-0a4ec02616b0",
     "answer_source": "Pre-Defined",
     "answer_option": "Mutually Exclusive",
     "question_number": 38,
     "answer_data_type": null
   },
   {
-    "guid": "5553b87a-e23d-4d7c-b455-1b63f4c156db",
+    "guid": "6d815898-ddb5-4c86-8a77-ff7ec02f4cd0",
     "title": "Training and skills of staff, management, board / committee on computer skills and information management",
-    "assessment_type_section_guid": "aae4fe0c-b27f-41b2-97c6-0f414e04ece9",
+    "assessment_type_section_guid": "4592116f-1d58-42ad-9679-0a4ec02616b0",
     "answer_source": "Pre-Defined",
     "answer_option": "Mutually Exclusive",
     "question_number": 39,
     "answer_data_type": null
   },
   {
-    "guid": "59af86f7-a38b-47f5-8829-d3a951fa2f97",
+    "guid": "96d8de69-88bb-4ba8-83b3-0bef62ea2596",
     "title": "Training and skills of staff, management, board / committee on community needs assessment and profiling",
-    "assessment_type_section_guid": "aae4fe0c-b27f-41b2-97c6-0f414e04ece9",
+    "assessment_type_section_guid": "4592116f-1d58-42ad-9679-0a4ec02616b0",
     "answer_source": "Pre-Defined",
     "answer_option": "Mutually Exclusive",
     "question_number": 40,
     "answer_data_type": null
   },
   {
-    "guid": "9617507f-4423-4ada-b032-709d14fea494",
+    "guid": "f906d9d0-e50d-4748-ab04-e1236a81dd26",
     "title": "The CSO / NPO produces an annual report with annual financial statements registration authorities for compliance",
-    "assessment_type_section_guid": "7773add8-bbf7-4ba4-8032-6ac0d07bc735",
+    "assessment_type_section_guid": "27072d8e-c7dc-4aac-9d05-2a60ec513dbc",
     "answer_source": "Pre-Defined",
     "answer_option": "Mutually Exclusive",
     "question_number": 41,
     "answer_data_type": null
   },
   {
-    "guid": "e1b78ee3-ca3e-4f89-b582-93d0e6643bbd",
+    "guid": "32ebc4ba-bdc9-43aa-a035-f9c8f1c37a9e",
     "title": "The CSO / NPO audit its financial books using an independent auditor",
-    "assessment_type_section_guid": "7773add8-bbf7-4ba4-8032-6ac0d07bc735",
+    "assessment_type_section_guid": "27072d8e-c7dc-4aac-9d05-2a60ec513dbc",
     "answer_source": "Pre-Defined",
     "answer_option": "Mutually Exclusive",
     "question_number": 42,
     "answer_data_type": null
   },
   {
-    "guid": "105b324a-b2b7-4fbd-b0f7-79795208492f",
+    "guid": "fb204126-5161-4525-958e-ce319db0e157",
     "title": "The CSO / NPO submit all required documents for renewing registration with its registering authority (NPO, Cooperatives etc.)",
-    "assessment_type_section_guid": "7773add8-bbf7-4ba4-8032-6ac0d07bc735",
+    "assessment_type_section_guid": "27072d8e-c7dc-4aac-9d05-2a60ec513dbc",
     "answer_source": "Pre-Defined",
     "answer_option": "Mutually Exclusive",
     "question_number": 43,
     "answer_data_type": null
   },
   {
-    "guid": "1a1b4ac4-2d20-4530-b550-b789777254e8",
+    "guid": "45ac44a5-fc88-4bac-ad2e-a113bf57d15a",
     "title": "The CSO / NPO holds an annual general meeting with its members and present annual reports",
-    "assessment_type_section_guid": "7773add8-bbf7-4ba4-8032-6ac0d07bc735",
+    "assessment_type_section_guid": "27072d8e-c7dc-4aac-9d05-2a60ec513dbc",
     "answer_source": "Pre-Defined",
     "answer_option": "Mutually Exclusive",
     "question_number": 44,
     "answer_data_type": null
+  },
+  {
+    "guid": "6c9918e3-41d2-4dbf-9dd9-88a5110ef924",
+    "title": "The CSO / NPO has a membership that belong to it",
+    "assessment_type_section_guid": "63718807-605e-4535-98d1-872396518ffa",
+    "answer_source": "Pre-Defined",
+    "answer_option": "Mutually Exclusive",
+    "question_number": 1,
+    "answer_data_type": "Text"
+  },
+  {
+    "guid": "7aa86f94-18b3-44e6-8e4f-e011553bbdf3",
+    "title": "The CSO / NPO has active membership that participate in the affairs of the organisation",
+    "assessment_type_section_guid": "63718807-605e-4535-98d1-872396518ffa",
+    "answer_source": "Pre-Defined",
+    "answer_option": "Mutually Exclusive",
+    "question_number": 2,
+    "answer_data_type": "Text"
+  },
+  {
+    "guid": "e4420a73-dbfa-41de-b92f-3daf4d107de7",
+    "title": "The CSO / NPO holds annual general meetings regularly with its membership",
+    "assessment_type_section_guid": "63718807-605e-4535-98d1-872396518ffa",
+    "answer_source": "Pre-Defined",
+    "answer_option": "Mutually Exclusive",
+    "question_number": 3,
+    "answer_data_type": "Text"
+  },
+  {
+    "guid": "5350452f-fea2-4691-a3e8-9784134a271c",
+    "title": "The CSO / NPO produce a programme and financial report every year for its membership and stakeholders ",
+    "assessment_type_section_guid": "63718807-605e-4535-98d1-872396518ffa",
+    "answer_source": "Pre-Defined",
+    "answer_option": "Mutually Exclusive",
+    "question_number": 4,
+    "answer_data_type": "Text"
+  },
+  {
+    "guid": "f226f6f1-255f-4746-b5ae-ac1027fc57af",
+    "title": "The CSO / NPO has presented its annual programme and financial report to its membership",
+    "assessment_type_section_guid": "63718807-605e-4535-98d1-872396518ffa",
+    "answer_source": "Pre-Defined",
+    "answer_option": "Mutually Exclusive",
+    "question_number": 5,
+    "answer_data_type": "Text"
+  },
+  {
+    "guid": "83511f8d-068e-46cc-b7d7-fc42eaf5d8e4",
+    "title": "The CSO / NPO has applied for registration with relevant registration authority (NPO Directorate, DTI etc.)",
+    "assessment_type_section_guid": "63718807-605e-4535-98d1-872396518ffa",
+    "answer_source": "Pre-Defined",
+    "answer_option": "Mutually Exclusive",
+    "question_number": 6,
+    "answer_data_type": "Text"
+  },
+  {
+    "guid": "125625b0-e529-480b-8594-f443f74d0e2c",
+    "title": "The CSO / NPO is registered with relevant registration authority (NPO Directorate, DTI etc.)",
+    "assessment_type_section_guid": "63718807-605e-4535-98d1-872396518ffa",
+    "answer_source": "Pre-Defined",
+    "answer_option": "Mutually Exclusive",
+    "question_number": 7,
+    "answer_data_type": "Text"
+  },
+  {
+    "guid": "8f5894c5-3b5e-490d-bf52-6c10953449f9",
+    "title": "The CSO / NPO is compliant with all registration requirements of registration authority (NPO Directorate,DTI etc.)",
+    "assessment_type_section_guid": "63718807-605e-4535-98d1-872396518ffa",
+    "answer_source": "Pre-Defined",
+    "answer_option": "Mutually Exclusive",
+    "question_number": 8,
+    "answer_data_type": "Text"
+  },
+  {
+    "guid": "7d55249e-0ba1-425d-8a80-55ee10ed46a8",
+    "title": "The CSO / NPO submit all documents required to comply with laws applicable to the organisation",
+    "assessment_type_section_guid": "63718807-605e-4535-98d1-872396518ffa",
+    "answer_source": "Pre-Defined",
+    "answer_option": "Mutually Exclusive",
+    "question_number": 9,
+    "answer_data_type": "Text"
+  },
+  {
+    "guid": "e454c408-2ca0-4632-a003-98471a4e0611",
+    "title": "The CSO / NPO has interest in becoming a formal organisation operating in its area of work",
+    "assessment_type_section_guid": "63718807-605e-4535-98d1-872396518ffa",
+    "answer_source": "Pre-Defined",
+    "answer_option": "Mutually Exclusive",
+    "question_number": 10,
+    "answer_data_type": "Text"
+  },
+  {
+    "guid": "f6679c4b-19f5-4a0f-a07d-b60910e998ff",
+    "title": "The organisation understands and knows what community development is",
+    "assessment_type_section_guid": "f6aecaf1-4a4e-451f-9d55-8817a70baf15",
+    "answer_source": "Pre-Defined",
+    "answer_option": "Mutually Exclusive",
+    "question_number": 1,
+    "answer_data_type": "Text"
+  },
+  {
+    "guid": "fda15995-cec0-4f9b-a5c8-7c2bb29a5a26",
+    "title": "The organisation understands the importance of people’s participation in development",
+    "assessment_type_section_guid": "f6aecaf1-4a4e-451f-9d55-8817a70baf15",
+    "answer_source": "Pre-Defined",
+    "answer_option": "Mutually Exclusive",
+    "question_number": 2,
+    "answer_data_type": "Text"
+  },
+  {
+    "guid": "e4edb05e-c79e-4ff9-8708-edf371b19d7f",
+    "title": "The organisation has understanding of the purpose of community development",
+    "assessment_type_section_guid": "f6aecaf1-4a4e-451f-9d55-8817a70baf15",
+    "answer_source": "Pre-Defined",
+    "answer_option": "Mutually Exclusive",
+    "question_number": 3,
+    "answer_data_type": "Text"
+  },
+  {
+    "guid": "69412ee8-a51c-4fd2-b750-edabad10738d",
+    "title": "The organisation knows the principles of community development",
+    "assessment_type_section_guid": "f6aecaf1-4a4e-451f-9d55-8817a70baf15",
+    "answer_source": "Pre-Defined",
+    "answer_option": "Mutually Exclusive",
+    "question_number": 4,
+    "answer_data_type": "Text"
+  },
+  {
+    "guid": "2ebdfeca-b23f-49b4-b093-94cd3eb7eab6",
+    "title": "The organisation knows what the values of community development are",
+    "assessment_type_section_guid": "f6aecaf1-4a4e-451f-9d55-8817a70baf15",
+    "answer_source": "Pre-Defined",
+    "answer_option": "Mutually Exclusive",
+    "question_number": 5,
+    "answer_data_type": "Text"
+  },
+  {
+    "guid": "3ca22f5d-667c-4731-90ed-a6c43869c1c9",
+    "title": "The organisation know community development approaches",
+    "assessment_type_section_guid": "f6aecaf1-4a4e-451f-9d55-8817a70baf15",
+    "answer_source": "Pre-Defined",
+    "answer_option": "Mutually Exclusive",
+    "question_number": 6,
+    "answer_data_type": "Text"
+  },
+  {
+    "guid": "7d6b2257-4531-46f8-8457-dd7ddd9bb80a",
+    "title": "The organisation understands the importance of commitment of other stakeholders to change",
+    "assessment_type_section_guid": "f6aecaf1-4a4e-451f-9d55-8817a70baf15",
+    "answer_source": "Pre-Defined",
+    "answer_option": "Mutually Exclusive",
+    "question_number": 7,
+    "answer_data_type": "Text"
+  },
+  {
+    "guid": "eaef0e71-4587-4165-9c4f-e28ffd6ed520",
+    "title": "The organisation knows how to build multi-stakeholder partnerships in communities they serve",
+    "assessment_type_section_guid": "f6aecaf1-4a4e-451f-9d55-8817a70baf15",
+    "answer_source": "Pre-Defined",
+    "answer_option": "Mutually Exclusive",
+    "question_number": 8,
+    "answer_data_type": "Text"
+  },
+  {
+    "guid": "2ad08b1e-02cd-4697-90ec-4060c7e8f6b2",
+    "title": "The organisation has the ability to conduct community situation analysis to inform intervention needed",
+    "assessment_type_section_guid": "f6aecaf1-4a4e-451f-9d55-8817a70baf15",
+    "answer_source": "Pre-Defined",
+    "answer_option": "Mutually Exclusive",
+    "question_number": 9,
+    "answer_data_type": "Text"
+  },
+  {
+    "guid": "5349deba-8e49-45cf-91fa-6c157e84e4db",
+    "title": "The organisation know the process of planning for change after conducting situation analysis",
+    "assessment_type_section_guid": "f6aecaf1-4a4e-451f-9d55-8817a70baf15",
+    "answer_source": "Pre-Defined",
+    "answer_option": "Mutually Exclusive",
+    "question_number": 10,
+    "answer_data_type": "Text"
+  },
+  {
+    "guid": "1a9d7031-36cc-4948-a07e-962ec13c8672",
+    "title": "The organisation has the experience in mobilizing resources for supporting community projects",
+    "assessment_type_section_guid": "f6aecaf1-4a4e-451f-9d55-8817a70baf15",
+    "answer_source": "Pre-Defined",
+    "answer_option": "Mutually Exclusive",
+    "question_number": 11,
+    "answer_data_type": "Text"
+  },
+  {
+    "guid": "138892b1-f811-4a7c-8823-c7ae1084dd17",
+    "title": "The organisation has experience in facilitating implementation of community development programmes",
+    "assessment_type_section_guid": "f6aecaf1-4a4e-451f-9d55-8817a70baf15",
+    "answer_source": "Pre-Defined",
+    "answer_option": "Mutually Exclusive",
+    "question_number": 12,
+    "answer_data_type": "Text"
+  },
+  {
+    "guid": "25ed5ac4-e362-4bb3-b7de-f1dc0109361a",
+    "title": "The organisation know what community project monitoring is",
+    "assessment_type_section_guid": "f6aecaf1-4a4e-451f-9d55-8817a70baf15",
+    "answer_source": "Pre-Defined",
+    "answer_option": "Mutually Exclusive",
+    "question_number": 13,
+    "answer_data_type": "Text"
+  },
+  {
+    "guid": "d18f00a5-f3b6-46e7-897f-51a35eefe256",
+    "title": "The organisation knows reasons for monitoring",
+    "assessment_type_section_guid": "f6aecaf1-4a4e-451f-9d55-8817a70baf15",
+    "answer_source": "Pre-Defined",
+    "answer_option": "Mutually Exclusive",
+    "question_number": 14,
+    "answer_data_type": "Text"
+  },
+  {
+    "guid": "d431929c-cbe6-4dde-8545-0f1dc7eafedb",
+    "title": "The organisation knows the elements of monitoring",
+    "assessment_type_section_guid": "f6aecaf1-4a4e-451f-9d55-8817a70baf15",
+    "answer_source": "Pre-Defined",
+    "answer_option": "Mutually Exclusive",
+    "question_number": 15,
+    "answer_data_type": "Text"
+  },
+  {
+    "guid": "e6660f97-d8c6-4f22-a304-d47243662328",
+    "title": "The organisation knows what project/programme evaluation is",
+    "assessment_type_section_guid": "f6aecaf1-4a4e-451f-9d55-8817a70baf15",
+    "answer_source": "Pre-Defined",
+    "answer_option": "Mutually Exclusive",
+    "question_number": 16,
+    "answer_data_type": "Text"
+  },
+  {
+    "guid": "7a1e5c44-bcdb-4276-99d4-04044f7ea2eb",
+    "title": "The organisation knows the barriers to project/programme evaluation",
+    "assessment_type_section_guid": "f6aecaf1-4a4e-451f-9d55-8817a70baf15",
+    "answer_source": "Pre-Defined",
+    "answer_option": "Mutually Exclusive",
+    "question_number": 17,
+    "answer_data_type": "Text"
+  },
+  {
+    "guid": "f79493be-1205-479b-8ec9-3b5775b29a7e",
+    "title": "The organisation knows things to consider when taking staff and volunteers",
+    "assessment_type_section_guid": "f6aecaf1-4a4e-451f-9d55-8817a70baf15",
+    "answer_source": "Pre-Defined",
+    "answer_option": "Mutually Exclusive",
+    "question_number": 18,
+    "answer_data_type": "Text"
+  },
+  {
+    "guid": "99b8f19e-2c5f-4f43-be76-7e9582deb08c",
+    "title": "The organisation understands the value of working with volunteers",
+    "assessment_type_section_guid": "f6aecaf1-4a4e-451f-9d55-8817a70baf15",
+    "answer_source": "Pre-Defined",
+    "answer_option": "Mutually Exclusive",
+    "question_number": 19,
+    "answer_data_type": "Text"
+  },
+  {
+    "guid": "fa387189-3a37-4d7c-bdaa-e1f734163a75",
+    "title": "The organisation knows what is required by volunteers",
+    "assessment_type_section_guid": "f6aecaf1-4a4e-451f-9d55-8817a70baf15",
+    "answer_source": "Pre-Defined",
+    "answer_option": "Mutually Exclusive",
+    "question_number": 20,
+    "answer_data_type": "Text"
+  },
+  {
+    "guid": "1f3e43a4-65b4-42a1-909e-d3d4777a8067",
+    "title": "The organisation has the recruitment and appointment policy for staff and volunteers",
+    "assessment_type_section_guid": "f6aecaf1-4a4e-451f-9d55-8817a70baf15",
+    "answer_source": "Pre-Defined",
+    "answer_option": "Mutually Exclusive",
+    "question_number": 21,
+    "answer_data_type": "Text"
+  },
+  {
+    "guid": "fc061617-6471-41e3-97b9-d43f8675a710",
+    "title": "organisation has a checklist for conducting job interviews",
+    "assessment_type_section_guid": "f6aecaf1-4a4e-451f-9d55-8817a70baf15",
+    "answer_source": "Pre-Defined",
+    "answer_option": "Mutually Exclusive",
+    "question_number": 22,
+    "answer_data_type": "Text"
+  },
+  {
+    "guid": "6f9ff1aa-3d85-44df-9185-d43c8cc75a78",
+    "title": "The organisation has templates for employment and volunteer’s contracts",
+    "assessment_type_section_guid": "f6aecaf1-4a4e-451f-9d55-8817a70baf15",
+    "answer_source": "Pre-Defined",
+    "answer_option": "Mutually Exclusive",
+    "question_number": 23,
+    "answer_data_type": "Text"
+  },
+  {
+    "guid": "b1a9b3e0-d39b-42fe-84a6-e4b66fc07c0e",
+    "title": "Management has provided a common definition of conflict for the organisation",
+    "assessment_type_section_guid": "61a6fc86-78cb-4604-997d-8d3ab11fa651",
+    "answer_source": "Pre-Defined",
+    "answer_option": "Mutually Exclusive",
+    "question_number": 1,
+    "answer_data_type": "Text"
+  },
+  {
+    "guid": "3cddc9c5-f18b-4ab3-95ff-2849ac1ccb6a",
+    "title": "The organisation has developed a common understanding of conflict for the organisation",
+    "assessment_type_section_guid": "61a6fc86-78cb-4604-997d-8d3ab11fa651",
+    "answer_source": "Pre-Defined",
+    "answer_option": "Mutually Exclusive",
+    "question_number": 2,
+    "answer_data_type": "Text"
+  },
+  {
+    "guid": "36a68c39-0776-44a1-a657-e34a1d6c27ec",
+    "title": "The organisation has knowledge of the sources of conflict",
+    "assessment_type_section_guid": "61a6fc86-78cb-4604-997d-8d3ab11fa651",
+    "answer_source": "Pre-Defined",
+    "answer_option": "Mutually Exclusive",
+    "question_number": 3,
+    "answer_data_type": "Text"
+  },
+  {
+    "guid": "b39cd447-efa8-414b-9355-428c150f4219",
+    "title": "The organisation has knowledge about the effects of conflict on the organisation’s work",
+    "assessment_type_section_guid": "61a6fc86-78cb-4604-997d-8d3ab11fa651",
+    "answer_source": "Pre-Defined",
+    "answer_option": "Mutually Exclusive",
+    "question_number": 4,
+    "answer_data_type": "Text"
+  },
+  {
+    "guid": "ee2df023-d897-446f-827f-60be6bce0e94",
+    "title": "The organisation has developed a common understanding of types of conflict",
+    "assessment_type_section_guid": "61a6fc86-78cb-4604-997d-8d3ab11fa651",
+    "answer_source": "Pre-Defined",
+    "answer_option": "Mutually Exclusive",
+    "question_number": 5,
+    "answer_data_type": "Text"
+  },
+  {
+    "guid": "9766f976-fdb5-4d12-a84f-b1fcdaedd258",
+    "title": "The organisation has developed a common understanding of conflict",
+    "assessment_type_section_guid": "61a6fc86-78cb-4604-997d-8d3ab11fa651",
+    "answer_source": "Pre-Defined",
+    "answer_option": "Mutually Exclusive",
+    "question_number": 6,
+    "answer_data_type": "Text"
+  },
+  {
+    "guid": "221e5dbb-3156-437b-b1b1-664f12db86e6",
+    "title": "The organisation’s members and staff know the different categories of conflict",
+    "assessment_type_section_guid": "61a6fc86-78cb-4604-997d-8d3ab11fa651",
+    "answer_source": "Pre-Defined",
+    "answer_option": "Mutually Exclusive",
+    "question_number": 7,
+    "answer_data_type": "Text"
+  },
+  {
+    "guid": "7ad29180-86dd-444b-be38-a1de3c9e9895",
+    "title": "The organisation know the functions of conflict",
+    "assessment_type_section_guid": "61a6fc86-78cb-4604-997d-8d3ab11fa651",
+    "answer_source": "Pre-Defined",
+    "answer_option": "Mutually Exclusive",
+    "question_number": 8,
+    "answer_data_type": "Text"
+  },
+  {
+    "guid": "c0fb5454-428a-4600-abe6-d9f553c6b2ab",
+    "title": "The organisation knows the two dimensions of cause-and-effect relationship between conflict and human rights",
+    "assessment_type_section_guid": "61a6fc86-78cb-4604-997d-8d3ab11fa651",
+    "answer_source": "Pre-Defined",
+    "answer_option": "Mutually Exclusive",
+    "question_number": 9,
+    "answer_data_type": "Text"
+  },
+  {
+    "guid": "8b503fd3-8a36-4b6d-9e82-246f854bcae3",
+    "title": "The organisation knows the different ways in which the two dimensions between conflict and human rights are connected ",
+    "assessment_type_section_guid": "61a6fc86-78cb-4604-997d-8d3ab11fa651",
+    "answer_source": "Pre-Defined",
+    "answer_option": "Mutually Exclusive",
+    "question_number": 10,
+    "answer_data_type": "Text"
+  },
+  {
+    "guid": "dbc700bd-d8de-41e6-ad76-2698b2a17df3",
+    "title": "The organisation knows that the protection and promotion of human rights is essential to the management of conflict",
+    "assessment_type_section_guid": "61a6fc86-78cb-4604-997d-8d3ab11fa651",
+    "answer_source": "Pre-Defined",
+    "answer_option": "Mutually Exclusive",
+    "question_number": 11,
+    "answer_data_type": "Text"
+  },
+  {
+    "guid": "cc650083-ad8d-46eb-bf2a-8c0327480463",
+    "title": "The organisation has understanding of conflict resolution",
+    "assessment_type_section_guid": "61a6fc86-78cb-4604-997d-8d3ab11fa651",
+    "answer_source": "Pre-Defined",
+    "answer_option": "Mutually Exclusive",
+    "question_number": 12,
+    "answer_data_type": "Text"
+  },
+  {
+    "guid": "13208c22-bc63-4fe8-80c1-93657ebec492",
+    "title": "The organisation has knowledge about the methods of conflict resolution",
+    "assessment_type_section_guid": "61a6fc86-78cb-4604-997d-8d3ab11fa651",
+    "answer_source": "Pre-Defined",
+    "answer_option": "Mutually Exclusive",
+    "question_number": 13,
+    "answer_data_type": "Text"
+  },
+  {
+    "guid": "94199b81-ad54-4111-be3d-24a23ba4c9e0",
+    "title": "The organisation has the two important skills in effective communication",
+    "assessment_type_section_guid": "61a6fc86-78cb-4604-997d-8d3ab11fa651",
+    "answer_source": "Pre-Defined",
+    "answer_option": "Mutually Exclusive",
+    "question_number": 14,
+    "answer_data_type": "Text"
+  },
+  {
+    "guid": "7d183bbf-68bb-45ec-b4e4-fbbbd585c401",
+    "title": "The organisation has knowledge of the characteristics of communication behaviour",
+    "assessment_type_section_guid": "61a6fc86-78cb-4604-997d-8d3ab11fa651",
+    "answer_source": "Pre-Defined",
+    "answer_option": "Mutually Exclusive",
+    "question_number": 15,
+    "answer_data_type": "Text"
+  },
+  {
+    "guid": "72a59810-99b7-41d8-b10b-084dae0e3fff",
+    "title": "The organisation has active listening skills",
+    "assessment_type_section_guid": "61a6fc86-78cb-4604-997d-8d3ab11fa651",
+    "answer_source": "Pre-Defined",
+    "answer_option": "Mutually Exclusive",
+    "question_number": 16,
+    "answer_data_type": "Text"
+  },
+  {
+    "guid": "bf581719-9723-476e-9cb2-0db581ef2c98",
+    "title": "The organisation has negotiation skills",
+    "assessment_type_section_guid": "61a6fc86-78cb-4604-997d-8d3ab11fa651",
+    "answer_source": "Pre-Defined",
+    "answer_option": "Mutually Exclusive",
+    "question_number": 17,
+    "answer_data_type": "Text"
+  },
+  {
+    "guid": "8aba49cb-8480-4a6a-8a9c-d4f48ff7b477",
+    "title": "The organisation has mediation skills",
+    "assessment_type_section_guid": "61a6fc86-78cb-4604-997d-8d3ab11fa651",
+    "answer_source": "Pre-Defined",
+    "answer_option": "Mutually Exclusive",
+    "question_number": 18,
+    "answer_data_type": "Text"
+  },
+  {
+    "guid": "0907a441-c3da-4ba0-8647-1d156835a22b",
+    "title": "The organisation has accounting system (standards, policies, records and reporting), functions, and is supported with written procedures and guidelines",
+    "assessment_type_section_guid": "dcf89c4d-b8fc-403b-80c8-efabb818a7f4",
+    "answer_source": "Pre-Defined",
+    "answer_option": "Mutually Exclusive",
+    "question_number": 1,
+    "answer_data_type": "Text"
+  },
+  {
+    "guid": "e67a3903-e4ec-4b92-bb5a-2c8495a09aaf",
+    "title": "The organisation has approved budget and expenditures statements monitored every month",
+    "assessment_type_section_guid": "dcf89c4d-b8fc-403b-80c8-efabb818a7f4",
+    "answer_source": "Pre-Defined",
+    "answer_option": "Mutually Exclusive",
+    "question_number": 2,
+    "answer_data_type": "Text"
+  },
+  {
+    "guid": "f0cae89c-873a-4eb2-ad21-c7d4452d39dd",
+    "title": "The organisation managers and programme supervisors receive financial information on expenses and income, and are used to make programme decisions for which they are accountable",
+    "assessment_type_section_guid": "dcf89c4d-b8fc-403b-80c8-efabb818a7f4",
+    "answer_source": "Pre-Defined",
+    "answer_option": "Mutually Exclusive",
+    "question_number": 3,
+    "answer_data_type": "Text"
+  },
+  {
+    "guid": "0e4d83eb-2596-42f0-861e-5399876ef2e5",
+    "title": " The organisation accounting system(s) can segregate the costs (general ledger codes) of delivering each main service/product",
+    "assessment_type_section_guid": "dcf89c4d-b8fc-403b-80c8-efabb818a7f4",
+    "answer_source": "Pre-Defined",
+    "answer_option": "Mutually Exclusive",
+    "question_number": 4,
+    "answer_data_type": "Text"
+  },
+  {
+    "guid": "c6e4f12d-1507-4d67-afba-fa1032d0e27d",
+    "title": "The organisation has an adequate financial and inventory controls system and is implemented",
+    "assessment_type_section_guid": "177a6709-5d75-430b-9bb7-746a62e8de50",
+    "answer_source": "Pre-Defined",
+    "answer_option": "Mutually Exclusive",
+    "question_number": 5,
+    "answer_data_type": "Text"
+  },
+  {
+    "guid": "169878fb-76bd-4ff4-a1cb-80b2cbe54e6e",
+    "title": "The organisation has systems and processes for financial and budgeting controls for managing risks and expenditure outcomes ",
+    "assessment_type_section_guid": "177a6709-5d75-430b-9bb7-746a62e8de50",
+    "answer_source": "Pre-Defined",
+    "answer_option": "Mutually Exclusive",
+    "question_number": 6,
+    "answer_data_type": "Text"
+  },
+  {
+    "guid": "cb130ec0-55db-43b5-9677-53b202667b23",
+    "title": "The organisation has budgeting process and integrated into annual operating planning",
+    "assessment_type_section_guid": "177a6709-5d75-430b-9bb7-746a62e8de50",
+    "answer_source": "Pre-Defined",
+    "answer_option": "Mutually Exclusive",
+    "question_number": 7,
+    "answer_data_type": "Text"
+  },
+  {
+    "guid": "0f1397f1-7ffa-4ddb-b88c-f9f668cc539e",
+    "title": "Organisation staff members are responsible for preparation, management and implementation of project budgets",
+    "assessment_type_section_guid": "177a6709-5d75-430b-9bb7-746a62e8de50",
+    "answer_source": "Pre-Defined",
+    "answer_option": "Mutually Exclusive",
+    "question_number": 8,
+    "answer_data_type": "Text"
+  },
+  {
+    "guid": "04ea3064-2037-402b-923c-ccfe1eb94a4a",
+    "title": "The organisation conduct annual financial audit every year for annual financial reporting and transparency",
+    "assessment_type_section_guid": "601d4b40-5c1d-457f-bcd1-d893b3491f30",
+    "answer_source": "Pre-Defined",
+    "answer_option": "Mutually Exclusive",
+    "question_number": 9,
+    "answer_data_type": "Text"
+  },
+  {
+    "guid": "e59a5347-f1b7-410b-a11e-64ff6fa3887b",
+    "title": "The organisation produces donor performance and financial reports as per contracts or agreements",
+    "assessment_type_section_guid": "601d4b40-5c1d-457f-bcd1-d893b3491f30",
+    "answer_source": "Pre-Defined",
+    "answer_option": "Mutually Exclusive",
+    "question_number": 10,
+    "answer_data_type": "Text"
+  },
+  {
+    "guid": "4f202275-2630-4a24-a949-63ad98953c70",
+    "title": "The organisation always include administrative costs in its budget for donor funding",
+    "assessment_type_section_guid": "601d4b40-5c1d-457f-bcd1-d893b3491f30",
+    "answer_source": "Pre-Defined",
+    "answer_option": "Mutually Exclusive",
+    "question_number": 11,
+    "answer_data_type": "Text"
+  },
+  {
+    "guid": "a91b9cab-d027-42e7-968e-ffaee1729e84",
+    "title": "The organisation open separate accounts for different donors",
+    "assessment_type_section_guid": "601d4b40-5c1d-457f-bcd1-d893b3491f30",
+    "answer_source": "Pre-Defined",
+    "answer_option": "Mutually Exclusive",
+    "question_number": 12,
+    "answer_data_type": "Text"
+  },
+  {
+    "guid": "bef16f03-734f-4acc-a84b-bf29fc12583d",
+    "title": "The organisation has policies, procedures and systems for procurement of goods and services",
+    "assessment_type_section_guid": "30b670ba-2243-4e64-8c28-c0b019a25d00",
+    "answer_source": "Pre-Defined",
+    "answer_option": "Mutually Exclusive",
+    "question_number": 13,
+    "answer_data_type": "Text"
+  },
+  {
+    "guid": "247aefb4-7e02-4288-9807-880d289664c9",
+    "title": " The organisation has systems and procedures for keeping financial records (quotations, invoices, cheques,petty cash slips etc)",
+    "assessment_type_section_guid": "30b670ba-2243-4e64-8c28-c0b019a25d00",
+    "answer_source": "Pre-Defined",
+    "answer_option": "Mutually Exclusive",
+    "question_number": 14,
+    "answer_data_type": "Text"
+  },
+  {
+    "guid": "c45d4d4a-9bb6-45c1-8bf9-85d8afab9b4c",
+    "title": "The organisation has a qualified staff member responsible for financial and procurement functions",
+    "assessment_type_section_guid": "30b670ba-2243-4e64-8c28-c0b019a25d00",
+    "answer_source": "Pre-Defined",
+    "answer_option": "Mutually Exclusive",
+    "question_number": 15,
+    "answer_data_type": "Text"
+  },
+  {
+    "guid": "81a99d79-aa2a-4c3b-bca7-438ff4b7fa74",
+    "title": "The organisation has an electronic system for its accounting and financial management",
+    "assessment_type_section_guid": "30b670ba-2243-4e64-8c28-c0b019a25d00",
+    "answer_source": "Pre-Defined",
+    "answer_option": "Mutually Exclusive",
+    "question_number": 16,
+    "answer_data_type": "Text"
+  },
+  {
+    "guid": "e12e6a97-446b-475c-8e54-3fafb6053267",
+    "title": "The board/executive committee provides overall policy direction and oversight",
+    "assessment_type_section_guid": "d58ee5df-a9ff-42a8-b588-98512cc5836f",
+    "answer_source": "Pre-Defined",
+    "answer_option": "Mutually Exclusive",
+    "question_number": 1,
+    "answer_data_type": "Text"
+  },
+  {
+    "guid": "a423cea1-d481-431e-9ba8-3156f0884307",
+    "title": "The board/Executive Committee provides accountability and credibility",
+    "assessment_type_section_guid": "d58ee5df-a9ff-42a8-b588-98512cc5836f",
+    "answer_source": "Pre-Defined",
+    "answer_option": "Mutually Exclusive",
+    "question_number": 2,
+    "answer_data_type": "Text"
+  },
+  {
+    "guid": "682158d9-9aa1-43d2-855d-0c011026f999",
+    "title": "The board/executive committee is composed of committed members who represent varied interests of the constituency",
+    "assessment_type_section_guid": "d58ee5df-a9ff-42a8-b588-98512cc5836f",
+    "answer_source": "Pre-Defined",
+    "answer_option": "Mutually Exclusive",
+    "question_number": 3,
+    "answer_data_type": "Text"
+  },
+  {
+    "guid": "8e969849-3454-428b-810f-dad4635a1d97",
+    "title": "The board/executive committee is capable of carrying out key roles such as policy formulation, planning and reporting fundraising, public relations and lobbying",
+    "assessment_type_section_guid": "d58ee5df-a9ff-42a8-b588-98512cc5836f",
+    "answer_source": "Pre-Defined",
+    "answer_option": "Mutually Exclusive",
+    "question_number": 4,
+    "answer_data_type": "Text"
+  },
+  {
+    "guid": "62e721bb-466b-434c-a9f3-4c4cbc9b4255",
+    "title": "The organisation mission and goal are clearly defined",
+    "assessment_type_section_guid": "adcffdcd-f575-4aa0-b567-9047a5a65ccc",
+    "answer_source": "Pre-Defined",
+    "answer_option": "Mutually Exclusive",
+    "question_number": 5,
+    "answer_data_type": "Text"
+  },
+  {
+    "guid": "510685b8-9bd3-4950-8d5b-439d00fbaff0",
+    "title": "The organisation strategies are aligned with mission and are realistic",
+    "assessment_type_section_guid": "adcffdcd-f575-4aa0-b567-9047a5a65ccc",
+    "answer_source": "Pre-Defined",
+    "answer_option": "Mutually Exclusive",
+    "question_number": 6,
+    "answer_data_type": "Text"
+  },
+  {
+    "guid": "3dd450f4-296e-469a-8e90-0405dd5bc1cb",
+    "title": "The organisation strategic planning is jointly conducted by the board, management and staff with input from other stakeholders",
+    "assessment_type_section_guid": "adcffdcd-f575-4aa0-b567-9047a5a65ccc",
+    "answer_source": "Pre-Defined",
+    "answer_option": "Mutually Exclusive",
+    "question_number": 7,
+    "answer_data_type": "Text"
+  },
+  {
+    "guid": "fe6d2bf7-51f5-42fb-a684-db2c3cc93338",
+    "title": "Board and management have a clear understanding of their roles and responsibilities as providers of overall direction",
+    "assessment_type_section_guid": "a1a8f0fb-a309-4a94-b50d-e6f5f99aa441",
+    "answer_source": "Pre-Defined",
+    "answer_option": "Mutually Exclusive",
+    "question_number": 8,
+    "answer_data_type": "Text"
+  },
+  {
+    "guid": "a9dc34da-bbd8-4123-a9bf-22f8f66c3971",
+    "title": "Management’s relationship with staff is participatory and transparent",
+    "assessment_type_section_guid": "a1a8f0fb-a309-4a94-b50d-e6f5f99aa441",
+    "answer_source": "Pre-Defined",
+    "answer_option": "Mutually Exclusive",
+    "question_number": 9,
+    "answer_data_type": "Text"
+  },
+  {
+    "guid": "29d41c7e-49d2-4040-8aac-5d1a49c9968c",
+    "title": "Management decisions are communicated and delegated to lower levels of organisation",
+    "assessment_type_section_guid": "a1a8f0fb-a309-4a94-b50d-e6f5f99aa441",
+    "answer_source": "Pre-Defined",
+    "answer_option": "Mutually Exclusive",
+    "question_number": 10,
+    "answer_data_type": "Text"
+  },
+  {
+    "guid": "fdfa1c9f-cb2a-4490-8d58-2413555424c2",
+    "title": "Leadership is accessible and fosters staff participation",
+    "assessment_type_section_guid": "a1a8f0fb-a309-4a94-b50d-e6f5f99aa441",
+    "answer_source": "Pre-Defined",
+    "answer_option": "Mutually Exclusive",
+    "question_number": 10,
+    "answer_data_type": "Text"
+  },
+  {
+    "guid": "78a18022-fe18-4c45-9a8f-e6baf352df92",
+    "title": "The organisation has succession plan for key managers and staff",
+    "assessment_type_section_guid": "a1a8f0fb-a309-4a94-b50d-e6f5f99aa441",
+    "answer_source": "Pre-Defined",
+    "answer_option": "Mutually Exclusive",
+    "question_number": 12,
+    "answer_data_type": "Text"
+  },
+  {
+    "guid": "fbac615b-59f7-4a74-8395-f7a9c64b81b4",
+    "title": "The board / executive committee meets regularly",
+    "assessment_type_section_guid": "f6db0bde-757a-4f56-930f-9b602b1a204d",
+    "answer_source": "Pre-Defined",
+    "answer_option": "Mutually Exclusive",
+    "question_number": 13,
+    "answer_data_type": "Text"
+  },
+  {
+    "guid": "4b2c102e-6b95-469f-bbf6-4744fa36fb2f",
+    "title": "The board / executive committee has representative from people with disabilities, women and young people",
+    "assessment_type_section_guid": "f6db0bde-757a-4f56-930f-9b602b1a204d",
+    "answer_source": "Pre-Defined",
+    "answer_option": "Mutually Exclusive",
+    "question_number": 14,
+    "answer_data_type": "Text"
+  },
+  {
+    "guid": "47b403df-040b-4982-9170-18e4cd4e2c25",
+    "title": "The organisation has a selection criteria for its board / executive members",
+    "assessment_type_section_guid": "f6db0bde-757a-4f56-930f-9b602b1a204d",
+    "answer_source": "Pre-Defined",
+    "answer_option": "Mutually Exclusive",
+    "question_number": 15,
+    "answer_data_type": "Text"
+  },
+  {
+    "guid": "de037d5b-c1db-4391-9e74-c35aaa5feb7e",
+    "title": "The organisation constitution clearly defined term of office and limit to the number of times a board /executive committee member for re-election",
+    "assessment_type_section_guid": "f6db0bde-757a-4f56-930f-9b602b1a204d",
+    "answer_source": "Pre-Defined",
+    "answer_option": "Mutually Exclusive",
+    "question_number": 16,
+    "answer_data_type": "Text"
+  },
+  {
+    "guid": "2275b0a7-ff15-4d95-98aa-06f44408c605",
+    "title": "The organisation is registered in terms of Non-Profit Organisations (NPO) Act or cooperative Act",
+    "assessment_type_section_guid": "8eab864f-eac6-45a0-b656-5855adcb6864",
+    "answer_source": "Pre-Defined",
+    "answer_option": "Mutually Exclusive",
+    "question_number": 1,
+    "answer_data_type": "Text"
+  },
+  {
+    "guid": "42377422-b41c-4567-8aa4-208ec9b825a5",
+    "title": "The organisation have evidence of registration in the form of registration documentation",
+    "assessment_type_section_guid": "8eab864f-eac6-45a0-b656-5855adcb6864",
+    "answer_source": "Pre-Defined",
+    "answer_option": "Mutually Exclusive",
+    "question_number": 2,
+    "answer_data_type": "Text"
+  },
+  {
+    "guid": "1648d306-0c12-4941-ae0e-b1d897c2d8e7",
+    "title": "The organisation knows all its obligations as a registered NPO or Cooperative in South Africa",
+    "assessment_type_section_guid": "8eab864f-eac6-45a0-b656-5855adcb6864",
+    "answer_source": "Pre-Defined",
+    "answer_option": "Mutually Exclusive",
+    "question_number": 3,
+    "answer_data_type": "Text"
+  },
+  {
+    "guid": "e6df06d0-5114-4c2a-95d5-04222e96b954",
+    "title": " The organisation know that members, board and staff follow due process to benefit from the assets and resources ",
+    "assessment_type_section_guid": "8eab864f-eac6-45a0-b656-5855adcb6864",
+    "answer_source": "Pre-Defined",
+    "answer_option": "Mutually Exclusive",
+    "question_number": 4,
+    "answer_data_type": "Text"
+  },
+  {
+    "guid": "23d95df3-da87-49ab-bf98-07c979d4dddf",
+    "title": "The organisation keeps records of its income, expenditure, assets and liabilities",
+    "assessment_type_section_guid": "a156b5a9-47fd-4f58-ad12-127b6a5e5b9a",
+    "answer_source": "Pre-Defined",
+    "answer_option": "Mutually Exclusive",
+    "question_number": 5,
+    "answer_data_type": "Text"
+  },
+  {
+    "guid": "4898123d-280d-40df-a4d2-326b3d39f487",
+    "title": "The organisation keeps records of annual reports (narrative report and financial statements)",
+    "assessment_type_section_guid": "a156b5a9-47fd-4f58-ad12-127b6a5e5b9a",
+    "answer_source": "Pre-Defined",
+    "answer_option": "Mutually Exclusive",
+    "question_number": 6,
+    "answer_data_type": "Text"
+  },
+  {
+    "guid": "01ba1f90-2bb7-404b-a6ce-dd385ced0c8d",
+    "title": "The organisation sends annual narrative report in a prescribed format within nine (9) months of financial year end to the Department of Social Development (DSD) or Members of the Cooperative",
+    "assessment_type_section_guid": "a156b5a9-47fd-4f58-ad12-127b6a5e5b9a",
+    "answer_source": "Pre-Defined",
+    "answer_option": "Mutually Exclusive",
+    "question_number": 7,
+    "answer_data_type": "Text"
+  },
+  {
+    "guid": "feb14c1f-baa3-4f63-a7f1-a6856778b13f",
+    "title": " The organisation sends annual financial statement (consisting of income and expenditure; balance sheet; accounting officer’s report) within nine (9) months of financial year end to the Department of Social Development (DSD) or members of the Cooperative",
+    "assessment_type_section_guid": "a156b5a9-47fd-4f58-ad12-127b6a5e5b9a",
+    "answer_source": "Pre-Defined",
+    "answer_option": "Mutually Exclusive",
+    "question_number": 8,
+    "answer_data_type": "Text"
+  },
+  {
+    "guid": "151fea45-5624-43d6-a4da-7447c3257f61",
+    "title": "Every year after the end of financial year of the organisation, if there has been changes in the constitution, the organisation sends the DSD or members of the Cooperative minutes of the meeting signed by all members and the amended constitution ",
+    "assessment_type_section_guid": "a156b5a9-47fd-4f58-ad12-127b6a5e5b9a",
+    "answer_source": "Pre-Defined",
+    "answer_option": "Mutually Exclusive",
+    "question_number": 9,
+    "answer_data_type": "Text"
+  },
+  {
+    "guid": "d168c7fd-5d1d-4d97-82d1-b1963c7201ff",
+    "title": "The organisation knows that failure to submit annually documents for compliance with the law and registration status can result in the de-registration or and prosecution ",
+    "assessment_type_section_guid": "a156b5a9-47fd-4f58-ad12-127b6a5e5b9a",
+    "answer_source": "Pre-Defined",
+    "answer_option": "Mutually Exclusive",
+    "question_number": 11,
+    "answer_data_type": "Text"
+  },
+  {
+    "guid": "b599a79f-d189-4f7c-910b-be9f819b9737",
+    "title": "The organisation knows that it is an offence to make material false representation in annual narrative and financial reports ",
+    "assessment_type_section_guid": "a156b5a9-47fd-4f58-ad12-127b6a5e5b9a",
+    "answer_source": "Pre-Defined",
+    "answer_option": "Mutually Exclusive",
+    "question_number": 12,
+    "answer_data_type": "Text"
+  },
+  {
+    "guid": "5eaddf3e-8f42-46e8-8d37-9ff47a42f52f",
+    "title": "The organisation knows that it is an offence to use a de-registered organisation or cooperative number when doing its business ",
+    "assessment_type_section_guid": "a156b5a9-47fd-4f58-ad12-127b6a5e5b9a",
+    "answer_source": "Pre-Defined",
+    "answer_option": "Mutually Exclusive",
+    "question_number": 13,
+    "answer_data_type": "Text"
+  },
+  {
+    "guid": "b95febd0-eebe-496e-8cd4-cfe57be97e28",
+    "title": " The organisation knows that it is an offence to represent an organisation as being registered when it is not",
+    "assessment_type_section_guid": "a156b5a9-47fd-4f58-ad12-127b6a5e5b9a",
+    "answer_source": "Pre-Defined",
+    "answer_option": "Mutually Exclusive",
+    "question_number": 14,
+    "answer_data_type": "Text"
+  },
+  {
+    "guid": "231407c4-0fe6-4ed8-956b-4e83a7bbd3fc",
+    "title": "The organisation knows how to appeal against refusal to register or de-registration of an organisation with the relevant registration authorities (NPO Directorate or Registrar of Company Intellectual Property Commission (CIPC))",
+    "assessment_type_section_guid": "a156b5a9-47fd-4f58-ad12-127b6a5e5b9a",
+    "answer_source": "Pre-Defined",
+    "answer_option": "Mutually Exclusive",
+    "question_number": 15,
+    "answer_data_type": "Text"
+  },
+  {
+    "guid": "bd2c54ac-731a-4822-bf93-f731fb5749d5",
+    "title": " The organisational structure clearly defines lines of authority and responsibilities",
+    "assessment_type_section_guid": "a25261aa-ecd1-4f18-9043-027b2c013b2b",
+    "answer_source": "Pre-Defined",
+    "answer_option": "Mutually Exclusive",
+    "question_number": 1,
+    "answer_data_type": "Text"
+  },
+  {
+    "guid": "d8bc5dff-b3da-45b3-b1e3-d32faf0eba3c",
+    "title": "The organisation has systems to collect, analyse and disseminate data and information",
+    "assessment_type_section_guid": "a25261aa-ecd1-4f18-9043-027b2c013b2b",
+    "answer_source": "Pre-Defined",
+    "answer_option": "Mutually Exclusive",
+    "question_number": 2,
+    "answer_data_type": "Text"
+  },
+  {
+    "guid": "75c0426f-2caa-4c78-9094-8a6c4c663de4",
+    "title": "The organisation base its decisions on data and information",
+    "assessment_type_section_guid": "a25261aa-ecd1-4f18-9043-027b2c013b2b",
+    "answer_source": "Pre-Defined",
+    "answer_option": "Mutually Exclusive",
+    "question_number": 3,
+    "answer_data_type": "Text"
+  },
+  {
+    "guid": "b02514c2-628f-484c-ae8e-77f5912fad3a",
+    "title": "The organisation has open communication and feedback mechanisms",
+    "assessment_type_section_guid": "a25261aa-ecd1-4f18-9043-027b2c013b2b",
+    "answer_source": "Pre-Defined",
+    "answer_option": "Mutually Exclusive",
+    "question_number": 4,
+    "answer_data_type": "Text"
+  },
+  {
+    "guid": "5de2a98d-26d1-4e12-88de-11d7c717e8ce",
+    "title": "The organisation has operation plans, reviewed, updated and reflect a strategic plan",
+    "assessment_type_section_guid": "56c1525a-3a5b-45fe-a15d-50f0a07b0734",
+    "answer_source": "Pre-Defined",
+    "answer_option": "Mutually Exclusive",
+    "question_number": 5,
+    "answer_data_type": "Text"
+  },
+  {
+    "guid": "067b12dc-dc84-48a6-a244-6614a9feced3",
+    "title": "The organisation involve staff in the development of operational plan",
+    "assessment_type_section_guid": "56c1525a-3a5b-45fe-a15d-50f0a07b0734",
+    "answer_source": "Pre-Defined",
+    "answer_option": "Mutually Exclusive",
+    "question_number": 6,
+    "answer_data_type": "Text"
+  },
+  {
+    "guid": "eaf09a92-0569-440a-bfae-b76d48931579",
+    "title": "The organisation resources are planned for and allocated to specific activities",
+    "assessment_type_section_guid": "56c1525a-3a5b-45fe-a15d-50f0a07b0734",
+    "answer_source": "Pre-Defined",
+    "answer_option": "Mutually Exclusive",
+    "question_number": 7,
+    "answer_data_type": "Text"
+  },
+  {
+    "guid": "4b53a1f6-4dae-42f6-9760-b99beedfc202",
+    "title": "The organisation include input from constituents is its operational planning process",
+    "assessment_type_section_guid": "56c1525a-3a5b-45fe-a15d-50f0a07b0734",
+    "answer_source": "Pre-Defined",
+    "answer_option": "Mutually Exclusive",
+    "question_number": 8,
+    "answer_data_type": "Text"
+  },
+  {
+    "guid": "e1f4c8c6-66a6-4414-984e-b4ad61806b23",
+    "title": "The organisation has a monitoring and evaluation system and outputs are used by the organisation",
+    "assessment_type_section_guid": "1b3e65f5-90b8-45d9-8abe-8bdfc0bf73ba",
+    "answer_source": "Pre-Defined",
+    "answer_option": "Mutually Exclusive",
+    "question_number": 9,
+    "answer_data_type": "Text"
+  },
+  {
+    "guid": "cc6dbe15-7623-4496-a8da-7b9a97b9b6f0",
+    "title": "The organisation produces monthly operational reports and are used to inform stakeholders on its operations results",
+    "assessment_type_section_guid": "1b3e65f5-90b8-45d9-8abe-8bdfc0bf73ba",
+    "answer_source": "Pre-Defined",
+    "answer_option": "Mutually Exclusive",
+    "question_number": 10,
+    "answer_data_type": "Text"
+  },
+  {
+    "guid": "a69d3814-ae65-4769-8fef-89a04713ce15",
+    "title": "The organisation produces lessons learn or evaluation reports about its operations",
+    "assessment_type_section_guid": "1b3e65f5-90b8-45d9-8abe-8bdfc0bf73ba",
+    "answer_source": "Pre-Defined",
+    "answer_option": "Mutually Exclusive",
+    "question_number": 11,
+    "answer_data_type": "Text"
+  },
+  {
+    "guid": "493cedce-6ae5-4f18-8cf5-3461bb3af6f7",
+    "title": "The organisation has operations guidelines and tools for implementation of programmes",
+    "assessment_type_section_guid": "4a673aa5-2e0c-4acd-be3d-63d4f01e7be3",
+    "answer_source": "Pre-Defined",
+    "answer_option": "Mutually Exclusive",
+    "question_number": 12,
+    "answer_data_type": "Text"
+  },
+  {
+    "guid": "a2936c85-7d52-4b81-bbfa-3390a85896f1",
+    "title": "The organisation has service quality guidelines for its products and services",
+    "assessment_type_section_guid": "4a673aa5-2e0c-4acd-be3d-63d4f01e7be3",
+    "answer_source": "Pre-Defined",
+    "answer_option": "Mutually Exclusive",
+    "question_number": 13,
+    "answer_data_type": "Text"
+  },
+  {
+    "guid": "7f2f4d82-fc7d-45f2-9c3e-ae2a2bb2433c",
+    "title": "The organisation has a system to calculate unit cost per benefit/client for its services or products",
+    "assessment_type_section_guid": "4a673aa5-2e0c-4acd-be3d-63d4f01e7be3",
+    "answer_source": "Pre-Defined",
+    "answer_option": "Mutually Exclusive",
+    "question_number": 14,
+    "answer_data_type": "Text"
+  },
+  {
+    "guid": "f8e93813-2e8c-4cdd-abd6-d624e86b017c",
+    "title": "The organisation has a clearly defined recruitment, employment and personnel policy",
+    "assessment_type_section_guid": "4a4f58e3-110f-48c2-808a-cb75ca9136a6",
+    "answer_source": "Pre-Defined",
+    "answer_option": "Mutually Exclusive",
+    "question_number": 15,
+    "answer_data_type": "Text"
+  },
+  {
+    "guid": "163145e7-e6e1-4226-a853-c6d1afe795ac",
+    "title": "The organisation has internal regulations governing staff rights and obligations (working hours, benefits, discipline and codes of conduct, etc) and comply with SA labour legislation.",
+    "assessment_type_section_guid": "4a4f58e3-110f-48c2-808a-cb75ca9136a6",
+    "answer_source": "Pre-Defined",
+    "answer_option": "Mutually Exclusive",
+    "question_number": 16,
+    "answer_data_type": "Text"
+  },
+  {
+    "guid": "cb85c844-9054-4a57-9201-bbb1b0cad0df",
+    "title": "The organisation has well defined staff job descriptions, documented and respected and updated every time there are changes",
+    "assessment_type_section_guid": "4a4f58e3-110f-48c2-808a-cb75ca9136a6",
+    "answer_source": "Pre-Defined",
+    "answer_option": "Mutually Exclusive",
+    "question_number": 17,
+    "answer_data_type": "Text"
+  },
+  {
+    "guid": "848909ff-84db-4dac-982b-ace18e8dd771",
+    "title": "The organisation staff participate in management decision",
+    "assessment_type_section_guid": "af27b4ad-6a2c-422c-98f1-cee1588d549a",
+    "answer_source": "Pre-Defined",
+    "answer_option": "Mutually Exclusive",
+    "question_number": 18,
+    "answer_data_type": "Text"
+  },
+  {
+    "guid": "c29798b6-401a-4ab0-b309-acb778ef1b04",
+    "title": " The organisation staff members are encouraged to make suggestions and to share ideas to improve organisational performance",
+    "assessment_type_section_guid": "af27b4ad-6a2c-422c-98f1-cee1588d549a",
+    "answer_source": "Pre-Defined",
+    "answer_option": "Mutually Exclusive",
+    "question_number": 19,
+    "answer_data_type": "Text"
+  },
+  {
+    "guid": "7a71ca59-0169-47a0-9184-1edc809cab25",
+    "title": "The organisation promote team work to improve organisation performance",
+    "assessment_type_section_guid": "af27b4ad-6a2c-422c-98f1-cee1588d549a",
+    "answer_source": "Pre-Defined",
+    "answer_option": "Mutually Exclusive",
+    "question_number": 20,
+    "answer_data_type": "Text"
+  },
+  {
+    "guid": "47e2e5bc-ee26-4dd2-b768-8b751a597c21",
+    "title": "The organisation promote information sharing among all staff members",
+    "assessment_type_section_guid": "af27b4ad-6a2c-422c-98f1-cee1588d549a",
+    "answer_source": "Pre-Defined",
+    "answer_option": "Mutually Exclusive",
+    "question_number": 21,
+    "answer_data_type": "Text"
+  },
+  {
+    "guid": "38256da7-6e1b-4d20-9b89-5ea748cf36df",
+    "title": "The organisation regularly conduct staff performance appraisals to assess staff capacity needs",
+    "assessment_type_section_guid": "247fc12c-b81c-4de6-a9e8-f3a1f573d559",
+    "answer_source": "Pre-Defined",
+    "answer_option": "Mutually Exclusive",
+    "question_number": 22,
+    "answer_data_type": "Text"
+  },
+  {
+    "guid": "abc0d742-3ef7-4238-b951-c1bd78b7d4b0",
+    "title": " The organisation has staff performance indicators and are used to evaluate their performance",
+    "assessment_type_section_guid": "247fc12c-b81c-4de6-a9e8-f3a1f573d559",
+    "answer_source": "Pre-Defined",
+    "answer_option": "Mutually Exclusive",
+    "question_number": 23,
+    "answer_data_type": "Text"
+  },
+  {
+    "guid": "595a1c96-f18f-4f00-afbb-83048796f600",
+    "title": "The organisation has systems to reward staff on outcome of performance",
+    "assessment_type_section_guid": "247fc12c-b81c-4de6-a9e8-f3a1f573d559",
+    "answer_source": "Pre-Defined",
+    "answer_option": "Mutually Exclusive",
+    "question_number": 24,
+    "answer_data_type": "Text"
+  },
+  {
+    "guid": "df1d889d-559f-4ee3-9e7e-13b55f9b5a07",
+    "title": "The organisation know how to differentiate between programme and project",
+    "assessment_type_section_guid": "3757c54c-b9ed-4e06-a130-2027004d4a66",
+    "answer_source": "Pre-Defined",
+    "answer_option": "Mutually Exclusive",
+    "question_number": 1,
+    "answer_data_type": "Text"
+  },
+  {
+    "guid": "0bd0fec6-5add-45e9-a3ca-34e24b939991",
+    "title": "The organisation has structured its operations in terms of programmes and project",
+    "assessment_type_section_guid": "3757c54c-b9ed-4e06-a130-2027004d4a66",
+    "answer_source": "Pre-Defined",
+    "answer_option": "Mutually Exclusive",
+    "question_number": 2,
+    "answer_data_type": "Text"
+  },
+  {
+    "guid": "c1eaf751-ccca-499e-a5ab-76dca89a7b72",
+    "title": "The organisation knows the relationship between organisational strategies, programme planning and project planning",
+    "assessment_type_section_guid": "3757c54c-b9ed-4e06-a130-2027004d4a66",
+    "answer_source": "Pre-Defined",
+    "answer_option": "Mutually Exclusive",
+    "question_number": 3,
+    "answer_data_type": "Text"
+  },
+  {
+    "guid": "86574230-53a0-48c4-9bcb-9ccbb5c10760",
+    "title": "The organisation has the ability and skills to link project planning to the organisational structure",
+    "assessment_type_section_guid": "3757c54c-b9ed-4e06-a130-2027004d4a66",
+    "answer_source": "Pre-Defined",
+    "answer_option": "Mutually Inclusive",
+    "question_number": 4,
+    "answer_data_type": "Text"
+  },
+  {
+    "guid": "9e6252ca-3097-4911-8a9b-c3f5ba635001",
+    "title": "The organisation know the different phases in a project cycle",
+    "assessment_type_section_guid": "3757c54c-b9ed-4e06-a130-2027004d4a66",
+    "answer_source": "Pre-Defined",
+    "answer_option": "Mutually Exclusive",
+    "question_number": 5,
+    "answer_data_type": "Text"
+  },
+  {
+    "guid": "0e7724d5-c507-4705-b005-ad96a339d66a",
+    "title": "The organisation know the three components of project management",
+    "assessment_type_section_guid": "1348437c-de25-4bfc-8bfe-6c610ce3ea4a",
+    "answer_source": "Pre-Defined",
+    "answer_option": "Mutually Exclusive",
+    "question_number": 6,
+    "answer_data_type": "Text"
+  },
+  {
+    "guid": "804bce15-da6b-4f86-9f02-93229ddcecc8",
+    "title": " The organisation has clearly defined roles for the project manager",
+    "assessment_type_section_guid": "1348437c-de25-4bfc-8bfe-6c610ce3ea4a",
+    "answer_source": "Pre-Defined",
+    "answer_option": "Mutually Exclusive",
+    "question_number": 7,
+    "answer_data_type": "Text"
+  },
+  {
+    "guid": "d1c7b788-4226-4499-bd24-fde429a34f69",
+    "title": "The organisation has clearly defined roles of project team members",
+    "assessment_type_section_guid": "1348437c-de25-4bfc-8bfe-6c610ce3ea4a",
+    "answer_source": "Pre-Defined",
+    "answer_option": "Mutually Exclusive",
+    "question_number": 8,
+    "answer_data_type": "Text"
+  },
+  {
+    "guid": "b98bd1a8-130d-49e1-9c7d-9ca29b1986dc",
+    "title": "The organisation has knowledge of the three overriding factors that need to be taken into account when implementing projects",
+    "assessment_type_section_guid": "1348437c-de25-4bfc-8bfe-6c610ce3ea4a",
+    "answer_source": "Pre-Defined",
+    "answer_option": "Mutually Exclusive",
+    "question_number": 9,
+    "answer_data_type": "Text"
+  },
+  {
+    "guid": "e7af4693-999c-42b2-b162-3d83da16ab93",
+    "title": "The organisation have basic understanding of project planning, budget and finances as well as staff and stakeholders",
+    "assessment_type_section_guid": "ec948ca0-5af5-4ce0-be5f-4b8d49f69379",
+    "answer_source": "Pre-Defined",
+    "answer_option": "Mutually Exclusive",
+    "question_number": 10,
+    "answer_data_type": "Text"
+  },
+  {
+    "guid": "dfa88e13-be24-4f29-b815-baca3a13936b",
+    "title": " The project manager(s) understand(s) the process of project planning",
+    "assessment_type_section_guid": "ec948ca0-5af5-4ce0-be5f-4b8d49f69379",
+    "answer_source": "Pre-Defined",
+    "answer_option": "Mutually Exclusive",
+    "question_number": 11,
+    "answer_data_type": "Text"
+  },
+  {
+    "guid": "0a6f8372-fe2a-4b32-9c73-b10a37b4286f",
+    "title": "The project team know how to define a problem, collect, analyse and write up of problem related information",
+    "assessment_type_section_guid": "ec948ca0-5af5-4ce0-be5f-4b8d49f69379",
+    "answer_source": "Pre-Defined",
+    "answer_option": "Mutually Exclusive",
+    "question_number": 12,
+    "answer_data_type": "Text"
+  },
+  {
+    "guid": "470f8cfe-d384-41a5-bdb6-17ecfa493cc8",
+    "title": " The project team know how to clearly define a target group for each project",
+    "assessment_type_section_guid": "ec948ca0-5af5-4ce0-be5f-4b8d49f69379",
+    "answer_source": "Pre-Defined",
+    "answer_option": "Mutually Exclusive",
+    "question_number": 13,
+    "answer_data_type": "Text"
+  },
+  {
+    "guid": "3b74bf1c-58ad-492b-b559-0d86add980cf",
+    "title": "The project team know how to conduct strength, weaknesses, opportunities and threats (SWOT) analysis",
+    "assessment_type_section_guid": "ec948ca0-5af5-4ce0-be5f-4b8d49f69379",
+    "answer_source": "Pre-Defined",
+    "answer_option": "Mutually Exclusive",
+    "question_number": 14,
+    "answer_data_type": "Text"
+  },
+  {
+    "guid": "010e4b8d-77d6-47b4-8dca-0a731da05a71",
+    "title": "The project team know how to set SMART objectives for each project",
+    "assessment_type_section_guid": "ec948ca0-5af5-4ce0-be5f-4b8d49f69379",
+    "answer_source": "Pre-Defined",
+    "answer_option": "Mutually Exclusive",
+    "question_number": 15,
+    "answer_data_type": "Text"
+  },
+  {
+    "guid": "61323a98-0ba7-46e8-8376-450f388dff6f",
+    "title": "The project team know how to prepare, plan, implement, monitor and evaluate a project",
+    "assessment_type_section_guid": "ec948ca0-5af5-4ce0-be5f-4b8d49f69379",
+    "answer_source": "Pre-Defined",
+    "answer_option": "Mutually Exclusive",
+    "question_number": 16,
+    "answer_data_type": "Text"
+  },
+  {
+    "guid": "cd06bbc6-4848-46d1-b074-65d0c6bcc0c0",
+    "title": "The project team know how to prepare budget and finance plans",
+    "assessment_type_section_guid": "ec948ca0-5af5-4ce0-be5f-4b8d49f69379",
+    "answer_source": "Pre-Defined",
+    "answer_option": "Mutually Exclusive",
+    "question_number": 17,
+    "answer_data_type": "Text"
+  },
+  {
+    "guid": "cb95747e-86e6-42f9-9477-bcf5e6fab5e9",
+    "title": "The project team know how to plan for, recruit, appoint and manage human resource",
+    "assessment_type_section_guid": "ec948ca0-5af5-4ce0-be5f-4b8d49f69379",
+    "answer_source": "Pre-Defined",
+    "answer_option": "Mutually Exclusive",
+    "question_number": 18,
+    "answer_data_type": "Text"
+  },
+  {
+    "guid": "b111bb7f-603b-462b-8fbf-29117cae1d43",
+    "title": "The project manager(s) have people skills to ensure effective management of project team",
+    "assessment_type_section_guid": "ec948ca0-5af5-4ce0-be5f-4b8d49f69379",
+    "answer_source": "Pre-Defined",
+    "answer_option": "Mutually Exclusive",
+    "question_number": 19,
+    "answer_data_type": "Text"
+  },
+  {
+    "guid": "42155575-9758-4b5b-b653-689f9d762e6e",
+    "title": "The project team follow the project implementation processes",
+    "assessment_type_section_guid": "d251c6f4-a94f-499d-98c4-eac7ec39fe38",
+    "answer_source": "Pre-Defined",
+    "answer_option": "Mutually Exclusive",
+    "question_number": 20,
+    "answer_data_type": "Text"
+  },
+  {
+    "guid": "1b8c05bb-ea5e-4bf8-828b-e1068bf242ed",
+    "title": "The project team has effective communication mechanisms",
+    "assessment_type_section_guid": "d251c6f4-a94f-499d-98c4-eac7ec39fe38",
+    "answer_source": "Pre-Defined",
+    "answer_option": "Mutually Exclusive",
+    "question_number": 21,
+    "answer_data_type": "Text"
+  },
+  {
+    "guid": "61f468ed-04b0-4d2d-9bb0-6d08e0e52efc",
+    "title": "The project team has effective project control system",
+    "assessment_type_section_guid": "d251c6f4-a94f-499d-98c4-eac7ec39fe38",
+    "answer_source": "Pre-Defined",
+    "answer_option": "Mutually Exclusive",
+    "question_number": 22,
+    "answer_data_type": "Text"
+  },
+  {
+    "guid": "c65dd19d-c96f-4dbb-a1f5-1aa50a2f63f2",
+    "title": "The organisation has support system for project team to ensure high team performance",
+    "assessment_type_section_guid": "d251c6f4-a94f-499d-98c4-eac7ec39fe38",
+    "answer_source": "Pre-Defined",
+    "answer_option": "Mutually Exclusive",
+    "question_number": 23,
+    "answer_data_type": "Text"
+  },
+  {
+    "guid": "bb2f414b-8dae-4d0d-867a-1d28d38983ec",
+    "title": "The organisation know how to mobilise resources for its work and functions",
+    "assessment_type_section_guid": "c71d2573-2846-4a06-8edb-c1e564a9c3d4",
+    "answer_source": "Pre-Defined",
+    "answer_option": "Mutually Exclusive",
+    "question_number": 1,
+    "answer_data_type": "Text"
+  },
+  {
+    "guid": "11a41611-78ce-4bc9-aa92-93f102730a15",
+    "title": "The organisation know how to identify potential funders to support their programmes",
+    "assessment_type_section_guid": "c71d2573-2846-4a06-8edb-c1e564a9c3d4",
+    "answer_source": "Pre-Defined",
+    "answer_option": "Mutually Exclusive",
+    "question_number": 2,
+    "answer_data_type": "Text"
+  },
+  {
+    "guid": "bad62157-274c-4f55-b341-c23f3b3bc0ce",
+    "title": "The organisation has existing partners for support of its work financially and material",
+    "assessment_type_section_guid": "c71d2573-2846-4a06-8edb-c1e564a9c3d4",
+    "answer_source": "Pre-Defined",
+    "answer_option": "Mutually Exclusive",
+    "question_number": 3,
+    "answer_data_type": "Text"
+  },
+  {
+    "guid": "718fc849-db04-4dfc-a135-7d6dfac2c816",
+    "title": "The organisation has networks that it uses to mobilise its resources",
+    "assessment_type_section_guid": "c71d2573-2846-4a06-8edb-c1e564a9c3d4",
+    "answer_source": "Pre-Defined",
+    "answer_option": "Mutually Exclusive",
+    "question_number": 4,
+    "answer_data_type": "Text"
+  },
+  {
+    "guid": "efec0427-91bb-4e0b-b039-e10e9b22066a",
+    "title": " The organisation know and has a fundraising strategy and plan",
+    "assessment_type_section_guid": "05f8637a-4f29-4891-ba32-097b4809fd99",
+    "answer_source": "Pre-Defined",
+    "answer_option": "Mutually Exclusive",
+    "question_number": 5,
+    "answer_data_type": "Text"
+  },
+  {
+    "guid": "a1234a9d-1687-4566-bc92-7f6fd02c7c5a",
+    "title": "The organisation know the types of funders to be approached for fund raising",
+    "assessment_type_section_guid": "05f8637a-4f29-4891-ba32-097b4809fd99",
+    "answer_source": "Pre-Defined",
+    "answer_option": "Mutually Exclusive",
+    "question_number": 6,
+    "answer_data_type": "Text"
+  },
+  {
+    "guid": "c525b4bd-e693-4cfc-8255-914329ba2faf",
+    "title": "The organisation the different methods of fundraising for its work",
+    "assessment_type_section_guid": "05f8637a-4f29-4891-ba32-097b4809fd99",
+    "answer_source": "Pre-Defined",
+    "answer_option": "Mutually Exclusive",
+    "question_number": 7,
+    "answer_data_type": "Text"
+  },
+  {
+    "guid": "f818e9b8-e0f4-4d1a-9737-6b5247ad0be6",
+    "title": "The organisation knows that non-financial giving is fundraising for sustainability",
+    "assessment_type_section_guid": "05f8637a-4f29-4891-ba32-097b4809fd99",
+    "answer_source": "Pre-Defined",
+    "answer_option": "Mutually Exclusive",
+    "question_number": 8,
+    "answer_data_type": "Text"
+  },
+  {
+    "guid": "686fe8f3-4148-40ef-a5d3-377d4e33cbf5",
+    "title": "The organisation know how to develop a funding proposal for its programmes",
+    "assessment_type_section_guid": "79c427b3-8912-4a2c-95c1-9868ae9f7231",
+    "answer_source": "Pre-Defined",
+    "answer_option": "Mutually Exclusive",
+    "question_number": 10,
+    "answer_data_type": "Text"
+  },
+  {
+    "guid": "a909d82d-5604-4117-9db7-4297139d29c1",
+    "title": "The organisation has guidelines for preparing funding proposals",
+    "assessment_type_section_guid": "79c427b3-8912-4a2c-95c1-9868ae9f7231",
+    "answer_source": "Pre-Defined",
+    "answer_option": "Mutually Exclusive",
+    "question_number": 11,
+    "answer_data_type": "Text"
+  },
+  {
+    "guid": "f8f9396b-6c71-42f7-ab77-76670f4d66c4",
+    "title": "The organisation knows the steps to be followed is submitting funding proposals",
+    "assessment_type_section_guid": "79c427b3-8912-4a2c-95c1-9868ae9f7231",
+    "answer_source": "Pre-Defined",
+    "answer_option": "Mutually Exclusive",
+    "question_number": 12,
+    "answer_data_type": "Text"
+  },
+  {
+    "guid": "bdcc81bb-36b1-4741-8f2a-9544ff06f287",
+    "title": "The organisation knows the content areas need to be covered in a funding proposal",
+    "assessment_type_section_guid": "79c427b3-8912-4a2c-95c1-9868ae9f7231",
+    "answer_source": "Pre-Defined",
+    "answer_option": "Mutually Exclusive",
+    "question_number": 13,
+    "answer_data_type": "Text"
+  },
+  {
+    "guid": "660fa03f-035f-443f-991e-03e4feb53aaa",
+    "title": " The organisation knows the standards to be followed when conducting fundraising",
+    "assessment_type_section_guid": "cc4f7d28-faae-44f4-9a7e-4b38dc18df61",
+    "answer_source": "Pre-Defined",
+    "answer_option": "Mutually Exclusive",
+    "question_number": 14,
+    "answer_data_type": "Text"
+  },
+  {
+    "guid": "f012f2cd-708c-4022-95ab-2656d7aca795",
+    "title": "The organisation has guidelines for ethical practice for fundraising",
+    "assessment_type_section_guid": "cc4f7d28-faae-44f4-9a7e-4b38dc18df61",
+    "answer_source": "Pre-Defined",
+    "answer_option": "Mutually Exclusive",
+    "question_number": 15,
+    "answer_data_type": "Text"
+  },
+  {
+    "guid": "9cd7dc3c-c5f4-4a15-b0e2-a35f34b4e76f",
+    "title": "The organisation has a code of conduct for its fundraisers",
+    "assessment_type_section_guid": "cc4f7d28-faae-44f4-9a7e-4b38dc18df61",
+    "answer_source": "Pre-Defined",
+    "answer_option": "Mutually Exclusive",
+    "question_number": 16,
+    "answer_data_type": "Text"
+  },
+  {
+    "guid": "52e453ba-91e0-4d66-acf4-d09e61d0fcea",
+    "title": "The organisation has an understanding of what networking is",
+    "assessment_type_section_guid": "877f3471-eb5d-4342-9949-519c590d1370",
+    "answer_source": "Pre-Defined",
+    "answer_option": "Mutually Exclusive",
+    "question_number": 1,
+    "answer_data_type": "Text"
+  },
+  {
+    "guid": "0fbaef6b-cbcd-4c14-9d25-1388c8ad82ea",
+    "title": "The organisation knows the benefits of networking",
+    "assessment_type_section_guid": "877f3471-eb5d-4342-9949-519c590d1370",
+    "answer_source": "Pre-Defined",
+    "answer_option": "Mutually Exclusive",
+    "question_number": 2,
+    "answer_data_type": "Text"
+  },
+  {
+    "guid": "373ebe6b-94a1-47dd-80d3-4b2ded287b81",
+    "title": "The organisation has created awareness about itself and its programmes through its networks",
+    "assessment_type_section_guid": "877f3471-eb5d-4342-9949-519c590d1370",
+    "answer_source": "Pre-Defined",
+    "answer_option": "Mutually Exclusive",
+    "question_number": 3,
+    "answer_data_type": "Text"
+  },
+  {
+    "guid": "62c94c5d-289c-49b9-9925-b4361a2c9b56",
+    "title": "The organisation’s networks have increased its opportunities for acquiring resources it needs",
+    "assessment_type_section_guid": "877f3471-eb5d-4342-9949-519c590d1370",
+    "answer_source": "Pre-Defined",
+    "answer_option": "Mutually Exclusive",
+    "question_number": 4,
+    "answer_data_type": "Text"
+  },
+  {
+    "guid": "8516f482-718d-41cc-b78e-d6fe334cdc19",
+    "title": "The organisation has a well formulated communication strategy that the organisation is implementing",
+    "assessment_type_section_guid": "f5d6365f-7d3c-40d0-bab0-f497b15db4ef",
+    "answer_source": "Pre-Defined",
+    "answer_option": "Mutually Exclusive",
+    "question_number": 5,
+    "answer_data_type": "Text"
+  },
+  {
+    "guid": "9fb372cc-e6d5-4f79-97db-f2fe2efb0f85",
+    "title": "The organisation has policy, systems and procedures for communicating with all stakeholders",
+    "assessment_type_section_guid": "f5d6365f-7d3c-40d0-bab0-f497b15db4ef",
+    "answer_source": "Pre-Defined",
+    "answer_option": "Mutually Exclusive",
+    "question_number": 6,
+    "answer_data_type": "Text"
+  },
+  {
+    "guid": "c2a11468-4dde-4afb-8916-b88e767ef221",
+    "title": "The organisation has a person or team responsible for coordinating the development and implementation of communication strategy",
+    "assessment_type_section_guid": "f5d6365f-7d3c-40d0-bab0-f497b15db4ef",
+    "answer_source": "Pre-Defined",
+    "answer_option": "Mutually Exclusive",
+    "question_number": 7,
+    "answer_data_type": "Text"
+  },
+  {
+    "guid": "021e4b89-8292-4284-b2ee-ade80ddb9a4f",
+    "title": "The organisation knows and understand elements of an organisational communication strategy",
+    "assessment_type_section_guid": "97f16f17-558f-4df8-b498-3e24bbefa3bd",
+    "answer_source": "Pre-Defined",
+    "answer_option": "Mutually Exclusive",
+    "question_number": 9,
+    "answer_data_type": "Text"
+  },
+  {
+    "guid": "cb9a6b8e-98ac-48c4-b471-56a7226d1736",
+    "title": "The organisation has developed a unique organisational identity to promote itself and its work",
+    "assessment_type_section_guid": "97f16f17-558f-4df8-b498-3e24bbefa3bd",
+    "answer_source": "Pre-Defined",
+    "answer_option": "Mutually Exclusive",
+    "question_number": 10,
+    "answer_data_type": "Text"
+  },
+  {
+    "guid": "15bfc403-da36-4594-ae5f-1ed42c58fcdb",
+    "title": "The organisation has defined and agreed internally on the image it wants to project itself",
+    "assessment_type_section_guid": "97f16f17-558f-4df8-b498-3e24bbefa3bd",
+    "answer_source": "Pre-Defined",
+    "answer_option": "Mutually Exclusive",
+    "question_number": 11,
+    "answer_data_type": "Text"
+  },
+  {
+    "guid": "7f3ae5ec-fccd-4704-925e-e690ee8386f2",
+    "title": "The organisation has conducted its organisational identity review",
+    "assessment_type_section_guid": "97f16f17-558f-4df8-b498-3e24bbefa3bd",
+    "answer_source": "Pre-Defined",
+    "answer_option": "Mutually Exclusive",
+    "question_number": 12,
+    "answer_data_type": "Text"
+  },
+  {
+    "guid": "665ee102-7a08-409a-b25a-98328e4470ca",
+    "title": " The organisation’s logo, slogan, services and operating principles are reflected in all the organisation’s media (promotional materials)",
+    "assessment_type_section_guid": "97f16f17-558f-4df8-b498-3e24bbefa3bd",
+    "answer_source": "Pre-Defined",
+    "answer_option": "Mutually Exclusive",
+    "question_number": 13,
+    "answer_data_type": "Text"
+  },
+  {
+    "guid": "7cd15199-7935-4670-864d-66cebe5cc363",
+    "title": "The organisation has clearly defined its communication target audience",
+    "assessment_type_section_guid": "df49603a-f535-41c2-adf5-3d6f2329c59d",
+    "answer_source": "Pre-Defined",
+    "answer_option": "Mutually Exclusive",
+    "question_number": 14,
+    "answer_data_type": "Text"
+  },
+  {
+    "guid": "38cadd1a-4fab-4aec-ba5e-fdcd712e409e",
+    "title": "The organisation has categorised its audience into primary and secondary targets",
+    "assessment_type_section_guid": "df49603a-f535-41c2-adf5-3d6f2329c59d",
+    "answer_source": "Pre-Defined",
+    "answer_option": "Mutually Exclusive",
+    "question_number": 15,
+    "answer_data_type": "Text"
+  },
+  {
+    "guid": "d781b66d-9ae2-4e61-9144-71ad33be8b6b",
+    "title": "The organisation regularly conducts audience analysis",
+    "assessment_type_section_guid": "df49603a-f535-41c2-adf5-3d6f2329c59d",
+    "answer_source": "Pre-Defined",
+    "answer_option": "Mutually Exclusive",
+    "question_number": 16,
+    "answer_data_type": "Text"
+  },
+  {
+    "guid": "02d8e422-5635-436c-8c5d-ca89af807fed",
+    "title": "The organisation uses different communication vehicles depending on the type of message and the target audience and what it wants to achieve",
+    "assessment_type_section_guid": "df49603a-f535-41c2-adf5-3d6f2329c59d",
+    "answer_source": "Pre-Defined",
+    "answer_option": "Mutually Exclusive",
+    "question_number": 17,
+    "answer_data_type": "Text"
+  },
+  {
+    "guid": "5c796e1f-d04a-428b-b7e1-782cabbc9fe3",
+    "title": "The CSO / NPO has received funding to sustain operations",
+    "assessment_type_section_guid": "4d7e2175-0852-4ab5-a697-e0e004f5287e",
+    "answer_source": "Pre-Defined",
+    "answer_option": "Mutually Exclusive",
+    "question_number": 1,
+    "answer_data_type": "Text"
+  },
+  {
+    "guid": "ae6d0c84-1bc1-4f37-a012-53c6333b1711",
+    "title": "The CSO / NPO has received funding from various donors/funders to sustain operations",
+    "assessment_type_section_guid": "4d7e2175-0852-4ab5-a697-e0e004f5287e",
+    "answer_source": "Pre-Defined",
+    "answer_option": "Mutually Exclusive",
+    "question_number": 2,
+    "answer_data_type": "Text"
+  },
+  {
+    "guid": "fc16dcb1-b468-497e-aa06-78d2a2585bc0",
+    "title": "The CSO / NPO has a long term (3-5 years) funding agreements with one of its donors",
+    "assessment_type_section_guid": "4d7e2175-0852-4ab5-a697-e0e004f5287e",
+    "answer_source": "Pre-Defined",
+    "answer_option": "Mutually Exclusive",
+    "question_number": 3,
+    "answer_data_type": "Text"
+  },
+  {
+    "guid": "154f9724-a86d-4255-b9d8-b7ba6b1f9393",
+    "title": "The total value of long term (3-5 years) funding agreements for the CSO / NPO",
+    "assessment_type_section_guid": "4d7e2175-0852-4ab5-a697-e0e004f5287e",
+    "answer_source": "Pre-Defined",
+    "answer_option": "Mutually Exclusive",
+    "question_number": 4,
+    "answer_data_type": "Text"
+  },
+  {
+    "guid": "4fe87be4-c580-4cc7-8aee-10e533b4d3aa",
+    "title": "The long-term funding of the CSO is coming to an end within this period",
+    "assessment_type_section_guid": "4d7e2175-0852-4ab5-a697-e0e004f5287e",
+    "answer_source": "Pre-Defined",
+    "answer_option": "Mutually Exclusive",
+    "question_number": 5,
+    "answer_data_type": "Text"
+  },
+  {
+    "guid": "f6733373-6ea4-4ef1-abe1-ca468a634f95",
+    "title": "The CSO / NPO has links to resources (financial and non-financial)",
+    "assessment_type_section_guid": "7b8e4e70-7750-4206-a2f4-a1aeff7429bf",
+    "answer_source": "Pre-Defined",
+    "answer_option": "Mutually Exclusive",
+    "question_number": 6,
+    "answer_data_type": "Text"
+  },
+  {
+    "guid": "7494bf73-a320-4728-8e8e-19b0c1240f8a",
+    "title": "The CSO / NPO has current links to resources (financial and non-financial)",
+    "assessment_type_section_guid": "7b8e4e70-7750-4206-a2f4-a1aeff7429bf",
+    "answer_source": "Pre-Defined",
+    "answer_option": "Mutually Exclusive",
+    "question_number": 7,
+    "answer_data_type": "Text"
+  },
+  {
+    "guid": "8fa8d7ee-1982-4af8-b181-fc431650c309",
+    "title": "The CSO/NPO is being assisted to build more links to resources (financial and non-financial)",
+    "assessment_type_section_guid": "7b8e4e70-7750-4206-a2f4-a1aeff7429bf",
+    "answer_source": "Pre-Defined",
+    "answer_option": "Mutually Exclusive",
+    "question_number": 8,
+    "answer_data_type": "Text"
+  },
+  {
+    "guid": "af31a91b-8d56-47b2-84e4-bf6fbdeb0731",
+    "title": "The CSO / NPO is receiving grant from the state (government department or government Agency)",
+    "assessment_type_section_guid": "7b8e4e70-7750-4206-a2f4-a1aeff7429bf",
+    "answer_source": "Pre-Defined",
+    "answer_option": "Mutually Exclusive",
+    "question_number": 9,
+    "answer_data_type": "Text"
+  },
+  {
+    "guid": "8ce5d03d-02b2-426a-9ec7-d5d09b775aaf",
+    "title": "The CSO / NPO is receiving grant from the private sector (company, international donors, foundations, individuals)",
+    "assessment_type_section_guid": "7b8e4e70-7750-4206-a2f4-a1aeff7429bf",
+    "answer_source": "Pre-Defined",
+    "answer_option": "Mutually Exclusive",
+    "question_number": 10,
+    "answer_data_type": "Text"
+  },
+  {
+    "guid": "f7254f5e-f9c7-4f9f-956d-b5baca0b01cd",
+    "title": "The CSO / NPO has a budget drawn for all its operations",
+    "assessment_type_section_guid": "d890bfe2-2a21-4086-96f8-a54b3290911d",
+    "answer_source": "Pre-Defined",
+    "answer_option": "Mutually Exclusive",
+    "question_number": 11,
+    "answer_data_type": "Text"
+  },
+  {
+    "guid": "4e8e98df-3b69-49cc-8100-14f4f03cd712",
+    "title": "The CSO / NPO budget covers its programmes and operation functions",
+    "assessment_type_section_guid": "d890bfe2-2a21-4086-96f8-a54b3290911d",
+    "answer_source": "Pre-Defined",
+    "answer_option": "Mutually Exclusive",
+    "question_number": 12,
+    "answer_data_type": "Text"
+  },
+  {
+    "guid": "98394c50-fed7-48e9-ad71-8a5ec7bb6568",
+    "title": "The CSO / NPO has sources of funding for programmes and support functions",
+    "assessment_type_section_guid": "d890bfe2-2a21-4086-96f8-a54b3290911d",
+    "answer_source": "Pre-Defined",
+    "answer_option": "Mutually Exclusive",
+    "question_number": 13,
+    "answer_data_type": "Text"
+  },
+  {
+    "guid": "a5bab762-be9f-4eeb-b56e-7ca4cac18749",
+    "title": "The CSO / NPO has a regular donor or funder for the past three (3) years for its work",
+    "assessment_type_section_guid": "d890bfe2-2a21-4086-96f8-a54b3290911d",
+    "answer_source": "Pre-Defined",
+    "answer_option": "Mutually Exclusive",
+    "question_number": 14,
+    "answer_data_type": "Text"
+  },
+  {
+    "guid": "d2bc2e1e-faee-4289-9510-7b65be56a50e",
+    "title": "The CSO / NPO has a fundraising / resource mobilisation strategy and plan",
+    "assessment_type_section_guid": "28729936-5254-44aa-8b1f-05fae916b110",
+    "answer_source": "Pre-Defined",
+    "answer_option": "Mutually Exclusive",
+    "question_number": 15,
+    "answer_data_type": "Text"
+  },
+  {
+    "guid": "6229034b-e7c2-4ab4-832e-11c4fe5cbee7",
+    "title": "The CSO/NPO has a person doing fundraising/resource mobilisation for its work",
+    "assessment_type_section_guid": "28729936-5254-44aa-8b1f-05fae916b110",
+    "answer_source": "Pre-Defined",
+    "answer_option": "Mutually Exclusive",
+    "question_number": 16,
+    "answer_data_type": "Text"
+  },
+  {
+    "guid": "8bea0097-375f-4b25-b17d-6b5752778490",
+    "title": "The CSO / NPO does write fundraising/resource mobilisation proposal to donors / funders",
+    "assessment_type_section_guid": "28729936-5254-44aa-8b1f-05fae916b110",
+    "answer_source": "Pre-Defined",
+    "answer_option": "Mutually Exclusive",
+    "question_number": 17,
+    "answer_data_type": "Text"
+  },
+  {
+    "guid": "b0f84436-c277-4c3f-b53d-6b49b68ad332",
+    "title": "The CSO / NPO does work with other organisations to raise funding or resources from donors / funders",
+    "assessment_type_section_guid": "28729936-5254-44aa-8b1f-05fae916b110",
+    "answer_source": "Pre-Defined",
+    "answer_option": "Mutually Exclusive",
+    "question_number": 18,
+    "answer_data_type": "Text"
+  },
+  {
+    "guid": "7d7f1cf7-337f-4f4f-8e9a-1af4d4cc9190",
+    "title": "The CSO needs funding to start its programmes and projects",
+    "assessment_type_section_guid": "89b01718-1686-46e8-9bd3-0534065c2a22",
+    "answer_source": "Pre-Defined",
+    "answer_option": "Mutually Exclusive",
+    "question_number": 19,
+    "answer_data_type": "Text"
+  },
+  {
+    "guid": "bdc3181b-bcb1-4074-bb1d-530763056dbb",
+    "title": "The CSO / NPO needs funding for its programmes and projects work",
+    "assessment_type_section_guid": "89b01718-1686-46e8-9bd3-0534065c2a22",
+    "answer_source": "Pre-Defined",
+    "answer_option": "Mutually Exclusive",
+    "question_number": 20,
+    "answer_data_type": "Text"
+  },
+  {
+    "guid": "f3526d4f-820b-458e-915a-aee04901a36d",
+    "title": "The CSO / NPO needs funding for its support and administrative functions",
+    "assessment_type_section_guid": "89b01718-1686-46e8-9bd3-0534065c2a22",
+    "answer_source": "Pre-Defined",
+    "answer_option": "Mutually Exclusive",
+    "question_number": 21,
+    "answer_data_type": "Text"
+  },
+  {
+    "guid": "b68303af-5cb7-46c4-bc78-171ebe461714",
+    "title": "The CSO / NPO has defined its funding priority needs",
+    "assessment_type_section_guid": "89b01718-1686-46e8-9bd3-0534065c2a22",
+    "answer_source": "Pre-Defined",
+    "answer_option": "Mutually Exclusive",
+    "question_number": 22,
+    "answer_data_type": "Text"
+  },
+  {
+    "guid": "34b1999c-67a5-4139-874a-68e6496d2db9",
+    "title": "The NPO / CSO needs technical expertise to improve its work quality",
+    "assessment_type_section_guid": "027a0a54-cc7c-4950-b3fc-06f10e14994b",
+    "answer_source": "Pre-Defined",
+    "answer_option": "Mutually Exclusive",
+    "question_number": 23,
+    "answer_data_type": "Text"
+  },
+  {
+    "guid": "1c3e1b3f-0a47-48b4-ad8b-7220590db2a1",
+    "title": "The CSO / NPO have management expertise to manage the organisation",
+    "assessment_type_section_guid": "027a0a54-cc7c-4950-b3fc-06f10e14994b",
+    "answer_source": "Pre-Defined",
+    "answer_option": "Mutually Exclusive",
+    "question_number": 24,
+    "answer_data_type": "Text"
+  },
+  {
+    "guid": "d8de70f9-8687-4e6d-a342-31eb32ff79fd",
+    "title": "The CSO / NPO have management financial management expertise to support the organisation",
+    "assessment_type_section_guid": "027a0a54-cc7c-4950-b3fc-06f10e14994b",
+    "answer_source": "Pre-Defined",
+    "answer_option": "Mutually Exclusive",
+    "question_number": 25,
+    "answer_data_type": "Text"
+  },
+  {
+    "guid": "406c51ed-624c-4ca7-8d91-ee7e65f10266",
+    "title": "The CSO / NPO its own office space to do its business",
+    "assessment_type_section_guid": "027a0a54-cc7c-4950-b3fc-06f10e14994b",
+    "answer_source": "Pre-Defined",
+    "answer_option": "Mutually Exclusive",
+    "question_number": 26,
+    "answer_data_type": "Text"
+  },
+  {
+    "guid": "adcf4ded-017b-4788-85b1-36f96ebc32c2",
+    "title": "The CSO / NPO has its own office equipment (chairs, desks, computers, printers, phones) for its work",
+    "assessment_type_section_guid": "027a0a54-cc7c-4950-b3fc-06f10e14994b",
+    "answer_source": "Pre-Defined",
+    "answer_option": "Mutually Exclusive",
+    "question_number": 27,
+    "answer_data_type": "Text"
+  },
+  {
+    "guid": "face8b30-1833-4493-9f35-fe94186adb23",
+    "title": "The CSO / NPO has its own vehicle to support its work",
+    "assessment_type_section_guid": "027a0a54-cc7c-4950-b3fc-06f10e14994b",
+    "answer_source": "Pre-Defined",
+    "answer_option": "Mutually Exclusive",
+    "question_number": 28,
+    "answer_data_type": "Text"
+  },
+  {
+    "guid": "8d83299e-dc42-4149-84fc-29da633978e2",
+    "title": "The CSO / NPO would need funding for its programme / projects to start operations ",
+    "assessment_type_section_guid": "6ae9aaa7-6420-4048-8d91-e375ffb44a0d",
+    "answer_source": "Pre-Defined",
+    "answer_option": "Mutually Exclusive",
+    "question_number": 29,
+    "answer_data_type": "Text"
+  },
+  {
+    "guid": "c9a93c0c-2ca3-4b74-9662-358ae35d2016",
+    "title": "The CSO / NPO would need funding for its support and administrative support functions",
+    "assessment_type_section_guid": "6ae9aaa7-6420-4048-8d91-e375ffb44a0d",
+    "answer_source": "Pre-Defined",
+    "answer_option": "Mutually Exclusive",
+    "question_number": 30,
+    "answer_data_type": "Text"
+  },
+  {
+    "guid": "a394a253-a3a7-41b8-8bb2-855c924386dd",
+    "title": "The CSO / NPO would need funding for its office equipment (printers, computers, chairs, desks etc)",
+    "assessment_type_section_guid": "6ae9aaa7-6420-4048-8d91-e375ffb44a0d",
+    "answer_source": "Pre-Defined",
+    "answer_option": "Mutually Exclusive",
+    "question_number": 31,
+    "answer_data_type": "Text"
+  },
+  {
+    "guid": "51045b93-b351-44fa-ac51-8ffe9c4c72eb",
+    "title": "The CSO / NPO would need funding for its office rental needs",
+    "assessment_type_section_guid": "6ae9aaa7-6420-4048-8d91-e375ffb44a0d",
+    "answer_source": "Pre-Defined",
+    "answer_option": "Mutually Exclusive",
+    "question_number": 32,
+    "answer_data_type": "Text"
+  },
+  {
+    "guid": "390898d2-80fa-4a64-bb56-ca693f51211a",
+    "title": "The CSO NPO has received funding to sustain operations",
+    "assessment_type_section_guid": "db3658fa-ce62-4b62-906a-12b04caba055",
+    "answer_source": "Pre-Defined",
+    "answer_option": "Mutually Exclusive",
+    "question_number": 1,
+    "answer_data_type": "Text"
+  },
+  {
+    "guid": "ca809fe1-02d0-4ddf-b356-f7e9b966ca91",
+    "title": "The CSO / NPO has received funding from various donors / funders to sustain operations",
+    "assessment_type_section_guid": "db3658fa-ce62-4b62-906a-12b04caba055",
+    "answer_source": "Pre-Defined",
+    "answer_option": "Mutually Exclusive",
+    "question_number": 2,
+    "answer_data_type": "Text"
+  },
+  {
+    "guid": "62d166a3-63a0-4a75-973d-ff1900b2142c",
+    "title": "The CSO /NPO has a long term (3-5 years) funding agreements with one of its donors",
+    "assessment_type_section_guid": "db3658fa-ce62-4b62-906a-12b04caba055",
+    "answer_source": "Pre-Defined",
+    "answer_option": "Mutually Exclusive",
+    "question_number": 3,
+    "answer_data_type": "Text"
+  },
+  {
+    "guid": "4cc1e2d9-137b-4100-8efa-5d137f12aa35",
+    "title": "The total value of long term (3-5 years) funding agreements for the CSO/NPO",
+    "assessment_type_section_guid": "db3658fa-ce62-4b62-906a-12b04caba055",
+    "answer_source": "Pre-Defined",
+    "answer_option": "Mutually Exclusive",
+    "question_number": 4,
+    "answer_data_type": "Text"
+  },
+  {
+    "guid": "bc79bf8b-16e7-4836-a7db-a0e0a9fd441d",
+    "title": "The long-term funding of the CSO is coming to an end within this period",
+    "assessment_type_section_guid": "db3658fa-ce62-4b62-906a-12b04caba055",
+    "answer_source": "Pre-Defined",
+    "answer_option": "Mutually Exclusive",
+    "question_number": 5,
+    "answer_data_type": "Text"
+  },
+  {
+    "guid": "788cf8c3-6c31-4d32-af51-4ad0f65b88e0",
+    "title": "The CSO / NPO has links to resources (financial and non-financial)",
+    "assessment_type_section_guid": "8578180a-1cf0-450a-8f72-1508acec048a",
+    "answer_source": "Pre-Defined",
+    "answer_option": "Mutually Exclusive",
+    "question_number": 6,
+    "answer_data_type": "Text"
+  },
+  {
+    "guid": "8d07aaf7-25ea-4031-8c89-5195d47a3d94",
+    "title": "The CSO / NPO has current links to resources (financial and non-financial)",
+    "assessment_type_section_guid": "8578180a-1cf0-450a-8f72-1508acec048a",
+    "answer_source": "Pre-Defined",
+    "answer_option": "Mutually Exclusive",
+    "question_number": 7,
+    "answer_data_type": "Text"
+  },
+  {
+    "guid": "c49b39c7-b4cc-41f0-9ca1-3ee194f5222f",
+    "title": "The CSO / NPO is being assisted to build more links to resources (financial and non-financial)",
+    "assessment_type_section_guid": "8578180a-1cf0-450a-8f72-1508acec048a",
+    "answer_source": "Pre-Defined",
+    "answer_option": "Mutually Exclusive",
+    "question_number": 8,
+    "answer_data_type": "Text"
+  },
+  {
+    "guid": "e05033f4-3be2-4d67-94e8-4d0d57eec690",
+    "title": "The CSO / NPO is receiving grant from the state (government department or government Agency)",
+    "assessment_type_section_guid": "8578180a-1cf0-450a-8f72-1508acec048a",
+    "answer_source": "Pre-Defined",
+    "answer_option": "Mutually Exclusive",
+    "question_number": 9,
+    "answer_data_type": "Text"
+  },
+  {
+    "guid": "0dae0033-b762-4b14-8aef-53639fbe36e7",
+    "title": "The CSO / NPO is receiving grant from the private sector (company, international donors, foundations, individuals)",
+    "assessment_type_section_guid": "8578180a-1cf0-450a-8f72-1508acec048a",
+    "answer_source": "Pre-Defined",
+    "answer_option": "Mutually Exclusive",
+    "question_number": 10,
+    "answer_data_type": "Text"
+  },
+  {
+    "guid": "21103176-675c-4005-9176-56f88bd6d29a",
+    "title": "The CSO / NPO know about existence of networks (national, provincial local networks)",
+    "assessment_type_section_guid": "66aaed0f-66a8-4ada-8109-28a97ee3fc3a",
+    "answer_source": "Pre-Defined",
+    "answer_option": "Mutually Exclusive",
+    "question_number": 11,
+    "answer_data_type": "Text"
+  },
+  {
+    "guid": "73a351d0-ccc0-4ea1-abb8-a7dffb11e75f",
+    "title": "The CSO / NPO has an interest in joining networks working around the organisations programmes",
+    "assessment_type_section_guid": "66aaed0f-66a8-4ada-8109-28a97ee3fc3a",
+    "answer_source": "Pre-Defined",
+    "answer_option": "Mutually Exclusive",
+    "question_number": 12,
+    "answer_data_type": "Text"
+  },
+  {
+    "guid": "b25b4062-be8c-4073-9cc1-82cde42c981f",
+    "title": "The CSO / NPO see value being a member of networks to benefit the organisations",
+    "assessment_type_section_guid": "66aaed0f-66a8-4ada-8109-28a97ee3fc3a",
+    "answer_source": "Pre-Defined",
+    "answer_option": "Mutually Exclusive",
+    "question_number": 13,
+    "answer_data_type": "Text"
+  },
+  {
+    "guid": "4773d0fa-d1aa-4f1e-a0b1-907327f50ab4",
+    "title": "The CSO/NPO has interest in establishing a local network of CSO/NPO in the area",
+    "assessment_type_section_guid": "66aaed0f-66a8-4ada-8109-28a97ee3fc3a",
+    "answer_source": "Pre-Defined",
+    "answer_option": "Mutually Exclusive",
+    "question_number": 14,
+    "answer_data_type": "Text"
   }
 ]

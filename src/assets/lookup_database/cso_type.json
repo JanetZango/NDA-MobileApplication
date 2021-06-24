@@ -1,46 +1,46 @@
 [
   {
-    "guid": "e012f60c-5c1f-44a2-a8a0-0af17181a47f",
+    "guid": "da9af699-daa5-4e11-9545-0c55ac77b0cd",
     "title": "NPO",
     "description": "Non-Profit organisation "
   },
   {
-    "guid": "75165627-77bc-4a27-a96d-88c2be07118c",
+    "guid": "54992f8a-7502-4136-b82d-d880c292c8e4",
     "title": "CBO",
     "description": "Community based organisation "
   },
   {
-    "guid": "912f22cd-8d59-439b-9bdf-c18e0dc023aa",
+    "guid": "942bd053-afc6-47e7-8270-7c49a025f8ba",
     "title": "FBO",
     "description": "Faith based organisation "
   },
   {
-    "guid": "206f0270-a743-49f7-9c20-8ba3014340b4",
+    "guid": "9ce38af7-1cb3-44aa-9769-57f3a8df1336",
     "title": "ECD Centre",
     "description": "Early childhood development"
   },
   {
-    "guid": "a1874b7f-132b-4813-8bf7-c9493bd20edb",
+    "guid": "7348c1ec-5d97-4088-ae4d-4cfbdc52a7f3",
     "title": "Cooperative",
     "description": "Cooperative"
   },
   {
-    "guid": "92ea063f-ad08-413c-957e-99dc5c80831a",
+    "guid": "e471260d-8203-4f4b-89e3-237e91bea83b",
     "title": "Community structure",
     "description": "Community structure"
   },
   {
-    "guid": "f01be976-17dd-4d1d-b055-7a0c349640e5",
+    "guid": "d05a801c-c805-4e30-8735-27fff4c9458d",
     "title": "Company/CC",
     "description": "Company/CC"
   },
   {
-    "guid": "ca7b445b-e954-4158-91c6-d280e2b3a9a3",
+    "guid": "cae718c2-d3d0-40f9-85ae-e5dd695b05d1",
     "title": "DPO",
     "description": "Disability people organisation "
   },
   {
-    "guid": "705b7154-3c9a-4119-a7a0-3a41a9a878cc",
+    "guid": "f95bef17-8f69-4a59-b9f6-29d6e248993f",
     "title": "Sport",
     "description": "SPort"
   }
