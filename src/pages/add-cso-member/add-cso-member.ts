@@ -24,7 +24,7 @@ export class AddCsoMemberPage implements OnInit {
   private memberForm: FormGroup;
   private defaultRace = "African";
   private defaultGender = "Male";
-  private defaultMemberPositionGuid = "2300cae8-0a25-4f50-bf82-aad8fb8a7fd9";
+  private defaultMemberPositionGuid = "71f9d7f2-98e1-4340-a7ab-5849aba6da36";
   private defaultNationality = "South African";
   private defaultDisability = "No";
   private showPassportField = false;

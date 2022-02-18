@@ -8,22 +8,22 @@ import { Observable } from 'rxjs';
 @Injectable()
 export class LookUpService {
 
-    private AssessmentAnswer = "../../assets/lookup_database/assessment_answer.json";
-    private AssessmentQuestion = "../../assets/lookup_database/assessment_question.json"
-    private AssessmentType = "../../assets/lookup_database/assessment_type.json";
-    private AssessmentTypeSection = "../../assets/lookup_database/assessment_type_section.json";
-    private CapacityBuildingType = "../../assets/lookup_database/capacity_building_type.json";
-    private CsoSector = "../../assets/lookup_database/cso_sector.json";
-    private CsoType = "../../assets/lookup_database/cso_type.json";
-    private District = "../../assets/lookup_database/district.json";
-    private LocalMunicipality = "../../assets/lookup_database/municipality.json";
-    private MemberPosition = "../../assets/lookup_database/member_position.json";
-    private PartnerType = "../../assets/lookup_database/partner_type.json";
-    private Province = "../../assets/lookup_database/province.json";
-    private Mobilisation ="../../assets/lookup_database/cso_mobilization_method.json";
-    private QuestionAnswer = "../../assets/lookup_database/questions_and_answers.json"
-    private Partner = "../../assets/lookup_database/partner.json";
-    private FundingSource = "../../assets/lookup_database/funding_source.json";
+    private AssessmentAnswer = "./assets/lookup_database/assessment_answer.json";
+    private AssessmentQuestion = "./assets/lookup_database/assessment_question.json"
+    private AssessmentType = "./assets/lookup_database/assessment_type.json";
+    private AssessmentTypeSection = "./assets/lookup_database/assessment_type_section.json";
+    private CapacityBuildingType = "./assets/lookup_database/capacity_building_type.json";
+    private CsoSector = "./assets/lookup_database/cso_sector.json";
+    private CsoType = "./assets/lookup_database/cso_type.json";
+    private District = "./assets/lookup_database/district.json";
+    private LocalMunicipality = "./assets/lookup_database/municipality.json";
+    private MemberPosition = "./assets/lookup_database/member_position_new.json";
+    private PartnerType = "./assets/lookup_database/partner_type.json";
+    private Province = "./assets/lookup_database/province.json";
+    private Mobilisation ="./assets/lookup_database/cso_mobilization_method.json";
+    private QuestionAnswer = "./assets/lookup_database/questions_and_answers.json"
+    private Partner = "./assets/lookup_database/partner.json";
+    private FundingSource = "./assets/lookup_database/funding_source.json";
 
     constructor(
         public http: HttpClient

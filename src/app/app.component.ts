@@ -4,12 +4,15 @@ import {StatusBar} from '@ionic-native/status-bar';
 import {SplashScreen} from '@ionic-native/splash-screen';
 import {LandingPage} from '../pages/landing/landing';
 import {timer} from 'rxjs/observable/timer';
+import { AddCsoPage } from '../pages/add-cso/add-cso';
+import { AddCsoMemberPage } from '../pages/add-cso-member/add-cso-member';
+import { LoginPage } from '../pages/login/login';
 
 @Component({
   templateUrl: 'app.html'
 })
 export class MyApp {
-  rootPage: any = LandingPage;
+  rootPage: any =LoginPage;
   showSplash = true;
 
   constructor(platform: Platform,

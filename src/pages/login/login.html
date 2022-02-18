@@ -1,26 +1,26 @@
-<ion-content>
-  <div class="background">
-    <div class="test1"></div>
-    <div class="test"></div>
-    <div class="left" padding>
-      <img class="logo" src="assets/logo.png">
-      <div class="login">
-        <div class="h1" text-center>Enter your email address</div>
-        <br>
-        <div class="logininputdiv">
-          <form #user="ngForm" (ngSubmit)="getEmail(user)">
-            <ion-list>
-              <ion-item no-lines class="inputs">
-                <ion-input type="email" placeholder="Email address" ngModel name="email" email required>
-                </ion-input>
-              </ion-item>
-            </ion-list>
-
+<ion-content class="background">
+  <div class="MainContiner">
+    <img class="logo" src="assets/logo.png"> 
+    <h1>WELCOME BACK,</h1>
+    <h2>Enter your email address  to continue</h2>
+    <div class="BodyContainer">
+      <div class="logininputdiv">
+        <form #user="ngForm" (ngSubmit)="getEmail(user)">
+          <ion-list>
+            <ion-item no-lines class="inputs">
+              <ion-input type="email" placeholder="Email address" ngModel name="email" email required>
+              </ion-input>
+            </ion-item>
+          </ion-list>
+          <div class="BtnContainer">
             <button type="submit" block round ion-button block color="primary">Next</button>
-            <br>
-          </form>
-        </div>
-      </div>
+          </div>
+     
+          <br>
+        </form>
+    </div> 
     </div>
   </div>
+   
+ 
 </ion-content>
