@@ -33,42 +33,28 @@ export class LookUpsService {
         catchError(this.handleError)
       );
   }
-  getCSOType() {
+  getCapacityBuilding() {
     const url = `${this.baseUrl}/api/Accounts/getcapacitybuildingtype`;
     return this.http.get(url,httpOptions)
       .pipe(
         catchError(this.handleError)
       );
   }
-  getCSOType() {
+  getFundingSource() {
     const url = `${this.baseUrl}/api/Accounts/getFundingSource`;
     return this.http.get(url,httpOptions)
       .pipe(
         catchError(this.handleError)
       );
   }
-  getCSOType() {
+  getGetCSOMobilisationMethod() {
     const url = `${this.baseUrl}/getcsomobilisationmethod`;
     return this.http.get(url,httpOptions)
       .pipe(
         catchError(this.handleError)
       );
   }
-  getCSOType() {
-    const url = `${this.baseUrl}/getcsomobilisationmethod`;
-    return this.http.get(url,httpOptions)
-      .pipe(
-        catchError(this.handleError)
-      );
-  }
-
-  getCSOType() {
-    const url = `${this.baseUrl}/getcsomobilisationmethod`;
-    return this.http.get(url,httpOptions)
-      .pipe(
-        catchError(this.handleError)
-      );
-  }
+ 
 
 
   private handleError(errorRes: HttpErrorResponse) {
