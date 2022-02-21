@@ -13,6 +13,7 @@ export class CsoPayload {
   public nda_registration: string;
   public mobilization_method_guid: string;
   public mobilization_date: string;
+  public district:number;
 
   constructor() {
   }

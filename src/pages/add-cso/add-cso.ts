@@ -10,6 +10,7 @@ import {Storage} from "@ionic/storage";
 import {CsoService} from "../../service/cso.service";
 import {UserService} from "../../service/user.service";
 import { ToastController } from 'ionic-angular';
+import { SqliteProvider } from '../../providers/sqlite/sqlite';
 
 @IonicPage()
 @Component({
@@ -44,7 +45,8 @@ export class AddCsoPage implements OnInit {
     public alertCtrl: AlertController,
     private formBuilder: FormBuilder,
     public userService: UserService,
-    public toastCtrl: ToastController) {
+    public toastCtrl: ToastController,
+    public sqlite :SqliteProvider) {
   }
 
   ngOnInit(): void {
@@ -174,6 +176,7 @@ export class AddCsoPage implements OnInit {
     this.csoPayload.contact_number = this.csoForm.value.contact_number;
     this.csoPayload.mobilization_method_guid = this.csoForm.value.mobilization_method;
     this.csoPayload.mobilization_date = this.csoForm.value.mobilization_date;
+    this.csoPayload.district = this.csoForm.value.district
 
     const _loader = this.loadingCtrl.create({
       content: "Please wait whilst we create cso...",
@@ -208,6 +211,18 @@ export class AddCsoPage implements OnInit {
         alert.present();
       }
     });
+    this.sqlite.SaveCSO(this.csoForm.value.name_of_cso,this.csoForm.value.cso_type,this.csoForm.value.cso_sector,this.csoForm.value.municipality,
+      this.csoForm.value.physical_address ,this.csoForm.value.contact_person,this.csoForm.value.ward_number ,this.csoForm.value.total_staf,
+      this.csoForm.value.registration_number,this.csoForm.value.email_address,this.csoForm.value.contact_number,this.csoForm.value.mobilization_method,
+      this.csoForm.value.mobilization_date, this.csoForm.value.district).then(_responseSaveCso =>{
+        console.log(_responseSaveCso)
+        const _loader = this.loadingCtrl.create({
+          content: "Please wait whilst we create cso...",
+          duration: 300000000
+        });
+    
+        _loader.present();
+      })
   }
 
   goBackToHomePage() {

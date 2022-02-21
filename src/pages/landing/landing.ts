@@ -28,26 +28,26 @@ export class LandingPage implements OnInit {
   ) {}
 
   ngOnInit(): void {
-     this.storage.get('authUser').then((storageAuthUser: User) => {
-        if(storageAuthUser !== null|| this.userService.guid !== "undefined"){
-          this.authUser = storageAuthUser;
-          if(this.authUser){
-            this.userService.full_name = this.authUser.full_name;
-            this.userService.email = this.authUser.email;
-            this.userService.guid = this.authUser.guid;
-            this.userService.province_guid = this.authUser.province_guid;
-            this.userService.access_token = this.authUser.access_token;
-            this.userService.refresh_token = this.authUser.refresh_token;
-            this.userService.access_token_expiration_date = this.authUser.access_token_expiration_date;
-            this.userService.refresh_token_expiration_date = this.authUser.refresh_token_expiration_date;
-          } else {
-            return this.navCtrl.push(LoginPage);
-          }
+    //  this.storage.get('authUser').then((storageAuthUser: User) => {
+    //     if(storageAuthUser !== null|| this.userService.guid !== "undefined"){
+    //       this.authUser = storageAuthUser;
+    //       if(this.authUser){
+    //         this.userService.full_name = this.authUser.full_name;
+    //         this.userService.email = this.authUser.email;
+    //         this.userService.guid = this.authUser.guid;
+    //         this.userService.province_guid = this.authUser.province_guid;
+    //         this.userService.access_token = this.authUser.access_token;
+    //         this.userService.refresh_token = this.authUser.refresh_token;
+    //         this.userService.access_token_expiration_date = this.authUser.access_token_expiration_date;
+    //         this.userService.refresh_token_expiration_date = this.authUser.refresh_token_expiration_date;
+    //       } else {
+    //         return this.navCtrl.push(LoginPage);
+    //       }
 
-        } else {
-          return this.navCtrl.push(LoginPage);
-        }
-     });
+    //     } else {
+    //       return this.navCtrl.push(LoginPage);
+    //     }
+    //  });
 
   }
 

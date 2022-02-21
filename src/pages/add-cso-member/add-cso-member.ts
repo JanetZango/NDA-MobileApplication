@@ -11,6 +11,7 @@ import {LandingPage} from "../landing/landing";
 import {LoginPage} from "../login/login";
 import {CsoMemberService} from "../../service/cso-member.service";
 import { ToastController } from 'ionic-angular';
+import { SqliteProvider } from '../../providers/sqlite/sqlite';
 
 @IonicPage()
 @Component({
@@ -38,7 +39,8 @@ export class AddCsoMemberPage implements OnInit {
     private formBuilder: FormBuilder,
     public  storage: Storage,
     public loadingCtrl: LoadingController,
-    public toastCtrl: ToastController
+    public toastCtrl: ToastController,
+    public sqlite :SqliteProvider
   ) {
   }
 
@@ -164,7 +166,17 @@ export class AddCsoMemberPage implements OnInit {
       }
     });
 
-
+    // this.memberForm.value.physical_address ,this.memberForm.value.contact_person,this.memberForm.value.ward_number ,this.memberForm.value.total_staf,
+    // this.memberForm.value.registration_number,this.memberForm.value.email_address,this.memberForm.value.contact_number,this.memberForm.value.mobilization_method,
+    // this.memberForm.value.mobilization_date, this.memberForm.value.district).then(_responseSaveCso =>{
+    //   console.log(_responseSaveCso)
+    //   const _loader = this.loadingCtrl.create({
+    //     content: "Please wait whilst we create cso...",
+    //     duration: 300000000
+    //   });
+  
+    //   _loader.present();
+    // })
 
   }
 

@@ -25,7 +25,8 @@ import {ViewCsoMemberPage} from '../pages/view-cso-member/view-cso-member';
 import {DisplayCsoMemberListPage} from '../pages/display-cso-member-list/display-cso-member-list';
 import {AddCsoMemberPage} from '../pages/add-cso-member/add-cso-member';
 import {AuthInterceptorService} from "../service/auth-interceptor.service";
-
+import { SqliteProvider } from '../providers/sqlite/sqlite';
+import { SQLite, SQLiteObject } from '@ionic-native/sqlite';
 
 @NgModule({
   declarations: [
@@ -76,13 +77,15 @@ import {AuthInterceptorService} from "../service/auth-interceptor.service";
   providers: [
     StatusBar,
     SplashScreen,
+    SQLite,
     {provide: ErrorHandler, useClass: IonicErrorHandler},
     LookUpService,
     {
       provide: HTTP_INTERCEPTORS,
       useClass: AuthInterceptorService,
       multi: true
-    }
+    },
+    SqliteProvider
 
   ]
 })
