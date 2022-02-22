@@ -15,21 +15,22 @@
         <ion-item class="input-select">
           <ion-label>Type</ion-label>
           <ion-select formControlName="cso_type">
-            <ion-option *ngFor="let type of listLookupCsoType" [value]="type.guid">{{type.title}}</ion-option>
+            <ion-option *ngFor="let type of listLookupCsoType" [value]="type.id">{{type.cso_type_name}}</ion-option>
           </ion-select>
         </ion-item>
+        
 
         <ion-item class="input-select">
           <ion-label>Sector</ion-label>
           <ion-select formControlName="cso_sector">
-            <ion-option *ngFor="let sector of listLookupCsoSector" [value]="sector.guid">{{sector.title}}</ion-option>
+            <ion-option *ngFor="let sector of listLookupCsoSector" [value]="sector.id">{{sector.cso_sector_name}}</ion-option>
           </ion-select>
         </ion-item>
 
         <ion-item class="input-select">
           <ion-label>Mobilization method</ion-label>
           <ion-select formControlName="mobilization_method">
-            <ion-option *ngFor="let mobilization of listLookupMobilizationMethod" [value]="mobilization.guid">{{mobilization.title}}</ion-option>
+            <ion-option *ngFor="let mobilization of listLookupMobilizationMethod" [value]="mobilization.id">{{mobilization.mobilisation_method}}</ion-option>
           </ion-select>
         </ion-item>
 
@@ -128,18 +129,18 @@
         <ion-item class="input-select">
           <ion-label>District</ion-label>
           <ion-select formControlName="district" (ionChange)="onchangeDistrict()">
-            <ion-option *ngFor="let district of listFilteredLookupDistrict" [value]="district.guid">{{district.title}}</ion-option>
+            <ion-option *ngFor="let district of listFilteredLookupDistrict" [value]="district.id">{{district.district_name}}</ion-option>
           </ion-select>
         </ion-item>
 
         <ion-item class="input-select">
           <ion-label>Municipality</ion-label>
           <ion-select formControlName="municipality" [disabled]="disableMunicipalityDropdown">
-            <ion-option *ngFor="let municipality of listFilteredLookupMunicipality" [value]="municipality.guid">{{municipality.title}}</ion-option>
+            <ion-option *ngFor="let municipality of listFilteredLookupMunicipality" [value]="municipality.id">{{municipality.map_title}}</ion-option>
           </ion-select>
         </ion-item>
 
-        <button type="submit" class="input-submit" ion-button [disabled]="!csoForm.valid">Submit</button>
+        <button type="submit" class="input-submit" ion-button >Submit</button>
       </form>
     </div>
   </div>

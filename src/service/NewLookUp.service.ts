@@ -12,7 +12,7 @@ const httpOptions = {
   };
 
   @Injectable({providedIn: 'root'})
-export class LookUpsService {
+export class NewLookUpService {
   private readonly baseUrl: string;
 
   constructor(public configService: ConfigService, private http: HttpClient) {
@@ -33,6 +33,20 @@ export class LookUpsService {
         catchError(this.handleError)
       );
   }
+  getDistrictNew() {
+    const url = `${this.baseUrl}/api/Accounts/getDistrict`;
+    return this.http.get(url,httpOptions)
+      .pipe(
+        catchError(this.handleError)
+      );
+  }
+  getMunicipalitynew(district_id) {
+    const url = `${this.baseUrl}/api/Accounts/getmunicipality?district_id=`+ district_id;
+    return this.http.get(url,httpOptions)
+      .pipe(
+        catchError(this.handleError)
+      );
+  }
   getCapacityBuilding() {
     const url = `${this.baseUrl}/api/Accounts/getcapacitybuildingtype`;
     return this.http.get(url,httpOptions)
@@ -48,7 +62,7 @@ export class LookUpsService {
       );
   }
   getGetCSOMobilisationMethod() {
-    const url = `${this.baseUrl}/getcsomobilisationmethod`;
+    const url = `${this.baseUrl}/api/Accounts/getcsomobilisationmethod`;
     return this.http.get(url,httpOptions)
       .pipe(
         catchError(this.handleError)

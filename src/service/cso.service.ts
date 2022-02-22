@@ -36,9 +36,27 @@ export class CsoService {
       );
   }
 
+  getListOfCSO() {
+    const url = `${this.baseUrl}/api/Accounts/getCSOs`;
+    return this.http.get(url,httpOptions)
+      .pipe(
+        catchError(this.handleError)
+      );
+  }
+
+
   create(cso: CsoPayload) {
     const url = `${this.baseUrl}/api/secured/cso/create`;
     return this.http.post(url,cso,httpOptions)
+      .pipe(
+        catchError(this.handleError)
+      );
+  }
+
+  createCso(CsoPayload: CsoPayload) {
+    console.log(CsoPayload)
+    const url = `${this.baseUrl}/api/Accounts/RegisterCSO`;
+    return this.http.post(url,CsoPayload,httpOptions)
       .pipe(
         catchError(this.handleError)
       );

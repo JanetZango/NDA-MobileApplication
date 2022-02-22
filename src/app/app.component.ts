@@ -7,12 +7,13 @@ import {timer} from 'rxjs/observable/timer';
 import { AddCsoPage } from '../pages/add-cso/add-cso';
 import { AddCsoMemberPage } from '../pages/add-cso-member/add-cso-member';
 import { LoginPage } from '../pages/login/login';
+import { DisplayListOfCsoPage } from '../pages/display-list-of-cso/display-list-of-cso';
 
 @Component({
   templateUrl: 'app.html'
 })
 export class MyApp {
-  rootPage: any =LoginPage;
+  rootPage: any = DisplayListOfCsoPage;
   showSplash = true;
 
   constructor(platform: Platform,

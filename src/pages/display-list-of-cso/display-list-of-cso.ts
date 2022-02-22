@@ -8,6 +8,7 @@ import {LandingPage} from "../landing/landing";
 import {AddCsoPage} from "../add-cso/add-cso";
 import {CsoService} from "../../service/cso.service";
 import {LoginPage} from "../login/login";
+import { THIS_EXPR } from '@angular/compiler/src/output/output_ast';
 
 export interface CSoResponseData {
   csoes: any;
@@ -51,19 +52,24 @@ export class DisplayListOfCsoPage implements OnInit {
 
       _loader.present();
 
-      this.csoService.list().subscribe((_responseData:CSoResponseData) => {
-        this.originalListOfCsoes = _responseData.csoes;
-        this.filteredListOfCsoes = _responseData.csoes;
-        _loader.dismiss();
-      },_error => {
-        _loader.dismiss();
-        const alert = this.alertCtrl.create({
-          title: 'Oops',
-          subTitle: 'Something went wrong, please contact administrator.',
-          buttons: ['OK']
-        });
-        alert.present();
-      });
+      this.csoService.getListOfCSO().subscribe((_responseCso:any) =>{
+      console.log(_responseCso)
+      this.filteredListOfCsoes = _responseCso
+      })
+
+      // this.csoService.list().subscribe((_responseData:CSoResponseData) => {
+      //   this.originalListOfCsoes = _responseData.csoes;
+      //   this.filteredListOfCsoes = _responseData.csoes;
+      //   _loader.dismiss();
+      // },_error => {
+      //   _loader.dismiss();
+      //   const alert = this.alertCtrl.create({
+      //     title: 'Oops',
+      //     subTitle: 'Something went wrong, please contact administrator.',
+      //     buttons: ['OK']
+      //   });
+      //   alert.present();
+      // });
   }
 
   goBackToHomePage(){
