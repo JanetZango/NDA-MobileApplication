@@ -28,6 +28,15 @@ export class CapacityBuildingService {
       );
   }
 
+
+  
+  listofCapacity() {
+    const url = `${this.baseUrl}/api/Accounts/getcapacity`;
+    return this.http.get(url,httpOptions)
+      .pipe(
+        catchError(this.handleError)
+      );
+  } 
   get(guid: string) {
     const url = `${this.baseUrl}/api/secured/capacity_building/` + guid;
     return this.http.get(url,httpOptions)
@@ -44,6 +53,14 @@ export class CapacityBuildingService {
       );
   }
 
+  
+  createCapacityBuilding(CapacityBuildingPayload: CapacityBuildingPayload) {
+    const url = `${this.baseUrl}/api/Accounts/Capacity`;
+    return this.http.post(url,CapacityBuildingPayload,httpOptions)
+      .pipe(
+        catchError(this.handleError)
+      );
+  }
   private handleError(errorRes: HttpErrorResponse) {
     let errorMessage = 'An unknown error occurred!';
     return throwError(errorRes);

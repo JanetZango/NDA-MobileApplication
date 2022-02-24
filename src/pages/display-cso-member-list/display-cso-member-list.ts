@@ -25,7 +25,8 @@ export class DisplayCsoMemberListPage implements OnInit {
   cso: Cso;
   originalListOfCsoMembers: Member[] = [];
   filteredListOfCsoMembers: Member[] = [];
-
+  CsoLoggedIn = new Array();
+  CsoID;
   constructor(
     public navCtrl: NavController,
     public navParams: NavParams,
@@ -39,6 +40,9 @@ export class DisplayCsoMemberListPage implements OnInit {
   ngOnInit() {
     this.storage.get('current_cso').then((entity) => {
       this.cso = entity;
+      this.CsoLoggedIn.push(this.cso)
+      this.CsoID = this.CsoLoggedIn[0].id
+      console.log(this.CsoID)
       this._getCsoMembers();
     });
   }
@@ -65,9 +69,10 @@ export class DisplayCsoMemberListPage implements OnInit {
     _loader.present();
 
 
-    this.csoMemberService.list(this.cso.guid).subscribe((_response: CSoMembersListResponseData) => {
-      this.originalListOfCsoMembers = _response.cso_members;
-      this.filteredListOfCsoMembers = _response.cso_members;
+    this.csoMemberService.ListOfCsoMember0(this.CsoID).subscribe((_response:any) => {
+      // this.originalListOfCsoMembers = _response.cso_members;
+      this.filteredListOfCsoMembers = _response;
+      this.filteredListOfCsoMembers.reverse();
       _loader.dismiss();
     }, _error => {
       _loader.dismiss();

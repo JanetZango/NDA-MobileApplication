@@ -1,17 +1,18 @@
 export class CapacityBuildingPayload {
-  public municipality_guid: string;
-  public capacity_building_type_guid: string;
-  public funding_source_guid: string;
+  public capacity_building_type_id: number;
+  public province_id=1;
+  public district_id: number;
+  public municipality_id: number;
+  public partner_id: number;
   public facilitator_name: string;
-  public co_facilitator_name: string;
-  public partner_guid: string;
   public venue: string;
-  public start_date: string;
-  public end_date: string;
-  public cso_guid: string;
+  public start_date: Date;
+  public end_date: Date;
+  public co_facilitator_name: string;
+  public funding_source_id:number
 
   constructor() {
   }
 
-
+  
 }

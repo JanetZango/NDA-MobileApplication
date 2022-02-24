@@ -26,6 +26,16 @@ export class CsoMemberService {
       );
   }
 
+  ListOfCsoMember0(cso_guid: string) {
+    const url = `${this.baseUrl}/api/Accounts/getCSOMembers?cos_id=` + cso_guid;
+    return this.http.get(url,httpOptions)
+      .pipe(
+        catchError(this.handleError)
+      );
+  }
+
+
+
   get(guid: string) {
     const url = `${this.baseUrl}/api/secured/cso_member/` + guid;
     return this.http.get(url,httpOptions)
@@ -36,6 +46,15 @@ export class CsoMemberService {
 
   create(member: MemberPayload) {
     const url = `${this.baseUrl}/api/secured/cso_member/create`;
+    return this.http.post(url,member,httpOptions)
+      .pipe(
+        catchError(this.handleError)
+      );
+  }
+
+  
+  createNewMember(member: MemberPayload) {
+    const url = `${this.baseUrl}/api/Accounts/CSOMember`;
     return this.http.post(url,member,httpOptions)
       .pipe(
         catchError(this.handleError)

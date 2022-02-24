@@ -26,6 +26,7 @@ export class ViewCsoDetailsPage implements OnInit {
   ngOnInit() {
     this.storage.get('current_cso').then((entity) => {
       this.cso = entity;
+      console.log(this.cso)
     });
   }
 

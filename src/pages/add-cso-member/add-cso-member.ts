@@ -1,17 +1,18 @@
-import {Component, OnInit} from '@angular/core';
-import {IonicPage, NavController, NavParams, AlertController, LoadingController} from 'ionic-angular';
-import {Validators, FormBuilder, FormGroup} from '@angular/forms';
-import {LookUpService} from '../../providers/lookup/lookups.service';
-import {Storage} from '@ionic/storage';
-import {RsaIdValidator} from "../../providers/validators/rsaid.validator";
-import {Cso} from "../../model/cso.model";
-import {DisplayCsoMemberListPage} from "../display-cso-member-list/display-cso-member-list";
-import {MemberPayload} from "../../model/payload/member-payload.model";
-import {LandingPage} from "../landing/landing";
-import {LoginPage} from "../login/login";
-import {CsoMemberService} from "../../service/cso-member.service";
+import { Component, OnInit } from '@angular/core';
+import { IonicPage, NavController, NavParams, AlertController, LoadingController } from 'ionic-angular';
+import { Validators, FormBuilder, FormGroup } from '@angular/forms';
+import { LookUpService } from '../../providers/lookup/lookups.service';
+import { Storage } from '@ionic/storage';
+import { RsaIdValidator } from "../../providers/validators/rsaid.validator";
+import { Cso } from "../../model/cso.model";
+import { DisplayCsoMemberListPage } from "../display-cso-member-list/display-cso-member-list";
+import { MemberPayload } from "../../model/payload/member-payload.model";
+import { LandingPage } from "../landing/landing";
+import { LoginPage } from "../login/login";
+import { CsoMemberService } from "../../service/cso-member.service";
 import { ToastController } from 'ionic-angular';
 import { SqliteProvider } from '../../providers/sqlite/sqlite';
+import { THIS_EXPR } from '@angular/compiler/src/output/output_ast';
 
 @IonicPage()
 @Component({
@@ -29,7 +30,8 @@ export class AddCsoMemberPage implements OnInit {
   private defaultNationality = "South African";
   private defaultDisability = "No";
   private showPassportField = false;
-
+  CsoLoggedIn = new Array();
+  CsoID;
   constructor(
     public navCtrl: NavController,
     public navParams: NavParams,
@@ -37,16 +39,20 @@ export class AddCsoMemberPage implements OnInit {
     public csoMemberService: CsoMemberService,
     public alertCtrl: AlertController,
     private formBuilder: FormBuilder,
-    public  storage: Storage,
+    public storage: Storage,
     public loadingCtrl: LoadingController,
     public toastCtrl: ToastController,
-    public sqlite :SqliteProvider
+    public sqlite: SqliteProvider
   ) {
   }
 
   ngOnInit(): void {
     this.storage.get('current_cso').then((entity) => {
       this.cso = entity;
+      // console.log(this.cso)
+      this.CsoLoggedIn.push(this.cso)
+      this.CsoID = this.CsoLoggedIn[0].id
+      console.log(this.CsoID)
     });
     this._buildForm();
     this._setPassportNumberValidation();
@@ -119,7 +125,7 @@ export class AddCsoMemberPage implements OnInit {
     this.memberPayload = new MemberPayload();
     this.memberPayload.first_name = this.memberForm.value.first_name;
     this.memberPayload.last_name = this.memberForm.value.last_name;
-    this.memberPayload.member_position_guid = this.memberForm.value.member_position_guid;
+    this.memberPayload.member_position_id = this.memberForm.value.member_position_guid;
     this.memberPayload.gender = this.memberForm.value.gender;
     this.memberPayload.race = this.memberForm.value.race;
     this.memberPayload.nationality = this.memberForm.value.nationality;
@@ -129,8 +135,8 @@ export class AddCsoMemberPage implements OnInit {
     this.memberPayload.physical_address = this.memberForm.value.physical_address;
     this.memberPayload.start_date = this.memberForm.value.start_date;
     this.memberPayload.end_date = this.memberForm.value.end_date;
-    this.memberPayload.rsa_id_number = this.memberForm.value.rsa_id_number;
-    this.memberPayload.cso_guid = this.cso.guid
+    this.memberPayload.id_number = this.memberForm.value.rsa_id_number;
+    this.memberPayload.cso_id = this.CsoID
 
     const _loader = this.loadingCtrl.create({
       content: "Please wait whilst we create cso member...",
@@ -139,32 +145,43 @@ export class AddCsoMemberPage implements OnInit {
 
     _loader.present();
 
-    this.csoMemberService.create(this.memberPayload).subscribe((_response: any) => {
+    this.csoMemberService.createNewMember(this.memberPayload).subscribe(_responseMember => {
+      console.log(_responseMember)
       _loader.dismiss();
       const toast = this.toastCtrl.create({
         message: 'CSO member was added successfully',
         duration: 3000
       });
       toast.present();
-      return this.redirectToMemberList();
-    }, _error => {
-      _loader.dismiss();
-      if (_error.status === 400) {
-        const alert = this.alertCtrl.create({
-          title: 'Oops',
-          subTitle: 'You have entered invalid details, please check your form inputs.',
-          buttons: ['OK']
-        });
-        alert.present();
-      } else {
-        const alert = this.alertCtrl.create({
-          title: 'Oops',
-          subTitle: 'Something went wrong, please contact administrator.',
-          buttons: ['OK']
-        });
-        alert.present();
-      }
-    });
+      this.navCtrl.push(DisplayCsoMemberListPage)
+    })
+
+    // this.csoMemberService.create(this.memberPayload).subscribe((_response: any) => {
+    //   _loader.dismiss();
+    //   const toast = this.toastCtrl.create({
+    //     message: 'CSO member was added successfully',
+    //     duration: 3000
+    //   });
+    //   toast.present();
+    //   return this.redirectToMemberList();
+    // }, _error => {
+    //   _loader.dismiss();
+    //   if (_error.status === 400) {
+    //     const alert = this.alertCtrl.create({
+    //       title: 'Oops',
+    //       subTitle: 'You have entered invalid details, please check your form inputs.',
+    //       buttons: ['OK']
+    //     });
+    //     alert.present();
+    //   } else {
+    //     const alert = this.alertCtrl.create({
+    //       title: 'Oops',
+    //       subTitle: 'Something went wrong, please contact administrator.',
+    //       buttons: ['OK']
+    //     });
+    //     alert.present();
+    //   }
+    // });
 
     // this.memberForm.value.physical_address ,this.memberForm.value.contact_person,this.memberForm.value.ward_number ,this.memberForm.value.total_staf,
     // this.memberForm.value.registration_number,this.memberForm.value.email_address,this.memberForm.value.contact_number,this.memberForm.value.mobilization_method,
@@ -174,7 +191,7 @@ export class AddCsoMemberPage implements OnInit {
     //     content: "Please wait whilst we create cso...",
     //     duration: 300000000
     //   });
-  
+
     //   _loader.present();
     // })
 

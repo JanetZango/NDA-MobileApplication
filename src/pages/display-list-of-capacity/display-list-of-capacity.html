@@ -18,8 +18,9 @@
     <h1>Manage Capacity Building Events</h1>
     <ion-card *ngFor="let capacityBuilding of filteredListOfCapacityBuilding">
       <div class="card-list" (click)="viewCapacityBuildingDetail(capacityBuilding)">
-        <p><b>Type:</b> {{capacityBuilding?.capacity_building_type?.title}}</p>
-        <p><b>Municipality:</b> {{capacityBuilding?.municipality?.title}}</p>
+        <!-- <p><b>Type:</b> {{capacityBuilding?.capacity_building_type?.title}}</p>
+        <p><b>Municipality:</b> {{capacityBuilding?.municipality?.title}}</p> -->
+        <p><b>facilitator Name:</b> {{capacityBuilding.facilitator_name}}</p> 
         <p><b>Start date:</b> {{capacityBuilding?.start_date}}</p>
         <div class="button-navigate-list">
           <button clear ion-button>
@@ -46,3 +47,4 @@
     </ion-buttons>
   </ion-toolbar>
 </ion-footer>
+facilitator_name

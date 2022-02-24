@@ -18,10 +18,10 @@
     <h1>Manage CSO Assessment Interventions</h1>
     <ion-card *ngFor="let assessment of filteredListOfAssessment">
       <div class="card-list" (click)="viewAssessmentDetails(assessment)">
-        <p><b>Cso Name:</b> {{assessment?.cso.name_of_cso}}</p>
-        <p><b>Assessment Type:</b> {{assessment?.assessment_type?.title}}</p>
-        <p><b>Assessment Completed:</b> {{assessment?.assessment_completed? "Yes" : "No"}}</p>
-        <p><b>Assessment Date:</b> {{assessment?.assessment_date}}</p>
+        <!-- <p><b>Cso Name:</b> {{assessment?.cso.name_of_cso}}</p> -->
+        <p><b>Assessment Type:</b> {{assessment.assessment_type_id}}</p>
+        <p><b>Assessment Completed:</b> {{assessment.assessment_completed? "Yes" : "No"}}</p>
+        <p><b>Assessment Date:</b> {{assessment.assessment_date}}</p>
         <div class="button-navigate-list">
           <button clear ion-button>
             <ion-icon name="ios-arrow-forward-outline"></ion-icon>

@@ -22,14 +22,38 @@ export class SqliteProvider {
       // loading.dismiss();
     })
   }
+
+  public cso_type_id: number;
+  public cso_sector_id: number;
+  public province_id=1;
+  public district_id: number;
+  public municipality_id: number;
+  public ward_number: number;
+  public registration_number: string;
+  public name_of_cso: string;
+  public contact_person: string;
+  public physical_address: string;
+  public contact_number: string;
+  public email_address: string;
+  public cso_mobilisation_method_id:number;
+  public collected_by=1;
+  public modified_by=2;
+  // public modified_date:Date;
+  public created_by=2;
+  // public created_date:Date;
+  public total_staff:number;
+
+ 
   sqlitestate() {
     if (!this.isOpen) {
       this.sql = new SQLite();
       this.sql.create({ name: "test1.db", location: "default" }).then((db: SQLiteObject) => {
         this.db = db;
-        db.executeSql("CREATE TABLE IF NOT EXISTS CSO (id INTEGER PRIMARY KEY AUTOINCREMENT,cso_type integer,cso_sector integer,mobilization_method integer,mobilization_date date,name_of_cso text,registration_number text,total_staff integer,ward_number integer,contact_number integer,email_address text,contact_person text,physical_address text,district integer,municipality integer)", [])
-        db.executeSql("CREATE TABLE IF NOT EXISTS  CSO_Member (id INTEGER PRIMARY KEY AUTOINCREMENT,nationality integer,rsa_id_number integer,passport_number integer,first_name text,last_name text,gender integer,race integer,disability integer,member_position_guid integer,contact_number integer,physical_address text,start_date date,end_date date)", [])
-        db.executeSql("CREATE TABLE IF NOT EXISTS Users ( ID	INTEGER CONSTRAINT pk_id PRIMARY KEY NOT NULL, ePCR_Descriptions	TEXT , CodeId	integer)", [])
+        db.executeSql("CREATE TABLE IF NOT EXISTS CSO (id INTEGER PRIMARY KEY AUTOINCREMENT,cso_type_id integer,cso_sector_id integer,province_id integer,district_id integer,municipality_id integer,registration_number text,total_staff integer,ward_number integer,contact_number integer,email_address text,contact_person text,physical_address text,name_of_cso text)", [])
+        db.executeSql("CREATE TABLE IF NOT EXISTS CSO_Member (id INTEGER PRIMARY KEY AUTOINCREMENT,first_name text,last_name text,member_position_id integer,gender text,race text,passport_number integer,nationality integer,contact_number integer,id_number integer,cso_id integer,physical_address text,end_date date,start_date date)", [])
+        db.executeSql("CREATE TABLE IF NOT EXISTS Capacity ( ID	INTEGER CONSTRAINT pk_id PRIMARY KEY NOT NULL, capacity_building_type_id	integer , district_id	integer,municipality_id integer,partner_id integer,facilitator_name text,venue text,start_date date,end_date date,co_facilitator_name text,funding_source_id integer)", [])
+        db.executeSql("CREATE TABLE IF NOT EXISTS Assessment ( ID	INTEGER CONSTRAINT pk_id PRIMARY KEY NOT NULL, ePCR_Descriptions	TEXT , CodeId	integer)", [])
+
 
         this.isOpen = true;
         console.log("Tables Created")
@@ -41,13 +65,10 @@ export class SqliteProvider {
     }
   }
 
-  SaveCSO(name_of_cso, cso_type, cso_sector, municipality,
-    physical_address, contact_person, ward_number, total_staf,
-    registration_number, email_address, contact_number, mobilization_method,
-    mobilization_date,district) {
+  SaveCSO(cso_type_id ,cso_sector_id ,province_id ,district_id ,municipality_id ,registration_number ,total_staff ,ward_number ,contact_number ,email_address ,contact_person ,physical_address ,name_of_cso) {
     return new Promise((resolve, reject) => {
-      let sql = "INSERT INTO CSO (id,cso_type,cso_sector,mobilization_method,mobilization_date,name_of_cso,registration_number ,total_staff ,ward_number ,contact_number ,email_address ,contact_person ,physical_address ,district ,municipality ) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)";
-      this.db.executeSql(sql, [cso_type,cso_sector,mobilization_method,mobilization_date,name_of_cso,registration_number ,total_staf ,ward_number ,contact_number ,email_address ,contact_person ,physical_address ,district ,municipality ]).then((data) => {
+      let sql = "INSERT INTO CSO (id,cso_type_id ,cso_sector_id ,province_id ,district_id ,municipality_id ,registration_number ,total_staff ,ward_number ,contact_number ,email_address ,contact_person ,physical_address ,name_of_cso ) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?)";
+      this.db.executeSql(sql, [cso_type_id ,cso_sector_id ,province_id ,district_id ,municipality_id ,registration_number ,total_staff ,ward_number ,contact_number ,email_address ,contact_person ,physical_address ,name_of_cso]).then((data) => {
         console.log(data);
         console.log("INSERTED: " + JSON.stringify(data) + sql);
         resolve("true")
@@ -56,34 +77,77 @@ export class SqliteProvider {
       resolve(sql)
     })
   }
-  SaveCSOMember() {
+  SaveCSOMember(first_name ,last_name ,member_position_id ,gender ,race  ,passport_number ,nationality ,contact_number ,id_number ,cso_id ,physical_address ,end_date ,start_date) {
     return new Promise((resolve, reject) => {
-      // this.service.getRace().subscribe(_completion => {
-      // console.log(_completion)
-      // for (var i = 0; i < _completion.length; i++) {
-      //   let obj = {
-      //     ID: _completion[i].ID,
-      //     Decription: _completion[i].Decription
-      //   }
-      // console.log(obj)
-      let sql = "INSERT INTO CSO_Member (id ,nationality ,rsa_id_number ,passport_number ,first_name ,last_name ,gender ,race ,disability ,member_position_guid ,contact_number ,physical_address ,start_date ,end_date ) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?)";
-      // this.db.executeSql(sql, [obj.ID, obj.Decription]).then((data) => {
-      //   console.log(data);
-      //   console.log("INSERTED: " + JSON.stringify(data) + sql);
-      //   resolve("true")
-      //   // console.log("true")
-      // }, (reject) => {
-      // })
-      // this.insertUser.push(obj)
-
-      // }
-      // resolve(this.insertUser)
-      // })
+      let sql = "INSERT INTO CSO_Member(id,first_name ,last_name ,member_position_id ,gender ,race  ,passport_number ,nationality ,contact_number ,id_number ,cso_id ,physical_address ,end_date ,start_date) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?)";
+      this.db.executeSql(sql, [first_name ,last_name ,member_position_id ,gender ,race  ,passport_number ,nationality ,contact_number ,id_number ,cso_id ,physical_address ,end_date ,start_date]).then((data) => {
+        console.log(data);
+        console.log("INSERTED: " + JSON.stringify(data) + sql);
+        resolve("true")
+        // console.log("true")
+      }, (reject) => {
+      })
+     
     })
   }
-  getOffGender() {
+  SaveCapacity(capacity_building_type_id	 , district_id	,municipality_id ,partner_id ,facilitator_name ,venue ,start_date ,end_date ,co_facilitator_name ,funding_source_id ) {
     return new Promise((resolve, reject) => {
-      this.db.executeSql("SELECT * FROM Gender", []).then((data) => {
+      let sql = "INSERT INTO Capacity(capacity_building_type_id	 , district_id	,municipality_id ,partner_id ,facilitator_name ,venue ,start_date ,end_date ,co_facilitator_name ,funding_source_id) VALUES (?,?,?,?,?,?,?,?,?,?)";
+      this.db.executeSql(sql, [ capacity_building_type_id	 , district_id	,municipality_id ,partner_id ,facilitator_name ,venue ,start_date ,end_date ,co_facilitator_name ,funding_source_id]).then((data) => {
+        console.log(data);
+        console.log("INSERTED: " + JSON.stringify(data) + sql);
+        resolve("true")
+        // console.log("true")
+      }, (reject) => {
+      })
+     
+    })
+  }
+  getCso() {
+    return new Promise((resolve, reject) => {
+      this.db.executeSql("SELECT * FROM CSO", []).then((data) => {
+        console.log(data)
+        let regCode = [];
+        for (var i = 0; i < data.rows.length; i++) {
+          regCode.push({
+            ID: data.rows.item(i).ID,
+            Description: data.rows.item(i).Description
+            // PhysicalAddress1: data.rows.item(i).PhysicalAddress1,
+            // Incident_NumberOref:data.rows.item(i).Incident_NumberOref,
+            // CallerContact:data.rows.item(i).CallerContact
+          });
+          console.log(regCode)
+        }
+        resolve(regCode)
+      }, (error) => {
+        reject(error);
+      })
+    })
+  }
+  getCso_Member() {
+    return new Promise((resolve, reject) => {
+      this.db.executeSql("SELECT * FROM CSO_Member", []).then((data) => {
+        console.log(data)
+        let regCode = [];
+        for (var i = 0; i < data.rows.length; i++) {
+          regCode.push({
+            ID: data.rows.item(i).ID,
+            Description: data.rows.item(i).Description
+            // PhysicalAddress1: data.rows.item(i).PhysicalAddress1,
+            // Incident_NumberOref:data.rows.item(i).Incident_NumberOref,
+            // CallerContact:data.rows.item(i).CallerContact
+          });
+          console.log(regCode)
+        }
+        resolve(regCode)
+      }, (error) => {
+        reject(error);
+      })
+    })
+  }
+  getCapacity() {
+    return new Promise((resolve, reject) => {
+      this.db.executeSql("SELECT * FROM Capacity", []).then((data) => {
         console.log(data)
         let regCode = [];
         for (var i = 0; i < data.rows.length; i++) {

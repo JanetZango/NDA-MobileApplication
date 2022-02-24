@@ -19,6 +19,7 @@ export class LoginPage {
   OptionsArr = new Array();
   Options;
   messages;
+  Uzer;
   constructor(
     public navCtrl: NavController,
     public navParams: NavParams,
@@ -45,6 +46,7 @@ export class LoginPage {
         this.OptionsArr.push(_responseGetUser)
         this.Options = this.OptionsArr[0].Options
         this.messages = this.OptionsArr[0].messages
+        this.Uzer = this.OptionsArr[0].Uzer
 
          if (this.Options == "1"){
           const alert = this.alertCtrl.create({
@@ -57,11 +59,11 @@ export class LoginPage {
         else if (this.Options == "3"){
           const alert = this.alertCtrl.create({
            cssClass: "myAlert",
-           subTitle: this.messages,
+           subTitle: 'Please check your email address for the One Time Password.',
            buttons: ['OK']
          });
          alert.present();
-         return this.navCtrl.push(LandingPage);
+         return this.navCtrl.push(AddOtpPage,{Uzer:this.Uzer});
         }
       })
 

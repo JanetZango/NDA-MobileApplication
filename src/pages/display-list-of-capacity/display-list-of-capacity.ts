@@ -47,10 +47,12 @@ export class DisplayListOfCapacityPage implements OnInit {
 
     _loader.present();
 
-    this.capacityBuildingService.list().subscribe((_response: CapacityBuildingResponseData) => {
+    this.capacityBuildingService.listofCapacity().subscribe((_response:any) => {
       _loader.dismiss();
-      this.originalListOfCapacityBuilding = _response.capacity_buildings;
-      this.filteredListOfCapacityBuilding = _response.capacity_buildings;
+      this.originalListOfCapacityBuilding = _response
+      this.filteredListOfCapacityBuilding = _response;
+      this.filteredListOfCapacityBuilding.reverse();
+      console.log(this.filteredListOfCapacityBuilding)
     }, _error => {
       _loader.dismiss();
       const alert = this.alertCtrl.create({

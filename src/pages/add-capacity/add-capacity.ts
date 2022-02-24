@@ -10,7 +10,7 @@ import {Storage} from "@ionic/storage";
 import {CapacityBuildingService} from "../../service/capacity-building.service";
 import {UserService} from "../../service/user.service";
 import { ToastController } from 'ionic-angular';
-
+import { NewLookUpService} from "../../service/NewLookUp.service";
 @IonicPage()
 @Component({
   selector: 'page-add-capacity',
@@ -39,7 +39,7 @@ export class AddCapacityPage implements OnInit{
   capacityBuildingPayload: CapacityBuildingPayload;
   private capacityBuildingForm: FormGroup;
 
-
+  _districtGuid;
 
   constructor(
     public navCtrl: NavController,
@@ -51,18 +51,20 @@ export class AddCapacityPage implements OnInit{
     public alertCtrl: AlertController,
     private formBuilder: FormBuilder,
     public userService: UserService,
-    public toastCtrl: ToastController
+    public toastCtrl: ToastController,
+    public LookUp:NewLookUpService,
   ) {}
 
   ngOnInit(): void {
     this._getCapacityBuildingType();
     this._getPartnerType();
     this._getPartner();
-    this._getDistrict(this.userService.province_guid);
+    // this._getDistrict(this.userService.province_guid);
     this._getFundingSource();
     this._getMunicipality();
     this._getProvince();
     this._buildForm();
+    this._getNewLookDistrict();
   }
 
   _buildForm(){
@@ -116,6 +118,12 @@ export class AddCapacityPage implements OnInit{
       this.listFilteredLookupPartner = res;
     })
   }
+   _getNewLookDistrict(){
+    this.LookUp.getDistrictNew().subscribe((_responseDistrict :any)=>{
+      console.log(_responseDistrict)
+      this.listFilteredLookupDistrict = _responseDistrict
+    })
+   }
 
   _getDistrict(province_guid: string) {
     this.lookupService.getDistrict().subscribe(res => {
@@ -129,6 +137,21 @@ export class AddCapacityPage implements OnInit{
     this.lookupService.getLocalMunicipality().subscribe(res => {
       this.listOriginalLookupMunicipality = res;
       this.listFilteredLookupMunicipality = res;
+    })
+  }
+
+  onchangeDistrict() {
+    this._districtGuid = this.capacityBuildingForm.value.district;
+      console.log(this._districtGuid)
+      this.disableMunicipalityDropdown = false;
+      this._getNewLookMunicipality();
+    }
+  
+  _getNewLookMunicipality(){
+    console.log(this._districtGuid)
+    this.LookUp.getMunicipalitynew(this._districtGuid).subscribe((_responseMunicipality:any)=>{
+      console.log(_responseMunicipality)
+      this.listFilteredLookupMunicipality =_responseMunicipality
     })
   }
 
@@ -158,11 +181,11 @@ export class AddCapacityPage implements OnInit{
     this._updateDistrict(_provinceGuid);
   }
 
-  onchangeDistrict(){
-    const _districtGuid = this.capacityBuildingForm.get('district').value;
-    this.disableMunicipalityDropdown = false;
-    this._updateMunicipality(_districtGuid);
-  }
+  // onchangeDistrict(){
+  //   const _districtGuid = this.capacityBuildingForm.get('district').value;
+  //   this.disableMunicipalityDropdown = false;
+  //   this._updateMunicipality(_districtGuid);
+  // }
 
   _isInvalidControl(name: string) {
     return this.capacityBuildingForm.get(name).invalid && this.capacityBuildingForm.get(name).dirty;
@@ -174,12 +197,12 @@ export class AddCapacityPage implements OnInit{
 
   formSubmit(){
     this.capacityBuildingPayload = new CapacityBuildingPayload();
-    this.capacityBuildingPayload.municipality_guid = this.capacityBuildingForm.value.municipality;
-    this.capacityBuildingPayload.capacity_building_type_guid = this.capacityBuildingForm.value.capacity_building_type;
-    this.capacityBuildingPayload.funding_source_guid = this.capacityBuildingForm.value.funding_source;
+    this.capacityBuildingPayload.municipality_id = this.capacityBuildingForm.value.municipality;
+    this.capacityBuildingPayload.capacity_building_type_id = this.capacityBuildingForm.value.capacity_building_type;
+    this.capacityBuildingPayload.funding_source_id = this.capacityBuildingForm.value.funding_source;
     this.capacityBuildingPayload.facilitator_name = this.capacityBuildingForm.value.facilitator_name;
     this.capacityBuildingPayload.co_facilitator_name = this.capacityBuildingForm.value.co_facilitator_name;
-    this.capacityBuildingPayload.partner_guid = this.capacityBuildingForm.value.partner;
+    this.capacityBuildingPayload.partner_id = this.capacityBuildingForm.value.partner;
     this.capacityBuildingPayload.venue = this.capacityBuildingForm.value.venue;
     this.capacityBuildingPayload.start_date = this.capacityBuildingForm.value.start_date;
     this.capacityBuildingPayload.end_date = this.capacityBuildingForm.value.end_date;
@@ -189,7 +212,7 @@ export class AddCapacityPage implements OnInit{
       duration: 300000000
     });
     _loader.present();
-    this.capacityBuildingService.create(this.capacityBuildingPayload).subscribe((_response: any) =>{
+    this.capacityBuildingService.createCapacityBuilding(this.capacityBuildingPayload).subscribe((_response: any) =>{
       _loader.dismiss();
       const toast = this.toastCtrl.create({
         message: 'Event was added successfully',

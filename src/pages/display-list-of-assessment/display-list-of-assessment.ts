@@ -51,9 +51,11 @@ export class DisplayListOfAssessmentPage {
 
     _loader.present();
 
-    this.assessmentService.list().subscribe((_response: AssessmentListResponse) => {
-      this.originalListOfAssessment = _response.assessments;
-      this.filteredListOfAssessment = this.originalListOfAssessment;
+    this.assessmentService.listOOfAssessment().subscribe((_response: any) => {
+      this.filteredListOfAssessment = _response;
+      this.filteredListOfAssessment.reverse();
+      console.log(this.filteredListOfAssessment)
+      this.originalListOfAssessment = _response;
       _loader.dismiss();
     }, _error => {
       _loader.dismiss();

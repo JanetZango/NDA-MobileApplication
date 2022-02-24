@@ -275,8 +275,8 @@ export class AddCsoPage implements OnInit {
     });
     // this.sqlite.SaveCSO(this.csoForm.value.name_of_cso,this.csoForm.value.cso_type,this.csoForm.value.cso_sector,this.csoForm.value.municipality,
     //   this.csoForm.value.physical_address ,this.csoForm.value.contact_person,this.csoForm.value.ward_number ,this.csoForm.value.total_staf,
-    //   this.csoForm.value.registration_number,this.csoForm.value.email_address,this.csoForm.value.contact_number,this.csoForm.value.mobilization_method,
-    //   this.csoForm.value.mobilization_date, this.csoForm.value.district).then(_responseSaveCso =>{
+    //   this.csoForm.value.registration_number,this.csoForm.value.email_address,this.csoForm.value.contact_number,this.csoForm.value.mobilization_method
+    //   , this.csoForm.value.district).then(_responseSaveCso =>{
     //     console.log(_responseSaveCso)
     //     const _loader = this.loadingCtrl.create({
     //       content: "Please wait whilst we create cso...",

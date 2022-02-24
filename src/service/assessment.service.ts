@@ -25,6 +25,14 @@ export class AssessmentService {
         catchError(this.handleError)
       );
   }
+  
+  listOOfAssessment() {
+    const url = `${this.baseUrl}/api/Accounts/getAssessment`;
+    return this.http.get(url,httpOptions)
+      .pipe(
+        catchError(this.handleError)
+      );
+  }
 
   get(guid: string) {
     const url = `${this.baseUrl}/api/secured/assessment/` + guid;
@@ -41,7 +49,13 @@ export class AssessmentService {
         catchError(this.handleError)
       );
   }
-
+  createAssessment(AssessmentPayloadModel: AssessmentPayloadModel) {
+    const url = `${this.baseUrl}/api/Accounts/Assessment`;
+    return this.http.post(url,AssessmentPayloadModel,httpOptions)
+      .pipe(
+        catchError(this.handleError)
+      );
+  }
   private handleError(errorRes: HttpErrorResponse) {
     let errorMessage = 'An unknown error occurred!';
     return throwError(errorRes);

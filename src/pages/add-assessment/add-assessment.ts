@@ -50,7 +50,7 @@ export class AddAssessmentPage implements OnInit {
   ) {
 
   }
-
+  
   countQuestions(question_guid: string){
     if(this.listOfDynamicQuestionsFound.indexOf(question_guid) === -1){
       this.listOfDynamicQuestionsFound.push(question_guid)
@@ -77,9 +77,9 @@ export class AddAssessmentPage implements OnInit {
       alert.present();
     } else {
       let payload = new AssessmentPayloadModel();
-      payload.cso_guid = this.cso.guid;
+      payload.cso_id = this.cso.guid;
       payload.assessment_questions = finalList;
-      payload.assessment_type_guid = this.assessmentType.guid;
+      payload.assessment_type_id = this.assessmentType.guid;
 
       const _loader = this.loadingCtrl.create({
         content: "Please wait whilst we create assessment...",
@@ -88,7 +88,7 @@ export class AddAssessmentPage implements OnInit {
 
       _loader.present();
 
-      this.assessmentService.create(payload).subscribe((_responseData: any) => {
+      this.assessmentService.createAssessment(payload).subscribe((_responseData: any) => {
         _loader.dismiss();
         const toast = this.toastCtrl.create({
           message: 'Assesment was added successfully',

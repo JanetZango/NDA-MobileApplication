@@ -24,6 +24,15 @@ export class UserAuthService {
                 catchError(this.handleError)
             );
     }
+
+    getOtpCode(email_address,generateOTP) {
+        const url = `${this.baseUrl}/api/Accounts/ValidateOTPInformation?email=`+ email_address +  '&generateOTP=' + generateOTP;
+        return this.http.get(url, httpOptions)
+            .pipe(
+                catchError(this.handleError)
+            );
+    }
+   
     private handleError(errorRes: HttpErrorResponse) {
         let errorMessage = 'An unknown error occurred!';
         return throwError(errorRes);
