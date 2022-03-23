@@ -33,7 +33,7 @@
             type="number"
             *ngIf="!showPassportField"
             formControlName="rsa_id_number"
-            placeholder="RSA Identification number">
+            placeholder="RSA Identification Number">
           </ion-input>
           <div class="field-error" *ngIf="_isInvalidControl('rsa_id_number')">
             <p>Please provide a valid South African identification number</p>
@@ -42,7 +42,7 @@
 
         <div class="input-field">
           <ion-input
-            placeholder="Passport number"
+            placeholder="Passport Number"
             type="text"
             *ngIf="showPassportField"
             formControlName="passport_number">
@@ -54,7 +54,7 @@
 
         <div class="input-field">
           <ion-input
-            placeholder="First name"
+            placeholder="First Name"
             type="text"
             formControlName="first_name">
           </ion-input>
@@ -104,17 +104,17 @@
         <ion-item class="input-select">
           <ion-label> Select Member Position</ion-label>
           <ion-select formControlName="member_position_guid">
-            <ion-option value="f4ae0529-9dbd-4cb0-a0c6-80009266d500">Trustee</ion-option>
-            <ion-option value="71f9d7f2-98e1-4340-a7ab-5849aba6da36">Management</ion-option>
-            <ion-option value="ed86472d-662e-4ab2-809b-75e225d5092e">General Monitor</ion-option>
-            <ion-option value="bed94bd7-3500-428e-9424-b2b7a9f47c73">Baord Monitor</ion-option>
-            <ion-option value="3f9c2102-5459-40d9-869b-7237fbd1d60a">Other</ion-option>
+            <ion-option value="1">Trustee</ion-option>
+            <ion-option value="2">Management</ion-option>
+            <ion-option value="3">General Monitor</ion-option>
+            <ion-option value="4">Baord Monitor</ion-option>
+            <ion-option value="5">Other</ion-option>
           </ion-select>
         </ion-item>
 
         <div class="input-field">
           <ion-input
-            placeholder="Contact number"
+            placeholder="Contact Number"
             type="number"
             formControlName="contact_number">
           </ion-input>
@@ -125,7 +125,7 @@
 
         <div class="input-field">
           <ion-input
-            placeholder="Physical address"
+            placeholder="Physical Address"
             type="text"
             formControlName="physical_address">
           </ion-input>

@@ -1,46 +1,46 @@
 [
   {
-    "guid": "c93a2dec-0c67-4ffe-b6da-dc264c00a55d",
+    "guid": "1",
     "title": "Eastern Cape",
     "code": "EC"
   },
   {
-    "guid": "47209ccd-56b6-4c9f-901a-2ca4f897cbd0",
+    "guid": "2",
     "title": "Free State",
     "code": "FS"
   },
   {
-    "guid": "e6ae775c-a0a0-4368-a4b0-d1c27ba52012",
+    "guid": "3",
     "title": "Gauteng",
     "code": "GT"
   },
   {
-    "guid": "93a46ed9-38c3-4c2b-beb3-ec3d8ddc08d9",
+    "guid": "4",
     "title": "Kwazulu Natal",
     "code": "KZN"
   },
   {
-    "guid": "4f3eb668-7d68-4693-8e63-5bd8e3efe806",
+    "guid": "5",
     "title": "Limpopo",
     "code": "LIM"
   },
   {
-    "guid": "6776ef2e-dde4-4751-8ef0-898ebd4f741d",
+    "guid": "6",
     "title": "Mpumalanga",
     "code": "MP"
   },
   {
-    "guid": "4706a8f7-aebd-4ada-9261-59c91fbea8f0",
+    "guid": "7",
     "title": "Northern Cape",
     "code": "NC"
   },
   {
-    "guid": "ad721325-ebb2-47b5-a498-d6e6fe001d6b",
+    "guid": "8",
     "title": "North West",
     "code": "NW"
   },
   {
-    "guid": "e708aa75-18e5-49b6-a459-1ba899306b4e",
+    "guid": "8",
     "title": "Western Cape",
     "code": "WC"
   }

@@ -1,28 +1,25 @@
-<ion-content>
-  <div class="background">
-      <div class="test1"></div>
-      <div class="test"></div>
-      <div class="left" padding>
-          <img class="logo" src="../../assets/logo.png">
-        <div class="login">
-          <div text-center  class="h1">Enter your One Time Password</div>
-          <br>
+<ion-content class="background">
+    <div class="MainContiner">
+      <img class="logo" src="assets/logo.png"> 
+      <!-- <div class="login"> -->
+        <div text-center class="h1">Enter your One Time Password</div>
+        <div class="BodyContainer">
           <div class="logininputdiv">
-             <!-- <p>{{email}}</p>  -->
-             <form #otpForm="ngForm" (ngSubmit)="verifyOTP(otpForm)">
-            <ion-list>
-              <ion-item no-lines class="inputs">
-                <ion-input type="number" placeholder="One time password" ngModel name="otp"></ion-input>
-              </ion-item>
-            </ion-list>
-            <ion-list>
-            </ion-list>
-            <button type="submit" block round ion-button block color="primary">Verify</button>
+            <form #otpForm="ngForm" (ngSubmit)="verifyOTP(otpForm)">
+              <ion-list>
+                <ion-item no-lines class="inputs">
+                  <ion-input type="number" placeholder="One time password" ngModel name="otp"></ion-input>
+                </ion-item>
+              </ion-list>
+              <ion-list>
+              </ion-list>
+              <div class="BtnContainer">
+              <button type="submit" block round ion-button block color="primary">Verify</button>
+              </div>
+            </form>
             <br>
-          </form>
           </div>
         </div>
       </div>
-    </div>
+    <!-- </div> -->
 </ion-content>
-

@@ -64,6 +64,7 @@ export class LookUpService {
     }
 
     public getLocalMunicipality(): Observable<any> {
+        console.log(this.LocalMunicipality)
         return this.http.get(this.LocalMunicipality)
         .pipe(catchError(this.handleError(<any>("getLocalMunicipality"))));
     }

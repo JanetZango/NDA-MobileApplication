@@ -12,7 +12,7 @@ import { LoginPage } from "../login/login";
 import { CsoMemberService } from "../../service/cso-member.service";
 import { ToastController } from 'ionic-angular';
 import { SqliteProvider } from '../../providers/sqlite/sqlite';
-import { THIS_EXPR } from '@angular/compiler/src/output/output_ast';
+import { SQLite, SQLiteObject } from '@ionic-native/sqlite';
 
 @IonicPage()
 @Component({
@@ -21,12 +21,15 @@ import { THIS_EXPR } from '@angular/compiler/src/output/output_ast';
 })
 
 export class AddCsoMemberPage implements OnInit {
+  private isOpen: boolean = false
+  public db: SQLiteObject;
+  sql;
   private cso: Cso;
   private memberPayload: MemberPayload;
   private memberForm: FormGroup;
   private defaultRace = "African";
   private defaultGender = "Male";
-  private defaultMemberPositionGuid = "71f9d7f2-98e1-4340-a7ab-5849aba6da36";
+  private defaultMemberPositionGuid = "1";
   private defaultNationality = "South African";
   private defaultDisability = "No";
   private showPassportField = false;
@@ -122,6 +125,7 @@ export class AddCsoMemberPage implements OnInit {
   }
 
   formSubmit() {
+    this.SaveCSOoFFline()
     this.memberPayload = new MemberPayload();
     this.memberPayload.first_name = this.memberForm.value.first_name;
     this.memberPayload.last_name = this.memberForm.value.last_name;
@@ -138,16 +142,10 @@ export class AddCsoMemberPage implements OnInit {
     this.memberPayload.id_number = this.memberForm.value.rsa_id_number;
     this.memberPayload.cso_id = this.CsoID
 
-    const _loader = this.loadingCtrl.create({
-      content: "Please wait whilst we create cso member...",
-      duration: 300000000
-    });
-
-    _loader.present();
 
     this.csoMemberService.createNewMember(this.memberPayload).subscribe(_responseMember => {
       console.log(_responseMember)
-      _loader.dismiss();
+      // _loader.dismiss();
       const toast = this.toastCtrl.create({
         message: 'CSO member was added successfully',
         duration: 3000
@@ -156,46 +154,36 @@ export class AddCsoMemberPage implements OnInit {
       this.navCtrl.push(DisplayCsoMemberListPage)
     })
 
-    // this.csoMemberService.create(this.memberPayload).subscribe((_response: any) => {
-    //   _loader.dismiss();
-    //   const toast = this.toastCtrl.create({
-    //     message: 'CSO member was added successfully',
-    //     duration: 3000
-    //   });
-    //   toast.present();
-    //   return this.redirectToMemberList();
-    // }, _error => {
-    //   _loader.dismiss();
-    //   if (_error.status === 400) {
-    //     const alert = this.alertCtrl.create({
-    //       title: 'Oops',
-    //       subTitle: 'You have entered invalid details, please check your form inputs.',
-    //       buttons: ['OK']
-    //     });
-    //     alert.present();
-    //   } else {
-    //     const alert = this.alertCtrl.create({
-    //       title: 'Oops',
-    //       subTitle: 'Something went wrong, please contact administrator.',
-    //       buttons: ['OK']
-    //     });
-    //     alert.present();
-    //   }
-    // });
-
-    // this.memberForm.value.physical_address ,this.memberForm.value.contact_person,this.memberForm.value.ward_number ,this.memberForm.value.total_staf,
-    // this.memberForm.value.registration_number,this.memberForm.value.email_address,this.memberForm.value.contact_number,this.memberForm.value.mobilization_method,
-    // this.memberForm.value.mobilization_date, this.memberForm.value.district).then(_responseSaveCso =>{
-    //   console.log(_responseSaveCso)
-    //   const _loader = this.loadingCtrl.create({
-    //     content: "Please wait whilst we create cso...",
-    //     duration: 300000000
-    //   });
-
-    //   _loader.present();
-    // })
 
   }
+  cso_id=1212
+  member_position_guid=1
+  SaveCSOoFFline(){
+    if (!this.isOpen) {
+      this.sql = new SQLite();
+      this.sql.create({ name: "test10.db", location: "default" }).then((db: SQLiteObject) => {
+        this.db = db;
+         this.isOpen = true;
+         return new Promise((resolve, reject) => {
+          let sql = "INSERT INTO CSO_Member (first_name, last_name, member_position_id, gender, race, passport_number,nationality,contact_number,id_number, cso_id, physical_address,end_date, start_date,disability) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?)";
+          this.db.executeSql(sql, [this.memberForm.value.first_name, this.memberForm.value.last_name, this.memberForm.value.member_position_guid, this.memberForm.value.gender, this.memberForm.value.race, this.memberForm.value.passport_number, this.memberForm.value.nationality,this.memberForm.value.contact_number, this.memberForm.value.rsa_id_number, this.cso_id, this.memberForm.value.physical_address,this.memberForm.value.end_date, this.memberForm.value.start_date,this.memberForm.value.disability]).then((data) => {
+            console.log(data);
+            console.log("INSERTED: " + JSON.stringify(data) + sql);
+            const toast = this.toastCtrl.create({
+              message: 'CSO Member was added successfully',
+              duration: 3000
+            });
+            toast.present();
+          }, (reject) => {
+          })
+         
+        })
+            }, (reject) => {
+            // })
+        })
+  
+  }
+}
 
   goBackToHomePage() {
     this.navCtrl.push(LandingPage)

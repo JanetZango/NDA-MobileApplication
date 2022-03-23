@@ -52,7 +52,7 @@
 
         <div class="input-field">
           <ion-input
-            placeholder="Registration number"
+            placeholder="Registration Number"
             type="text"
             formControlName="registration_number">
           </ion-input>
@@ -63,7 +63,7 @@
 
         <div class="input-field">
           <ion-input
-            placeholder="Total staff"
+            placeholder="Total Staff"
             type="number"
             formControlName="total_staff">
           </ion-input>
@@ -74,7 +74,7 @@
 
         <div class="input-field">
           <ion-input
-            placeholder="Ward number"
+            placeholder="Ward Number"
             type="number"
             formControlName="ward_number">
           </ion-input>
@@ -85,7 +85,7 @@
 
         <div class="input-field">
           <ion-input
-            placeholder="Contact number"
+            placeholder="Contact Number"
             type="number"
             formControlName="contact_number">
           </ion-input>
@@ -96,7 +96,7 @@
 
         <div class="input-field">
           <ion-input
-            placeholder="Email address"
+            placeholder="Email Address"
             type="email"
             formControlName="email_address">
           </ion-input>
@@ -107,7 +107,7 @@
 
         <div class="input-field">
           <ion-input
-            placeholder="Contact person"
+            placeholder="Contact Person"
             type="text"
             formControlName="contact_person">
           </ion-input>
@@ -117,7 +117,7 @@
         </div>
         <div class="input-field">
           <ion-input
-            placeholder="Physical address"
+            placeholder="Physical Address"
             type="text"
             formControlName="physical_address">
           </ion-input>
@@ -128,7 +128,7 @@
 
         <ion-item class="input-select">
           <ion-label>District</ion-label>
-          <ion-select formControlName="district" (ionChange)="onchangeDistrict()">
+          <ion-select formControlName="district" [(ngModel)]="district" (ionChange)="onchangeDistrict()">
             <ion-option *ngFor="let district of listFilteredLookupDistrict" [value]="district.id">{{district.district_name}}</ion-option>
           </ion-select>
         </ion-item>

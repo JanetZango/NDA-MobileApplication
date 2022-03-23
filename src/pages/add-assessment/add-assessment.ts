@@ -11,6 +11,10 @@ import {AssessmentPayloadModel} from "../../model/payload/assessment-payload.mod
 import {AssessmentService} from "../../service/assessment.service";
 import {DisplayListOfAssessmentPage} from "../display-list-of-assessment/display-list-of-assessment";
 import { ToastController } from 'ionic-angular';
+import { SqliteProvider } from '../../providers/sqlite/sqlite';
+import { SQLite, SQLiteObject } from '@ionic-native/sqlite';
+
+
 export interface AssessmentType {
     title: string;
     guid: string;
@@ -22,6 +26,9 @@ export interface AssessmentType {
   templateUrl: 'add-assessment.html',
 })
 export class AddAssessmentPage implements OnInit {
+  private isOpen: boolean = false
+  public db: SQLiteObject;
+  sql;
   cso: Cso;
   listOfQuestions: any[] = [];
   listOfAssessmentQuestions = [];
@@ -37,7 +44,7 @@ export class AddAssessmentPage implements OnInit {
 
 
   autoManufacturers = '';
-
+  assessment_date;
   constructor(
     public navCtrl: NavController,
     public navParams: NavParams,
@@ -48,7 +55,7 @@ export class AddAssessmentPage implements OnInit {
     public assessmentService: AssessmentService,
     public toastCtrl: ToastController
   ) {
-
+    this.assessment_date = new Date().toISOString().slice(0, 10);
   }
   
   countQuestions(question_guid: string){
@@ -58,6 +65,7 @@ export class AddAssessmentPage implements OnInit {
   }
   onSubmit(){
     let finalList = [];
+    this.SaveCSOoFFline();
     for(let key in this.listOfQuestions){
       let strTmp = this.listOfQuestions[key];
       let arrTmp = strTmp.split(',');
@@ -76,20 +84,21 @@ export class AddAssessmentPage implements OnInit {
       });
       alert.present();
     } else {
+    
       let payload = new AssessmentPayloadModel();
       payload.cso_id = this.cso.guid;
       payload.assessment_questions = finalList;
       payload.assessment_type_id = this.assessmentType.guid;
 
-      const _loader = this.loadingCtrl.create({
-        content: "Please wait whilst we create assessment...",
-        duration: 300000000
-      });
+      // const _loader = this.loadingCtrl.create({
+      //   content: "Please wait whilst we create assessment...",
+      //   duration: 300000000
+      // });
 
-      _loader.present();
+      // _loader.present();
 
       this.assessmentService.createAssessment(payload).subscribe((_responseData: any) => {
-        _loader.dismiss();
+        // _loader.dismiss();
         const toast = this.toastCtrl.create({
           message: 'Assesment was added successfully',
           duration: 3000
@@ -97,7 +106,7 @@ export class AddAssessmentPage implements OnInit {
         toast.present();
         return this.navCtrl.push(DisplayListOfAssessmentPage);
       }, _error => {
-        _loader.dismiss();
+        // _loader.dismiss();
         if (_error.status === 400) {
           const alert = this.alertCtrl.create({
             title: 'Oops',
@@ -106,16 +115,56 @@ export class AddAssessmentPage implements OnInit {
           });
           alert.present();
         } else {
-          const alert = this.alertCtrl.create({
-            title: 'Oops',
-            subTitle: 'Something went wrong, please contact administrator.',
-            buttons: ['OK']
-          });
-          alert.present();
+          // const alert = this.alertCtrl.create({
+          //   title: 'Oops',
+          //   subTitle: 'Something went wrong, please contact administrator.',
+          //   buttons: ['OK']
+          // });
+          // alert.present();
         }
       });
     }
   }
+  csoOff = 121
+  calc_assessment_level=1
+  
+  SaveCSOoFFline(){
+    let finalList = [];
+    for(let key in this.listOfQuestions){
+      let strTmp = this.listOfQuestions[key];
+      let arrTmp = strTmp.split(',');
+      finalList.push({
+        'assessment_type_section_guid': arrTmp[0],
+        'question_guid': arrTmp[1],
+        'answer_guid': arrTmp[2]
+      });
+    }
+
+    if (!this.isOpen) {
+      this.sql = new SQLite();
+      this.sql.create({ name: "test11.db", location: "default" }).then((db: SQLiteObject) => {
+        this.db = db;
+         this.isOpen = true;
+         return new Promise((resolve, reject) => {
+          let sql = "INSERT INTO Assessment (cso_id, assessment_type_id ,calc_assessment_level,assessment_date) VALUES (?,?,?,?)";
+          this.db.executeSql(sql, [ this.csoOff, this.assessmentType.guid,this.calc_assessment_level,this.assessment_date]).then((data) => {
+            console.log(data);
+            console.log("INSERTED: " + JSON.stringify(data) + sql);
+            const toast = this.toastCtrl.create({
+              message: 'Assesment was added successfully',
+              duration: 3000
+            });
+            toast.present();
+          }, (reject) => {
+          })
+         
+        })
+            }, (reject) => {
+            // })
+        })
+  
+  }
+}
 
   ngOnInit() {
     this.storage.get('current_cso').then((entity) => {

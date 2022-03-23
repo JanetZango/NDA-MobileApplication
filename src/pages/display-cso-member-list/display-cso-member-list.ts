@@ -10,6 +10,9 @@ import {Member} from "../../model/member.model";
 import {LandingPage} from "../landing/landing";
 import {CsoMemberService} from "../../service/cso-member.service";
 import {LoginPage} from "../login/login";
+import { SqliteProvider } from '../../providers/sqlite/sqlite';
+import { SyncService } from '../../service/Sync.service';
+import { SQLite, SQLiteObject } from '@ionic-native/sqlite';
 
 export interface CSoMembersListResponseData {
   cso_members: any;
@@ -27,6 +30,9 @@ export class DisplayCsoMemberListPage implements OnInit {
   filteredListOfCsoMembers: Member[] = [];
   CsoLoggedIn = new Array();
   CsoID;
+  private isOpen: boolean = false
+  public db: SQLiteObject;
+  sql;
   constructor(
     public navCtrl: NavController,
     public navParams: NavParams,
@@ -34,6 +40,8 @@ export class DisplayCsoMemberListPage implements OnInit {
     public csoMemberService: CsoMemberService,
     public storage: Storage,
     public alertCtrl: AlertController,
+    public sqlite :SqliteProvider,
+    public sync:SyncService
   ) {
   }
 
@@ -60,30 +68,62 @@ export class DisplayCsoMemberListPage implements OnInit {
     this.navCtrl.pop();
   }
 
-  _getCsoMembers() {
-    const _loader = this.loadingCtrl.create({
-      content: "Please wait information is still loading...",
-      duration: 300000000
-    });
 
-    _loader.present();
+
+  _getCsoMembers() {
+    // const _loader = this.loadingCtrl.create({
+    //   content: "Please wait information is still loading...",
+    //   duration: 300000000
+    // });
+
+    // _loader.present();
 
 
     this.csoMemberService.ListOfCsoMember0(this.CsoID).subscribe((_response:any) => {
       // this.originalListOfCsoMembers = _response.cso_members;
       this.filteredListOfCsoMembers = _response;
       this.filteredListOfCsoMembers.reverse();
-      _loader.dismiss();
+      // _loader.dismiss();
     }, _error => {
-      _loader.dismiss();
-      const alert = this.alertCtrl.create({
-        title: 'Oops',
-        subTitle: 'Something went wrong, please contact administrator.',
-        buttons: ['OK']
-      });
-      alert.present();
+      // _loader.dismiss();
+      // const alert = this.alertCtrl.create({
+      //   title: 'Oops',
+      //   subTitle: 'Something went wrong, please contact administrator.',
+      //   buttons: ['OK']
+      // });
+      // alert.present();
+    })
+    this.SyncMethod();
+  }
+  SyncMethod(){
+    this.sqlite.getCso_Member().then((_responseCso:any)=>{
+      // _loader.dismiss();
+      console.log(_responseCso)
+      this.filteredListOfCsoMembers = _responseCso
+
+      console.log(_responseCso)
+
+      this.sync.SyncRegisteredCSOMember(_responseCso).subscribe(data =>{
+        console.log(data)
+        this.DeleteLocalCSO()
+      })
     })
   }
+  DeleteLocalCSO(){
+    if (!this.isOpen) {
+      this.sql = new SQLite();
+      this.sql.create({ name: "test10.db", location: "default" }).then((db: SQLiteObject) => {
+        this.db = db;
+        this.db = db;
+        db.executeSql('DELETE FROM CSO_Member', [])
+        console.log("Tables Deleted")
+
+      }).catch((error) => {
+        console.log(error);
+      }); 
+
+    }
+}
 
   logout(){
     let alert = this.alertCtrl.create({

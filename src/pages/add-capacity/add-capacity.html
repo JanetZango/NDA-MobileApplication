@@ -15,14 +15,14 @@
         <ion-item class="input-select">
           <ion-label>Type</ion-label>
           <ion-select formControlName="capacity_building_type">
-            <ion-option *ngFor="let type of listLookupCapacityBuildingType" [value]="type.guid">{{type.title}}</ion-option>
+            <ion-option *ngFor="let type of listLookupCapacityBuildingType" [value]="type.id">{{type.capacity_building_type_name}}</ion-option>
           </ion-select>
         </ion-item>
 
         <ion-item class="input-select">
           <ion-label>Funding source</ion-label>
           <ion-select formControlName="funding_source">
-            <ion-option *ngFor="let funding of listLookupFundingSource" [value]="funding.guid">{{funding.title}}</ion-option>
+            <ion-option *ngFor="let funding of listLookupFundingSource" [value]="funding.id">{{funding.funding_source_name}}</ion-option>
           </ion-select>
         </ion-item>
 
@@ -42,7 +42,7 @@
 
         <div class="input-field">
           <ion-input
-            placeholder="Facilitator name"
+            placeholder="Facilitator Name"
             type="text"
             formControlName="facilitator_name">
           </ion-input>
@@ -53,7 +53,7 @@
 
         <div class="input-field">
           <ion-input
-            placeholder="Co Facilitator name"
+            placeholder="Co Facilitator Name"
             type="text"
             formControlName="co_facilitator_name">
           </ion-input>
@@ -75,7 +75,7 @@
 
         <ion-item class="input-select">
           <ion-label>District</ion-label>
-          <ion-select formControlName="district"  (ionChange)="onchangeDistrict()">
+          <ion-select formControlName="district" [(ngModel)]="district" (ionChange)="onchangeDistrict()">
             <ion-option *ngFor="let district of listFilteredLookupDistrict" [value]="district.id">{{district.district_name}}</ion-option>
           </ion-select>
         </ion-item>
@@ -97,7 +97,7 @@
           <ion-datetime  class="input-field" formControlName="end_date"></ion-datetime>
         </ion-item>
 
-        <button type="submit" class="input-submit" ion-button [disabled]="!capacityBuildingForm.valid">Submit</button>
+        <button type="submit" class="input-submit" ion-button >Submit</button>
       </form>
     </div>
   </div>

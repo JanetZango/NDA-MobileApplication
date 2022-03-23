@@ -1,47 +1,91 @@
 [
   {
-    "guid": "da9af699-daa5-4e11-9545-0c55ac77b0cd",
-    "title": "NPO",
-    "description": "Non-Profit organisation "
+    "id": 1,
+    "cso_type_name": "NPO",
+    "cso_type_description": "Non-Profit organisation ",
+    "modified_by": null,
+    "modified_date": null,
+    "created_by": null,
+    "created_date": null
   },
   {
-    "guid": "54992f8a-7502-4136-b82d-d880c292c8e4",
-    "title": "CBO",
-    "description": "Community based organisation "
+
+    "id": 2,
+    "cso_type_name": "CBO",
+    "cso_type_description": "Community based organisation ",
+    "modified_by": null,
+    "modified_date": null,
+    "created_by": null,
+    "created_date": null
   },
   {
-    "guid": "942bd053-afc6-47e7-8270-7c49a025f8ba",
-    "title": "FBO",
-    "description": "Faith based organisation "
+
+    "id": 3,
+    "cso_type_name": "FBO",
+    "cso_type_description": "Faith based organisation ",
+    "modified_by": null,
+    "modified_date": null,
+    "created_by": null,
+    "created_date": null
   },
   {
-    "guid": "9ce38af7-1cb3-44aa-9769-57f3a8df1336",
-    "title": "ECD Centre",
-    "description": "Early childhood development"
+
+    "id": 4,
+    "cso_type_name": "ECD Centre",
+    "cso_type_description": "Early childhood development",
+    "modified_by": null,
+    "modified_date": null,
+    "created_by": null,
+    "created_date": null
   },
   {
-    "guid": "7348c1ec-5d97-4088-ae4d-4cfbdc52a7f3",
-    "title": "Cooperative",
-    "description": "Cooperative"
+
+    "id": 5,
+    "cso_type_name": "Cooperative",
+    "cso_type_description": "Cooperative",
+    "modified_by": null,
+    "modified_date": null,
+    "created_by": null,
+    "created_date": null
   },
   {
-    "guid": "e471260d-8203-4f4b-89e3-237e91bea83b",
-    "title": "Community structure",
-    "description": "Community structure"
+
+    "id": 6,
+    "cso_type_name": "Community structure",
+    "cso_type_description": "Community structure",
+    "modified_by": null,
+    "modified_date": null,
+    "created_by": null,
+    "created_date": null
   },
   {
-    "guid": "d05a801c-c805-4e30-8735-27fff4c9458d",
-    "title": "Company/CC",
-    "description": "Company/CC"
+
+    "id": 7,
+    "cso_type_name": "Company/CC",
+    "cso_type_description": "Company/CC",
+    "modified_by": null,
+    "modified_date": null,
+    "created_by": null,
+    "created_date": null
   },
   {
-    "guid": "cae718c2-d3d0-40f9-85ae-e5dd695b05d1",
-    "title": "DPO",
-    "description": "Disability people organisation "
+    "id": 8,
+    "cso_type_name": "DPO",
+    "cso_type_description": "Disability people organisation ",
+    "modified_by": null,
+    "modified_date": null,
+    "created_by": null,
+    "created_date": null
   },
   {
-    "guid": "f95bef17-8f69-4a59-b9f6-29d6e248993f",
-    "title": "Sport",
-    "description": "SPort"
+
+    "id": 10,
+    "cso_type_name": "Sport",
+    "cso_type_description": "SPort",
+    "modified_by": 52,
+    "modified_date": "2019-10-04T14:10:52.933",
+    "created_by": 52,
+    "created_date": "2019-10-04T14:10:52.933"
   }
+
 ]

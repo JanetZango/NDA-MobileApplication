@@ -9,6 +9,11 @@ import { AddCsoPage } from "../add-cso/add-cso";
 import { CsoService } from "../../service/cso.service";
 import { LoginPage } from "../login/login";
 import { NewLookUpService } from "../../service/NewLookUp.service";
+import { SqliteProvider } from '../../providers/sqlite/sqlite';
+import { SyncService } from '../../service/Sync.service';
+import { SQLite, SQLiteObject } from '@ionic-native/sqlite';
+
+
 
 export interface CSoResponseData {
   csoes: any;
@@ -21,12 +26,14 @@ export interface CSoResponseData {
   templateUrl: 'display-list-of-cso.html',
 })
 export class DisplayListOfCsoPage implements OnInit {
-
   originalListOfCsoes: Cso[] = [];
   filteredListOfCsoes: Cso[] = [];
   listLookupCsoType = [];
   listLookupCsoSector = [];
   listLookupMobilizationMethod = [];
+  private isOpen: boolean = false
+  public db: SQLiteObject;
+  sql;
   constructor(
     public navCtrl: NavController,
     public navParams: NavParams,
@@ -35,6 +42,8 @@ export class DisplayListOfCsoPage implements OnInit {
     public csoService: CsoService,
     public alertCtrl: AlertController,
     public LookUp: NewLookUpService,
+    public sqlite :SqliteProvider,
+    public sync:SyncService
   ) { }
 
   registerCSO() {
@@ -72,35 +81,48 @@ export class DisplayListOfCsoPage implements OnInit {
     })
   }
 
+  getSector;
+  Lookup;
   _getListOfCsoes() {
-
-    const _loader = this.loadingCtrl.create({
-      content: "Please wait information is still loading...",
-      duration: 300000000
-    });
-
-    _loader.present();
-
     this.csoService.getListOfCSO().subscribe((_responseCso: any) => {
       console.log(_responseCso)
-      _loader.dismiss();
+      // _loader.dismiss();
       this.filteredListOfCsoes = _responseCso
-      this.originalListOfCsoes =_responseCso
+      this.originalListOfCsoes = _responseCso
+
     })
+    this.SyncMethod();
+  }
 
-    // this.csoService.list().subscribe((_responseData:CSoResponseData) => {
-    //   this.originalListOfCsoes = _responseData.csoes;
-    //   this.filteredListOfCsoes = _responseData.csoes;
+  SyncMethod(){
+    this.sqlite.getCso().then((_responseCso:any)=>{
+      // _loader.dismiss();
+      console.log(_responseCso)
+      this.filteredListOfCsoes = _responseCso
+      this.originalListOfCsoes = _responseCso
+      console.log(_responseCso)
 
-    // },_error => {
-    //   _loader.dismiss();
-    //   const alert = this.alertCtrl.create({
-    //     title: 'Oops',
-    //     subTitle: 'Something went wrong, please contact administrator.',
-    //     buttons: ['OK']
-    //   });
-    //   alert.present();
-    // });
+      this.sync.SyncRegisteredCSO(_responseCso).subscribe(data =>{
+        console.log(data)
+        this.DeleteLocalCSO()
+      })
+    })
+  }
+
+  DeleteLocalCSO(){
+      if (!this.isOpen) {
+        this.sql = new SQLite();
+        this.sql.create({ name: "test10.db", location: "default" }).then((db: SQLiteObject) => {
+          this.db = db;
+          this.db = db;
+          db.executeSql('DELETE FROM CSO', [])
+          console.log("Tables Deleted")
+  
+        }).catch((error) => {
+          console.log(error);
+        }); 
+  
+      }
   }
 
   goBackToHomePage() {

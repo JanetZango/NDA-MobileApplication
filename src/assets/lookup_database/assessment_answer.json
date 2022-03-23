@@ -1,114 +1,114 @@
 [
   {
-    "guid": "8f2afac9-88d6-4284-a842-43ba6b24367f",
+    "guid": "1",
     "assessment_question_guid": "d36033b4-3a06-46fe-a00d-4d9cfabea60f",
     "answer": "No constitution",
     "weight": 1
   },
   {
-    "guid": "1408a219-db92-4d5a-b985-0665724347c6",
+    "guid": "2",
     "assessment_question_guid": "d36033b4-3a06-46fe-a00d-4d9cfabea60f",
     "answer": "Draft constitution not approved by members",
     "weight": 2
   },
   {
-    "guid": "cf409b56-7946-4dc5-b725-d1e8fd6ba447",
+    "guid": "3",
     "assessment_question_guid": "d36033b4-3a06-46fe-a00d-4d9cfabea60f",
     "answer": "Approved constitution",
     "weight": 3
   },
   {
-    "guid": "6a87246a-029f-41ca-b63b-7b8151c77c1d",
+    "guid": "4",
     "assessment_question_guid": "7c4f2884-40e4-4d54-abc0-1a7a6a8b8d12",
     "answer": "No Board / Committee appointed",
     "weight": 1
   },
   {
-    "guid": "742f727c-f507-478c-8047-9ce8906d7826",
+    "guid": "5",
     "assessment_question_guid": "7c4f2884-40e4-4d54-abc0-1a7a6a8b8d12",
     "answer": "Board / Committee not appointed by members",
     "weight": 2
   },
   {
-    "guid": "a1884a01-1014-4c71-adf7-bb84d22f2508",
+    "guid": "6",
     "assessment_question_guid": "7c4f2884-40e4-4d54-abc0-1a7a6a8b8d12",
     "answer": "Board / Committee appointed by members",
     "weight": 3
   },
   {
-    "guid": "bc743437-389e-41df-bc7a-a2f9ceca4af8",
+    "guid": "7",
     "assessment_question_guid": "d23c79ed-7bd3-4f1e-b960-b0503ec8304d",
     "answer": "No diverse membership",
     "weight": 1
   },
   {
-    "guid": "38b054f5-d1bf-4f5d-b189-6f8b8a3dc801",
+    "guid": "8",
     "assessment_question_guid": "d23c79ed-7bd3-4f1e-b960-b0503ec8304d",
     "answer": "Less than 70% diverse membership",
     "weight": 2
   },
   {
-    "guid": "cfb0abb5-a9e3-42f9-8d27-6c640348c6f7",
+    "guid": "9",
     "assessment_question_guid": "d23c79ed-7bd3-4f1e-b960-b0503ec8304d",
     "answer": "More than 70% diverse membership",
     "weight": 3
   },
   {
-    "guid": "17aebb30-5dda-45df-b51f-46061151421d",
+    "guid": "10",
     "assessment_question_guid": "0b6e9e77-3eb6-49ad-87d4-5ac64ed3ff19",
     "answer": "Board / Committee never meet",
     "weight": 1
   },
   {
-    "guid": "e54ee20f-3f30-45ba-bee6-682fd9229284",
+    "guid": "11",
     "assessment_question_guid": "0b6e9e77-3eb6-49ad-87d4-5ac64ed3ff19",
     "answer": "Board / Committee meet less than four times a year",
     "weight": 2
   },
   {
-    "guid": "2e0c4663-551e-43c6-94e0-aea5269dee72",
+    "guid": "12",
     "assessment_question_guid": "0b6e9e77-3eb6-49ad-87d4-5ac64ed3ff19",
     "answer": "Board / Committee meet four or more times a year",
     "weight": 3
   },
   {
-    "guid": "f73baf32-b2cc-4d3c-9486-9a4e1db3d6b4",
+    "guid": "13",
     "assessment_question_guid": "5f84b740-c275-4176-bef5-6c9666b5b01d",
     "answer": "CSO / NPO does not have strategic plan",
     "weight": 1
   },
   {
-    "guid": "16c0083e-e4bf-474e-a34f-f1fb5e7734e3",
+    "guid": "14",
     "assessment_question_guid": "5f84b740-c275-4176-bef5-6c9666b5b01d",
     "answer": "CSO / NPO has a strategic plan but has not been shared with staff",
     "weight": 2
   },
   {
-    "guid": "1fc04e3c-da8f-400b-9c13-06ce85283ce2",
+    "guid": "15",
     "assessment_question_guid": "5f84b740-c275-4176-bef5-6c9666b5b01d",
     "answer": "CSO / NPO has a strategic plan and used for operational planning",
     "weight": 3
   },
   {
-    "guid": "d446fad4-b9d0-4bec-9128-7f5b60ae5ea6",
+    "guid": "16",
     "assessment_question_guid": "54c95760-bb1f-4363-93d2-b00146df9762",
     "answer": "CSO / NPO does not have an organogram",
     "weight": 1
   },
   {
-    "guid": "cf4b398b-7391-4e9a-a79c-7c4a8ceb2d62",
+    "guid": "17",
     "assessment_question_guid": "54c95760-bb1f-4363-93d2-b00146df9762",
     "answer": "CSO / NPO has an organogram but not approved by Board / Committee",
     "weight": 2
   },
   {
-    "guid": "a2d3ebab-52d9-4c0b-bf23-4185ba37092a",
+    "guid": "18",
     "assessment_question_guid": "54c95760-bb1f-4363-93d2-b00146df9762",
     "answer": "CSOs / NPO has approved organogram",
     "weight": 3
   },
   {
-    "guid": "1ae3e7c1-0ad5-42d6-a3e3-d88b99321a54",
+    "guid": "19",
     "assessment_question_guid": "7b35ce0a-d13b-4315-a66c-aa8e84395dc2",
     "answer": "CSO / NPO is not legally registered",
     "weight": 1

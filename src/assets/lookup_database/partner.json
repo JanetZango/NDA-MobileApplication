@@ -1,72 +1,72 @@
 [
   {
-    "guid": "dd2d996f-af3b-4fec-8da1-e296bdef9328",
+    "guid": "1",
     "title": "Kemeso Business Enterprise (pty) ltd",
-    "partner_type_guid": "c17d4cec-0cc4-4196-a9ac-6c4436d477b0"
+    "partner_type_guid": 4
   },
   {
-    "guid": "639c7a7b-8b28-4f64-b01c-5a60b9c8637f",
+    "guid": "2",
     "title": "VUCA",
-    "partner_type_guid": "c17d4cec-0cc4-4196-a9ac-6c4436d477b0"
+    "partner_type_guid": 4
   },
   {
-    "guid": "b2dd288e-185e-4529-9564-142100d03d38",
+    "guid": "3",
     "title": "LImpopo DSD",
-    "partner_type_guid": "c17d4cec-0cc4-4196-a9ac-6c4436d477b0"
+    "partner_type_guid": 4
   },
   {
-    "guid": "8bde3579-a477-4aa4-9e6a-412b2d09d23a",
+    "guid": "4",
     "title": "Regenesys (pty) ltd",
-    "partner_type_guid": "c17d4cec-0cc4-4196-a9ac-6c4436d477b0"
+    "partner_type_guid": 4
   },
   {
-    "guid": "1ad7f5ea-66d9-4ce7-820f-5662d4e98a0c",
+    "guid": "5",
     "title": "INMED SA",
-    "partner_type_guid": "c17d4cec-0cc4-4196-a9ac-6c4436d477b0"
+    "partner_type_guid": 4
   },
   {
-    "guid": "0fde8a3b-17ff-4851-804d-7996aa3e1784",
+    "guid": "6",
     "title": "Limpopo Church Network",
-    "partner_type_guid": "c17d4cec-0cc4-4196-a9ac-6c4436d477b0"
+    "partner_type_guid": 4
   },
   {
-    "guid": "268f44d7-5a90-4920-8d4c-b814e726a95e",
+    "guid": "7",
     "title": "Nelson Mandela Children' s Fund ",
-    "partner_type_guid": "c17d4cec-0cc4-4196-a9ac-6c4436d477b0"
+    "partner_type_guid": 4
   },
   {
-    "guid": "ca339ff4-dd16-43ea-8c30-0dd6fc43dbed",
+    "guid": "8",
     "title": "B&D Solutions",
-    "partner_type_guid": "c17d4cec-0cc4-4196-a9ac-6c4436d477b0"
+    "partner_type_guid": 4
   },
   {
-    "guid": "7b9de6aa-17a5-47ec-9f05-902b295b9fd6",
+    "guid": "9",
     "title": "Mondi Limited",
-    "partner_type_guid": "c17d4cec-0cc4-4196-a9ac-6c4436d477b0"
+    "partner_type_guid": 4
   },
   {
-    "guid": "158818b2-b909-44f1-803b-68398902f693",
+    "guid": "10",
     "title": "SEDA",
-    "partner_type_guid": "c17d4cec-0cc4-4196-a9ac-6c4436d477b0"
+    "partner_type_guid": 4
   },
   {
-    "guid": "0019d694-1362-4c45-b83e-07f6fae83f52",
+    "guid": "11",
     "title": "Unemployment Insurance Fund",
-    "partner_type_guid": "c17d4cec-0cc4-4196-a9ac-6c4436d477b0"
+    "partner_type_guid": 4
   },
   {
-    "guid": "a9e53a82-4ce0-4a07-bdfd-c6e578d64672",
+    "guid": "12",
     "title": "Network Action Group",
-    "partner_type_guid": "c17d4cec-0cc4-4196-a9ac-6c4436d477b0"
+    "partner_type_guid": 4
   },
   {
-    "guid": "ecf9b1d8-0c55-43fc-ac9d-f2d92b691905",
+    "guid": "13",
     "title": "SABC",
-    "partner_type_guid": "c17d4cec-0cc4-4196-a9ac-6c4436d477b0"
+    "partner_type_guid": 4
   },
   {
-    "guid": "ec269474-7971-4c9c-960d-515e3b554997",
+    "guid": "14",
     "title": "University of Fort Hare",
-    "partner_type_guid": "c17d4cec-0cc4-4196-a9ac-6c4436d477b0"
+    "partner_type_guid": 4
   }
 ]

@@ -11,6 +11,7 @@ import {CsoService} from "../../service/cso.service";
 import {UserService} from "../../service/user.service";
 import { ToastController } from 'ionic-angular';
 import { SqliteProvider } from '../../providers/sqlite/sqlite';
+import { SQLite, SQLiteObject } from '@ionic-native/sqlite';
 import { NewLookUpService} from "../../service/NewLookUp.service";
 import { AddCSO } from '../../model/payload/AddCso.model'
 
@@ -20,7 +21,9 @@ import { AddCSO } from '../../model/payload/AddCso.model'
   templateUrl: 'add-cso.html',
 })
 export class AddCsoPage implements OnInit {
-
+  private isOpen: boolean = false
+  public db: SQLiteObject;
+  sql;
   listLookupProvince = [];
   listLookupCsoType = [];
   listLookupCsoSector = [];
@@ -39,6 +42,7 @@ export class AddCsoPage implements OnInit {
   private csoForm: FormGroup;
 
   _districtGuid;
+  district;
 
   constructor(
     public navCtrl: NavController,
@@ -57,11 +61,11 @@ export class AddCsoPage implements OnInit {
 
   ngOnInit(): void {
     this._buildForm();
-    // this._getCsoType();
-    // this._getCsoSector();
-    // this._getMobilisationMethod();
-    // this._getDistrict(this.userService.province_guid);
-    // this._getMunicipality();
+    this._getCsoType();
+    this._getCsoSector();
+    this._getMobilisationMethod();
+    this._getDistrict();
+    this._getMunicipality();
 
 
     // new
@@ -138,15 +142,16 @@ export class AddCsoPage implements OnInit {
   }
 
   onchangeDistrict() {
-    this._districtGuid = this.csoForm.value.district;
-      console.log(this._districtGuid)
+    this.district = this.csoForm.value.district;
+      console.log(this.district)
       this.disableMunicipalityDropdown = false;
       this._getNewLookMunicipality();
+      this._updateMunicipality(this.district);
     }
   
   _getNewLookMunicipality(){
-    console.log(this._districtGuid)
-    this.LookUp.getMunicipalitynew(this._districtGuid).subscribe((_responseMunicipality:any)=>{
+    console.log(this.district)
+    this.LookUp.getMunicipalitynew(this.district).subscribe((_responseMunicipality:any)=>{
       console.log(_responseMunicipality)
       this.listFilteredLookupMunicipality =_responseMunicipality
     })
@@ -180,35 +185,43 @@ export class AddCsoPage implements OnInit {
     
   }
 
-  _getDistrict(province_guid: string) {
+  _getDistrict() {
     this.lookupService.getDistrict().subscribe(res => {
-      const listOfDistricts = res;
-      this.listOriginalLookupDistrict = listOfDistricts.filter(x => x.province_guid === province_guid);
-      this.listFilteredLookupDistrict = listOfDistricts.filter(x => x.province_guid === province_guid);
+     this.listFilteredLookupDistrict = res;
+     console.log(this.listFilteredLookupDistrict)
+      // this.listOriginalLookupDistrict = listOfDistricts.filter(x => x.id === province_guid);
+      // this.listFilteredLookupDistrict = listOfDistricts.filter(x => x.id === province_guid);
+
     })
   }
 
+ 
   _getMunicipality() {
     this.lookupService.getLocalMunicipality().subscribe(res => {
+      console.log(res)
       this.listOriginalLookupMunicipality = res;
       this.listFilteredLookupMunicipality = res;
+      console.log(this.listFilteredLookupMunicipality)
     })
   }
 
   _updateDistrict(province_guid: string) {
-    this.listFilteredLookupDistrict = this.listOriginalLookupDistrict.filter(x => x.province_guid === province_guid);
+    this.listFilteredLookupDistrict = this.listOriginalLookupDistrict.filter(x => x.id === province_guid);
   }
 
-  // _updateMunicipality(district_guid: string) {
-  //   this.listFilteredLookupMunicipality = this.listOriginalLookupMunicipality.filter(x => x.id === id);
+  _updateMunicipality(district_guid) {
+    console.log(district_guid)
+    console.log(this.listFilteredLookupMunicipality)
+    this.listFilteredLookupMunicipality = this.listOriginalLookupMunicipality.filter(x => x.district_guid === district_guid);
+    console.log(this.listFilteredLookupMunicipality)
 
-  // }
+  }
 
   onchangeProvince() {
-    const _provinceGuid = this.csoForm.get('province').value;
+    // const _provinceGuid = this.csoForm.get('province').value;
     this.disableDistrictDropdown = false;
     this.disableMunicipalityDropdown = true;
-    this._updateDistrict(_provinceGuid);
+    this._updateDistrict(this.district);
   }
 
  
@@ -221,6 +234,19 @@ export class AddCsoPage implements OnInit {
   }
 
   formSubmit() {
+    this.SaveCSOoFFline();
+    // this.sqlite.SaveCSO(this.csoForm.value.name_of_cso,this.csoForm.value.cso_type,this.csoForm.value.cso_sector,this.csoForm.value.municipality,
+    //   this.csoForm.value.physical_address ,this.csoForm.value.contact_person,this.csoForm.value.ward_number ,this.csoForm.value.total_staf,
+    //   this.csoForm.value.registration_number,this.csoForm.value.email_address,this.csoForm.value.contact_number,this.csoForm.value.mobilization_method
+    //   , this.csoForm.value.district).then(_responseSaveCso =>{
+    //     console.log(_responseSaveCso)
+    //     // _loader.dismiss();
+    //     const toast = this.toastCtrl.create({
+    //       message: 'CSO was added successfully',
+    //       duration: 3000
+    //     });
+    //     toast.present();
+      // })
     this.csoPayload = new CsoPayload();
     this.csoPayload.name_of_cso = this.csoForm.value.name_of_cso;
     this.csoPayload.cso_type_id = this.csoForm.value.cso_type;
@@ -239,12 +265,6 @@ export class AddCsoPage implements OnInit {
 
     console.log(this.csoPayload)
 
-    // const _loader = this.loadingCtrl.create({
-    //   content: "Please wait whilst we create cso...",
-    //   duration: 300000000
-    // });
-
-    // _loader.present();
 
     this.csoService.createCso(this.csoPayload).subscribe((_response: any) => {
       console.log(_response)
@@ -254,38 +274,33 @@ export class AddCsoPage implements OnInit {
         duration: 3000
       });
       toast.present();
-      // return this.redirectToCSOList();
-    // }, _error => {
-    //   _loader.dismiss();
-    //   if (_error.status === 400) {
-    //     const alert = this.alertCtrl.create({
-    //       title: 'Oops',
-    //       subTitle: 'You have entered invalid details, please check your form inputs.',
-    //       buttons: ['OK']
-    //     });
-    //     alert.present();
-    //   } else {
-    //     const alert = this.alertCtrl.create({
-    //       title: 'Oops',
-    //       subTitle: 'Something went wrong, please contact administrator.',
-    //       buttons: ['OK']
-    //     });
-    //     alert.present();
-    //   }
     });
-    // this.sqlite.SaveCSO(this.csoForm.value.name_of_cso,this.csoForm.value.cso_type,this.csoForm.value.cso_sector,this.csoForm.value.municipality,
-    //   this.csoForm.value.physical_address ,this.csoForm.value.contact_person,this.csoForm.value.ward_number ,this.csoForm.value.total_staf,
-    //   this.csoForm.value.registration_number,this.csoForm.value.email_address,this.csoForm.value.contact_number,this.csoForm.value.mobilization_method
-    //   , this.csoForm.value.district).then(_responseSaveCso =>{
-    //     console.log(_responseSaveCso)
-    //     const _loader = this.loadingCtrl.create({
-    //       content: "Please wait whilst we create cso...",
-    //       duration: 300000000
-    //     });
-    
-    //     _loader.present();
-    //   })
+
   }
+  collected_by=2
+  municipality_id=1
+  province_id=4;
+  SaveCSOoFFline(){
+    if (!this.isOpen) {
+      this.sql = new SQLite();
+      this.sql.create({ name: "test10.db", location: "default" }).then((db: SQLiteObject) => {
+        this.db = db;
+         this.isOpen = true;
+            let sql = "INSERT INTO CSO (cso_type_id ,cso_sector_id ,province_id ,district_id ,municipality_id ,registration_number ,total_staff ,ward_number ,contact_number ,email_address ,contact_person ,physical_address ,name_of_cso,mobilization_method,mobilization_date ,collected_by) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)";
+            this.db.executeSql(sql, [this.csoForm.value.cso_type ,this.csoForm.value.cso_sector ,this.province_id ,this.csoForm.value.district ,this.municipality_id ,this.csoForm.value.registration_number ,this.csoForm.value.total_staff ,this.csoForm.value.ward_number ,this.csoForm.value.contact_number ,this.csoForm.value.email_address ,this.csoForm.value.contact_person ,this.csoForm.value.physical_address ,this.csoForm.value.name_of_cso,this.csoForm.value.mobilization_method,this.csoForm.value.mobilization_date,this.collected_by ]).then((data) => {
+              console.log(data);
+              console.log("INSERTED: " + JSON.stringify(data) + sql);
+              const toast = this.toastCtrl.create({
+                message: 'CSO was added successfully',
+                duration: 3000
+              });
+              toast.present();
+            }, (reject) => {
+            // })
+        })
+    })
+  }
+}
 
   goBackToHomePage() {
     this.navCtrl.push(LandingPage)

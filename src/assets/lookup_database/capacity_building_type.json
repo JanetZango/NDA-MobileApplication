@@ -1,74 +1,181 @@
 [
   {
-    "guid": "4134b53f-eb9d-4638-ac84-c32fcbf9a49c",
-    "title": "Training Governance"
+    "id": 1,
+    "capacity_building_type_name": "Training Governance",
+    "capacity_building_type_description": null,
+    "modified_by": null,
+    "modified_date": null,
+    "created_by": null,
+    "created_date": null
   },
   {
-    "guid": "0572a2aa-f54c-4071-aad7-99c56ebfe158",
-    "title": "Training Conflict Management"
+
+    "id": 2,
+    "capacity_building_type_name": "Training Conflict Management",
+    "capacity_building_type_description": null,
+    "modified_by": null,
+    "modified_date": null,
+    "created_by": null,
+    "created_date": null
   },
   {
-    "guid": "c2b12f23-bbf0-47a0-88b2-7220427bfcf4",
-    "title": "Training Financial Management"
+
+    "id": 3,
+    "capacity_building_type_name": "Training Financial Management",
+    "capacity_building_type_description": null,
+    "modified_by": null,
+    "modified_date": null,
+    "created_by": null,
+    "created_date": null
   },
   {
-    "guid": "8317f81a-aff7-40e0-b0f2-d548ed4cf5ad",
-    "title": "Training Project Management"
+
+    "id": 4,
+    "capacity_building_type_name": "Training Project Management",
+    "capacity_building_type_description": null,
+    "modified_by": null,
+    "modified_date": null,
+    "created_by": null,
+    "created_date": null
   },
   {
-    "guid": "22981218-5244-4ff9-829b-34e275af98ce",
-    "title": "Training Resource Mobilisation"
+
+    "id": 5,
+    "capacity_building_type_name": "Training Resource Mobilisation",
+    "capacity_building_type_description": null,
+    "modified_by": null,
+    "modified_date": null,
+    "created_by": null,
+    "created_date": null
   },
   {
-    "guid": "2131a55b-daf8-4be0-96c8-4f7f3251724e",
-    "title": "Training Mentoring Support"
+
+    "id": 6,
+    "capacity_building_type_name": "Training Mentoring Support",
+    "capacity_building_type_description": null,
+    "modified_by": null,
+    "modified_date": null,
+    "created_by": null,
+    "created_date": null
   },
   {
-    "guid": "3f395d75-3a64-4654-852c-6eb31aca8f3d",
-    "title": "Training Legislation Compliance"
+
+    "id": 7,
+    "capacity_building_type_name": "Training Legislation Compliance",
+    "capacity_building_type_description": null,
+    "modified_by": null,
+    "modified_date": null,
+    "created_by": null,
+    "created_date": null
   },
   {
-    "guid": "c2d0c41f-5bdc-4d17-9c32-2c4026c24373",
-    "title": "Training Community Developemnt Practice"
+
+    "id": 8,
+    "capacity_building_type_name": "Training Community Developemnt Practice",
+    "capacity_building_type_description": null,
+    "modified_by": null,
+    "modified_date": null,
+    "created_by": null,
+    "created_date": null
   },
   {
-    "guid": "91207b9b-1298-4bbd-9f82-3584b63dd6ee",
-    "title": "Training Organisational Development"
+
+    "id": 9,
+    "capacity_building_type_name": "Training Organisational Development",
+    "capacity_building_type_description": null,
+    "modified_by": null,
+    "modified_date": null,
+    "created_by": null,
+    "created_date": null
   },
   {
-    "guid": "6af766b6-0afe-4e0d-8efb-27c189a9180b",
-    "title": " Mentoring  Governance"
+
+    "id": 10,
+    "capacity_building_type_name": " Mentoring  Governance",
+    "capacity_building_type_description": "",
+    "modified_by": 1,
+    "modified_date": "2019-06-28T09:40:15",
+    "created_by": null,
+    "created_date": null
   },
   {
-    "guid": "69e0479f-fbcc-4636-b70c-deacb4a135ff",
-    "title": "Incubation "
+
+    "id": 11,
+    "capacity_building_type_name": "Incubation ",
+    "capacity_building_type_description": null,
+    "modified_by": null,
+    "modified_date": null,
+    "created_by": null,
+    "created_date": null
   },
   {
-    "guid": "94203d9d-6362-4c7e-8da6-794c555dd548",
-    "title": "Mentoring Conflict Management"
+
+    "id": 12,
+    "capacity_building_type_name": "Mentoring Conflict Management",
+    "capacity_building_type_description": "",
+    "modified_by": 1,
+    "modified_date": "2019-06-28T09:40:45.007",
+    "created_by": 1,
+    "created_date": "2019-06-28T09:40:45.007"
   },
   {
-    "guid": "89c5f17a-f225-4608-addf-e9960b17b534",
-    "title": "Mentoring  Financial Management"
+
+    "id": 13,
+    "capacity_building_type_name": "Mentoring  Financial Management",
+    "capacity_building_type_description": "",
+    "modified_by": 1,
+    "modified_date": "2019-06-28T09:41:56.357",
+    "created_by": 1,
+    "created_date": "2019-06-28T09:41:56.357"
   },
   {
-    "guid": "5d9a85a1-1af1-4b3b-8f49-bf45b37d37f7",
-    "title": "Mentoring Project Management"
+
+    "id": 14,
+    "capacity_building_type_name": "Mentoring Project Management",
+    "capacity_building_type_description": "",
+    "modified_by": 1,
+    "modified_date": "2019-06-28T09:45:59.383",
+    "created_by": 1,
+    "created_date": "2019-06-28T09:45:59.383"
   },
   {
-    "guid": "7a03d379-cfb2-44ff-b107-98a29ee4e290",
-    "title": "Mentoring  Resource Mobilisation"
+
+    "id": 15,
+    "capacity_building_type_name": "Mentoring  Resource Mobilisation",
+    "capacity_building_type_description": "",
+    "modified_by": 1,
+    "modified_date": "2019-06-28T09:46:25.523",
+    "created_by": 1,
+    "created_date": "2019-06-28T09:46:25.523"
   },
   {
-    "guid": "85de776c-8b9a-4c12-8521-1dbe76dd0abe",
-    "title": "Mentoring Legislation Compliance"
+
+    "id": 16,
+    "capacity_building_type_name": "Mentoring Legislation Compliance",
+    "capacity_building_type_description": "",
+    "modified_by": 1,
+    "modified_date": "2019-06-28T09:46:50.363",
+    "created_by": 1,
+    "created_date": "2019-06-28T09:46:50.363"
   },
   {
-    "guid": "c237d660-3f2a-4d36-b81e-522b062cf05f",
-    "title": "Mentoring Community Development Practice"
+
+    "id": 17,
+    "capacity_building_type_name": "Mentoring Community Development Practice",
+    "capacity_building_type_description": "",
+    "modified_by": 1,
+    "modified_date": "2019-06-28T09:47:25",
+    "created_by": 1,
+    "created_date": "2019-06-28T09:47:15.083"
   },
   {
-    "guid": "36b93b7d-3857-4c1b-9d5d-607055d67804",
-    "title": "Mentoring Organisational Development"
+
+    "id": 18,
+    "capacity_building_type_name": "Mentoring Organisational Development",
+    "capacity_building_type_description": "",
+    "modified_by": 1,
+    "modified_date": "2019-06-28T09:48:13.133",
+    "created_by": 1,
+    "created_date": "2019-06-28T09:48:13.133"
   }
 ]

@@ -8,7 +8,9 @@ import {Assessment} from '../../model/assessment.model';
 import {ViewAssessmentPage} from "../view-assessment/view-assessment";
 import {LoginPage} from "../login/login";
 import {AssessmentService} from "../../service/assessment.service";
-
+import { SyncService } from '../../service/Sync.service';
+import { SQLite, SQLiteObject } from '@ionic-native/sqlite';
+import { SqliteProvider } from '../../providers/sqlite/sqlite';
 export interface AssessmentListResponse {
   assessments: any;
 }
@@ -20,7 +22,9 @@ export interface AssessmentListResponse {
   templateUrl: 'display-list-of-assessment.html',
 })
 export class DisplayListOfAssessmentPage {
-
+  private isOpen: boolean = false
+  public db: SQLiteObject;
+  sql;
   originalListOfAssessment: Assessment[] = [];
   filteredListOfAssessment: Assessment[] = [];
 
@@ -31,6 +35,8 @@ export class DisplayListOfAssessmentPage {
     public loadingCtrl: LoadingController,
     public storage: Storage,
     public alertCtrl: AlertController,
+    public sqlite :SqliteProvider,
+    public sync:SyncService
   ) {
     this._getListOfAssessments();
   }
@@ -44,29 +50,61 @@ export class DisplayListOfAssessmentPage {
   }
 
   _getListOfAssessments() {
-    const _loader = this.loadingCtrl.create({
-      content: "Please wait information is still loading...",
-      duration: 300000000
-    });
+    // const _loader = this.loadingCtrl.create({
+    //   content: "Please wait information is still loading...",
+    //   duration: 300000000
+    // });
 
-    _loader.present();
+    // _loader.present();
 
     this.assessmentService.listOOfAssessment().subscribe((_response: any) => {
       this.filteredListOfAssessment = _response;
-      this.filteredListOfAssessment.reverse();
+
       console.log(this.filteredListOfAssessment)
       this.originalListOfAssessment = _response;
-      _loader.dismiss();
+      this.filteredListOfAssessment.reverse();
+      this.filteredListOfAssessment = _response
+      // _loader.dismiss();
     }, _error => {
-      _loader.dismiss();
-      const alert = this.alertCtrl.create({
-        title: 'Oops',
-        subTitle: 'Something went wrong, please contact administrator.',
-        buttons: ['OK']
-      });
-      alert.present();
+      // _loader.dismiss();
+      // const alert = this.alertCtrl.create({
+      //   title: 'Oops',
+      //   subTitle: 'Something went wrong, please contact administrator.',
+      //   buttons: ['OK']
+      // });
+      // alert.present();
+    })
+    this.SyncMethod();
+  }
+  SyncMethod(){
+    this.sqlite.getAssessment().then((_responseCso:any)=>{
+      // _loader.dismiss();
+      console.log(_responseCso)
+      this.filteredListOfAssessment = _responseCso
+
+      console.log(_responseCso)
+
+      this.sync.SyncAssessment(_responseCso).subscribe(data =>{
+        console.log(data)
+        this.DeleteLocalCSO()
+      })
     })
   }
+  DeleteLocalCSO(){
+    if (!this.isOpen) {
+      this.sql = new SQLite();
+      this.sql.create({ name: "test10.db", location: "default" }).then((db: SQLiteObject) => {
+        this.db = db;
+        this.db = db;
+        db.executeSql('DELETE FROM Assessment', [])
+        console.log("Tables Deleted")
+
+      }).catch((error) => {
+        console.log(error);
+      }); 
+
+    }
+}
 
   searchForAssessmentByCsoName(element: any) {
     const _needle = element.target.value;

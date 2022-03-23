@@ -1,1280 +1,1280 @@
 [
   {
-    "guid": "0f350682-5259-47dc-9133-015f520fa358",
-    "title": "Dr Beyers Naude",
+    "id": 1,
+    "map_title": "Dr Beyers Naude",
     "code": "EC101",
-    "district_guid": "e9469fc0-6fb7-4325-a589-7955d51939c5"
+    "district_id": 1
   },
   {
-    "guid": "5e6c14da-9ee2-4874-98c4-f2a4c4e71e7d",
-    "title": "Makana",
+    "id": 2,
+    "map_title": "Makana",
     "code": "EC104",
-    "district_guid": "e9469fc0-6fb7-4325-a589-7955d51939c5"
+    "district_id": 1
   },
   {
-    "guid": "9c332373-6788-492d-aae0-925375fbf9f6",
-    "title": "Ndlambe",
+    "id": 3,
+    "map_title": "Ndlambe",
     "code": "EC105",
-    "district_guid": "e9469fc0-6fb7-4325-a589-7955d51939c5"
+    "district_id": 1
   },
   {
-    "guid": "ad687bbe-8a2e-4e44-ae0e-cbe2621f8359",
-    "title": "Mbhashe",
+    "id": 4,
+    "map_title": "Mbhashe",
     "code": "EC121",
-    "district_guid": "b700ec08-2449-4301-b580-4b2596bd9d7b"
+    "district_id": 2
   },
   {
-    "guid": "5058dea3-1f86-4f28-8253-36decc2ab345",
-    "title": "Mnquma",
+    "id": 5,
+    "map_title": "Mnquma",
     "code": "EC122",
-    "district_guid": "b700ec08-2449-4301-b580-4b2596bd9d7b"
+    "district_id": 2
   },
   {
-    "guid": "99ebf19f-27d0-441d-a0bc-256dbc03da13",
-    "title": "Inxuba Yethemba",
+    "id": 6,
+    "map_title": "Inxuba Yethemba",
     "code": "EC131",
-    "district_guid": "1fe5cd6a-2ef8-41e8-aff7-eddad2de5abc"
+    "district_id": 3
   },
   {
-    "guid": "4e2f18e2-0651-4c7a-9e8e-ab8ca66c1966",
-    "title": "Engcobo",
+    "id": 7,
+    "map_title": "Engcobo",
     "code": "EC137",
-    "district_guid": "1fe5cd6a-2ef8-41e8-aff7-eddad2de5abc"
+    "district_id": 3
   },
   {
-    "guid": "46d4560f-3ccc-48bd-b2c3-b013572f47bf",
-    "title": "Elundini",
+    "id": 8,
+    "map_title": "Elundini",
     "code": "EC141",
-    "district_guid": "373c5f0d-20fa-43e6-959a-b3803a93f5d5"
+    "district_id": 4
   },
   {
-    "guid": "4bd4c939-d840-465f-8d74-a87d93a1e0b5",
-    "title": "Senqu",
+    "id": 9,
+    "map_title": "Senqu",
     "code": "EC142",
-    "district_guid": "373c5f0d-20fa-43e6-959a-b3803a93f5d5"
+    "district_id": 4
   },
   {
-    "guid": "2838fc6b-810f-46cf-96f8-1da1195653e8",
-    "title": "Ngquza Hill",
+    "id": 10,
+    "map_title": "Ngquza Hill",
     "code": "EC153",
-    "district_guid": "651ed4c3-9c15-4320-a689-704897af9092"
+    "district_id": 5
   },
   {
-    "guid": "3413d44a-2690-4bc7-8674-d03154401efb",
-    "title": "Port St Johns",
+    "id": 11,
+    "map_title": "Port St Johns",
     "code": "EC154",
-    "district_guid": "651ed4c3-9c15-4320-a689-704897af9092"
+    "district_id": 5
   },
   {
-    "guid": "e4390fed-baf6-4946-b44c-45ac6f5751a5",
-    "title": "Nyandeni",
+    "id": 12,
+    "map_title": "Nyandeni",
     "code": "EC155",
-    "district_guid": "651ed4c3-9c15-4320-a689-704897af9092"
+    "district_id": 5
   },
   {
-    "guid": "c60dd676-6280-4749-b94c-e86282009a31",
-    "title": "Mhlontlo",
+    "id": 13,
+    "map_title": "Mhlontlo",
     "code": "EC156",
-    "district_guid": "651ed4c3-9c15-4320-a689-704897af9092"
+    "district_id": 5
   },
   {
-    "guid": "4e59c7fa-defc-4a9d-b2fd-a4fd84b73387",
-    "title": "King Sabata Dalindyebo",
+    "id": 14,
+    "map_title": "King Sabata Dalindyebo",
     "code": "EC157",
-    "district_guid": "651ed4c3-9c15-4320-a689-704897af9092"
+    "district_id": 5
   },
   {
-    "guid": "1523ba72-1af7-4f52-9f55-4cd88811e3c6",
-    "title": "Matatiele",
+    "id": 15,
+    "map_title": "Matatiele",
     "code": "EC441",
-    "district_guid": "9bbbfcbc-be13-4542-b9cf-bda0d1512ab9"
+    "district_id": 6
   },
   {
-    "guid": "5ad1090b-a1e7-4836-9b2d-b923e1a6177c",
-    "title": "Umzimvubu",
+    "id": 16,
+    "map_title": "Umzimvubu",
     "code": "EC442",
-    "district_guid": "9bbbfcbc-be13-4542-b9cf-bda0d1512ab9"
+    "district_id": 6
   },
   {
-    "guid": "90fe282e-ec0b-4d30-b0ff-77e8722a9c64",
-    "title": "Ntabankulu",
+    "id": 17,
+    "map_title": "Ntabankulu",
     "code": "EC444",
-    "district_guid": "9bbbfcbc-be13-4542-b9cf-bda0d1512ab9"
+    "district_id": 6
   },
   {
-    "guid": "5e062d6a-60aa-4e9e-9054-ecf6c5fc979b",
-    "title": "Mbizana",
+    "id": 18,
+    "map_title": "Mbizana",
     "code": "EC443",
-    "district_guid": "9bbbfcbc-be13-4542-b9cf-bda0d1512ab9"
+    "district_id": 6
   },
   {
-    "guid": "4f468619-7270-41a5-96a1-e2038e2949d9",
-    "title": "Great Kei",
+    "id": 19,
+    "map_title": "Great Kei",
     "code": "EC123",
-    "district_guid": "b700ec08-2449-4301-b580-4b2596bd9d7b"
+    "district_id": 2
   },
   {
-    "guid": "6a41a43c-8760-4bfc-9c27-750045b33bcf",
-    "title": "Amahlathi",
+    "id": 20,
+    "map_title": "Amahlathi",
     "code": "EC124",
-    "district_guid": "b700ec08-2449-4301-b580-4b2596bd9d7b"
+    "district_id": 2
   },
   {
-    "guid": "e6ad8897-cb86-4c81-b498-20ddf26c4c50",
-    "title": "Sundays River Valley",
+    "id": 21,
+    "map_title": "Sundays River Valley",
     "code": "EC106",
-    "district_guid": "e9469fc0-6fb7-4325-a589-7955d51939c5"
+    "district_id": 1
   },
   {
-    "guid": "7025be39-8e84-40c1-b910-32524eb2c032",
-    "title": "Kouga",
+    "id": 22,
+    "map_title": "Kouga",
     "code": "EC108",
-    "district_guid": "e9469fc0-6fb7-4325-a589-7955d51939c5"
+    "district_id": 1
   },
   {
-    "guid": "cca6c298-5d9b-4e9f-b533-17b5f09f1ad1",
-    "title": "Kou-Kamma",
+    "id": 23,
+    "map_title": "Kou-Kamma",
     "code": "EC109",
-    "district_guid": "e9469fc0-6fb7-4325-a589-7955d51939c5"
+    "district_id": 1
   },
   {
-    "guid": "752e3bce-322c-4002-88cc-a99438ce46c5",
-    "title": "Nelson Mandela Bay",
+    "id": 24,
+    "map_title": "Nelson Mandela Bay",
     "code": "NMA",
-    "district_guid": "708283e7-85fd-4451-9a25-a396733819fe"
+    "district_id": 7
   },
   {
-    "guid": "473c9d93-2a9a-4c00-ade4-d8bea42e6436",
-    "title": "Bufalo City",
+    "id": 25,
+    "map_title": "Bufalo City",
     "code": "BUF",
-    "district_guid": "262ccd97-5593-429a-859c-fb64b15d77b6"
+    "district_id": 8
   },
   {
-    "guid": "797bae60-f0bd-4c23-90b6-3f5a19d69f53",
-    "title": "Ngqushwa",
+    "id": 26,
+    "map_title": "Ngqushwa",
     "code": "EC126",
-    "district_guid": "b700ec08-2449-4301-b580-4b2596bd9d7b"
+    "district_id": 2
   },
   {
-    "guid": "2ada42a8-3a17-45ba-9f81-09f74f6e37a1",
-    "title": "Intsika Yethu",
+    "id": 27,
+    "map_title": "Intsika Yethu",
     "code": "EC135",
-    "district_guid": "1fe5cd6a-2ef8-41e8-aff7-eddad2de5abc"
+    "district_id": 3
   },
   {
-    "guid": "ea09c2d9-fb92-4719-b4d2-4bf7f5255f4b",
-    "title": "Emalahleni",
+    "id": 28,
+    "map_title": "Emalahleni",
     "code": "EC136",
-    "district_guid": "1fe5cd6a-2ef8-41e8-aff7-eddad2de5abc"
+    "district_id": 3
   },
   {
-    "guid": "d89debba-4b40-4109-be4b-e693ee5768bf",
-    "title": "Sakhisizwe",
+    "id": 29,
+    "map_title": "Sakhisizwe",
     "code": "EC138",
-    "district_guid": "1fe5cd6a-2ef8-41e8-aff7-eddad2de5abc"
+    "district_id": 3
   },
   {
-    "guid": "c170563f-3290-494d-8752-89a60b558f8a",
-    "title": "Walter Sisulu",
+    "id": 30,
+    "map_title": "Walter Sisulu",
     "code": "EC145",
-    "district_guid": "373c5f0d-20fa-43e6-959a-b3803a93f5d5"
+    "district_id": 4
   },
   {
-    "guid": "e7dbccea-b49d-4d7c-83bc-ff92d372a8dc",
-    "title": "Enoch Mgijima",
+    "id": 31,
+    "map_title": "Enoch Mgijima",
     "code": "EC139",
-    "district_guid": "1fe5cd6a-2ef8-41e8-aff7-eddad2de5abc"
+    "district_id": 3
   },
   {
-    "guid": "b70b79f4-8032-4d03-8b6c-00a0e720e7d9",
-    "title": "Raymond Mhlaba",
+    "id": 32,
+    "map_title": "Raymond Mhlaba",
     "code": "EC129",
-    "district_guid": "b700ec08-2449-4301-b580-4b2596bd9d7b"
+    "district_id": 2
   },
   {
-    "guid": "c8fdde98-dcdc-4ed0-a8c7-a6fc4659de75",
-    "title": "Blue Crane Route",
+    "id": 33,
+    "map_title": "Blue Crane Route",
     "code": "EC102",
-    "district_guid": "e9469fc0-6fb7-4325-a589-7955d51939c5"
+    "district_id": 1
   },
   {
-    "guid": "3359e159-d0cf-4593-bbf7-6b9157ec93b1",
-    "title": "Letsemeng",
+    "id": 34,
+    "map_title": "Letsemeng",
     "code": "FS161",
-    "district_guid": "2ed8ab62-0639-4af3-8b57-3a0fbced5814"
+    "district_id": 9
   },
   {
-    "guid": "490481c0-242c-47a1-9291-f8bb28996c17",
-    "title": "Kopanong",
+    "id": 35,
+    "map_title": "Kopanong",
     "code": "FS162",
-    "district_guid": "2ed8ab62-0639-4af3-8b57-3a0fbced5814"
+    "district_id": 9
   },
   {
-    "guid": "80d0d480-956c-4192-9556-f153d0c01364",
-    "title": "Mohokare",
+    "id": 36,
+    "map_title": "Mohokare",
     "code": "FS163",
-    "district_guid": "2ed8ab62-0639-4af3-8b57-3a0fbced5814"
+    "district_id": 9
   },
   {
-    "guid": "40afaabb-e5f8-42e3-b8b4-fb22f6216a8c",
-    "title": "Masilonyana",
+    "id": 37,
+    "map_title": "Masilonyana",
     "code": "FS181",
-    "district_guid": "857a9e5c-e32d-4876-8dbc-0a8275da26a1"
+    "district_id": 10
   },
   {
-    "guid": "5b702666-b2f6-4c8b-87d4-2a8a3521ef1d",
-    "title": "Tokologo",
+    "id": 38,
+    "map_title": "Tokologo",
     "code": "FS182",
-    "district_guid": "857a9e5c-e32d-4876-8dbc-0a8275da26a1"
+    "district_id": 10
   },
   {
-    "guid": "2e66b8b6-5608-4c64-a468-2418a55aa9be",
-    "title": "Tswelopele",
+    "id": 39,
+    "map_title": "Tswelopele",
     "code": "FS183",
-    "district_guid": "857a9e5c-e32d-4876-8dbc-0a8275da26a1"
+    "district_id": 10
   },
   {
-    "guid": "24be3b3c-2712-4608-b70e-f37745db68ae",
-    "title": "Matjhabeng",
+    "id": 40,
+    "map_title": "Matjhabeng",
     "code": "FS184",
-    "district_guid": "857a9e5c-e32d-4876-8dbc-0a8275da26a1"
+    "district_id": 10
   },
   {
-    "guid": "0edb7260-5a6a-4214-9de1-04493ce10ecb",
-    "title": "Nala",
+    "id": 41,
+    "map_title": "Nala",
     "code": "FS185",
-    "district_guid": "857a9e5c-e32d-4876-8dbc-0a8275da26a1"
+    "district_id": 10
   },
   {
-    "guid": "b3a72e15-1847-4846-ab79-70885b840d63",
-    "title": "Setsoto",
+    "id": 42,
+    "map_title": "Setsoto",
     "code": "FS191",
-    "district_guid": "a8d843fa-377f-42b9-9c6c-5161234db899"
+    "district_id": 11
   },
   {
-    "guid": "6a6c16dc-8298-4f56-92cd-d19cbfc3c12c",
-    "title": "Dihlabeng",
+    "id": 43,
+    "map_title": "Dihlabeng",
     "code": "FS192",
-    "district_guid": "a8d843fa-377f-42b9-9c6c-5161234db899"
+    "district_id": 11
   },
   {
-    "guid": "9d28b8f6-5afe-450f-8b81-64633becaa2d",
-    "title": "Nketoana",
+    "id": 44,
+    "map_title": "Nketoana",
     "code": "FS193",
-    "district_guid": "a8d843fa-377f-42b9-9c6c-5161234db899"
+    "district_id": 11
   },
   {
-    "guid": "25c7734f-5446-4157-a384-2bb3ba866148",
-    "title": "Maluti a Phofung",
+    "id": 45,
+    "map_title": "Maluti a Phofung",
     "code": "FS194",
-    "district_guid": "a8d843fa-377f-42b9-9c6c-5161234db899"
+    "district_id": 11
   },
   {
-    "guid": "a223acc5-de74-49d6-af25-0d693367f50a",
-    "title": "Phumelela",
+    "id": 46,
+    "map_title": "Phumelela",
     "code": "FS195",
-    "district_guid": "a8d843fa-377f-42b9-9c6c-5161234db899"
+    "district_id": 11
   },
   {
-    "guid": "b2dd4ec6-37f0-4c69-b78d-11c752a12213",
-    "title": "Mantsopa",
+    "id": 47,
+    "map_title": "Mantsopa",
     "code": "FS196",
-    "district_guid": "a8d843fa-377f-42b9-9c6c-5161234db899"
+    "district_id": 11
   },
   {
-    "guid": "7730e066-fdad-494a-9eb9-29e5150c2b07",
-    "title": "Moqhaka",
+    "id": 48,
+    "map_title": "Moqhaka",
     "code": "FS201",
-    "district_guid": "da173a31-c538-4630-b548-b5f8a97337dd"
+    "district_id": 12
   },
   {
-    "guid": "b9fc383d-eb2f-41b4-9e51-098f74eb2b0d",
-    "title": "Ngwathe",
+    "id": 49,
+    "map_title": "Ngwathe",
     "code": "FS203",
-    "district_guid": "da173a31-c538-4630-b548-b5f8a97337dd"
+    "district_id": 12
   },
   {
-    "guid": "a6bf8500-80f5-4a74-b471-6c394a879360",
-    "title": "Metsimaholo",
+    "id": 50,
+    "map_title": "Metsimaholo",
     "code": "FS204",
-    "district_guid": "da173a31-c538-4630-b548-b5f8a97337dd"
+    "district_id": 12
   },
   {
-    "guid": "f70dbcf7-ff0f-494a-87d5-e99211dcbb33",
-    "title": "Mafube",
+    "id": 51,
+    "map_title": "Mafube",
     "code": "FS205",
-    "district_guid": "da173a31-c538-4630-b548-b5f8a97337dd"
+    "district_id": 12
   },
   {
-    "guid": "35116ba5-2134-4a1a-96cc-923b866f8578",
-    "title": "Mangaung",
+    "id": 52,
+    "map_title": "Mangaung",
     "code": "MAN",
-    "district_guid": "322e99b3-79ef-474e-9399-7533b5ae0081"
+    "district_id": 13
   },
   {
-    "guid": "1afc811a-98a9-4899-ac95-417489707c4c",
-    "title": "Mogale City",
+    "id": 53,
+    "map_title": "Mogale City",
     "code": "GT481",
-    "district_guid": "a5769719-53bd-4592-be02-acf4d1ceacc3"
+    "district_id": 14
   },
   {
-    "guid": "c2a71715-4854-47d2-86c2-2ca82849e545",
-    "title": "Rand West City",
+    "id": 54,
+    "map_title": "Rand West City",
     "code": "GT485",
-    "district_guid": "a5769719-53bd-4592-be02-acf4d1ceacc3"
+    "district_id": 14
   },
   {
-    "guid": "97d10303-8d6a-4b57-b8da-ca393f59dea9",
-    "title": "Merafong City",
+    "id": 55,
+    "map_title": "Merafong City",
     "code": "GT484",
-    "district_guid": "a5769719-53bd-4592-be02-acf4d1ceacc3"
+    "district_id": 14
   },
   {
-    "guid": "ed21ab7b-3ea1-4485-bcf2-22980f899bce",
-    "title": "City of Tshwane",
+    "id": 56,
+    "map_title": "City of Tshwane",
     "code": "TSH",
-    "district_guid": "b497d22f-7a30-47a0-9a5c-694f3a0b5fb6"
+    "district_id": 15
   },
   {
-    "guid": "67ba66ba-5537-4cdb-8289-bbebeb73fe5d",
-    "title": "Lesedi",
+    "id": 57,
+    "map_title": "Lesedi",
     "code": "GT423",
-    "district_guid": "1678ceed-32b8-4164-be13-320ec60d8126"
+    "district_id": 16
   },
   {
-    "guid": "5fa3bb94-2b82-4858-ba13-1d9a37e878fb",
-    "title": "Midvaal",
+    "id": 58,
+    "map_title": "Midvaal",
     "code": "GT422",
-    "district_guid": "1678ceed-32b8-4164-be13-320ec60d8126"
+    "district_id": 16
   },
   {
-    "guid": "86cea3a5-45be-44bc-9228-c8c2befcaa8f",
-    "title": "Emfuleni",
+    "id": 59,
+    "map_title": "Emfuleni",
     "code": "GT421",
-    "district_guid": "1678ceed-32b8-4164-be13-320ec60d8126"
+    "district_id": 16
   },
   {
-    "guid": "6812129d-7387-4553-b2c3-91c7c953d9ba",
-    "title": "City of Johannesburg",
+    "id": 60,
+    "map_title": "City of Johannesburg",
     "code": "JHB",
-    "district_guid": "21be6c61-b5e1-4f5f-8841-ce8809508152"
+    "district_id": 17
   },
   {
-    "guid": "bd210671-fb1b-4d57-80dd-af45c037422a",
-    "title": "Ekurhuleni",
+    "id": 61,
+    "map_title": "Ekurhuleni",
     "code": "EKU",
-    "district_guid": "a71a07a4-a87f-40c6-94d0-18731142c643"
+    "district_id": 18
   },
   {
-    "guid": "0810e647-e966-4089-b06d-50ccaac10f97",
-    "title": "Umdoni",
+    "id": 62,
+    "map_title": "Umdoni",
     "code": "KZN212",
-    "district_guid": "53009e7a-f55a-4289-b74e-a337c347072e"
+    "district_id": 19
   },
   {
-    "guid": "8190fe34-1faa-4c41-af4a-840995c7fcbe",
-    "title": "uMuziwabantu",
+    "id": 63,
+    "map_title": "uMuziwabantu",
     "code": "KZN214",
-    "district_guid": "53009e7a-f55a-4289-b74e-a337c347072e"
+    "district_id": 19
   },
   {
-    "guid": "078df620-2cea-42f4-a4ba-9db2c59829be",
-    "title": "Ray Nkonyeni",
+    "id": 64,
+    "map_title": "Ray Nkonyeni",
     "code": "KZN216",
-    "district_guid": "53009e7a-f55a-4289-b74e-a337c347072e"
+    "district_id": 19
   },
   {
-    "guid": "18df3be7-9924-40f0-92dc-9cfbb94c01d3",
-    "title": "Alfred Duma",
+    "id": 65,
+    "map_title": "Alfred Duma",
     "code": "KZN238",
-    "district_guid": "9bee7afc-a0d5-4a1e-ac4d-01b172f712f4"
+    "district_id": 20
   },
   {
-    "guid": "0d3fd43b-f64f-4d9e-bab0-1a702abce43b",
-    "title": "Inkosi Langalibalele",
+    "id": 66,
+    "map_title": "Inkosi Langalibalele",
     "code": "KZN237",
-    "district_guid": "9bee7afc-a0d5-4a1e-ac4d-01b172f712f4"
+    "district_id": 20
   },
   {
-    "guid": "9a2c03b5-33df-46b9-ad6c-d19aa583c32d",
-    "title": "Okhahlamba",
+    "id": 67,
+    "map_title": "Okhahlamba",
     "code": "KZN235",
-    "district_guid": "9bee7afc-a0d5-4a1e-ac4d-01b172f712f4"
+    "district_id": 20
   },
   {
-    "guid": "45376236-db59-4a42-a6e5-86f9f31bb18a",
-    "title": "Endumeni",
+    "id": 68,
+    "map_title": "Endumeni",
     "code": "KZN241",
-    "district_guid": "9b1cfa77-d189-4a69-a2da-cd050c3dabaa"
+    "district_id": 21
   },
   {
-    "guid": "c65cef2a-11a7-446d-9f80-c70bbcc0f7c9",
-    "title": "Nqutu",
+    "id": 69,
+    "map_title": "Nqutu",
     "code": "KZN242",
-    "district_guid": "9b1cfa77-d189-4a69-a2da-cd050c3dabaa"
+    "district_id": 21
   },
   {
-    "guid": "8cd22b90-d518-4855-acc2-7d0e85adc8f6",
-    "title": "Newcastle",
+    "id": 70,
+    "map_title": "Newcastle",
     "code": "KZN252",
-    "district_guid": "85e6d22f-066f-42d9-ba25-a7de19650780"
+    "district_id": 22
   },
   {
-    "guid": "0b784858-11a9-4f35-a80f-31c7c213f1ff",
-    "title": "Emadlangeni",
+    "id": 71,
+    "map_title": "Emadlangeni",
     "code": "KZN253",
-    "district_guid": "85e6d22f-066f-42d9-ba25-a7de19650780"
+    "district_id": 22
   },
   {
-    "guid": "f3b6a0b7-7621-4078-b805-26db20b93c20",
-    "title": "Dannhauser",
+    "id": 72,
+    "map_title": "Dannhauser",
     "code": "KZN254",
-    "district_guid": "85e6d22f-066f-42d9-ba25-a7de19650780"
+    "district_id": 22
   },
   {
-    "guid": "c8d92c8a-28a2-4e2a-8571-2e84bed50e51",
-    "title": "eDumbe",
+    "id": 73,
+    "map_title": "eDumbe",
     "code": "KZN261",
-    "district_guid": "cde91cf9-0491-4ea9-8667-8dbc2d5aaef1"
+    "district_id": 23
   },
   {
-    "guid": "eb8e832b-34b6-460d-a806-6bea3d0ea312",
-    "title": "uPhongolo",
+    "id": 74,
+    "map_title": "uPhongolo",
     "code": "KZN262",
-    "district_guid": "cde91cf9-0491-4ea9-8667-8dbc2d5aaef1"
+    "district_id": 23
   },
   {
-    "guid": "2d303981-e155-464e-9110-08dca6ba4dfb",
-    "title": "Abaqulusi",
+    "id": 75,
+    "map_title": "Abaqulusi",
     "code": "KZN263",
-    "district_guid": "cde91cf9-0491-4ea9-8667-8dbc2d5aaef1"
+    "district_id": 23
   },
   {
-    "guid": "b2753788-3338-4c86-a136-35491d8eca65",
-    "title": "Nongoma",
+    "id": 76,
+    "map_title": "Nongoma",
     "code": "KZN265",
-    "district_guid": "cde91cf9-0491-4ea9-8667-8dbc2d5aaef1"
+    "district_id": 23
   },
   {
-    "guid": "26b206ff-f904-4ffc-868d-ad941fbc795f",
-    "title": "Ulundi",
+    "id": 77,
+    "map_title": "Ulundi",
     "code": "KZN266",
-    "district_guid": "cde91cf9-0491-4ea9-8667-8dbc2d5aaef1"
+    "district_id": 23
   },
   {
-    "guid": "ae6d45d2-c94a-490b-a3d5-17206e26325c",
-    "title": "Umhlabuyalingana",
+    "id": 78,
+    "map_title": "Umhlabuyalingana",
     "code": "KZN271",
-    "district_guid": "a163f662-a26c-40ae-bb94-6acf0a0f0ac5"
+    "district_id": 24
   },
   {
-    "guid": "7e0043e7-e9ad-4266-b0d4-7437b7788148",
-    "title": "Jozini",
+    "id": 79,
+    "map_title": "Jozini",
     "code": "KZN272",
-    "district_guid": "a163f662-a26c-40ae-bb94-6acf0a0f0ac5"
+    "district_id": 24
   },
   {
-    "guid": "5071ecdb-b890-4df2-a9cf-8fdd9e8a8d57",
-    "title": "Mtubatuba",
+    "id": 80",
+    "map_title": "Mtubatuba",
     "code": "KZN275",
-    "district_guid": "a163f662-a26c-40ae-bb94-6acf0a0f0ac5"
+    "district_id": 24
   },
   {
-    "guid": "a201ee3b-4172-4019-81e0-a9520f24fe4e",
-    "title": "uMlalazi",
+    "id": 81,
+    "map_title": "uMlalazi",
     "code": "KZN284",
-    "district_guid": "6ee6bc7a-c6bc-4453-ab7f-943dffacbc84"
+    "district_id": 25
   },
   {
-    "guid": "dc72a95f-803d-49ca-9e37-38aaf41fbe65",
-    "title": "Nkandla",
+    "id": 82,
+    "map_title": "Nkandla",
     "code": "KZN286",
-    "district_guid": "6ee6bc7a-c6bc-4453-ab7f-943dffacbc84"
+    "district_id": 25
   },
   {
-    "guid": "d271e32b-164c-4409-9ab9-d00061185a90",
-    "title": "Mandeni",
+    "id": 83,
+    "map_title": "Mandeni",
     "code": "KZN291",
-    "district_guid": "c03060b3-5558-4a09-a251-6816fa86f686"
+    "district_id": 26
   },
   {
-    "guid": "079d4516-2b9e-4246-ae13-41f6e1400232",
-    "title": "KwaDukuza",
+    "id": 84,
+    "map_title": "KwaDukuza",
     "code": "KZN292",
-    "district_guid": "c03060b3-5558-4a09-a251-6816fa86f686"
+    "district_id": 26
   },
   {
-    "guid": "ce4ae753-c87c-4e29-b726-3bc1977e985e",
-    "title": "Ndwedwe",
+    "id": 85,
+    "map_title": "Ndwedwe",
     "code": "KZN293",
-    "district_guid": "c03060b3-5558-4a09-a251-6816fa86f686"
+    "district_id": 26
   },
   {
-    "guid": "8ec37607-5051-48ab-837d-1e59223e0dd3",
-    "title": "Maphumulo",
+    "id": 86,
+    "map_title": "Maphumulo",
     "code": "KZN294",
-    "district_guid": "c03060b3-5558-4a09-a251-6816fa86f686"
+    "district_id": 26
   },
   {
-    "guid": "e5bdd2a0-bfc6-4185-9bcd-04d0165d1127",
-    "title": "Dr Nkosazana Dlamini Zuma",
+    "id": 87,
+    "map_title": "Dr Nkosazana Dlamini Zuma",
     "code": "KZN436",
-    "district_guid": "dec58ada-cbe3-4c00-b774-4097ad6cd08d"
+    "district_id": 27
   },
   {
-    "guid": "1dbbac6a-66f0-455e-a223-7ca97f3bb8ac",
-    "title": "Ubuhlebezwe",
+    "id": 88,
+    "map_title": "Ubuhlebezwe",
     "code": "KZN434",
-    "district_guid": "dec58ada-cbe3-4c00-b774-4097ad6cd08d"
+    "district_id": 27
   },
   {
-    "guid": "4b6b8357-c8fc-4629-8f2d-7b89e2cd1b02",
-    "title": "Umzumbe",
+    "id": 89,
+    "map_title": "Umzumbe",
     "code": "KZN213",
-    "district_guid": "53009e7a-f55a-4289-b74e-a337c347072e"
+    "district_id": 19
   },
   {
-    "guid": "a78cd307-fbb2-4ae8-baa1-bf2f55ba803c",
-    "title": "Big Five Hlabisa",
+    "id": 90,
+    "map_title": "Big Five Hlabisa",
     "code": "KZN276",
-    "district_guid": "a163f662-a26c-40ae-bb94-6acf0a0f0ac5"
+    "district_id": 24
   },
   {
-    "guid": "b9638197-0b8e-4514-ae81-a8387199525a",
-    "title": "Richmond",
+    "id": 91,
+    "map_title": "Richmond",
     "code": "KZN227",
-    "district_guid": "3e911083-fa71-4f53-92b9-5988958af4d9"
+    "district_id": 28
   },
   {
-    "guid": "dd0a86a4-a2f4-427c-a08b-ed8e5b8109b6",
-    "title": "Greater Kokstad",
+    "id": 92,
+    "map_title": "Greater Kokstad",
     "code": "KZN433",
-    "district_guid": "dec58ada-cbe3-4c00-b774-4097ad6cd08d"
+    "district_id": 27
   },
   {
-    "guid": "834a49e8-210c-4430-b8e5-a774205842fc",
-    "title": "Umzimkhulu",
+    "id": 93,
+    "map_title": "Umzimkhulu",
     "code": "KZN435",
-    "district_guid": "dec58ada-cbe3-4c00-b774-4097ad6cd08d"
+    "district_id": 27
   },
   {
-    "guid": "d933dd48-6979-43b6-b5de-373526d0cc85",
-    "title": "uMshwathi",
+    "id":94,
+    "map_title": "uMshwathi",
     "code": "KZN221",
-    "district_guid": "3e911083-fa71-4f53-92b9-5988958af4d9"
+    "district_id": 28
   },
   {
-    "guid": "b6165463-154c-4483-b70f-827a37c02158",
-    "title": "Msinga",
+    "id": 95,
+    "map_title": "Msinga",
     "code": "KZN244",
-    "district_guid": "9b1cfa77-d189-4a69-a2da-cd050c3dabaa"
+    "district_id": 21
   },
   {
-    "guid": "999d48df-573a-4051-8350-e3826d84b447",
-    "title": "eThekwini",
+    "id": 96,
+    "map_title": "eThekwini",
     "code": "ETH",
-    "district_guid": "1cd22c27-6fc4-45d4-b380-d2b719a46370"
+    "district_id": 29
   },
   {
-    "guid": "7e71ffaf-d909-4e2d-a95c-0b81606e1dcb",
-    "title": "Mkhambathini",
+    "id": 97,
+    "map_title": "Mkhambathini",
     "code": "KZN226",
-    "district_guid": "3e911083-fa71-4f53-92b9-5988958af4d9"
+    "district_id": 28
   },
   {
-    "guid": "634ca6cd-616a-4593-ab9d-bb8f28b668ff",
-    "title": "The Msunduzi",
+    "id": 98,
+    "map_title": "The Msunduzi",
     "code": "KZN225",
-    "district_guid": "3e911083-fa71-4f53-92b9-5988958af4d9"
+    "district_id": 28
   },
   {
-    "guid": "c7b73b01-2f9a-4dcf-8938-a0864ffab044",
-    "title": "uMngeni",
+    "id": 99,
+    "map_title": "uMngeni",
     "code": "KZN222",
-    "district_guid": "3e911083-fa71-4f53-92b9-5988958af4d9"
+    "district_id": 28
   },
   {
-    "guid": "98c5b86d-7d1d-4c3e-926c-5645c06b09c2",
-    "title": "Impendle",
+    "id": 100,
+    "map_title": "Impendle",
     "code": "KZN224",
-    "district_guid": "3e911083-fa71-4f53-92b9-5988958af4d9"
+    "district_id": 28
   },
   {
-    "guid": "36d45f6a-1ae3-417f-aeb0-c6d1b76ba3d4",
-    "title": "Mfolozi",
+    "id": 101,
+    "map_title": "Mfolozi",
     "code": "KZN281",
-    "district_guid": "6ee6bc7a-c6bc-4453-ab7f-943dffacbc84"
+    "district_id": 25
   },
   {
-    "guid": "c8ea1e0d-5ef4-4df8-bae6-c9e63a75e3d2",
-    "title": "uMhlathuze",
+    "id": 102,
+    "map_title": "uMhlathuze",
     "code": "KZN282",
-    "district_guid": "6ee6bc7a-c6bc-4453-ab7f-943dffacbc84"
+    "district_id": 25
   },
   {
-    "guid": "30c64d64-5c34-43de-9bf8-7339a063c948",
-    "title": "Mthonjaneni",
+    "id": 103,
+    "map_title": "Mthonjaneni",
     "code": "KZN285",
-    "district_guid": "6ee6bc7a-c6bc-4453-ab7f-943dffacbc84"
+    "district_id": 25
   },
   {
-    "guid": "85f76938-9948-491d-bed6-1ee47364993b",
-    "title": "Umvoti",
+    "id": 104,
+    "map_title": "Umvoti",
     "code": "KZN245",
-    "district_guid": "9b1cfa77-d189-4a69-a2da-cd050c3dabaa"
+    "district_id": 21
   },
   {
-    "guid": "0322cec2-4153-4aa1-a37a-dcb9b2253163",
-    "title": "Mpofana",
+    "id": 105,
+    "map_title": "Mpofana",
     "code": "KZN223",
-    "district_guid": "3e911083-fa71-4f53-92b9-5988958af4d9"
+    "district_id": 28
   },
   {
-    "guid": "c4bc734d-9493-4786-aad0-bb2aacc1afec",
-    "title": "Greater Giyani",
+    "id": 106,
+    "map_title": "Greater Giyani",
     "code": "LIM331",
-    "district_guid": "0a7125de-5315-4091-bcf0-f1cddbe1f613"
+    "district_id": 30
   },
   {
-    "guid": "8afbe4d9-dcbc-476d-a45f-679f64bdc16e",
-    "title": "Greater Letaba",
+    "id": 107,
+    "map_title": "Greater Letaba",
     "code": "LIM332",
-    "district_guid": "0a7125de-5315-4091-bcf0-f1cddbe1f613"
+    "district_id": 30
   },
   {
-    "guid": "ae52c0a5-e79f-4350-8f29-dac0a14545fd",
-    "title": "Greater Tzaneen",
+    "id": 108,
+    "map_title": "Greater Tzaneen",
     "code": "LIM333",
-    "district_guid": "0a7125de-5315-4091-bcf0-f1cddbe1f613"
+    "district_id": 30
   },
   {
-    "guid": "1d662fed-6286-43f7-bc0a-45fb7f1cbcaf",
-    "title": "Ba-Phalaborwa",
+    "id": 109,
+    "map_title": "Ba-Phalaborwa",
     "code": "LIM334",
-    "district_guid": "0a7125de-5315-4091-bcf0-f1cddbe1f613"
+    "district_id": 30
   },
   {
-    "guid": "ba36eab0-4db5-4046-9edb-6246a839e03e",
-    "title": "Maruleng",
+    "id": 110,
+    "map_title": "Maruleng",
     "code": "LIM335",
-    "district_guid": "0a7125de-5315-4091-bcf0-f1cddbe1f613"
+    "district_id": 30
   },
   {
-    "guid": "bc838139-0047-4a27-b7ee-cc6c911989df",
-    "title": "Lepele-Nkumpi",
+    "id": 111,
+    "map_title": "Lepele-Nkumpi",
     "code": "LIM355",
-    "district_guid": "f634cce6-9745-4d02-aa9f-38a6626223ad"
+    "district_id": 31
   },
   {
-    "guid": "6cab2de6-4026-4ace-abca-4dad55ee201d",
-    "title": "Thabazimbi",
+    "id": 112,
+    "map_title": "Thabazimbi",
     "code": "LIM361",
-    "district_guid": "2e079f0f-c705-4831-a311-55be0db337f0"
+    "district_id": 32
   },
   {
-    "guid": "a762e951-829a-427d-818d-545d9173abf8",
-    "title": "Lephalale",
+    "id": 113,
+    "map_title": "Lephalale",
     "code": "LIM362",
-    "district_guid": "2e079f0f-c705-4831-a311-55be0db337f0"
+    "district_id": 32
   },
   {
-    "guid": "af189291-f931-40b5-aa86-fb9fc4a4769d",
-    "title": "Bela-Bela",
+    "id": 114,
+    "map_title": "Bela-Bela",
     "code": "LIM366",
-    "district_guid": "2e079f0f-c705-4831-a311-55be0db337f0"
+    "district_id": 32
   },
   {
-    "guid": "829c0e5e-e8be-4906-a19b-402afdf34d94",
-    "title": "Mogalakwena",
+    "id": 115,
+    "map_title": "Mogalakwena",
     "code": "LIM367",
-    "district_guid": "2e079f0f-c705-4831-a311-55be0db337f0"
+    "district_id": 32
   },
   {
-    "guid": "fbf1bb16-ce2e-46b4-ae14-d0c2a525aa0e",
-    "title": "Ephraim Mogale",
+    "id": 116,
+    "map_title": "Ephraim Mogale",
     "code": "LIM471",
-    "district_guid": "76febac2-91a8-400d-a7ef-a2dd6d8a8562"
+    "district_id": 33
   },
   {
-    "guid": "dda280f4-878e-4977-a9d5-9c8d1bde87fc",
-    "title": "Elias Motsoaledi",
+    "id": 117,
+    "map_title": "Elias Motsoaledi",
     "code": "LIM472",
-    "district_guid": "76febac2-91a8-400d-a7ef-a2dd6d8a8562"
+    "district_id": 33
   },
   {
-    "guid": "b4ca7f31-a219-4992-be7c-39607ea6b49d",
-    "title": "Makhuduthamaga",
+    "id": 118,
+    "map_title": "Makhuduthamaga",
     "code": "LIM473",
-    "district_guid": "76febac2-91a8-400d-a7ef-a2dd6d8a8562"
+    "district_id": 33
   },
   {
-    "guid": "80e86f68-b655-445a-a8c9-44432bf63611",
-    "title": "Blouberg",
+    "id": 119,
+    "map_title": "Blouberg",
     "code": "LIM351",
-    "district_guid": "f634cce6-9745-4d02-aa9f-38a6626223ad"
+    "district_id": 31
   },
   {
-    "guid": "1a31bed0-804c-49fb-9212-40ac831b4faf",
-    "title": "Molemole",
+    "id": 120,
+    "map_title": "Molemole",
     "code": "LIM353",
-    "district_guid": "f634cce6-9745-4d02-aa9f-38a6626223ad"
+    "district_id": 31
   },
   {
-    "guid": "b4a6ebda-ccc3-4799-972c-e0261353a9c5",
-    "title": "Polokwane",
+    "id": 121,
+    "map_title": "Polokwane",
     "code": "LIM354",
-    "district_guid": "f634cce6-9745-4d02-aa9f-38a6626223ad"
+    "district_id": 31
   },
   {
-    "guid": "5347b0b7-cafa-42b1-ad6e-f67aada367e2",
-    "title": "Modimolle/Mookgophong",
+    "id": 122,
+    "map_title": "Modimolle/Mookgophong",
     "code": "LIM368",
-    "district_guid": "2e079f0f-c705-4831-a311-55be0db337f0"
+    "district_id": 32
   },
   {
-    "guid": "ea474c70-839b-41cb-a6ef-b00976429b35",
-    "title": "Greater Tubatse/Fetakgomo",
+    "id": 123,
+    "map_title": "Greater Tubatse/Fetakgomo",
     "code": "LIM476",
-    "district_guid": "76febac2-91a8-400d-a7ef-a2dd6d8a8562"
+    "district_id": 33
   },
   {
-    "guid": "ed78fe60-32ff-4f13-bb16-bac799908c3e",
-    "title": "Musina",
+    "id": 124,
+    "map_title": "Musina",
     "code": "LIM341",
-    "district_guid": "eabd926a-5435-4471-80a1-c151d9f59115"
+    "district_id": 34
   },
   {
-    "guid": "eb4a1818-7a19-4ef6-be58-d9754f7e7628",
-    "title": "Thulamela",
+    "id": 125,
+    "map_title": "Thulamela",
     "code": "LIM343",
-    "district_guid": "eabd926a-5435-4471-80a1-c151d9f59115"
+    "district_id": 34
   },
   {
-    "guid": "d5118435-5810-495d-b3ba-7268730a5eaa",
-    "title": "Makhado",
+    "id": 126,
+    "map_title": "Makhado",
     "code": "LIM344",
-    "district_guid": "eabd926a-5435-4471-80a1-c151d9f59115"
+    "district_id": 34
   },
   {
-    "guid": "5b421183-bf3f-4119-93ec-737b5458fb53",
-    "title": "New",
+    "id": 127,
+    "map_title": "New",
     "code": "LIM345",
-    "district_guid": "eabd926a-5435-4471-80a1-c151d9f59115"
+    "district_id": 34
   },
   {
-    "guid": "65140cd4-4fcb-40a1-a40b-8c412aae9168",
-    "title": "Chief Albert Luthuli",
+    "id": 128,
+    "map_title": "Chief Albert Luthuli",
     "code": "MP301",
-    "district_guid": "6c96e3b0-a150-4fd8-b0a2-321aeb209cca"
+    "district_id": 35
   },
   {
-    "guid": "83d0dc6d-9075-4a5b-b8c7-e4d2e5294968",
-    "title": "Msukaligwa",
+    "id": 129,
+    "map_title": "Msukaligwa",
     "code": "MP302",
-    "district_guid": "6c96e3b0-a150-4fd8-b0a2-321aeb209cca"
+    "district_id": 35
   },
   {
-    "guid": "5775cc49-9465-4080-9559-5516bc4c63a8",
-    "title": "Mkhondo",
+    "id": 130,
+    "map_title": "Mkhondo",
     "code": "MP303",
-    "district_guid": "6c96e3b0-a150-4fd8-b0a2-321aeb209cca"
+    "district_id": 35
   },
   {
-    "guid": "ffa80d45-20ae-4f6b-a6cb-56db442ee38b",
-    "title": "Dr Pixley Ka Isaka Seme",
+    "id": 131,
+    "map_title": "Dr Pixley Ka Isaka Seme",
     "code": "MP304",
-    "district_guid": "6c96e3b0-a150-4fd8-b0a2-321aeb209cca"
+    "district_id": 35
   },
   {
-    "guid": "dbdcd72d-cf62-4d0b-8960-185eca3f29f6",
-    "title": "Lekwa",
+    "id": 132,
+    "map_title": "Lekwa",
     "code": "MP305",
-    "district_guid": "6c96e3b0-a150-4fd8-b0a2-321aeb209cca"
+    "district_id": 35
   },
   {
-    "guid": "9348a5c6-c8b3-4c7a-84b6-4d1f1d2fe9d3",
-    "title": "Dipaleseng",
+    "id": 133,
+    "map_title": "Dipaleseng",
     "code": "MP306",
-    "district_guid": "6c96e3b0-a150-4fd8-b0a2-321aeb209cca"
+    "district_id": 35
   },
   {
-    "guid": "3d26998b-1087-443d-9114-89f45835c064",
-    "title": "Govan Mbeki",
+    "id": 134,
+    "map_title": "Govan Mbeki",
     "code": "MP307",
-    "district_guid": "6c96e3b0-a150-4fd8-b0a2-321aeb209cca"
+    "district_id": 35
   },
   {
-    "guid": "10a65644-3ab5-42f2-83fb-3cf6f73f9c20",
-    "title": "Victor Khanye",
+    "id": 135,
+    "map_title": "Victor Khanye",
     "code": "MP311",
-    "district_guid": "3c9ec5a6-d0b0-4027-8944-855cb024eed1"
+    "district_id": 36
   },
   {
-    "guid": "10154799-d50b-4ce9-aa19-0accac779661",
-    "title": "Emalahleni",
+    "id": 136,
+    "map_title": "Emalahleni",
     "code": "MP312",
-    "district_guid": "3c9ec5a6-d0b0-4027-8944-855cb024eed1"
+    "district_id": 36
   },
   {
-    "guid": "c1b58036-2c3a-4ae5-b4db-2e2c30359502",
-    "title": "Steve Tshwete",
+    "id": 137,
+    "map_title": "Steve Tshwete",
     "code": "MP313",
-    "district_guid": "3c9ec5a6-d0b0-4027-8944-855cb024eed1"
+    "district_id": 36
   },
   {
-    "guid": "4f71ff49-3b91-4689-a2ec-dc6971b223d5",
-    "title": "Emakhazeni",
+    "id": 138
+    "map_title": "Emakhazeni",
     "code": "MP314",
-    "district_guid": "3c9ec5a6-d0b0-4027-8944-855cb024eed1"
+    "district_id": 36
   },
   {
-    "guid": "d5a7c1aa-5cab-4b85-b839-ab17849484fc",
-    "title": "Thembisile",
+    "id": 139,
+    "map_title": "Thembisile",
     "code": "MP315",
-    "district_guid": "3c9ec5a6-d0b0-4027-8944-855cb024eed1"
+    "district_id": 36
   },
   {
-    "guid": "f1e7cf82-924d-4fe4-8617-7795ea6ec5df",
-    "title": "Dr JS Moroka",
+    "id": 140,
+    "map_title": "Dr JS Moroka",
     "code": "MP316",
-    "district_guid": "3c9ec5a6-d0b0-4027-8944-855cb024eed1"
+    "district_id": 36
   },
   {
-    "guid": "b31a60f0-c1ae-46ca-9dcd-ed6850128147",
-    "title": "Thaba Chweu",
+    "id": 141,
+    "map_title": "Thaba Chweu",
     "code": "MP321",
-    "district_guid": "e2ec07a3-3034-4a12-89b4-7e2728722f15"
+    "district_id": 37
   },
   {
-    "guid": "98d07a58-67fe-47c1-9679-3e81fdd28c7f",
-    "title": "Nkomazi",
+    "id": 142,
+    "map_title": "Nkomazi",
     "code": "MP324",
-    "district_guid": "e2ec07a3-3034-4a12-89b4-7e2728722f15"
+    "district_id": 37
   },
   {
-    "guid": "8d2112d9-cc53-4156-adf4-6ecbf8f60c9a",
-    "title": "Bushbuckridge",
+    "id": 143,
+    "map_title": "Bushbuckridge",
     "code": "MP325",
-    "district_guid": "e2ec07a3-3034-4a12-89b4-7e2728722f15"
+    "district_id": 37
   },
   {
-    "guid": "a137cd6b-9df0-479d-aad4-1eee54d1a5f0",
-    "title": "City of Mbombela",
+    "id": 144,
+    "map_title": "City of Mbombela",
     "code": "MP326",
-    "district_guid": "e2ec07a3-3034-4a12-89b4-7e2728722f15"
+    "district_id": 37
   },
   {
-    "guid": "8438c8c2-644c-49c1-bacd-3acacfa38f02",
-    "title": "Richtersveld",
+    "id": 145,
+    "map_title": "Richtersveld",
     "code": "NC061",
-    "district_guid": "f15eb9dc-5ac5-4690-ac7c-1ce26e30562d"
+    "district_id": 38
   },
   {
-    "guid": "cfd1f46c-726c-44a4-b628-8c3c3dee4ad2",
-    "title": "Nama Khoi",
+    "id": 146,
+    "map_title": "Nama Khoi",
     "code": "NC062",
-    "district_guid": "f15eb9dc-5ac5-4690-ac7c-1ce26e30562d"
+    "district_id": 38
   },
   {
-    "guid": "68b253b6-c48a-4296-95b1-7a8b709a1fd2",
-    "title": "Kamiesberg",
+    "id": 147,
+    "map_title": "Kamiesberg",
     "code": "NC064",
-    "district_guid": "f15eb9dc-5ac5-4690-ac7c-1ce26e30562d"
+    "district_id": 38
   },
   {
-    "guid": "c78e09da-a0de-492a-bade-3fbe412c756d",
-    "title": "Hantam",
+    "id": 148,
+    "map_title": "Hantam",
     "code": "NC065",
-    "district_guid": "f15eb9dc-5ac5-4690-ac7c-1ce26e30562d"
+    "district_id": 38
   },
   {
-    "guid": "2b5e6c19-d01f-4b00-8613-557cf3c9cc4a",
-    "title": "Karoo Hoogland",
+    "id": 149,
+    "map_title": "Karoo Hoogland",
     "code": "NC066",
-    "district_guid": "f15eb9dc-5ac5-4690-ac7c-1ce26e30562d"
+    "district_id": 38
   },
   {
-    "guid": "6eeb2f77-14db-4291-9c20-043f9e8c313e",
-    "title": "Kh??i-Ma",
+    "id": 150,
+    "map_title": "Kh??i-Ma",
     "code": "NC067",
-    "district_guid": "f15eb9dc-5ac5-4690-ac7c-1ce26e30562d"
+    "district_id": 38
   },
   {
-    "guid": "89e761a1-01da-4a80-8eae-9c5b85ebdca3",
-    "title": "Ubuntu",
+    "id": 151,
+    "map_title": "Ubuntu",
     "code": "NC071",
-    "district_guid": "f4edecb2-2792-48ab-9831-16f8b59d99ac"
+    "district_id": 39
   },
   {
-    "guid": "51a63c70-ba61-4ea5-b9d2-a4000e65391b",
-    "title": "Umsobomvu",
+    "id": 152,
+    "map_title": "Umsobomvu",
     "code": "NC072",
-    "district_guid": "f4edecb2-2792-48ab-9831-16f8b59d99ac"
+    "district_id": 39
   },
   {
-    "guid": "7297594a-245a-4f34-b0e4-0f04d9440ea2",
-    "title": "Emthanjeni",
+    "id": 153,
+    "map_title": "Emthanjeni",
     "code": "NC073",
-    "district_guid": "f4edecb2-2792-48ab-9831-16f8b59d99ac"
+    "district_id": 39
   },
   {
-    "guid": "c50933b5-d3ff-4680-bbb1-18afdea7a233",
-    "title": "Kareeberg",
+    "id": 154,
+    "map_title": "Kareeberg",
     "code": "NC074",
-    "district_guid": "f4edecb2-2792-48ab-9831-16f8b59d99ac"
+    "district_id": 39
   },
   {
-    "guid": "90d21237-ed3c-4cab-be9e-b0dcdce68605",
-    "title": "Renosterberg",
+    "id": 155,
+    "map_title": "Renosterberg",
     "code": "NC075",
-    "district_guid": "f4edecb2-2792-48ab-9831-16f8b59d99ac"
+    "district_id": 39
   },
   {
-    "guid": "2ab51331-5165-4ec0-8d8b-dd8d5667c4dd",
-    "title": "Thembelihle",
+    "id": 156,
+    "map_title": "Thembelihle",
     "code": "NC076",
-    "district_guid": "f4edecb2-2792-48ab-9831-16f8b59d99ac"
+    "district_id": 39
   },
   {
-    "guid": "c77838ac-6def-406f-9ce4-ce7f5d08c1ae",
-    "title": "Siyathemba",
+    "id": 157,
+    "map_title": "Siyathemba",
     "code": "NC077",
-    "district_guid": "f4edecb2-2792-48ab-9831-16f8b59d99ac"
+    "district_id": 39
   },
   {
-    "guid": "e3a7fd61-c9d8-46ff-a75a-0a9344eacbb8",
-    "title": "Siyancuma",
+    "id": 158,
+    "map_title": "Siyancuma",
     "code": "NC078",
-    "district_guid": "f4edecb2-2792-48ab-9831-16f8b59d99ac"
+    "district_id": 39
   },
   {
-    "guid": "7ea0bdf0-ccfe-4c7e-9f8f-5043c9ecabf0",
-    "title": "Kai !Garib",
+    "id": 159,
+    "map_title": "Kai !Garib",
     "code": "NC082",
-    "district_guid": "da55453c-47d5-409c-a8cb-575a2fef685c"
+    "district_id": 40
   },
   {
-    "guid": "f0aebf35-219b-491c-82d7-ab1257c3dfb7",
-    "title": "!Kheis",
+    "id": 160,
+    "map_title": "!Kheis",
     "code": "NC084",
-    "district_guid": "da55453c-47d5-409c-a8cb-575a2fef685c"
+    "district_id": 40
   },
   {
-    "guid": "92018212-b99f-48de-95b0-c8ed773f4e1c",
-    "title": "Tsantsabane",
+    "id": 161,
+    "map_title": "Tsantsabane",
     "code": "NC085",
-    "district_guid": "da55453c-47d5-409c-a8cb-575a2fef685c"
+    "district_id": 40
   },
   {
-    "guid": "346e6a20-c558-4933-8793-c63b859c4d14",
-    "title": "Kgatelopele",
+    "id": 162,
+    "map_title": "Kgatelopele",
     "code": "NC086",
-    "district_guid": "da55453c-47d5-409c-a8cb-575a2fef685c"
+    "district_id": 40
   },
   {
-    "guid": "3e2e1351-66c0-4238-b6a4-4729cd0fb7fc",
-    "title": "Sol Plaatjie",
+    "id": 163,
+    "map_title": "Sol Plaatjie",
     "code": "NC091",
-    "district_guid": "ea7e266c-b11f-455b-b40f-32ebe37d9e79"
+    "district_id": 41
   },
   {
-    "guid": "e0053674-7985-4f7f-aeb7-283a6ac74cb6",
-    "title": "Dikgatlong",
+    "id": 164,
+    "map_title": "Dikgatlong",
     "code": "NC092",
-    "district_guid": "ea7e266c-b11f-455b-b40f-32ebe37d9e79"
+    "district_id": 41
   },
   {
-    "guid": "a10c308e-993f-402d-bc5d-61c9abfe02f5",
-    "title": "Gamagara",
+    "id": 165,
+    "map_title": "Gamagara",
     "code": "NC453",
-    "district_guid": "e19eda6f-21ea-44d1-9e17-a7b55b45adae"
+    "district_id": 42
   },
   {
-    "guid": "539a8636-6465-4726-9355-7e58b54a48da",
-    "title": "Joe Morolong",
+    "id": 166,
+    "map_title": "Joe Morolong",
     "code": "NC451",
-    "district_guid": "e19eda6f-21ea-44d1-9e17-a7b55b45adae"
+    "district_id": 42
   },
   {
-    "guid": "f8ceb1f5-6b3d-42d8-9170-450ba96706ea",
-    "title": "Ga-Segonyana",
+    "id": 167,
+    "map_title": "Ga-Segonyana",
     "code": "NC452",
-    "district_guid": "e19eda6f-21ea-44d1-9e17-a7b55b45adae"
+    "district_id": 42
   },
   {
-    "guid": "e6236b00-7291-46b3-aed7-e69ed7641544",
-    "title": "Magareng",
+    "id": 168,
+    "map_title": "Magareng",
     "code": "NC093",
-    "district_guid": "ea7e266c-b11f-455b-b40f-32ebe37d9e79"
+    "district_id": 41
   },
   {
-    "guid": "c273b23e-9726-4788-b376-cb38357a188d",
-    "title": "Phokwane",
+    "id": 169,
+    "map_title": "Phokwane",
     "code": "NC094",
-    "district_guid": "ea7e266c-b11f-455b-b40f-32ebe37d9e79"
+    "district_id": 41
   },
   {
-    "guid": "e4ed5250-44cb-48a5-b2c7-eaa78276de67",
-    "title": "Dawid Kruiper",
+    "id": 170,
+    "map_title": "Dawid Kruiper",
     "code": "NC087",
-    "district_guid": "da55453c-47d5-409c-a8cb-575a2fef685c"
+    "district_id": 40
   },
   {
-    "guid": "4f1dda0a-e387-4f61-a978-e5ab8a034b7b",
-    "title": "Moretele",
+    "id": 171,
+    "map_title": "Moretele",
     "code": "NW371",
-    "district_guid": "a7aa088e-81da-41cb-a70c-9db47accaf10"
+    "district_id": 43
   },
   {
-    "guid": "0468eb52-18f6-44a2-a007-05a63cbd4208",
-    "title": "Local Municipality of Madibeng",
+    "id": 172,
+    "map_title": "Local Municipality of Madibeng",
     "code": "NW372",
-    "district_guid": "a7aa088e-81da-41cb-a70c-9db47accaf10"
+    "district_id": 43
   },
   {
-    "guid": "315b16dc-ae0f-44bb-ba20-dbe8dced30b4",
-    "title": "Rustenburg",
+    "id": 173,
+    "map_title": "Rustenburg",
     "code": "NW373",
-    "district_guid": "a7aa088e-81da-41cb-a70c-9db47accaf10"
+    "district_id": 43
   },
   {
-    "guid": "581ef7b1-133b-420e-9a86-a64a77e3e342",
-    "title": "Kgetlengrivier",
+    "id": 174,
+    "map_title": "Kgetlengrivier",
     "code": "NW374",
-    "district_guid": "a7aa088e-81da-41cb-a70c-9db47accaf10"
+    "district_id": 43
   },
   {
-    "guid": "4d25ea59-b065-4853-941b-b3794458c653",
-    "title": "Moses Kotane",
+    "id": 175,
+    "map_title": "Moses Kotane",
     "code": "NW375",
-    "district_guid": "a7aa088e-81da-41cb-a70c-9db47accaf10"
+    "district_id": 43
   },
   {
-    "guid": "1fb76930-8c36-43d2-9208-bdb20a79ba3c",
-    "title": "Ratlou",
+    "id": 176,
+    "map_title": "Ratlou",
     "code": "NW381",
-    "district_guid": "fa964a26-e296-4b4b-9551-c057f2003833"
+    "district_id": 44
   },
   {
-    "guid": "4e39055a-af3f-4a7a-8a38-de758c5ecd8b",
-    "title": "Tswaing",
+    "id": 177,
+    "map_title": "Tswaing",
     "code": "NW382",
-    "district_guid": "fa964a26-e296-4b4b-9551-c057f2003833"
+    "district_id": 44
   },
   {
-    "guid": "baf55391-ffb3-4770-8b98-ae8c1adae822",
-    "title": "Mafikeng",
+    "id": 178,
+    "map_title": "Mafikeng",
     "code": "NW383",
-    "district_guid": "fa964a26-e296-4b4b-9551-c057f2003833"
+    "district_id": 44
   },
   {
-    "guid": "6ae9ae8d-30a9-4c41-bdb0-eeb5e5ee77db",
-    "title": "Ditsobotla",
+    "id": 179,
+    "map_title": "Ditsobotla",
     "code": "NW384",
-    "district_guid": "fa964a26-e296-4b4b-9551-c057f2003833"
+    "district_id": 44
   },
   {
-    "guid": "4649f0b0-0d85-4b5a-9775-b7e99097f7df",
-    "title": "Ramotshere Moiloa",
+    "id": 180,
+    "map_title": "Ramotshere Moiloa",
     "code": "NW385",
-    "district_guid": "fa964a26-e296-4b4b-9551-c057f2003833"
+    "district_id": 44
   },
   {
-    "guid": "6e3e7ca1-3c0f-4012-9e2e-82b88033b57e",
-    "title": "Naledi",
+    "id": 181,
+    "map_title": "Naledi",
     "code": "NW392",
-    "district_guid": "e1216b2f-56e7-4ac3-9cf6-174c033fb549"
+    "district_id": 45
   },
   {
-    "guid": "47ba6932-aec8-4134-80ca-aaccbdb3c7b2",
-    "title": "Mamusa",
+    "id": 182,
+    "map_title": "Mamusa",
     "code": "NW393",
-    "district_guid": "e1216b2f-56e7-4ac3-9cf6-174c033fb549"
+    "district_id": 45
   },
   {
-    "guid": "3c6ced3d-d9f0-4cd4-9058-43e2cba3f4f9",
-    "title": "Greater Taung",
+    "id": 183,
+    "map_title": "Greater Taung",
     "code": "NW394",
-    "district_guid": "e1216b2f-56e7-4ac3-9cf6-174c033fb549"
+    "district_id": 45
   },
   {
-    "guid": "5f7b31b4-1180-4cff-a395-c785ca132785",
-    "title": "Lekwa-Teemane",
+    "id": 184,
+    "map_title": "Lekwa-Teemane",
     "code": "NW396",
-    "district_guid": "e1216b2f-56e7-4ac3-9cf6-174c033fb549"
+    "district_id": 45
   },
   {
-    "guid": "b8156551-4777-4671-8879-9c0684881813",
-    "title": "Kagisano/Molopo",
+    "id": 185,
+    "map_title": "Kagisano/Molopo",
     "code": "NW397",
-    "district_guid": "e1216b2f-56e7-4ac3-9cf6-174c033fb549"
+    "district_id": 45
   },
   {
-    "guid": "62488230-f2e0-4438-a8de-ba79b466746b",
-    "title": "City of Matlosana",
+    "id": 186,
+    "map_title": "City of Matlosana",
     "code": "NW403",
-    "district_guid": "8256f8df-1275-4552-8167-28fd8c59de42"
+    "district_id": 46
   },
   {
-    "guid": "c78dd724-c901-4b92-9d98-f114fdc53c6b",
-    "title": "Maquassi Hills",
+    "id": 187,
+    "map_title": "Maquassi Hills",
     "code": "NW404",
-    "district_guid": "8256f8df-1275-4552-8167-28fd8c59de42"
+    "district_id": 46
   },
   {
-    "guid": "f9e1f7ad-51fc-493e-b6ac-1a1cd4af34a2",
-    "title": "Ventersdorp/Tlokwe",
+    "id": 188,
+    "map_title": "Ventersdorp/Tlokwe",
     "code": "NW405",
-    "district_guid": "8256f8df-1275-4552-8167-28fd8c59de42"
+    "district_id": 46
   },
   {
-    "guid": "cfc5e793-e0de-4287-b51e-62ce1475d169",
-    "title": "Matzikama",
+    "id": 189,
+    "map_title": "Matzikama",
     "code": "WC011",
-    "district_guid": "41ed8e44-740e-4a30-a883-c6c817a0b318"
+    "district_id": 47
   },
   {
-    "guid": "0f42f751-e045-4e05-a89c-957800b1c704",
-    "title": "Cederberg",
+    "id": 190,
+    "map_title": "Cederberg",
     "code": "WC012",
-    "district_guid": "41ed8e44-740e-4a30-a883-c6c817a0b318"
+    "district_id": 47
   },
   {
-    "guid": "8d62dd19-d740-4a90-a206-c2aab5ed123d",
-    "title": "Bergrivier",
+    "id": 191,
+    "map_title": "Bergrivier",
     "code": "WC013",
-    "district_guid": "41ed8e44-740e-4a30-a883-c6c817a0b318"
+    "district_id": 47
   },
   {
-    "guid": "b36cbe2e-1532-4aa9-8f09-4e2db7e842ba",
-    "title": "Witzenberg",
+    "id": 192,
+    "map_title": "Witzenberg",
     "code": "WC022",
-    "district_guid": "fca96e50-2832-401f-b9e8-34c23eaf1e3f"
+    "district_id": 48
   },
   {
-    "guid": "0b99daf8-3b2e-4719-9ed8-3eeaa51370be",
-    "title": "Drakenstein",
+    "id": 193,
+    "map_title": "Drakenstein",
     "code": "WC023",
-    "district_guid": "fca96e50-2832-401f-b9e8-34c23eaf1e3f"
+    "district_id": 48
   },
   {
-    "guid": "7f876981-06f4-4814-9d42-0916b1c7a5cd",
-    "title": "Breede Valley",
+    "id": 194,
+    "map_title": "Breede Valley",
     "code": "WC025",
-    "district_guid": "fca96e50-2832-401f-b9e8-34c23eaf1e3f"
+    "district_id": 48
   },
   {
-    "guid": "d94bce24-b93d-4949-9c52-7fe57fd3770b",
-    "title": "Langeberg",
+    "id": 195,
+    "map_title": "Langeberg",
     "code": "WC026",
-    "district_guid": "fca96e50-2832-401f-b9e8-34c23eaf1e3f"
+    "district_id": 48
   },
   {
-    "guid": "f2b66005-b056-434f-ba6d-f424d8c03afb",
-    "title": "Cape Agulhas",
+    "id": 196,
+    "map_title": "Cape Agulhas",
     "code": "WC033",
-    "district_guid": "3e942f85-564c-496d-ad89-55afdf6d3fbc"
+    "district_id": 49
   },
   {
-    "guid": "73478c9d-0b63-42eb-a9f8-c33fc6bac54b",
-    "title": "Swellendam",
+    "id": 197,
+    "map_title": "Swellendam",
     "code": "WC034",
-    "district_guid": "3e942f85-564c-496d-ad89-55afdf6d3fbc"
+    "district_id": 49
   },
   {
-    "guid": "d99b925d-4c9d-4aab-b85c-4001e83a0ac4",
-    "title": "Kannaland",
+    "id": 198,
+    "map_title": "Kannaland",
     "code": "WC041",
-    "district_guid": "ebce3d54-e49e-4d6c-9ed8-b80a5cbac9ed"
+    "district_id": 50
   },
   {
-    "guid": "aba49eb7-8e1b-4f3e-ab86-9d1c950d251f",
-    "title": "Hessequa",
+    "id": 199,
+    "map_title": "Hessequa",
     "code": "WC042",
-    "district_guid": "ebce3d54-e49e-4d6c-9ed8-b80a5cbac9ed"
+    "district_id": 50
   },
   {
-    "guid": "b35dfdff-ae78-4284-8b32-7a2628443b1d",
-    "title": "Mossel Bay",
+    "id": 200,
+    "map_title": "Mossel Bay",
     "code": "WC043",
-    "district_guid": "ebce3d54-e49e-4d6c-9ed8-b80a5cbac9ed"
+    "district_id": 50
   },
   {
-    "guid": "10aa2c2e-3ae2-4335-9a9f-fe429cc2499c",
-    "title": "George",
+    "id": 201,
+    "map_title": "George",
     "code": "WC044",
-    "district_guid": "ebce3d54-e49e-4d6c-9ed8-b80a5cbac9ed"
+    "district_id": 50
   },
   {
-    "guid": "07efc769-0165-48a2-be34-ef3c40ad6b01",
-    "title": "Oudtshoorn",
+    "id": 202,
+    "map_title": "Oudtshoorn",
     "code": "WC045",
-    "district_guid": "ebce3d54-e49e-4d6c-9ed8-b80a5cbac9ed"
+    "district_id": 50
   },
   {
-    "guid": "38ae7f0e-80fe-4e2a-8271-1f8f9fc0bca2",
-    "title": "Bitou",
+    "id": 203,
+    "map_title": "Bitou",
     "code": "WC047",
-    "district_guid": "ebce3d54-e49e-4d6c-9ed8-b80a5cbac9ed"
+    "district_id": 50
   },
   {
-    "guid": "0fba8df3-35ed-4358-9583-eaf279ef2131",
-    "title": "Knysna",
+    "id": 204,
+    "map_title": "Knysna",
     "code": "WC048",
-    "district_guid": "ebce3d54-e49e-4d6c-9ed8-b80a5cbac9ed"
+    "district_id": 50
   },
   {
-    "guid": "525ca210-3656-484e-99a1-2d113e4745be",
-    "title": "Laingsburg",
+    "id": 205,
+    "map_title": "Laingsburg",
     "code": "WC051",
-    "district_guid": "d1006126-9bb2-4477-968d-a47a0414f3a3"
+    "district_id": 51
   },
   {
-    "guid": "2b48b7c1-9580-4dfc-be9d-ae6b4010c3ef",
-    "title": "Prince Albert",
+    "id": 206,
+    "map_title": "Prince Albert",
     "code": "WC052",
-    "district_guid": "d1006126-9bb2-4477-968d-a47a0414f3a3"
+    "district_id": 51
   },
   {
-    "guid": "a27e7cd3-3839-4d45-9ded-8008159d68d4",
-    "title": "Beaufort West",
+    "id": 207,
+    "map_title": "Beaufort West",
     "code": "WC053",
-    "district_guid": "d1006126-9bb2-4477-968d-a47a0414f3a3"
+    "district_id": 51
   },
   {
-    "guid": "4be6fad5-a2d6-4de9-8ad0-aee170ab4067",
-    "title": "Stellenbosch",
+    "id": 208,
+    "map_title": "Stellenbosch",
     "code": "WC024",
-    "district_guid": "fca96e50-2832-401f-b9e8-34c23eaf1e3f"
+    "district_id": 48
   },
   {
-    "guid": "aee52fbf-5c72-4039-b518-99b723607cc6",
-    "title": "Theewaterskloof",
+    "id": 209,
+    "map_title": "Theewaterskloof",
     "code": "WC031",
-    "district_guid": "3e942f85-564c-496d-ad89-55afdf6d3fbc"
+    "district_id": 49
   },
   {
-    "guid": "f992eb7a-d619-431e-9956-63b7f97e170f",
-    "title": "Saldanha Bay",
+    "id": 210,
+    "map_title": "Saldanha Bay",
     "code": "WC014",
-    "district_guid": "41ed8e44-740e-4a30-a883-c6c817a0b318"
+    "district_id": 47
   },
   {
-    "guid": "06adfe07-c559-4c94-9c32-ed9bc2ef0cf1",
-    "title": "Swartland",
+    "id": 211,
+    "map_title": "Swartland",
     "code": "WC015",
-    "district_guid": "41ed8e44-740e-4a30-a883-c6c817a0b318"
+    "district_id": 47
   },
   {
-    "guid": "043305d1-c043-4094-90da-050c8e16b1c8",
-    "title": "Overstrand",
+    "id": 212,
+    "map_title": "Overstrand",
     "code": "WC032",
-    "district_guid": "3e942f85-564c-496d-ad89-55afdf6d3fbc"
+    "district_id": 49
   },
   {
-    "guid": "a994ecf3-fcb6-44dc-ab24-93656e26151b",
-    "title": "City of Cape Town",
+    "id": 213,
+    "map_title": "City of Cape Town",
     "code": "CPT",
-    "district_guid": "ba3a5b90-d361-41df-9653-a600c8d9099f"
+    "district_id": 52
   }
 ]

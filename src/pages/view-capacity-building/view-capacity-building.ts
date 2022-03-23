@@ -26,6 +26,7 @@ export class ViewCapacityBuildingPage {
   ngOnInit() {
     this.storage.get('current_capacity_building').then((entity) => {
       this.capacityBuilding = entity;
+      console.log(this.capacityBuilding)
     });
   }
 

@@ -1,52 +1,102 @@
 [
   {
-    "guid": "7d7903a0-a3fd-4a22-a0fd-4d3025428bc2",
-    "title": "Integrated Community Registration Outreach Program ",
-    "description": "SASSA ICROP"
+
+    "id": 1,
+    "mobilisation_method": "Integrated Community Registration Outreach Program ",
+    "description": "SASSA ICROP",
+    "created_by": 1,
+    "created_date": "2019-10-14T09:52:05.96",
+    "modified_by": 1,
+    "modified_date": "2019-10-14T09:52:05.96"
   },
   {
-    "guid": "8e85803d-5ccc-486c-9dec-af99717ea00c",
-    "title": "DSD Outreach Program",
-    "description": "DSD Outreach Program"
+
+    "id": 2,
+    "mobilisation_method": "DSD Outreach Program",
+    "description": "DSD Outreach Program",
+    "created_by": 1,
+    "created_date": "2019-10-14T09:52:25.48",
+    "modified_by": 1,
+    "modified_date": "2019-10-14T09:52:25.48"
   },
   {
-    "guid": "d11167c0-12e9-4d22-94f2-7cfde6e83240",
-    "title": "Government Outreach Program",
-    "description": "Government Outreach Program"
+
+    "id": 3,
+    "mobilisation_method": "Government Outreach Program",
+    "description": "Government Outreach Program",
+    "created_by": 1,
+    "created_date": "2019-10-14T09:52:45.557",
+    "modified_by": 1,
+    "modified_date": "2019-10-14T09:52:45.557"
   },
   {
-    "guid": "7aa89ba2-c35a-4d35-ac91-b1d87223b9e9",
-    "title": "Municipal Outreach Program",
-    "description": "Municipal Outreach Program"
+
+    "id": 4,
+    "mobilisation_method": "Municipal Outreach Program",
+    "description": "Municipal Outreach Program",
+    "created_by": 1,
+    "created_date": "2019-10-14T09:53:06.18",
+    "modified_by": 1,
+    "modified_date": "2019-10-14T09:53:06.18"
   },
   {
-    "guid": "c95f5c6c-b1bd-457d-b9ef-13c5dd2b07ae",
-    "title": "Community Dialogues",
-    "description": "Community Dialogues"
+
+    "id": 5,
+    "mobilisation_method": "Community Dialogues",
+    "description": "Community Dialogues",
+    "created_by": 1,
+    "created_date": "2019-10-14T09:53:40.703",
+    "modified_by": 1,
+    "modified_date": "2019-10-14T09:53:40.703"
   },
   {
-    "guid": "a2b1abf1-df4b-4f8a-97b1-51abbfd76942",
-    "title": "Community Consultations",
-    "description": "Community Consultations"
+
+    "id": 6,
+    "mobilisation_method": "Community Consultations",
+    "description": "Community Consultations",
+    "created_by": 1,
+    "created_date": "2019-10-14T09:53:59.95",
+    "modified_by": 1,
+    "modified_date": "2019-10-14T09:53:59.95"
   },
   {
-    "guid": "0714a0b4-bdae-4158-8346-4924dd81e5d1",
-    "title": "Partnership",
-    "description": "Partnership"
+
+    "id": 7,
+    "mobilisation_method": "Partnership",
+    "description": "Partnership",
+    "created_by": 1,
+    "created_date": "2019-10-14T09:54:23.517",
+    "modified_by": 1,
+    "modified_date": "2019-10-14T09:54:23.517"
   },
   {
-    "guid": "74af4278-f90a-45b7-87e7-36e6cc6cf971",
-    "title": "Civil Society Networks",
-    "description": "Civil Society Networks"
+
+    "id": 8,
+    "mobilisation_method": "Civil Society Networks",
+    "description": "Civil Society Networks",
+    "created_by": 1,
+    "created_date": "2019-10-14T09:55:00.19",
+    "modified_by": 1,
+    "modified_date": "2019-10-14T09:55:00.19"
   },
   {
-    "guid": "1655626c-a7bd-479d-b44d-67a9b9e1be2e",
-    "title": "Office Walk-ins",
-    "description": "Office Walk-ins"
+
+    "id": 9,
+    "mobilisation_method": "Office Walk-ins",
+    "description": "Office Walk-ins",
+    "created_by": 1,
+    "created_date": "2019-10-14T09:55:21.25",
+    "modified_by": 1,
+    "modified_date": "2019-10-14T09:55:21.25"
   },
   {
-    "guid": "c93490cd-7d35-4619-8710-50ab2b61ff65",
-    "title": "Referral",
-    "description": ""
+
+    "id": 10,
+    "mobilisation_method": "Referral",
+    "description": "",
+    "created_by": 52,
+    "created_date": "2019-10-23T16:29:55.66",
+    "modified_by": 52,
+    "modified_date": "2019-10-23T16:29:55.66"
   }
 ]
